@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+
+  <title></title>
+  <link rel='StyleSheet' href="/light.css" type="text/css" />
+</head>
+
+<body>
+  <div>
+    <h1>Warning: do not link directly to any images on this site.</h1>Do not
+    link directly to (or embed via img src, or set as a background) any url on
+    this site ending in ".jpg", ".png", ".gif", or ".bmp".<br />
+    <b>It will fail with great malice.</b><br />
+    This is due to stupid people excessively embedding images on my server in
+    their web pages (stealing my bandwidth).<br />
+    <br />
+    You can safely link directly to any url ending in ".html", "/", or ".php".
+    <hr />
+    <a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+    <a href="/">Return to Darxus' Home Page.</a>
+  </div>
+</body>
+</html>

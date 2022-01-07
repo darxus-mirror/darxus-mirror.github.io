@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+<title>cinclude2dot</title>
+
+<style type='text/css'>
+/*<![CDATA[*/
+img {
+  float: right;
+  border-style: none;
+}
+/*]]>*/
+</style>
+</head>
+<body>
+<div><a href="ttysnoop-0.12c.jpg"><img src="ttysnoop-0.12c.320.jpg" width='320'
+height='176' alt="example: ttysnoop-0.12c.jpg" /></a>
+<div class='center'>
+<h1>cinclude2dot</h1>
+</div>
+Generates a graph of the #include relationships within a C source tree using
+<a href="http://www.research.att.com/sw/tools/graphviz/">graphviz</a>.<br />
+<br />
+<b>This project has been taken over by francis@flourish.org with my full
+blessing. <a href="http://www.flourish.org/cinclude2dot/">Current versions can
+be found here</a>.</b><br />
+<br />
+<a href="dl/index.html">Old versions can be found here.</a><br />
+<br />
+Examples:
+<table border='1'>
+<tr>
+<th>program</th>
+<th>graphviz input</th>
+<th>graphviz output PS</th>
+<th>output small JPEG</th>
+<th>ouput huge JPEG</th>
+</tr>
+<tr>
+<td>ttysnoop-0.12c</td>
+<td><a href="ttysnoop-0.12c.dot">ttysnoop-0.12c.dot</a></td>
+<td><a href="ttysnoop-0.12c.ps">ttysnoop-0.12c.ps</a></td>
+<td><b><a href="ttysnoop-0.12c.1024.jpg">ttysnoop-0.12c.1024.jpg</a> (25k,
+422x768)</b></td>
+<td><a href="ttysnoop-0.12c.jpg">ttysnoop-0.12c.jpg</a> (109k, 1079x1960)</td>
+</tr>
+<tr>
+<td><a href="http://www.bochs.com">bochs-2000_0325a</a></td>
+<td><a href="bochs-2000_0325a.dot">bochs-2000_0325a.dot</a></td>
+<td><a href="bochs-2000_0325a.ps">bochs-2000_0325a.ps</a></td>
+<td><b><a href="bochs-2000_0325a.1024.jpg">bochs-2000_0325a.1024.jpg</a> (73k,
+844x768)</b></td>
+<td><a href="bochs-2000_0325a.jpg">bochs-2000_0325a.jpg</a> (887k,
+3398x3089)</td>
+</tr>
+<tr>
+<td><a href="http://aa-project.sourceforge.net/aalib/">aalib-1.3</a></td>
+<td><a href="aalib-1.3.dot">aalib-1.3.dot</a></td>
+<td><a href="aalib-1.3.ps">aalib-1.3.ps</a></td>
+<td><b><a href="aalib-1.3.1024.jpg">aalib-1.3.1024.jpg</a> (98k,
+835x768)</b></td>
+<td><a href="aalib-1.3.jpg">aalib-1.3.jpg</a> (435k, 1960x1802)</td>
+</tr>
+<tr>
+<td><a href=
+"http://www.research.att.com/sw/tools/graphviz/">graphviz-1.6</a></td>
+<td><a href="graphviz-1.6.dot">graphviz-1.6.dot</a></td>
+<td><a href="graphviz-1.6.ps">graphviz-1.6.ps</a></td>
+</tr>
+<tr>
+<td><a href="http://www.gnu.org/software/chess/">chess-5.00</a></td>
+<td><a href="chess-5.00.dot">chess-5.00.dot</a></td>
+<td><a href="chess-5.00.ps">chess-5.00.ps</a></td>
+<td><b><a href="chess-5.00.1024.jpg">chess-5.00.1024.jpg</a> (53k,
+818x768)</b></td>
+<td><a href="chess-5.00.jpg">chess-5.00.jpg</a> (192k, 1813x1701)</td>
+</tr>
+<tr>
+<td><a href="http://www.sulaco.org/mp3/">lame3.51</a></td>
+<td><a href="lame3.51.dot">lame3.51.dot</a></td>
+<td><a href="lame3.51.ps">lame3.51.ps</a></td>
+<td><b><a href="lame3.51.1024.jpg">lame3.51.1024.jpg</a> (47k,
+690x768)</b></td>
+<td><a href="lame3.51.jpg">lame3.51.jpg</a> (352k, 2355x2621)</td>
+</tr>
+<tr>
+<td><a href=
+"http://research.compaq.com/SRC/personal/mann/xboard.html">xboard-4.0.7</a></td>
+<td><a href="xboard-4.0.7.dot">xboard-4.0.7.dot</a></td>
+<td><a href="xboard-4.0.7.ps">xboard-4.0.7.ps</a></td>
+<td><b><a href="xboard-4.0.7.1024.jpg">xboard-4.0.7.1024.jpg</a> (102k,
+895x768)</b></td>
+<td><a href="xboard-4.0.7.jpg">xboard-4.0.7.jpg</a> (627k, 2396x2056)</td>
+</tr>
+<tr>
+<td><a href="http://www.xmms.org/">xmms-1.0.1</a></td>
+<td><a href="xmms-1.0.1.dot">xmms-1.0.1.dot</a></td>
+<td><a href="xmms-1.0.1.ps">xmms-1.0.1.ps</a></td>
+<td><b><a href="xmms-1.0.1.1024.jpg">xmms-1.0.1.1024.jpg</a> (93k,
+707x768)</b></td>
+<td><a href="xmms-1.0.1.jpg">xmms-1.0.1.jpg</a> (792k, 2329x2527)</td>
+</tr>
+</table>
+<br />
+<br />
+If you would like to <a href="mailto:Darxus@ChaosReigns.com">send me output</a>
+to add to this table, please include the program name, version number, a url,
+and at least the PostScript output.<br />
+<br />
+PostScript output was generated like so:<br />
+<br />
+<kbd>$ cd ~/program/src<br />
+$ ./cinclude2dot.pl &gt; source.dot<br />
+$ neato -Tps source.dot &gt; source.ps<br />
+$ gv source.ps</kbd><br />
+<br />
+JPEGs were created with <a href=
+"http://www.wizards.dupont.com/cristy/ImageMagick.html">ImageMagick</a> like
+this:<br />
+<br />
+<kbd>$ convert bochs-2000_0325a.ps bochs-2000_0325a.jpg<br />
+$ convert -geometry 1024x768 bochs-2000_0325a.ps
+bochs-2000_0325a.1024.jpg</kbd><br />
+<br />
+<hr />
+<br />
+<br />
+<h2>Other Graph Generators</h2>
+<table border='1'>
+<tr>
+<td><a href="../apache2dot/index.html">apache2dot</a></td>
+<td>Graph links as they are followed within your website.</td>
+</tr>
+<tr>
+<td><a href="../sig2dot/index.html">sig2dot</a></td>
+<td>Graph signature relationships in a <a href="http://www.gnupg.org">gpg</a>
+keyring.</td>
+</tr>
+</table>
+<br />
+<br />
+If you have suggestions for other data that might be graphed this way, please
+<a href="mailto:Darxus@ChaosReigns.com">email me</a>.<br />
+<br />
+<hr />
+<a href="../../cgi-bin/referercomment.cgi.html">Comment on this page.</a><br />
+<a href="../index.html">Return to Darxus' Code Index.</a><br />
+<a href="../../index.html">Return to Darxus' Home Page.</a><br />
+Thu May 9 01:53:31 EDT 2002<br />
+<a href="http://validator.w3.org/check/referer">Valid HTML 3.2.</a></div>
+</body>
+</html>

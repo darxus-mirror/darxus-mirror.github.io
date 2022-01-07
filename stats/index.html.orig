@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+<title>Web Statistics for the Domain ChaosReigns.com</title>
+<link rel='StyleSheet' href="/dark.css" type="text/css" />
+</head>
+<body>
+<div>
+<h1>Web Statistics for the Domain <a href=
+"http://www.ChaosReigns.com">ChaosReigns.com</a></h1>
+<ul>
+<li><a href="date.html">Hits by date</a> (2975) (graph) &lt;- prettiest</li>
+<li><a href="hour.html">Hits by hour</a> (817) (graph)</li>
+<li><a href="file.html">Hits by file</a> (8845)</li>
+<li><a href="referrer.html">Hits by referrer</a> (1202)</li>
+<li><a href="proto.html">Hits by Protocol</a> (506)</li>
+<li><a href="dow.html">Hits by Day Of the Week</a> (571) (graph)</li>
+<li><a href="agent.html">Hits by browser (agent) types</a> (981)</li>
+</ul>
+<a href="/stats/dl/">Download LiveWebStats generator.</a> (986)<br />
+<br />
+I wrote a program called <a href="/code/apache2dot/">apache2dot</a> that graphs
+links as they are followed through your website.<br />
+<br />
+<a id="hits"></a><br />
+"Hits" means the number of times a file was accessed, except by me, or a web
+search engine indexer.<br />
+<br />
+These statistics, along with my <a href="../">main web page</a> (8598), are
+generated live by a <a href="/stats/dl/">perl program</a> (986) I wrote.<br />
+<br />
+This program, when executed, parses all existing log files, and then log data
+from stdin. While parsing data from stdin, it also regenerates my /index.html
+and /stats/*.html files if it's been over a minute since the last write.<br />
+<br />
+The numbers in parentheses after links on this page, and my main page, are the
+number of hits that page has recieved, and are also live.<br />
+<br />
+<hr />
+From the creator of <a href="http://www.dreamsmith.org/logjack/">LogJack</a>:
+"I wrote LogJack because LiveWebStats didn't do exactly what I wanted. However,
+it may be that LogJack doesn't do what you want and LiveWebStats does. It's a
+good program that I swiped ideas from left and right, so check it out."<br />
+<br />
+<hr />
+<b>Reciprocal Links for This Page</b>
+<ul>
+<li><a href="http://www.dreamsmith.org/logjack/">Dreamsmith's Forge -
+LogJack</a></li>
+<li><a href=
+"http://lists.phillylinux.org/mailman/pubarchive/plug/2000-August/006363.html">Philadelphia
+area Linux User Group list archive</a></li>
+<li><a href="http://jolt.cola.cc/stats">stats for jolt.cola.cc</a></li>
+<li><a href="http://recto.scoope.org/estadisticas/">stats for
+recto.scoope.org</a></li>
+<li><a href=
+"http://isp-lists.isp-planet.com/isp-webhosting/0011/msg00298.html">isp-webhosting
+list archive</a></li>
+</ul>
+<hr />
+<a href="/">Return to Darxus' Home Page.</a><br />
+Tue Oct 29 02:18:46 EST 2002</div>
+</body>
+</html>

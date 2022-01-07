@@ -1,0 +1,312 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=7"/>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel='stylesheet' href='http://l-stat.livejournal.com/ad_base.css' type='text/css' />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://darxus.livejournal.com/data/foaf" />
+<meta name="foaf:maker" content="foaf:mbox_sha1sum '107c1745aac3c319c0e1588eb400be77055f48e8'" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+// don't crawl this.  read http://www.livejournal.com/developer/exporting.bml
+var LJ_cmtinfo = {"canAdmin":0,"667930":{"rc":[],"u":"princessleia2","parent":null,"full":1},"666138":{"rc":[666394],"u":"doctordidj","parent":null,"full":1},"journal":"darxus","form_auth":"c0:1279209600:3546:86400:VVf5qqUPN9-0-0CyLC5WoUkThy5H:af4b2ba16c67462e01071a246a3e5f26","665626":{"rc":[],"u":"darxus","parent":665370,"full":1},"667674":{"rc":[],"u":"darxus","parent":667162,"full":1},"666650":{"rc":[],"u":"darxus","parent":665882,"full":1},"remote":null,"666394":{"rc":[666906],"u":"darxus","parent":666138,"full":1},"666906":{"rc":[667162],"u":"n_tropy","parent":666394,"full":1},"665370":{"rc":[665626],"u":"beowabbit","parent":null,"full":1},"667162":{"rc":[667418,667674],"u":"n_tropy","parent":666906,"full":1},"667418":{"rc":[],"u":"n_tropy","parent":667162,"full":1},"665882":{"rc":[666650],"u":"n_tropy","parent":null,"full":1}}
+</script>
+        <script type="text/javascript">
+            Site = window.Site || {};
+
+            (function(){
+                var p = {"siteroot":"http://www.livejournal.com","currentJournalBase":"http://darxus.livejournal.com","inbox_update_poll":0,"currentJournal":"darxus","remote_can_track_threads":null,"statprefix":"http://l-stat.livejournal.com","ctx_popup":1,"media_embed_enabled":1,"server_time":1279213146,"has_remote":0,"remote_is_suspended":0,"imgprefix":"http://l-stat.livejournal.com/img","esn_async":1}, i;
+                for (i in p) Site[i] = p[i];
+            })();
+       </script>
+    <script type="text/javascript" src="http://l-stat.livejournal.com/js/??jquery.js,jquery_fn.js,basic.js,livejournal.js,esn.js,ippu.js,lj_ippu.js,ljwidget.js,ljwidget_ippu.js,journal.js,hourglass.js,md5.js,login.js,contextualhover.js,livejournal-local.js,thread_expander.js,journal.js,quickreply.js?v=1277844792"></script>
+<script type="text/javascript" src="http://l-stat.livejournal.com/js/??commentmanage.js?v=1268768846"></script>
+<link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??lj_base.css,esn.css,contextualhover.css?v=1277844792" />
+<!--[if IE]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??ie.css?v=1268859548" /><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??interstitial_banner_us.css?v=1263499801" /><![endif]-->
+<script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=1483b796-4406-4000-98db-019c32f6059e&amp;type=website&amp;embeds=true&amp;post_services=livejournal%2Cfacebook%2Ctwitter%2Cmyspace%2Cdigg%2Cdelicious%2Clinkedin%2Cfriendfeed%2Cwordpress%2Cblogger%2Cgoogle_bmarks%2Ctechnorati&amp;onmouseover=false"></script><link rel="stylesheet" href="http://darxus.livejournal.com/res/18152266/stylesheet?1277845271" type="text/css" />
+<title>Darxus - wow, installing linux is easy</title>
+
+</head>
+
+<body class="page_entry">
+
+<div id="shadowhack1">
+<div id="shadowhack2">
+
+<div id="pagecontainer">
+
+<div id="title">
+<h1>Darxus</h1><div id="journal_subtitle">wow, installing linux is easy</div>
+</div>
+
+<div id="paraphernalia">
+<div class="pbox" id="journalinfo"><h2>Darxus</h2><div class="pboxcontent">
+<div id="journalinfouserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt="2009-09-29"height="100" width="100"  /></div>
+<div class="journallinkbar">     <a href="http://www.livejournal.com/todo/?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s to-do list" title="darxus&#39;s to-do list" src="http://l-stat.livejournal.com/img/btn_todo.gif"  /></a>  <a href="http://www.livejournal.com/tools/memories.bml?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s memories" title="darxus&#39;s memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="http://www.livejournal.com/tools/tellafriend.bml?user=darxus"><img border='0' width="24" height="24" alt="Tell a friend about darxus" title="Tell a friend about darxus" src="http://l-stat.livejournal.com/img/btn_tellfriend.gif"  /></a>  <a href="http://www.livejournal.com/tools/search.bml?user=darxus"><img border='0' width="24" height="24" alt="Search darxus" title="Search darxus" src="http://l-stat.livejournal.com/img/btn_search.gif"  /></a>  <a href="http://www.livejournal.com/friends/nudge.bml?user=darxus"><img border='0' width="24" height="24" alt="Nudge darxus" title="Nudge darxus" src="http://l-stat.livejournal.com/img/btn_nudge.gif"  /></a> </div></div></div>
+<div class="pbox" id="viewsel"><h2>View</h2><div class="pboxcontent">
+<ul>
+<li><a href="http://darxus.livejournal.com/">Recent Entries</a></li>
+<li><a href="http://darxus.livejournal.com/calendar">Archive</a></li>
+<li><a href="http://darxus.livejournal.com/friends">Friends</a></li>
+<li><a href="http://darxus.livejournal.com/profile">User Info</a></li>
+</ul>
+</div></div>
+
+</div>
+
+<div id="main">
+<div class="entry"><div class="entryheader">
+<h3 class="entrysubject">wow, installing linux is easy</h3><div class="entryposter"><span class='ljuser_darxus' style='white-space:nowrap;'><a href='http://www.livejournal.com/userinfo.bml?user=darxus'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align:bottom;border:0;' /></a><a href='http://www.livejournal.com/users/darxus/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate">10/30/06</span>
+    <span class="entrytimestamptime">09:38 pm</span></div><div class="entrylinkbarpre"><a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=157722&amp;dir=prev"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>      <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=157722"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="#"><img border='0' width="24" height="24" alt="Share this!" title="Share this!" src="http://l-stat.livejournal.com/img/btn_sharethis.gif"  /></a> <script type="text/javascript">
+            var stLink = jQuery('a:last')[0];
+            stLink.href = 'javascript:void(0)';
+            SHARETHIS_post = SHARETHIS.addEntry({url:'http://darxus.livejournal.com/157722.html', title: 'wow, installing linux is easy'}, {button: false});
+            SHARETHIS_post.attachButton(stLink);
+            SHARETHIS_ary.push(SHARETHIS_post);
+            </script>       <a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=157722&amp;dir=next"><img border='0' width="24" height="24" alt="Next Entry" title="Next Entry" src="http://l-stat.livejournal.com/img/btn_next.gif"  /></a></div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt="2009-09-29"height="100" width="100"  /></div></div>
+
+<div class="entrycontent">I downloaded a cdrom image of <a href="http://www.ubuntu.com/">Ubuntu</a> Linux, burned it to cd, booted off of it, and was literally immediately running a fully functional linux box (booted off of the cd) with a little "install" icon on the desktop.  While installing I checked my email, chatted, and browsed the web with firefox.  <br /><br /><a name="cutid1"></a>I basically just hit go, told it to have its way with my new hard drive, and it was all magic.  Even included Windows XP entry in my new boot menu which works.  When I did this the first time it was <i>hard</i> to get Linux to talk to your sound card, video card, and the internet.  Now it does all that in the freaking <i>installer</i> just because it can.<br /><br />If you would like me to burn you a cd so you can see it for yourself let me know.  You may even be able to talk me into holding your hand through it.  For my first install I had two friends come over with a cdrom drive and cdrom drive controller.  <br /><br />Ubuntu is based on Debian, which I've been very fond of for years, but their release cycle is quite unacceptable.  Plus Ubuntu has all this superfluous usability that really I don't mind these days.  I did my time as a "must compile everything from source (manually, since you can even get that automated these days) console jockey.  I highly recommend Ubuntu for the desktop for any non-geek or veteran (unless you have specific windows programs you need to run).  The install took half an hour, mostly waiting for files to copy (while checking my email and playing minesweeper).<br /><br />Ack, I just clicked system / preferences / screen resolution / 1600x1200   85hz / apply... and it.. switched... without restarting anything.  This could take some getting used to.<a name='cutid1-end'></a><br /><br /><tt>root@dancer:~# df -h<br />Filesystem            Size  Used Avail Use% Mounted on<br />/dev/sda1             453G  1.9G  428G   1% /</tt></div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost"><a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=157722&amp;dir=prev"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>      <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=157722"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="#"><img border='0' width="24" height="24" alt="Share this!" title="Share this!" src="http://l-stat.livejournal.com/img/btn_sharethis.gif"  /></a> <script type="text/javascript">
+            var stLink = jQuery('a:last')[0];
+            stLink.href = 'javascript:void(0)';
+            SHARETHIS_post = SHARETHIS.addEntry({url:'http://darxus.livejournal.com/157722.html', title: 'wow, installing linux is easy'}, {button: false});
+            SHARETHIS_post.attachButton(stLink);
+            SHARETHIS_ary.push(SHARETHIS_post);
+            </script>       <a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=157722&amp;dir=next"><img border='0' width="24" height="24" alt="Next Entry" title="Next Entry" src="http://l-stat.livejournal.com/img/btn_next.gif"  /></a></div>
+<ul class="entrycmdlinks"><li><a href="http://darxus.livejournal.com/157722.html">11 comments</a></li><li><a onclick="return QuickReply.reply('topcomment',0,'')" href="http://darxus.livejournal.com/157722.html?mode=reply">Leave a comment</a></li></ul>
+<div  id="ljqrttopcomment" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt665370"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_beowabbit' lj:user='beowabbit' style='white-space: nowrap;'><a href='http://beowabbit.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://beowabbit.livejournal.com/'><b>beowabbit</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="53 minutes after journal entry, 10/30/06 10:47 pm (beowabbit&#39;s time)">10/31/06 03:47 am (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/12905842/808998" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Ubuntu rocks.  My server is still running Slackware, but as soon as I have a solid stretch of time to sit down and migrate everything over, I’m switching it to Ubuntu.  My desktop Linux machine has been Ubuntu for a while.<br /><br />Did you install Dapper (6.06) or Edgy (6.10)?  (Just curious.  I’m probably going to stick with Dapper for now.)</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('665370',2599,'')" href="http://darxus.livejournal.com/157722.html?replyto=665370">Reply</a></li><li><a href="http://darxus.livejournal.com/157722.html?thread=665370#t665370">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt665370" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt665626"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="2 hours after journal entry, 12:30 am (darxus&#39;s time)">10/31/06 05:30 am (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">I installed edgy (6.10) - just grabbed the .iso via bittorrent today.  I love seeing official support for bittorrent spreading.  <br /><br />Not sure how I feel about putting ubuntu on my server.  Although it's nice I'm in no rush to migrate from debian stable.  Although debian stable is way closer to ubuntu than slackware <tt>:)</tt></div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('665626',2600,'')" href="http://darxus.livejournal.com/157722.html?replyto=665626">Reply</a></li><li><a href="http://darxus.livejournal.com/157722.html?thread=665370#t665370">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/157722.html?thread=665626#t665626">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt665626" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul></li>
+<li><div class="entry" id="ljcmt665882"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_n_tropy' lj:user='n_tropy' style='white-space: nowrap;'><a href='http://n-tropy.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://n-tropy.livejournal.com/'><b>n_tropy</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="9 hours after journal entry, 07:25 am (n_tropy&#39;s time)">10/31/06 12:25 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/7261702/1204695" title="" alt=""height="72" width="88"  /></div></div>
+
+<div class="entrycontent">You should install all the super pretty ogl based wm stuff.<br />I'm running beryl right now and love it.<br />Real window transparency, lots of special effects and even an expose clone.<br />If you haven't add automatix to your source list and run that and It will install everything from opera, adobe flash, realplayer and mplayer + win codecs.  </div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('665882',2601,'')" href="http://darxus.livejournal.com/157722.html?replyto=665882">Reply</a></li><li><a href="http://darxus.livejournal.com/157722.html?thread=665882#t665882">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt665882" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt666650"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="10 hours after journal entry, 08:25 am (darxus&#39;s time)">10/31/06 01:25 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Thank you, those sound like things I definitely need to do, and was not aware of.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('666650',2604,'')" href="http://darxus.livejournal.com/157722.html?replyto=666650">Reply</a></li><li><a href="http://darxus.livejournal.com/157722.html?thread=665882#t665882">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/157722.html?thread=666650#t666650">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt666650" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul></li>
+<li><div class="entry" id="ljcmt666138"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_doctordidj' lj:user='doctordidj' style='white-space: nowrap;'><a href='http://doctordidj.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://doctordidj.livejournal.com/'><b>doctordidj</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="9 hours after journal entry">10/31/06 12:27 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/36081791/5035663" title="" alt=""height="100" width="81"  /></div></div>
+
+<div class="entrycontent">Welcome to the Ubuntu clan!  It took me a while, but I have now migrated to Ubuntu and I had the same experience you did, it all just installs and works, and most of the arcane hacking lore I have built up for installing Linux is obsolete (and I'm happy for it!) ... there are still some odds and ends, mostly getting X to use the full capability of display and HIDs, but it's so much easier now.  Two thumbs up for Ubuntu.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('666138',2602,'')" href="http://darxus.livejournal.com/157722.html?replyto=666138">Reply</a></li><li><a href="http://darxus.livejournal.com/157722.html?thread=666138#t666138">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt666138" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt666394"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="10 hours after journal entry, 08:22 am (darxus&#39;s time)">10/31/06 01:22 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Yeah I was disappointed that full 3D support didn't happen magically.  I figure that's because the drivers aren't opensourced.  So I had to tell synaptic that I also wanted to use the restricted repository, install the linux-restricted-modules package corresponding to my kernel, and change         "nv" to "nvidia" in my /etc/X11/xorg.conf, but that was all, and it was fairly well documented on the first google hit for "site:ubuntu.com nvidia".</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('666394',2603,'')" href="http://darxus.livejournal.com/157722.html?replyto=666394">Reply</a></li><li><a href="http://darxus.livejournal.com/157722.html?thread=666138#t666138">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/157722.html?thread=666394#t666394">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt666394" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt666906"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_n_tropy' lj:user='n_tropy' style='white-space: nowrap;'><a href='http://n-tropy.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://n-tropy.livejournal.com/'><b>n_tropy</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="10 hours after journal entry, 08:43 am (n_tropy&#39;s time)">10/31/06 01:43 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/7261702/1204695" title="" alt=""height="72" width="88"  /></div></div>
+
+<div class="entrycontent"><a href="http://www.getautomatix.com/">http://www.getautomatix.com/</a>  &lt;- will give you the option to install allot of stuff. including google earth, mplayers stuff , etc....<br /><br />I'll have to get you the apt sources and instructions to install the newest prettiest beryl.<br />I think i have a bookmark at work.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('666906',2605,'')" href="http://darxus.livejournal.com/157722.html?replyto=666906">Reply</a></li><li><a href="http://darxus.livejournal.com/157722.html?thread=666394#t666394">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/157722.html?thread=666906#t666906">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt666906" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt667162"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_n_tropy' lj:user='n_tropy' style='white-space: nowrap;'><a href='http://n-tropy.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://n-tropy.livejournal.com/'><b>n_tropy</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="12 hours after journal entry, 10:35 am (n_tropy&#39;s time)">10/31/06 03:35 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/7261702/1204695" title="" alt=""height="72" width="88"  /></div></div>
+
+<div class="entrycontent">add these sources<br /><br />deb <a href="http://ubuntu.beryl-project.org/">http://ubuntu.beryl-project.org/</a> edgy main-edgy<br />deb <a href="http://amaranth.selfip.com">http://amaranth.selfip.com</a> edgy lrm<br /><br />install this stuff. adds beryl and latest nvidia (no need for xgl hacks)<br /><br />sudo apt-get install nvidia-glx libxorg-sched-yield-hack<br />sudo apt-get install beryl-core beryl-plugins beryl-plugins-data emerald beryl-settings beryl-manager beryl beryl-dev emerald-themes<br /><br />then just run beryl-manager...<br /><br />I think this is all you need to do.  Can't find the bookmark to the instructions...</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('667162',2606,'')" href="http://darxus.livejournal.com/157722.html?replyto=667162">Reply</a></li><li><a href="http://darxus.livejournal.com/157722.html?thread=666906#t666906">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/157722.html?thread=667162#t667162">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt667162" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt667418"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_n_tropy' lj:user='n_tropy' style='white-space: nowrap;'><a href='http://n-tropy.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://n-tropy.livejournal.com/'><b>n_tropy</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="12 hours after journal entry, 10:41 am (n_tropy&#39;s time)">10/31/06 03:41 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/7261702/1204695" title="" alt=""height="72" width="88"  /></div></div>
+
+<div class="entrycontent"><a href="http://ubuntuforums.org/showthread.php?t=263851">http://ubuntuforums.org/showthread.p<wbr />hp?t=263851</a><br /><br />bookmark was under a different account on this box. hehe.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('667418',2607,'')" href="http://darxus.livejournal.com/157722.html?replyto=667418">Reply</a></li><li><a href="http://darxus.livejournal.com/157722.html?thread=667162#t667162">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/157722.html?thread=667418#t667418">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt667418" style="display: none;"></div>
+
+</div>
+</div></li>
+<li><div class="entry" id="ljcmt667674"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="12 hours after journal entry, 10:47 am (darxus&#39;s time)">10/31/06 03:47 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">First hit on a google search for ubuntu beryl <tt>:)</tt><br />Thanks.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('667674',2608,'')" href="http://darxus.livejournal.com/157722.html?replyto=667674">Reply</a></li><li><a href="http://darxus.livejournal.com/157722.html?thread=667162#t667162">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/157722.html?thread=667674#t667674">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt667674" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><div class="entry" id="ljcmt667930"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_princessleia2' lj:user='princessleia2' style='white-space: nowrap;'><a href='http://princessleia2.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://princessleia2.livejournal.com/'><b>princessleia2</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="2 days after journal entry, 12:41 pm (princessleia2&#39;s time)">11/2/06 05:41 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/78361049/771711" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Yeah, Ubuntu is easier to install and get running than Windows these days.<br /><br />I've been considering replacing Debian on my desktop with Ubuntu (I run Ubuntu on my laptop already). I guess the only real reason I'm holding off is that I still maintain a Debian package and need a Debian machine around for that. What a terrible reason, we have 12 computers, one can be a spare Debian packaging/development box...</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('667930',2609,'')" href="http://darxus.livejournal.com/157722.html?replyto=667930">Reply</a></li><li><a href="http://darxus.livejournal.com/157722.html?thread=667930#t667930">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt667930" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul>
+</div>
+
+
+
+<div id="server_sig">Powered by <a href="http://www.livejournal.com/">LiveJournal.com</a></div></div>
+
+</div>
+</div>
+
+<div id='hello-world' style='text-align: left; font-size:0; line-height:0; height:0; overflow:hidden;'>
+<script type="text/javascript"> var DR_id = 1111; </script>
+<script src="http://l-stat.livejournal.com/js/pagestats/DR_v4u3.js" type="text/javascript"></script>
+    </div></body>
+</html>

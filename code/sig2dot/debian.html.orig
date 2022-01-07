@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+<title>Graphing the Debian Keyring Web of Trust</title>
+<link rel='StyleSheet' href="/light.css" type="text/css" />
+<style type='text/css'>
+img { 
+  float: right; 
+  border-style: none;
+}
+</style>
+</head>
+<body>
+<div>
+<h1>Graphing the <a href=
+"http://packages.debian.org/stable/misc/debian-keyring.html">Debian Keyring</a>
+Web of Trust</h1>
+Inspired by an <a href=
+"http://lists.debian.org/debian-devel/1998/debian-devel-199812.gz">old
+thread</a> (Message-ID: &lt;19981205015519.I2828@kitenet.net&gt;) on the
+<a href="http://www.debian.org/devel">debian-devel</a> mailing list started by
+Joey Hess &lt;joey@kitenet.net&gt; graphing the <a href=
+"http://packages.debian.org/stable/misc/debian-keyring.html">debian-keyring</a>
+in 1998, I set out to do the same myself with the current keyring and available
+packages. I wrote perl programs to parse the output of the debian-keyring to
+the file format for each of the graphing programs I could find. You could use
+these to graph any <a href="http://www.gnupg.org">gpg</a> keyring file, and is
+used by several groups to <a href="#uses">graph the results of their keysigning
+parties</a>.<br />
+<br />
+In decreasing order of how much I liked the results: <img src=
+"debian-keyring-core.neato.320.jpg" alt="debian-keyring-core.neato.320.jpg" width="217" height="240" /><br />
+<br />
+<table border="1">
+<tr>
+<th></th>
+<th>Parser</th>
+<th>Output PostScript</th>
+<th>Smaller Output Jpeg</th>
+<th>Huge Output Jpeg</th>
+</tr>
+<tr>
+<th><a href="http://www.research.att.com/sw/tools/graphviz/">neato</a></th>
+<td rowspan="2"><a href="/code/sig2dot/">sig2dot.pl</a></td>
+<td><a href="debian-keyring.neato.ps">debian-keyring.neato.ps</a> (126k)</td>
+<td><a href="debian-keyring.neato.1024.jpg">debian-keyring.neato.1024.jpg</a>
+(24k, 1018x768)</td>
+<td><a href="debian-keyring.neato.jpg">debian-keyring.neato.jpg</a> (940k,
+8211x6192)</td>
+</tr>
+<tr>
+<th><a href="http://www.research.att.com/sw/tools/graphviz/">dot</a></th>
+<td><a href="debian-keyring.dot.ps">debian-keyring.dot.ps</a> (155k)</td>
+<td><a href="debian-keyring.dot.1024.jpg">debian-keyring.dot.1024.jpg</a> (56k,
+1024x367)</td>
+<td><a href="debian-keyring.dot.jpg">debian-keyring.dot.jpg</a> (1444k,
+6927x2485)</td>
+</tr>
+<tr>
+<th><a href=
+"http://www.cs.uni-sb.de/RW/users/sander/html/gsvcg1.html">vcg</a></th>
+<td><a href="sig2vcg.pl">sig2vcg.pl</a></td>
+<td><a href="debian-keyring.vcg.ps">debian-keyring.vcg.ps</a> (596k)</td>
+</tr>
+<tr>
+<th><a href="http://www.tzi.de/daVinci/">daVinci</a></th>
+<td><a href="sig2vcg.pl">sig2dav.pl</a></td>
+<td><a href="debian-keyring.davinci.ps">debian-keyring.davinci.ps</a>
+(420k)</td>
+</tr>
+</table>
+<br />
+<br />
+Here's a smaller (56k, 1002x1107) zoomed out shot of the core of neato's
+output: <a href=
+"debian-keyring-core.neato.png">debian-keyring-core.neato.png</a>.<br />
+I recommend viewing the PostScript files with <a href=
+"http://www.cs.wisc.edu/~ghost/gv/">gv</a> because they are big.<br />
+Output is from the 2000.08.30 keyring. It is my intention to keep these files
+up to date.<br />
+(dot and neato are both part of <a href=
+"http://www.research.att.com/sw/tools/graphviz/">graphviz</a>, and have the
+same input file format.)<br />
+As Joey Hess did, the arrows in my graphs are pointing from signer to
+signee.<br />
+<br />
+<table border="1">
+<tr>
+<td>debian-keyring</td>
+<td><a href=
+"http://packages.debian.org/stable/misc/debian-keyring.html">debian-keyring_2000.08.30_all.deb</a></td>
+</tr>
+<tr>
+<td>debian keyring signatures</td>
+<td><a href="debian.sigs">debian.sigs</a></td>
+</tr>
+<tr>
+<td>signatures parsed for dot</td>
+<td><a href="debian-keyring.dot">debian-keyring.dot</a></td>
+</tr>
+<tr>
+<td>graph of signature counts</td>
+<td><a href="stats.html">stats.html</a> (producted by sig2dot)</td>
+</tr>
+</table>
+<hr />
+<a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+<a href="/code/sig2dot/">sig2dot index</a><br />
+<a href="/code/">code index</a><br />
+<a href="/">Darxus' Home Page</a><br />
+Sun May 5 17:14:33 EDT 2002<br />
+<a href="http://validator.w3.org/check/referer">Valid HTML 3.2.</a></div>
+</body>
+</html>

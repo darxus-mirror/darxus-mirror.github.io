@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Spam Filtering</title>
+<link rel='StyleSheet' href="../light.css" type="text/css" />
+<style type="text/css">
+table,th,td { border: 1px solid black; }
+table { border-collapse:collapse; }
+.tt { font-family: monospace; }
+</style>
+</head>
+<body>
+<h1>IP Reputation</h1>
+
+<p>
+My current primary spam related interest is my new <a href="../iprep.html">public free combined whitelist and blacklist</a>.  I need your data.
+</p>
+<hr />
+
+<h1>Past</h1>
+In February 2010, I thought it would be good to <a href="spf/index.html">block spam with SPF</a>.  Then I became aware of its forwarding breaking problem, a barrior to adoption.  So I created <a href="../mtx/index.html">MTX</a>, which was also then not adopted.
+
+<hr />
+
+<h1>Stuff from 2006</h1>
+<div>
+The mail server software (MTA) I use is <a href="http://www.postfix.org/">Postfix</a>.
+<h1>Greylisting, SpamAssassin, SpamProbe, Image Spam, DNSWL, and Viruses</h1>
+It's not necessary to do this all at once. That would probably be overwhelming. I recommend setting up one piece at a time.
+<dl>
+<dt>Greylisting</dt>
+<dd>I use <a href="http://isg.ee.ethz.ch/tools/postgrey/">Postgrey</a> for greylisting. Basically if an email server which I have not heard from before tries to deliver email to me, it is immediately given a temporary error and asked to try again later. Well behaved mail servers will all try again, many spammers won't.</dd>
+<dt>SpamAssassin</dt>
+<dd><a href="http://spamassassin.apache.org/">SpamAssassin</a> is rule based, and uses a number of online services. It does things like "This includes a big html font and the sender address has been reported for spamming, therefore this is spam."</dd>
+<dt>SpamProbe</dt>
+<dd><a href="http://spamprobe.sourceforge.net/">SpamProbe</a> is a (multi-word token bayesian) pattern learning filter. You tell it "here are the spams I'm getting, and here are the non-spams I'm getting", and it figures out on its own what the differences in the patterns are.</dd>
+<dt>Image Spam</dt>
+<dd>All image spams are blocked by <a href="index.html#image">postfix body_checks</a></dd>
+<dt>DNSWL</dt>
+<dd><a href="http://www.dnswl.org/">DNSWL</a> is a list of mail servers known not to send spam (White List), accessible in useful ways (including DNS).</dd>
+<dt>Viruses</dt>
+<dd>Viruses are filtered with <a href="http://www.clamav.net/">ClamAV</a></dd>
+</dl>
+<h1>How</h1>
+<ol>
+<li>Anything that might be image spam is rejected by my postfix body_checks.</li>
+<li>Anything ranked high or medium by DNSWL.org skips all other filtering and goes right to my inbox. (<a href="http://www.dnswl.org/tech.shtml#postfix">Postfix Configuration</a>)</li>
+<li>The rest is greylisted via postgrey from postfix.</li>
+<li>Procmail filters out viruses via ClamAv.</li>
+<li>Procmail filters remaining spam via SpamAssassin and SpamProbe. If they agree it's spam the email goes in my spam folder and I never look at it. If they agree it's not spam it goes to my inbox. If they disagree it goes in other folders which I check.</li>
+<li>After verifying everything is in the right place I run my <a href="spamupdate.html">retraining script</a>.</li>
+</ol>
+<br />
+<hr />
+<a id="image">Image spams are, I believe, a uniquely effective way to circumvent filtering, because all of their spamminess is contained in an inlined attached image. So I reject all images containing (basically) 'src="cid:' using the</a> <a href="http://www.postfix.org/header_checks.5.html">Postfix body_checks</a> regex (pattern definition):<br />
+<span class="tt"><a href="http://archives.neohapsis.com/archives/postfix/2006-05/0430.html">/\bsrc\s*=(?:3D)?\s*["']?cid:/ REJECT Your email was rejected because you embedded an attached image in the body.</a></span><br />
+This method ensures that legitimate senders will get an error message and will not result in error messages being sent to forged sender addresses from spam.<br />
+<br />
+The postfix body_checks are implemented by putting this line in your main.cf: <span class="tt">body_checks = pcre:/etc/postfix/body_checks # image spam regex goes in this file</span><br />
+Then in the file /etc/postfix/body_checks you put the line:<br />
+<span class="tt">/\bsrc\s*=(?:3D)?\s*["']?cid:/ REJECT Your email was rejected because you embedded an attached image in the body.</span><br />
+The regex is designed to match things that look similar to '&lt;img src="cid:spam.jpg"&gt;'. The "pcre" part of the main.cf line indicates this is a Perl Compatible Regular Expression which means you can look it up in the <a href="http://www.perl.com/doc/manual/html/pod/perlre.html">perlre man page</a>. The meaning of each piece is as follows:
+<table>
+<tr>
+<td>/</td>
+<td>beginning of the regex</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>Matches "word boundaries", the point between the whitespace before "src" and the beginning of "src"</td>
+</tr>
+<tr>
+<td>src</td>
+<td>the "src" part of the img tag</td>
+</tr>
+<tr>
+<td>\s*</td>
+<td>any amount of whitespace (spaces, tabs, etc.), or none</td>
+</tr>
+<tr>
+<td>=</td>
+<td>the "=" in the img tag</td>
+</tr>
+<tr>
+<td>(?:3D)?</td>
+<td>quoted printable email encoding can replace an "=" with "=3D", this handles it</td>
+</tr>
+<tr>
+<td>\s*</td>
+<td>any amount of whitespace (spaces, tabs, etc.), or none</td>
+</tr>
+<tr>
+<td>["']?</td>
+<td>single or double quote, "?" allows for it to be missing</td>
+</tr>
+<tr>
+<td>cid:</td>
+<td>"cid:" the part of an img tag url that replaces http: and means it's an attached file, not hosted on a webserver</td>
+</tr>
+<tr>
+<td>/</td>
+<td>end of the regex</td>
+</tr>
+</table>
+"REJECT Your email was rejected because you embedded an attached image in the body." defines the error message that will be sent only to legitimate senders.
+<hr />
+<br />
+<br />
+<br />
+<br />
+<a href="procmailrc.html">my ~/.procmailrc config file</a><br />
+<br />
+The relevant part of my postfix main.cf:
+<pre>
+smtpd_recipient_restrictions = 
+       permit_mynetworks
+       permit_sasl_authenticated
+       reject_unauth_destination
+       check_client_access cidr:/home/darxus/dnswl/postfix-dnswl-header # add X-DNSWL headers
+       check_client_access cidr:/home/darxus/dnswl/postfix-dnswl-permit # skip greylisting
+       check_policy_service inet:127.0.0.1:60000 # greylisting
+
+body_checks = pcre:/etc/postfix/body_checks # image spam regex goes in this file
+</pre>
+<br />
+<br />
+To get SpamAssassin to pay attention to DNSWL ranks I added these rules to /etc/spamassassin/local.cf:
+<pre>
+header   RCVD_IN_DNSWL        X-DNSWL =~ /^none/
+score    RCVD_IN_DNSWL        -0.1
+describe RCVD_IN_DNSWL        Sender listed at http://www.dnswl.org/, no trust
+
+header   RCVD_IN_DNSWL_LOW    X-DNSWL =~ /^low/
+score    RCVD_IN_DNSWL_LOW    -1
+describe RCVD_IN_DNSWL_LOW    Sender listed at http://www.dnswl.org/, low trust
+
+header   RCVD_IN_DNSWL_MED    X-DNSWL =~ /^med/
+score    RCVD_IN_DNSWL_MED    -4
+describe RCVD_IN_DNSWL_MED    Sender listed at http://www.dnswl.org/, medium trust
+
+header   RCVD_IN_DNSWL_HI     X-DNSWL =~ /^hi/
+score    RCVD_IN_DNSWL_HI     -8
+describe RCVD_IN_DNSWL_HI     Sender listed at http://www.dnswl.org/, high trust
+
+header   RCVD_IN_DNSWL_NO     X-DNSWL =~ /^No$/
+score    RCVD_IN_DNSWL_NO     0.1
+describe RCVD_IN_DNSWL_NO     Sender *not* listed at http://www.dnswl.org/
+</pre>
+<br />
+<br />
+SpamAssasin rules for use without Postfix (causes more network load for everyone):
+<pre>
+header   RCVD_IN_DNSWL        eval:check_rbl('dnswl-firsttrusted', 'list.dnswl.org.')
+score    RCVD_IN_DNSWL        -0.1
+describe RCVD_IN_DNSWL        Sender listed at http://www.dnswl.org/, no trust
+
+header   RCVD_IN_DNSWL_LOW    eval:check_rbl_sub('dnswl-firsttrusted', '127.0.\d+.1')
+score    RCVD_IN_DNSWL_LOW    -1
+describe RCVD_IN_DNSWL_LOW    Sender listed at http://www.dnswl.org/, low trust
+
+header   RCVD_IN_DNSWL_MED    eval:check_rbl_sub('dnswl-firsttrusted', '127.0.\d+.2')
+score    RCVD_IN_DNSWL_MED    -4
+describe RCVD_IN_DNSWL_MED    Sender listed at http://www.dnswl.org/, medium trust
+
+header   RCVD_IN_DNSWL_HI     eval:check_rbl_sub('dnswl-firsttrusted', '127.0.\d+.3')
+score    RCVD_IN_DNSWL_HI     -8
+describe RCVD_IN_DNSWL_HI     Sender listed at http://www.dnswl.org/, high trust
+
+meta     RCVD_IN_DNSWL_NO     !RCVD_IN_DNSWL
+score    RCVD_IN_DNSWL_NO     0.1
+describe RCVD_IN_DNSWL_NO     Sender *not* listed at http://www.dnswl.org/
+</pre>
+<br />
+<br />
+To get SpamProbe to pay attention to the DNSWL I ran this command (which will overwrite your config file):
+<pre>
+spamprobe -H+x-dnswl create-config  # needs to be lowercase
+</pre>
+<br />
+<br />
+To install all relevant packages on a Debian based system, run:<br />
+<span class="tt">aptitude update;aptitude install postgrey spamassassin spamprobe clamav</span><br />
+Versions on Debian Stable are typically pretty ancient. To keep up with spam it can be pretty important to verify you're running a reasonably recent version of this software.
+<hr />
+<a href="http://www.spamhaus.org/faq/answers.lasso?section=Spamhaus%20SBL#20">How do I keep my spammers off my network?</a><br />
+<a href="http://www.dnswl.org/request.shtml">Submit your mail server to DNSWL.org to be whitelisted.</a>
+<hr />
+<a href="../cgi-bin/referercomment.cgi.html">Comment on this page.</a><br />
+<a href="../index.html">Return to Darxus' home page.</a><br />
+Sat Apr 16 11:25:46 EDT 2011
+</div>
+</body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=7"/>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel='stylesheet' href='http://l-stat.livejournal.com/ad_base.css' type='text/css' />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://darxus.livejournal.com/data/foaf" />
+<meta name="foaf:maker" content="foaf:mbox_sha1sum '107c1745aac3c319c0e1588eb400be77055f48e8'" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+// don't crawl this.  read http://www.livejournal.com/developer/exporting.bml
+var LJ_cmtinfo = {"1233578":{"rc":[],"u":"darxus","parent":1233066,"full":1},"canAdmin":0,"1233322":{"rc":[1233834],"u":"darxus","parent":1232810,"full":1},"1235882":{"rc":[1236138],"u":"feng_huang","parent":1235626,"full":1},"journal":"darxus","form_auth":"c0:1279209600:2868:86400:Ira53IwRJS-0-ZbBX5CTAcWkQ392:e170778ac5f4b9dd5d9ffecb7f088817","1234858":{"rc":[1235114],"u":"feng_huang","parent":1234346,"full":1},"remote":null,"1236138":{"rc":[1236394],"u":"darxus","parent":1235882,"full":1},"1237162":{"rc":[],"u":"darxus","parent":1236906,"full":1},"1233834":{"rc":[1234346,1234602],"u":"feng_huang","parent":1233322,"full":1},"1235370":{"rc":[1235626],"u":"feng_huang","parent":1235114,"full":1},"1236650":{"rc":[1236906],"u":"darxus","parent":1236394,"full":1},"1233066":{"rc":[1233578],"u":"frobzwiththingz","parent":null,"full":1},"1235626":{"rc":[1235882],"u":"darxus","parent":1235370,"full":1},"1234602":{"rc":[],"u":"darxus","parent":1233834,"full":1},"1236394":{"rc":[1236650],"u":"feng_huang","parent":1236138,"full":1},"1236906":{"rc":[1237162,1237418],"u":"feng_huang","parent":1236650,"full":1},"1234346":{"rc":[1234858],"u":"darxus","parent":1233834,"full":1},"1232810":{"rc":[1233322],"u":"feng_huang","parent":null,"full":1},"1235114":{"rc":[1235370],"u":"darxus","parent":1234858,"full":1},"1237418":{"rc":[],"u":"darxus","parent":1236906,"full":1}}
+</script>
+        <script type="text/javascript">
+            Site = window.Site || {};
+
+            (function(){
+                var p = {"siteroot":"http://www.livejournal.com","currentJournalBase":"http://darxus.livejournal.com","inbox_update_poll":0,"currentJournal":"darxus","remote_can_track_threads":null,"statprefix":"http://l-stat.livejournal.com","ctx_popup":1,"media_embed_enabled":1,"server_time":1279212468,"has_remote":0,"remote_is_suspended":0,"imgprefix":"http://l-stat.livejournal.com/img","esn_async":1}, i;
+                for (i in p) Site[i] = p[i];
+            })();
+       </script>
+    <script type="text/javascript" src="http://l-stat.livejournal.com/js/??jquery.js,jquery_fn.js,basic.js,livejournal.js,esn.js,ippu.js,lj_ippu.js,ljwidget.js,ljwidget_ippu.js,journal.js,hourglass.js,md5.js,login.js,contextualhover.js,livejournal-local.js,thread_expander.js,journal.js,quickreply.js?v=1277844792"></script>
+<script type="text/javascript" src="http://l-stat.livejournal.com/js/??commentmanage.js?v=1268768846"></script>
+<link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??lj_base.css,esn.css,contextualhover.css?v=1277844792" />
+<!--[if IE]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??ie.css?v=1268859548" /><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??interstitial_banner_us.css?v=1263499801" /><![endif]-->
+<script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=1483b796-4406-4000-98db-019c32f6059e&amp;type=website&amp;embeds=true&amp;post_services=livejournal%2Cfacebook%2Ctwitter%2Cmyspace%2Cdigg%2Cdelicious%2Clinkedin%2Cfriendfeed%2Cwordpress%2Cblogger%2Cgoogle_bmarks%2Ctechnorati&amp;onmouseover=false"></script><link rel="stylesheet" href="http://darxus.livejournal.com/res/18152266/stylesheet?1277845271" type="text/css" />
+<title>Darxus - I made up a new way of blocking spam:  MTX records</title>
+
+</head>
+
+<body class="page_entry">
+
+<div id="shadowhack1">
+<div id="shadowhack2">
+
+<div id="pagecontainer">
+
+<div id="title">
+<h1>Darxus</h1><div id="journal_subtitle">I made up a new way of blocking spam:  MTX records</div>
+</div>
+
+<div id="paraphernalia">
+<div class="pbox" id="journalinfo"><h2>Darxus</h2><div class="pboxcontent">
+<div id="journalinfouserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt="2009-09-29"height="100" width="100"  /></div>
+<div class="journallinkbar">     <a href="http://www.livejournal.com/todo/?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s to-do list" title="darxus&#39;s to-do list" src="http://l-stat.livejournal.com/img/btn_todo.gif"  /></a>  <a href="http://www.livejournal.com/tools/memories.bml?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s memories" title="darxus&#39;s memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="http://www.livejournal.com/tools/tellafriend.bml?user=darxus"><img border='0' width="24" height="24" alt="Tell a friend about darxus" title="Tell a friend about darxus" src="http://l-stat.livejournal.com/img/btn_tellfriend.gif"  /></a>  <a href="http://www.livejournal.com/tools/search.bml?user=darxus"><img border='0' width="24" height="24" alt="Search darxus" title="Search darxus" src="http://l-stat.livejournal.com/img/btn_search.gif"  /></a>  <a href="http://www.livejournal.com/friends/nudge.bml?user=darxus"><img border='0' width="24" height="24" alt="Nudge darxus" title="Nudge darxus" src="http://l-stat.livejournal.com/img/btn_nudge.gif"  /></a> </div></div></div>
+<div class="pbox" id="viewsel"><h2>View</h2><div class="pboxcontent">
+<ul>
+<li><a href="http://darxus.livejournal.com/">Recent Entries</a></li>
+<li><a href="http://darxus.livejournal.com/calendar">Archive</a></li>
+<li><a href="http://darxus.livejournal.com/friends">Friends</a></li>
+<li><a href="http://darxus.livejournal.com/profile">User Info</a></li>
+</ul>
+</div></div>
+
+</div>
+
+<div id="main">
+<div class="entry"><div class="entryheader">
+<h3 class="entrysubject">I made up a new way of blocking spam:  MTX records</h3><div class="entryposter"><span class='ljuser_darxus' style='white-space:nowrap;'><a href='http://www.livejournal.com/userinfo.bml?user=darxus'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align:bottom;border:0;' /></a><a href='http://www.livejournal.com/users/darxus/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate">2/10/10</span>
+    <span class="entrytimestamptime">10:14 pm</span></div><div class="entrylinkbarpre"><a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=273322&amp;dir=prev"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>      <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=273322"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="273322.html#"><img border='0' width="24" height="24" alt="Share this!" title="Share this!" src="http://l-stat.livejournal.com/img/btn_sharethis.gif"  /></a> <script type="text/javascript">
+            var stLink = jQuery('a:last')[0];
+            stLink.href = 'javascript:void(0)';
+            SHARETHIS_post = SHARETHIS.addEntry({url:'http://darxus.livejournal.com/273322.html', title: 'I made up a new way of blocking spam:  MTX records'}, {button: false});
+            SHARETHIS_post.attachButton(stLink);
+            SHARETHIS_ary.push(SHARETHIS_post);
+            </script>       <a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=273322&amp;dir=next"><img border='0' width="24" height="24" alt="Next Entry" title="Next Entry" src="http://l-stat.livejournal.com/img/btn_next.gif"  /></a></div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt="2009-09-29"height="100" width="100"  /></div></div>
+
+<div class="entrycontent"><a href="../mtx/index.html">http://www.chaosreigns.com/mtx/</a><br /><br />MTX records are just DNS A records on your DNS server stating that an IP is a legitimate mail transmitter.<br /><br />There is a SpamAssassin plugin for it on that page.</div>
+
+<div class="entryfooter">
+
+<ul class="entrymeta">
+<li><span class="entrymetacaption">Tags:</span> <div class='ljtags'><a rel='tag' href='http://darxus.livejournal.com/tag/spam'>spam</a></div></li>
+</ul>
+
+<div class="entrylinkbarpost"><a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=273322&amp;dir=prev"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>      <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=273322"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="273322.html#"><img border='0' width="24" height="24" alt="Share this!" title="Share this!" src="http://l-stat.livejournal.com/img/btn_sharethis.gif"  /></a> <script type="text/javascript">
+            var stLink = jQuery('a:last')[0];
+            stLink.href = 'javascript:void(0)';
+            SHARETHIS_post = SHARETHIS.addEntry({url:'http://darxus.livejournal.com/273322.html', title: 'I made up a new way of blocking spam:  MTX records'}, {button: false});
+            SHARETHIS_post.attachButton(stLink);
+            SHARETHIS_ary.push(SHARETHIS_post);
+            </script>       <a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=273322&amp;dir=next"><img border='0' width="24" height="24" alt="Next Entry" title="Next Entry" src="http://l-stat.livejournal.com/img/btn_next.gif"  /></a></div>
+<ul class="entrycmdlinks"><li><a href="http://darxus.livejournal.com/273322.html">18 comments</a></li><li><a onclick="return QuickReply.reply('topcomment',0,'')" href="http://darxus.livejournal.com/273322.html?mode=reply">Leave a comment</a></li></ul>
+<div  id="ljqrttopcomment" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1232810"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_feng_huang' lj:user='feng_huang' style='white-space: nowrap;'><a href='http://feng-huang.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://feng-huang.livejournal.com/'><b>feng_huang</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="1 hours after journal entry, 2/10/10 09:20 pm (feng_huang&#39;s time)">2/11/10 04:20 am (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/53648349/1206907" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">So, you basically re-invented SPF records?</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1232810',4815,'')" href="http://darxus.livejournal.com/273322.html?replyto=1232810">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1232810#t1232810">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1232810" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1233322"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="10 hours after journal entry, 08:49 am (darxus&#39;s time)">2/11/10 01:49 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Yes, it is intended to be the functionality of SPF without the forwarding breakage which is apparently a significant barrier to adoption.<br /><br />When a user configures one email account to automatically forward their email to another email account, it is generally done without rewriting the "envelope from" which SPF uses for validation.  So the forwarding server's IP doesn't match the SPF record of the original "envelope from".  And the "envelope from" rewriting solutions seem to be an even greater barrier to adoption.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1233322',4817,'')" href="http://darxus.livejournal.com/273322.html?replyto=1233322">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1232810#t1232810">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1233322#t1233322">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1233322" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1233834"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_feng_huang' lj:user='feng_huang' style='white-space: nowrap;'><a href='http://feng-huang.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://feng-huang.livejournal.com/'><b>feng_huang</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="11 hours after journal entry, 07:46 am (feng_huang&#39;s time)">2/11/10 02:46 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/53648349/1206907" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Oh, heh, I didn't notice that you mentioned SPF and DNSWL at the bottom of the page.  Regardless, I was just mildly teasing, and I don't think I was clear that I was.<br /><br />I'm curious, though: How does this not break un-munged forwarding?  If the envelope sender is unchanged, then the forwarding IP is going to unlikely going to have an MTX record at the originating domain, thus causing the same problem with forwarding accounts that SPF has.<br /><br />As an amusing side note, I independently had a similar idea back in 2003, when (apparently) some spammer who was pissed off I was reporting my spam to Spamcop started forging my domain on his spam.  I didn't really think through implementation details except, I reasoned, "MX records say where mail is supposed to go <b>to</b>; it would be awesome if we had records that say where it's supposed to come <b>from</b>.  Since it's the opposite of an MX, it would be called an 'XM' record."<br /><br />I guess, as I thought of it, it would require a new RR type.  And it was shortly after that that I heard of SPF records (which co-opt the TXT field and thus don't require a new RR type), and I think I also heard that SPF records weren't the first proposal of their type.<br /><br />I <b>do</b> like that yours doesn't have a confusing syntax like SPF records, just uses simple A records (like standard RBLs/DNSWLs), and therefore also doesn't require a new RR type.  And it would be pretty easy to use wildcards, at least on octet boundaries, to whitelist or explicitly blacklist, say, a whole /24 (if you're using BIND; it would be even easier with something like rbldnsd, to which you could delegate mtx.yourdoma.in, and which can use CIDR notation).</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1233834',4819,'')" href="http://darxus.livejournal.com/273322.html?replyto=1233834">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1233322#t1233322">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1233834#t1233834">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1233834" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1234346"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="13 hours after journal entry, 11:20 am (darxus&#39;s time)">2/11/10 04:20 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">It doesn't break un-munged forwarding because there is <i>no</i> association with a domain name.  The only authority is the delegate of the PTR record, they are the ones that point the IP to a domain, and then only to verify that the IP is a legitimate mail transmitter, not that it is specific to that domain.<br /><br />It's cool that you basically came up with the idea of SPF before it was implemented.  You should have implemented it <tt>:)</tt><br /><br />SPF did actually end up getting its own RR type.  My domain has the records.  Could still take a long time for that to become as widely supported as the TXT records.<br /><br />Yeah, the ability to delegate the mtx subdomain only occurred to me last night.  Along with the wild cards.  Good thing I did it that way.  It can be useful to follow widely established patterns even if you don't fully grasp them.  I finally fully grasp the reversal of IPs in host names.   <tt>:P</tt></div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1234346',4821,'')" href="http://darxus.livejournal.com/273322.html?replyto=1234346">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1233834#t1233834">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1234346#t1234346">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1234346" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1234858"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_feng_huang' lj:user='feng_huang' style='white-space: nowrap;'><a href='http://feng-huang.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://feng-huang.livejournal.com/'><b>feng_huang</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="14 hours after journal entry, 11:03 am (feng_huang&#39;s time)">2/11/10 06:03 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/53648349/1206907" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Oh!  I was laying out a typical mail-forwarding scenario for you to show me where I was misunderstanding, and I think I realized that we're assuming different things about the system.  I thought that you were saying that this was a system which is intended to say which servers are authorized to send mail <b>for a domain</b>, while I realized that you are laying out a system in which it is specified which servers are authorized <b>to send mail</b>, period.<br /><br />Is that it?<br /><br />So, basically, whoever controls reverse DNS for a particular IP gets to set the FQDN of the PTR record that's returned, and whoever controls the domain in that FQDN gets to say whether or not that machine is authorized to send mail at all.  (I was thinking that you'd use the domain part of the From: address.)<br /><br />I was thinking more along the lines of SPF, where if I'm forwarding mail from myname.com to, say, my Gmail address, you can't (under your system) create a record that Gmail can look up that says that my server is authorized to send mail on behalf of yourdomain.com.<br /><br />Oh, heh, I just read the "Conceptual origin" section.  I think I understand your proposal better now; I just misunderstood your intent.<br /><br />One thing about SPF that could maybe help alleviate the problem is the use of the Resent-From: header (which Mutt, for example, adds when you use the bounce ('b') command), which wouldn't change the From: header, but it would allow for the proper SPF records to be looked up.<br /><br />Now that (I think) I understand the purpose of MTX records a bit better, I don't think that delegation would be as useful.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1234858',4823,'')" href="http://darxus.livejournal.com/273322.html?replyto=1234858">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1234346#t1234346">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1234858#t1234858">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1234858" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1235114"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="15 hours after journal entry, 01:57 pm (darxus&#39;s time)">2/11/10 06:57 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Yes.<br /><br />People are also very resistant to modifying SMTP to get around SPF's forwarding problem.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1235114',4824,'')" href="http://darxus.livejournal.com/273322.html?replyto=1235114">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1234858#t1234858">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1235114#t1235114">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1235114" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1235370"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_feng_huang' lj:user='feng_huang' style='white-space: nowrap;'><a href='http://feng-huang.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://feng-huang.livejournal.com/'><b>feng_huang</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="1 days after journal entry, 2/11/10 11:22 pm (feng_huang&#39;s time)">2/12/10 06:22 am (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/53648349/1206907" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">My response to that is that people were also once opposed to limiting relay access on their mail servers, but we eventually got over that, too. <tt>;-)</tt><br /><br />Honestly, I think that MTX records are of limited utility&mdash;mainly useful in cases where the owner of the IP's authoritative name server and the person who runs the server (and therefore, would presumably own the domain name that the IP reverses to) disagree on whether or not it should be sending mail.  I don't think that domains or zones that publish MTX records for machines which spam would get blacklisted in any meaningful way (certainly not as meaningful as DNSBLs today).<br /><br />I am certainly open to being convinced otherwise and/or proven wrong, though.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1235370',4825,'')" href="http://darxus.livejournal.com/273322.html?replyto=1235370">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1235114#t1235114">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1235370#t1235370">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1235370" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1235626"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="1 days after journal entry, 11:09 am (darxus&#39;s time)">2/12/10 04:09 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Limited utility?  I would say it applies to the vast majority of the spam I receive that has a PTR record (and I reject everything without a PTR record).  In fact, all of the first 10 from yesterday's mail log are broadband or dialup:<br /><br /># cat mail.log.0 | grep reject: | awk '{print $10}' | grep -v '^unknown\[' | cut -d'[' -f1 | head<br />cable200-116-4-57.epm.net.co<br />cable200-116-4-57.epm.net.co<br />stgt-5d841c43.pool.mediaWays.net<br />cable200-116-4-57.epm.net.co<br />201-68-227-171.dsl.telesp.net.br<br />ppp-124-120-118-226.revip2.asianet.co.th<br />201-68-211-174.dsl.telesp.net.br<br />33-21-135-95.pool.ukrtel.net<br />109-184-4-179.dynamic.mts-nn.ru<br />cable-94-189-198-185.dynamic.sbb.rs<br /><br />(Just because you're the most annoying about this, I used cat because I've been switching between how many files I'm running through grep.)<br /><br />Also, in cases where an MTX validating domain sends both legit mail and spam, I plan to provide the ability to blacklist so that it only negates the bonus for using MTX, so in that case the net effect is 0.  Or whatever you want it to be for that domain.<br /><br />So for:<br />Most spamming hosts:  The owner creates no MTX record = SA penalty<br />Most legit mail servers:  The owner creates an MTX record = SA bonus<br />Hosts which send both spam and non-spam:  The owner creates an MTX record, and a blacklist is used to negate the bonux = SA score 0<br />Spammers using MTX:  Major penalty for blacklisting.<br />Legit servers without MTX:  With no MTX record = SA penalty, starting at 0 and raising gradually as adoption spreads.<br /><br />So spammers are actually better off not using MTX, because the penalty for getting blacklisted is worse than the penalty for not having the record.  Also, MTX records allow the spam to be associated with their domain, and therefore registrar, who can then be subpoened for the spammer's identity.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1235626',4826,'')" href="http://darxus.livejournal.com/273322.html?replyto=1235626">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1235370#t1235370">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1235626#t1235626">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1235626" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1235882"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_feng_huang' lj:user='feng_huang' style='white-space: nowrap;'><a href='http://feng-huang.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://feng-huang.livejournal.com/'><b>feng_huang</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="2 days after journal entry, 10:56 am (feng_huang&#39;s time)">2/13/10 05:56 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/53648349/1206907" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">I know that is not a random sample, but I'll point out that all of those are on the DUL.  You could assign a SA penalty for that.<br /><br />DNSWL's big weakness (centralization) is also its big advantage: They vet the entries on the list, at least somewhat, and assign a trustworthiness rating, and if one of IPs on the list starts spamming, it gets removed (and probably placed on at least one of several DNSBLs).  (I myself am using my own blacklist, DNSWL, bl.spamcop.net, psbl.surriel.com, and cbl.abuseat.org.)</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1235882',4827,'')" href="http://darxus.livejournal.com/273322.html?replyto=1235882">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1235626#t1235626">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1235882#t1235882">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1235882" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1236138"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="2 days after journal entry, 01:14 pm (darxus&#39;s time)">2/13/10 06:14 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">I'm not saying those IPs weren't easy to block without MTX.  They were, in fact, easily rejected before they got to SpamAssassin.  Or even the one RBL I use before SA, zen.spamhaus.org.  All <br />were user unknown or non-FQDN helo.  <br /><br />My point is that a blacklist of MTX abusers should be much easier to keep up to date than, for example, the DUL or zen.spamhaus.org.  Less work, more up to date, more accurate.<br /><br />That is certainly an important advantage of DNSWL, one that I mention in the new "Comparisons" section <tt>:)</tt><br /><br />But I assure you, that list is a pain in the ass to maintain.  Speaking as a long time admin of it, and probably the person who introduced you to it.  You might be interested in reading <a href="../mtx/background/index.html">http://www.chaosreigns.com/mtx/backgrou<wbr />nd/</a> if you haven't.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1236138',4828,'')" href="http://darxus.livejournal.com/273322.html?replyto=1236138">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1235882#t1235882">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1236138#t1236138">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1236138" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1236394"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_feng_huang' lj:user='feng_huang' style='white-space: nowrap;'><a href='http://feng-huang.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://feng-huang.livejournal.com/'><b>feng_huang</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="2 days after journal entry, 11:36 am (feng_huang&#39;s time)">2/13/10 06:36 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/53648349/1206907" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">I didn't realize you're an admin of DNSWL.  And yes, I think I recall reading something on your site some time ago where you mentioned DNSWL.  When I started using various BLs, I decided to use DNSWL, too.<br /><br />Besides spammers creating their own MTX records and every email admin in the world needing to maintain their own MTX blacklist, I don't hold out high hopes for people creating MTX records.  If my own electric company and dice.com can't configure their mail servers with a proper hostname (thereby getting caught by Postfix's reject_unknown_helo_hostname, which I've had to temporarily remove from time to time, and that I've removed for the time being due to job hunting), I can't see that many people creating MTX records.<br /><br />Hell, I think the only reason people create MX records to begin with is so that mail doesn't go to what is usually their main web server(s) and so that they can have a backup mail server to receive incoming messages in the event the main server goes down.  SPF isn't faring very well, either; between people that haven't heard of it and people that refuse to use it, and people that don't bother using it, it's not getting very far.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1236394',4829,'')" href="http://darxus.livejournal.com/273322.html?replyto=1236394">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1236138#t1236138">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1236394#t1236394">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1236394" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1236650"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="2 days after journal entry, 02:17 pm (darxus&#39;s time)">2/13/10 07:17 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Yeah, I found DNSWL as a result of coming up with the idea myself and checking to see if it had already been done.  And it was.  Fully up and running, in a way that I was entirely happy with.  Although Matthias didn't like the idea for penalizing anybody for not being on the list, as I wanted to do.  I also host one of the DNSWL servers.  Apparently since March 2007.<br /><br />I think SPF is doing pretty well.  Many large entities are using it, including gmail, AOL, and hotmail.  And that's in spite of the forwarding breakage which a bunch of people are very emotionally opposed to creating SPF records because of.  When I went looking for major sites using SPF, I had no difficulty:<br /><br /><a href="../spam/index.html#spf_users">http://www.chaosreigns.com/spam/#spf_us<wbr />ers</a><br /><br />And honestly, I think MTX is easier to understand and implement than a valid helo.  How many people understand the terms "helo" vs. "whitelist"?  When I very recently created an SPF record for my helo, since SA is checking those now, it took me a little while to figure out what HELO my server was actually sending.  It was the obvious one, and defined in a pretty obvious place, but still not instant to confirm.  And dice.com does have an SPF record.  <br /><br />And I think simplicity is a significant advantage for MTX over SPF.  One mail server, one extra DNS A record.  The entire protocol can be specified in one line.  Have you seen the spec for SPF, or some of the crazy stuff they come up with in records?  <br /><br />I really don't think there will be many spammers who use MTX, because from the start it comes with blacklisting.  Hell, I should state that as a rule for implementations (done).  And if they do, a public centralized and very small MTX specific blacklist will be created for those who don't wish to maintain their own.  I have considered the possibility that such a thing might be necessary for wide spread adoption, even if there are no spammers using MTX.  But still I think MTX has the advantage of not depending on centralized authority because I believe a blacklist will be easy enough for one person to maintain.<br /><br />Also, most importantly, I benefit from MTX now.  I catch more spams (score MTX_FAIL 2), and if I get a false positive, the sender gets informed, and has the possibility of doing something to fix it.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1236650',4830,'')" href="http://darxus.livejournal.com/273322.html?replyto=1236650">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1236394#t1236394">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1236650#t1236650">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1236650" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1236906"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_feng_huang' lj:user='feng_huang' style='white-space: nowrap;'><a href='http://feng-huang.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://feng-huang.livejournal.com/'><b>feng_huang</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="2 days after journal entry, 02:43 pm (feng_huang&#39;s time)">2/13/10 09:43 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/53648349/1206907" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent"><blockquote type="cite">I think SPF is doing pretty well. Many large entities
+are using it, including gmail, AOL, and hotmail. And that's in spite of the
+forwarding breakage which a bunch of people are very emotionally opposed to
+creating SPF records because of. When I went looking for major sites using
+SPF, I had no difficulty:</blockquote>Okay, I concede that point, and I
+also think I didn't convey what I wished, which is that among people who
+have heard of it and aren't philosophically opposed to it, it's more than
+likely laziness that's preventing them from creating just one additional
+DNS record, as opposed to one additional record per server.
+
+<p>(BTW, the #spf_users tag on that link didn't work.  You have it as an
+'id' attribute to an h2 tag, whereas you need an <tt>&lt;a
+name="spf_users"&gt;</tt> tag.  I'm using Firefox 3.5 on Linux.)
+
+<p>I've not looked at the spec for SPF, but the record itself is ugly, I
+agree.  Fortunately, they have a CGI script that will generate the record
+for you. <tt>;-)</tt>
+
+<p>Really, if you don't know what a 'helo' is, you shouldn't be running a
+mail server, IMNSHO.  I think that "Hello, my name is _____" is a pretty
+simple concept for people to understand, anyway.  "You have to give me a
+real name that I can look up" is pretty simple, too, and yet people still
+get it wrong.
+
+<p>And while dice.com does have an SPF record, it doesn't help if you're
+requiring mail servers to tell you a real name that you can look up, and
+they're not properly identifying themselves:
+
+<p><tt>Feb  6 13:33:08 dr-evil postfix/smtpd[14286]: NOQUEUE: reject: RCPT
+from mailbox51.dice.com[65.198.147.51]: 450 4.7.1
+&lt;colomailbox.dice.com&gt;: Helo command rejected: Host not found;
+from=&lt;support@dice.com&gt; to=&lt;my@ddre.ss&gt; proto=ESMTP
+helo=&lt;colomailbox.dice.com&gt;</tt>
+
+<p>That was my point.  If people can't even get the hostnames they're using
+for their mail servers in DNS properly now, why would they create extra
+records?  (I no longer have the log entries, but my electric company was
+using srp.gov, which doesn't exist, instead of srpnet.com.  I don't think
+"Set your hostname to something that can be looked up" is too onerous of a
+rule, either.  They (the electric company, not Dice) have since fixed it,
+probably in part because I was just bouncing their mail after I temporarily
+allowed their signup confirmation message in.)
+
+<p>As for catching more spam, I would be interested to know if it has
+improved your <i>accuracy</i> rate.  I can create a regex that will
+reliably catch 100% of spam.  Here it is: <tt>/./</tt>
+
+<p>I'm still working on the false positives, though. <tt>;-)</tt>
+
+<p>Anyway, I realize that it hasn't even been a week, but since you've
+stated that you're catching more spam with it now, I'm interested in the
+particulars behind that claim.  (In my opinion just "catching more spam"
+isn't enough; "improving accuracy" is the goal, and the false positives you
+mentioned concern me a little.)  Has it actually improved your accuracy
+rate?  Is the rate different than if you had merely penalized <i>every</i>
+email by the same amount, or if you had lowered the SA threshold by the
+same amount?  Do you know if there are any other domains with MTX records
+besides yours and mine?
+
+<p>Sorry if I come across as overly negative; I just don't see a
+significant benefit (although there's obviously no harm by creating the
+record, which is why I went ahead and did it).
+</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1236906',4831,'')" href="http://darxus.livejournal.com/273322.html?replyto=1236906">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1236650#t1236650">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1236906#t1236906">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1236906" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1237162"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="2 days after journal entry, 2/13/10 07:11 pm (darxus&#39;s time)">2/14/10 12:11 am (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">When did "id" become a valid attribute of all entities?  Maybe that wasn't until HTML5?  It works for me with firefox v3.5.3.  The WDG validator isn't throwing an error on it, but there are enough other errors on that page that they could be hiding it.  <br /><br />I highly doubt the SPF CGI script will generate the ugly SPF records I've seen.  And I suspect they're ugly out of necessity.<br /><br />I pointed out that dice.com has an SPF record only because you gave it as an example of someone too incompetent to provide a valid helo, and therefore, I think, unlikely to create an MTX record.<br /><br />Obviously, MTX has increased my accuracy rate for spam, while decreasing accuracy for non-spam.  Overall accuracy isn't really worth comparing, I think.  But the part that matters to me is that the cases where I'm decreasing accuracy with false positives, I'm notifying the sender and giving them a way to fix it.<br /><br />I'm sure the current effect is statistically very similar to giving all emails an extra +2.  The difference, as I said, is the notification, and ability to fix it.<br /><br />I don't mind your negativity, I appreciate the additional analysis.<br /><br />And I've gotten quite a lot more negativity than from you.  It is apparently common for people to think that they came up with a new and useful method for dealing with spam.  They're almost always wrong.  It shows in the responses.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1237162',4832,'')" href="http://darxus.livejournal.com/273322.html?replyto=1237162">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1236906#t1236906">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1237162#t1237162">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1237162" style="display: none;"></div>
+
+</div>
+</div></li>
+<li><div class="entry" id="ljcmt1237418"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="2 days after journal entry, 2/13/10 07:28 pm (darxus&#39;s time)">2/14/10 12:28 am (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">That page is now validated HTML5.  I'm curious if the spf_users link works for you now.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1237418',4833,'')" href="http://darxus.livejournal.com/273322.html?replyto=1237418">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1236906#t1236906">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1237418#t1237418">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1237418" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><div class="entry" id="ljcmt1234602"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="13 hours after journal entry, 11:21 am (darxus&#39;s time)">2/11/10 04:21 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">I just added a "Conceptual Origin" section.  All about SPF and DNSWL.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1234602',4822,'')" href="http://darxus.livejournal.com/273322.html?replyto=1234602">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1233834#t1233834">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1234602#t1234602">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1234602" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><div class="entry" id="ljcmt1233066"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_frobzwiththingz' lj:user='frobzwiththingz' style='white-space: nowrap;'><a href='http://frobzwiththingz.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://frobzwiththingz.livejournal.com/'><b>frobzwiththingz</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="2 hours after journal entry">2/11/10 06:13 am (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/85806905/5730416" title="" alt=""height="100" width="81"  /></div></div>
+
+<div class="entrycontent">a) How is this *functionally* different, as opposed to *syntactically* different, from an SPF record?<br /><br />b) I have SPF records for all of my domains. Have had them for more than 5 years now. As of this writing, not  enough of the rest of the world has also done it, making it still something i can't really use as a decent wheat/chaff separator. Sigh. Even if you reply with something I'm not seeing in (a),  I don't hold much hope. </div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1233066',4816,'')" href="http://darxus.livejournal.com/273322.html?replyto=1233066">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1233066#t1233066">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1233066" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1233578"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="10 hours after journal entry, 09:00 am (darxus&#39;s time)">2/11/10 02:00 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">a) See my previous comment for functional difference (forwarding breakage).<br /><br />b) I tried to address this in the "Implementation Sequence" section.  I think it's useful for whitelisting now.  And I am hopeful that people will adopt it for that reason - reducing false positives.  Meanwhile I am also using it to increase the spamminess score of email without an MTX record to catch more spam.  This requires a willingness to cause a small number of false positives - which I have largely because I have SpamAssassin configured to run during SMTP delivery so I can reject spams, causing un-forged senders to get an error message without causing backscatter.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1233578',4818,'')" href="http://darxus.livejournal.com/273322.html?replyto=1233578">Reply</a></li><li><a href="http://darxus.livejournal.com/273322.html?thread=1233066#t1233066">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/273322.html?thread=1233578#t1233578">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1233578" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul></li>
+</ul>
+</div>
+
+
+
+<div id="server_sig">Powered by <a href="http://www.livejournal.com/">LiveJournal.com</a></div></div>
+
+</div>
+</div>
+
+<div id='hello-world' style='text-align: left; font-size:0; line-height:0; height:0; overflow:hidden;'>
+<script type="text/javascript"> var DR_id = 1111; </script>
+<script src="http://l-stat.livejournal.com/js/pagestats/DR_v4u3.js" type="text/javascript"></script>
+    </div></body>
+</html>

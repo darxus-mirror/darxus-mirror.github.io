@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 6 November 2007), see www.w3.org" />
+<title>Enlightenment Desktops</title>
+<link rel='StyleSheet' href="/dark.css" type="text/css" />
+<style type='text/css'>
+/*<![CDATA[*/
+img { 
+  border:2px;
+  border-style: solid;
+}
+/*]]>*/
+</style>
+</head>
+<body>
+<div>NO, I DID NOT CREATE THESE IMAGES SO I CAN'T GIVE YOU PERMISSION TO USE THEM FOR YOUR BAND.<br />
+<b><a href="/imagelinking.html">Warning: do not link directly to images on this site.</a></b><br />
+<br />
+<a href="cold.jpg"><img src="tn_cold.jpg" alt="cold.jpg" /></a> <a href="gears.jpg"><img src="tn_gears.jpg" alt="gears.jpg" /></a> <a href="gothic-angel.jpg"><img src="tn_gothic-angel.jpg" alt="gothic-angel.jpg" /></a> <a href="insodus.jpg"><img src="tn_insodus.jpg" alt="insodus.jpg" /></a> <a href="scab-picker.jpg"><img src="tn_scab-picker.jpg" alt="scab-picker.jpg" /></a><br />
+<br />
+These are the images I use for my backgrounds (click to enlarge). They are from the <a href="http://www.darkalloy.com/?themes#darkalloy">DarkAlloy</a> <a href="http://www.enlightenment.org">Enlightenment</a> theme created by <a href="http://www.egyptian.net/~scarab/">Scarab</a>. The middle one, gothic-angel, is my favorite.
+<hr />
+<table border='0' width="100%">
+<tr>
+<td align='center'><a href="e-anomoly-glass2.jpg"><img width='100' height='75' src="tn_e-anomoly-glass2.jpg" alt="e-anomoly-glass2.jpg" /><br />
+e-anomoly-glass2.jpg</a></td>
+<td align='center'><a href="e-anomoly-glass3.jpg"><img width='100' height='75' src="tn_e-anomoly-glass3.jpg" alt="e-anomoly-glass3.jpg" /><br />
+e-anomoly-glass3.jpg</a></td>
+</tr>
+</table>
+<br />
+These are screenshots from my desktop. From the lowest layer up:
+<ol>
+<li><a href="http://www.linux.org">Linux</a></li>
+<li><a href="http://www.xfree86.org">XFree86</a></li>
+<li><a href="http://www.enlightenment.org">Enlightenment</a> with theme <a href="http://e.themes.org/themes.phtml?themetxt=anomoly">Anomoly</a></li>
+<li><a href="http://www.eterm.org">Eterm</a> with theme <a href="http://www.eterm.org/themes/">Glass</a> (slightly modified)</li>
+</ol>
+I've never posted a desktop screenshot before, that I can remember, because I tend to not use X enough to bother to make it pretty enough to bother posting screenshots of.<br />
+<br />
+One day last week, I came across a screenshot on e.themes.org that had something in it I was *very* interested in -- it was the eterm in a picture on e.themes.org.<br />
+<br />
+An eterm.. transparent with beveled edges, including the titlebar.<br />
+<br />
+Yesterday I found out it was the "glass" theme. So I did a google search for eterm glass, and found it on eterm's themes page, set it up, and it was pretty, but not quite what I wanted. It didn't have the transparent/beveled titlebar.<br />
+<br />
+I asked in #e more about it. They said it was because I needed the eterm 0.9.1 version. I found a .deb of it, installed it, and loaded up the version of the glass theme for eterm 0.9.1. Looked exactly the way I wanted it. Except it didn't work the way I expected. The titlebar wasn't a titlebar -- it was just a menu bar. There was no way for me to drag the thing around.<br />
+<br />
+It sunk in that you couldn't do that with an eterm theme. You'd need an enlightenment theme.<br />
+<br />
+I want a glass theme for enlightenment... all the titlebars and stuff transparent and tinted, with beveled edges.<br />
+<br />
+In the meantime, I edited the glass theme, and remarked out the "borderless true" line so I could control the thing, and then went in search of an e theme that looked pretty with it.<br />
+<br />
+So I downloaded all the themes off of e.themes.org that had the string "dr16" in their name. Yes, over my 33.6 modem.<br />
+<br />
+Downloaded: 73,127,621 bytes in 108 files<br />
+<br />
+I don't think I've quite finished viewing the last few, but I've got through most.<br />
+<br />
+The one I liked was anomoly. It's neat. Very dark.. not only in colors but in shapes.. organic, not mechanical.<br />
+<br />
+Of course, I had my usual problem of not being able to freaking read anything at 1600x1200 on my 19" monitor, so I set about figuring out how to change the fonts in a theme. I ended up changing them to the fonts used on the warp (os/2) theme, because I noticed they were extreemly readable for their size.<br />
+<br />
+The background in the screenshot is taken from the theme DarkAlloy, from the same guy. There are a number of similarly cool backgrounds in it.
+<hr />
+<a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+<a href="/">Return to Darxus' home page.</a><br />
+Fri Nov 03 15:42:56 2000</div>
+<script type="text/javascript" src="/footer.js">
+</script>
+</body>
+</html>

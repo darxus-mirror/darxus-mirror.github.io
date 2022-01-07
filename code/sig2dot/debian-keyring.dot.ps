@@ -1,0 +1,6994 @@
+%!PS-Adobe-2.0
+%%Creator: dot version gviz1.5 (06-14-99)
+%%For: (darxus) ,,,
+%%Title: debian-keyring
+%%Pages: (atend)
+%%BoundingBox: 36 36 6734 2521
+%%EndComments
+%%BeginProlog
+save
+/DotDict 200 dict def
+DotDict begin
+
+%%BeginResource: procset
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+	dup 1 exch div /InvScaleFactor exch def
+	dup scale
+} bind def
+
+% styles
+/solid { } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw aligned label in bounding box aligned to current point
+% alignfactor tells what fraction to place on the left.
+% -.5 is centered.
+/alignedtext {			% text labelwidth fontsz alignfactor
+	/alignfactor exch def
+	/fontsz exch def
+	/width exch def
+	/text exch def
+	gsave
+		% even if node or edge is dashed, don't paint text with dashes
+		[] 0 setdash
+		currentpoint newpath moveto
+		text stringwidth pop
+		alignfactor mul fontsz -.3 mul rmoveto
+		text show
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+14 default-font-family set_font
+1 setmiterlimit
+% /arrowlength 10 def
+% /arrowwidth 5 def
+%%EndProlog
+%%Page: 1 1
+%%PageBoundingBox: 36 36 6734 2521
+%%PageOrientation: Portrait
+gsave
+35 35 6699 2486 boxprim clip newpath
+36 36 translate
+0 0 1 beginpage
+0 0 translate 0 rotate
+0.000 0.000 0.000 graphcolor
+14.00 /Times-Roman set_font
+
+%	Florian Lohoff
+gsave 10 dict begin
+filled
+0.667 1.000 1.000 nodecolor
+2778 2394 51 18 ellipse_path
+gsave 0 setgray stroke grestore fill
+gsave 10 dict begin
+0.000 0.000 0.000 nodecolor
+2778 2395 moveto (Florian Lohoff) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stefan Gybas
+gsave 10 dict begin
+filled
+0.667 1.000 1.000 nodecolor
+2640 2322 48 18 ellipse_path
+gsave 0 setgray stroke grestore fill
+gsave 10 dict begin
+0.000 0.000 0.000 nodecolor
+2640 2323 moveto (Stefan Gybas) 74 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Florian Lohoff -> Stefan Gybas
+newpath 2746 2380 moveto
+2724 2369 2694 2354 2672 2342 curveto
+stroke
+newpath 2672 2345 moveto
+2664 2338 lineto
+2674 2340 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Edward Betts
+gsave 10 dict begin
+filled
+0.667 1.000 1.000 nodecolor
+2640 1962 48 18 ellipse_path
+gsave 0 setgray stroke grestore fill
+gsave 10 dict begin
+0.000 0.000 0.000 nodecolor
+2640 1963 moveto (Edward Betts) 75 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Florian Lohoff -> Edward Betts
+newpath 2773 2376 moveto
+2755 2315 2700 2121 2666 2016 curveto
+2664 2008 2659 1998 2655 1989 curveto
+stroke
+newpath 2653 1990 moveto
+2650 1980 lineto
+2657 1988 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt
+gsave 10 dict begin
+filled
+0.667 1.000 1.000 nodecolor
+865 378 71 18 ellipse_path
+gsave 0 setgray stroke grestore fill
+gsave 10 dict begin
+0.000 0.000 0.000 nodecolor
+865 379 moveto (Roland Bauerschmidt) 121 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Florian Lohoff -> Roland Bauerschmidt
+newpath 2727 2394 moveto
+2139 2393 1559 2375 980 2340 curveto
+889 2334 804 2294 716 2268 curveto
+529 2210 313 2184 168 2052 curveto
+104 1992 48 1905 48 1818 curveto
+48 1818 48 1818 48 1170 curveto
+48 1102 340 479 388 432 curveto
+411 410 655 390 787 381 curveto
+stroke
+newpath 785 379 moveto
+795 381 lineto
+785 384 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bdale Garbee (N3EUA)
+gsave 10 dict begin
+solid
+3044 2322 77 18 ellipse_path
+stroke
+gsave 10 dict begin
+3044 2323 moveto (Bdale Garbee \(N3EUA\)) 134 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Florian Lohoff -> Bdale Garbee (N3EUA)
+newpath 2819 2383 moveto
+2864 2371 2936 2351 2987 2338 curveto
+stroke
+newpath 2984 2336 moveto
+2994 2336 lineto
+2985 2341 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian T. Steigies
+gsave 10 dict begin
+solid
+4485 378 67 18 ellipse_path
+stroke
+gsave 10 dict begin
+4485 379 moveto (Christian T. Steigies) 114 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Florian Lohoff -> Christian T. Steigies
+newpath 2829 2392 moveto
+3046 2381 3895 2340 3895 2340 curveto
+3959 2333 4028 2314 4072 2268 curveto
+4133 2205 4188 2121 4188 2034 curveto
+4188 2034 4188 2034 4188 1242 curveto
+4188 1161 4207 1078 4244 1008 curveto
+4320 866 4493 770 4520 612 curveto
+4529 552 4529 489 4513 432 curveto
+4513 432 4505 418 4498 404 curveto
+stroke
+newpath 4496 406 moveto
+4494 396 lineto
+4501 404 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Steve McIntyre
+gsave 10 dict begin
+solid
+3402 882 53 18 ellipse_path
+stroke
+gsave 10 dict begin
+3402 883 moveto (Steve McIntyre) 86 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Florian Lohoff -> Steve McIntyre
+newpath 2828 2390 moveto
+2966 2377 3357 2338 3561 2268 curveto
+3591 2257 3591 2209 3591 2178 curveto
+3591 2178 3591 2178 3591 1674 curveto
+3591 1438 3444 1021 3409 909 curveto
+stroke
+newpath 3407 910 moveto
+3406 900 lineto
+3412 909 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Stefan Gybas -> Florian Lohoff
+newpath 2745 2374 moveto
+2723 2361 2694 2347 2672 2336 curveto
+stroke
+newpath 2745 2371 moveto
+2753 2378 lineto
+2743 2376 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Stefan Gybas -> Edward Betts
+newpath 2635 2304 moveto
+2631 2274 2631 2213 2631 2178 curveto
+2631 2178 2631 2178 2631 2106 curveto
+2631 2075 2631 2022 2634 1990 curveto
+stroke
+newpath 2632 1990 moveto
+2635 1980 lineto
+2636 1990 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Oliver M. Bolzer
+gsave 10 dict begin
+filled
+0.667 1.000 1.000 nodecolor
+949 1602 58 18 ellipse_path
+gsave 0 setgray stroke grestore fill
+gsave 10 dict begin
+0.000 0.000 0.000 nodecolor
+949 1603 moveto (Oliver M. Bolzer) 95 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stefan Gybas -> Oliver M. Bolzer
+newpath 2592 2321 moveto
+2156 2316 1729 2306 1303 2268 curveto
+1210 2259 1035 2272 1035 2178 curveto
+1035 2178 1035 2178 1035 2034 curveto
+1035 1906 915 1808 861 1692 curveto
+856 1681 854 1665 861 1656 curveto
+867 1650 890 1634 910 1621 curveto
+stroke
+newpath 907 1620 moveto
+917 1617 lineto
+910 1624 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Torsten Landschoff
+gsave 10 dict begin
+filled
+0.667 1.000 1.000 nodecolor
+732 2106 65 18 ellipse_path
+gsave 0 setgray stroke grestore fill
+gsave 10 dict begin
+0.000 0.000 0.000 nodecolor
+732 2107 moveto (Torsten Landschoff) 109 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stefan Gybas -> Torsten Landschoff
+newpath 2592 2322 moveto
+2375 2322 1482 2321 1009 2268 curveto
+928 2258 807 2171 756 2130 curveto
+stroke
+newpath 755 2132 moveto
+749 2124 lineto
+758 2129 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian Kurz
+gsave 10 dict begin
+filled
+0.667 1.000 1.000 nodecolor
+1251 234 51 18 ellipse_path
+gsave 0 setgray stroke grestore fill
+gsave 10 dict begin
+0.000 0.000 0.000 nodecolor
+1251 235 moveto (Christian Kurz) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stefan Gybas -> Christian Kurz
+newpath 2657 2305 moveto
+2698 2268 2799 2177 2799 2106 curveto
+2799 2106 2799 2106 2799 1962 curveto
+2799 1800 2694 1654 2617 1512 curveto
+2552 1390 2497 1260 2411 1152 curveto
+2348 1071 2221 1056 2163 972 curveto
+2126 917 2135 828 2079 792 curveto
+2012 746 1907 799 1837 756 curveto
+1752 702 1644 623 1644 522 curveto
+1644 522 1644 522 1644 378 curveto
+1644 340 1611 300 1575 288 curveto
+1490 257 1396 248 1308 240 curveto
+stroke
+newpath 1310 243 moveto
+1300 239 lineto
+1310 238 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Stefan Gybas -> Roland Bauerschmidt
+newpath 2592 2322 moveto
+2366 2323 1408 2324 902 2268 curveto
+665 2241 427 2169 219 2052 curveto
+144 2009 104 1904 104 1818 curveto
+104 1818 104 1818 104 1458 curveto
+104 1265 386 1146 386 954 curveto
+386 954 386 954 386 522 curveto
+386 489 395 441 426 432 curveto
+521 403 688 388 786 382 curveto
+stroke
+newpath 785 380 moveto
+795 381 lineto
+785 385 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Daniel Mester
+gsave 10 dict begin
+filled
+0.667 1.000 1.000 nodecolor
+1224 1386 50 18 ellipse_path
+gsave 0 setgray stroke grestore fill
+gsave 10 dict begin
+0.000 0.000 0.000 nodecolor
+1224 1387 moveto (Daniel Mester) 79 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stefan Gybas -> Daniel Mester
+newpath 2592 2320 moveto
+2367 2311 1428 2266 1428 2178 curveto
+1428 2178 1428 2178 1428 2106 curveto
+1428 2027 1334 1968 1334 1890 curveto
+1334 1890 1334 1890 1334 1818 curveto
+1334 1697 1255 1489 1231 1414 curveto
+stroke
+newpath 1228 1414 moveto
+1228 1404 lineto
+1233 1413 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Martin Schulze
+gsave 10 dict begin
+solid
+1233 2178 53 18 ellipse_path
+stroke
+gsave 10 dict begin
+1233 2179 moveto (Martin Schulze) 85 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stefan Gybas -> Martin Schulze
+newpath 2592 2321 moveto
+2411 2318 1760 2303 1411 2268 curveto
+1367 2263 1302 2225 1264 2199 curveto
+stroke
+newpath 1263 2201 moveto
+1256 2194 lineto
+1266 2197 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	David Frey
+gsave 10 dict begin
+solid
+4603 18 42 18 ellipse_path
+stroke
+gsave 10 dict begin
+4603 19 moveto (David Frey) 63 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stefan Gybas -> David Frey
+newpath 2688 2319 moveto
+2874 2308 3547 2268 3547 2268 curveto
+3638 2243 4526 1854 4551 1764 curveto
+4590 1618 4597 1464 4598 1314 curveto
+4598 1314 4598 1314 4598 1026 curveto
+4597 749 5011 582 5012 306 curveto
+5012 306 5012 306 5012 162 curveto
+5011 105 4759 49 4650 28 curveto
+stroke
+newpath 4650 31 moveto
+4641 26 lineto
+4651 26 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Othmar Pasteka
+gsave 10 dict begin
+solid
+1860 1314 55 18 ellipse_path
+stroke
+gsave 10 dict begin
+1860 1315 moveto (Othmar Pasteka) 88 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stefan Gybas -> Othmar Pasteka
+newpath 2592 2319 moveto
+2439 2310 1969 2272 1969 2178 curveto
+1969 2178 1969 2178 1969 1746 curveto
+1969 1625 1891 1417 1867 1342 curveto
+stroke
+newpath 1864 1342 moveto
+1864 1332 lineto
+1869 1341 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Paul Slootman
+gsave 10 dict begin
+solid
+4199 666 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+4199 667 moveto (Paul Slootman) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stefan Gybas -> Paul Slootman
+newpath 2688 2319 moveto
+2869 2307 3508 2268 3508 2268 curveto
+3539 2263 3535 2209 3535 2178 curveto
+3535 2178 3535 2178 3535 1674 curveto
+3535 1285 4010 1059 4251 756 curveto
+4259 746 4258 729 4251 720 curveto
+4245 710 4233 699 4222 690 curveto
+stroke
+newpath 4220 692 moveto
+4215 683 lineto
+4224 688 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	James Troup
+gsave 10 dict begin
+solid
+3459 2250 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+3459 2251 moveto (James Troup) 71 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stefan Gybas -> James Troup
+newpath 2687 2319 moveto
+2810 2309 3146 2284 3331 2268 curveto
+3351 2266 3381 2262 3406 2258 curveto
+stroke
+newpath 3406 2256 moveto
+3416 2257 lineto
+3406 2260 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Edward Betts -> Stefan Gybas
+newpath 2646 2298 moveto
+2649 2266 2649 2211 2649 2178 curveto
+2649 2178 2649 2178 2649 2106 curveto
+2649 2071 2649 2010 2645 1980 curveto
+stroke
+newpath 2649 2295 moveto
+2645 2304 lineto
+2644 2294 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Carsten Leonhardt
+gsave 10 dict begin
+solid
+1878 1890 62 18 ellipse_path
+stroke
+gsave 10 dict begin
+1878 1891 moveto (Carsten Leonhardt) 103 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Edward Betts -> Carsten Leonhardt
+newpath 2593 1958 moveto
+2477 1948 2176 1923 2008 1908 curveto
+1990 1906 1964 1903 1941 1899 curveto
+stroke
+newpath 1944 1902 moveto
+1934 1898 lineto
+1944 1897 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Edward Betts -> Steve McIntyre
+newpath 2684 1955 moveto
+2830 1929 3289 1842 3289 1746 curveto
+3289 1746 3289 1746 3289 1386 curveto
+3289 1289 3258 1194 3258 1098 curveto
+3258 1098 3258 1098 3258 1026 curveto
+3258 980 3323 931 3366 904 curveto
+stroke
+newpath 3365 901 moveto
+3375 898 lineto
+3368 906 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Julian Gilbey
+gsave 10 dict begin
+solid
+3042 882 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+3042 883 moveto (Julian Gilbey) 75 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Edward Betts -> Julian Gilbey
+newpath 2661 1946 moveto
+2739 1888 3007 1690 3007 1530 curveto
+3007 1530 3007 1530 3007 1386 curveto
+3007 1286 3083 1197 3083 1098 curveto
+3083 1098 3083 1098 3083 1026 curveto
+3083 993 3062 942 3050 910 curveto
+stroke
+newpath 3047 910 moveto
+3046 900 lineto
+3052 908 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Oliver M. Bolzer -> Stefan Gybas
+newpath 2585 2321 moveto
+2168 2316 1745 2306 1321 2268 curveto
+1228 2259 1053 2272 1053 2178 curveto
+1053 2178 1053 2178 1053 2034 curveto
+1053 1906 933 1808 879 1692 curveto
+874 1681 872 1665 879 1656 curveto
+885 1649 911 1632 929 1619 curveto
+stroke
+newpath 2582 2319 moveto
+2592 2321 lineto
+2582 2324 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Oliver M. Bolzer -> Torsten Landschoff
+newpath 777 2088 moveto
+795 2078 811 2065 814 2052 curveto
+840 1922 788 1781 828 1656 curveto
+836 1633 870 1619 900 1612 curveto
+stroke
+newpath 781 2089 moveto
+771 2091 lineto
+779 2084 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Oliver M. Bolzer -> Christian Kurz
+newpath 917 1587 moveto
+897 1575 872 1559 857 1548 curveto
+842 1537 831 1519 813 1512 curveto
+777 1495 735 1494 699 1476 curveto
+528 1383 254 1292 254 1098 curveto
+254 1098 254 1098 254 882 curveto
+254 807 198 740 198 666 curveto
+198 666 198 666 198 378 curveto
+198 302 332 297 406 288 curveto
+406 288 1003 249 1194 237 curveto
+stroke
+newpath 1191 235 moveto
+1201 237 lineto
+1191 240 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Thimo Neubauer
+gsave 10 dict begin
+filled
+0.667 1.000 1.000 nodecolor
+1755 1674 58 18 ellipse_path
+gsave 0 setgray stroke grestore fill
+gsave 10 dict begin
+0.000 0.000 0.000 nodecolor
+1755 1675 moveto (Thimo Neubauer) 95 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Oliver M. Bolzer -> Thimo Neubauer
+newpath 1690 1668 moveto
+1536 1654 1150 1620 1005 1607 curveto
+stroke
+newpath 1689 1665 moveto
+1699 1669 lineto
+1689 1670 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Oliver M. Bolzer -> Roland Bauerschmidt
+newpath 937 1584 moveto
+928 1563 914 1527 898 1512 curveto
+876 1489 831 1499 810 1476 curveto
+770 1430 724 1375 724 1314 curveto
+724 1314 724 1314 724 522 curveto
+724 490 733 455 754 432 curveto
+761 424 791 409 818 396 curveto
+stroke
+newpath 815 395 moveto
+825 393 lineto
+817 399 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Oliver M. Bolzer -> Daniel Mester
+newpath 967 1585 moveto
+1014 1545 1135 1450 1192 1408 curveto
+stroke
+newpath 1191 1406 moveto
+1200 1402 lineto
+1194 1410 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	David N. Welton
+gsave 10 dict begin
+solid
+752 1530 58 18 ellipse_path
+stroke
+gsave 10 dict begin
+752 1531 moveto (David N. Welton) 95 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Oliver M. Bolzer -> David N. Welton
+newpath 911 1588 moveto
+878 1576 832 1559 797 1546 curveto
+stroke
+newpath 799 1549 moveto
+790 1544 lineto
+800 1544 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Rosenfeld
+gsave 10 dict begin
+solid
+1434 1530 60 18 ellipse_path
+stroke
+gsave 10 dict begin
+1434 1531 moveto (Roland Rosenfeld) 100 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Oliver M. Bolzer -> Roland Rosenfeld
+newpath 1002 1595 moveto
+1088 1584 1256 1562 1354 1548 curveto
+1361 1547 1370 1545 1379 1543 curveto
+stroke
+newpath 1376 1541 moveto
+1386 1541 lineto
+1377 1546 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Wichert Akkerman
+gsave 10 dict begin
+filled
+0.000 1.000 1.000 nodecolor
+2816 810 64 18 ellipse_path
+gsave 0 setgray stroke grestore fill
+gsave 10 dict begin
+0.000 0.000 0.000 nodecolor
+2816 811 moveto (Wichert Akkerman) 107 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Edward Betts
+newpath 2648 1938 moveto
+2683 1834 2821 1416 2872 1188 curveto
+2896 1082 2901 962 2857 864 curveto
+2855 858 2842 841 2831 828 curveto
+stroke
+newpath 2652 1935 moveto
+2646 1944 lineto
+2647 1934 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	J.H.M. Dassen (Ray)
+gsave 10 dict begin
+filled
+0.667 1.000 1.000 nodecolor
+4179 738 69 18 ellipse_path
+gsave 0 setgray stroke grestore fill
+gsave 10 dict begin
+0.000 0.000 0.000 nodecolor
+4179 739 moveto (J.H.M. Dassen \(Ray\)) 117 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> J.H.M. Dassen (Ray)
+newpath 2871 801 moveto
+2902 796 2933 792 2933 792 curveto
+3306 775 3680 772 4052 756 curveto
+4068 755 4091 752 4113 748 curveto
+stroke
+newpath 4110 746 moveto
+4120 747 lineto
+4110 751 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Wichert Akkerman -> Thimo Neubauer
+newpath 1817 1666 moveto
+1875 1658 1961 1643 2009 1620 curveto
+2311 1476 2817 1360 2817 1026 curveto
+2817 1026 2817 1026 2817 954 curveto
+2817 918 2816 859 2816 828 curveto
+stroke
+newpath 1819 1668 moveto
+1809 1667 lineto
+1819 1663 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marcelo E. Magallon
+gsave 10 dict begin
+filled
+0.667 1.000 1.000 nodecolor
+1336 522 70 18 ellipse_path
+gsave 0 setgray stroke grestore fill
+gsave 10 dict begin
+0.000 0.000 0.000 nodecolor
+1336 523 moveto (Marcelo E. Magallon) 119 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Marcelo E. Magallon
+newpath 2753 806 moveto
+2526 795 2297 797 2074 756 curveto
+1893 722 1727 631 1550 576 curveto
+1528 568 1450 550 1395 536 curveto
+stroke
+newpath 1397 539 moveto
+1388 534 lineto
+1398 534 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Fabien Ninoles
+gsave 10 dict begin
+solid
+3866 738 53 18 ellipse_path
+stroke
+gsave 10 dict begin
+3866 739 moveto (Fabien Ninoles) 85 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Fabien Ninoles
+newpath 2872 801 moveto
+2904 797 2937 792 2942 792 curveto
+3154 776 3365 768 3576 756 curveto
+3638 752 3739 746 3805 742 curveto
+stroke
+newpath 3804 740 moveto
+3814 741 lineto
+3804 745 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bart Schuller
+gsave 10 dict begin
+solid
+3985 306 47 18 ellipse_path
+stroke
+gsave 10 dict begin
+3985 307 moveto (Bart Schuller) 74 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Bart Schuller
+newpath 2866 799 moveto
+2883 796 2901 794 2919 792 curveto
+3022 778 3128 783 3227 756 curveto
+3255 748 3440 521 3462 504 curveto
+3576 415 3827 343 3935 317 curveto
+stroke
+newpath 3934 315 moveto
+3944 315 lineto
+3935 320 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bart Warmerdam
+gsave 10 dict begin
+solid
+3985 450 59 18 ellipse_path
+stroke
+gsave 10 dict begin
+3985 451 moveto (Bart Warmerdam) 97 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Bart Warmerdam
+newpath 2865 799 moveto
+2883 796 2901 793 2919 792 curveto
+3058 777 3197 777 3334 756 curveto
+3355 752 3366 729 3383 720 curveto
+3409 705 3446 706 3464 684 curveto
+3508 631 3500 532 3561 504 curveto
+3608 483 3810 463 3917 455 curveto
+stroke
+newpath 3917 453 moveto
+3927 454 lineto
+3917 457 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Remco van de Meent
+gsave 10 dict begin
+solid
+4092 378 70 18 ellipse_path
+stroke
+gsave 10 dict begin
+4092 379 moveto (Remco van de Meent) 119 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Remco van de Meent
+newpath 2866 799 moveto
+2883 796 2901 794 2919 792 curveto
+3039 778 3162 784 3278 756 curveto
+3296 751 3358 697 3370 684 curveto
+3424 627 3446 534 3517 504 curveto
+3650 446 3900 405 4022 387 curveto
+stroke
+newpath 4019 385 moveto
+4029 386 lineto
+4019 390 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ruud de Rooij
+gsave 10 dict begin
+solid
+4073 522 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+4073 523 moveto (Ruud de Rooij) 81 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Ruud de Rooij
+newpath 2869 800 moveto
+2893 796 2917 792 2919 792 curveto
+3076 777 3234 777 3390 756 curveto
+3412 753 3425 728 3445 720 curveto
+3482 704 3521 696 3558 684 curveto
+3690 642 3924 568 4024 536 curveto
+stroke
+newpath 4023 534 moveto
+4033 533 lineto
+4024 539 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Brian M. Almeida
+gsave 10 dict begin
+solid
+2767 738 61 18 ellipse_path
+stroke
+gsave 10 dict begin
+2767 739 moveto (Brian M. Almeida) 102 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Brian M. Almeida
+newpath 2798 793 moveto
+2792 784 2784 774 2779 764 curveto
+stroke
+newpath 2777 766 moveto
+2774 756 lineto
+2781 763 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Craig Small
+gsave 10 dict begin
+solid
+2244 738 44 18 ellipse_path
+stroke
+gsave 10 dict begin
+2244 739 moveto (Craig Small) 67 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Craig Small
+newpath 2755 805 moveto
+2646 794 2419 772 2290 756 curveto
+2287 755 2283 755 2280 754 curveto
+stroke
+newpath 2282 757 moveto
+2273 752 lineto
+2283 752 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Peter Teichman
+gsave 10 dict begin
+solid
+3180 378 54 18 ellipse_path
+stroke
+gsave 10 dict begin
+3180 379 moveto (Peter Teichman) 88 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Peter Teichman
+newpath 2861 797 moveto
+2918 783 2981 775 3041 756 curveto
+3062 749 3073 726 3093 720 curveto
+3149 702 3213 712 3263 684 curveto
+3316 653 3295 562 3280 504 curveto
+3274 478 3263 452 3245 432 curveto
+3236 421 3220 408 3206 399 curveto
+stroke
+newpath 3207 403 moveto
+3200 395 lineto
+3210 398 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Wichert Akkerman -> Carsten Leonhardt
+newpath 1947 1884 moveto
+2045 1876 2223 1858 2325 1836 curveto
+2373 1825 2419 1799 2452 1764 curveto
+2485 1729 2611 1577 2611 1530 curveto
+2611 1530 2611 1530 2611 1458 curveto
+2611 1332 2855 1295 2855 1170 curveto
+2855 1170 2855 1170 2855 954 curveto
+2855 918 2834 858 2823 828 curveto
+stroke
+newpath 1948 1886 moveto
+1938 1885 lineto
+1948 1881 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Petr Cech
+gsave 10 dict begin
+solid
+1704 738 37 18 ellipse_path
+stroke
+gsave 10 dict begin
+1704 739 moveto (Petr Cech) 54 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Petr Cech
+newpath 2753 807 moveto
+2587 797 2135 772 1884 756 curveto
+1848 753 1789 748 1748 743 curveto
+stroke
+newpath 1750 746 moveto
+1740 742 lineto
+1750 741 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian Surchi
+gsave 10 dict begin
+solid
+2373 1242 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+2373 1243 moveto (Christian Surchi) 91 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Christian Surchi
+newpath 2380 1218 moveto
+2402 1147 2468 944 2550 864 curveto
+2550 864 2687 836 2764 821 curveto
+stroke
+newpath 2384 1215 moveto
+2378 1224 lineto
+2379 1214 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Philip Hands
+gsave 10 dict begin
+solid
+3004 954 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+3004 955 moveto (Philip Hands) 72 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Philip Hands
+newpath 2992 928 moveto
+2981 906 2963 876 2945 864 curveto
+2934 855 2889 837 2855 824 curveto
+stroke
+newpath 2994 926 moveto
+2996 936 lineto
+2989 928 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Wichert Akkerman -> Paul Slootman
+newpath 2871 801 moveto
+2902 796 2933 792 2933 792 curveto
+3263 776 3594 788 3922 756 curveto
+3956 752 4082 706 4152 681 curveto
+stroke
+newpath 4151 679 moveto
+4161 678 lineto
+4152 684 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Konstantinos Margaritis
+gsave 10 dict begin
+solid
+2924 738 78 18 ellipse_path
+stroke
+gsave 10 dict begin
+2924 739 moveto (Konstantinos Margaritis) 135 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Konstantinos Margaritis
+newpath 2841 793 moveto
+2856 784 2874 771 2890 760 curveto
+stroke
+newpath 2888 758 moveto
+2898 755 lineto
+2891 762 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Martin Mitchell
+gsave 10 dict begin
+solid
+3169 738 55 18 ellipse_path
+stroke
+gsave 10 dict begin
+3169 739 moveto (Martin Mitchell) 89 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Martin Mitchell
+newpath 2863 798 moveto
+2873 795 2883 793 2891 792 curveto
+2962 778 3033 769 3103 756 curveto
+3107 755 3112 754 3117 752 curveto
+stroke
+newpath 3117 750 moveto
+3127 750 lineto
+3118 754 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Matthew Wilcox (willy)
+gsave 10 dict begin
+solid
+2462 450 78 18 ellipse_path
+stroke
+gsave 10 dict begin
+2462 451 moveto (Matthew Wilcox \(willy\)) 135 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Wichert Akkerman -> Matthew Wilcox (willy)
+newpath 2755 804 moveto
+2659 795 2562 785 2469 756 curveto
+2390 731 2366 620 2345 540 curveto
+2342 528 2336 511 2345 504 curveto
+2361 492 2388 479 2411 469 curveto
+stroke
+newpath 2410 467 moveto
+2420 465 lineto
+2412 471 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Torsten Landschoff -> Florian Lohoff
+newpath 2717 2391 moveto
+2461 2378 1450 2322 911 2268 curveto
+866 2263 830 2226 796 2196 curveto
+787 2187 760 2147 744 2124 curveto
+stroke
+newpath 2717 2389 moveto
+2727 2391 lineto
+2717 2394 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Torsten Landschoff -> Stefan Gybas
+newpath 2583 2322 moveto
+2354 2322 1489 2319 1027 2268 curveto
+941 2258 812 2162 757 2123 curveto
+stroke
+newpath 2582 2320 moveto
+2592 2322 lineto
+2582 2325 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Torsten Landschoff -> Oliver M. Bolzer
+newpath 759 2090 moveto
+776 2080 794 2066 796 2052 curveto
+822 1922 770 1781 810 1656 curveto
+818 1632 855 1618 888 1610 curveto
+stroke
+newpath 885 1608 moveto
+895 1609 lineto
+885 1613 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Torsten Landschoff -> Christian Kurz
+newpath 669 2101 moveto
+546 2091 419 2068 349 1980 curveto
+313 1933 274 1877 274 1818 curveto
+274 1818 274 1818 274 1746 curveto
+274 1625 236 1506 236 1386 curveto
+236 1386 236 1386 236 1314 curveto
+236 1166 142 1029 142 882 curveto
+142 882 142 882 142 378 curveto
+142 336 187 294 227 288 curveto
+457 251 691 264 922 252 curveto
+1010 247 1099 238 1191 235 curveto
+stroke
+newpath 1190 233 moveto
+1200 235 lineto
+1190 238 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Torsten Landschoff -> Roland Bauerschmidt
+newpath 674 2098 moveto
+614 2088 521 2070 467 2052 curveto
+456 2047 482 1920 483 1908 curveto
+492 1828 424 1754 424 1674 curveto
+424 1674 424 1674 424 1458 curveto
+424 1383 480 1316 480 1242 curveto
+480 1242 480 1242 480 522 curveto
+480 486 503 444 535 432 curveto
+615 402 701 393 790 385 curveto
+stroke
+newpath 788 383 moveto
+798 384 lineto
+788 388 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Torsten Landschoff -> Daniel Mester
+newpath 774 2092 moveto
+834 2070 940 2022 940 1962 curveto
+940 1962 940 1962 940 1890 curveto
+940 1811 1028 1760 1066 1692 curveto
+1111 1613 1182 1469 1211 1412 curveto
+stroke
+newpath 1208 1412 moveto
+1215 1404 lineto
+1213 1414 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Torsten Landschoff -> Marcelo E. Magallon
+newpath 722 2088 moveto
+682 2005 551 1660 643 1512 curveto
+776 1297 1062 1134 1062 882 curveto
+1062 882 1062 882 1062 810 curveto
+1062 711 1177 648 1243 576 curveto
+1253 565 1272 552 1290 542 curveto
+stroke
+newpath 1289 540 moveto
+1299 537 lineto
+1291 544 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Torsten Landschoff -> Martin Schulze
+newpath 1176 2169 moveto
+1080 2155 888 2128 791 2114 curveto
+stroke
+newpath 1175 2166 moveto
+1185 2170 lineto
+1175 2171 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Gregor Hoffleit
+gsave 10 dict begin
+solid
+642 450 54 18 ellipse_path
+stroke
+gsave 10 dict begin
+642 451 moveto (Gregor Hoffleit) 87 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Torsten Landschoff -> Gregor Hoffleit
+newpath 712 2089 moveto
+698 2073 682 2052 682 2052 curveto
+671 2029 665 2004 657 1980 curveto
+617 1854 536 1734 536 1602 curveto
+536 1602 536 1602 536 1530 curveto
+536 1451 630 1392 630 1314 curveto
+630 1314 630 1314 630 594 curveto
+630 562 632 510 635 478 curveto
+stroke
+newpath 633 478 moveto
+636 468 lineto
+637 478 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dr. Michael Meskes
+gsave 10 dict begin
+solid
+1025 1458 67 18 ellipse_path
+stroke
+gsave 10 dict begin
+1025 1459 moveto (Dr. Michael Meskes) 113 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Torsten Landschoff -> Dr. Michael Meskes
+newpath 731 2088 moveto
+734 2076 738 2062 740 2052 curveto
+743 2040 742 2027 740 2016 curveto
+729 1932 592 1533 673 1512 curveto
+748 1492 876 1475 955 1465 curveto
+stroke
+newpath 952 1463 moveto
+962 1464 lineto
+952 1468 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dennis Schoen
+gsave 10 dict begin
+solid
+540 2034 52 18 ellipse_path
+stroke
+gsave 10 dict begin
+540 2035 moveto (Dennis Schoen) 84 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Torsten Landschoff -> Dennis Schoen
+newpath 693 2091 moveto
+661 2079 616 2062 583 2050 curveto
+stroke
+newpath 584 2053 moveto
+576 2047 lineto
+586 2049 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	J.H.M. Dassen (Ray) -> Wichert Akkerman
+newpath 2881 802 moveto
+2915 797 2951 792 2951 792 curveto
+3324 775 3698 772 4070 756 curveto
+4085 755 4106 752 4125 749 curveto
+stroke
+newpath 2885 804 moveto
+2875 803 lineto
+2884 799 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	J.H.M. Dassen (Ray) -> Remco van de Meent
+newpath 4205 721 moveto
+4222 711 4243 697 4253 684 curveto
+4272 659 4278 625 4278 594 curveto
+4278 594 4278 594 4278 522 curveto
+4278 468 4190 421 4135 397 curveto
+stroke
+newpath 4136 400 moveto
+4128 394 lineto
+4138 396 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joost Kooij
+gsave 10 dict begin
+solid
+2271 1818 42 18 ellipse_path
+stroke
+gsave 10 dict begin
+2271 1819 moveto (Joost Kooij) 64 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	J.H.M. Dassen (Ray) -> Joost Kooij
+newpath 2318 1811 moveto
+2378 1800 2479 1780 2537 1764 curveto
+2692 1721 2846 1678 2995 1620 curveto
+3077 1588 3128 1504 3187 1440 curveto
+3231 1391 3266 1333 3319 1296 curveto
+3474 1188 3642 1102 3804 1008 curveto
+3910 946 4024 898 4123 828 curveto
+4144 813 4166 778 4175 756 curveto
+stroke
+newpath 2320 1813 moveto
+2310 1812 lineto
+2320 1808 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	J.H.M. Dassen (Ray) -> Ruud de Rooij
+newpath 4157 721 moveto
+4144 707 4130 690 4127 684 curveto
+4109 647 4085 582 4076 547 curveto
+stroke
+newpath 4074 550 moveto
+4074 540 lineto
+4079 549 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	J.H.M. Dassen (Ray) -> Christian T. Steigies
+newpath 4235 727 moveto
+4290 717 4366 701 4380 684 curveto
+4435 619 4463 465 4477 404 curveto
+stroke
+newpath 4474 405 moveto
+4479 396 lineto
+4479 406 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	J.H.M. Dassen (Ray) -> Paul Slootman
+newpath 4178 720 moveto
+4179 712 4182 702 4185 693 curveto
+stroke
+newpath 4182 693 moveto
+4188 684 lineto
+4187 694 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian Kurz -> Stefan Gybas
+newpath 2672 2301 moveto
+2722 2262 2817 2174 2817 2106 curveto
+2817 2106 2817 2106 2817 1962 curveto
+2817 1800 2712 1654 2635 1512 curveto
+2570 1390 2515 1260 2429 1152 curveto
+2366 1071 2239 1056 2181 972 curveto
+2144 917 2153 828 2097 792 curveto
+2030 746 1925 799 1855 756 curveto
+1770 702 1662 623 1662 522 curveto
+1662 522 1662 522 1662 378 curveto
+1662 340 1629 300 1593 288 curveto
+1503 255 1404 246 1301 238 curveto
+stroke
+newpath 2675 2302 moveto
+2665 2306 lineto
+2672 2298 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian Kurz -> Oliver M. Bolzer
+newpath 922 1579 moveto
+906 1569 888 1556 875 1548 curveto
+860 1537 849 1519 831 1512 curveto
+795 1495 753 1494 717 1476 curveto
+546 1383 272 1292 272 1098 curveto
+272 1098 272 1098 272 882 curveto
+272 807 216 740 216 666 curveto
+216 666 216 666 216 378 curveto
+216 302 350 297 424 288 curveto
+424 288 1021 249 1201 237 curveto
+stroke
+newpath 924 1577 moveto
+930 1585 lineto
+921 1581 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian Kurz -> Wichert Akkerman
+newpath 2746 805 moveto
+2534 793 2319 796 2112 756 curveto
+2060 745 2034 683 1994 648 curveto
+1980 635 1957 629 1949 612 curveto
+1926 554 1934 487 1907 432 curveto
+1881 376 1852 305 1793 288 curveto
+1660 247 1409 237 1302 235 curveto
+stroke
+newpath 2744 802 moveto
+2754 806 lineto
+2744 807 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian Kurz -> Torsten Landschoff
+newpath 660 2100 moveto
+553 2089 434 2063 367 1980 curveto
+331 1933 292 1877 292 1818 curveto
+292 1818 292 1818 292 1746 curveto
+292 1625 254 1506 254 1386 curveto
+254 1386 254 1386 254 1314 curveto
+254 1166 160 1029 160 882 curveto
+160 882 160 882 160 378 curveto
+160 336 205 294 245 288 curveto
+475 251 709 264 940 252 curveto
+1029 247 1117 238 1200 235 curveto
+stroke
+newpath 660 2098 moveto
+670 2101 lineto
+660 2102 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian Kurz -> Thimo Neubauer
+newpath 1740 1649 moveto
+1725 1623 1701 1584 1701 1584 curveto
+1658 1517 1459 1249 1459 1170 curveto
+1459 1170 1459 1170 1459 954 curveto
+1459 846 1606 773 1606 666 curveto
+1606 666 1606 666 1606 378 curveto
+1606 265 1429 251 1300 239 curveto
+stroke
+newpath 1741 1646 moveto
+1744 1656 lineto
+1737 1649 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian Kurz -> Roland Bauerschmidt
+newpath 915 361 moveto
+996 332 1150 274 1218 248 curveto
+stroke
+newpath 918 362 moveto
+908 364 lineto
+916 358 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian Kurz -> Daniel Mester
+newpath 1239 1362 moveto
+1245 1352 1252 1340 1255 1332 curveto
+1279 1270 1530 659 1530 594 curveto
+1530 594 1530 594 1530 378 curveto
+1530 300 1376 258 1297 242 curveto
+stroke
+newpath 1243 1361 moveto
+1235 1368 lineto
+1238 1358 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian Kurz -> Marcelo E. Magallon
+newpath 1332 497 moveto
+1319 439 1279 302 1260 252 curveto
+stroke
+newpath 1334 494 moveto
+1334 504 lineto
+1329 495 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marcus Brinkmann
+gsave 10 dict begin
+solid
+1833 162 64 18 ellipse_path
+stroke
+gsave 10 dict begin
+1833 163 moveto (Marcus Brinkmann) 108 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Christian Kurz -> Marcus Brinkmann
+newpath 1299 228 moveto
+1403 214 1648 184 1767 170 curveto
+stroke
+newpath 1764 168 moveto
+1774 169 lineto
+1764 173 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian Kurz -> Dr. Michael Meskes
+newpath 1042 1434 moveto
+1058 1403 1080 1349 1080 1314 curveto
+1080 1314 1080 1314 1080 1170 curveto
+1080 1025 1229 370 1249 252 curveto
+stroke
+newpath 1046 1432 moveto
+1039 1440 lineto
+1041 1430 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Thimo Neubauer -> Oliver M. Bolzer
+newpath 1699 1669 moveto
+1554 1656 1168 1622 1013 1608 curveto
+stroke
+newpath 1014 1611 moveto
+1004 1607 lineto
+1014 1606 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Thimo Neubauer -> Roland Bauerschmidt
+newpath 1700 1668 moveto
+1624 1658 1488 1639 1409 1620 curveto
+1250 1580 1086 1546 937 1476 curveto
+909 1462 912 1417 912 1386 curveto
+912 1386 912 1386 912 1314 curveto
+912 1239 856 1172 856 1098 curveto
+856 1098 856 1098 856 522 curveto
+856 491 856 438 859 406 curveto
+stroke
+newpath 857 406 moveto
+860 396 lineto
+861 406 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Thimo Neubauer -> Daniel Mester
+newpath 1719 1660 moveto
+1692 1649 1656 1633 1635 1620 curveto
+1588 1589 1553 1543 1506 1512 curveto
+1463 1482 1414 1461 1365 1440 curveto
+1340 1428 1298 1412 1267 1401 curveto
+stroke
+newpath 1269 1404 moveto
+1260 1399 lineto
+1270 1399 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Thimo Neubauer -> Marcelo E. Magallon
+newpath 1727 1658 moveto
+1711 1647 1692 1632 1682 1620 curveto
+1634 1562 1595 1497 1546 1440 curveto
+1534 1425 1515 1418 1502 1404 curveto
+1484 1382 1467 1358 1454 1332 curveto
+1368 1152 1380 937 1380 738 curveto
+1380 738 1380 738 1380 666 curveto
+1380 631 1356 578 1343 546 curveto
+stroke
+newpath 1342 550 moveto
+1340 540 lineto
+1347 548 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Thimo Neubauer -> Carsten Leonhardt
+newpath 1868 1863 moveto
+1845 1818 1793 1729 1769 1692 curveto
+stroke
+newpath 1870 1862 moveto
+1872 1872 lineto
+1866 1864 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Thimo Neubauer -> Petr Cech
+newpath 1747 1656 moveto
+1733 1612 1707 1498 1678 1440 curveto
+1668 1418 1635 1419 1616 1404 curveto
+1591 1382 1563 1361 1548 1332 curveto
+1523 1281 1497 1226 1497 1170 curveto
+1497 1170 1497 1170 1497 1026 curveto
+1497 934 1618 810 1675 760 curveto
+stroke
+newpath 1674 758 moveto
+1683 753 lineto
+1677 761 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Thimo Neubauer -> David Frey
+newpath 1813 1673 moveto
+2155 1658 2494 1520 2824 1404 curveto
+3086 1311 3332 1181 3589 1080 curveto
+3879 965 4176 870 4465 756 curveto
+4509 738 4555 718 4588 684 curveto
+4609 661 4617 625 4618 594 curveto
+4618 594 4618 594 4618 162 curveto
+4617 128 4607 75 4603 43 curveto
+stroke
+newpath 4601 46 moveto
+4602 36 lineto
+4606 46 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dale Scheetz (Dwarf #1)
+gsave 10 dict begin
+solid
+2271 1746 80 18 ellipse_path
+stroke
+gsave 10 dict begin
+2271 1747 moveto (Dale Scheetz \(Dwarf #1\)) 139 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Thimo Neubauer -> Dale Scheetz (Dwarf #1)
+newpath 2195 1735 moveto
+2088 1719 1901 1694 1809 1681 curveto
+stroke
+newpath 2194 1732 moveto
+2204 1736 lineto
+2194 1737 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Philipp Frauenfelder
+gsave 10 dict begin
+solid
+1871 90 68 18 ellipse_path
+stroke
+gsave 10 dict begin
+1871 91 moveto (Philipp Frauenfelder) 115 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Thimo Neubauer -> Philipp Frauenfelder
+newpath 1787 1659 moveto
+1895 1608 2248 1439 2430 1332 curveto
+2453 1318 2454 1285 2461 1260 curveto
+2478 1201 2472 1130 2438 1080 curveto
+2391 1007 2303 967 2248 900 curveto
+2224 869 2240 811 2206 792 curveto
+2146 756 2060 789 1998 756 curveto
+1943 725 1910 664 1873 612 curveto
+1791 493 1897 324 1909 180 curveto
+1910 168 1914 155 1909 144 curveto
+1907 139 1898 126 1890 114 curveto
+stroke
+newpath 1889 117 moveto
+1885 108 lineto
+1893 114 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt -> Florian Lohoff
+newpath 2720 2394 moveto
+2151 2393 1575 2375 998 2340 curveto
+907 2334 822 2294 734 2268 curveto
+547 2210 331 2184 186 2052 curveto
+122 1992 66 1905 66 1818 curveto
+66 1818 66 1818 66 1170 curveto
+66 1102 358 479 406 432 curveto
+428 410 672 390 795 382 curveto
+stroke
+newpath 2717 2392 moveto
+2727 2394 lineto
+2717 2397 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt -> Stefan Gybas
+newpath 2583 2322 moveto
+2343 2323 1415 2323 920 2268 curveto
+683 2241 445 2169 237 2052 curveto
+162 2009 122 1904 122 1818 curveto
+122 1818 122 1818 122 1458 curveto
+122 1265 404 1146 404 954 curveto
+404 954 404 954 404 522 curveto
+404 489 413 441 444 432 curveto
+538 403 703 388 796 382 curveto
+stroke
+newpath 2582 2320 moveto
+2592 2322 lineto
+2582 2325 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt -> Edward Betts
+newpath 2585 1960 moveto
+2324 1952 2060 1960 1804 1908 curveto
+1528 1851 1282 1691 1039 1548 curveto
+1025 1539 1020 1520 1005 1512 curveto
+978 1495 940 1497 917 1476 curveto
+894 1452 874 1419 874 1386 curveto
+874 1386 874 1386 874 1314 curveto
+874 1239 818 1172 818 1098 curveto
+818 1098 818 1098 818 522 curveto
+818 485 843 426 856 396 curveto
+stroke
+newpath 2582 1958 moveto
+2592 1960 lineto
+2582 1963 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt -> Oliver M. Bolzer
+newpath 948 1575 moveto
+942 1554 930 1525 916 1512 curveto
+894 1489 849 1499 828 1476 curveto
+788 1430 742 1375 742 1314 curveto
+742 1314 742 1314 742 522 curveto
+742 490 751 455 772 432 curveto
+779 423 812 407 836 394 curveto
+stroke
+newpath 950 1574 moveto
+950 1584 lineto
+945 1575 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt -> Torsten Landschoff
+newpath 670 2095 moveto
+614 2084 534 2068 485 2052 curveto
+474 2047 500 1920 501 1908 curveto
+510 1828 442 1754 442 1674 curveto
+442 1674 442 1674 442 1458 curveto
+442 1383 498 1316 498 1242 curveto
+498 1242 498 1242 498 522 curveto
+498 486 521 444 553 432 curveto
+633 402 718 392 799 385 curveto
+stroke
+newpath 668 2092 moveto
+678 2096 lineto
+668 2097 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt -> Christian Kurz
+newpath 902 363 moveto
+973 335 1130 277 1207 248 curveto
+stroke
+newpath 1204 246 moveto
+1214 246 lineto
+1205 251 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt -> Thimo Neubauer
+newpath 1692 1665 moveto
+1619 1655 1499 1637 1427 1620 curveto
+1268 1580 1104 1546 955 1476 curveto
+927 1462 930 1417 930 1386 curveto
+930 1386 930 1386 930 1314 curveto
+930 1239 874 1172 874 1098 curveto
+874 1098 874 1098 874 522 curveto
+874 487 874 426 870 396 curveto
+stroke
+newpath 1692 1663 moveto
+1702 1666 lineto
+1692 1667 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt -> Daniel Mester
+newpath 1206 1362 moveto
+1180 1332 1136 1280 1136 1242 curveto
+1136 1242 1136 1242 1136 1170 curveto
+1136 994 986 841 986 666 curveto
+986 666 986 666 986 522 curveto
+986 490 976 456 956 432 curveto
+950 424 923 407 899 394 curveto
+stroke
+newpath 1207 1359 moveto
+1211 1368 lineto
+1203 1362 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt -> Marcelo E. Magallon
+newpath 1300 503 moveto
+1254 481 1175 447 1124 432 curveto
+1072 416 984 398 925 388 curveto
+stroke
+newpath 1298 499 moveto
+1306 506 lineto
+1296 504 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Federico Di Gregorio
+gsave 10 dict begin
+solid
+865 306 70 18 ellipse_path
+stroke
+gsave 10 dict begin
+865 307 moveto (Federico Di Gregorio) 120 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Roland Bauerschmidt -> Federico Di Gregorio
+newpath 859 360 moveto
+858 352 858 343 858 334 curveto
+stroke
+newpath 856 334 moveto
+859 324 lineto
+860 334 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt -> Gregor Hoffleit
+newpath 691 435 moveto
+732 423 788 405 825 393 curveto
+stroke
+newpath 693 437 moveto
+683 438 lineto
+691 432 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt -> Dr. Michael Meskes
+newpath 1020 1434 moveto
+1001 1361 930 1149 930 1098 curveto
+930 1098 930 1098 930 522 curveto
+930 484 900 425 881 396 curveto
+stroke
+newpath 1021 1430 moveto
+1022 1440 lineto
+1016 1431 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt -> Othmar Pasteka
+newpath 1818 1297 moveto
+1738 1264 1571 1189 1571 1098 curveto
+1571 1098 1571 1098 1571 1026 curveto
+1571 896 1164 520 1068 432 curveto
+1068 432 976 406 916 391 curveto
+stroke
+newpath 1817 1294 moveto
+1825 1300 lineto
+1815 1298 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt -> Roland Rosenfeld
+newpath 1419 1505 moveto
+1366 1427 1192 1181 1192 1026 curveto
+1192 1026 1192 1026 1192 954 curveto
+1192 860 1038 513 992 432 curveto
+992 432 942 409 904 393 curveto
+stroke
+newpath 1420 1502 moveto
+1423 1512 lineto
+1416 1505 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Bauerschmidt -> Dennis Schoen
+newpath 547 2007 moveto
+550 1979 552 1935 552 1908 curveto
+554 1827 498 1754 498 1674 curveto
+498 1674 498 1674 498 1458 curveto
+498 1415 517 1374 524 1332 curveto
+538 1260 552 1188 562 1116 curveto
+578 1015 554 912 554 810 curveto
+554 810 554 810 554 522 curveto
+554 490 557 445 585 432 curveto
+601 424 730 402 807 389 curveto
+stroke
+newpath 550 2006 moveto
+546 2016 lineto
+545 2006 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Daniel Mester -> Stefan Gybas
+newpath 2583 2320 moveto
+2345 2309 1446 2265 1446 2178 curveto
+1446 2178 1446 2178 1446 2106 curveto
+1446 2027 1352 1968 1352 1890 curveto
+1352 1890 1352 1890 1352 1818 curveto
+1352 1691 1266 1468 1235 1404 curveto
+stroke
+newpath 2582 2318 moveto
+2592 2320 lineto
+2582 2323 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Daniel Mester -> Oliver M. Bolzer
+newpath 982 1579 moveto
+1040 1536 1160 1441 1206 1403 curveto
+stroke
+newpath 984 1581 moveto
+974 1585 lineto
+981 1577 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Daniel Mester -> Roland Bauerschmidt
+newpath 1202 1370 moveto
+1170 1342 1118 1284 1118 1242 curveto
+1118 1242 1118 1242 1118 1170 curveto
+1118 994 968 841 968 666 curveto
+968 666 968 666 968 522 curveto
+968 490 958 456 938 432 curveto
+933 426 911 411 893 399 curveto
+stroke
+newpath 894 403 moveto
+887 395 lineto
+897 398 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Daniel Mester -> Marcelo E. Magallon
+newpath 1221 1368 moveto
+1220 1310 1230 1126 1230 1026 curveto
+1230 1026 1230 1026 1230 666 curveto
+1230 627 1274 575 1306 545 curveto
+stroke
+newpath 1303 544 moveto
+1312 539 lineto
+1307 548 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Daniel Mester -> Dr. Michael Meskes
+newpath 1077 1441 moveto
+1113 1428 1160 1411 1191 1400 curveto
+stroke
+newpath 1079 1443 moveto
+1069 1444 lineto
+1077 1438 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Daniel Mester -> Othmar Pasteka
+newpath 1272 1381 moveto
+1387 1368 1675 1335 1801 1321 curveto
+stroke
+newpath 1798 1319 moveto
+1808 1320 lineto
+1798 1324 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Daniel Mester -> Roland Rosenfeld
+newpath 1407 1506 moveto
+1383 1485 1348 1455 1325 1440 curveto
+1307 1427 1277 1412 1254 1400 curveto
+stroke
+newpath 1409 1505 moveto
+1415 1513 lineto
+1406 1508 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marcelo E. Magallon -> Torsten Landschoff
+newpath 724 2080 moveto
+692 1985 572 1656 661 1512 curveto
+794 1297 1080 1134 1080 882 curveto
+1080 882 1080 882 1080 810 curveto
+1080 711 1195 648 1261 576 curveto
+1273 563 1294 549 1312 539 curveto
+stroke
+newpath 726 2078 moveto
+727 2088 lineto
+721 2080 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marcelo E. Magallon -> Christian Kurz
+newpath 1327 504 moveto
+1308 454 1267 317 1255 259 curveto
+stroke
+newpath 1253 262 moveto
+1253 252 lineto
+1258 261 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marcelo E. Magallon -> Thimo Neubauer
+newpath 1732 1650 moveto
+1721 1640 1708 1629 1700 1620 curveto
+1652 1562 1613 1497 1564 1440 curveto
+1552 1425 1533 1418 1520 1404 curveto
+1502 1382 1485 1358 1472 1332 curveto
+1386 1152 1398 937 1398 738 curveto
+1398 738 1398 738 1398 666 curveto
+1398 628 1370 569 1351 540 curveto
+stroke
+newpath 1734 1648 moveto
+1740 1656 lineto
+1731 1652 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marcelo E. Magallon -> Roland Bauerschmidt
+newpath 1297 507 moveto
+1247 486 1160 448 1106 432 curveto
+1059 418 982 402 927 391 curveto
+stroke
+newpath 929 394 moveto
+920 389 lineto
+930 389 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marcelo E. Magallon -> Daniel Mester
+newpath 1230 1360 moveto
+1239 1294 1248 1122 1248 1026 curveto
+1248 1026 1248 1026 1248 666 curveto
+1248 624 1298 568 1323 540 curveto
+stroke
+newpath 1233 1358 moveto
+1229 1368 lineto
+1228 1358 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marcelo E. Magallon -> David Frey
+newpath 1404 518 moveto
+1575 506 2004 469 2004 378 curveto
+2004 378 2004 378 2004 162 curveto
+2004 111 4188 32 4552 19 curveto
+stroke
+newpath 4551 17 moveto
+4561 19 lineto
+4551 22 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marcelo E. Magallon -> Gregor Hoffleit
+newpath 1270 516 moveto
+1136 502 829 470 701 457 curveto
+stroke
+newpath 703 460 moveto
+693 456 lineto
+703 455 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marcelo E. Magallon -> Dale Scheetz (Dwarf #1)
+newpath 2268 1721 moveto
+2256 1670 2216 1555 2165 1512 curveto
+2063 1423 1888 1436 1802 1332 curveto
+1623 1111 1545 823 1405 576 curveto
+1402 569 1382 552 1364 539 curveto
+stroke
+newpath 2270 1718 moveto
+2270 1728 lineto
+2265 1719 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Federico Di Gregorio -> Torsten Landschoff
+newpath 658 2105 moveto
+563 2101 395 2090 304 2052 curveto
+233 2022 198 1679 198 1602 curveto
+198 1602 198 1602 198 1386 curveto
+198 1331 202 1275 219 1224 curveto
+252 1129 348 1053 348 954 curveto
+348 954 348 954 348 738 curveto
+348 663 292 596 292 522 curveto
+292 522 292 522 292 450 curveto
+292 372 648 327 799 312 curveto
+stroke
+newpath 657 2103 moveto
+667 2105 lineto
+657 2108 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Federico Di Gregorio -> Christian Kurz
+newpath 922 295 moveto
+996 282 1123 257 1196 244 curveto
+stroke
+newpath 1196 242 moveto
+1206 242 lineto
+1197 246 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Federico Di Gregorio -> Roland Bauerschmidt
+newpath 871 354 moveto
+872 344 872 333 871 324 curveto
+stroke
+newpath 874 350 moveto
+871 360 lineto
+869 350 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Andrea Fanfani
+gsave 10 dict begin
+solid
+865 234 54 18 ellipse_path
+stroke
+gsave 10 dict begin
+865 235 moveto (Andrea Fanfani) 87 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Federico Di Gregorio -> Andrea Fanfani
+newpath 865 288 moveto
+865 280 865 271 865 262 curveto
+stroke
+newpath 863 262 moveto
+865 252 lineto
+868 262 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Federico Di Gregorio -> Dr. Michael Meskes
+newpath 1023 1431 moveto
+1021 1410 1020 1384 1017 1368 curveto
+1006 1277 968 1189 968 1098 curveto
+968 1098 968 1098 968 882 curveto
+968 755 1017 629 1003 504 curveto
+998 452 984 397 948 360 curveto
+936 347 914 333 896 322 curveto
+stroke
+newpath 1025 1430 moveto
+1024 1440 lineto
+1020 1430 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Stephen R. Gore
+gsave 10 dict begin
+solid
+2270 594 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+2270 595 moveto (Stephen R. Gore) 92 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Ashley Clark
+gsave 10 dict begin
+solid
+2173 522 47 18 ellipse_path
+stroke
+gsave 10 dict begin
+2173 523 moveto (Ashley Clark) 74 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stephen R. Gore -> Ashley Clark
+newpath 2243 578 moveto
+2229 569 2211 556 2197 545 curveto
+stroke
+newpath 2196 547 moveto
+2190 539 lineto
+2199 544 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Jefferson E. Noxon
+gsave 10 dict begin
+solid
+2302 450 64 18 ellipse_path
+stroke
+gsave 10 dict begin
+2302 451 moveto (Jefferson E. Noxon) 108 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stephen R. Gore -> Jefferson E. Noxon
+newpath 2269 576 moveto
+2273 551 2282 506 2290 477 curveto
+stroke
+newpath 2287 477 moveto
+2293 468 lineto
+2292 478 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Steve Greenland
+gsave 10 dict begin
+solid
+2164 450 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+2164 451 moveto (Steve Greenland) 92 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stephen R. Gore -> Steve Greenland
+newpath 2224 583 moveto
+2186 573 2134 557 2105 540 curveto
+2087 528 2111 496 2134 473 curveto
+stroke
+newpath 2132 471 moveto
+2141 466 lineto
+2136 475 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christopher L Cheney
+gsave 10 dict begin
+solid
+2662 666 72 18 ellipse_path
+stroke
+gsave 10 dict begin
+2662 667 moveto (Christopher L Cheney) 124 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stephen R. Gore -> Christopher L Cheney
+newpath 2598 654 moveto
+2520 639 2391 615 2320 602 curveto
+stroke
+newpath 2595 651 moveto
+2605 655 lineto
+2595 656 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ashley Clark -> Stephen R. Gore
+newpath 2245 571 moveto
+2231 560 2213 547 2199 537 curveto
+stroke
+newpath 2246 569 moveto
+2252 577 lineto
+2243 572 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ashley Clark -> Jefferson E. Noxon
+newpath 2196 506 moveto
+2214 495 2239 481 2260 469 curveto
+stroke
+newpath 2259 467 moveto
+2269 465 lineto
+2261 471 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ashley Clark -> Steve Greenland
+newpath 2165 504 moveto
+2163 496 2162 486 2161 478 curveto
+stroke
+newpath 2159 478 moveto
+2160 468 lineto
+2163 478 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Jefferson E. Noxon -> Stephen R. Gore
+newpath 2281 570 moveto
+2289 541 2299 494 2303 468 curveto
+stroke
+newpath 2285 567 moveto
+2279 576 lineto
+2280 566 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Jefferson E. Noxon -> Ashley Clark
+newpath 2209 505 moveto
+2231 493 2258 478 2277 467 curveto
+stroke
+newpath 2213 506 moveto
+2203 508 lineto
+2211 501 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Steve Greenland -> Stephen R. Gore
+newpath 2223 579 moveto
+2191 569 2148 554 2123 540 curveto
+2103 528 2134 490 2152 468 curveto
+stroke
+newpath 2221 576 moveto
+2230 581 lineto
+2220 581 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Steve Greenland -> Ashley Clark
+newpath 2176 494 moveto
+2175 486 2174 476 2172 468 curveto
+stroke
+newpath 2178 494 moveto
+2177 504 lineto
+2174 494 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Yoshiaki Yanagihara
+gsave 10 dict begin
+solid
+4330 2466 69 18 ellipse_path
+stroke
+gsave 10 dict begin
+4330 2467 moveto (Yoshiaki Yanagihara) 118 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Atsushi KAMOSHIDA
+gsave 10 dict begin
+solid
+4330 2394 76 18 ellipse_path
+stroke
+gsave 10 dict begin
+4330 2395 moveto (Atsushi KAMOSHIDA) 131 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Yoshiaki Yanagihara -> Atsushi KAMOSHIDA
+newpath 4330 2448 moveto
+4330 2440 4330 2431 4330 2422 curveto
+stroke
+newpath 4328 2422 moveto
+4330 2412 lineto
+4333 2422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Fabien Ninoles -> Florian Lohoff
+newpath 2835 2392 moveto
+3071 2381 3962 2336 3962 2250 curveto
+3962 2250 3962 2250 3962 882 curveto
+3962 849 3943 819 3924 792 curveto
+3917 780 3900 766 3887 755 curveto
+stroke
+newpath 2839 2395 moveto
+2829 2392 lineto
+2839 2390 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Avery Pennarun
+gsave 10 dict begin
+solid
+3866 666 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+3866 667 moveto (Avery Pennarun) 91 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Fabien Ninoles -> Avery Pennarun
+newpath 3860 720 moveto
+3859 712 3859 703 3859 694 curveto
+stroke
+newpath 3857 694 moveto
+3860 684 lineto
+3861 694 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Avery Pennarun -> Fabien Ninoles
+newpath 3872 714 moveto
+3873 704 3873 693 3872 684 curveto
+stroke
+newpath 3875 710 moveto
+3872 720 lineto
+3870 710 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bart Schuller -> Wichert Akkerman
+newpath 2877 800 moveto
+2898 796 2918 794 2937 792 curveto
+3040 778 3146 783 3245 756 curveto
+3273 748 3458 521 3480 504 curveto
+3595 414 3850 342 3947 317 curveto
+stroke
+newpath 2880 802 moveto
+2870 801 lineto
+2880 797 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bart Schuller -> J.H.M. Dassen (Ray)
+newpath 4228 722 moveto
+4253 712 4282 698 4297 684 curveto
+4341 642 4336 559 4313 504 curveto
+4292 449 4264 390 4213 360 curveto
+4169 333 4084 318 4031 311 curveto
+stroke
+newpath 4232 723 moveto
+4222 724 lineto
+4231 718 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bart Schuller -> Bart Warmerdam
+newpath 3991 426 moveto
+3993 397 3993 350 3990 324 curveto
+stroke
+newpath 3994 423 moveto
+3990 432 lineto
+3989 422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bart Schuller -> Remco van de Meent
+newpath 4064 355 moveto
+4048 344 4028 330 4013 321 curveto
+stroke
+newpath 4066 353 moveto
+4072 361 lineto
+4063 357 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bart Schuller -> Paul Slootman
+newpath 4209 642 moveto
+4221 610 4240 556 4240 522 curveto
+4240 522 4240 522 4240 450 curveto
+4240 412 4207 378 4174 360 curveto
+4138 339 4071 323 4027 314 curveto
+stroke
+newpath 4213 640 moveto
+4206 648 lineto
+4208 638 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bart Warmerdam -> Wichert Akkerman
+newpath 2877 799 moveto
+2898 796 2917 794 2937 792 curveto
+3076 777 3215 777 3352 756 curveto
+3373 752 3384 729 3401 720 curveto
+3427 705 3464 706 3482 684 curveto
+3526 631 3518 532 3579 504 curveto
+3626 483 3828 464 3928 455 curveto
+stroke
+newpath 2880 801 moveto
+2870 800 lineto
+2880 796 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bart Warmerdam -> J.H.M. Dassen (Ray)
+newpath 4130 721 moveto
+4068 698 3966 655 3916 612 curveto
+3883 581 3941 503 3970 467 curveto
+stroke
+newpath 4130 718 moveto
+4138 724 lineto
+4128 723 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bart Warmerdam -> Bart Schuller
+newpath 3980 432 moveto
+3977 407 3977 362 3979 333 curveto
+stroke
+newpath 3976 334 moveto
+3980 324 lineto
+3981 334 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bart Warmerdam -> Remco van de Meent
+newpath 4005 433 moveto
+4019 423 4037 410 4054 399 curveto
+stroke
+newpath 4052 397 moveto
+4062 394 lineto
+4055 401 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joop Stakenborg
+gsave 10 dict begin
+solid
+3985 594 57 18 ellipse_path
+stroke
+gsave 10 dict begin
+3985 595 moveto (Joop Stakenborg) 93 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Bart Warmerdam -> Joop Stakenborg
+newpath 3991 570 moveto
+3993 541 3993 494 3990 468 curveto
+stroke
+newpath 3994 567 moveto
+3990 576 lineto
+3989 566 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bart Warmerdam -> Ruud de Rooij
+newpath 4051 499 moveto
+4039 488 4024 476 4011 466 curveto
+stroke
+newpath 4052 497 moveto
+4058 505 lineto
+4049 500 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bart Warmerdam -> Christian T. Steigies
+newpath 4039 442 moveto
+4129 429 4316 403 4417 388 curveto
+stroke
+newpath 4416 386 moveto
+4426 387 lineto
+4416 391 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Bart Warmerdam -> Paul Slootman
+newpath 4193 640 moveto
+4184 602 4165 533 4136 504 curveto
+4115 483 4070 468 4035 460 curveto
+stroke
+newpath 4195 638 moveto
+4195 648 lineto
+4190 639 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	class 0x01]
+gsave 10 dict begin
+solid
+3906 378 42 18 ellipse_path
+stroke
+gsave 10 dict begin
+3906 379 moveto (class 0x01]) 63 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	class 0x01] -> Bart Schuller
+newpath 3924 362 moveto
+3935 352 3948 339 3960 329 curveto
+stroke
+newpath 3958 328 moveto
+3967 323 lineto
+3961 331 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Remco van de Meent -> Wichert Akkerman
+newpath 2877 800 moveto
+2898 796 2918 794 2937 792 curveto
+3057 778 3180 784 3296 756 curveto
+3314 751 3376 697 3388 684 curveto
+3442 627 3464 534 3535 504 curveto
+3668 447 3917 405 4032 387 curveto
+stroke
+newpath 2880 802 moveto
+2870 801 lineto
+2880 797 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Remco van de Meent -> J.H.M. Dassen (Ray)
+newpath 4223 720 moveto
+4242 709 4262 697 4271 684 curveto
+4290 659 4296 625 4296 594 curveto
+4296 594 4296 594 4296 522 curveto
+4296 464 4196 415 4136 392 curveto
+stroke
+newpath 4227 721 moveto
+4217 723 lineto
+4225 716 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Remco van de Meent -> Bart Schuller
+newpath 4062 362 moveto
+4046 352 4026 338 4011 328 curveto
+stroke
+newpath 4011 331 moveto
+4004 323 lineto
+4014 327 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Remco van de Meent -> Bart Warmerdam
+newpath 4019 431 moveto
+4037 420 4058 406 4072 395 curveto
+stroke
+newpath 4024 431 moveto
+4014 434 lineto
+4021 427 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Remco van de Meent -> Ruud de Rooij
+newpath 4076 498 moveto
+4080 469 4086 422 4090 396 curveto
+stroke
+newpath 4079 495 moveto
+4075 504 lineto
+4074 494 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Remco van de Meent -> Paul Slootman
+newpath 4200 639 moveto
+4200 618 4199 592 4195 576 curveto
+4183 520 4129 433 4104 396 curveto
+stroke
+newpath 4203 638 moveto
+4200 648 lineto
+4198 638 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joop Stakenborg -> J.H.M. Dassen (Ray)
+newpath 4140 717 moveto
+4121 706 4099 694 4085 684 curveto
+4061 666 4024 632 4003 611 curveto
+stroke
+newpath 4141 715 moveto
+4148 722 lineto
+4138 719 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joop Stakenborg -> Bart Warmerdam
+newpath 3980 576 moveto
+3977 551 3977 506 3979 477 curveto
+stroke
+newpath 3976 478 moveto
+3980 468 lineto
+3981 478 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joop Stakenborg -> Ruud de Rooij
+newpath 4000 577 moveto
+4011 567 4026 554 4040 544 curveto
+stroke
+newpath 4039 542 moveto
+4048 538 lineto
+4042 546 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Guido Witmond
+gsave 10 dict begin
+solid
+4046 810 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+4046 811 moveto (Guido Witmond) 91 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Guido Witmond -> J.H.M. Dassen (Ray)
+newpath 4075 794 moveto
+4094 783 4120 770 4141 758 curveto
+stroke
+newpath 4139 756 moveto
+4149 754 lineto
+4141 761 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Guido Witmond -> Bart Warmerdam
+newpath 4034 792 moveto
+4012 759 3964 687 3934 648 curveto
+3925 634 3907 627 3899 612 curveto
+3884 579 3894 534 3914 504 curveto
+3921 493 3936 482 3950 472 curveto
+stroke
+newpath 3949 470 moveto
+3958 466 lineto
+3952 474 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Guido Witmond -> Joop Stakenborg
+newpath 4041 792 moveto
+4030 754 4006 666 3993 621 curveto
+stroke
+newpath 3991 622 moveto
+3990 612 lineto
+3996 621 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Guido Witmond -> Ruud de Rooij
+newpath 4098 803 moveto
+4147 794 4221 779 4260 756 curveto
+4292 737 4290 671 4262 648 curveto
+4223 614 4148 566 4105 541 curveto
+stroke
+newpath 4107 545 moveto
+4099 538 lineto
+4109 540 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Guido Witmond -> Paul Slootman
+newpath 4054 792 moveto
+4064 770 4081 735 4098 720 curveto
+4111 707 4135 694 4157 684 curveto
+stroke
+newpath 4156 682 moveto
+4166 680 lineto
+4158 686 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joost Kooij -> Edward Betts
+newpath 2600 1947 moveto
+2526 1918 2369 1856 2302 1830 curveto
+stroke
+newpath 2598 1944 moveto
+2607 1949 lineto
+2597 1949 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joost Kooij -> J.H.M. Dassen (Ray)
+newpath 2309 1810 moveto
+2363 1799 2462 1780 2519 1764 curveto
+2674 1721 2828 1678 2977 1620 curveto
+3059 1588 3110 1504 3169 1440 curveto
+3213 1391 3248 1333 3301 1296 curveto
+3456 1188 3624 1102 3786 1008 curveto
+3892 946 4006 898 4105 828 curveto
+4124 815 4143 784 4158 763 curveto
+stroke
+newpath 4155 763 moveto
+4163 756 lineto
+4159 766 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joost Kooij -> Thimo Neubauer
+newpath 2236 1808 moveto
+2146 1783 1908 1717 1804 1688 curveto
+stroke
+newpath 1807 1692 moveto
+1798 1686 lineto
+1808 1687 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joost Kooij -> Marcelo E. Magallon
+newpath 2229 1817 moveto
+2117 1812 1813 1791 1685 1692 curveto
+1592 1619 1544 1502 1477 1404 curveto
+1331 1189 1333 677 1335 551 curveto
+stroke
+newpath 1333 550 moveto
+1335 540 lineto
+1338 550 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joost Kooij -> Bart Warmerdam
+newpath 2303 1806 moveto
+2338 1793 2390 1773 2402 1764 curveto
+2542 1653 2665 1524 2795 1404 curveto
+2861 1344 2913 1265 2990 1224 curveto
+3272 1072 3617 1029 3865 828 curveto
+3875 820 3875 799 3865 792 curveto
+3840 771 3797 780 3775 756 curveto
+3752 728 3757 680 3771 648 curveto
+3778 633 3793 624 3803 612 curveto
+3833 576 3857 534 3891 504 curveto
+3898 497 3925 482 3948 470 curveto
+stroke
+newpath 3945 469 moveto
+3955 466 lineto
+3948 473 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joost Kooij -> Joop Stakenborg
+newpath 2306 1808 moveto
+2347 1797 2413 1778 2452 1764 curveto
+2477 1755 2498 1739 2521 1728 curveto
+2650 1667 2791 1627 2909 1548 curveto
+3096 1422 3256 1260 3428 1116 curveto
+3443 1104 3453 1085 3470 1080 curveto
+3526 1061 3586 1062 3641 1044 curveto
+3659 1038 3668 1018 3683 1008 curveto
+3705 994 3731 988 3750 972 curveto
+3805 927 3858 881 3903 828 curveto
+3911 818 3913 798 3903 792 curveto
+3874 771 3827 781 3801 756 curveto
+3776 730 3766 663 3798 648 curveto
+3832 631 3887 616 3929 606 curveto
+stroke
+newpath 3928 604 moveto
+3938 604 lineto
+3929 609 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joost Kooij -> Carsten Leonhardt
+newpath 1939 1880 moveto
+2021 1865 2165 1839 2233 1826 curveto
+stroke
+newpath 1942 1882 moveto
+1932 1881 lineto
+1942 1877 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joost Kooij -> Petr Cech
+newpath 2241 1805 moveto
+2205 1789 2147 1764 2147 1764 curveto
+2122 1742 2101 1707 2101 1674 curveto
+2101 1674 2101 1674 2101 1530 curveto
+2101 1475 2134 1412 2103 1368 curveto
+2056 1297 1943 1254 1943 1170 curveto
+1943 1170 1943 1170 1943 882 curveto
+1943 799 1744 822 1709 765 curveto
+stroke
+newpath 1707 766 moveto
+1705 756 lineto
+1711 764 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Jordi
+gsave 10 dict begin
+solid
+2113 1170 27 18 ellipse_path
+stroke
+gsave 10 dict begin
+2113 1171 moveto (Jordi) 28 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Joost Kooij -> Jordi
+newpath 2297 1804 moveto
+2317 1794 2343 1779 2354 1764 curveto
+2390 1716 2423 1660 2423 1602 curveto
+2423 1602 2423 1602 2423 1458 curveto
+2423 1426 2420 1384 2393 1368 curveto
+2345 1337 2275 1361 2225 1332 curveto
+2189 1309 2181 1258 2155 1224 curveto
+2155 1224 2140 1208 2128 1194 curveto
+stroke
+newpath 2127 1196 moveto
+2122 1187 lineto
+2130 1193 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joost Kooij -> Othmar Pasteka
+newpath 2242 1805 moveto
+2221 1794 2193 1779 2179 1764 curveto
+2157 1739 2139 1706 2139 1674 curveto
+2139 1674 2139 1674 2139 1530 curveto
+2139 1457 2021 1446 1963 1404 curveto
+1941 1387 1908 1358 1886 1337 curveto
+stroke
+newpath 1885 1339 moveto
+1879 1331 lineto
+1888 1336 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joost Kooij -> Dale Scheetz (Dwarf #1)
+newpath 2265 1800 moveto
+2264 1792 2264 1783 2264 1774 curveto
+stroke
+newpath 2262 1774 moveto
+2265 1764 lineto
+2266 1774 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ruud de Rooij -> Wichert Akkerman
+newpath 2879 801 moveto
+2908 796 2935 792 2937 792 curveto
+3094 777 3252 777 3408 756 curveto
+3430 753 3443 728 3463 720 curveto
+3500 704 3539 696 3576 684 curveto
+3709 641 3947 565 4037 535 curveto
+stroke
+newpath 2883 803 moveto
+2873 802 lineto
+2882 798 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ruud de Rooij -> J.H.M. Dassen (Ray)
+newpath 4167 714 moveto
+4158 702 4148 689 4145 684 curveto
+4126 644 4100 573 4084 540 curveto
+stroke
+newpath 4168 710 moveto
+4171 720 lineto
+4163 713 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ruud de Rooij -> Bart Warmerdam
+newpath 4048 506 moveto
+4035 497 4020 484 4007 474 curveto
+stroke
+newpath 4006 476 moveto
+4000 468 lineto
+4009 473 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ruud de Rooij -> Joop Stakenborg
+newpath 4016 574 moveto
+4030 563 4046 550 4058 539 curveto
+stroke
+newpath 4020 574 moveto
+4011 578 lineto
+4017 570 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ruud de Rooij -> Paul Slootman
+newpath 4175 642 moveto
+4165 631 4154 620 4147 612 curveto
+4131 592 4104 560 4087 540 curveto
+stroke
+newpath 4177 640 moveto
+4182 649 lineto
+4173 644 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Eric Schwartz (Eric the Read)
+gsave 10 dict begin
+solid
+3125 2250 94 18 ellipse_path
+stroke
+gsave 10 dict begin
+3125 2251 moveto (Eric Schwartz \(Eric the Read\)) 167 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Bdale Garbee (N3EUA) -> Eric Schwartz (Eric the Read)
+newpath 3064 2305 moveto
+3075 2295 3087 2284 3098 2274 curveto
+stroke
+newpath 3096 2273 moveto
+3105 2268 lineto
+3099 2276 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Paul Bame
+gsave 10 dict begin
+solid
+3278 2250 41 18 ellipse_path
+stroke
+gsave 10 dict begin
+3278 2251 moveto (Paul Bame) 61 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Bdale Garbee (N3EUA) -> Paul Bame
+newpath 3093 2308 moveto
+3135 2296 3194 2279 3231 2268 curveto
+3233 2268 3235 2267 3238 2266 curveto
+stroke
+newpath 3237 2264 moveto
+3247 2262 lineto
+3239 2268 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Stephen M Moraco
+gsave 10 dict begin
+solid
+2949 2250 64 18 ellipse_path
+stroke
+gsave 10 dict begin
+2949 2251 moveto (Stephen M Moraco) 107 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Bdale Garbee (N3EUA) -> Stephen M Moraco
+newpath 3021 2305 moveto
+3008 2295 2992 2283 2979 2273 curveto
+stroke
+newpath 2978 2275 moveto
+2971 2267 lineto
+2981 2271 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Brian M. Almeida -> Wichert Akkerman
+newpath 2805 784 moveto
+2799 775 2791 764 2785 756 curveto
+stroke
+newpath 2807 782 moveto
+2810 792 lineto
+2803 785 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ben Collins (Nada)
+gsave 10 dict begin
+solid
+3196 666 64 18 ellipse_path
+stroke
+gsave 10 dict begin
+3196 667 moveto (Ben Collins \(Nada\)) 108 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Brian M. Almeida -> Ben Collins (Nada)
+newpath 2806 724 moveto
+2813 722 2820 721 2825 720 curveto
+2921 705 3017 698 3112 684 curveto
+3119 683 3128 681 3138 679 curveto
+stroke
+newpath 3135 677 moveto
+3145 677 lineto
+3136 682 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Brian M. Almeida -> Christopher L Cheney
+newpath 2738 722 moveto
+2723 713 2704 700 2689 689 curveto
+stroke
+newpath 2689 692 moveto
+2682 684 lineto
+2692 688 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Frank Belew (Myth)
+gsave 10 dict begin
+solid
+3084 522 68 18 ellipse_path
+stroke
+gsave 10 dict begin
+3084 523 moveto (Frank Belew \(Myth\)) 114 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Brian M. Almeida -> Frank Belew (Myth)
+newpath 2774 720 moveto
+2811 678 2956 586 2971 576 curveto
+2980 570 3012 554 3040 540 curveto
+stroke
+newpath 3037 539 moveto
+3047 537 lineto
+3039 543 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Daniel Jacobowitz
+gsave 10 dict begin
+solid
+3054 594 62 18 ellipse_path
+stroke
+gsave 10 dict begin
+3054 595 moveto (Daniel Jacobowitz) 103 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Brian M. Almeida -> Daniel Jacobowitz
+newpath 2775 720 moveto
+2808 678 2916 716 2972 684 curveto
+2993 671 3016 641 3032 619 curveto
+stroke
+newpath 3029 619 moveto
+3037 612 lineto
+3033 622 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Brian M. Almeida -> Peter Teichman
+newpath 2803 723 moveto
+2810 722 2818 721 2825 720 curveto
+2889 706 2954 699 3017 684 curveto
+3050 675 3080 658 3111 648 curveto
+3156 634 3205 633 3245 612 curveto
+3301 581 3225 457 3193 403 curveto
+stroke
+newpath 3192 406 moveto
+3189 396 lineto
+3196 403 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ryan Murray
+gsave 10 dict begin
+solid
+2544 594 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+2544 595 moveto (Ryan Murray) 74 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Brian M. Almeida -> Ryan Murray
+newpath 2713 730 moveto
+2667 721 2603 705 2569 684 curveto
+2553 673 2544 644 2542 621 curveto
+stroke
+newpath 2540 622 moveto
+2541 612 lineto
+2545 622 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joey Hess
+gsave 10 dict begin
+solid
+2720 450 38 18 ellipse_path
+stroke
+gsave 10 dict begin
+2720 451 moveto (Joey Hess) 56 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Brian M. Almeida -> Joey Hess
+newpath 2761 720 moveto
+2749 670 2725 533 2720 475 curveto
+stroke
+newpath 2718 478 moveto
+2719 468 lineto
+2723 478 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Sean 'Shaleh' Perry
+gsave 10 dict begin
+solid
+2436 522 66 18 ellipse_path
+stroke
+gsave 10 dict begin
+2436 523 moveto (Sean 'Shaleh' Perry) 111 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Brian M. Almeida -> Sean 'Shaleh' Perry
+newpath 2708 733 moveto
+2654 725 2600 706 2549 684 curveto
+2506 664 2466 589 2448 548 curveto
+stroke
+newpath 2446 550 moveto
+2444 540 lineto
+2451 548 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ben Collins (Nada) -> Wichert Akkerman
+newpath 2864 794 moveto
+2915 780 2966 774 3014 756 curveto
+3031 749 3036 727 3051 720 curveto
+3066 713 3118 694 3156 680 curveto
+stroke
+newpath 2867 796 moveto
+2857 796 lineto
+2866 791 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ben Collins (Nada) -> Brian M. Almeida
+newpath 2821 725 moveto
+2829 723 2837 721 2843 720 curveto
+2939 705 3035 698 3130 684 curveto
+3137 683 3145 681 3153 679 curveto
+stroke
+newpath 2824 727 moveto
+2814 726 lineto
+2824 722 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Zephaniah E. Hull
+gsave 10 dict begin
+solid
+3640 594 62 18 ellipse_path
+stroke
+gsave 10 dict begin
+3640 595 moveto (Zephaniah E. Hull) 102 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Ben Collins (Nada) -> Zephaniah E. Hull
+newpath 3252 657 moveto
+3335 643 3491 619 3578 604 curveto
+stroke
+newpath 3576 602 moveto
+3586 603 lineto
+3576 607 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Adam Heath
+gsave 10 dict begin
+solid
+3635 882 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+3635 883 moveto (Adam Heath) 70 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Branden Robinson
+gsave 10 dict begin
+solid
+3758 810 62 18 ellipse_path
+stroke
+gsave 10 dict begin
+3758 811 moveto (Branden Robinson) 104 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Adam Heath -> Branden Robinson
+newpath 3661 867 moveto
+3679 856 3702 843 3722 831 curveto
+stroke
+newpath 3720 829 moveto
+3730 826 lineto
+3723 833 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Vaidhyanathan G Mayilrangam
+gsave 10 dict begin
+solid
+2935 378 99 18 ellipse_path
+stroke
+gsave 10 dict begin
+2935 379 moveto (Vaidhyanathan G Mayilrangam) 176 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Adam Heath -> Vaidhyanathan G Mayilrangam
+newpath 3636 864 moveto
+3637 826 3634 742 3597 720 curveto
+3424 614 3094 454 2978 398 curveto
+stroke
+newpath 2979 401 moveto
+2971 395 lineto
+2981 397 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Manoj Srivastava
+gsave 10 dict begin
+solid
+3543 810 59 18 ellipse_path
+stroke
+gsave 10 dict begin
+3543 811 moveto (Manoj Srivastava) 98 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Adam Heath -> Manoj Srivastava
+newpath 3614 866 moveto
+3601 856 3586 844 3572 833 curveto
+stroke
+newpath 3571 835 moveto
+3565 827 lineto
+3574 832 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Adam Heath -> Zephaniah E. Hull
+newpath 3640 864 moveto
+3643 852 3646 838 3647 828 curveto
+3652 770 3646 670 3642 622 curveto
+stroke
+newpath 3640 622 moveto
+3641 612 lineto
+3644 622 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Craig Small -> Wichert Akkerman
+newpath 2746 803 moveto
+2638 792 2429 771 2308 756 curveto
+2300 755 2290 752 2280 748 curveto
+stroke
+newpath 2746 801 moveto
+2756 804 lineto
+2746 805 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Brendan O'Dea
+gsave 10 dict begin
+solid
+2234 666 54 18 ellipse_path
+stroke
+gsave 10 dict begin
+2234 667 moveto (Brendan O'Dea) 87 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Craig Small -> Brendan O'Dea
+newpath 2241 720 moveto
+2240 712 2239 702 2238 694 curveto
+stroke
+newpath 2236 694 moveto
+2237 684 lineto
+2240 694 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christopher L Cheney -> Wichert Akkerman
+newpath 2764 793 moveto
+2739 784 2710 770 2694 756 curveto
+2679 741 2670 706 2665 684 curveto
+stroke
+newpath 2764 790 moveto
+2773 796 lineto
+2763 795 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christopher L Cheney -> Stephen R. Gore
+newpath 2602 656 moveto
+2526 642 2397 618 2324 605 curveto
+stroke
+newpath 2327 608 moveto
+2318 604 lineto
+2328 603 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christopher L Cheney -> Brian M. Almeida
+newpath 2740 715 moveto
+2726 705 2707 692 2692 682 curveto
+stroke
+newpath 2741 713 moveto
+2747 721 lineto
+2738 716 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christopher L Cheney -> Frank Belew (Myth)
+newpath 2712 653 moveto
+2758 642 2824 626 2865 612 curveto
+2886 605 2900 584 2920 576 curveto
+2936 569 2987 552 3029 538 curveto
+stroke
+newpath 3028 536 moveto
+3038 535 lineto
+3029 541 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christopher L Cheney -> Daniel Jacobowitz
+newpath 2719 655 moveto
+2792 640 2918 617 2993 604 curveto
+stroke
+newpath 2990 602 moveto
+3000 603 lineto
+2990 607 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christopher L Cheney -> Peter Teichman
+newpath 2671 648 moveto
+2686 627 2717 592 2739 576 curveto
+2838 504 3041 426 3133 393 curveto
+stroke
+newpath 3131 391 moveto
+3141 390 lineto
+3133 396 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christopher L Cheney -> Ryan Murray
+newpath 2630 650 moveto
+2612 640 2590 626 2572 615 curveto
+stroke
+newpath 2572 618 moveto
+2565 610 lineto
+2575 614 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christoph Lameter
+gsave 10 dict begin
+solid
+2133 594 63 18 ellipse_path
+stroke
+gsave 10 dict begin
+2133 595 moveto (Christoph Lameter) 105 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Christopher L Cheney -> Christoph Lameter
+newpath 2595 659 moveto
+2494 648 2303 626 2193 612 curveto
+2190 611 2186 611 2181 610 curveto
+stroke
+newpath 2183 613 moveto
+2174 608 lineto
+2184 608 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Frank Belew (Myth) -> Brian M. Almeida
+newpath 2788 714 moveto
+2841 671 2975 586 2989 576 curveto
+2999 570 3033 552 3058 539 curveto
+stroke
+newpath 2790 715 moveto
+2781 720 lineto
+2787 712 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Frank Belew (Myth) -> Christopher L Cheney
+newpath 2726 653 moveto
+2775 642 2842 625 2883 612 curveto
+2904 605 2918 584 2938 576 curveto
+2954 569 3008 551 3046 537 curveto
+stroke
+newpath 2729 655 moveto
+2719 655 lineto
+2728 650 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Daniel Jacobowitz -> Brian M. Almeida
+newpath 2786 715 moveto
+2834 681 2936 715 2990 684 curveto
+3013 670 3038 634 3049 612 curveto
+stroke
+newpath 2789 716 moveto
+2780 720 lineto
+2786 712 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Daniel Jacobowitz -> Christopher L Cheney
+newpath 2729 655 moveto
+2806 641 2932 618 3003 604 curveto
+stroke
+newpath 2732 657 moveto
+2722 656 lineto
+2732 652 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Daniel Jacobowitz -> Peter Teichman
+newpath 3098 581 moveto
+3124 572 3154 558 3164 540 curveto
+3184 507 3183 440 3181 403 curveto
+stroke
+newpath 3179 406 moveto
+3181 396 lineto
+3184 406 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Peter Teichman -> Wichert Akkerman
+newpath 2871 797 moveto
+2937 783 3000 774 3059 756 curveto
+3080 749 3091 726 3111 720 curveto
+3167 702 3231 712 3281 684 curveto
+3334 653 3313 562 3298 504 curveto
+3292 478 3281 452 3263 432 curveto
+3252 419 3231 404 3212 393 curveto
+stroke
+newpath 2875 799 moveto
+2865 798 lineto
+2874 794 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Peter Teichman -> Brian M. Almeida
+newpath 2816 724 moveto
+2826 723 2835 722 2843 720 curveto
+2907 706 2972 699 3035 684 curveto
+3068 675 3098 658 3129 648 curveto
+3174 634 3223 633 3263 612 curveto
+3323 580 3235 444 3196 395 curveto
+stroke
+newpath 2819 726 moveto
+2809 725 lineto
+2819 721 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Peter Teichman -> Christopher L Cheney
+newpath 2690 641 moveto
+2710 620 2737 590 2757 576 curveto
+2858 503 3064 424 3146 392 curveto
+stroke
+newpath 2692 643 moveto
+2683 648 lineto
+2688 639 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ryan Murray -> Wichert Akkerman
+newpath 2758 797 moveto
+2678 777 2598 746 2549 684 curveto
+2535 665 2533 637 2538 612 curveto
+stroke
+newpath 2756 794 moveto
+2765 799 lineto
+2755 799 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ryan Murray -> Brian M. Almeida
+newpath 2709 726 moveto
+2669 717 2617 703 2587 684 curveto
+2569 672 2560 635 2553 612 curveto
+stroke
+newpath 2708 723 moveto
+2717 728 lineto
+2707 728 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ryan Murray -> Christopher L Cheney
+newpath 2632 644 moveto
+2614 632 2591 618 2573 608 curveto
+stroke
+newpath 2633 642 moveto
+2640 649 lineto
+2630 646 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ryan Murray -> Peter Teichman
+newpath 2581 583 moveto
+2615 572 2663 555 2690 540 curveto
+2743 510 2778 450 2835 432 curveto
+2835 432 3024 403 3122 387 curveto
+stroke
+newpath 3121 385 moveto
+3131 386 lineto
+3121 390 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ryan Murray -> Joey Hess
+newpath 2571 579 moveto
+2593 568 2623 553 2639 540 curveto
+2658 525 2681 494 2698 473 curveto
+stroke
+newpath 2695 473 moveto
+2703 466 lineto
+2699 476 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Randolph Chung
+gsave 10 dict begin
+solid
+2578 522 58 18 ellipse_path
+stroke
+gsave 10 dict begin
+2578 523 moveto (Randolph Chung) 95 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Ryan Murray -> Randolph Chung
+newpath 2547 576 moveto
+2550 568 2555 558 2559 549 curveto
+stroke
+newpath 2557 548 moveto
+2564 540 lineto
+2561 550 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ryan Murray -> Sean 'Shaleh' Perry
+newpath 2520 578 moveto
+2505 568 2486 555 2469 544 curveto
+stroke
+newpath 2468 546 moveto
+2461 539 lineto
+2471 542 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Mike Markley
+gsave 10 dict begin
+solid
+2948 522 50 18 ellipse_path
+stroke
+gsave 10 dict begin
+2948 523 moveto (Mike Markley) 80 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Ryan Murray -> Mike Markley
+newpath 2588 586 moveto
+2663 573 2816 546 2896 531 curveto
+stroke
+newpath 2893 529 moveto
+2903 530 lineto
+2893 534 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joey Hess -> Wichert Akkerman
+newpath 2750 802 moveto
+2672 791 2550 772 2521 756 curveto
+2444 710 2407 615 2358 540 curveto
+2352 529 2347 506 2358 504 curveto
+2448 481 2610 462 2683 454 curveto
+stroke
+newpath 2747 799 moveto
+2757 803 lineto
+2747 804 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joey Hess -> Brian M. Almeida
+newpath 2767 713 moveto
+2762 655 2739 518 2727 468 curveto
+stroke
+newpath 2769 710 moveto
+2768 720 lineto
+2764 710 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joey Hess -> Christopher L Cheney
+newpath 2649 640 moveto
+2640 619 2631 591 2641 576 curveto
+2653 559 2680 557 2690 540 curveto
+2701 522 2711 489 2716 468 curveto
+stroke
+newpath 2651 638 moveto
+2653 648 lineto
+2646 640 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joey Hess -> Peter Teichman
+newpath 2754 442 moveto
+2773 437 2794 432 2797 432 curveto
+2887 418 3040 397 3123 386 curveto
+stroke
+newpath 3120 384 moveto
+3130 385 lineto
+3120 389 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joey Hess -> Ryan Murray
+newpath 2585 579 moveto
+2610 568 2640 553 2657 540 curveto
+2677 523 2702 489 2714 468 curveto
+stroke
+newpath 2589 580 moveto
+2579 582 lineto
+2587 575 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Chip Salzenberg
+gsave 10 dict begin
+solid
+2648 378 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+2648 379 moveto (Chip Salzenberg) 92 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Joey Hess -> Chip Salzenberg
+newpath 2704 434 moveto
+2694 424 2682 412 2672 402 curveto
+stroke
+newpath 2670 404 moveto
+2665 395 lineto
+2674 400 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	David L. Coe
+gsave 10 dict begin
+solid
+2770 378 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+2770 379 moveto (David L. Coe) 75 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Joey Hess -> David L. Coe
+newpath 2726 432 moveto
+2731 423 2739 412 2746 403 curveto
+stroke
+newpath 2744 402 moveto
+2752 395 lineto
+2748 405 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Erik Andersen
+gsave 10 dict begin
+solid
+2523 378 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+2523 379 moveto (Erik Andersen) 81 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Joey Hess -> Erik Andersen
+newpath 2690 439 moveto
+2656 427 2604 408 2566 394 curveto
+stroke
+newpath 2566 397 moveto
+2558 391 lineto
+2568 392 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joey Hess -> Randolph Chung
+newpath 2620 503 moveto
+2645 491 2676 476 2697 464 curveto
+stroke
+newpath 2622 505 moveto
+2612 507 lineto
+2620 500 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joey Hess -> Vaidhyanathan G Mayilrangam
+newpath 2749 438 moveto
+2782 427 2833 410 2874 396 curveto
+stroke
+newpath 2873 394 moveto
+2883 393 lineto
+2874 399 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Michael Beattie
+gsave 10 dict begin
+solid
+4472 2466 55 18 ellipse_path
+stroke
+gsave 10 dict begin
+4472 2467 moveto (Michael Beattie) 88 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Carey Evans
+gsave 10 dict begin
+solid
+4472 2394 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+4472 2395 moveto (Carey Evans) 70 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Michael Beattie -> Carey Evans
+newpath 4466 2448 moveto
+4465 2440 4465 2431 4465 2422 curveto
+stroke
+newpath 4463 2422 moveto
+4466 2412 lineto
+4467 2422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Carey Evans -> Michael Beattie
+newpath 4479 2438 moveto
+4479 2429 4479 2420 4478 2412 curveto
+stroke
+newpath 4481 2438 moveto
+4478 2448 lineto
+4477 2438 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Carsten Leonhardt -> Torsten Landschoff
+newpath 795 2094 moveto
+858 2083 956 2064 1014 2052 curveto
+1166 2018 1315 1972 1467 1944 curveto
+1564 1925 1732 1906 1820 1896 curveto
+stroke
+newpath 796 2096 moveto
+786 2096 lineto
+795 2091 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Carsten Leonhardt -> Thimo Neubauer
+newpath 1864 1872 moveto
+1839 1835 1788 1746 1765 1701 curveto
+stroke
+newpath 1763 1702 moveto
+1761 1692 lineto
+1767 1700 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Carsten Leonhardt -> Joost Kooij
+newpath 1929 1880 moveto
+2007 1865 2151 1839 2225 1825 curveto
+stroke
+newpath 2222 1823 moveto
+2232 1824 lineto
+2222 1828 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Carsten Leonhardt -> Martin Schulze
+newpath 1240 2154 moveto
+1244 2130 1249 2095 1267 2088 curveto
+1425 2017 1722 1934 1834 1903 curveto
+stroke
+newpath 1243 2151 moveto
+1239 2160 lineto
+1238 2150 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Martin Schulze -> Torsten Landschoff
+newpath 1184 2171 moveto
+1092 2159 896 2131 795 2116 curveto
+stroke
+newpath 798 2119 moveto
+789 2115 lineto
+799 2114 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Martin Schulze -> Roland Bauerschmidt
+newpath 1208 2162 moveto
+1183 2146 1149 2124 1149 2124 curveto
+1128 2099 1110 2066 1110 2034 curveto
+1110 2034 1110 2034 1110 1890 curveto
+1110 1810 1089 1732 1066 1656 curveto
+1049 1595 995 1550 945 1512 curveto
+927 1497 896 1496 883 1476 curveto
+839 1403 780 1327 780 1242 curveto
+780 1242 780 1242 780 522 curveto
+780 485 818 432 844 402 curveto
+stroke
+newpath 841 402 moveto
+849 396 lineto
+845 405 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Martin Schulze -> Daniel Mester
+newpath 1221 2160 moveto
+1193 2106 1224 2027 1224 1962 curveto
+1224 1962 1224 1962 1224 1890 curveto
+1224 1787 1214 1685 1217 1584 curveto
+1219 1535 1222 1455 1223 1412 curveto
+stroke
+newpath 1221 1414 moveto
+1223 1404 lineto
+1226 1414 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Martin Schulze -> Carsten Leonhardt
+newpath 1227 2160 moveto
+1225 2136 1230 2096 1249 2088 curveto
+1406 2017 1701 1935 1823 1904 curveto
+stroke
+newpath 1820 1902 moveto
+1830 1902 lineto
+1821 1907 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joel Rosdahl
+gsave 10 dict begin
+solid
+1316 2106 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+1316 2107 moveto (Joel Rosdahl) 71 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Martin Schulze -> Joel Rosdahl
+newpath 1247 2161 moveto
+1258 2151 1272 2138 1285 2128 curveto
+stroke
+newpath 1284 2126 moveto
+1293 2122 lineto
+1287 2130 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Petr Cech -> Edward Betts
+newpath 2587 1954 moveto
+2372 1933 2025 2011 2025 1818 curveto
+2025 1818 2025 1818 2025 1746 curveto
+2025 1552 1782 1439 1709 1260 curveto
+1671 1165 1703 1056 1703 954 curveto
+1703 954 1703 954 1703 882 curveto
+1703 846 1704 787 1704 756 curveto
+stroke
+newpath 2586 1951 moveto
+2596 1955 lineto
+2586 1956 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Petr Cech -> Thimo Neubauer
+newpath 1755 1650 moveto
+1749 1602 1724 1495 1696 1440 curveto
+1686 1418 1653 1419 1634 1404 curveto
+1609 1382 1581 1361 1566 1332 curveto
+1541 1281 1515 1226 1515 1170 curveto
+1515 1170 1515 1170 1515 1026 curveto
+1515 931 1645 801 1690 755 curveto
+stroke
+newpath 1757 1646 moveto
+1756 1656 lineto
+1752 1647 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Petr Cech -> Marcelo E. Magallon
+newpath 1687 722 moveto
+1651 688 1565 608 1509 576 curveto
+1494 566 1436 550 1391 537 curveto
+stroke
+newpath 1394 541 moveto
+1385 535 lineto
+1395 536 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Petr Cech -> Carsten Leonhardt
+newpath 1878 1862 moveto
+1878 1830 1878 1778 1878 1746 curveto
+1878 1746 1878 1746 1878 1602 curveto
+1878 1514 1756 1475 1704 1404 curveto
+1673 1360 1643 1312 1630 1260 curveto
+1617 1201 1624 1139 1630 1080 curveto
+1635 1036 1665 997 1665 954 curveto
+1665 954 1665 954 1665 882 curveto
+1665 845 1686 785 1697 756 curveto
+stroke
+newpath 1881 1862 moveto
+1878 1872 lineto
+1876 1862 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Petr Cech -> Christian Surchi
+newpath 2319 1229 moveto
+2278 1218 2219 1202 2184 1188 curveto
+2170 1181 2164 1163 2152 1152 curveto
+2116 1115 2069 1087 2040 1044 curveto
+2023 1018 2019 984 2019 954 curveto
+2019 954 2019 954 2019 882 curveto
+2019 851 2026 805 1998 792 curveto
+1924 756 1834 770 1752 756 curveto
+1752 756 1743 753 1733 749 curveto
+stroke
+newpath 2319 1226 moveto
+2328 1231 lineto
+2318 1231 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Petr Cech -> Othmar Pasteka
+newpath 1889 1291 moveto
+1925 1263 1981 1212 1981 1170 curveto
+1981 1170 1981 1170 1981 882 curveto
+1981 851 1987 806 1960 792 curveto
+1892 754 1795 785 1727 752 curveto
+stroke
+newpath 1891 1292 moveto
+1882 1297 lineto
+1888 1289 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Petr Cech -> Christoph Lameter
+newpath 1735 728 moveto
+1809 704 1995 641 2084 611 curveto
+stroke
+newpath 2082 609 moveto
+2092 608 lineto
+2084 614 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Petr Cech -> Dale Scheetz (Dwarf #1)
+newpath 2290 1720 moveto
+2358 1626 2574 1305 2441 1224 curveto
+2330 1155 2198 1119 2090 1044 curveto
+2064 1025 2057 985 2057 954 curveto
+2057 954 2057 954 2057 882 curveto
+2057 850 2056 804 2026 792 curveto
+1941 756 1843 771 1752 756 curveto
+1752 756 1743 753 1733 749 curveto
+stroke
+newpath 2292 1722 moveto
+2284 1728 lineto
+2288 1719 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	David Frey -> Florian Lohoff
+newpath 2719 2393 moveto
+2391 2383 827 2340 827 2340 curveto
+759 2336 10 2318 10 2250 curveto
+10 2250 10 2250 10 162 curveto
+10 71 4100 24 4561 18 curveto
+stroke
+newpath 2717 2391 moveto
+2727 2393 lineto
+2717 2396 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	David Frey -> Stefan Gybas
+newpath 2696 2319 moveto
+2895 2308 3565 2268 3565 2268 curveto
+3656 2243 4544 1854 4569 1764 curveto
+4608 1618 4615 1464 4616 1314 curveto
+4616 1314 4616 1314 4616 1026 curveto
+4615 749 5029 582 5030 306 curveto
+5030 306 5030 306 5030 162 curveto
+5029 101 4748 43 4643 24 curveto
+stroke
+newpath 2698 2322 moveto
+2688 2319 lineto
+2698 2317 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	David Frey -> Wichert Akkerman
+newpath 2879 801 moveto
+2910 796 2942 792 2942 792 curveto
+3382 775 3822 790 4260 756 curveto
+4371 747 4390 560 4390 450 curveto
+4390 450 4390 450 4390 162 curveto
+4390 98 4509 49 4569 29 curveto
+stroke
+newpath 2883 803 moveto
+2873 802 lineto
+2882 798 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	David Frey -> Thimo Neubauer
+newpath 1819 1673 moveto
+2176 1657 2513 1520 2842 1404 curveto
+3104 1311 3350 1181 3607 1080 curveto
+3897 965 4194 870 4483 756 curveto
+4527 738 4573 718 4606 684 curveto
+4627 661 4635 625 4636 594 curveto
+4636 594 4636 594 4636 162 curveto
+4635 126 4623 66 4613 36 curveto
+stroke
+newpath 1823 1676 moveto
+1813 1673 lineto
+1823 1671 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	David Frey -> Carsten Leonhardt
+newpath 1949 1889 moveto
+2095 1884 2241 1865 2384 1836 curveto
+2425 1827 2454 1790 2485 1764 curveto
+2665 1610 2824 1432 3016 1296 curveto
+3133 1213 3632 934 3755 864 curveto
+3780 849 3812 847 3832 828 curveto
+3841 819 3841 800 3832 792 curveto
+3811 772 3775 775 3753 756 curveto
+3642 654 3780 456 3780 306 curveto
+3780 306 3780 306 3780 162 curveto
+3780 101 4395 38 4562 22 curveto
+stroke
+newpath 1950 1892 moveto
+1940 1889 lineto
+1950 1887 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	David Frey -> Dale Scheetz (Dwarf #1)
+newpath 2336 1731 moveto
+2503 1693 2961 1579 3197 1476 curveto
+3333 1416 4729 741 4730 594 curveto
+4730 594 4730 594 4730 522 curveto
+4729 448 4691 379 4692 306 curveto
+4692 306 4692 306 4692 162 curveto
+4691 122 4648 63 4622 35 curveto
+stroke
+newpath 2339 1733 moveto
+2329 1733 lineto
+2338 1728 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Martin Bialasinski
+gsave 10 dict begin
+solid
+2355 882 62 18 ellipse_path
+stroke
+gsave 10 dict begin
+2355 883 moveto (Martin Bialasinski) 103 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Martin Bialasinski -> Wichert Akkerman
+newpath 2409 873 moveto
+2429 870 2451 866 2466 864 curveto
+2545 851 2675 831 2752 820 curveto
+stroke
+newpath 2749 818 moveto
+2759 819 lineto
+2749 823 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Martin Bialasinski -> Christian Kurz
+newpath 2338 865 moveto
+2316 842 2275 804 2244 792 curveto
+2179 766 2100 786 2036 756 curveto
+1971 724 1911 674 1873 612 curveto
+1814 513 1854 347 1755 288 curveto
+1741 279 1437 251 1309 239 curveto
+stroke
+newpath 1311 242 moveto
+1301 238 lineto
+1311 237 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Gregor Hoffleit -> Oliver M. Bolzer
+newpath 932 1577 moveto
+917 1555 893 1525 873 1512 curveto
+842 1490 795 1497 763 1476 curveto
+731 1453 686 1425 686 1386 curveto
+686 1386 686 1386 686 594 curveto
+686 557 663 498 650 468 curveto
+stroke
+newpath 933 1574 moveto
+937 1584 lineto
+929 1577 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Gregor Hoffleit -> Torsten Landschoff
+newpath 720 2081 moveto
+711 2066 700 2052 700 2052 curveto
+689 2029 683 2004 675 1980 curveto
+635 1854 554 1734 554 1602 curveto
+554 1602 554 1602 554 1530 curveto
+554 1451 648 1392 648 1314 curveto
+648 1314 648 1314 648 594 curveto
+648 558 650 498 647 468 curveto
+stroke
+newpath 721 2078 moveto
+725 2088 lineto
+717 2081 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Gregor Hoffleit -> Christian Kurz
+newpath 652 432 moveto
+675 394 731 306 783 288 curveto
+892 249 1092 239 1191 235 curveto
+stroke
+newpath 1190 233 moveto
+1200 235 lineto
+1190 238 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Gregor Hoffleit -> Roland Bauerschmidt
+newpath 679 436 moveto
+714 425 768 407 809 395 curveto
+stroke
+newpath 808 393 moveto
+818 392 lineto
+809 398 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Gregor Hoffleit -> Marcelo E. Magallon
+newpath 1263 514 moveto
+1123 500 817 468 694 455 curveto
+stroke
+newpath 1261 511 moveto
+1271 515 lineto
+1261 516 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Gregor Hoffleit -> Philipp Frauenfelder
+newpath 637 432 moveto
+633 401 633 340 633 306 curveto
+633 306 633 306 633 234 curveto
+633 145 1521 103 1792 92 curveto
+stroke
+newpath 1793 90 moveto
+1803 92 lineto
+1793 95 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roman Hodek
+gsave 10 dict begin
+solid
+2889 2466 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+2889 2467 moveto (Roman Hodek) 81 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Roman Hodek -> Florian Lohoff
+newpath 2864 2450 moveto
+2848 2440 2828 2426 2811 2415 curveto
+stroke
+newpath 2810 2417 moveto
+2803 2410 lineto
+2813 2413 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roman Hodek -> Wichert Akkerman
+newpath 2940 2464 moveto
+3176 2456 4150 2414 4150 2322 curveto
+4150 2322 4150 2322 4150 1962 curveto
+4150 1687 3924 1444 3924 1170 curveto
+3924 1170 3924 1170 3924 1098 curveto
+3924 1016 3108 863 2876 821 curveto
+stroke
+newpath 2879 824 moveto
+2870 820 lineto
+2880 819 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roman Hodek -> Torsten Landschoff
+newpath 2851 2454 moveto
+2841 2451 2832 2448 2832 2448 curveto
+2102 2430 1370 2441 639 2412 curveto
+548 2408 95 2413 95 2322 curveto
+95 2322 95 2322 95 2250 curveto
+95 2164 491 2124 659 2111 curveto
+stroke
+newpath 659 2109 moveto
+669 2110 lineto
+659 2113 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roman Hodek -> Christian Kurz
+newpath 2888 2448 moveto
+2884 2410 2877 2319 2873 2268 curveto
+2873 2256 2871 2243 2873 2232 curveto
+2902 2117 2969 2008 2969 1890 curveto
+2969 1890 2969 1890 2969 1746 curveto
+2969 1634 2917 1514 2834 1440 curveto
+2655 1276 2455 1136 2276 972 curveto
+2220 919 2195 834 2130 792 curveto
+2078 757 2003 781 1946 756 curveto
+1919 743 1908 709 1891 684 curveto
+1805 553 1764 378 1635 288 curveto
+1616 273 1412 250 1309 240 curveto
+stroke
+newpath 1310 243 moveto
+1300 239 lineto
+1310 238 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roman Hodek -> Gregor Hoffleit
+newpath 2851 2454 moveto
+2841 2451 2832 2448 2832 2448 curveto
+1944 2430 1055 2452 167 2412 curveto
+120 2409 57 2369 57 2322 curveto
+57 2322 57 2322 57 2034 curveto
+57 1797 348 1622 348 1386 curveto
+348 1386 348 1386 348 1314 curveto
+348 1127 592 996 592 810 curveto
+592 810 592 810 592 594 curveto
+592 561 613 510 628 478 curveto
+stroke
+newpath 626 476 moveto
+633 468 lineto
+631 478 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roman Hodek -> Marcus Brinkmann
+newpath 2922 2452 moveto
+3004 2418 3218 2328 3331 2268 curveto
+3342 2262 3340 2240 3331 2232 curveto
+3310 2212 3264 2222 3253 2196 curveto
+3165 1974 3186 1702 3042 1512 curveto
+2847 1251 2525 1116 2281 900 curveto
+2252 873 2268 811 2234 792 curveto
+2177 758 2094 790 2036 756 curveto
+1883 663 1843 292 1835 189 curveto
+stroke
+newpath 1833 190 moveto
+1834 180 lineto
+1838 190 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roman Hodek -> Christian T. Steigies
+newpath 2940 2466 moveto
+3267 2464 3593 2446 3917 2412 curveto
+4024 2400 4226 2429 4226 2322 curveto
+4226 2322 4226 2322 4226 1386 curveto
+4226 1082 4673 897 4674 594 curveto
+4674 594 4674 594 4674 522 curveto
+4673 493 4575 431 4521 398 curveto
+stroke
+newpath 4521 401 moveto
+4514 394 lineto
+4524 397 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roman Hodek -> Philipp Frauenfelder
+newpath 2930 2455 moveto
+2972 2444 3037 2426 3075 2412 curveto
+3130 2392 3181 2366 3232 2340 curveto
+3274 2318 3318 2299 3352 2268 curveto
+3371 2251 3326 2148 3320 2124 curveto
+3294 1998 3251 1874 3251 1746 curveto
+3251 1746 3251 1746 3251 1530 curveto
+3251 1290 2858 1258 2665 1116 curveto
+2654 1107 2652 1090 2642 1080 curveto
+2573 1006 2508 927 2429 864 curveto
+2389 830 2337 811 2288 792 curveto
+2248 775 2199 780 2162 756 curveto
+2107 718 2064 664 2023 612 curveto
+1976 550 2042 456 2042 378 curveto
+2042 378 2042 378 2042 234 curveto
+2042 183 1963 135 1912 109 curveto
+stroke
+newpath 1913 112 moveto
+1905 106 lineto
+1915 108 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roman Hodek -> Roland Rosenfeld
+newpath 2854 2453 moveto
+2597 2368 1767 2305 1557 2268 curveto
+1510 2259 1459 2235 1430 2196 curveto
+1398 2150 1390 2089 1390 2034 curveto
+1390 2034 1390 2034 1390 1818 curveto
+1390 1739 1407 1661 1418 1584 curveto
+1418 1584 1422 1570 1426 1557 curveto
+stroke
+newpath 1423 1557 moveto
+1429 1548 lineto
+1428 1558 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marcus Brinkmann -> Wichert Akkerman
+newpath 2746 806 moveto
+2559 796 2370 801 2188 756 curveto
+2136 742 1966 575 1966 522 curveto
+1966 522 1966 522 1966 450 curveto
+1966 364 1879 228 1846 180 curveto
+stroke
+newpath 2743 804 moveto
+2753 806 lineto
+2743 809 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marcus Brinkmann -> Christian Kurz
+newpath 1307 227 moveto
+1417 214 1662 184 1775 170 curveto
+stroke
+newpath 1310 229 moveto
+1300 228 lineto
+1310 224 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marcus Brinkmann -> Philipp Frauenfelder
+newpath 1843 144 moveto
+1848 136 1853 126 1857 117 curveto
+stroke
+newpath 1855 116 moveto
+1862 108 lineto
+1859 118 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	David N. Welton -> Edward Betts
+newpath 2585 1962 moveto
+2393 1962 1753 1958 1411 1908 curveto
+1204 1877 1002 1796 819 1692 curveto
+781 1669 762 1585 755 1548 curveto
+stroke
+newpath 2582 1960 moveto
+2592 1962 lineto
+2582 1965 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	David N. Welton -> Torsten Landschoff
+newpath 732 2078 moveto
+732 2046 732 1994 732 1962 curveto
+732 1962 732 1962 732 1890 curveto
+732 1789 746 1606 751 1548 curveto
+stroke
+newpath 735 2078 moveto
+732 2088 lineto
+730 2078 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	David N. Welton -> Christian Kurz
+newpath 730 1513 moveto
+642 1442 310 1164 310 954 curveto
+310 954 310 954 310 810 curveto
+310 735 254 668 254 594 curveto
+254 594 254 594 254 450 curveto
+254 419 246 370 275 360 curveto
+419 310 576 307 726 288 curveto
+881 267 1036 241 1191 235 curveto
+stroke
+newpath 1190 233 moveto
+1200 235 lineto
+1190 238 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	David N. Welton -> Dr. Michael Meskes
+newpath 796 1518 moveto
+844 1506 919 1486 970 1473 curveto
+stroke
+newpath 967 1471 moveto
+977 1471 lineto
+968 1476 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dr. Michael Meskes -> Torsten Landschoff
+newpath 749 2082 moveto
+753 2072 756 2060 758 2052 curveto
+761 2040 760 2027 758 2016 curveto
+747 1932 610 1533 691 1512 curveto
+765 1492 890 1475 964 1466 curveto
+stroke
+newpath 753 2080 moveto
+746 2088 lineto
+748 2078 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dr. Michael Meskes -> Christian Kurz
+newpath 1028 1440 moveto
+1038 1410 1062 1350 1062 1314 curveto
+1062 1314 1062 1314 1062 1170 curveto
+1062 1028 1205 396 1243 260 curveto
+stroke
+newpath 1240 261 moveto
+1245 252 lineto
+1245 262 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dr. Michael Meskes -> Roland Bauerschmidt
+newpath 1015 1440 moveto
+987 1375 912 1151 912 1098 curveto
+912 1098 912 1098 912 522 curveto
+912 487 887 434 873 402 curveto
+stroke
+newpath 872 406 moveto
+870 396 lineto
+877 404 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dr. Michael Meskes -> Daniel Mester
+newpath 1062 1443 moveto
+1095 1431 1143 1413 1179 1401 curveto
+stroke
+newpath 1176 1400 moveto
+1186 1398 lineto
+1178 1404 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dr. Michael Meskes -> Martin Schulze
+newpath 1204 2158 moveto
+1190 2148 1176 2135 1169 2124 curveto
+1154 2097 1148 2064 1148 2034 curveto
+1148 2034 1148 2034 1148 1890 curveto
+1148 1811 1150 1733 1137 1656 curveto
+1129 1598 1067 1513 1039 1476 curveto
+stroke
+newpath 1203 2154 moveto
+1209 2162 lineto
+1200 2158 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dr. Michael Meskes -> Roland Rosenfeld
+newpath 1376 1519 moveto
+1299 1505 1161 1481 1083 1467 curveto
+stroke
+newpath 1373 1516 moveto
+1383 1520 lineto
+1373 1521 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Rafael Laboissiere
+gsave 10 dict begin
+solid
+4486 1746 62 18 ellipse_path
+stroke
+gsave 10 dict begin
+4486 1747 moveto (Rafael Laboissiere) 104 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Christian Marillat
+gsave 10 dict begin
+solid
+4488 1674 60 18 ellipse_path
+stroke
+gsave 10 dict begin
+4488 1675 moveto (Christian Marillat) 99 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Rafael Laboissiere -> Christian Marillat
+newpath 4487 1728 moveto
+4487 1720 4487 1711 4487 1702 curveto
+stroke
+newpath 4485 1702 moveto
+4488 1692 lineto
+4489 1702 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Raphael Hertzog
+gsave 10 dict begin
+solid
+4396 1818 57 18 ellipse_path
+stroke
+gsave 10 dict begin
+4396 1819 moveto (Raphael Hertzog) 94 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Rafael Laboissiere -> Raphael Hertzog
+newpath 4427 1798 moveto
+4442 1787 4458 1774 4470 1763 curveto
+stroke
+newpath 4431 1798 moveto
+4422 1802 lineto
+4428 1794 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Mikael Djurfeldt
+gsave 10 dict begin
+solid
+4353 1674 57 18 ellipse_path
+stroke
+gsave 10 dict begin
+4353 1675 moveto (Mikael Djurfeldt) 94 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Rafael Laboissiere -> Mikael Djurfeldt
+newpath 4452 1731 moveto
+4432 1720 4406 1707 4386 1695 curveto
+stroke
+newpath 4385 1697 moveto
+4378 1690 lineto
+4388 1693 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Jordi -> Thimo Neubauer
+newpath 1770 1650 moveto
+1775 1640 1780 1628 1781 1620 curveto
+1788 1560 1785 1499 1781 1440 curveto
+1781 1427 1770 1416 1768 1404 curveto
+1762 1356 1760 1308 1757 1260 curveto
+1757 1248 1746 1226 1757 1224 curveto
+1850 1200 2020 1180 2086 1173 curveto
+stroke
+newpath 1774 1649 moveto
+1766 1656 lineto
+1769 1646 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Jordi -> Marcelo E. Magallon
+newpath 2086 1169 moveto
+2000 1163 1741 1136 1741 1026 curveto
+1741 1026 1741 1026 1741 882 curveto
+1741 821 1542 657 1502 612 curveto
+1492 600 1485 583 1471 576 curveto
+1471 576 1421 556 1382 540 curveto
+stroke
+newpath 1382 543 moveto
+1374 537 lineto
+1384 538 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Jordi -> Joost Kooij
+newpath 2311 1804 moveto
+2334 1794 2360 1780 2372 1764 curveto
+2408 1716 2441 1660 2441 1602 curveto
+2441 1602 2441 1602 2441 1458 curveto
+2441 1426 2438 1384 2411 1368 curveto
+2363 1337 2293 1361 2243 1332 curveto
+2207 1309 2199 1258 2173 1224 curveto
+2173 1224 2150 1199 2132 1183 curveto
+stroke
+newpath 2315 1805 moveto
+2305 1807 lineto
+2313 1800 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Jordi -> Christian Surchi
+newpath 2324 1226 moveto
+2318 1225 2315 1224 2315 1224 curveto
+2264 1211 2212 1202 2160 1188 curveto
+2154 1186 2145 1182 2137 1178 curveto
+stroke
+newpath 2325 1224 moveto
+2334 1229 lineto
+2324 1229 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Jordi -> Dale Scheetz (Dwarf #1)
+newpath 2280 1722 moveto
+2292 1690 2309 1636 2309 1602 curveto
+2309 1602 2309 1602 2309 1458 curveto
+2309 1397 2214 1381 2178 1332 curveto
+2156 1301 2156 1259 2141 1224 curveto
+2141 1224 2130 1203 2122 1187 curveto
+stroke
+newpath 2284 1719 moveto
+2278 1728 lineto
+2279 1718 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Samuel Hocevar
+gsave 10 dict begin
+solid
+2733 1098 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+2733 1099 moveto (Samuel Hocevar) 92 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Jordi -> Samuel Hocevar
+newpath 2137 1162 moveto
+2153 1158 2171 1153 2184 1152 curveto
+2320 1136 2556 1114 2669 1104 curveto
+stroke
+newpath 2669 1102 moveto
+2679 1103 lineto
+2669 1106 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian Surchi -> Edward Betts
+newpath 2640 1937 moveto
+2638 1901 2634 1835 2622 1800 curveto
+2573 1651 2504 1510 2440 1368 curveto
+2427 1337 2399 1287 2383 1260 curveto
+stroke
+newpath 2643 1934 moveto
+2640 1944 lineto
+2638 1934 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian Surchi -> Jordi
+newpath 2327 1232 moveto
+2311 1228 2297 1224 2297 1224 curveto
+2246 1211 2194 1202 2142 1188 curveto
+2141 1188 2139 1187 2138 1186 curveto
+stroke
+newpath 2140 1189 moveto
+2131 1184 lineto
+2141 1184 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marco d'Itri
+gsave 10 dict begin
+solid
+2240 1170 44 18 ellipse_path
+stroke
+gsave 10 dict begin
+2240 1171 moveto (Marco d'Itri) 68 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Christian Surchi -> Marco d'Itri
+newpath 2340 1227 moveto
+2319 1216 2292 1202 2271 1190 curveto
+stroke
+newpath 2270 1192 moveto
+2263 1185 lineto
+2273 1188 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Milan Zamazal
+gsave 10 dict begin
+solid
+2332 1314 53 18 ellipse_path
+stroke
+gsave 10 dict begin
+2332 1315 moveto (Milan Zamazal) 84 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Milan Zamazal -> David Frey
+newpath 2374 1303 moveto
+2666 1226 4389 770 4427 756 curveto
+4514 725 4579 615 4580 522 curveto
+4580 522 4580 522 4580 162 curveto
+4579 130 4590 78 4597 46 curveto
+stroke
+newpath 4595 45 moveto
+4599 36 lineto
+4599 46 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Milan Zamazal -> Jordi
+newpath 2323 1296 moveto
+2311 1274 2289 1238 2268 1224 curveto
+2233 1198 2166 1212 2131 1191 curveto
+stroke
+newpath 2131 1194 moveto
+2124 1186 lineto
+2134 1190 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Milan Zamazal -> Christian Surchi
+newpath 2342 1296 moveto
+2347 1288 2352 1278 2358 1268 curveto
+stroke
+newpath 2356 1267 moveto
+2363 1260 lineto
+2360 1270 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Othmar Pasteka -> Florian Lohoff
+newpath 2788 2369 moveto
+2808 2314 2855 2182 2855 2106 curveto
+2855 2106 2855 2106 2855 2034 curveto
+2855 1811 2347 1824 2347 1602 curveto
+2347 1602 2347 1602 2347 1530 curveto
+2347 1447 2238 1393 2158 1368 curveto
+2093 1347 1978 1329 1911 1321 curveto
+stroke
+newpath 2791 2368 moveto
+2785 2376 lineto
+2787 2366 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Othmar Pasteka -> Stefan Gybas
+newpath 2583 2318 moveto
+2424 2307 1987 2269 1987 2178 curveto
+1987 2178 1987 2178 1987 1746 curveto
+1987 1619 1902 1396 1871 1332 curveto
+stroke
+newpath 2582 2315 moveto
+2592 2319 lineto
+2582 2320 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Othmar Pasteka -> Oliver M. Bolzer
+newpath 996 1587 moveto
+1155 1537 1672 1373 1820 1327 curveto
+stroke
+newpath 1000 1588 moveto
+990 1589 lineto
+999 1583 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Othmar Pasteka -> Torsten Landschoff
+newpath 785 2091 moveto
+823 2079 873 2064 904 2052 curveto
+1213 1935 1532 1841 1825 1692 curveto
+1873 1667 1876 1597 1895 1548 curveto
+1915 1497 1844 1452 1818 1404 curveto
+1813 1393 1813 1378 1818 1368 curveto
+1821 1362 1834 1345 1845 1332 curveto
+stroke
+newpath 787 2093 moveto
+777 2093 lineto
+786 2088 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Othmar Pasteka -> Thimo Neubauer
+newpath 1789 1654 moveto
+1802 1645 1815 1632 1819 1620 curveto
+1835 1562 1830 1499 1819 1440 curveto
+1816 1422 1789 1419 1780 1404 curveto
+1775 1393 1773 1376 1780 1368 curveto
+1786 1360 1813 1343 1834 1330 curveto
+stroke
+newpath 1793 1655 moveto
+1783 1658 lineto
+1790 1650 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Othmar Pasteka -> Roland Bauerschmidt
+newpath 1820 1302 moveto
+1737 1272 1553 1194 1553 1098 curveto
+1553 1098 1553 1098 1553 1026 curveto
+1553 896 1146 520 1050 432 curveto
+1050 432 971 410 917 394 curveto
+stroke
+newpath 919 397 moveto
+910 392 lineto
+920 392 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Othmar Pasteka -> Jordi
+newpath 1898 1301 moveto
+1929 1289 1973 1273 1998 1260 curveto
+2014 1252 2022 1234 2035 1224 curveto
+2048 1214 2069 1199 2086 1188 curveto
+stroke
+newpath 2084 1186 moveto
+2094 1183 lineto
+2087 1190 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Othmar Pasteka -> Christian Surchi
+newpath 1911 1307 moveto
+2006 1293 2210 1265 2313 1250 curveto
+stroke
+newpath 2312 1248 moveto
+2322 1249 lineto
+2312 1253 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Gerfried Fuchs (Alfie)
+gsave 10 dict begin
+solid
+1842 1242 73 18 ellipse_path
+stroke
+gsave 10 dict begin
+1842 1243 moveto (Gerfried Fuchs \(Alfie\)) 125 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Othmar Pasteka -> Gerfried Fuchs (Alfie)
+newpath 1855 1296 moveto
+1853 1288 1851 1278 1848 1269 curveto
+stroke
+newpath 1846 1270 moveto
+1846 1260 lineto
+1851 1269 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Marco d'Itri -> Christian Surchi
+newpath 2341 1221 moveto
+2320 1209 2291 1194 2270 1183 curveto
+stroke
+newpath 2342 1219 moveto
+2349 1226 lineto
+2339 1223 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian T. Steigies -> Torsten Landschoff
+newpath 803 2103 moveto
+1086 2087 2137 2029 2700 1980 curveto
+2881 1964 3061 1914 3223 1836 curveto
+3384 1758 3456 1565 3581 1440 curveto
+3729 1292 4503 802 4504 594 curveto
+4504 594 4504 594 4504 522 curveto
+4503 486 4494 427 4488 396 curveto
+stroke
+newpath 806 2106 moveto
+796 2103 lineto
+806 2101 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christian T. Steigies -> J.H.M. Dassen (Ray)
+newpath 4247 728 moveto
+4306 717 4384 701 4398 684 curveto
+4456 616 4484 452 4486 396 curveto
+stroke
+newpath 4249 730 moveto
+4239 729 lineto
+4249 725 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dirk Eddelbuettel
+gsave 10 dict begin
+solid
+4818 450 60 18 ellipse_path
+stroke
+gsave 10 dict begin
+4818 451 moveto (Dirk Eddelbuettel) 99 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Dirk Eddelbuettel -> Christian T. Steigies
+newpath 4769 439 moveto
+4710 427 4610 405 4547 391 curveto
+stroke
+newpath 4547 394 moveto
+4538 389 lineto
+4548 389 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Turbo Fredriksson
+gsave 10 dict begin
+solid
+4782 378 62 18 ellipse_path
+stroke
+gsave 10 dict begin
+4782 379 moveto (Turbo Fredriksson) 103 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Dirk Eddelbuettel -> Turbo Fredriksson
+newpath 4803 432 moveto
+4798 424 4792 414 4788 405 curveto
+stroke
+newpath 4786 406 moveto
+4785 396 lineto
+4791 405 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Hwei Sheng Teoh
+gsave 10 dict begin
+solid
+4923 378 61 18 ellipse_path
+stroke
+gsave 10 dict begin
+4923 379 moveto (Hwei Sheng Teoh) 100 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Dirk Eddelbuettel -> Hwei Sheng Teoh
+newpath 4842 433 moveto
+4857 424 4875 411 4891 400 curveto
+stroke
+newpath 4889 398 moveto
+4899 395 lineto
+4892 402 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christoph Lameter -> Stefan Gybas
+newpath 2677 2305 moveto
+2747 2271 2893 2189 2893 2106 curveto
+2893 2106 2893 2106 2893 2034 curveto
+2893 1960 2931 1891 2931 1818 curveto
+2931 1818 2931 1818 2931 1746 curveto
+2931 1629 2681 1221 2632 1116 curveto
+2617 1081 2619 1037 2595 1008 curveto
+2550 950 2489 906 2429 864 curveto
+2386 833 2337 813 2288 792 curveto
+2256 777 2210 783 2188 756 curveto
+2162 722 2144 647 2137 612 curveto
+stroke
+newpath 2681 2306 moveto
+2671 2308 lineto
+2679 2301 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christoph Lameter -> Roland Bauerschmidt
+newpath 2079 585 moveto
+1920 557 1448 476 1188 432 curveto
+1119 419 1004 401 932 389 curveto
+stroke
+newpath 935 392 moveto
+925 388 lineto
+935 387 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christoph Lameter -> Marcelo E. Magallon
+newpath 2073 589 moveto
+1930 576 1569 543 1411 529 curveto
+stroke
+newpath 1412 532 moveto
+1402 528 lineto
+1412 527 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christoph Lameter -> Christopher L Cheney
+newpath 2588 657 moveto
+2489 646 2315 626 2211 612 curveto
+2203 611 2193 608 2182 605 curveto
+stroke
+newpath 2587 654 moveto
+2597 658 lineto
+2587 659 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christoph Lameter -> Frank Belew (Myth)
+newpath 2180 582 moveto
+2192 579 2202 576 2202 576 curveto
+2472 559 2741 556 3010 540 curveto
+3015 539 3021 538 3026 537 curveto
+stroke
+newpath 3025 535 moveto
+3035 535 lineto
+3026 540 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christoph Lameter -> Mike Markley
+newpath 2177 581 moveto
+2186 579 2195 577 2202 576 curveto
+2399 558 2753 535 2891 526 curveto
+stroke
+newpath 2889 524 moveto
+2899 525 lineto
+2889 529 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Guillaume Morin
+gsave 10 dict begin
+solid
+2730 1026 59 18 ellipse_path
+stroke
+gsave 10 dict begin
+2730 1027 moveto (Guillaume Morin) 97 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Christophe Le Bars
+gsave 10 dict begin
+solid
+2725 882 64 18 ellipse_path
+stroke
+gsave 10 dict begin
+2725 883 moveto (Christophe Le Bars) 108 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Guillaume Morin -> Christophe Le Bars
+newpath 2725 1008 moveto
+2721 983 2719 938 2721 909 curveto
+stroke
+newpath 2719 910 moveto
+2721 900 lineto
+2724 910 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Guillaume Morin -> Philip Hands
+newpath 2772 1013 moveto
+2823 1000 2905 978 2957 965 curveto
+stroke
+newpath 2954 963 moveto
+2964 963 lineto
+2955 968 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Guillaume Morin -> Samuel Hocevar
+newpath 2738 1074 moveto
+2739 1064 2738 1053 2736 1044 curveto
+stroke
+newpath 2741 1070 moveto
+2738 1080 lineto
+2736 1070 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Christophe Le Bars -> Guillaume Morin
+newpath 2734 1002 moveto
+2736 973 2734 926 2730 900 curveto
+stroke
+newpath 2737 998 moveto
+2734 1008 lineto
+2732 998 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Philip Hands -> Guillaume Morin
+newpath 2784 1013 moveto
+2839 1000 2920 978 2967 965 curveto
+stroke
+newpath 2787 1015 moveto
+2777 1015 lineto
+2786 1010 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Philip Hands -> Christophe Le Bars
+newpath 2965 944 moveto
+2917 932 2835 910 2780 896 curveto
+stroke
+newpath 2781 899 moveto
+2772 894 lineto
+2782 894 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Philip Hands -> Steve McIntyre
+newpath 3045 946 moveto
+3118 932 3266 906 3347 891 curveto
+stroke
+newpath 3344 889 moveto
+3354 890 lineto
+3344 894 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Philip Hands -> Julian Gilbey
+newpath 3013 936 moveto
+3018 928 3023 918 3028 908 curveto
+stroke
+newpath 3026 907 moveto
+3033 900 lineto
+3030 910 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	John Goerzen
+gsave 10 dict begin
+solid
+4594 2466 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+4594 2467 moveto (John Goerzen) 77 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Clay Crouch
+gsave 10 dict begin
+solid
+4594 2394 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+4594 2395 moveto (Clay Crouch) 71 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	John Goerzen -> Clay Crouch
+newpath 4588 2448 moveto
+4587 2440 4587 2431 4587 2422 curveto
+stroke
+newpath 4585 2422 moveto
+4588 2412 lineto
+4589 2422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joseph Carter
+gsave 10 dict begin
+solid
+4706 2394 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+4706 2395 moveto (Joseph Carter) 76 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	John Goerzen -> Joseph Carter
+newpath 4619 2450 moveto
+4635 2440 4656 2426 4674 2415 curveto
+stroke
+newpath 4672 2413 moveto
+4682 2410 lineto
+4675 2417 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Clay Crouch -> John Goerzen
+newpath 4601 2438 moveto
+4601 2429 4601 2420 4600 2412 curveto
+stroke
+newpath 4603 2438 moveto
+4600 2448 lineto
+4599 2438 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Gregory T. Norris
+gsave 10 dict begin
+solid
+4594 2322 61 18 ellipse_path
+stroke
+gsave 10 dict begin
+4594 2323 moveto (Gregory T. Norris) 101 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Clay Crouch -> Gregory T. Norris
+newpath 4588 2376 moveto
+4587 2368 4587 2359 4587 2350 curveto
+stroke
+newpath 4585 2350 moveto
+4588 2340 lineto
+4589 2350 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Gregory T. Norris -> Clay Crouch
+newpath 4601 2366 moveto
+4601 2357 4601 2348 4600 2340 curveto
+stroke
+newpath 4603 2366 moveto
+4600 2376 lineto
+4599 2366 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dale Scheetz (Dwarf #1) -> Thimo Neubauer
+newpath 2202 1737 moveto
+2100 1723 1913 1698 1816 1683 curveto
+stroke
+newpath 1817 1686 moveto
+1807 1682 lineto
+1817 1681 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dale Scheetz (Dwarf #1) -> Marcelo E. Magallon
+newpath 2261 1728 moveto
+2242 1681 2200 1557 2147 1512 curveto
+2045 1423 1870 1436 1784 1332 curveto
+1605 1111 1527 823 1387 576 curveto
+1384 570 1370 557 1357 545 curveto
+stroke
+newpath 1357 548 moveto
+1351 540 lineto
+1360 544 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dale Scheetz (Dwarf #1) -> Joost Kooij
+newpath 2277 1794 moveto
+2278 1784 2278 1773 2277 1764 curveto
+stroke
+newpath 2280 1790 moveto
+2277 1800 lineto
+2275 1790 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dale Scheetz (Dwarf #1) -> David Frey
+newpath 2324 1733 moveto
+2481 1694 2941 1580 3179 1476 curveto
+3315 1416 4711 741 4712 594 curveto
+4712 594 4712 594 4712 522 curveto
+4711 448 4673 379 4674 306 curveto
+4674 306 4674 306 4674 162 curveto
+4673 125 4637 73 4616 42 curveto
+stroke
+newpath 4615 46 moveto
+4612 36 lineto
+4620 43 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dale Scheetz (Dwarf #1) -> Othmar Pasteka
+newpath 2271 1728 moveto
+2271 1698 2271 1637 2271 1602 curveto
+2271 1602 2271 1602 2271 1530 curveto
+2271 1452 2177 1394 2103 1368 curveto
+2054 1351 1972 1334 1917 1323 curveto
+stroke
+newpath 1919 1326 moveto
+1909 1322 lineto
+1919 1321 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Raphael Hertzog -> Rafael Laboissiere
+newpath 4412 1801 moveto
+4423 1791 4438 1779 4451 1768 curveto
+stroke
+newpath 4450 1766 moveto
+4459 1762 lineto
+4453 1770 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Raphael Hertzog -> Jordi
+newpath 4398 1800 moveto
+4400 1775 4401 1732 4380 1728 curveto
+3682 1568 2966 1493 2267 1332 curveto
+2257 1329 2209 1231 2201 1224 curveto
+2201 1224 2166 1202 2140 1186 curveto
+stroke
+newpath 2140 1189 moveto
+2133 1182 lineto
+2143 1185 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Raphael Hertzog -> Dale Scheetz (Dwarf #1)
+newpath 4339 1816 moveto
+4047 1806 2717 1761 2359 1749 curveto
+stroke
+newpath 2360 1752 moveto
+2350 1749 lineto
+2360 1747 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Julien BLACHE
+gsave 10 dict begin
+solid
+4311 1746 57 18 ellipse_path
+stroke
+gsave 10 dict begin
+4311 1747 moveto (Julien BLACHE) 92 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Raphael Hertzog -> Julien BLACHE
+newpath 4376 1801 moveto
+4365 1792 4351 1780 4338 1769 curveto
+stroke
+newpath 4337 1771 moveto
+4331 1763 lineto
+4340 1768 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Peter Crystal (darkewolf)
+gsave 10 dict begin
+solid
+4828 2466 81 18 ellipse_path
+stroke
+gsave 10 dict begin
+4828 2467 moveto (Peter Crystal \(darkewolf\)) 141 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Daniel Patterson
+gsave 10 dict begin
+solid
+4828 2394 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+4828 2395 moveto (Daniel Patterson) 92 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Peter Crystal (darkewolf) -> Daniel Patterson
+newpath 4822 2448 moveto
+4821 2440 4821 2431 4821 2422 curveto
+stroke
+newpath 4819 2422 moveto
+4822 2412 lineto
+4823 2422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Daniel Patterson -> Peter Crystal (darkewolf)
+newpath 4835 2438 moveto
+4835 2429 4835 2420 4834 2412 curveto
+stroke
+newpath 4837 2438 moveto
+4834 2448 lineto
+4833 2438 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Steve McIntyre -> Florian Lohoff
+newpath 2837 2389 moveto
+2985 2377 3376 2339 3579 2268 curveto
+3609 2257 3609 2209 3609 2178 curveto
+3609 2178 3609 2178 3609 1674 curveto
+3609 1431 3452 994 3411 900 curveto
+stroke
+newpath 2838 2391 moveto
+2828 2390 lineto
+2838 2386 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Steve McIntyre -> Wichert Akkerman
+newpath 3355 874 moveto
+3328 869 3300 864 3300 864 curveto
+3181 850 3062 841 2942 828 curveto
+2925 826 2902 823 2880 820 curveto
+stroke
+newpath 2883 823 moveto
+2873 819 lineto
+2883 818 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Steve McIntyre -> Philip Hands
+newpath 3054 946 moveto
+3131 932 3281 906 3356 891 curveto
+stroke
+newpath 3057 948 moveto
+3047 947 lineto
+3057 943 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Darren Benham
+gsave 10 dict begin
+solid
+3188 594 54 18 ellipse_path
+stroke
+gsave 10 dict begin
+3188 595 moveto (Darren Benham) 88 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Steve McIntyre -> Darren Benham
+newpath 3413 864 moveto
+3427 842 3452 807 3472 792 curveto
+3502 770 3546 776 3576 756 curveto
+3586 749 3588 724 3576 720 curveto
+3485 681 3318 631 3236 608 curveto
+stroke
+newpath 3238 611 moveto
+3229 606 lineto
+3239 606 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Mark Baker
+gsave 10 dict begin
+solid
+3268 810 44 18 ellipse_path
+stroke
+gsave 10 dict begin
+3268 811 moveto (Mark Baker) 67 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Steve McIntyre -> Mark Baker
+newpath 3370 868 moveto
+3349 857 3320 842 3299 830 curveto
+stroke
+newpath 3299 833 moveto
+3291 826 lineto
+3301 828 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dave Holland
+gsave 10 dict begin
+solid
+3515 738 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+3515 739 moveto (Dave Holland) 77 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Steve McIntyre -> Dave Holland
+newpath 3361 871 moveto
+3307 856 3220 831 3212 828 curveto
+3202 822 3201 795 3212 792 curveto
+3291 768 3375 770 3455 756 curveto
+3459 755 3463 754 3467 753 curveto
+stroke
+newpath 3466 751 moveto
+3476 749 lineto
+3468 755 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Steve McIntyre -> Manoj Srivastava
+newpath 3428 866 moveto
+3448 855 3477 841 3500 829 curveto
+stroke
+newpath 3499 827 moveto
+3509 825 lineto
+3501 831 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Oliver Elphick
+gsave 10 dict begin
+solid
+3117 810 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+3117 811 moveto (Oliver Elphick) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Steve McIntyre -> Oliver Elphick
+newpath 3358 872 moveto
+3342 868 3329 864 3329 864 curveto
+3277 851 3223 840 3170 828 curveto
+3167 827 3163 826 3160 825 curveto
+stroke
+newpath 3162 828 moveto
+3153 823 lineto
+3163 823 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Steve Haslam
+gsave 10 dict begin
+solid
+3379 810 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+3379 811 moveto (Steve Haslam) 77 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Steve McIntyre -> Steve Haslam
+newpath 3390 864 moveto
+3386 856 3383 846 3381 837 curveto
+stroke
+newpath 3379 838 moveto
+3379 828 lineto
+3384 837 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Darren Benham -> Frank Belew (Myth)
+newpath 3164 578 moveto
+3150 568 3132 555 3117 545 curveto
+stroke
+newpath 3116 547 moveto
+3109 539 lineto
+3119 543 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Darren Benham -> Mike Markley
+newpath 3147 582 moveto
+3106 570 3043 551 3004 540 curveto
+3001 539 2997 537 2993 536 curveto
+stroke
+newpath 2995 539 moveto
+2986 534 lineto
+2996 534 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Mark Baker -> Steve McIntyre
+newpath 3370 862 moveto
+3349 849 3319 834 3298 823 curveto
+stroke
+newpath 3370 859 moveto
+3378 866 lineto
+3368 864 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Mark Baker -> Dave Holland
+newpath 3300 798 moveto
+3306 795 3313 793 3318 792 curveto
+3364 778 3410 768 3455 756 curveto
+3459 755 3464 753 3470 752 curveto
+stroke
+newpath 3467 750 moveto
+3477 750 lineto
+3468 755 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dave Holland -> Julian Gilbey
+newpath 3006 862 moveto
+2987 852 2965 839 2951 828 curveto
+2943 819 2940 793 2951 792 curveto
+3121 768 3294 772 3464 756 curveto
+3470 755 3476 754 3482 751 curveto
+stroke
+newpath 3007 860 moveto
+3015 867 lineto
+3005 864 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Julian Gilbey -> Edward Betts
+newpath 2671 1944 moveto
+2764 1883 3025 1689 3025 1530 curveto
+3025 1530 3025 1530 3025 1386 curveto
+3025 1286 3101 1197 3101 1098 curveto
+3101 1098 3101 1098 3101 1026 curveto
+3101 989 3074 929 3056 900 curveto
+stroke
+newpath 2676 1944 moveto
+2666 1947 lineto
+2673 1940 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Julian Gilbey -> Dave Holland
+newpath 3007 870 moveto
+2982 859 2950 843 2933 828 curveto
+2925 819 2922 793 2933 792 curveto
+3103 768 3276 772 3446 756 curveto
+3452 755 3458 754 3464 752 curveto
+stroke
+newpath 3464 749 moveto
+3474 748 lineto
+3466 754 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	William Ono
+gsave 10 dict begin
+solid
+3001 810 47 18 ellipse_path
+stroke
+gsave 10 dict begin
+3001 811 moveto (William Ono) 73 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Julian Gilbey -> William Ono
+newpath 3032 864 moveto
+3027 856 3022 846 3016 836 curveto
+stroke
+newpath 3014 838 moveto
+3011 828 lineto
+3018 835 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Philipp Frauenfelder -> Wichert Akkerman
+newpath 2751 801 moveto
+2637 786 2410 756 2410 756 curveto
+2361 740 2348 667 2300 648 curveto
+2225 617 2137 635 2058 612 curveto
+1983 589 2080 456 2080 378 curveto
+2080 378 2080 378 2080 234 curveto
+2080 203 2085 161 2059 144 curveto
+2029 123 1972 108 1929 100 curveto
+stroke
+newpath 2748 798 moveto
+2758 802 lineto
+2748 803 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Philipp Frauenfelder -> Torsten Landschoff
+newpath 664 2098 moveto
+535 2083 266 2052 266 2052 curveto
+203 2035 160 1739 160 1674 curveto
+160 1674 160 1674 160 1458 curveto
+160 1383 104 1316 104 1242 curveto
+104 1242 104 1242 104 234 curveto
+104 123 651 152 760 144 curveto
+1107 115 1456 93 1803 90 curveto
+stroke
+newpath 662 2095 moveto
+672 2099 lineto
+662 2100 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Philipp Frauenfelder -> David Frey
+newpath 1926 79 moveto
+1947 76 1971 72 1987 72 curveto
+2772 51 4264 24 4554 19 curveto
+stroke
+newpath 4551 17 moveto
+4561 19 lineto
+4551 22 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Philipp Frauenfelder -> Gregor Hoffleit
+newpath 648 425 moveto
+651 393 651 338 651 306 curveto
+651 306 651 306 651 234 curveto
+651 145 1547 103 1803 93 curveto
+stroke
+newpath 651 422 moveto
+647 432 lineto
+646 422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	David L. Coe -> Joey Hess
+newpath 2741 429 moveto
+2749 418 2757 405 2763 396 curveto
+stroke
+newpath 2745 428 moveto
+2737 434 lineto
+2741 425 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Rosenfeld -> Oliver M. Bolzer
+newpath 1012 1595 moveto
+1103 1584 1274 1563 1372 1548 curveto
+1378 1547 1386 1545 1394 1543 curveto
+stroke
+newpath 1014 1597 moveto
+1004 1596 lineto
+1014 1592 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Rosenfeld -> Wichert Akkerman
+newpath 1491 1524 moveto
+1661 1505 2173 1441 2430 1332 curveto
+2464 1317 2490 1288 2512 1260 curveto
+2599 1150 2544 955 2649 864 curveto
+2656 858 2715 840 2761 826 curveto
+stroke
+newpath 2761 823 moveto
+2771 823 lineto
+2762 828 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Rosenfeld -> Thimo Neubauer
+newpath 1708 1659 moveto
+1620 1639 1520 1656 1438 1620 curveto
+1419 1611 1425 1572 1429 1548 curveto
+stroke
+newpath 1707 1656 moveto
+1716 1661 lineto
+1706 1661 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Rosenfeld -> Roland Bauerschmidt
+newpath 1417 1512 moveto
+1359 1443 1174 1187 1174 1026 curveto
+1174 1026 1174 1026 1174 954 curveto
+1174 860 1020 513 974 432 curveto
+974 432 934 413 902 398 curveto
+stroke
+newpath 902 401 moveto
+894 394 lineto
+904 396 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Rosenfeld -> Marcus Brinkmann
+newpath 1481 1519 moveto
+1564 1499 1737 1459 1837 1440 curveto
+1925 1423 2016 1421 2103 1404 curveto
+2137 1397 2166 1376 2198 1368 curveto
+2264 1351 2336 1359 2397 1332 curveto
+2423 1320 2431 1286 2441 1260 curveto
+2487 1148 2248 1117 2153 1044 curveto
+2082 988 2128 848 2057 792 curveto
+2002 747 1908 792 1846 756 curveto
+1798 727 1784 662 1759 612 curveto
+1705 498 1792 263 1822 187 curveto
+stroke
+newpath 1819 188 moveto
+1825 180 lineto
+1823 190 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Rosenfeld -> Dr. Michael Meskes
+newpath 1381 1521 moveto
+1305 1508 1167 1484 1087 1469 curveto
+stroke
+newpath 1090 1472 moveto
+1080 1468 lineto
+1090 1467 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Roland Rosenfeld -> Dennis Schoen
+newpath 575 2016 moveto
+681 1960 1002 1790 1175 1692 curveto
+1243 1653 1358 1579 1409 1546 curveto
+stroke
+newpath 579 2017 moveto
+569 2019 lineto
+577 2012 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dennis Schoen -> Edward Betts
+newpath 592 2032 moveto
+880 2022 2285 1974 2584 1964 curveto
+stroke
+newpath 2582 1962 moveto
+2592 1964 lineto
+2582 1967 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dennis Schoen -> Roland Bauerschmidt
+newpath 535 2016 moveto
+532 1989 534 1938 534 1908 curveto
+536 1827 480 1754 480 1674 curveto
+480 1674 480 1674 480 1458 curveto
+480 1415 499 1374 506 1332 curveto
+520 1260 534 1188 544 1116 curveto
+560 1015 536 912 536 810 curveto
+536 810 536 810 536 522 curveto
+536 490 539 445 567 432 curveto
+583 424 713 401 796 388 curveto
+stroke
+newpath 793 386 moveto
+803 387 lineto
+793 391 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Michael Vogt
+gsave 10 dict begin
+solid
+419 1962 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+419 1963 moveto (Michael Vogt) 77 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Dennis Schoen -> Michael Vogt
+newpath 510 2019 moveto
+491 2008 467 1994 448 1983 curveto
+stroke
+newpath 448 1986 moveto
+441 1978 lineto
+451 1982 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Michael Vogt -> Florian Lohoff
+newpath 2719 2393 moveto
+2508 2386 1783 2365 1391 2340 curveto
+1203 2327 1011 2321 830 2268 curveto
+684 2224 548 2143 425 2052 curveto
+409 2040 412 2003 415 1980 curveto
+stroke
+newpath 2717 2391 moveto
+2727 2393 lineto
+2717 2396 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Michael Vogt -> Roland Bauerschmidt
+newpath 394 1946 moveto
+377 1935 357 1920 346 1908 curveto
+297 1846 386 1753 386 1674 curveto
+386 1674 386 1674 386 1314 curveto
+386 1192 442 1075 442 954 curveto
+442 954 442 954 442 522 curveto
+442 491 434 441 463 432 curveto
+547 403 696 389 787 383 curveto
+stroke
+newpath 785 381 moveto
+795 382 lineto
+785 386 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Michael Vogt -> Dennis Schoen
+newpath 510 2012 moveto
+492 2001 467 1987 449 1976 curveto
+stroke
+newpath 511 2010 moveto
+518 2017 lineto
+508 2014 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Michael Schlueter
+gsave 10 dict begin
+solid
+419 1890 61 18 ellipse_path
+stroke
+gsave 10 dict begin
+419 1891 moveto (Michael Schlueter) 102 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Michael Vogt -> Michael Schlueter
+newpath 413 1944 moveto
+412 1936 412 1927 412 1918 curveto
+stroke
+newpath 410 1918 moveto
+413 1908 lineto
+414 1918 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Turbo Fredriksson -> Dirk Eddelbuettel
+newpath 4812 426 moveto
+4808 417 4802 405 4796 396 curveto
+stroke
+newpath 4813 422 moveto
+4815 432 lineto
+4808 424 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Mark Brown
+gsave 10 dict begin
+solid
+4973 2466 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+4973 2467 moveto (Mark Brown) 71 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Dr Gordon Russell
+gsave 10 dict begin
+solid
+4973 2394 63 18 ellipse_path
+stroke
+gsave 10 dict begin
+4973 2395 moveto (Dr Gordon Russell) 105 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Mark Brown -> Dr Gordon Russell
+newpath 4967 2448 moveto
+4966 2440 4966 2431 4966 2422 curveto
+stroke
+newpath 4964 2422 moveto
+4967 2412 lineto
+4968 2422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dr Gordon Russell -> Mark Brown
+newpath 4980 2438 moveto
+4980 2429 4980 2420 4979 2412 curveto
+stroke
+newpath 4982 2438 moveto
+4979 2448 lineto
+4978 2438 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Randolph Chung -> Wichert Akkerman
+newpath 2752 800 moveto
+2692 791 2633 780 2578 756 curveto
+2517 728 2436 622 2484 576 curveto
+2499 563 2525 548 2546 537 curveto
+stroke
+newpath 2750 797 moveto
+2760 801 lineto
+2750 802 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Randolph Chung -> Ryan Murray
+newpath 2561 571 moveto
+2566 561 2572 549 2575 540 curveto
+stroke
+newpath 2565 569 moveto
+2558 577 lineto
+2560 567 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Randolph Chung -> Joey Hess
+newpath 2604 506 moveto
+2626 494 2659 478 2683 466 curveto
+stroke
+newpath 2681 464 moveto
+2691 462 lineto
+2683 469 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Randolph Chung -> Erik Andersen
+newpath 2574 504 moveto
+2569 483 2560 451 2552 432 curveto
+2550 427 2544 414 2537 403 curveto
+stroke
+newpath 2536 406 moveto
+2533 396 lineto
+2540 403 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Michel LESPINASSE
+gsave 10 dict begin
+solid
+2747 2466 73 18 ellipse_path
+stroke
+gsave 10 dict begin
+2747 2467 moveto (Michel LESPINASSE) 124 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Michel LESPINASSE -> Florian Lohoff
+newpath 2755 2448 moveto
+2759 2440 2763 2430 2767 2421 curveto
+stroke
+newpath 2764 2421 moveto
+2770 2412 lineto
+2769 2422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Paul Slootman -> Florian Lohoff
+newpath 2837 2394 moveto
+3134 2392 3431 2373 3725 2340 curveto
+3839 2327 4056 2364 4056 2250 curveto
+4056 2250 4056 2250 4056 1962 curveto
+4056 1864 4115 1771 4115 1674 curveto
+4115 1674 4115 1674 4115 1458 curveto
+4115 1305 4146 1151 4197 1008 curveto
+4228 923 4262 841 4289 756 curveto
+4293 744 4298 728 4289 720 curveto
+4276 706 4250 691 4229 681 curveto
+stroke
+newpath 2839 2397 moveto
+2829 2394 lineto
+2839 2392 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Paul Slootman -> Stefan Gybas
+newpath 2696 2319 moveto
+2889 2307 3526 2268 3526 2268 curveto
+3557 2263 3553 2209 3553 2178 curveto
+3553 2178 3553 2178 3553 1674 curveto
+3553 1285 4028 1059 4269 756 curveto
+4277 746 4276 729 4269 720 curveto
+4261 707 4243 692 4227 681 curveto
+stroke
+newpath 2698 2322 moveto
+2688 2319 lineto
+2698 2317 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Paul Slootman -> Wichert Akkerman
+newpath 2881 802 moveto
+2915 797 2951 792 2951 792 curveto
+3281 776 3612 788 3940 756 curveto
+3975 752 4106 705 4167 680 curveto
+stroke
+newpath 2885 804 moveto
+2875 803 lineto
+2884 799 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Paul Slootman -> J.H.M. Dassen (Ray)
+newpath 4192 714 moveto
+4195 704 4198 693 4200 684 curveto
+stroke
+newpath 4196 711 moveto
+4190 720 lineto
+4191 710 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Paul Slootman -> Joop Stakenborg
+newpath 4162 653 moveto
+4126 641 4071 623 4032 610 curveto
+stroke
+newpath 4032 613 moveto
+4024 607 lineto
+4034 608 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Steve Dunham
+gsave 10 dict begin
+solid
+2811 594 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+2811 595 moveto (Steve Dunham) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Steve Dunham -> Frank Belew (Myth)
+newpath 2850 582 moveto
+2859 580 2867 578 2873 576 curveto
+2914 565 2978 548 3025 536 curveto
+stroke
+newpath 3025 534 moveto
+3035 534 lineto
+3026 538 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Steve Dunham -> Mike Markley
+newpath 2840 579 moveto
+2860 568 2889 553 2912 541 curveto
+stroke
+newpath 2910 539 moveto
+2920 537 lineto
+2912 544 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Taketoshi Sano (Debian)
+gsave 10 dict begin
+solid
+4944 1746 80 18 ellipse_path
+stroke
+gsave 10 dict begin
+4944 1747 moveto (Taketoshi Sano \(Debian\)) 139 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Fumitoshi UKAI
+gsave 10 dict begin
+solid
+5030 1674 58 18 ellipse_path
+stroke
+gsave 10 dict begin
+5030 1675 moveto (Fumitoshi UKAI) 95 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Taketoshi Sano (Debian) -> Fumitoshi UKAI
+newpath 4959 1728 moveto
+4970 1719 4984 1707 4997 1696 curveto
+stroke
+newpath 4996 1694 moveto
+5005 1690 lineto
+4999 1698 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ISHIKAWA Mutsumi
+gsave 10 dict begin
+solid
+4694 1674 72 18 ellipse_path
+stroke
+gsave 10 dict begin
+4694 1675 moveto (ISHIKAWA Mutsumi) 124 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Taketoshi Sano (Debian) -> ISHIKAWA Mutsumi
+newpath 4895 1732 moveto
+4853 1720 4794 1703 4750 1690 curveto
+stroke
+newpath 4750 1693 moveto
+4741 1688 lineto
+4751 1688 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Teruyuki Morimura
+gsave 10 dict begin
+solid
+4842 1602 66 18 ellipse_path
+stroke
+gsave 10 dict begin
+4842 1603 moveto (Teruyuki Morimura) 111 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Taketoshi Sano (Debian) -> Teruyuki Morimura
+newpath 4934 1728 moveto
+4922 1707 4903 1674 4890 1656 curveto
+4887 1651 4875 1637 4863 1626 curveto
+stroke
+newpath 4862 1629 moveto
+4858 1620 lineto
+4866 1626 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Tomohiro KUBOTA
+gsave 10 dict begin
+solid
+5018 1602 69 18 ellipse_path
+stroke
+gsave 10 dict begin
+5018 1603 moveto (Tomohiro KUBOTA) 117 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Taketoshi Sano (Debian) -> Tomohiro KUBOTA
+newpath 4945 1728 moveto
+4947 1707 4951 1674 4960 1656 curveto
+4965 1646 4977 1634 4990 1623 curveto
+stroke
+newpath 4986 1623 moveto
+4995 1619 lineto
+4989 1627 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Fumitoshi UKAI -> Taketoshi Sano (Debian)
+newpath 4978 1723 moveto
+4991 1713 5005 1701 5015 1692 curveto
+stroke
+newpath 4980 1725 moveto
+4970 1729 lineto
+4977 1721 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Fumitoshi UKAI -> Tomohiro KUBOTA
+newpath 5027 1656 moveto
+5026 1648 5024 1638 5023 1630 curveto
+stroke
+newpath 5021 1630 moveto
+5021 1620 lineto
+5025 1629 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Samuel Hocevar -> Guillaume Morin
+newpath 2726 1080 moveto
+2725 1072 2724 1063 2724 1054 curveto
+stroke
+newpath 2722 1054 moveto
+2725 1044 lineto
+2726 1054 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Samuel Hocevar -> Philip Hands
+newpath 2762 1083 moveto
+2813 1055 2915 1001 2969 973 curveto
+stroke
+newpath 2966 972 moveto
+2976 969 lineto
+2969 976 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ISHIKAWA Mutsumi -> Oliver M. Bolzer
+newpath 4635 1664 moveto
+4609 1660 4580 1656 4560 1656 curveto
+3520 1638 2479 1635 1438 1620 curveto
+1321 1618 1119 1610 1015 1605 curveto
+stroke
+newpath 1016 1608 moveto
+1006 1605 lineto
+1016 1603 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Ken Nonaka
+gsave 10 dict begin
+solid
+4698 1602 45 18 ellipse_path
+stroke
+gsave 10 dict begin
+4698 1603 moveto (Ken Nonaka) 70 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ISHIKAWA Mutsumi -> Ken Nonaka
+newpath 4695 1656 moveto
+4696 1648 4696 1639 4696 1630 curveto
+stroke
+newpath 4694 1630 moveto
+4697 1620 lineto
+4698 1630 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Steve Kostecke
+gsave 10 dict begin
+solid
+5104 2466 53 18 ellipse_path
+stroke
+gsave 10 dict begin
+5104 2467 moveto (Steve Kostecke) 86 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Itai Zukerman
+gsave 10 dict begin
+solid
+5104 2394 50 18 ellipse_path
+stroke
+gsave 10 dict begin
+5104 2395 moveto (Itai Zukerman) 79 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Steve Kostecke -> Itai Zukerman
+newpath 5098 2448 moveto
+5097 2440 5097 2431 5097 2422 curveto
+stroke
+newpath 5095 2422 moveto
+5098 2412 lineto
+5099 2422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Itai Zukerman -> Steve Kostecke
+newpath 5111 2438 moveto
+5111 2429 5111 2420 5110 2412 curveto
+stroke
+newpath 5113 2438 moveto
+5110 2448 lineto
+5109 2438 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	James Troup -> Martin Schulze
+newpath 3417 2242 moveto
+3390 2238 3355 2233 3331 2232 curveto
+2718 2212 1567 2185 1293 2179 curveto
+stroke
+newpath 1296 2182 moveto
+1286 2179 lineto
+1296 2177 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	James Troup -> Philip Hands
+newpath 3435 2234 moveto
+3397 2208 3327 2153 3327 2106 curveto
+3327 2106 3327 2106 3327 1530 curveto
+3327 1435 3090 1079 3022 980 curveto
+stroke
+newpath 3020 982 moveto
+3016 972 lineto
+3024 979 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	James Troup -> Julian Gilbey
+newpath 3449 2232 moveto
+3433 2203 3403 2143 3403 2106 curveto
+3403 2106 3403 2106 3403 1818 curveto
+3403 1721 3383 1626 3383 1530 curveto
+3383 1530 3383 1530 3383 1386 curveto
+3383 1285 3296 1198 3296 1098 curveto
+3296 1098 3296 1098 3296 1026 curveto
+3296 955 3163 912 3090 893 curveto
+stroke
+newpath 3092 896 moveto
+3083 891 lineto
+3093 891 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	James Troup -> Oliver Elphick
+newpath 3459 2232 moveto
+3459 2202 3459 2141 3459 2106 curveto
+3459 2106 3459 2106 3459 1674 curveto
+3459 1446 3390 1221 3313 1008 curveto
+3290 943 3195 867 3146 831 curveto
+stroke
+newpath 3146 834 moveto
+3140 826 lineto
+3149 830 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Joel Rosdahl -> Martin Schulze
+newpath 1263 2158 moveto
+1276 2147 1291 2134 1302 2123 curveto
+stroke
+newpath 1267 2158 moveto
+1258 2162 lineto
+1264 2154 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Vaidhyanathan G Mayilrangam -> Joey Hess
+newpath 2761 438 moveto
+2798 426 2854 408 2892 394 curveto
+stroke
+newpath 2763 440 moveto
+2753 441 lineto
+2761 435 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Nikita Schmidt
+gsave 10 dict begin
+solid
+5314 2466 53 18 ellipse_path
+stroke
+gsave 10 dict begin
+5314 2467 moveto (Nikita Schmidt) 85 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	John O'Sullivan (email valid after 04/04/2000)
+gsave 10 dict begin
+solid
+5314 2394 142 18 ellipse_path
+stroke
+gsave 10 dict begin
+5314 2395 moveto (John O'Sullivan \(email valid after 04/04/2000\)) 263 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Nikita Schmidt -> John O'Sullivan (email valid after 04/04/2000)
+newpath 5314 2448 moveto
+5314 2440 5314 2431 5314 2422 curveto
+stroke
+newpath 5312 2422 moveto
+5314 2412 lineto
+5317 2422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Sergio Rua
+gsave 10 dict begin
+solid
+2088 1242 41 18 ellipse_path
+stroke
+gsave 10 dict begin
+2088 1243 moveto (Sergio Rua) 62 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Sergio Rua -> Jordi
+newpath 2094 1224 moveto
+2097 1216 2100 1206 2104 1197 curveto
+stroke
+newpath 2101 1197 moveto
+2107 1188 lineto
+2106 1198 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Kenshi Muto
+gsave 10 dict begin
+solid
+4831 1674 47 18 ellipse_path
+stroke
+gsave 10 dict begin
+4831 1675 moveto (Kenshi Muto) 73 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Kenshi Muto -> Oliver M. Bolzer
+newpath 4799 1661 moveto
+4791 1658 4784 1656 4778 1656 curveto
+3665 1638 2552 1635 1438 1620 curveto
+1297 1617 1157 1605 1016 1603 curveto
+stroke
+newpath 1017 1606 moveto
+1007 1603 lineto
+1017 1601 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Kenshi Muto -> Ken Nonaka
+newpath 4804 1659 moveto
+4784 1648 4755 1633 4733 1621 curveto
+stroke
+newpath 4733 1624 moveto
+4725 1617 lineto
+4735 1619 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Kenshi Muto -> Teruyuki Morimura
+newpath 4834 1656 moveto
+4835 1648 4837 1638 4838 1630 curveto
+stroke
+newpath 4836 1630 moveto
+4839 1620 lineto
+4840 1630 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Manoj Srivastava -> Steve McIntyre
+newpath 3441 865 moveto
+3465 854 3496 838 3517 826 curveto
+stroke
+newpath 3445 866 moveto
+3435 868 lineto
+3443 861 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Stephen Crowley
+gsave 10 dict begin
+solid
+5547 2466 58 18 ellipse_path
+stroke
+gsave 10 dict begin
+5547 2467 moveto (Stephen Crowley) 96 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Matthew R. Pavlovich
+gsave 10 dict begin
+solid
+5547 2394 73 18 ellipse_path
+stroke
+gsave 10 dict begin
+5547 2395 moveto (Matthew R. Pavlovich) 125 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stephen Crowley -> Matthew R. Pavlovich
+newpath 5541 2448 moveto
+5540 2440 5540 2431 5540 2422 curveto
+stroke
+newpath 5538 2422 moveto
+5541 2412 lineto
+5542 2422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Matthew R. Pavlovich -> Stephen Crowley
+newpath 5554 2438 moveto
+5554 2429 5554 2420 5553 2412 curveto
+stroke
+newpath 5556 2438 moveto
+5553 2448 lineto
+5552 2438 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Sean 'Shaleh' Perry -> Matthew Wilcox (willy)
+newpath 2443 504 moveto
+2446 496 2449 486 2452 477 curveto
+stroke
+newpath 2449 477 moveto
+2455 468 lineto
+2454 478 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Michael Schlueter -> Michael Vogt
+newpath 425 1938 moveto
+426 1928 426 1917 425 1908 curveto
+stroke
+newpath 428 1934 moveto
+425 1944 lineto
+423 1934 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Mikael Djurfeldt -> Rafael Laboissiere
+newpath 4453 1725 moveto
+4433 1713 4406 1700 4386 1689 curveto
+stroke
+newpath 4453 1722 moveto
+4461 1729 lineto
+4451 1727 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Jeff Licquia
+gsave 10 dict begin
+solid
+5686 2466 44 18 ellipse_path
+stroke
+gsave 10 dict begin
+5686 2467 moveto (Jeff Licquia) 67 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Mike Mattice
+gsave 10 dict begin
+solid
+5686 2394 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+5686 2395 moveto (Mike Mattice) 75 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Jeff Licquia -> Mike Mattice
+newpath 5686 2448 moveto
+5686 2440 5686 2431 5686 2422 curveto
+stroke
+newpath 5684 2422 moveto
+5686 2412 lineto
+5689 2422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Oliver Elphick -> Philip Hands
+newpath 3043 938 moveto
+3065 928 3090 915 3102 900 curveto
+3115 884 3117 850 3117 828 curveto
+stroke
+newpath 3047 939 moveto
+3037 941 lineto
+3045 934 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Oliver Elphick -> Steve McIntyre
+newpath 3355 866 moveto
+3350 865 3347 864 3347 864 curveto
+3295 851 3241 840 3188 828 curveto
+3181 826 3170 823 3160 820 curveto
+stroke
+newpath 3356 864 moveto
+3365 869 lineto
+3355 869 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Eric Leblanc (Debian Key)
+gsave 10 dict begin
+solid
+968 1674 86 18 ellipse_path
+stroke
+gsave 10 dict begin
+968 1675 moveto (Eric Leblanc \(Debian Key\)) 151 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Eric Leblanc (Debian Key) -> Oliver M. Bolzer
+newpath 963 1656 moveto
+961 1648 959 1638 956 1629 curveto
+stroke
+newpath 954 1630 moveto
+954 1620 lineto
+959 1629 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Hartmut Koptein
+gsave 10 dict begin
+solid
+2033 1386 58 18 ellipse_path
+stroke
+gsave 10 dict begin
+2033 1387 moveto (Hartmut Koptein) 95 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Hartmut Koptein -> Othmar Pasteka
+newpath 1998 1371 moveto
+1970 1359 1930 1343 1900 1331 curveto
+stroke
+newpath 1902 1335 moveto
+1894 1328 lineto
+1904 1330 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	class 0x00]
+gsave 10 dict begin
+solid
+5812 2466 42 18 ellipse_path
+stroke
+gsave 10 dict begin
+5812 2467 moveto (class 0x00]) 63 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Peter Van Eynde (Lisper)
+gsave 10 dict begin
+solid
+5879 2394 82 18 ellipse_path
+stroke
+gsave 10 dict begin
+5879 2395 moveto (Peter Van Eynde \(Lisper\)) 143 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	class 0x00] -> Peter Van Eynde (Lisper)
+newpath 5828 2449 moveto
+5837 2440 5847 2429 5856 2419 curveto
+stroke
+newpath 5854 2417 moveto
+5863 2412 lineto
+5858 2421 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Frederic Peters
+gsave 10 dict begin
+solid
+5924 2466 52 18 ellipse_path
+stroke
+gsave 10 dict begin
+5924 2467 moveto (Frederic Peters) 84 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Frederic Peters -> Peter Van Eynde (Lisper)
+newpath 5913 2448 moveto
+5908 2440 5901 2429 5895 2420 curveto
+stroke
+newpath 5893 2422 moveto
+5890 2412 lineto
+5897 2419 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Tapio J. Lehtonen (Espoo Finland)
+gsave 10 dict begin
+solid
+6102 2466 108 18 ellipse_path
+stroke
+gsave 10 dict begin
+6102 2467 moveto (Tapio J. Lehtonen \(Espoo Finland\)) 195 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Riku Voipio
+gsave 10 dict begin
+solid
+6102 2394 45 18 ellipse_path
+stroke
+gsave 10 dict begin
+6102 2395 moveto (Riku Voipio) 69 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Tapio J. Lehtonen (Espoo Finland) -> Riku Voipio
+newpath 6102 2448 moveto
+6102 2440 6102 2431 6102 2422 curveto
+stroke
+newpath 6100 2422 moveto
+6102 2412 lineto
+6105 2422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Falk Hueffner
+gsave 10 dict begin
+solid
+1499 1602 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+1499 1603 moveto (Falk Hueffner) 78 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Falk Hueffner -> Roland Rosenfeld
+newpath 1483 1585 moveto
+1475 1575 1465 1564 1456 1554 curveto
+stroke
+newpath 1455 1556 moveto
+1450 1547 lineto
+1458 1553 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Samuel Tardieu
+gsave 10 dict begin
+solid
+6283 2466 55 18 ellipse_path
+stroke
+gsave 10 dict begin
+6283 2467 moveto (Samuel Tardieu) 88 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Stephane Bortzmeyer
+gsave 10 dict begin
+solid
+6283 2394 70 18 ellipse_path
+stroke
+gsave 10 dict begin
+6283 2395 moveto (Stephane Bortzmeyer) 120 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Samuel Tardieu -> Stephane Bortzmeyer
+newpath 6283 2448 moveto
+6283 2440 6283 2431 6283 2422 curveto
+stroke
+newpath 6281 2422 moveto
+6283 2412 lineto
+6286 2422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Steve Haslam -> Steve McIntyre
+newpath 3400 858 moveto
+3398 848 3394 837 3390 828 curveto
+stroke
+newpath 3401 854 moveto
+3402 864 lineto
+3396 855 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Stevie Strickland
+gsave 10 dict begin
+solid
+3640 522 58 18 ellipse_path
+stroke
+gsave 10 dict begin
+3640 523 moveto (Stevie Strickland) 96 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Zephaniah E. Hull -> Stevie Strickland
+newpath 3640 576 moveto
+3640 568 3640 559 3640 550 curveto
+stroke
+newpath 3638 550 moveto
+3640 540 lineto
+3643 550 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dale E. Martin
+gsave 10 dict begin
+solid
+6414 2466 52 18 ellipse_path
+stroke
+gsave 10 dict begin
+6414 2467 moveto (Dale E. Martin) 83 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	lantz moore
+gsave 10 dict begin
+solid
+6414 2394 43 18 ellipse_path
+stroke
+gsave 10 dict begin
+6414 2395 moveto (lantz moore) 66 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Dale E. Martin -> lantz moore
+newpath 6414 2448 moveto
+6414 2440 6414 2431 6414 2422 curveto
+stroke
+newpath 6412 2422 moveto
+6414 2412 lineto
+6417 2422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Jonas Oberg
+gsave 10 dict begin
+solid
+6586 2466 45 18 ellipse_path
+stroke
+gsave 10 dict begin
+6586 2467 moveto (Jonas Oberg) 69 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	peter karlsson (Fidonet#2:210/45.0)
+gsave 10 dict begin
+solid
+6586 2394 111 18 ellipse_path
+stroke
+gsave 10 dict begin
+6586 2395 moveto (peter karlsson \(Fidonet#2:210/45.0\)) 200 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	Jonas Oberg -> peter karlsson (Fidonet#2:210/45.0)
+newpath 6586 2448 moveto
+6586 2440 6586 2431 6586 2422 curveto
+stroke
+newpath 6584 2422 moveto
+6586 2412 lineto
+6589 2422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+endpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+end
+restore
+%%EOF

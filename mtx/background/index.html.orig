@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 6 November 2007), see www.w3.org">
+<title>Background of MTX</title>
+<link rel='StyleSheet' href="/light.css" type="text/css">
+<style type="text/css">
+li
+{
+  margin: 1em 0;
+}
+</style>
+</head>
+<body>
+<div>
+<h1>Background of MTX</h1>
+<h2>Whitelist in place of Blacklists</h2>
+<p>Classically, a whitelist was a list of people you wanted to make sure you got email from by skipping spam filtering.</p>
+<p>For a long time, people have collected blacklists of IPs known to send spam, and then later included IPs known to not send legitimate email. These are used to block email from those IPs.</p>
+<p>Years ago it seemed odd to me to maintain these very large lists of IPs that I didn't want to get mail from, instead of the comparatively tiny list of IPs that I <i>did</i> want to get mail from. I decided to create such a whitelist of IPs I tended to get good email from, and in my spam filter give bonuses to emails that matched, and penalties to emails that were not on the list.</p>
+<p>Then I could make the list public. Then I could get other people to help maintain it. Then everyone would use it.</p>
+<h2>DNSWL</h2>
+<p>Not being new to this situation, I went looking for existing implementations. I was happy to find the work had been done: DNSWL by Matthias Leisi. He had different intentions (no penalty for absence from the list), but it was the same data, and I could use it how I wanted. And I was happy with the implementation. I helped some.</p>
+<p>I never did get to the point where I suggested that people start penalizing email for not being on this list. The creator objected, I didn't know how to Reject a spam during delivery (so false positives were a major problem), and I wasn't sufficiently confident that everyone would get on the list.</p>
+<h2>SPF</h2>
+<p>SPF came along. New whitelists to use in place of blacklists! I created my records, and waited to see where it went. I still didn't know how to Reject spam.</p>
+<h2>Rejection during SMTP Delivery</h2>
+<p>Finally, a couple days before the creation of MTX, I configured my mail server to Reject mail during delivery based on SpamAssassin's output, so I could send error messages for false positives without causing backscatter.</p>
+<p>I finally configured SpamAssassin to give a bonus to any email that got a "pass" from SPF, and a penalty to any email that didn't, even if only because the domain had no SPF record. I also created a blacklist for the few spammer domains that used SPF. Easy. Worked great. I sent emails to domains I got legitimate email from which did not have SPF records, asking for them to be created.</p>
+<p>I got a couple emotional responses to my requests which indicated that they would never create SPF records because it breaks forwarding. I also discovered that the (envelope from munging) solutions to the forwarding problem were found similarly objectionable. SPF had a major barrier to adoption.</p>
+<h2>MTX</h2>
+<p>As I drove home that night, I lamented again that everyone doesn't just use DNSWL. While it has the disadvantage of dependence on a central authority, it doesn't have the forwarding breakage of SPF. Then I realized that we could have both: DNSWL's lack of forwarding breakage with SPF's decentralization, by storing DNSWL style whitelist records on the DNS servers of the owners of the IPs of each legitimate mail server.</p>
+<p>In that instant, MTX was born, and practically finalized.</p>
+
+<p>MTX Policy was tacked on a week later.</p>
+
+<p>The only remaining problem is spammers that implement MTX, which is the reason for the ability to blacklist domains.</p>
+
+<hr>
+<a href="/mtx/">MTX Home.</a><br>
+<a href="/contact/">Contact.</a><br>
+<a href="/">Return to Darxus' home page.</a><br>
+Sat Feb 13 13:01:26 EST 2010
+<br />
+<a href="http://www.htmlhelp.com/cgi-bin/validate.cgi?url=referer">HTML validate this page.</a>
+
+</div>
+</body>
+</html>

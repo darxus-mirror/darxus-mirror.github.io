@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+<title>sig2dot in windows</title>
+<link rel='StyleSheet' href="../../light.css" type="text/css" />
+</head>
+<body>
+<div>
+<h1>Using sig2dot in Windows</h1>
+Yes, it works. No, it's not my fault. Perl is just that cool.<br />
+<br />
+<a href="step1.png"><img src="tn_step1.png" alt="step 1" /></a> <a href=
+"step2.png"><img src="tn_step2.png" alt="step 2" /></a> <a href=
+"step3.png"><img src="tn_step3.png" alt="step 3" /></a><br />
+<br />
+Much thanks to <a href="http://www.pollinger.org.uk/">Ben Pollinger</a> for
+figuring this out, and for the above screenshots. I have no personal
+experience, so I will try to briefly describe how he did it until I get more
+detailed directions from him.<br />
+<br />
+Actually all of the programs and commandline syntax on the <a href=
+"usage.html">example usage</a> page should work under windows. It is just
+significantly less obvious how to set it up.
+<ul>
+<li>Install <a href=
+"http://www.activestate.com/Products/ActivePerl/">activeperl</a> (the windows
+port of perl)</li>
+<li>Install the windows port of <a href="http://www.gnupg.org/">gnupg</a> (look
+in downloads).</li>
+<li>Run something like:
+<blockquote>
+<div><tt>gpg --list-sigs &gt; listsigs.txt<br />
+type listsigs.txt | perl sig2dot.pl &gt; sigmap.dot</tt></div>
+</blockquote>
+</li>
+</ul>
+<a href="http://www.research.att.com/sw/tools/graphviz/">neato</a> (graphviz)
+also has a windows version you can download (for rendering the .dot file into a
+postscript (.ps) file).<br />
+<br />
+Ben used <a href="http://www.jasc.com/">Paint Shop Pro</a> to convert the
+postscript (.ps) file to a raster image (something like .png/.jpg/etc.)
+<hr />
+<a href="index.html">return to sig2dot</a><br />
+Fri May 24 09:02:26 EDT 2002</div>
+</body>
+</html>

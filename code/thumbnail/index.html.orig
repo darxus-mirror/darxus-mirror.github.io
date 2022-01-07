@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+<title>thumbnail</title>
+<link rel='StyleSheet' href="/light.css" type="text/css" />
+</head>
+<body>
+<div>Thumbnail resizes images down to a maximum of 10,000 pixels (equivalent to
+a 100x100 image), so that each thumbnail has the same amount of detail,
+reguardless of its dimesions. Requires <a href=
+"http://www.imagemagick.org/">ImageMagick</a>.
+<p><a href="thumbnail">Download thumbnail</a>.</p>
+<p><a href="/pics/">View examples</a>.</p>
+<hr />
+The guts:
+<p><code>$newx = int($x / (sqrt($x * $y) / sqrt($pixelcount)));<br />
+$newy = int($y / (sqrt($x * $y) / sqrt($pixelcount)));</code></p>
+<p>If this inspires you to use a similar calculation for resizing images,
+please consider giving me credit.</p>
+<hr />
+In my opinion, the functionality of this script ought to be implemented as a
+commandline option within the program <a href=
+"http://www.imagemagick.org/www/convert.html">convert</a> (part of <a href=
+"http://www.imagemagick.org/">ImageMagick</a>). Something like:
+<p><kbd>convert --pixels 10000 original.jpg thumbnail.jpg</kbd></p>
+<hr />
+"Added <b>@</b> to the image geometry specification. Use it to specify the
+square-root of the maximum area in pixels of an image (suggested by
+Darxus@ChaosReigns.com)." - <a href=
+"mailto:cristy@mystic.es.dupont.com">cristy@mystic.es.dupont.com</a>,
+imagemagick developer, Thu, 2 Aug 2001 12:35:39 -0400 (EDT).
+<p>Woohoo ! I've succeded in getting my thumbnail script obsoleted !! :)</p>
+<p>Thanks to <a href="mailto:leonardr@appligent.com">Leonard Rosenthol</a> for
+relaying this request.</p>
+<hr />
+<a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+<a href="/code/">Return to Darxus' Code Index</a><br />
+<a href="/">Return to Darxus' Home Page</a><br />
+Wed Jun 27 14:23:52 EDT 2001</div>
+</body>
+</html>

@@ -1,0 +1,758 @@
+#!/usr/bin/perl -w
+
+# dlkern v61
+#
+# Created by Darxus@ChaosReigns.com.
+# (c) 1999 Darxus@ChaosReigns.com & Michael@Toren.net.
+#
+# Queries ftp.kernel.org for current Linux kernel versions, via finger,
+# and then downloads the requested versions (stable/beta/pre-patch) as
+# specified by commandline flags, from ftp.kernel.org using ncftpget or
+# wget, and will automatically verify signatures if GnuPG.pm is present:
+# * http://indev.insu.com/GnuPG/gnupg.html (debian package libgnupg-perl)
+# * http://www.gnupg.org/
+#
+# For signature verification to work you must also import the key used
+# for signing, like this:
+#
+#   wget http://www.kernel.org/signature.html && gpg --import signature.html
+#
+#
+# Execute "dlkern -h" for usage.
+#
+# Example:
+#
+#  dlkern -s -c us
+#
+# will download the current stable (-s) version from the United States (-c us) 
+# mirror.  It is strongly recommended that you use -c to specify your 2 letter
+# country code, from the list at http://www.kernel.org/mirrors/ but it is not
+# manditory.
+#
+# This program is is released under the GNU GPL
+# (http://www.gnu.org/copyleft/gpl.html)
+#
+# Requirements:
+# * Perl
+# * Something to download with (ncftpget/wget/Net::FTP)
+#
+# Requirements for signature verification:
+# * GnuPG.pm
+# * gpg
+# * The kernel archive public key must be added to your keyring
+#
+# To add the Kernel Archive public key to your keyring, execute:
+# wget http://www.kernel.org/signature.html && gpg --import signature.html
+#
+# This thing has had a lot of revisions lately.  I would really appreciate
+# bug reports -- Darxus@ChaosReigns.com.
+#
+# TODO:
+# * rename linux simlinks after patch upgrade
+# * extract tarball if downloading full source w/ -p
+# * download full tarball if there's nothing useful to patch fro
+# * download all files with 1 call to downloader
+#
+# * Handle prepatch version "unknown".
+# * Net::FTP continue w/ WHERE.
+# * Verbose/debugging flag.
+# * Allow specification of mirror to download from.
+# * Use netselect to select mirror.
+# * Config file to store parameters.
+# * handle case where GnuPG.pm is present, but gpm is not in the path.
+# * Use uname & if_exist output_file to see if it actually needs to be
+#   downloaded.
+# * Debian package.
+# * RedHat package.
+#
+# For mct to do:
+# * Hostname & filename expanders for -d
+#
+# CHANGELOG (*'s were posted to freshmeat):
+# v15 Jan  9 20:28 EST 1st release.
+# v16 Jan 20 01:09 EST Changed finger address from "@linux.kernel.org" (not 
+#                      working) to "@ftp.kernel.org".
+# v17 Jan 21 14:43 EST Code cleanup & documentation.
+# v18 Jan 21 15:19 EST wget support.
+# v19 Jan 21 15:29 EST Handle prepatch version "none".
+# v20 Jan 21 15:59 EST Handle failed finger.
+# v21 Jan 21 16:18 EST Output directory argument.
+# v22 Jan 21 16:47 EST Added support for The Linux Kernel Archive Mirror System.
+# v23 Jan 21 16:54 EST Allow specification of filetype (.gz/.bz2).
+# v23 Jan 21 17:00 EST -h (usage) flag.
+#*v24 Jan 21 17:18 EST 2000 Fixed a couple minor warnings.
+# v25 Jan 21 18:34 EST 2000 Automatically download signatures (inebrieated).
+# v26 Jun 13 16:32 EDT 2000 Removed beginnings of signature verification so
+#                           signature download could work cleanly.
+# v27 Jun 14 18:02 EDT 2000 Automatic signature verification.
+# v28 Jun 14 18:21 EDT 2000 Cleanup.
+# v29 Jun 17 14:17 EDT 2000 Compensate for pre-patch location change.
+# v30 Jun 17 14:54 EDT 2000 Clarified signature verification failure output.
+#*v31 Jun 17 15:29 EDT 2000 Unbroke pre-patch signature verification.
+# v32 Jun 18 21:43 EDT 2000 Added -- option to specify arguments to downloader w/
+#                           help from michael@toren.org.
+# v33 Jun 18 22:48 EDT 2000 Allow specification of any downloader via -d
+#                           (Suggested by mct).  Changed output directory flag
+#                           to -o.  Clearer output when proper flags are not
+#                           specified for downloaders & versions.
+# v34 Jun 18 23:25 EDT 2000 Put back default downloader (ncftpget) removed in v33.
+# v35 Jun 19 09:19 EDT 2000 use strict.  Aren't you all proud ?
+# v36 Jun 19 09:25 EDT 2000 Default to downloading stable, if none specified.
+# v37 Jun 19 09:59 EDT 2000 -u: only display URLs.  Stopped displaying args.
+# v38 Jun 19 10:16 EDT 2000 -h displays URLs.
+# v39 Jun 19 13:59 EDT 2000 Nolonger dependant on Net::Finger.  Finger interface
+#                           based on Net::Finger by By Dennis "FIMM" Taylor, 
+#                           <corbeau@execpc.com>
+# v40 Jun 19 14:38 EDT 2000 Output error if call to downloader fails.  Added -w.
+# v41 Jun 20 17:08 EDT 2000 Handle absence of downloaders more gracefully.
+# v42 Jun 20 20:25 EDT 2000 Cleaned up output when no downloader was specified & one
+#                           was availabe.
+# v43 Jun 20 22:08 EDT 2000 Fallback to Net::FTP if no downloaders.
+# v44 Jun 20 21:27 EDT 2000 Downloader check nolonger uses which -mct
+# v45 Jun 20 21:51 EDT 2000 "removes that annoying quoted null string" -mct
+# v46 Jun 21 00:13 EDT 2000 mct:  
+#     - allows you to specify -d net::ftp on the command line
+#     - puts a "\n" in the "downloading via net::ftp", to match the rest of
+#       the code.
+#     - Kills any warnings from the -w flag that GnuPG.pm spits out.
+#     - Added -f option to use a different $fngrhost
+#     - Fixed a "print" to "die" in the finger code
+#     - Changed print "downloaded failed" to "die", and snipped the exit code.
+#     - die if -d is a directory
+# v47 Jun 21 10:53 EDT 2000 Darxus: Don't die on failed download (ncftpget will
+#                           fail if file has already been downloaded).  Check
+#                           signatures when using Net::FTP.
+# v48 Jun 22 16:32 EDT 2000 Corrected at least 20 misspellings of signature, thanks 
+#                           bj.
+# v49 Jun 23 13:48 EDT 2000 Changed Net::FTP download from ascii to binary.
+# v50 Jun 23 16:46 EDT 2000 Do not require Net::FTP unless it's needed.
+# v51 Jun 23 16:49 EDT 2000 Print 1 "#" per kilobyte w/ Net::FTP.
+#*v52 Jun 24 12:35 EDT 2000 Download signitures when using Net::FTP. (doh)
+# v53 Jun 24 17:53 EDT 2000 Verify both file & signature exist before calling gpg
+#                      so it doesn't complain -- reported by mct.
+# v54 Dec 24 10:46 EDT 2001 Output of "finger @ftp.kernel.org" changed and
+#                           broke dlkern again, reported by mct.  Nolonger
+#                           supporting prepatch, because I can't find where
+#                           it moved to.
+# v55 Nov 23 2005      Try http://www.kernel.org/kdist/finger_banner
+#                      before finger per http://www.kernel.org/
+# v56 Nov 23 2005      Added -k option to specify any kernel version.
+# v57 2005-11-23 20:42 Added -p option - specify path to source directory
+#                      and it'll upgrade an existing kernel source
+#                      directory via patches.
+# v58 2005-11-23 22:49 -0500 Exit more cleanly with -p if latest is alrady downloaded.
+# v59 2005-11-24 00:03 -0500 Added -q (quiet), better for cron
+# v60 2005-11-24 11:17 -0500 Don't die just because of 1 connection failure
+# v61 2005-11-27 12:28 -0500 Download full source if none available w/ -p
+
+#
+# I decided I don't like standard version numbers.  The version numbers for this
+# program started at "1", and have been incremented every time I made a change.
+# Numbers before 15 were not fit for public consumption.
+
+use strict;
+use vars qw(@new $i @dl_args $usage $opt_s $opt_b $opt_p %dl $opt_c $country $opt_d $downloader $opt_e $opt_f $opt_k $opt_p
+$ext $opt_h $opt_o $dir $gnupg $gpg %trust $tree $dl_count $opt_w $opt_n $opt_q @lines
+$line $desc $ver %version $first $second %url %file $date $sig $opt_u $fngrhost $ftphost $port $handle $opt_n %urlhost %urldir %urlfile $ftp $failedpatch $quiet);
+
+my $dlkernver = '61';
+my $fngrurl = 'http://www.kernel.org/kdist/finger_banner';
+my $maxtrycount = 10; # number of times to try to get version numbers
+                      # via both http and finger.
+my $srcpath;
+my %verminor;
+my $pwd = $ENV{'PWD'};
+
+# Load the Net::Finger module so I don't have to do any work to get the version 
+# info via finger.
+#use Net::Finger;
+# Nolonger dependant on Net::Finger.
+use IO::Socket;
+
+# Create a list of version types (is "trees" an appropriate name?)
+#@trees = ("stable", "beta", "prepatch");
+#@trees = ("stable", "beta");
+
+##########################################
+#Grab downloader args, mostly by mct BEGIN
+
+while ($i = shift @ARGV)
+{
+    if ($i eq "--")
+    {
+        @dl_args = @ARGV;
+        last;
+    }
+    push @new, $i;
+}
+@ARGV = @new;
+
+# For verbose output:
+#print "dlkern args:\n", join("\n", @ARGV), "\n";
+#print "downloader args:\n", join("\n", @dl_args), "\n";
+
+#Grab downloader args END
+#########################
+
+###########################################
+#Handle arguments (not to downloader) BEGIN
+
+# Load getopts to read commandline options.
+require 'getopts.pl';
+
+
+# Read commandline options.  Colon goes after flags that take arguments.
+&Getopts('qusbwnhd:c:e:o:f:k:p:');
+
+# initialize global variables
+$fngrhost = "ftp.kernel.org";
+$port = 79;
+
+
+# If there are no commandline options, display usage.  Normally you'd exit after
+# displaying usage, but I keep going to display the URLs.
+# Nolonger using this as of v36, defaulting to stable.
+#unless ($opt_s or $opt_b or $opt_p)
+#{
+#  &usage;
+#}
+
+# Check kernel version flags, store info in the #dl hash, with the version
+# type as the key.
+# opt_e & opt_c must come before opt_u & opt_h.
+if ($opt_e) { $ext = $opt_e; } else { $ext = "gz"; }
+if ($opt_c) { $country = ".$opt_c"; } else { $country = ""; }
+if ($opt_u) { &get_urls; exit(1); }
+if ($opt_h) { &usage; &get_urls; exit; }
+if ($opt_b) { $dl{"beta"}=1; }
+if ($opt_d) { $downloader = $opt_d; }
+if ($opt_o) { $dir = $opt_o; }
+if ($opt_s) { $dl{"stable"}=1; }
+if ($opt_f) { $fngrhost = $opt_f }
+if ($opt_p) { $srcpath = $opt_p }
+if ($opt_q) { $quiet = 1 }
+if ($opt_k) { 
+  for my $val (split ' ',$opt_k) {
+    $dl{$val}=1 
+  }
+}
+
+#print "srcpath: $srcpath\n";
+
+#print "opt_k: $opt_k\n";
+
+die "
+Sorry, the command line arguments have changed since v33.  -d now specifies
+which downloader program you'd like to use; the output directory flag has
+been renamed -o.\n\n" 
+	if ($downloader && -d $downloader);
+
+#Handle arguments (not to downloader) END
+#########################################
+
+####################
+#Load GnuPG.pm BEGIN
+
+$SIG{__WARN__} = sub {};
+
+if (!eval "require 'GnuPG.pm';") {
+  print "No GnuPG.pm (http://indev.insu.com/GnuPG), cannot verify signatures.\n";
+  $gnupg=0;
+} else {
+  print "GnuPG.pm loaded.\n" unless $quiet;
+  $gnupg=1;
+  $gpg = new GnuPG();
+
+  %trust = (-1, "UNDEFINED",
+             0, "NEVER",
+             1, "MARGINAL",
+             2, "FULLY",
+             3, "ULTIMATE");
+}
+
+$SIG{__WARN__} = 0;
+
+#Load GnuPG.pm END
+##################
+
+
+# Use info from the commandline to list the versions that were requested.
+print "Requested: " . join(', ',sort(keys(%dl))) unless $quiet;
+unless ( scalar(keys(%dl)) >= 1 )
+{
+  print " None.  Downloading stable" unless $quiet;
+  $dl{"stable"}=1;
+}
+print ".\n" unless $quiet;
+
+# Check downloader flags.
+
+$dl_count = defined($opt_w) + defined($opt_n) + defined($downloader);
+
+if ($dl_count > 1)
+{
+  &usage;
+  print "You specified $dl_count downloaders.  Only specify 1.\n";
+} elsif ($downloader)
+{ # This space left intentionally blank.  I want an elsunless :)
+} elsif ($opt_w) {
+  $downloader="wget";
+} elsif ($opt_n) {
+  $downloader="ncftpget";
+}
+
+if ($downloader && $downloader =~ /net::ftp/i)
+{
+  if (eval "require Net::FTP;") 
+  { 
+    print "Net::FTP loaded.\n" unless $quiet; 
+    import Net::FTP;
+    $downloader = "Net::FTP";
+  } else {
+    print "$downloader does not appear to be installed.\n";
+    $downloader = "";
+  }
+}
+
+if ((defined($downloader)) && !(&chkexe($downloader)) && $downloader ne "Net::FTP")
+{
+  print "$downloader does not appear to be installed.\n";
+  $downloader = "";
+}
+
+unless ($downloader)
+{
+  if (&chkexe("ncftpget"))
+  {
+    $downloader="ncftpget";
+  } elsif (&chkexe("wget")) {
+    $downloader="wget";
+  } else {
+    print "No downloader was found, using Net::FTP\n" unless $quiet;
+    $downloader = "Net::FTP";
+    if (eval "require Net::FTP;")
+    {
+      print "Net::FTP loaded.\n" unless $quiet;
+      import Net::FTP;
+    } else {
+      die "Could not find a downloader.\n";
+    }
+  }
+}
+
+
+print "Downloader: $downloader.\n\n" unless $quiet;
+
+
+&get_urls;
+
+if ($dir)
+{
+  print "Changing to output directory: $dir\n" unless $quiet;
+  chdir ($dir) or die "Can't cd to $dir $!\n";
+}
+
+my %shortestpathto;
+my %pathisfrom;
+my @files2download;
+# find closest version I have
+print "Found directories containing versions:\n" unless $quiet;
+my %latesthave;
+my %path;
+if ($srcpath) {
+  opendir(SOURCE,$srcpath) or die "Couldn't opendir $srcpath: $!\n";
+  for my $filename (readdir SOURCE) {
+     next if ($filename eq '.' or $filename eq '..');
+     if ($filename =~ m#linux-(\d+)\.(\d+)\.(\d+)(\.(\d+))?$#) {
+       my $one = $1;
+       my $two = $2;
+       my $three = $3;
+       my $four = $5 if ($5);
+       my $filever;
+       $filever .= "$one.$two.$three";
+       $filever .= ".$four" if (defined($four));
+       print "$filever\n" unless $quiet;
+
+       for my $tree (sort keys %dl) {
+         if ($filever eq $version{$tree}) {
+           print "Latest version has already been downloaded.\n" unless $quiet;
+           push @{$shortestpathto{$filever}}, 'none';
+           $pathisfrom{$filever} = $filever;
+           next;
+         }
+         #print "tree: $tree: version: $version{$tree}\n";
+         #print "369 tree: $tree\n";
+         my ($newone,$newtwo,$newthree,$newfour) = split('\.',$version{$tree});
+         #print "new: $newone,$newtwo,$newthree,$newfour\n";
+         if ($four) {
+           #print "path: $one.$two.$three.$four -R patch-$one.$two.$three.$four\n";
+           push @{$path{$filever}{$version{$tree}}}, "-R patch-$one.$two.$three.$four";
+         }
+         for my $num ($three + 1 .. $newthree) {
+           #print "path: $one.$two.$num patch-$one.$two.$num\n";
+           push @{$path{$filever}{$version{$tree}}}, "patch-$one.$two.$num";
+         }
+         if ($newfour) {
+           #print "path: $newone.$newtwo.$newthree.$newfour patch-$newone.$newtwo.$newthree.$newfour\n";
+           push @{$path{$filever}{$version{$tree}}}, "patch-$newone.$newtwo.$newthree.$newfour";
+         }
+       }
+
+     }
+  }
+  closedir SOURCE;
+
+  for my $old (sort keys %path) {
+    for my $new (sort keys %{$path{$old}} ) {
+      print "Path from $old to $new: " . join(' ',@{$path{$old}{$new}}) . "\n" unless $quiet;
+      if (!defined(@{$shortestpathto{$new}}) or scalar(@{$path{$old}{$new}}) < scalar(@{$shortestpathto{$new}}) ) {
+        @{$shortestpathto{$new}} = @{$path{$old}{$new}};
+        $pathisfrom{$new} = $old;
+      }
+    }
+  }
+  
+  TREE: for my $tree (sort keys %dl) {
+    if ($pathisfrom{$version{$tree}}) {
+      print "Shortest path to $version{$tree} is from $pathisfrom{$version{$tree}}: " unless $quiet;
+      for my $file (@{$shortestpathto{$version{$tree}}}) {
+        next TREE if ($file eq 'none');
+        print " $file" unless $quiet;
+        my $tmpfile = $file;
+        $tmpfile =~ s/^-R //; # strip recursion flag
+        push @files2download, "ftp://ftp$country.kernel.org/pub/linux/kernel/v$tree/$tmpfile.$ext";
+      }
+    } else {
+      print "No existing source found for $tree.\n";
+      push @files2download, $url{$tree};
+    }
+  }
+  print "\n" unless $quiet;
+} else {
+  for $tree (sort keys %dl) {
+    if ($url{$tree}) {
+      push @files2download, $url{$tree};
+    }
+  }
+
+}
+
+print "files to download: \n" . join("\n",@files2download) . "\n" unless $quiet;
+
+# Call ncftpget for each requested tree.
+#foreach $tree (sort(keys(%dl)))
+for my $file (@files2download)
+{
+  #if ($dl{$tree})
+  {
+    #if ($file)
+    {
+      if ($downloader ne "Net::FTP")
+      {
+        #print "\nDownloading $tree by calling \'$downloader \"",join('" "',@dl_args),"\" $file\'\n";
+        print "\nDownloading kernel by calling \'$downloader ",
+                join " ", (map { '"' . $_ . '"' } @dl_args), "$file\'\n" unless $quiet;
+        system ($downloader, @dl_args, "$file");
+
+        #print "Downloading $tree signature by calling \'$downloader \"",join('" "',@dl_args),"\" $file.sign\'\n";
+        print "Downloading signature by calling \'$downloader ",
+                join " ", (map { '"' . $_ . '"' } @dl_args), "$file.sign\'\n" unless $quiet;
+        system ($downloader, @dl_args, "$file.sign");
+
+        #linux-2.2.14.tar.gz.sign
+        #$sig = $gpg->verify( signature => "linux-$version{$tree}.tar.$ext.sign", file => "linux-$version{$tree}.tar.$ext" );
+        if ($gnupg)
+        {
+          my $tarball = (reverse(split('/',$file)))[0];
+	  &chksig("$tarball.sign","$tarball");
+        }
+      } else {
+        print "\nDownloading $tree via Net::FTP.  You may see 1 # per kilobyte.\n" unless $quiet;
+	$ftp = Net::FTP->new($urlhost{$tree}, Debug => 0, Hash => \*STDERR);
+	$ftp->login;                # login as anonymous
+	$ftp->cwd($urldir{$tree});  # change directory
+        $ftp->binary;               # Set transfer type to binary
+        print "Getting $urlfile{$tree}:\n" unless $quiet;
+	$ftp->get($urlfile{$tree}); # get file
+        print "Getting $urlfile{$tree}.sign:\n" unless $quiet;
+	$ftp->get("$urlfile{$tree}.sign"); # get file
+	$ftp->quit;
+	print "Download of $tree complete.\n" unless $quiet;
+        if ($gnupg)
+        {
+          &chksig("$urlfile{$tree}.sign","$urlfile{$tree}");
+        }
+      }
+    }
+  } # else not downloading $tree
+}
+
+my @upgraded;
+if ($srcpath) {
+  my $exec;
+  if ($ext eq 'bz2') {
+    $exec = 'bzcat';
+  } else {
+    $exec = 'zcat';
+  }
+  print "\n\n" unless $quiet;
+#  for my $tree (sort keys %dl) {
+#    print "
+#To apply patches to $pathisfrom{$version{$tree}}, execute:
+#cd $srcpath/linux-$pathisfrom{$version{$tree}}/\n";
+#    for my $patch (@{$shortestpathto{$version{$tree}}}) {
+#      print "$exec ../$patch.$ext | patch -p1\n";
+#    }
+#    print "cd ..\nmv linux-$pathisfrom{$version{$tree}} linux-$version{$tree}\n";
+#  }
+  for my $tree (sort keys %dl) {
+    chdir("$srcpath/linux-$pathisfrom{$version{$tree}}") or die "Couldn't chdir $srcpath/linux-$pathisfrom{$version{$tree}} :$!\n";
+    next if (@{$shortestpathto{$version{$tree}}})[0] eq 'none';
+    for my $patch (@{$shortestpathto{$version{$tree}}}) {
+      next if ($patch eq 'none');
+      my $patchfile;
+      my $reverse;
+      print "Testing patch $patch\n";
+      if ($patch =~ m#^(-R )?(.*)$#) {
+        $reverse = $1;
+        $patchfile = $2;
+        $reverse = '' if (!defined($reverse));
+        my $filecount = 0;
+        open(CMD,"$exec ../$patchfile.$ext | patch -p1 --dry-run --batch $reverse |") or die "Couldn't run command: $!\n";
+        while ($line = <CMD>) {
+          chomp $line;
+          if ($line =~ m#^patching#) {
+            $filecount++;
+          } else {
+            $failedpatch++;
+            die "Test failed on patch $patchfile, giving up.\n";
+          }
+        }
+        close CMD;
+        die "Test failed on patch $patchfile ($filecount files), giving up." unless ($filecount > 0);
+        print "Test passed ($filecount files), applying patch $patch\n";
+        open(CMD,"$exec ../$patchfile.$ext | patch -p1 --batch $reverse |") or die "Couldn't run command: $!\n";
+        $filecount =0;
+        while ($line = <CMD>) {
+          chomp $line;
+          if ($line =~ m#^patching#) {
+            $filecount++;
+          } else {
+            $failedpatch++;
+            die "Failed to apply patch $patchfile, giving up.\n";
+          }
+        }
+        close CMD;
+        print "Patch $patch applied cleanly to $filecount files.\n";
+      } else {
+        die "Couldn't read command: $patch";
+      }
+    }
+    push @upgraded, $version{$tree};
+    chdir('..') or die "Couldn't chdir ..: $!\n";
+    rename ("linux-$pathisfrom{$version{$tree}}","linux-$version{$tree}") or die "Couldn't rename linux-$pathisfrom{$version{$tree}} to linux-$version{$tree}\n";
+  }
+  
+}
+
+if (@upgraded) {
+  print "Successfully upgraded to kernel version " . join(' and ',@upgraded) . "\n";
+}
+
+exit;
+#########################################
+
+sub usage {
+################################################################################
+print "
+Usage:  dlkern [-sbp] [-k <kernel>] [-nw | -d <downloader>] [-o <directory>] 
+        [-c <country_code>] [-e <gz|bz2>] [-f <host>] -- <downloader args>
+
+        -s  Download latest stable version of Linux kernel.
+        -b  Download beta beta version of Linux kernel. 
+        -k stable
+        -k 2.4    Download the latest of the specified kernel version.
+        -k 2.2    Should work with any version.
+        -k 2.0
+
+        -n  Use ncftpget as downloader (default).
+        -w  Use wget as downloader.
+        -d  Specify another downloader.
+
+        -o  Specify directory in which to save downloaded files.
+        -p  Specify directory in which to apply patches. (/usr/src/linux)
+        -c  Specify 2 letter country code from http://www.kernel.org/mirrors/
+        -e  Specify extension (gz is default, bz2 is more compressed).
+        -h  Show this usage information.
+	-f  Finger a different host, instead of the default, \"$fngrhost\"
+        -u  Only display URLs.  May use -c & -e.
+        -q  quiet (more appropriate for cron)
+        --  Specify aruments to the downloader.  Must be last.
+   
+" unless ($usage);
+$usage=1;
+}
+
+# Parse finger data into URLs.  Store them in the hash #url, using the tree 
+# name for the key.
+sub get_urls {
+  # Query finger data.
+  #@lines = finger('@ftp.kernel.org', 1) or die "Failed to obtain version info by fingering \@ftp.kernel.org.\n";
+  my $trycount = 0;
+
+  my $nodata = 1;
+  while ($nodata == 1) {
+    # try http
+    my $httphost;
+    my $fngrpath;
+    @lines = ();
+    $trycount ++;
+    if ($fngrurl =~ m#^http://([^/]+)(.*)#) {
+      $httphost = $1;
+      $fngrpath = $2;
+      print "Attempting to retrieve version numbers via http://${httphost}${fngrpath}\n" unless $quiet;
+      unless ($handle = IO::Socket::INET->new(Proto     => 'tcp',
+                                              PeerAddr  => $httphost,
+                                              PeerPort  => '80'))
+      { 
+        print "Failed to make http connection to $httphost: $!\n";
+      } 
+    
+      print $handle "GET $fngrpath HTTP/1.0\n";
+      print $handle "User-Agent: dlkern/$dlkernver (+http://www.chaosreigns.com/code/dlkern/)\n\n";
+    
+      my $body = 0;
+      while (my $line = <$handle>)
+      { 
+        #s/(\n|\r)+/\n/g; #Net::Finger seemed to think this should be here.
+        $line =~ s/[\n\r]+//g; # strip end of line
+        chomp $line;
+        if ($line eq '') {
+          $body = 1;
+          next;
+        }
+        next unless ($body == 1);
+        push @lines, $line;
+      }
+      #print "Got: ".scalar(@lines)." lines:\n" . join("\n",@lines) . "..\n";
+      if (scalar(@lines) <= 1) {
+        print "Failed to retrieve versions from http://${httphost}${fngrpath}.\n";
+      } else {
+        $nodata = 0;
+      }
+    } else {
+      print "\$fngrhost is invalid.\n";
+    }
+    # try finger
+    if ($nodata == 1) {
+      @lines = ();
+      print "Attempting to retrieve version numbers via finger $fngrhost:$port\n" unless $quiet;
+      unless ($handle = IO::Socket::INET->new(Proto     => 'tcp',
+                                              PeerAddr  => $fngrhost,
+                                              PeerPort  => $port))
+      { 
+        print "Failed to make finger connection to $fngrhost:$port: $!\n";
+      } 
+    
+      print $handle "\n\r";
+    
+      while (<$handle>)
+      { 
+        s/(\n|\r)+/\n/g; #Net::Finger seemed to think this should be here.
+        push @lines, $_;
+      }
+      if (scalar(@lines) <= 1) {
+        print "Failed to retrieve versions from finger host $fngrhost:$port.\n";
+      } else {
+        $nodata = 0;
+      }
+    }
+    if ($trycount >= $maxtrycount) {
+      die "Still couldn't get version numbers after $maxtrycount tries.  Giving up.\n";
+    }
+    if ($nodata == 1) {
+      print "Waiting 3 seconds before trying again.\n";
+      sleep 3;
+    }
+  }
+
+  foreach $line (@lines)
+  { 
+    chomp $line;
+    if ($line =~ m#The latest (.+) version of the Linux kernel is:\s+(\S+)#) {
+      $tree = $1;
+      $ver = $2;
+
+      ($first, $second) = split /\./, $ver;
+      if ($tree eq 'stable') {
+        delete $dl{'stable'};
+        $dl{"$first.$second"} = 1;
+        $tree = "$first.$second";
+      }
+      $version{$tree} = $ver;
+      ($verminor{$tree}) = $ver =~ m#^${tree}\.(.+)$#;
+      printf "%6s: %10s ", $tree,$version{$tree} unless $quiet;
+
+      $urlhost{$tree} = "ftp$country.kernel.org";
+      ($first, $second) = split /\./, $version{$tree};
+      $url{$tree} = "ftp://ftp$country.kernel.org/pub/linux/kernel/v$first.$second/linux-$version{$tree}.tar.$ext";
+      $urldir{$tree} = "/pub/linux/kernel/v$first.$second"; 
+      $urlfile{$tree} = "linux-$version{$tree}.tar.$ext";
+
+      print "$url{$tree}\n" unless $quiet;
+    }
+  }
+}
+
+sub chksig
+{
+  my $signature = $_[0];
+  my $tarball = $_[1];
+  print "Verifying file $tarball with signature $signature:\n" unless $quiet;
+
+  if (-f $tarball)
+  {
+    if (-f $signature)
+    {
+      if (eval { $sig = $gpg->verify( signature => $signature, file => $tarball );})
+      {
+        print "Singature passed verification.\n" unless $quiet;
+        # For verbose output:
+        #print "Singature info:\n";
+        #for $key (sort(keys(%$sig)))
+        #{
+        #  print "$key: $$sig{$key}\n";
+        #}
+
+        print "Singature timestamp: ",scalar(localtime($$sig{"timestamp"})),"\n" unless $quiet;
+        print "Trust level for this signature is: $trust{$$sig{trust}}\n" unless $quiet;
+
+      } else {
+        print "\nSIGNATURE DID NOT PASS VERIFICATION.  Possible reasons:\n";
+        print " * Kernel source has been maliciously modified.\n";
+        print " * Kernel tarball or signature was corrupted during download.\n";
+        print " * You did not insert the kernel archive public key into your keyring via:\n";
+        print "   wget http://www.kernel.org/signature.html && gpg --import signature.html\n";
+        exit;
+      }
+    } else {
+      print "$signature is missing.\n";
+    }
+  } else {
+    print "$tarball is missing.\n";
+  }
+}
+
+sub chkexe
+{
+  my $what = shift;
+
+  for my $dir (split /:/, $ENV{"PATH"})
+  {
+    $dir .= "/" unless ($dir =~ m#/$#);
+    return 1 if (-x "$dir/$what");
+  }
+
+  return 0;
+}
+

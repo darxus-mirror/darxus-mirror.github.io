@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+
+  <title>springgraph 3D output</title>
+  <link rel='StyleSheet' href="/light.css" type="text/css" />
+</head>
+
+<body>
+  <div>
+    <div class='center'>
+      <h1>springgraph 3D output</h1>"wow, that's very, very pretty :)" -
+      mct<br />
+      "holy sh*t that 3d graph rocks" - Time<br />
+      "Interesting!" - Stephen C. North, an author of <a href=
+      "http://www.research.att.com/sw/tools/graphviz/">neato</a>
+
+      <p>These are both rendered with springgraph from the same .dot
+      file:<br />
+      (a graph of the <a href="http://www.phillylinux.org/keys/">philly linux
+      keyring</a>)<br />
+      <a href="dl/3d/phillylinux_full2d.png"><img src=
+      "dl/3d/phillylinux_full2d_small.png" width="388" height="232"
+      alt="plug 2d" /></a> <a href="dl/3d/phillylinux_full01.png"><img src=
+      "dl/phillylinux_full_white.png" width="346" height="260" alt=
+      "plug 3d" /></a></p>
+
+      <p><a href="dl/3d/">Get the rest of the 16 renderings of this 3D graph as
+      it is rotated</a> <small><br />
+      Recommended viewing:<br />
+      <span style="font-family: monospace">wget -r -nd --no-parent
+      http://www.chaosreigns.com/code/springgraph/dl/3d/;<br />
+      xv -wait 1 -wloop phillylinux_full[01]?.png</span></small></p>
+
+      <p>A simpler example (with older data):<br />
+      <a href="dl/phillylinux_old.png"><img src="dl/phillylinux_old_small.png"
+      width="257" height="327" alt="old plug 2d" /></a> <a href=
+      "dl/phillylinux_old_3d.png"><img src="dl/phillylinux_old_white.png"
+      width="346" height="260" alt="old plug 3d" /></a></p>
+    </div>
+
+    <p>3D rendering is done with <a href=
+    "http://www.povray.org/">povray</a>.<br />
+    A single frame 3d graph can be generated like this:<br />
+    <span style="font-family: monospace">cat test.dot | ./springgraph.pl -p &gt; test.pov;</span><br />
+    <span style="font-family: monospace">povray +i test.pov +o test.tga -geometry 640x480</span></p>
+
+    <p>I did manage to create an mpeg of the animated frames with <a href=
+    "http://www.imagemagick.org">imagemagick</a> ("<span style="font-family: monospace">convert -adjoin *.tga
+    movie.mpeg</span>" - you'll probably need to install <a href=
+    "http://www.mpeg.org/MSSG/#source">mpeg2encode</a> first.), but the mpeg
+    compression did <i>horrible</i> things to the image quality.</p>
+
+    <p>If you generate one of these 3D graphs, you will probably want to modify
+    the location of the camera so that the entire graph fits in the image
+    nicely. The camera section is at the bottom of the .pov file. You'll want
+    to edit the third (Z coordinate) value of the location.</p>
+    <hr />
+    <a id="vrml"></a>
+
+    <h1>VRML output</h1><a href="dl/phillylinux_vrml.png"><img src=
+    "dl/phillylinux_vrml_small.png" width="346" height="260" alt=
+    "vrml" /></a>
+
+    <p>The above screenshot is, indeed, a <a href=
+    "http://www.web3d.org/">vrml</a> scene rendered by springgraph (with the
+    "-v" flag), from <a href=
+    "dl/phillylinux_full.wrl">phillylinux_full.wrl</a>, which was generated
+    from the same .dot file as the first two graphs on this page.
+    Unfortunately, I've come across a lot of problems with vrml, and the latest
+    seems to be lack of support for Text nodes, hence the lack of node labels
+    in this file. The only vrml browser I've had any amount of success with is
+    <a href="http://www.vermontel.com/~cmorley/vrml.html">lookat</a>. If you
+    know of a vrml browser that works well under Linux, please let me know, so
+    I can continue development on this feature. You may be able to use one of
+    the other labeled graphs as a map when flying through this scene, but it
+    looks like vrml aligns its axes a bit differently.</p>
+    <hr />
+    <a href="/code/springgraph/">back to the springgraph index</a><br />
+    Mon May 13 05:24:27 EDT 2002<br />
+
+    <address>
+      <a href="mailto:Darxus@ChaosReigns.com">Darxus@ChaosReigns.com</a>
+    </address>
+  </div>
+</body>
+</html>

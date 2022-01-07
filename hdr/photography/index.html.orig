@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>HDR Photography and Ubuntu Jaunty Linux</title>
+<style type="text/css">
+</style>
+</head>
+<body>
+
+<header>
+<h1>Respectable High Dynamic Range Photography</h1>
+<h2>An Ubuntu Jaunty Linux (free software) Tutorial</h2>
+</header>
+
+<table border="0"><tr><td>
+<a href="http://commons.wikimedia.org/wiki/File:StLouisArchMultExpEV-4.72.JPG"><img src="120px-StLouisArchMultExpEV-4.72.JPG" width="120" height="90" /></a><br />
+-4.72 EV<br />
+<a href="http://commons.wikimedia.org/wiki/File:StLouisArchMultExpEV-1.82.JPG"><img src="120px-StLouisArchMultExpEV-1.82.JPG" width="120" height="90" /></a><br />
+-1.82 EV<br />
+<a href="http://commons.wikimedia.org/wiki/File:StLouisArchMultExpEV%2B1.51.JPG"><img src="120px-StLouisArchMultExpEV+1.51.JPG" width="120" height="90" /></a><br />
++1.51 EV<br />
+<a href="http://commons.wikimedia.org/wiki/File:StLouisArchMultExpEV%2B4.09.JPG"><img src="120px-StLouisArchMultExpEV+4.09.JPG" width="120" height="90" /></a><br />
++4.09 EV<br />
+</td><td>
+<a href="http://commons.wikimedia.org/wiki/File:StLouisArchMultExpEV_CDR.jpg"><img src="m_StLouisArchMultExpCDR.jpg" width="640" height="480" /></a></td></tr></table>
+
+<p>
+Cameras can only capture a limited range of darkness to lightness. Some times you want to capture detail in highlights and shadows that cannot be captured in a single photograph. This is the solution.
+</p>
+<hr />
+<p>
+Qtpfsgui: Notorious for surreal local tone mapping, but good at merging to HDR and capable of saving to both HDR and LDR without tone mapping.
+</p>
+
+<p>
+cinepaint:  Full HDR image editing software.  Not as good at image alignment.  Not in Ubuntu repositories.
+</p>
+
+<hr />
+Common
+
+<b><p>
+Take the same photograph several times at different exposure levels.
+</p></b>
+
+<blockquote>
+Use a tripod.  You need a range of over-exposures and under-exposures to capture all of the detail, as shown above.  2 EV / stop increments will do fine.  Auto Exposure Bracketing is nice.
+</blockquote>
+A 20 stop progression in 2 stop increments for use at night, using f/3.5: <pre>ISO Exposure (seeconds)
+800 30
+200 30
+200 8
+200 2
+200 0.5 
+200 1/8 
+200 1/30
+200 1/125
+200 1/500
+200 1/2000
+200 1/8000
+</pre>
+
+<b>
+<p>
+Verify your system is up to date by running:
+</p>
+</b>
+
+<blockquote><tt>
+sudo aptitude update &amp;&amp; sudo aptitude dist-upgrade
+</tt></blockquote>
+
+
+<hr />
+Qptfsgui
+
+<b><p>
+Verify a line including an Ubuntu universe repository in your <tt>/etc/apt/sources.list</tt>
+</p></b>
+<blockquote>
+deb http://us.archive.ubuntu.com/ubuntu/ hardy universe
+</blockquote>
+
+<b><p>
+Install qtpfsgui and hugin-tools (for alignment):
+</p></b>
+
+<blockquote>
+sudo aptitude update &amp;&amp; sudo aptitude install qtpfsgui hugin-tools
+</blockquote>
+
+<b><p>
+Run <tt>qtpfsgui</tt>
+</p></b>
+
+<blockquote>
+<p>
+New HDR / Load Images / [select all your photographs] / Open / Auto Align Images / Next / Next / Finish / Save HDR as
+</p>
+
+<p>
+Drag the edges of the blue part of the histogram around.  Play with the Mapping (Gamma).  
+</p>
+</blockquote>
+
+<b><p>
+Save to LDR
+</p></b>
+<blockquote>
+File / Save HDR Preview
+</blockquote>
+
+<hr />
+cinepaint
+
+<b>
+<p>
+Add these lines to <tt>/etc/apt/sources.list</tt>:
+</p>
+</b>
+
+<blockquote><tt>
+# cinepaint<br />
+deb http://ppa.launchpad.net/secretlondon/ppa/ubuntu hardy main<br />
+# Required libopenexr2ldbl package only exists in hardy.<br />
+deb http://archive.ubuntu.com/ubuntu/ hardy main
+</tt></blockquote>
+
+<b>
+<p>
+Install cinepaint and the required ICC color profiles by running:
+</p>
+</b>
+
+<blockquote><tt>
+sudo aptitude update &amp;&amp; sudo aptitude install cinepaint icc-profiles
+</tt></blockquote>
+
+<b>
+<p>
+Run <tt>cinepaint</tt>.
+</p>
+</b>
+
+<b>
+<p>
+Configure your display color profile:
+</p>
+</b>
+
+<blockquote>
+File / Preferences / Color Management / Display Profile = sRGB / Save
+</blockquote>
+
+<p>
+If you skip this step, when editing HDR images you will get the warning:
+"Cannot colormanage this display.  Either image or display profile are undefined." and a lot of bright pink representing the brighter parts of your image.
+</p>
+
+<b>
+<p>
+Import your multiple exposures:
+</p>
+</b>
+
+<blockquote>
+File / New From / Bracketing to HDR<br />
+Select all of your photos.  Click OK.<br />
+Click Compute Offsets.<br />
+Click HDR.
+</blockquote>
+
+<b>
+<p>
+Save your work:
+</p>
+</b>
+
+<blockquote>
+File / Save as<br />
+Use a file name ending in <tt>.exr</tt>.
+</blockquote>
+
+<b>
+<p>
+To avoid the "Curves for this image type cannot be adjusted." error, make sure this is selected (greyed out):
+</p>
+</b>
+
+<blockquote>
+Image / 16-bit Unsigned Integer
+</blockquote>
+<p>
+Current CVS supports curves in 32-bit IEEE Float.
+</p>
+
+<p>
+I have found Image / Colors / Gamma-Expose to be useful.
+</p>
+
+<b>
+<p>
+Save to jpeg:
+</p>
+</b>
+
+<blockquote>
+Image / Convert using ICC Profile / Profile = sRGB / OK<br />
+Image / 8-bit Unsigned Integer<br />
+File / Save as
+</blockquote>
+
+<p>
+These two image conversion steps are necessary to reduce the range and precision of the HDR image to LDR (because jpeg is LDR, like your camera and monitor).
+</p>
+<p>
+Keep in mind you are now editing in LDR.  You may want to reload your <tt>.exr</tt> before continuing.
+</p>
+<hr />
+<p>
+Input photos by <a href="http://commons.wikimedia.org/wiki/User:Kmccoy">kmccoy</a>.  All photos on this page released under the Creative Commons Attribution ShareAlike 3.0 License and the  GNU Free Documentation License, Version 1.2 or newer.</p>
+
+<p>The output example was actually created in qtpfsgui using Save HDR Preview.  I can achieve output almost as nice using cinepaint's gamma-expose tool, but the image alignment isn't as good.  Perhaps if I use hugin's align_image_stack first.</p>
+
+<p>
+Fri Aug 28 22:55:15 EDT 2009
+</p>
+</body></html>

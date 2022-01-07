@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+<title>n rep max calculator</title>
+<link rel="StyleSheet" href="/light.css" type="text/css" />
+</head>
+<body>
+<div>
+<h1>n rep max calculator</h1>
+<form action="/cgi-bin/gym/nrepmax.cgi">
+<table border='0'>
+<tr>
+<td>Weight</td>
+<td><input name="weight" /></td>
+<td>Use any units (pounds / kilograms / etc.)</td>
+</tr>
+<tr>
+<td>Reps</td>
+<td><input name="reps" /></td>
+<td>Accurate for values values from 1 to 10.</td>
+</tr>
+<tr>
+<td>Round to weight</td>
+<td><input name="round" value="1" /></td>
+<td>Decimal values are valid ("0.25").</td>
+</tr>
+<tr>
+<td></td>
+<td><input type="submit" /></td>
+</tr>
+</table>
+</form>
+<hr />
+This uses the Brzycki formula.
+<p>Enter the amount of weight you lifted, and the number of times you lifted it
+(reps). This formula is accurate for 1 to 10 reps. It will calculate the
+<i>approximate</i> maximum amount of weight you should be able to lift for 1 to
+10 reps, and will also give you percentages of your one rep max which are used
+by a number of exercise routines.</p>
+<p>All values are rounded to the value you specify. If your plates allow you to
+do 5 pound increments, and you specify 5, it will round to the closest value
+you can set on your bar.</p>
+<hr />
+<a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+<a href="/gym/">Darxus' Gym page</a><br />
+<a href="/">Darxus' home page</a><br />
+<a href="http://darxus.livejournal.com/">Darxus' livejournal</a></div>
+</body>
+</html>

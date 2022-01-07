@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 6 November 2007), see www.w3.org" />
+<title></title>
+<link rel='StyleSheet' href="/light.css" type="text/css" />
+</head>
+<body>
+<div>45 bikes.<br />
+Count by Make:
+<table border='1'>
+<tr>
+<td><img alt="" src="/images/pipe1.jpg" height='15' width='36' /></td>
+<td>27%</td>
+<td>12</td>
+<td>BMW</td>
+</tr>
+<tr>
+<td><img alt="" src="/images/pipe1.jpg" height='15' width='33' /></td>
+<td>24%</td>
+<td>11</td>
+<td>Suzuki</td>
+</tr>
+<tr>
+<td><img alt="" src="/images/pipe1.jpg" height='15' width='24' /></td>
+<td>18%</td>
+<td>8</td>
+<td>Honda</td>
+</tr>
+<tr>
+<td><img alt="" src="/images/pipe1.jpg" height='15' width='18' /></td>
+<td>13%</td>
+<td>6</td>
+<td>Kawasaki</td>
+</tr>
+<tr>
+<td><img alt="" src="/images/pipe1.jpg" height='15' width='9' /></td>
+<td>7%</td>
+<td>3</td>
+<td>Triumph</td>
+</tr>
+<tr>
+<td><img alt="" src="/images/pipe1.jpg" height='15' width='6' /></td>
+<td>4%</td>
+<td>2</td>
+<td>Ducati</td>
+</tr>
+<tr>
+<td><img alt="" src="/images/pipe1.jpg" height='15' width='3' /></td>
+<td>2%</td>
+<td>1</td>
+<td>Yamaha</td>
+</tr>
+<tr>
+<td><img alt="" src="/images/pipe1.jpg" height='15' width='3' /></td>
+<td>2%</td>
+<td>1</td>
+<td>Moto Guzzi</td>
+</tr>
+<tr>
+<td><img alt="" src="/images/pipe1.jpg" height='15' width='3' /></td>
+<td>2%</td>
+<td>1</td>
+<td>Harley-Davidson</td>
+</tr>
+</table>
+Count by Model:
+<table border='1'>
+<tr>
+<td>4</td>
+<td>Honda CBR1100XX</td>
+<td>Paul Luevano, Vacek, Tom Biggs, Darxus</td>
+</tr>
+<tr>
+<td>3</td>
+<td>BMW F650GS</td>
+<td>Christine, Demi, Feisty's sister</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Suzuki SV650S</td>
+<td>Greg, Nancy</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Suzuki SV650</td>
+<td>Sandra DiTullio, Julia Harper</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Kawasaki Vulcan Classic</td>
+<td>Rob Feiman, Ettie van Dijk</td>
+</tr>
+<tr>
+<td>2</td>
+<td>BMW R1150R</td>
+<td>Phil, Fred</td>
+</tr>
+<tr>
+<td>2</td>
+<td>BMW R1100S</td>
+<td>Kate, Mike Lambert</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Honda VFR</td>
+<td>Steve Woodbridge, Tale, Scott L.</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Yamaha FJR1300</td>
+<td>Mr. Bill</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Triumph Trophy(?)</td>
+<td>Denis Legault</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Triumph Sprint 955</td>
+<td>Rupert</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Triumph Daytona T595</td>
+<td>Reto</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Suzuki TL1000S</td>
+<td>Richard Perrin</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Suzuki Hayabusa</td>
+<td>Chrispy</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Suzuki GS500</td>
+<td>Mary</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Suzuki GS1100G</td>
+<td>Michael Beavington</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Suzuki DR650</td>
+<td>John Goldie</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Suzuki Bandit 600S</td>
+<td>MT</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Suzuki V-Strom DL1000</td>
+<td>Paul Fox</td>
+</tr>
+<tr>
+<td>1</td>
+<td>BMW R1150RT</td>
+<td>Mr. Pou</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Moto Guzi Stone</td>
+<td>Mike Ledoux</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Kawasaki ZX-9R</td>
+<td>Tom Atwood</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Kawasaki ZX-6</td>
+<td>Feisty</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Kawasaki Vulcan Nomad (with trailer)</td>
+<td>Bill van Dijk</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Kawasaki GPZ</td>
+<td>Blake Johnson</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Honda Shadow ACE Tourer VT1100C</td>
+<td>Rob Castro</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Harley-Davidson Sportster</td>
+<td>Sheldon</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Ducati Monster</td>
+<td>Todne</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Ducati Multistrada</td>
+<td>Tim Atwood</td>
+</tr>
+<tr>
+<td>1</td>
+<td>BMW R1100GS</td>
+<td>Mike DiTullio</td>
+</tr>
+<tr>
+<td>1</td>
+<td>BMW K75</td>
+<td>Max Buxton</td>
+</tr>
+<tr>
+<td>1</td>
+<td>BMW K1200GT</td>
+<td>Max Kotchouro</td>
+</tr>
+<tr>
+<td>1</td>
+<td>BMW HP2</td>
+<td>Joe</td>
+</tr>
+</table>
+<hr />
+<a href=".">Return to NEDoD page.</a><br />
+<a href="/">Return to Darxus' home page.</a></div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+Date: Wed, 21 Nov 2001 15:41:51 -0500 (EST)
+From: Steve Killen via RT <news-admins@freshmeat.net>
+To: Darxus <Darxus@chaosreigns.com>
+Subject: [fm #11093] (news-admins) Submission report - Pretty CoLoRs
+
+The following notes are in response to your recent freshmeat.net submission:
+
+- freshmeat tries to avoid listing projects which fall
+below a certain level of size and/or complexity (please see
+http://freshmeat.net/articles/view/198/ for more information), and
+yours is unfortunately a bit too simple for our application index. Your
+contribution has been respectfully declined.  You might try submitting
+it to http://www.freecode.com/ instead.
+
+
+Sincerely,
+Steve Killen
+<news-admins@freshmeat.net>
+
+
+Note: Make sure you include the prefix '[fm #11093]'
+in the subject when replying to this email.

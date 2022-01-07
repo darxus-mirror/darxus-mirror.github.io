@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<link rel='StyleSheet' href="/light.css" type="text/css" />
+<style type="text/css">
+img   { border-style:none; }
+dt,dd { font-weight: bold; }
+img {display: block;}
+.inline {display: inline;}
+</style>
+</head>
+<body>
+<div>
+<table width='100%' border='0'><tr><td>
+<dl>
+<dt><a href="dl/dxgallery.pl">dxgallery.pl</a> v169</dt>
+<dt><a href="dl/dxgallery.pl.167">dxgallery.pl.167</a> v167</dt>
+<dd>The gallery generator.</dd>
+<dt><a href="frames.tar.gz">frames.tar.gz</a></dt>
+<dd>The 3D edges it uses.</dd>
+</dl>
+<b><a href="demo/img_0741.jpg.html">View demo.</a></b>
+</td>
+
+<td style='width:133px' valign='top' align='center'>
+<table border='0' cellspacing='0' cellpadding='0'>
+<tr>
+<td><img src="/frame/sframe_tl.png" width='8' height='8' alt="" /></td>
+<td><img src="/frame/sframe_t.png" width='115' height='8' alt="" /></td>
+<td><img src="/frame/sframe_tr.png" width='8' height='8' alt="" /></td>
+</tr>
+<tr>
+<td><img src="/frame/sframe_l.png" width='8' height='86' alt="" /></td>
+<td><a href="demo/img_0741.jpg.html"><img src="/gallery/small/s_img_0741.jpg" width="115" height="86" alt="img_0741.jpg" /></a></td>
+<td><img src="/frame/sframe_r.png" width='8' height='86' alt="" /></td>
+</tr>
+<tr>
+<td><img src="/frame/sframe_bl.png" width='8' height='8' alt="" /></td>
+<td><img src="/frame/sframe_b.png" width='115' height='8' alt="" /></td>
+<td><img src="/frame/sframe_br.png" width='8' height='8' alt="" /></td>
+</tr>
+</table>
+</td>
+</tr></table>
+<br />
+
+I created dxgallery because it is the only one I know of that:
+<ul>
+<li>Uses a dynamic number of columns.</li>
+<li>Uses consistent pixel count scaling.</li>
+<li>Is the prettiest.</li>
+</ul>
+
+It also uses entirely static html which can be generated on a different
+machine from the one which serves it.  
+<br />And it conforms to XHTML 1.0 Transitional.
+<br /><br />
+<b><a href="changelog">changelog</a></b>
+<hr />
+Yes, I cheated in the demo and repeated the images a bunch of times
+to reduce usage of my bandwidth while still allowing you to see how
+wrapping works.
+<hr />
+<a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+<a href="/code/">Return to Darxus' Code Index.</a><br />
+<a href="/">Return to Darxus' Home Page.</a>
+
+</div>
+</body>
+</html>

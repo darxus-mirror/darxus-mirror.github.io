@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 6 November 2007), see www.w3.org" />
+<title>Baby Pictures</title>
+<link rel='StyleSheet' href="/light.css" type="text/css" />
+<style type='text/css'>
+/*<![CDATA[*/
+img { border-style:none; }
+img.landscape { 
+  width: 100px;
+  height: 69px;
+}
+img.portrait {
+  width: 70px;
+  height: 100px;
+}
+/*]]>*/
+</style>
+</head>
+<body>
+<div>
+<h1>old pictures of my baby sister</h1>
+6 years later, I finally made thumbnails. Click on them to get the full sized pictures.
+<hr />
+<a href="may2-5.jpg"><img src="tn_may2-5.jpg" alt="" class='portrait' /></a> <a href="may2-11.jpg"><img src="tn_may2-11.jpg" alt="" class='landscape' /></a> <a href="may2-12.jpg"><img src="tn_may2-12.jpg" alt="" class='portrait' /></a> <a href="may2-13.jpg"><img src="tn_may2-13.jpg" alt="" class='landscape' /></a> <a href="may2-14.jpg"><img src="tn_may2-14.jpg" alt="" class='landscape' /></a> <a href="may2-18.jpg"><img src="tn_may2-18.jpg" alt="" class='landscape' /></a> <a href="jun2-17.jpg"><img src="tn_jun2-17.jpg" alt="" class='landscape' /></a> <a href="aug1-31.jpg"><img src="tn_aug1-31.jpg" alt="" class='portrait' /></a> <a href="nosebite.jpg"><img src="tn_nosebite.jpg" alt="" class='landscape' /></a> <a href="may2-12b.jpg"><img src="tn_may2-12b.jpg" alt="" class='portrait' /></a> <a href="may4-32.jpg"><img src="tn_may4-32.jpg" alt="" class='landscape' /></a> <a href="jun1-13.jpg"><img src="tn_jun1-13.jpg" alt="" class='portrait' /></a> <a href="jul1-18.jpg"><img src="tn_jul1-18.jpg" alt="" class='landscape' /></a><br />
+<br />
+<b><a href="/imagelinking.html">Warning: do not link directly to images on this site.</a></b>
+<hr />
+<a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+<a href="../">Return to Darxus' home page.</a></div>
+</body>
+</html>

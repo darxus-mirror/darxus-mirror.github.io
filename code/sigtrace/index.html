@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+<title>GPG/PGP Signature Path Tracing</title>
+<link rel='StyleSheet' href="../../light.css" type="text/css" />
+<style type='text/css'>
+img { 
+  float: right; 
+  border-style: none;
+}
+</style>
+</head>
+<body>
+<div><a href="darxus.famous.jpg"><img src="darxus.famous.320.jpg" alt=
+"darxus.famous.320.jpg" width="320" height="194" /></a>
+<div class='center'>
+<h1>
+<a href="http://www.gnupg.org">GPG</a>/<a href="http://www.pgp.com">PGP</a>
+Signature Path Tracing
+</h1>
+</div>
+<table>
+<tr>
+<td rowspan="3"><b>Download:</b></td>
+<td><b><a href="sigtrace.pl">sigtrace.pl</a></b></td>
+</tr>
+<tr>
+<td><b><a href=
+"http://users.rcn.com/darxus/code/sigtrace/signed.db.gz">signed.db.gz</a>
+(4/21/02)</b></td>
+</tr>
+<tr>
+<td><b><a href=
+"http://users.rcn.com/darxus/code/sigtrace/keynames.db.gz">keynames.db.gz</a>
+(7/25/01?) (optional) (just the primary cluster)</b></td>
+</tr>
+</table>
+<br />
+<a href="sigtrace.pl">sigtrace.pl</a> traces a signature path through a
+keyring. It currently requires <a href=
+"http://users.rcn.com/darxus/sigtrace/signed.db.gz">signed.db.gz</a>(4/21/02)
+which is a precompiled table containing all signature relationships on the
+keyring servers, under 3mb compressed, and must be <a href=
+"http://www.gzip.org/">gunzip</a>ped. If you have <a href=
+"http://users.rcn.com/darxus/code/sigtrace/keynames.db.gz">keynames.db.gz</a>
+(7/25/01?), it will also display the names and email addresses of people in the
+path (this only includes those in the largest signature cluster).
+<p>I also created a wrapper (<a href="../mutt-sigtrace/index.html">mutt-sigtrace</a>)
+to display paths to keys that signed emails within the mailreader <a href=
+"http://www.mutt.org">mutt</a>.</p>
+<hr />
+<p>An example, tracing a signature path from the creator of PGP to myself:</p>
+<pre>
+$ /usr/bin/time ./sigtrace.pl FAEBD5FC 0E9FF879
+Data loaded, tracing....
+level:0 keys:1 seconds:0
+level:1 keys:76 seconds:0
+level:2 keys:826 seconds:0
+level:3 keys:2 seconds:0
+4 hop path: FAEBD5FC 9D496584 F6F83318 80675E65 0E9FF879
+FAEBD5FC Philip R. Zimmermann &lt;prz@pgp.com&gt;
+9D496584 Network Associates TNS Division Employee Certification Key
+F6F83318 Jason Bobier &lt;jason@prismatix.com&gt;
+80675E65 Leonard D. Rosenthol &lt;leonardr@lazerware.com&gt;
+0E9FF879 Darxus &lt;Darxus@ChaosReigns.com&gt;
+0.29user 0.02system 0:00.31elapsed 99%CPU (0avgtext+0avgdata 0maxresident)k
+0inputs+0outputs (352major+1260minor)pagefaults 0swaps
+</pre>
+0.31 seconds on an athlon 1.4ghz. 6.19 seconds on a p2 233.
+<hr />
+<p>If you feed all of the keys in the paths between several people to <a href=
+"../sig2dot/index.html">sig2dot</a>, you get a <a href="darxus.famous.jpg">pretty
+graph of all the relationships</a>.</p>
+<hr />
+<p>4/21/02<br />
+Mother keyring is 1.8gb, contains 1,639,400 keys, and 3,749,048 signatures.
+Tracing all (168,003) possible signature paths from myself takes 4.81 seconds
+on a 1.4ghz athlon.</p>
+<hr />
+<p>7/25/01<br />
+The mother keyring, served by the <a href="http://www.keyserver.net">keyserver
+network</a>, is about 1.6gb, and contains 1,467,201 keys, and 3,311,896
+signatures. After parsing the signature relationships to a <a href=
+"http://www.perlmonks.org/index.pl?node=tie">tie</a>d hash (thanks to <a href=
+"http://michael.toren.net">mct</a>), and making more use of hashes, it now
+takes 18 seconds to trace every possible path from myself on a p2 233. Hashes
+rock.</p>
+<p>keynames.db took 14.32 hours to generate.</p>
+<hr />
+11/26/00<br />
+Keyring size: 1.4gb<br />
+1,279,224 keys, and 2,837,692 signatures.
+<hr />
+<p>The code to parse the signatures from stdin is still present, but commented
+out. I will be adding flags to allow signature data to be parsed directly from
+stdin, or to build a .db from data from stdin.</p>
+<hr />
+<p><b>Famous Keys</b> (you might want to try tracing to/from)</p>
+<pre>
+pub  1024D/57548DCD 1998-07-07 Werner Koch (gnupg sig) &lt;dd9jn@gnu.org&gt;
+pub  1024D/148C6F43 1997-10-16 Steve Wozniak &lt;steve@woz.org&gt;
+pub  1024D/449FA3AB 1999-10-05 Linus Torvalds &lt;torvalds@transmeta.com&gt;
+pub  1024D/2FA3BC2D 1998-07-05 Wichert Akkerman &lt;wakkerma@debian.org&gt;
+pub  1024D/517D0F0E 2000-10-10 Linux Kernel Archives Verification Key &lt;ftpadmin@kernel.org&gt;
+pub  1024D/8421F11C 1997-10-05 Eric S. Raymond &lt;esr@thyrsus.com&gt;
+pub  1024D/FAEBD5FC 1997-04-07 Philip R. Zimmermann &lt;prz@pgp.com&gt;
+pub  1024R/20B19259 2000-09-20 CERT Coordination Center &lt;cert@cert.org&gt;
+</pre>
+If you know of other keys worth tracing from/to, please <a href=
+"mailto:Darxus@ChaosReigns.com">email me</a>.
+<hr />
+<p><b>Want to swap signatures with me ?</b></p>
+<p>If you are in, or expect to be in, the Philadelphia Pennsylvania area, and
+would like to swap signatures, <a href="mailto:Darxus@ChaosReigns.com">email
+me</a>, I'd be happy to meet you somewhere. The best time/place would probably
+be a <a href="http://www.PhillyLinux.org/keys">Linux user group</a> meeting.
+Bring photo ID matching the name on your key, and a verified copy of your
+fingerprint.</p>
+<hr />
+<p>On a 1.4ghz athlon with 512mb ddr ram, with the 7/25/01 dataset:</p>
+<p><samp>gpg --no-default-keyring --keyring ./pubring.pgp --fast-list-mode
+--list-sigs &gt; pubring.sigs</samp><br />
+took 3:26:42.</p>
+<p><samp>cat pubring.sigs | ./sigtrace.pl 09AC0A6A 0E9FF879</samp><br />
+took 1:08.</p>
+<hr />
+<p>The following commandline is here only for reference and ammusement. Do not
+be afraid.</p>
+<p><kbd>gpg --keyserver wwwkeys.pgp.net --no-default-keyring --keyring
+darxus.famous.gpg --recv-keys `echo 0E9FF879 20B19259 57548DCD 0E9FF879
+148C6F43 0E9FF879 449FA3AB 0E9FF879 2FA3BC2D 0E9FF879 0E9FF879 517D0F0E
+8421F11C 0E9FF879 C7A966DD 0E9FF879| xargs -n 2 ./sigtrace.pl | grep "hop path"
+| cut -d':' -f2 | tr " " "\012 " | sort -u | tr "\012" " "` ; gpg
+--no-default-keyring --keyring darxus.famous.gpg --list-sigs | ./sig2dot.pl
+&gt; darxus.famous.dot ; neato -Tps -Gsplines=true -Gsep=.1 darxus.famous.dot
+&gt; darxus.famous.ps ; convert darxus.famous.ps darxus.famous.jpg</kbd></p>
+<hr />
+<a href="../../cgi-bin/referercomment.cgi.html">Comment on this page.</a><br />
+<a href="../../index.html">Return to Darxus' Home Page</a><br />
+Thu Dec 19 14:52:55 EST 2002<br />
+<a href="http://validator.w3.org/check/referer">Valid HTML 3.2.</a></div>
+</body>
+</html>

@@ -1,0 +1,702 @@
+%!PS-Adobe-2.0
+%%Creator: neato version gviz1.5 (06-14-99)
+%%For: (darxus) ,,,
+%%Title: apache log
+%%Pages: (atend)
+%%BoundingBox: 36 36 1477 1635
+%%EndComments
+%%BeginProlog
+save
+/DotDict 200 dict def
+DotDict begin
+
+%%BeginResource: procset
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+	dup 1 exch div /InvScaleFactor exch def
+	dup scale
+} bind def
+
+% styles
+/solid { } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw aligned label in bounding box aligned to current point
+% alignfactor tells what fraction to place on the left.
+% -.5 is centered.
+/alignedtext {			% text labelwidth fontsz alignfactor
+	/alignfactor exch def
+	/fontsz exch def
+	/width exch def
+	/text exch def
+	gsave
+		% even if node or edge is dashed, don't paint text with dashes
+		[] 0 setdash
+		currentpoint newpath moveto
+		text stringwidth pop
+		alignfactor mul fontsz -.3 mul rmoveto
+		text show
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+% /arrowlength 10 def
+% /arrowwidth 5 def
+%%EndSetup
+%%Page: 1 1
+%%PageBoundingBox: 36 36 1477 1635
+gsave
+35 35 1442 1600 boxprim clip newpath
+36 36 translate
+0 0 1 beginpage
+0 0 translate 0 rotate
+0.000 0.000 0.000 graphcolor
+14.00 /Times-Roman set_font
+
+%	/code/cinclude2dot/
+gsave 10 dict begin
+897 809 65 18 ellipse_path
+stroke
+gsave 10 dict begin
+897 810 moveto (/code/cinclude2dot/) 110 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/
+gsave 10 dict begin
+840 433 27 18 ellipse_path
+stroke
+gsave 10 dict begin
+840 434 moveto (/code/) 34 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/cinclude2dot/ -> /code/
+gsave 10 dict begin
+bold
+0 0 0.958333333333333 edgecolor
+newpath 894 791 moveto
+885 730 855 533 844 460 curveto
+stroke
+newpath 842 461 moveto
+843 451 lineto
+847 461 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/cinclude2dot/ttysnoop-0.12c.ps
+gsave 10 dict begin
+1324 743 115 18 ellipse_path
+stroke
+gsave 10 dict begin
+1324 744 moveto (/code/cinclude2dot/ttysnoop-0.12c.ps) 209 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/cinclude2dot/ -> /code/cinclude2dot/ttysnoop-0.12c.ps
+gsave 10 dict begin
+bold
+0 0 0.958333333333333 edgecolor
+newpath 954 800 moveto
+1026 789 1149 770 1234 757 curveto
+stroke
+newpath 1232 755 moveto
+1242 756 lineto
+1232 760 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/cinclude2dot/xmms-1.0.1.dot
+gsave 10 dict begin
+1300 980 109 18 ellipse_path
+stroke
+gsave 10 dict begin
+1300 981 moveto (/code/cinclude2dot/xmms-1.0.1.dot) 198 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/cinclude2dot/ -> /code/cinclude2dot/xmms-1.0.1.dot
+gsave 10 dict begin
+bold
+0 0 0.958333333333333 edgecolor
+newpath 933 824 moveto
+1006 855 1172 926 1253 960 curveto
+stroke
+newpath 1252 957 moveto
+1260 963 lineto
+1250 961 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/sig2dot/
+gsave 10 dict begin
+642 1157 50 18 ellipse_path
+stroke
+gsave 10 dict begin
+642 1158 moveto (/code/sig2dot/) 79 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/cinclude2dot/ -> /code/sig2dot/
+gsave 10 dict begin
+bold
+0 0 0.958333333333333 edgecolor
+newpath 884 827 moveto
+841 885 707 1069 659 1133 curveto
+stroke
+newpath 663 1132 moveto
+655 1139 lineto
+658 1129 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/apache2dot/
+gsave 10 dict begin
+526 710 61 18 ellipse_path
+stroke
+gsave 10 dict begin
+526 711 moveto (/code/apache2dot/) 101 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/cinclude2dot/ -> /code/apache2dot/
+gsave 10 dict begin
+bold
+0 0 0.833333333333333 edgecolor
+newpath 850 796 moveto
+781 778 654 744 581 725 curveto
+stroke
+newpath 580 727 moveto
+571 722 lineto
+581 722 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/cinclude2dot/cinclude2dot.pl
+gsave 10 dict begin
+1210 522 109 18 ellipse_path
+stroke
+gsave 10 dict begin
+1210 523 moveto (/code/cinclude2dot/cinclude2dot.pl) 196 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/cinclude2dot/ -> /code/cinclude2dot/cinclude2dot.pl
+gsave 10 dict begin
+bold
+0 0 0.916666666666667 edgecolor
+newpath 916 791 moveto
+970 742 1124 601 1185 545 curveto
+stroke
+newpath 1181 545 moveto
+1190 540 lineto
+1185 549 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/ -> /code/apache2dot/
+gsave 10 dict begin
+bold
+0 0 0.833333333333333 edgecolor
+newpath 824 448 moveto
+772 493 613 633 550 688 curveto
+stroke
+newpath 554 688 moveto
+545 693 lineto
+550 684 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/dir2dot.pl
+gsave 10 dict begin
+993 19 55 18 ellipse_path
+stroke
+gsave 10 dict begin
+993 20 moveto (/code/dir2dot.pl) 89 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/ -> /code/dir2dot.pl
+gsave 10 dict begin
+bold
+0 0 0.916666666666667 edgecolor
+newpath 846 415 moveto
+871 350 956 120 984 44 curveto
+stroke
+newpath 981 46 moveto
+986 37 lineto
+986 47 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/sig2dot/ -> /code/apache2dot/
+gsave 10 dict begin
+bold
+0 0 0.833333333333333 edgecolor
+newpath 637 1139 moveto
+620 1069 554 817 533 735 curveto
+stroke
+newpath 531 738 moveto
+531 728 lineto
+536 737 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/sig2dot/sig2dot.pl
+gsave 10 dict begin
+990 1445 78 18 ellipse_path
+stroke
+gsave 10 dict begin
+990 1446 moveto (/code/sig2dot/sig2dot.pl) 135 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/sig2dot/ -> /code/sig2dot/sig2dot.pl
+gsave 10 dict begin
+bold
+0 0 0.833333333333333 edgecolor
+newpath 662 1174 moveto
+721 1223 895 1367 963 1422 curveto
+stroke
+newpath 963 1419 moveto
+969 1427 lineto
+960 1423 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/sig2dot/debian.sigs
+gsave 10 dict begin
+806 1552 81 18 ellipse_path
+stroke
+gsave 10 dict begin
+806 1553 moveto (/code/sig2dot/debian.sigs) 141 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/sig2dot/ -> /code/sig2dot/debian.sigs
+gsave 10 dict begin
+bold
+0 0 0.958333333333333 edgecolor
+newpath 649 1175 moveto
+676 1239 765 1455 796 1528 curveto
+stroke
+newpath 797 1524 moveto
+799 1534 lineto
+792 1526 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/
+gsave 10 dict begin
+1011 1244 27 18 ellipse_path
+stroke
+gsave 10 dict begin
+1011 1245 moveto (/) 3 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/sig2dot/ -> /
+gsave 10 dict begin
+bold
+0 0 0.708333333333333 edgecolor
+newpath 684 1167 moveto
+758 1184 908 1220 976 1236 curveto
+stroke
+newpath 976 1233 moveto
+985 1238 lineto
+975 1238 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/sigtrace.pl
+gsave 10 dict begin
+239 1373 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+239 1374 moveto (/code/sigtrace.pl) 91 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/sig2dot/ -> /code/sigtrace.pl
+gsave 10 dict begin
+bold
+0 0 0.916666666666667 edgecolor
+newpath 614 1172 moveto
+543 1210 355 1312 275 1354 curveto
+stroke
+newpath 278 1355 moveto
+268 1358 lineto
+275 1351 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/sig2dot/stats.html
+gsave 10 dict begin
+599 1579 77 18 ellipse_path
+stroke
+gsave 10 dict begin
+599 1580 moveto (/code/sig2dot/stats.html) 133 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/sig2dot/ -> /code/sig2dot/stats.html
+gsave 10 dict begin
+bold
+0 0 0.958333333333333 edgecolor
+newpath 640 1175 moveto
+633 1242 609 1477 602 1554 curveto
+stroke
+newpath 605 1551 moveto
+601 1561 lineto
+600 1551 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/sig2dot/debian-keyring-core.neato.png
+gsave 10 dict begin
+400 1513 135 18 ellipse_path
+stroke
+gsave 10 dict begin
+400 1514 moveto (/code/sig2dot/debian-keyring-core.neato.png) 250 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/sig2dot/ -> /code/sig2dot/debian-keyring-core.neato.png
+gsave 10 dict begin
+bold
+0 0 0.75 edgecolor
+newpath 630 1175 moveto
+590 1233 462 1421 416 1489 curveto
+stroke
+newpath 420 1488 moveto
+412 1495 lineto
+415 1485 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/apache2dot/ -> /code/cinclude2dot/
+gsave 10 dict begin
+bold
+0 0 0.833333333333333 edgecolor
+newpath 571 722 moveto
+640 740 770 775 843 795 curveto
+stroke
+newpath 841 792 moveto
+850 797 lineto
+840 797 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/apache2dot/ -> /code/
+gsave 10 dict begin
+bold
+0 0 0.833333333333333 edgecolor
+newpath 546 693 moveto
+600 644 755 508 815 455 curveto
+stroke
+newpath 814 453 moveto
+823 448 lineto
+817 456 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/apache2dot/ -> /code/sig2dot/
+gsave 10 dict begin
+bold
+0 0 0.833333333333333 edgecolor
+newpath 531 728 moveto
+548 798 614 1050 635 1132 curveto
+stroke
+newpath 637 1129 moveto
+637 1139 lineto
+632 1130 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/apache2dot/apache2dot.pl
+gsave 10 dict begin
+192 453 100 18 ellipse_path
+stroke
+gsave 10 dict begin
+192 454 moveto (/code/apache2dot/apache2dot.pl) 179 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/apache2dot/ -> /code/apache2dot/apache2dot.pl
+gsave 10 dict begin
+bold
+0 0 0.291666666666667 edgecolor
+newpath 504 693 moveto
+447 649 291 529 224 478 curveto
+stroke
+newpath 221 479 moveto
+215 471 lineto
+224 475 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/stats/
+gsave 10 dict begin
+577 313 27 18 ellipse_path
+stroke
+gsave 10 dict begin
+577 314 moveto (/stats/) 32 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/apache2dot/ -> /stats/
+gsave 10 dict begin
+bold
+0 0 0 edgecolor
+newpath 528 692 moveto
+537 629 563 417 574 341 curveto
+stroke
+newpath 572 341 moveto
+575 331 lineto
+576 341 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/apache2dot/2dot.ps
+gsave 10 dict begin
+82 637 81 18 ellipse_path
+stroke
+gsave 10 dict begin
+82 638 moveto (/code/apache2dot/2dot.ps) 142 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/apache2dot/ -> /code/apache2dot/2dot.ps
+gsave 10 dict begin
+bold
+0 0 0.833333333333333 edgecolor
+newpath 472 701 moveto
+392 688 244 664 155 649 curveto
+stroke
+newpath 157 652 moveto
+147 648 lineto
+157 647 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/apache2dot/2dot.dot
+gsave 10 dict begin
+358 313 84 18 ellipse_path
+stroke
+gsave 10 dict begin
+358 314 moveto (/code/apache2dot/2dot.dot) 147 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/apache2dot/ -> /code/apache2dot/2dot.dot
+gsave 10 dict begin
+bold
+0 0 0.625 edgecolor
+newpath 518 692 moveto
+491 629 402 417 370 341 curveto
+stroke
+newpath 367 341 moveto
+366 331 lineto
+372 339 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/stats/ -> /code/apache2dot/
+gsave 10 dict begin
+bold
+0 0 0 edgecolor
+newpath 575 331 moveto
+566 395 539 613 529 686 curveto
+stroke
+newpath 532 683 moveto
+528 692 lineto
+527 682 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/stats/date.html
+gsave 10 dict begin
+140 831 53 18 ellipse_path
+stroke
+gsave 10 dict begin
+140 832 moveto (/stats/date.html) 85 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/stats/date.html -> /code/apache2dot/
+gsave 10 dict begin
+bold
+0 0 0.958333333333333 edgecolor
+newpath 179 819 moveto
+250 797 400 750 477 725 curveto
+stroke
+newpath 474 723 moveto
+484 723 lineto
+475 728 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/ -> /code/sig2dot/
+gsave 10 dict begin
+bold
+0 0 0.708333333333333 edgecolor
+newpath 985 1238 moveto
+925 1223 771 1187 691 1169 curveto
+stroke
+newpath 693 1172 moveto
+684 1167 lineto
+694 1167 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+
+%	/code/sigtrace/
+gsave 10 dict begin
+259 1178 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+259 1179 moveto (/code/sigtrace/) 81 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	/code/sigtrace/ -> /code/sig2dot/
+gsave 10 dict begin
+bold
+0 0 0.958333333333333 edgecolor
+newpath 309 1175 moveto
+381 1171 511 1164 586 1160 curveto
+stroke
+newpath 583 1158 moveto
+593 1160 lineto
+583 1163 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+end grestore
+endpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+end
+restore
+%%EOF

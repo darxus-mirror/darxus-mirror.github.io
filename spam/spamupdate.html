@@ -1,0 +1,5 @@
+find ~/Maildir/cur/ -type f | xargs spamprobe good
+find ~/Maildir/.bad.spam-sa/cur/ ~/Maildir/.bad.spam-missed/cur/ -type f | xargs spamprobe spam
+
+find ~/Maildir/cur/ -type f | xargs sa-learn --ham --showdots
+find  ~/Maildir/.bad.spam-sp/cur/ ~/Maildir/.bad.spam-missed/cur/ -type f | xargs sa-learn --spam --showdots

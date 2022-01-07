@@ -1,0 +1,131 @@
+<? header("Content-Type: application/xhtml+xml"); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<?
+
+$date = $_GET['date'];
+$num = $_GET['num'];
+
+$num = sprintf ("%02d", $num);
+$file="$date-$num.db";
+
+if (preg_match("/^\d\d\d\d-\d\d-\d\d$/",$date) and preg_match("/^\d\d$/",$num))
+{
+//  print "Date '$date' and num '$num' good.<br />\n";
+} else {
+//  print "Date '$date' or num '$num' bad.<br />\n";
+  print "<head><title>Error</title></head><body><div>I do not recognize the format of the file you are attempting to access.  Please <a href="http://www.chaosreigns.com/adventures/\&quot;mailto:Darxus@ChaosReigns.com\&quot;">email me</a>.<br /><br /><a href="http://www.chaosreigns.com/adventures/\&quot;/adventures/\&quot;">View Adventures Index</a><br /><a href="http://www.chaosreigns.com/adventures/\&quot;/\&quot;">Return to Darxus' Home Page</a></div></body></html>\n";
+  exit;
+}
+
+$db = mysql_connect("localhost","root","mysqlf00") or die("Could not connect to db.");
+if (mysql_select_db("adventures",$db))
+{
+//  print("Database opened successfully.<br />\n");
+} else {
+  printf("Error opening database: %s.<br />\n", mysql_error());
+}
+
+$result = mysql_query("SELECT id, title FROM entries WHERE date='$date' AND num='$num'",$db);
+if($myrow = mysql_fetch_array($result))
+{
+  $title=$myrow[title];
+  $id=$myrow[id];
+} else {
+  //printf("No records found: %s.<br />\n", mysql_error());
+  print "<head><title>Error</title></head><body><div>Entry does not exist.  Please <a href="http://www.chaosreigns.com/adventures/\&quot;mailto:Darxus@ChaosReigns.com\&quot;">email me</a>.<br /><br /><a href="http://www.chaosreigns.com/adventures/\&quot;/adventures/\&quot;">View Adventures Index</a><br /><a href="http://www.chaosreigns.com/adventures/\&quot;/\&quot;">Return to Darxus' Home Page</a></div></body></html>\n";
+  exit;
+}
+
+$links = "<table border='0'>\n";
+
+$nextid = $id+1;
+$result = mysql_query("SELECT date, num, title FROM entries WHERE id=$nextid",$db);
+if($myrow = mysql_fetch_array($result))
+{
+
+  $myrow[num] = sprintf ("%02d", $myrow[num]);
+  $nexturl = "entry.php?date=$myrow[date]&amp;num=$myrow[num]";
+  $links .= "<tr><td>next:</td><td><a href="http://www.chaosreigns.com/adventures/\&quot;$nexturl\&quot;">$myrow[title]</a></td><td>$myrow[date]</td></tr>\n";
+} else {
+  //printf("No records found: %s.<br />\n", mysql_error());
+  $next = "";
+}
+
+$previd = $id-1;
+$result = mysql_query("SELECT date, num, title FROM entries WHERE id=$previd",$db);
+if($myrow = mysql_fetch_array($result))
+{
+  $myrow[num] = sprintf ("%02d", $myrow[num]);
+  $prevurl = "entry.php?date=$myrow[date]&amp;num=$myrow[num]";
+  $links .= "<tr><td>previous:</td><td><a href="http://www.chaosreigns.com/adventures/\&quot;$prevurl\&quot;">$myrow[title]</a></td><td>$myrow[date]</td></tr>\n";
+} else {
+  //printf("No records found: %s.<br />\n", mysql_error());
+  $previous = "";
+}
+
+$links .= "</table>\n";
+
+function relate ($entry)
+{
+  global $db;
+  print "<hr />Related Entries\n<table border='0'>\n";
+  $num_args = func_num_args();
+  for ($ndx = 0; $ndx < $num_args; ++$ndx)
+  {
+    $entry = func_get_arg ($ndx);
+    list($date, $num) = split(' ', $entry);
+    //print "Date:$date:Num:$num:<br />\n";
+
+    $result = mysql_query("SELECT title FROM entries WHERE date='$date' AND num='$num'",$db);
+    if($myrow = mysql_fetch_array($result))
+    {
+      print "<tr><td><a href="http://www.chaosreigns.com/adventures/\&quot;entry.php?date=$date&amp;num=$num\&quot;">$myrow[title]</a></td><td>$date</td></tr>\n";
+    } else {
+      printf("No records found: %s.<br />\n", mysql_error());
+    }
+  }
+  print "</table>\n";
+}
+
+?>
+<head>
+<title><?print($title)?></title>
+
+<link rel="Up" href="index.html" />
+
+<?
+if ($nexturl)
+{
+  print("<link rel=\"Next\"  href="http://www.chaosreigns.com/adventures/\&quot;$nexturl\&quot;" />");
+}
+if ($prevurl)
+{
+  print("<link rel=\"Prev\"  href="http://www.chaosreigns.com/adventures/\&quot;$prevurl\&quot;" />");
+}
+?>
+
+<link rel='StyleSheet' href="../dark.css" type="text/css" />
+</head>
+<body>
+<div>
+<h1><?print($title)?></h1>
+<?
+
+//print("($previous / $next)<br />");
+
+include($file);
+print "<hr />\n$links";
+
+?>
+
+<hr />
+<a href="../cgi-bin/referercomment.cgi.html">Comment on this page.</a><br />
+<a href="index.html">Return to Adventures index</a>
+<br /><a href="../index.html">Return to Darxus' home page.</a>
+</div>
+<script type="text/javascript" src="../logstats.js"></script>
+</body>
+</html>
+

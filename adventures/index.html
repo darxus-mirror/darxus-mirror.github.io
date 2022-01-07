@@ -1,0 +1,63 @@
+<? header("Content-Type: application/xhtml+xml"); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Index of Darxus' Adventures</title>
+<link rel='StyleSheet' href="../dark.css" type="text/css" />
+<style type='text/css'>
+td.date { white-space:nowrap }
+</style>
+</head>
+<body>
+<div>
+
+<h1>Darxus' Adventures</h1>
+
+<a href="../journal/index.html">Newer entries found here.</a><br /><br />
+
+<?
+
+$db = mysql_connect("localhost","root","mysqlf00") or die("Could not connect to db.");
+if (mysql_select_db("adventures",$db))
+{
+//  print("Database opened successfully.<br />\n");
+} else {
+  printf("Error opening database: %s.<br />\n", mysql_error());
+}
+
+//print "$GLOBALS[REQUEST_URI]<br />\n";
+if($order == 'asc')
+{
+  $sort = 'ASC';
+  print "Order: <b>Ascending</b> / <a href="http://www.chaosreigns.com/adventures/\&quot;/adventures/?order=desc\&quot;">Descending</a><br />\n";
+} else {
+  $sort = 'DESC';
+  print "Order: <a href="http://www.chaosreigns.com/adventures/\&quot;/adventures/?order=asc\&quot;">Ascending</a> / <b>Descending</b><br />\n";
+}
+
+$result = mysql_query("SELECT * FROM entries ORDER BY date $sort",$db);
+if($myrow = mysql_fetch_array($result))
+{
+  print "<table border='0'>\n";
+  do
+  {
+    $myrow[num] = sprintf ("%02d", $myrow[num]);
+    echo("<tr><td class='date'>$myrow[date]</td><td class='date'><a href="http://www.chaosreigns.com/adventures/\&quot;entry.php?date=$myrow[date]&amp;num=$myrow[num]\&quot;">$myrow[title]</a></td></tr>\n");
+  } while($myrow = mysql_fetch_array($result));
+  echo("</table>\n");
+} else {
+  printf("No records found: %s.<br />\n", mysql_error());
+}
+
+
+
+
+
+?>
+
+<hr />
+<a href="../cgi-bin/referercomment.cgi.html">Comment on this page.</a><br />
+<a href="../index.html">Return to Darxus' home page.</a>
+<br /><a href="http://validator.w3.org/check/referer">Valid HTML 3.2.</a>
+</div>
+</body>
+</html>

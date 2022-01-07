@@ -1,0 +1,59 @@
+<? header("Content-Type: application/xhtml+xml"); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>This Page Moved</title>
+
+<? 
+
+list($date) = split('\.', $page);
+list($date) = split('b', $date);
+list($date) = split('c', $date);
+
+
+//$date = str_replace("-"," ",$date);
+//print "You attempted to access $page. Date: $date.<br />\n";
+
+if (preg_match("/^\d\d\d\d-\d\d-\d\d$/",$date))
+{
+  //print "Date is good.<br />\n";
+} else {
+  print "</head><body><div>I do not know where to find what you are looking for.  Please <a href="http://www.chaosreigns.com/adventures/\&quot;mailto:Darxus@ChaosReigns.com\&quot;">email me</a>.<br /><br /><a href="http://www.chaosreigns.com/adventures/\&quot;/adventures/\&quot;">View Adventures Index</a><br /><a href="http://www.chaosreigns.com/adventures/\&quot;/\&quot;">Return to Darxus' Home Page</a></div></body></html>\n";
+  exit;
+}
+
+$db = mysql_connect("localhost","root","mysqlf00") or die("Could not connect to db.");
+if (mysql_select_db("adventures",$db))
+{
+//  print("Database opened successfully.<br />\n");
+} else {
+  printf("Error opening database: %s.<br />\n", mysql_error());
+}
+
+$result = mysql_query("SELECT date, num, title FROM entries WHERE date='$date'",$db);
+$myrow = mysql_fetch_array($result);
+
+$records = mysql_affected_rows();
+//print "Records: $records.<br />\n";
+
+if ($records == 0)
+{
+  print "</head><body><div>\nI can't figure out what you're looking for.  Please <a href="http://www.chaosreigns.com/adventures/\&quot;mailto:Darxus@ChaosReigns.com\&quot;">email me</a>.<br /><br /><a href="http://www.chaosreigns.com/adventures/\&quot;/adventures/\&quot;">View Adventures Index</a><br /><a href="http://www.chaosreigns.com/adventures/\&quot;/\&quot;">Return to Darxus' Home Page</a>\n";
+} elseif ($records == 1) {
+  print "<meta http-equiv='Refresh' content=\"3; url=entry.php?date=$myrow[date]&amp;num=$myrow[num]\" />\n</head><body><div>\n";
+  print "This page has moved to <a href="http://www.chaosreigns.com/adventures/\&quot;entry.php?date=$myrow[date]&amp;num=$myrow[num]\&quot;">$myrow[title]</a><br /><br /><a href="http://www.chaosreigns.com/adventures/\&quot;/adventures/\&quot;">View Adventures Index</a><br /><a href="http://www.chaosreigns.com/adventures/\&quot;/\&quot;">Return to Darxus' Home Page</a>\n";
+} else {
+  print "</head><body><div>This page has been split into the following:<br />\n";
+  print "<table border='0'>\n";
+  do
+  {
+    echo("<tr><td>$myrow[date]</td><td><a href="http://www.chaosreigns.com/adventures/\&quot;entry.php?date=$myrow[date]&amp;num=$myrow[num]\&quot;">$myrow[title]</a></td></tr>\n");
+  } while($myrow = mysql_fetch_array($result));
+  echo("</table>\n");
+  print "<br /><br /><a href="http://www.chaosreigns.com/adventures/\&quot;/adventures/\&quot;">View Adventures Index</a><br /><a href="http://www.chaosreigns.com/adventures/\&quot;/\&quot;">Return to Darxus' Home Page</a>";
+}
+
+?>
+
+</div>
+</body>
+</html>

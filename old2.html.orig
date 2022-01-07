@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+
+  <title>Darxus' Old Content</title>
+  <link rel='StyleSheet' href="/dark.css" type="text/css" />
+<style type="text/css">
+/*<![CDATA[*/
+<!--
+a {text-decoration: none}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+-->
+/*]]>*/
+</style>
+</head>
+
+<body>
+  <div>
+    <div class='center'>
+      Content older than 2004
+    </div>
+
+    <table border='0'>
+      <tr>
+        <td valign='top'>
+          <ul>
+            <li><a href="desktops/">Desktops / Backgrounds</a></li>
+
+            <li><a href="lacing.html">Boot Lacing</a></li>
+
+            <li><a href="diana/">Baby pictures</a></li>
+
+            <li><a href="/achievements/">Achievements</a></li>
+
+            <li><a href="terminus/">Terminus Ships</a></li>
+
+            <li><a href="stats/">Statistics</a></li>
+
+            <li><a href="reciprocal.old2.html">Reciprocal Links</a></li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+
+    <div class='center'>
+      <a href="/">Return to Darxus' home page.</a>
+    </div>
+  </div>
+</body>
+</html>

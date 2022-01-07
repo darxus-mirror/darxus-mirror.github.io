@@ -1,0 +1,89 @@
+// **************************************************
+// ** BEGIN QSCOPE.SCR by darxus@netaxs.com 7/7/96 **
+// **************************************************
+//
+//            *******************************
+//            * ] zoom in all the way (9x)  *
+//            * [ zoom out all the way (1x) *
+//            * p zoom in 1x                *
+//            * o zoom out 1x               *
+//            *******************************
+//
+// This is based on a normal mouse sensitivity of 5, if this were a real
+// language, I would have based it on your current setting, but this is
+// a script.  Mouse sensitivity is adjusted relative to magnification for
+// some seriously fine shooting.
+// *If you'd like me to do a version of this based on your mouse sensitivity
+//  setting, tell me what it is, if there are enough people, I'll do it.
+//
+// FYI: apparently id has not actually centered shots properly on the screen,
+// they usually hit below and to the right of center... ?!?!!! (foo!!)
+// * I have added a kludge to this script that fixes this problem --
+//   thanks to ntropy@voicenet.com for the idea. 
+//
+// I don't think people should be able to even use this type of ability 
+// without picking up something like a scope in the game, but since we don't
+// yet have the ability to do that, well, I'm not gonna just not use this.
+// I'd like id to give us the ability to set a MaxFOV and a MinFOV on the 
+// server end, and then be able to modify that on an individual player basis
+// say, if they pick up a scope... oh, and I'd like to be able to zoom in
+// much more than just to FOV 10, maybe something like FOV 0.01 -- some *real*
+// snyper action :)
+// And I'd also like them to include FOV in demo recordings.
+// ________________________________________________________________________
+// ***PGP fingerprint = D5 EB F8 E7 64 55 CF 91  C2 4F E0 4D 18 B6 7C 27***
+//           darxus@netaxs.com / http://www.netaxs.com/~darxus 
+//                        Sanity is for the weak.
+//                                 Rage.
+
+// 6/25/96 -- created
+// 7/2/96  -- added centering, thanks to ntropy@voicenet.com
+// 7/5/96  -- took care of "Error: Z_Malloc: failed on allocation of (X) bytes"
+//            replaced a lotta aliases with binds -- again thanks to ntropy
+//            for the idea.  It's more complicated, but won't crash Quake.
+// 7/7/96  -- made docs match script (oops) -- ";" bindings were replaced with
+//            k, etc, because of problems with nested bindings
+
+echo Loading QSCOPE.SCR (7/7/96) by darxus@netaxs.com
+
+// crosshair 1
+
+alias center "scr_ofsx -25 ; scr_ofsy 25 ; scr_ofsz -25"
+alias uncenter "scr_ofsx 0 ; scr_ofsy 0  ; scr_ofsz 0"
+// Why does scr_ofsz 0 hit center 50%, and -25 hits 100%  ??
+
+bind p zoom45
+bind o bf
+alias zoom90 "bind p zoom45;uncenter;bind ] in45  ;bind o bf    ;bind [ bf    ;fov 90.00;sensitivity 5.00"
+alias zoom45 "bind p zoom30;center;  bind ] in30  ;bind o zoom90;bind [ zoom90;fov 45.00;sensitivity 2.50"
+alias zoom30 "bind p zoom22;         bind ] in22  ;bind o zoom45;bind [ out45 ;fov 30.00;sensitivity 1.67"
+alias zoom22 "bind p zoom18;         bind ] in18  ;bind o zoom30;bind [ out30 ;fov 22.50;sensitivity 1.25"
+alias zoom18 "bind p zoom15;         bind ] in15  ;bind o zoom22;bind [ out22 ;fov 18.00;sensitivity 1.00"
+alias zoom15 "bind p zoom12;         bind ] in12  ;bind o zoom18;bind [ out18 ;fov 15.00;sensitivity 0.83"
+alias zoom12 "bind p zoom11;         bind ] in11  ;bind o zoom15;bind [ out15 ;fov 12.86;sensitivity 0.71"
+alias zoom11 "bind p zoom10;         bind ] zoom10;bind o zoom12;bind [ out12 ;fov 11.25;sensitivity 0.63"
+alias zoom10 "bind p bf    ;         bind ] bf    ;bind o zoom11;bind [ out11 ;fov 10.00;sensitivity 0.56"
+
+bind ] in45
+alias in45 "fov 45.00;center;sensitivity 2.50;wait;in30"
+alias in30 "fov 30.00;       sensitivity 1.67;wait;in22"
+alias in22 "fov 22.50;       sensitivity 1.25;wait;in18"
+alias in18 "fov 18.00;       sensitivity 1.00;wait;in15"
+alias in15 "fov 15.00;       sensitivity 0.83;wait;in12"
+alias in12 "fov 12.86;       sensitivity 0.71;wait;in11"
+alias in11 "fov 11.25;       sensitivity 0.63;wait;zoom10"
+
+bind [ out11
+alias out45 "fov 45.00;sensitivity 2.50;wait;zoom90"
+alias out30 "fov 30.00;sensitivity 1.67;wait;out45"
+alias out22 "fov 22.50;sensitivity 1.25;wait;out30"
+alias out18 "fov 18.00;sensitivity 1.00;wait;out22"
+alias out15 "fov 15.00;sensitivity 0.83;wait;out18"
+alias out12 "fov 12.86;sensitivity 0.71;wait;out15"
+alias out11 "fov 11.25;sensitivity 0.63;wait;out12"
+
+echo QSCOPE.SCR loaded
+
+// ********************
+// ** END QSCOPE.SCR **
+// ********************

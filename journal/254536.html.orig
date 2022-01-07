@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=7"/>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel='stylesheet' href='http://l-stat.livejournal.com/ad_base.css' type='text/css' />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://darxus.livejournal.com/data/foaf" />
+<meta name="foaf:maker" content="foaf:mbox_sha1sum '107c1745aac3c319c0e1588eb400be77055f48e8'" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+// don't crawl this.  read http://www.livejournal.com/developer/exporting.bml
+var LJ_cmtinfo = {"1159752":{"rc":[1160264],"u":"mclazarus","parent":null,"full":1},"canAdmin":0,"journal":"darxus","form_auth":"c0:1279209600:3072:86400:9J6MyI9sMp-0-Kw6r95iAdOuZqpN:98d604e637548a23075de7a746d603bb","1161032":{"rc":[1161544,1161800],"u":"darxus","parent":1160776,"full":1},"remote":null,"1162312":{"rc":[],"u":"temalyen","parent":null,"full":1},"1160264":{"rc":[1160776],"u":"darxus","parent":1159752,"full":1},"1160776":{"rc":[1161032],"u":"mclazarus","parent":1160264,"full":1},"1161544":{"rc":[],"u":"mclazarus","parent":1161032,"full":1},"1161800":{"rc":[],"u":"mclazarus","parent":1161032,"full":1}}
+</script>
+        <script type="text/javascript">
+            Site = window.Site || {};
+
+            (function(){
+                var p = {"siteroot":"http://www.livejournal.com","currentJournalBase":"http://darxus.livejournal.com","inbox_update_poll":0,"currentJournal":"darxus","remote_can_track_threads":null,"statprefix":"http://l-stat.livejournal.com","ctx_popup":1,"media_embed_enabled":1,"server_time":1279212672,"has_remote":0,"remote_is_suspended":0,"imgprefix":"http://l-stat.livejournal.com/img","esn_async":1}, i;
+                for (i in p) Site[i] = p[i];
+            })();
+       </script>
+    <script type="text/javascript" src="http://l-stat.livejournal.com/js/??jquery.js,jquery_fn.js,basic.js,livejournal.js,esn.js,ippu.js,lj_ippu.js,ljwidget.js,ljwidget_ippu.js,journal.js,hourglass.js,md5.js,login.js,contextualhover.js,livejournal-local.js,thread_expander.js,journal.js,quickreply.js?v=1277844792"></script>
+<script type="text/javascript" src="http://l-stat.livejournal.com/js/??commentmanage.js?v=1268768846"></script>
+<link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??lj_base.css,esn.css,contextualhover.css?v=1277844792" />
+<!--[if IE]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??ie.css?v=1268859548" /><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??interstitial_banner_us.css?v=1263499801" /><![endif]-->
+<script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=1483b796-4406-4000-98db-019c32f6059e&amp;type=website&amp;embeds=true&amp;post_services=livejournal%2Cfacebook%2Ctwitter%2Cmyspace%2Cdigg%2Cdelicious%2Clinkedin%2Cfriendfeed%2Cwordpress%2Cblogger%2Cgoogle_bmarks%2Ctechnorati&amp;onmouseover=false"></script><link rel="stylesheet" href="http://darxus.livejournal.com/res/18152266/stylesheet?1277845271" type="text/css" />
+<title>Darxus - </title>
+
+</head>
+
+<body class="page_entry">
+
+<div id="shadowhack1">
+<div id="shadowhack2">
+
+<div id="pagecontainer">
+
+<div id="title">
+<h1>Darxus</h1><div id="journal_subtitle"></div>
+</div>
+
+<div id="paraphernalia">
+<div class="pbox" id="journalinfo"><h2>Darxus</h2><div class="pboxcontent">
+<div id="journalinfouserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt="2009-09-29"height="100" width="100"  /></div>
+<div class="journallinkbar">     <a href="http://www.livejournal.com/todo/?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s to-do list" title="darxus&#39;s to-do list" src="http://l-stat.livejournal.com/img/btn_todo.gif"  /></a>  <a href="http://www.livejournal.com/tools/memories.bml?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s memories" title="darxus&#39;s memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="http://www.livejournal.com/tools/tellafriend.bml?user=darxus"><img border='0' width="24" height="24" alt="Tell a friend about darxus" title="Tell a friend about darxus" src="http://l-stat.livejournal.com/img/btn_tellfriend.gif"  /></a>  <a href="http://www.livejournal.com/tools/search.bml?user=darxus"><img border='0' width="24" height="24" alt="Search darxus" title="Search darxus" src="http://l-stat.livejournal.com/img/btn_search.gif"  /></a>  <a href="http://www.livejournal.com/friends/nudge.bml?user=darxus"><img border='0' width="24" height="24" alt="Nudge darxus" title="Nudge darxus" src="http://l-stat.livejournal.com/img/btn_nudge.gif"  /></a> </div></div></div>
+<div class="pbox" id="viewsel"><h2>View</h2><div class="pboxcontent">
+<ul>
+<li><a href="http://darxus.livejournal.com/">Recent Entries</a></li>
+<li><a href="http://darxus.livejournal.com/calendar">Archive</a></li>
+<li><a href="http://darxus.livejournal.com/friends">Friends</a></li>
+<li><a href="http://darxus.livejournal.com/profile">User Info</a></li>
+</ul>
+</div></div>
+
+</div>
+
+<div id="main">
+<div class="entry"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser_darxus' style='white-space:nowrap;'><a href='http://www.livejournal.com/userinfo.bml?user=darxus'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align:bottom;border:0;' /></a><a href='http://www.livejournal.com/users/darxus/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate">9/23/09</span>
+    <span class="entrytimestamptime">12:58 pm</span></div><div class="entrylinkbarpre"><a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=254536&amp;dir=prev"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>      <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=254536"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="#"><img border='0' width="24" height="24" alt="Share this!" title="Share this!" src="http://l-stat.livejournal.com/img/btn_sharethis.gif"  /></a> <script type="text/javascript">
+            var stLink = jQuery('a:last')[0];
+            stLink.href = 'javascript:void(0)';
+            SHARETHIS_post = SHARETHIS.addEntry({url:'http://darxus.livejournal.com/254536.html', title: ''}, {button: false});
+            SHARETHIS_post.attachButton(stLink);
+            SHARETHIS_ary.push(SHARETHIS_post);
+            </script>       <a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=254536&amp;dir=next"><img border='0' width="24" height="24" alt="Next Entry" title="Next Entry" src="http://l-stat.livejournal.com/img/btn_next.gif"  /></a></div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt="2009-09-29"height="100" width="100"  /></div></div>
+
+<div class="entrycontent">My cholesterol is back to "...high, very, very high."  And I don't know why.</div>
+
+<div class="entryfooter">
+
+<ul class="entrymeta">
+<li><span class="entrymetacaption">Tags:</span> <div class='ljtags'><a rel='tag' href='http://darxus.livejournal.com/tag/cholesterol'>cholesterol</a></div></li>
+</ul>
+
+<div class="entrylinkbarpost"><a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=254536&amp;dir=prev"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>      <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=254536"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="#"><img border='0' width="24" height="24" alt="Share this!" title="Share this!" src="http://l-stat.livejournal.com/img/btn_sharethis.gif"  /></a> <script type="text/javascript">
+            var stLink = jQuery('a:last')[0];
+            stLink.href = 'javascript:void(0)';
+            SHARETHIS_post = SHARETHIS.addEntry({url:'http://darxus.livejournal.com/254536.html', title: ''}, {button: false});
+            SHARETHIS_post.attachButton(stLink);
+            SHARETHIS_ary.push(SHARETHIS_post);
+            </script>       <a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=254536&amp;dir=next"><img border='0' width="24" height="24" alt="Next Entry" title="Next Entry" src="http://l-stat.livejournal.com/img/btn_next.gif"  /></a></div>
+<ul class="entrycmdlinks"><li><a href="http://darxus.livejournal.com/254536.html">7 comments</a></li><li><a onclick="return QuickReply.reply('topcomment',0,'')" href="http://darxus.livejournal.com/254536.html?mode=reply">Leave a comment</a></li></ul>
+<div  id="ljqrttopcomment" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1159752"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_mclazarus' lj:user='mclazarus' style='white-space: nowrap;'><a href='http://mclazarus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://mclazarus.livejournal.com/'><b>mclazarus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="11 hours after journal entry, 12:06 am (mclazarus&#39;s time)">9/24/09 04:06 am (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/35321517/2674105" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">I think that's not enough information to be sure there's a problem, a video here from a useful site on nutrition.<br /> <br /><a href="http://freetheanimal.com/2009/08/exposing-the-cholesterol-myth.html">http://freetheanimal.com/2009/08/exposi<wbr />ng-the-cholesterol-myth.html</a></div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1159752',4530,'')" href="http://darxus.livejournal.com/254536.html?replyto=1159752">Reply</a></li><li><a href="http://darxus.livejournal.com/254536.html?thread=1159752#t1159752">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1159752" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1160264"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="11 hours after journal entry, 12:21 am (darxus&#39;s time)">9/24/09 04:21 am (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Neat, thanks.  <br /><br />In my email reply to my doctor I asked him about the connection between high fructose corn syrup and cholesterol.  He didn't respond to that part.  But I've, well, been continuing to want to get off refined sugars again.  But eating real food is hard <tt>:P</tt></div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1160264',4532,'')" href="http://darxus.livejournal.com/254536.html?replyto=1160264">Reply</a></li><li><a href="http://darxus.livejournal.com/254536.html?thread=1159752#t1159752">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/254536.html?thread=1160264#t1160264">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1160264" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1160776"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_mclazarus' lj:user='mclazarus' style='white-space: nowrap;'><a href='http://mclazarus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://mclazarus.livejournal.com/'><b>mclazarus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="21 hours after journal entry, 10:11 am (mclazarus&#39;s time)">9/24/09 02:11 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/35321517/2674105" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Yep, I struggle frequently with it because I like sugar.  I've found I have my most success when I cut out all vegetable oil, refined carbs and any kind of sweeteners.  Also bacon is my secret weapon, because it's awesome!</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1160776',4534,'')" href="http://darxus.livejournal.com/254536.html?replyto=1160776">Reply</a></li><li><a href="http://darxus.livejournal.com/254536.html?thread=1160264#t1160264">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/254536.html?thread=1160776#t1160776">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1160776" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1161032"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="21 hours after journal entry, 10:19 am (darxus&#39;s time)">9/24/09 02:19 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Why vegetable oil?  Even olive oil?</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1161032',4535,'')" href="http://darxus.livejournal.com/254536.html?replyto=1161032">Reply</a></li><li><a href="http://darxus.livejournal.com/254536.html?thread=1160776#t1160776">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/254536.html?thread=1161032#t1161032">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1161032" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1161544"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_mclazarus' lj:user='mclazarus' style='white-space: nowrap;'><a href='http://mclazarus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://mclazarus.livejournal.com/'><b>mclazarus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="23 hours after journal entry, 12:11 pm (mclazarus&#39;s time)">9/24/09 04:11 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/35321517/2674105" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent"><a href="http://www.fitnessspotlight.com/2008/5/29/ten-oils-and-how-to-use-them/">http://www.fitnessspotlight.com/200<wbr />8/5/29/ten-oils-and-how-to-use-them/</a><br /><a href="http://www.westonaprice.org/knowyourfats/skinny.html">http://www.westonaprice.org/knowyourfat<wbr />s/skinny.html</a><br /><a href="http://www.westonaprice.org/knowyourfats/oiling.html">http://www.westonaprice.org/knowyourfat<wbr />s/oiling.html</a><br /><br /><br />I do use olive oil, although I've read that it should only be used in cooking with moderate heat.  I avoid, corn, cottonseed, sunflower types of oils.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1161544',4537,'')" href="http://darxus.livejournal.com/254536.html?replyto=1161544">Reply</a></li><li><a href="http://darxus.livejournal.com/254536.html?thread=1161032#t1161032">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/254536.html?thread=1161544#t1161544">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1161544" style="display: none;"></div>
+
+</div>
+</div></li>
+<li><div class="entry" id="ljcmt1161800"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_mclazarus' lj:user='mclazarus' style='white-space: nowrap;'><a href='http://mclazarus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://mclazarus.livejournal.com/'><b>mclazarus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="23 hours after journal entry, 12:14 pm (mclazarus&#39;s time)">9/24/09 04:14 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/35321517/2674105" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Also a good book that does a survey of much of the relevant scientific literature about fat, cholesterol, carbs and diet is:<br />Good Calories, Bad Calories by Gary Taubes</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1161800',4538,'')" href="http://darxus.livejournal.com/254536.html?replyto=1161800">Reply</a></li><li><a href="http://darxus.livejournal.com/254536.html?thread=1161032#t1161032">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/254536.html?thread=1161800#t1161800">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1161800" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><div class="entry" id="ljcmt1162312"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_temalyen' lj:user='temalyen' style='white-space: nowrap;'><a href='http://temalyen.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://temalyen.livejournal.com/'><b>temalyen</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="1 days after journal entry, 03:50 pm (temalyen&#39;s time)">9/24/09 07:50 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/3907503/556230" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">My mother swears taking Flax Seed Oil and Cinnamon every day drops cholesterol.  She takes them in pill form and swears that's why her cholesterol dropped from being "extremely high" to normal.  You could try that if you wanted.  It sort of sounds fishy to me, but it seems to work for her.  I'm wondering if it isn't something else, as there's no kind of test and control groups to make sure that's what's making it drop.  But the point remains that her cholesterol has gone way down since she started taking them.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1162312',4540,'')" href="http://darxus.livejournal.com/254536.html?replyto=1162312">Reply</a></li><li><a href="http://darxus.livejournal.com/254536.html?thread=1162312#t1162312">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1162312" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul>
+</div>
+
+
+
+<div id="server_sig">Powered by <a href="http://www.livejournal.com/">LiveJournal.com</a></div></div>
+
+</div>
+</div>
+
+<div id='hello-world' style='text-align: left; font-size:0; line-height:0; height:0; overflow:hidden;'>
+<script type="text/javascript"> var DR_id = 1111; </script>
+<script src="http://l-stat.livejournal.com/js/pagestats/DR_v4u3.js" type="text/javascript"></script>
+    </div></body>
+</html>

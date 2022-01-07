@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- the reason this keeps breaking on upgrades is php short tags, php.ini short_open_tag -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Darxus' Quotes</title>
+<link rel='StyleSheet' href="/light.css" type="text/css" />
+<style type="text/css">
+div.center { text-align: center; }
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head><body><div>
+
+
+<div class='center'>
+<form action="/quotes/" method="get">
+<table border='0'>
+<tr><td rowspan='2'><div style="font-size:2em"><b>Words that amuse me.</b></div>
+<small>In reverse chronological order.<br /><a href="/cgi-bin/referercomment.cgi">Comment on this page.</a></small></td>
+<td rowspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td colspan='2'><br />
+<input type="checkbox" name="fire"        /><a href="/quotes/?fire=on">Fire</a>       
+<input type="checkbox" name="geek"        /><a href="/quotes/?geek=on">Geek</a>       
+<input type="checkbox" name="misc"        /><a href="/quotes/?misc=on">Misc</a>       
+<input type="checkbox" name="music"      /><a href="/quotes/?music=on">Music</a>     
+<input type="checkbox" name="polit"      /><a href="/quotes/?polit=on">Politics</a>  
+<input type="checkbox" name="psych"      /><a href="/quotes/?psych=on">Psychology</a>
+<input type="checkbox" name="truth"      /><a href="/quotes/?truth=on">Truth</a>     
+<input type="checkbox" name="freedom"  /><a href="/quotes/?freedom=on">Freedom</a> 
+<input type="checkbox" name="words"   checked="checked"   /><a href="/quotes/?words=on">Words</a>     
+</td>
+<td rowspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td rowspan='2' align='center'><a href="/quotes/quoteslinks.html">other<br />people's<br />collections</a></td>
+</tr><tr><td><input type="checkbox" name="categ"  />Show category names.
+<input type="submit" value="update filter" />
+</td>
+<td align='right'><a href="http://www.ChaosReigns.com/quotes/">Show all categories.</a>
+</td></tr>
+</table>
+</form>
+</div>
+
+
+<hr />
+<hr />
+"Kyriarchy, pronounced /ˈkaɪriɑːrki/, is a social system or set of connecting social systems built around domination, oppression, and submission. The word was coined by Elisabeth Schüssler Fiorenza in 1992 to describe her theory of interconnected, interacting, and self-extending systems of domination and submission, in which a single individual might be oppressed in some relationships and privileged in others. It is an intersectional extension of the idea of patriarchy beyond gender.[1] Kyriarchy encompasses sexism, racism, homophobia, classism, economic injustice, colonialism, ethnocentrism, militarism, and other forms of dominating hierarchies in which the subordination of one person or group to another is internalized and institutionalized." - <a href="https://en.wikipedia.org/wiki/Kyriarchy">wikipedia</a><hr />
+ardent: "having or showing very strong feelings" - m-w.com<hr />
+reticent: "inclined to be silent or uncommunicative in speech"<hr />
+agency: "the capacity, condition, or state of acting or of exerting power" - m-w.com<hr />
+equanimity: "evenness of mind especially under stress" - m-w.com<hr />
+foment: "to promote the growth or development of :  rouse, incite &lt;foment a rebellion&gt;" - m-w.com<hr />
+veracity: "devotion to the truth" - m-w.com<hr />
+cursorial: "adapted to or involving running" - m-w.com<hr />
+petrichor: "The clean, pleasant smell that accompanies rain falling on dry ground. It’s from the Greek petra (stone) and ichor (the blood of Greek gods and goddesses). The term was coined by two Australian researchers in 1964."<hr />
+Collectivism: "any philosophic, political, economic or social outlook that emphasizes the interdependence of every human in some collective group and the priority of group goals over individual goals." - http://en.wikipedia.org/wiki/Collectivism<hr />
+pleonasm: "the use of more words than are necessary to express an idea." - http://www.dictionary.com/wordoftheday/archive/2011/09/18.html<hr />
+bedlam: "a scene or state of wild uproar and confusion." - http://www.dictionary.com/wordoftheday/archive/2011/07/02.html<hr />
+aversion: "b : a settled dislike : antipathy &lt;expressed an aversion to parties&gt;" - m-w.com<hr />
+obstinate: "1 : perversely adhering to an opinion, purpose, or course in spite of reason, arguments, or persuasion &lt;obstinate resistance to change&gt; 2 : not easily subdued, remedied, or removed &lt;obstinate fever&gt;" - m-w.com<hr />
+Malthusian catastrophe: "Originally foreseen to be a forced return to subsistence-level conditions once population growth had outpaced agricultural production. Later formulations consider economic growth limits as well." - <a href="http://en.wikipedia.org/wiki/Malthusian_catastrophe">wikipedia</a><hr />
+laconic: "using or marked by the use of a minimum of words."<hr />
+sylvan: "of, relating to, or characteristic of the woods or forest" - m-w.com<hr />
+affable: "easy to speak to; also, gracious." - <a href="http://dictionary.reference.com/wordoftheday/archive/2009/11/22.html">dictionary.com word of the day</a><hr />
+Immorality: "The morality of those who are having a better time" - Henry Louis Mencken<hr />
+danger close: "(DOD, NATO) In artillery and naval gunfire support, information in a call for fire to indicate that friendly forces are within 600 meters of the target." - <a href="http://usmilitary.about.com/od/glossarytermsd/g/dangerclose.htm">about.com</a><hr />
+daft: "1 a : silly, foolish b : mad, insane 2 Scottish : frivolously merry" - m-w.com<hr />
+sedition: "incitement of resistance to or insurrection against lawful authority" - m-w.com<hr />
+incantation: "a written or recited formula of words designed to produce a particular effect" - m-w.com<hr />
+vengeance: "punishment inflicted in retaliation for an injury or offense : retribution" - m-w.com<hr />
+insurrection: "an act or instance of revolting against civil authority or an established government" - m-w.com<hr />
+triumph: "to obtain victory: prevail" - m-w.com<hr />
+"vet: to subject to thorough appraisal; to evaluate." - <a href="http://www.dictionary.com/wordoftheday/archive/2009/08/22.html">dictionary.com word of the day</a>
+<hr />
+paragon: "a model of excellence or perfection" - m-w.com<hr />
+luminary: "any body that gives light; also, a person of eminence or brilliant achievement." - <a href="http://syndicated.livejournal.com/dictionary_wotd/655115.html">dictionary_wotd</a>
+<hr />
+induce: "to call forth..." - m-w.com
+<hr />
+immutable: not able to be changed
+<hr />
+farcical: "laughably inept" - m-w.com<hr />
+forsaken: "renounced or turned away from entirely" - m-w.com
+<hr />
+autodarwinate: "To remove oneself from the gene-pool, thereby furthering the evolution of one's species." - <a href="http://en.wiktionary.org/wiki/Wiktionary:List_of_protologisms#A">wiktionary protologisms</a>
+<hr />
+calamity: "a disastrous event marked by great loss and lasting distress and suffering" - m-w.com
+<hr />
+anhedonia: "inability to feel joy"
+<hr />
+egregious: "conspicuously bad" - m-w.com
+<hr />
+sacrilicious: "Something amusingly sacreligious, ie. 'deliciously' sacreligious." - <a href="http://www.urbandictionary.com/define.php?term=Sacrilicious">urbandictionary.com</a><hr />
+inordinate: "exceeding reasonable limits" - m-w.com
+<hr />
+daunting: "tending to overwhelm or intimidate" - m-w.com
+<hr />
+repent: "to turn from sin and dedicate oneself to the amendment of one's life" - m-w.com
+<hr />
+inane: "lacking significance, meaning, or point" - m-w.com
+<hr />
+pariah: "one that is despised or rejected" - m-w.com<hr />
+dire: "1a: exciting horror 2: warning of disaster 3a: desperately urgent" - m-w.com
+<hr />
+untenable: "not able to be defended" - m-w.com
+<hr />
+salacious: "arousing or appealing to sexual desire or imagination" - m-w.com<hr />
+heinous: "hatefully or shockingly evil" - m-w.com<hr />
+nefarious: "flagrantly wicked or impious : EVIL" - <a href="http://m-w.com/dictionary/nefarious">m-w.com</a>
+<hr />
+conflagration: "FIRE; especially : a large disastrous fire" - m-w.com<hr />
+visceral: "1 : felt in or as if in the viscera [(internal organs)] : DEEP &lt;visceral conviction&gt; 2 : not intellectual : INSTINCTIVE, UNREASONING &lt;visceral drives&gt;" - m-w.com
+<hr />
+raze: "to destroy to the ground" - m-w.com<hr />
+flay: "to strip off the skin or surface of" - m-w.com
+<hr />
+lecherous: "given to or suggestive of... inordinate indulgence in sexual activity" - m-w.com
+<hr />
+euphoria: "a feeling of well-being or elation" - m-w.com<hr />
+flagrant: "conspicuously offensive &lt;flagrant errors&gt;; especially : so obviously inconsistent with what is right or proper as to appear to be a flouting of law or morality &lt;flagrant violations of human rights&gt;" - m-w.com
+<hr />
+epicenter: "the part of the earth's surface directly above the focus of an earthquake" - m-w.com
+<hr />
+catharsis: "An explosive release of hitherto dammed-up emotions that is sometimes believed to have therapeutic effects." - http://www.wwnorton.com/college/psych/gman5/glossary/C.htm<br /><br />"Watching aggressive media output, it is proposed, does not make viewers more aggressive; quite the contrary - since the vicarious aggression experienced through the media purges the viewer of aggression, the result of watching violence is less aggression." - http://www.cultsock.ndirect.co.uk/MUHome/cshtml/media/efterms.html
+<hr />
+rampage: "violently angry and destructive behavior" - <a href="http://www.cogsci.princeton.edu/cgi-bin/webwn2.1?s=rampage">princeton wordnet</a>
+<hr />
+prurient: "Etymology: ... prurire to itch, crave; akin to Latin pruna glowing coal, Sanskrit plosati he singes, and probably to Latin pruina hoarfrost -- more at FREEZE : marked by or arousing an immoderate or unwholesome interest or desire; especially : marked by, arousing, or appealing to unusual sexual desire"
+<hr />
+retribution: "3 : something given or exacted in recompense; especially: PUNISHMENT" - www.m-w.com
+<hr />
+rancor: "bitter deep-seated ill will" - m-w.com<hr />
+rampant: "marked by a menacing wildness, extravagance, or absence of restraint" - www.m-w.com
+<hr />
+stoic: "not affected by or showing passion or feeling; especially : firmly restraining response to pain or distress" - www.m-w.com<hr />
+"Vegetarian - that's an old Indian word meaning 'lousy hunter.'" - Andy Rooney<hr />
+eminently: "to a high degree" - www.m-w.com  (eminently quotable)<hr />
+coup de grace: "a death blow or shot administered to end the suffering of one mortally wounded [French - literally, a 'blow of mercy']" - http://coupdegrace.tv/<hr />
+vanquish: "to overcome in battle : subdue completely" - www.m-w.com<hr />
+defenestration: "a throwing of a person or thing out of a window" - www.m-w.com<hr />
+peril: "exposure to the risk of being injured, destroyed, or lost" - www.m-w.com
+<hr />
+lust: "usually intense or unbridled sexual desire" - www.m-w.com
+<hr />
+onslaught: "an especially fierce attack" - www.m-w.com<hr />
+relentless: "showing or promising no abatement of severity, intensity, strength, or pace" - www.m-w.com<hr />
+feral: "of, relating to, or suggestive of a wild beast" - www.m-w.com<hr />
+sycophant: "a servile self-seeking flatterer" - www.m-w.com<hr />
+servile: "of or befitting a slave or a menial position" - www.m-w.com<hr />
+malevolent: "having, showing, or arising from intense often vicious ill will, spite, or hatred" - www.m-w.com
+<hr />
+nadir: "the lowest point" - www.m-w.com<hr />
+conspire: "to act in harmony toward a common end" - www.m-w.com
+<hr />
+irrepressible: "impossible to repress, restrain, or control" - www.m-w.com
+<hr />
+obstreperous: "stubbornly resistant to control" - www.m-w.com
+<hr />
+amok: "possessed with or motivated by a murderous or violently uncontrollable frenzy" - www.m-w.com
+<hr />
+ostentatious: "marked by or fond of conspicuous or vainglorious and sometimes pretentious display" - www.m-w.com
+<hr />
+malice: "1 : desire to cause pain, injury, or distress to another" - www.m-w.com
+<hr />
+specious: 2 : "having deceptive attraction or allure" 3 : "having a false look of truth or genuineness" - www.m-w.com
+<hr />
+callipygian: "having shapely buttocks" - www.m-w.com
+<hr />
+cynical: "contemptuously distrustful of human nature and motives" - www.m-w.com
+<hr />
+pantheism: "the belief that god is the universe and the universe is god -- or, more generally, that the universe is divine. It is most often explained as having the feeling that existence has a divine or awe-inspiring aspect." - <a href="http://www.wikipedia.org/wiki/Neopaganism">wikipedia:neopaganism</a>
+<hr />
+nihilism: belief in nothing
+<hr />
+unrequited: "not requited : not reciprocated or returned in kind" - www.m-w.com
+<hr />
+pernicious: "1 : highly injurious or destructive : DEADLY" - www.m-w.com, pernicious: deadly; destructive; exceedingly harmful. - http://www.dictionary.com/wordoftheday/archive/2009/05/18.html
+<hr />
+poetry: "2 : writing that formulates a concentrated imaginative awareness of experience in language chosen and arranged to create a specific emotional response through meaning, sound, and rhythm" - www.m-w.com
+<hr />
+synchronicity: "2 : the coincidental occurrence of events and especially psychic events (as similar thoughts in widely separated persons or a mental image of an unexpected event before it happens) that seem related but are not explained by conventional mechanisms of causality -- used especially in the psychology of C. G. Jung" - www.m-w.com
+<hr />
+zealot: "one absorbed in devotion to anything" - <a href="http://www.everything2.com/index.pl?node_id=363105">Webster 1913</a>
+<hr />
+myopia: "2 : a lack of foresight or discernment : a narrow view of something"
+<hr />
+anathema: "someone or something intensely disliked or loathed" - www.m-w.com
+<hr />
+masticate: "to soften or reduce to pulp by crushing or kneading" - www.m-w.com 
+<hr />
+sardonic: "disdainfully or skeptically humorous : derisively mocking" - www.m-w.com
+<hr />
+kneepit: "The foldy part behind the front of your knee." - <a href="http://www.cavegirl.org/">pinkee</a>
+<hr />
+flog: "to beat with or as if with a rod or whip" - www.m-w.com
+<hr />
+infidel: a non-believer
+<hr />
+conceit: "excessive appreciation of one's own worth or virtue" - <a href="http://www.m-w.com/cgi-bin/dictionary?conceit">Webster's</a>
+<hr />
+cower: to shrink away in fear
+<hr />
+laminar flow: "When fluid flows smoothly without vortices or other turbulence" - <a href="http://www.exploratorium.edu/xref/phenomena/laminar_flow.html">Phenomena Cross Reference</a>
+<hr />
+"lament: To express sorrow or regret." - <a href="http://www.dictionary.com/cgi-bin/dict.pl?term=lament&amp;db=%2A">dictionary.com</a>
+<hr />
+"malaise: a vague sense of mental or moral ill-being" - <a href="http://www.m-w.com/cgi-bin/dictionary?malaise">Webster's</a><br />"The sort of general malaise that only the genius possess and the insane lament." - Dr. Evil, Austin Powers
+<hr />
+requiem: music in honor of the dead
+<hr />
+superfluous: "exceeding what is sufficient or necessary" - <a href="http://www.m-w.com/cgi-bin/dictionary?superfluous">Webster's</a>
+<hr />
+nipular: Having to do with nipples.  <br />First heard used by <a href="mailto:mad_chef@excite.com">James Brockman</a>,2001-07-27 11:08:49 PST, on <a href="news:rec.arts.bodyart">rec.arts.bodyart</a>.
+<hr />
+aberrant: having, or based on, non-standard ethics
+<hr />
+bloodlust: an overwhelming desire to draw blood
+<hr />
+entendre: "a word or expression capable of two interpretations with one usually risque" - <a href="http://www.m-w.com/cgi-bin/dictionary?entendre">Webster's</a> <br /><br />&lt;pinkee&gt; cuz right now all my system is doing is pissing me off <br />* pinkee spanks her box <br />&lt;pinkee&gt; whoops missed that double entrende <br />* pinkee blushes
+<hr />
+vacillate: Extreme emotional cycling.
+<hr />
+Nephilim: Fallen Angels
+<hr />
+iconoclast: A destroyer of icons / religious symbols, "1: one who destroys religious images or opposes their veneration 2: one who attacks settled beliefs or institutions" - <a href="http://www.m-w.com/cgi-bin/dictionary?iconoclast">Webster's</a>
+<hr />
+sublimation: The process which dry ice goes through when it changes state from solid directly to gas, instead of first melting into a liquid.
+<hr />
+misanthropy: "a hatred or distrust of mankind" - <a href="http://www.m-w.com/cgi-bin/dictionary?misanthropy">Webster's</a>
+<hr />
+Blanket party: "consists of a sleeping soldier, a blanket to hold him down, a towel to keep him quiet, and a room full of angry recruits to physically punish the offending soldier." 
+<hr />
+scrimshaw: "any of various carved or engraved articles made orig. by American whalers usually from baleen or whale ivory" - <a href="http://www.m-w.com/cgi-bin/dictionary?hdwd=scrimshaw&amp;listword=scrimshaw&amp;book=Dictionary&amp;jump=scrimshaw%5B2%2Cnoun%5D&amp;list=scrimshaw%5B1%2Cverb%5D%3D961024%3Bscrimshaw%5B2%2Cnoun%5D%3D961051">Webster's</a>
+<hr />
+cruciform: "forming or arranged in a cross" - <a href="http://www.m-w.com/cgi-bin/dictionary?cruciform">Webster's</a> - as in a cruciform bayonet
+<hr />
+wanderlust: "strong longing for or impulse toward wandering" - <a href="http://www.m-w.com/cgi-bin/dictionary?wanderlust">Webster's</a>
+<hr />
+immolate: to sacrifice by fire
+
+<hr />
+<hr />
+<div class='center'>
+121 quotes on this page.<br />
+<a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+<a href="/">Return to Darxus' home page.</a>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,910 @@
+%!PS-Adobe-2.0
+%%Creator: neato version gviz1.5 (06-14-99)
+%%For: (darxus) ,,,
+%%Title: source tree
+%%Pages: (atend)
+%%BoundingBox: 36 36 1115 1996
+%%EndComments
+%%BeginProlog
+save
+/DotDict 200 dict def
+DotDict begin
+
+%%BeginResource: procset
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+	dup 1 exch div /InvScaleFactor exch def
+	dup scale
+} bind def
+
+% styles
+/solid { } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw aligned label in bounding box aligned to current point
+% alignfactor tells what fraction to place on the left.
+% -.5 is centered.
+/alignedtext {			% text labelwidth fontsz alignfactor
+	/alignfactor exch def
+	/fontsz exch def
+	/width exch def
+	/text exch def
+	gsave
+		% even if node or edge is dashed, don't paint text with dashes
+		[] 0 setdash
+		currentpoint newpath moveto
+		text stringwidth pop
+		alignfactor mul fontsz -.3 mul rmoveto
+		text show
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+% /arrowlength 10 def
+% /arrowwidth 5 def
+%%EndSetup
+%%Page: 1 1
+%%PageBoundingBox: 36 36 1115 1996
+gsave
+35 35 1080 1961 boxprim clip newpath
+36 36 translate
+0 0 1 beginpage
+0 0 translate 0 rotate
+0.000 0.000 0.000 graphcolor
+14.00 /Times-Roman set_font
+
+%	ttysnoops.c
+gsave 10 dict begin
+551 809 42 18 ellipse_path
+stroke
+gsave 10 dict begin
+551 810 moveto (ttysnoops.c) 63 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	types.h
+gsave 10 dict begin
+884 936 30 18 ellipse_path
+stroke
+gsave 10 dict begin
+884 937 moveto (types.h) 40 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> types.h
+newpath 583 821 moveto
+672 855 762 889 850 923 curveto
+stroke
+newpath 850 920 moveto
+858 926 lineto
+848 925 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	stat.h
+gsave 10 dict begin
+739 1183 27 18 ellipse_path
+stroke
+gsave 10 dict begin
+739 1184 moveto (stat.h) 29 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> stat.h
+newpath 560 827 moveto
+615 937 672 1048 727 1159 curveto
+stroke
+newpath 728 1156 moveto
+730 1166 lineto
+724 1158 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ioctl.h
+gsave 10 dict begin
+324 986 28 18 ellipse_path
+stroke
+gsave 10 dict begin
+324 987 moveto (ioctl.h) 35 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> ioctl.h
+newpath 531 825 moveto
+470 873 408 920 348 968 curveto
+stroke
+newpath 352 969 moveto
+342 972 lineto
+349 964 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	socket.h
+gsave 10 dict begin
+929 700 33 18 ellipse_path
+stroke
+gsave 10 dict begin
+929 701 moveto (socket.h) 46 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> socket.h
+newpath 586 799 moveto
+688 770 791 740 894 711 curveto
+stroke
+newpath 890 710 moveto
+900 709 lineto
+891 715 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	syslog.h
+gsave 10 dict begin
+82 999 33 18 ellipse_path
+stroke
+gsave 10 dict begin
+82 1000 moveto (syslog.h) 46 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> syslog.h
+newpath 520 821 moveto
+386 875 251 931 117 985 curveto
+stroke
+newpath 119 987 moveto
+109 988 lineto
+117 982 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	time.h
+gsave 10 dict begin
+248 793 28 18 ellipse_path
+stroke
+gsave 10 dict begin
+248 794 moveto (time.h) 35 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> time.h
+newpath 509 807 moveto
+434 803 361 798 286 795 curveto
+stroke
+newpath 286 797 moveto
+276 794 lineto
+286 793 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	un.h
+gsave 10 dict begin
+1027 801 27 18 ellipse_path
+stroke
+gsave 10 dict begin
+1027 802 moveto (un.h) 24 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> un.h
+newpath 593 808 moveto
+725 806 860 803 992 801 curveto
+stroke
+newpath 990 799 moveto
+1000 801 lineto
+990 804 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	stdio.h
+gsave 10 dict begin
+297 425 29 18 ellipse_path
+stroke
+gsave 10 dict begin
+297 426 moveto (stdio.h) 37 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> stdio.h
+newpath 539 791 moveto
+465 677 388 563 313 449 curveto
+stroke
+newpath 312 452 moveto
+308 442 lineto
+316 449 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	stdlib.h
+gsave 10 dict begin
+758 461 31 18 ellipse_path
+stroke
+gsave 10 dict begin
+758 462 moveto (stdlib.h) 41 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> stdlib.h
+newpath 562 791 moveto
+623 689 684 586 744 484 curveto
+stroke
+newpath 740 485 moveto
+748 478 lineto
+745 488 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	stdarg.h
+gsave 10 dict begin
+415 405 32 18 ellipse_path
+stroke
+gsave 10 dict begin
+415 406 moveto (stdarg.h) 44 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> stdarg.h
+newpath 545 791 moveto
+505 671 464 550 423 430 curveto
+stroke
+newpath 421 433 moveto
+421 423 lineto
+426 432 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ctype.h
+gsave 10 dict begin
+75 603 30 18 ellipse_path
+stroke
+gsave 10 dict begin
+75 604 moveto (ctype.h) 40 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> ctype.h
+newpath 521 796 moveto
+384 737 246 676 108 618 curveto
+stroke
+newpath 108 621 moveto
+100 614 lineto
+110 616 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	unistd.h
+gsave 10 dict begin
+848 1162 32 18 ellipse_path
+stroke
+gsave 10 dict begin
+848 1163 moveto (unistd.h) 44 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> unistd.h
+newpath 566 826 moveto
+653 931 741 1036 829 1140 curveto
+stroke
+newpath 830 1137 moveto
+834 1146 lineto
+826 1140 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	signal.h
+gsave 10 dict begin
+1045 1000 32 18 ellipse_path
+stroke
+gsave 10 dict begin
+1045 1001 moveto (signal.h) 43 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> signal.h
+newpath 583 821 moveto
+724 876 868 932 1010 987 curveto
+stroke
+newpath 1010 984 moveto
+1019 990 lineto
+1009 989 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fcntl.h
+gsave 10 dict begin
+501 1183 28 18 ellipse_path
+stroke
+gsave 10 dict begin
+501 1184 moveto (fcntl.h) 36 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> fcntl.h
+newpath 549 827 moveto
+534 937 519 1048 504 1158 curveto
+stroke
+newpath 507 1155 moveto
+503 1165 lineto
+502 1155 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	termios.h
+gsave 10 dict begin
+529 375 36 18 ellipse_path
+stroke
+gsave 10 dict begin
+529 376 moveto (termios.h) 52 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> termios.h
+newpath 550 791 moveto
+543 662 537 530 530 401 curveto
+stroke
+newpath 528 403 moveto
+530 393 lineto
+533 403 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	grp.h
+gsave 10 dict begin
+890 467 27 18 ellipse_path
+stroke
+gsave 10 dict begin
+890 468 moveto (grp.h) 29 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> grp.h
+newpath 568 792 moveto
+668 691 769 589 869 488 curveto
+stroke
+newpath 866 487 moveto
+875 482 lineto
+870 491 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	pwd.h
+gsave 10 dict begin
+186 1150 27 18 ellipse_path
+stroke
+gsave 10 dict begin
+186 1151 moveto (pwd.h) 34 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> pwd.h
+newpath 533 826 moveto
+425 926 316 1029 209 1129 curveto
+stroke
+newpath 211 1130 moveto
+202 1135 lineto
+208 1127 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	utmp.h
+gsave 10 dict begin
+624 1189 30 18 ellipse_path
+stroke
+gsave 10 dict begin
+624 1190 moveto (utmp.h) 39 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> utmp.h
+newpath 554 827 moveto
+576 939 598 1052 620 1164 curveto
+stroke
+newpath 622 1161 moveto
+621 1171 lineto
+617 1161 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	errno.h
+gsave 10 dict begin
+994 585 30 18 ellipse_path
+stroke
+gsave 10 dict begin
+994 586 moveto (errno.h) 39 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> errno.h
+newpath 579 795 moveto
+706 731 836 665 963 601 curveto
+stroke
+newpath 961 599 moveto
+971 597 lineto
+963 604 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	shadow.h
+gsave 10 dict begin
+38 809 37 18 ellipse_path
+stroke
+gsave 10 dict begin
+38 810 moveto (shadow.h) 53 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> shadow.h
+newpath 509 809 moveto
+367 809 226 809 84 809 curveto
+stroke
+newpath 85 812 moveto
+75 809 lineto
+85 807 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	config.h
+gsave 10 dict begin
+281 616 33 18 ellipse_path
+stroke
+gsave 10 dict begin
+281 617 moveto (config.h) 46 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> config.h
+newpath 529 793 moveto
+455 741 382 688 308 636 curveto
+stroke
+newpath 308 639 moveto
+301 631 lineto
+311 635 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	common.h
+gsave 10 dict begin
+647 334 40 18 ellipse_path
+stroke
+gsave 10 dict begin
+647 335 moveto (common.h) 59 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> common.h
+newpath 555 791 moveto
+583 648 613 504 641 361 curveto
+stroke
+newpath 638 361 moveto
+643 352 lineto
+643 362 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	logwtmp.h
+gsave 10 dict begin
+414 1314 40 18 ellipse_path
+stroke
+gsave 10 dict begin
+414 1315 moveto (logwtmp.h) 60 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoops.c -> logwtmp.h
+newpath 546 827 moveto
+506 981 461 1136 421 1290 curveto
+stroke
+newpath 425 1287 moveto
+419 1296 lineto
+420 1286 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c
+gsave 10 dict begin
+646 746 39 18 ellipse_path
+stroke
+gsave 10 dict begin
+646 747 moveto (ttysnoop.c) 57 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	ttysnoop.c -> types.h
+newpath 666 762 moveto
+730 813 796 865 860 916 curveto
+stroke
+newpath 860 913 moveto
+866 921 lineto
+857 917 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> stat.h
+newpath 650 764 moveto
+678 894 706 1027 733 1157 curveto
+stroke
+newpath 735 1155 moveto
+735 1165 lineto
+730 1156 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> ioctl.h
+newpath 625 761 moveto
+533 830 440 899 348 968 curveto
+stroke
+newpath 352 969 moveto
+342 972 lineto
+349 964 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> socket.h
+newpath 683 740 moveto
+752 729 822 718 891 706 curveto
+stroke
+newpath 887 704 moveto
+897 705 lineto
+888 709 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> time.h
+newpath 608 750 moveto
+500 763 393 776 286 789 curveto
+stroke
+newpath 286 791 moveto
+276 790 lineto
+286 787 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> un.h
+newpath 684 751 moveto
+787 767 891 781 994 796 curveto
+stroke
+newpath 991 793 moveto
+1000 797 lineto
+990 798 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> stdio.h
+newpath 628 730 moveto
+525 635 422 541 319 446 curveto
+stroke
+newpath 318 449 moveto
+313 440 lineto
+322 445 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> stdlib.h
+newpath 653 728 moveto
+685 647 716 567 748 486 curveto
+stroke
+newpath 745 487 moveto
+751 479 lineto
+749 489 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> stdarg.h
+newpath 634 729 moveto
+567 630 500 529 433 431 curveto
+stroke
+newpath 430 432 moveto
+427 422 lineto
+435 429 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> unistd.h
+newpath 655 764 moveto
+715 888 776 1013 836 1137 curveto
+stroke
+newpath 838 1135 moveto
+840 1145 lineto
+833 1137 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> fcntl.h
+newpath 640 764 moveto
+597 894 553 1027 510 1157 curveto
+stroke
+newpath 513 1157 moveto
+507 1165 lineto
+508 1155 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> termios.h
+newpath 640 728 moveto
+606 620 572 511 538 403 curveto
+stroke
+newpath 535 403 moveto
+535 393 lineto
+540 402 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> grp.h
+newpath 661 729 moveto
+730 649 801 569 870 490 curveto
+stroke
+newpath 868 489 moveto
+876 483 lineto
+871 492 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> utmp.h
+newpath 645 764 moveto
+638 896 632 1031 625 1163 curveto
+stroke
+newpath 628 1161 moveto
+625 1171 lineto
+623 1161 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> errno.h
+newpath 674 733 moveto
+770 689 865 645 961 600 curveto
+stroke
+newpath 960 598 moveto
+970 596 lineto
+962 602 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> config.h
+newpath 615 735 moveto
+516 699 417 664 318 629 curveto
+stroke
+newpath 318 632 moveto
+309 626 lineto
+319 627 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ttysnoop.c -> common.h
+newpath 646 728 moveto
+646 605 647 482 647 359 curveto
+stroke
+newpath 645 362 moveto
+647 352 lineto
+650 362 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	common.c
+gsave 10 dict begin
+386 19 39 18 ellipse_path
+stroke
+gsave 10 dict begin
+386 20 moveto (common.c) 58 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	common.c -> stdio.h
+newpath 382 37 moveto
+356 158 329 279 303 400 curveto
+stroke
+newpath 306 398 moveto
+301 407 lineto
+301 397 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	common.c -> stdarg.h
+newpath 387 37 moveto
+396 151 405 266 413 380 curveto
+stroke
+newpath 415 377 moveto
+414 387 lineto
+410 377 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	common.c -> termios.h
+newpath 393 37 moveto
+435 141 477 247 519 351 curveto
+stroke
+newpath 520 347 moveto
+522 357 lineto
+515 349 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	common.c -> common.h
+newpath 400 36 moveto
+475 127 552 219 628 311 curveto
+stroke
+newpath 629 308 moveto
+633 317 lineto
+625 311 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	logwtmp.c
+gsave 10 dict begin
+705 1560 40 18 ellipse_path
+stroke
+gsave 10 dict begin
+705 1561 moveto (logwtmp.c) 59 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	logwtmp.c -> stat.h
+newpath 707 1542 moveto
+716 1431 728 1319 736 1208 curveto
+stroke
+newpath 733 1211 moveto
+737 1201 lineto
+738 1211 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	logwtmp.c -> unistd.h
+newpath 711 1542 moveto
+753 1424 797 1305 839 1187 curveto
+stroke
+newpath 836 1188 moveto
+842 1180 lineto
+840 1190 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	logwtmp.c -> fcntl.h
+newpath 695 1542 moveto
+635 1431 574 1319 514 1207 curveto
+stroke
+newpath 513 1210 moveto
+510 1200 lineto
+517 1207 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	logwtmp.c -> utmp.h
+newpath 701 1542 moveto
+677 1434 654 1325 630 1217 curveto
+stroke
+newpath 628 1217 moveto
+628 1207 lineto
+632 1216 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	logwtmp.c -> logwtmp.h
+newpath 686 1544 moveto
+604 1474 522 1406 440 1336 curveto
+stroke
+newpath 439 1338 moveto
+433 1330 lineto
+442 1335 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	string.h
+gsave 10 dict begin
+787 1940 31 18 ellipse_path
+stroke
+gsave 10 dict begin
+787 1941 moveto (string.h) 42 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	logwtmp.c -> string.h
+newpath 709 1578 moveto
+734 1690 757 1803 782 1915 curveto
+stroke
+newpath 784 1912 moveto
+783 1922 lineto
+779 1912 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+endpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+end
+restore
+%%EOF

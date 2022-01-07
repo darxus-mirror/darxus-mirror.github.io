@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- the reason this keeps breaking on upgrades is php short tags, php.ini short_open_tag -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Darxus' Quotes</title>
+<link rel='StyleSheet' href="/light.css" type="text/css" />
+<style type="text/css">
+div.center { text-align: center; }
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head><body><div>
+
+
+<div class='center'>
+<form action="/quotes/" method="get">
+<table border='0'>
+<tr><td rowspan='2'><div style="font-size:2em"><b>Words that amuse me.</b></div>
+<small>In reverse chronological order.<br /><a href="/cgi-bin/referercomment.cgi">Comment on this page.</a></small></td>
+<td rowspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td colspan='2'><br />
+<input type="checkbox" name="fire"        /><a href="/quotes/?fire=on">Fire</a>       
+<input type="checkbox" name="geek"        /><a href="/quotes/?geek=on">Geek</a>       
+<input type="checkbox" name="misc"        /><a href="/quotes/?misc=on">Misc</a>       
+<input type="checkbox" name="music"      /><a href="/quotes/?music=on">Music</a>     
+<input type="checkbox" name="polit"      /><a href="/quotes/?polit=on">Politics</a>  
+<input type="checkbox" name="psych"      /><a href="/quotes/?psych=on">Psychology</a>
+<input type="checkbox" name="truth"   checked="checked"   /><a href="/quotes/?truth=on">Truth</a>     
+<input type="checkbox" name="freedom"  /><a href="/quotes/?freedom=on">Freedom</a> 
+<input type="checkbox" name="words"      /><a href="/quotes/?words=on">Words</a>     
+</td>
+<td rowspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td rowspan='2' align='center'><a href="/quotes/quoteslinks.html">other<br />people's<br />collections</a></td>
+</tr><tr><td><input type="checkbox" name="categ"  />Show category names.
+<input type="submit" value="update filter" />
+</td>
+<td align='right'><a href="http://www.ChaosReigns.com/quotes/">Show all categories.</a>
+</td></tr>
+</table>
+</form>
+</div>
+
+
+<hr />
+<hr />
+[Giant returns crystall ball she was using for an eye.]<br /> "Hey Tess, what happened to your eye?"<br /> "Oh I had to stop using the eye.  It's just too painful seeing the truth all the time."<br /> "Ah.  That's why humans tend to avoid it."<br /> - Disenchantment, season 1, episode 10<hr />
+"There never has been an answer.  There never will be an answer.  That's the answer." - Gertrude Stein<hr />
+"I am the truth from which you run." - Nine Inch Nails, Mr. Self Destruct 
+<hr />
+<hr />
+<div class='center'>
+3 quotes on this page.<br />
+<a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+<a href="/">Return to Darxus' home page.</a>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Spam Filtering</title>
+<link rel='StyleSheet' href="/light.css" type="text/css" />
+<style type="text/css">
+table,th,td { border: 1px solid black; }
+table { border-collapse:collapse; }
+.tt { font-family: monospace; }
+</style>
+</head>
+<body>
+<h1>Blocking Spam with SPF</h1>
+
+UPDATE:  This was written in 2010, shortly before I discovered problems with SPF adoption, which caused me to create <a href="/mtx/">MTX</a> which was then not adopted.  Currently I recommend <a href="/iprep/">my combined whitelist and blacklist</a>.
+
+<p>Premises:
+</p>
+<ol>
+<li>If every domain has an SPF (DNS TXT) record, it will be easy to block all spam.</li>
+<li>Because it would be easy to block all spam, it is appropriate to expect all domains to have an SPF record.</li>
+<li>It is easy to send errors to users of domains without SPF configured, without sending backscatter to forged addresses.</li>
+</ol>
+
+
+<p>
+<a href="http://www.openspf.org/">SPF</a> records are an easy way for the owner of a domain name to list the servers that legitimately send email for their domain.  A whitelist.  Using their own DNS servers (a single TXT record for each domain and sub-domain).
+</p>
+
+<p>
+<b>Block all email without a matching SPF record, and blacklist all spammer domains using SPF, and you block all spam.</b><br />
+I expect blacklisting SPF domains to be <i>much</i> easier than IPs.
+</p>
+<p>
+It is easy to reject email lacking an SPF match during delivery, so un-forged From: addresses get an error message, and you don't send backscatter to forged addresses.
+</p>
+
+<p>
+While the percentage of domains using SPF is still improving, it might be better to use an additional rule in a spam filter (like SpamAssassin) to only slightly increase non-spams which are classified as spam.  This is a little more difficult to do with error messages to legitimate senders, but still easy.
+As of February 2010, 28.7% of my non-spam does not have an SPF record.  
+</p>
+<h2>SpamAssassin rule for not matching an SPF record</h2>
+<pre>meta      SPF_NOT_PASS       !(SPF_PASS || NO_RELAYS)
+score     SPF_NOT_PASS       4.506 # flag 10% of non-spam that hits this rule as spam.
+describe  SPF_NOT_PASS       Not fully validated by SPF.
+</pre>
+<p>
+/etc/spamassassin/local.cf is a good place to put this.  
+</p>
+<p>
+Remember you're blocking all spammer domains with SPF using a domain blacklist.
+</p>
+<table>
+<tr><th>Spams without SPF blocked</th><th>Non-spams without SPF blocked</th><th>SpamAssassin score for SPF_NOT_PASS</th></tr>
+<tr><td>100%</td><td>28%</td><td>100</td></tr>
+<tr><td>99.92%</td><td>10%</td><td>4.506</td></tr>
+<tr><td>99.52%</td><td>1%</td><td>2.356</td></tr>
+<tr><td>99.15%</td><td>0.1%</td><td>0.285</td></tr>
+</table>
+<p>
+These numbers are estimated from the 97.84% spam accuracy of SpamAssassin and the 73.2% spam accuracy I'm getting due to significantly pre-filtering spam (RBL, greylisting, etc.).
+</p>
+
+<h2>Blacklist spammer domains using SPF</h2>
+<p>
+For postfix, in main.cf, add "check_sender_access hash:/etc/postfix/sender_access" to "smtpd_recipient_restrictions =".  The format of /etc/postfix/sender_access is one domain per line, "example.com REJECT Domain blacklisted for sending spam."
+<br />It is the domain from the SMTP MAIL FROM command that you need to blacklist, often stored in the Return-Path: header.  <b>Not</b> the From: address.
+</p>
+<p>
+<a href="http://www.sdsc.edu/~jeff/spam/cbc.html">Domain name blacklists (bottom of the page) from Jeff Makey </a><br />
+<a href="http://spamlinks.net/filter-dnsbl-lists.htm#domain">Domain blacklists from spamlinks.net</a><br />
+<br />Postfix syntax:<br />
+reject_rhsbl_sender hostkarma.junkemailfilter.com=127.0.0.2<br />
+reject_rhsbl_sender block.rhs.mailpolice.com
+reject_rhsbl_client block.rhs.mailpolice.com
+
+<br />
+I'm not using these domain blacklists yet because it's too easy to maintain my own list.
+
+</p>
+
+<h2>Filter spam during delivery</h2>
+<p>
+To give error messages only to non-forged sending addresses.
+</p>
+<p>
+With the Postfix mail server: <a href="http://wiki.apache.org/spamassassin/IntegratePostfixViaSpampd">Spampd as a Before-Queue Content Filter</a>
+<br />
+"I found that with this setup on my sever, SpamAssassin couldn't determine the envelope sender as needed for certain rules (e.g. DNS_FROM_*, NO_DNS_FOR_FROM, SPF_*). I fixed this by passing the --sef (--seh could work as well; but see documentation first) switch to spampd and then adding  envelope_sender_header X-Envelope-From  to my SpamAssassin config. - JoshuaPettett"
+</p>
+
+<br /><br />
+Postfix main.cf:<br />
+message_size_limit = 10485760<br />
+spampd:<br />
+--maxsize=10240<br />
+This limits email size in both to 10 megabytes.  Set it to whatever you like, but if your MTA accepts larger emails than spampd, spampd will skip spam filtering on them.
+<br /><br />
+search spamassassin -D for "not available": aptitude install razor pyzor
+
+<h2>Asking people to create SPF records</h2>
+
+<blockquote>
+<p>
+Please create this DNS TXT record for [example.com]:
+</p><p>
+
+[insert SPF TXT record]
+</p><p>
+
+It won't cause any SPF verification failures because the "?all" indicates the list is incomplete, but it will cause these listed servers to get a "pass" instead of a "none" from SPF verification.  Which is good for spam filters that consider email that doesn't get a "pass" more spammy, like mine.
+</p><p>
+
+http://www.openspf.org/
+</p>
+</blockquote>
+
+<h2 id="spf_users">Some domains using SPF</h2>
+walmart.com
+exxonmobil.com
+chevron.com
+verizon.com
+homedepot.com
+cvs.com
+boeing.com
+costco.com
+target.com
+dell.com
+wallgreens.com
+sprint.com
+bestbuy.com
+disney.com
+americanexpress.com
+macys.com
+3m.com
+
+google.com
+gmail.com
+aol.com
+hotmail.com
+amazon.com
+ebay.com
+apple.com
+microsoft.com
+schwab.com
+hulu.com
+gentoo.org
+sprint.com
+zappos.com
+
+facebook.com
+youtube.com
+blogger.com
+msn.com
+twitter.com
+myspace.com
+craigslist.org
+bbc.co.uk
+photobucket.com
+about.com
+
+
+<hr />
+<a href="..">Return to main spam page.</a><br />
+<a href="/">Return to Darxus' home page.</a><br />
+</body>
+</html>

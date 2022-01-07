@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+<title>Making mutt Colorful</title>
+<link rel='StyleSheet' href="../../light.css" type="text/css" />
+</head>
+<body>
+<div>Add the following to your ~/.muttrc file (taken from the Debin
+/etc/Muttrc):
+<pre>
+color hdrdefault cyan default
+color quoted   green default
+color signature        cyan default
+color attachment brightyellow default
+color indicator black cyan
+color status   brightgreen blue
+color tree     red default
+color markers  brightred default
+color tilde    blue default
+color header   brightgreen default ^From:
+color header   brightcyan default ^To:
+color header   brightcyan default ^Reply-To:
+color header   brightcyan default ^Cc:
+color header   brightblue default ^Subject:
+color body     brightred default [\-\.+_a-zA-Z0-9]+@[\-\.a-zA-Z0-9]+
+color body     brightblue default (http|ftp)://[\-\.\,/%~_:?\#a-zA-Z0-9]+
+</pre>
+<br />
+<br />
+<hr />
+<a href="index.html">Pretty CoLoRs for UNIX</a><br />
+<a href="../index.html">Darxus' Code Index</a><br />
+<a href="../../index.html">Darxus' Home Page</a><br />
+Tue Jan 22 20:56:25 EST 2002</div>
+</body>
+</html>

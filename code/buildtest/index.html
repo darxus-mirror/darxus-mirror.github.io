@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head><title>BuildTest.pl</title></head>
+<body>
+
+<p>
+<a href="dl/buildtest.pl">buildtest.pl</a>
+</p>
+
+<p>
+Exmple config file:
+</p>
+
+<p>
+<a href="dl/buildtest.wayland-master.conf.html">Config file for 45 repos, direct and indirect dependencies of wayland
+</a>
+</p>
+
+<p>
+Specify the path to the config file as the argument to buildtest.pl.  Config files are "&lt;git repo&gt; -b &lt;branch&gt;&lt;tabs&gt;&lt;configure command&gt;".  Email address, install directory, and source directory, must be specified like:
+</p>
+<p>
+<tt>
+email=darxus@chaosreigns.com<br />
+installdir=/home/darxus/install.test.master<br />
+sourcedir=/home/darxus/source.test.master
+</tt>
+</p>
+
+<p>
+Any time it finds a new commit in one of the repos, it deletes the install directory and rebuilds everything.  So even in a case like when recently drm changed in a way that caused mesa to fail to build, it would have caught that the change that triggerred it was drm.
+</p>
+<p>
+If a build fails, the next time it finds a new checkout in anything it'll still go back to the last known good commits for all the repos (except for the new commit being tested).
+</p>
+
+<p>
+I run this with the following cron job:  
+</p>
+
+<p>
+<tt>
+0 */2 * * * /usr/bin/time  /usr/bin/nice /home/darxus/progs/buildtest.pl /home/darxus/progs/buildtest.wayland-master.conf latest || /usr/bin/nice /home/darxus/progs/buildtest.pl /home/darxus/progs/buildtest.wayland-master.conf 
+</tt>
+</p>
+
+<p>
+The "latest" argument at the end of the first causes it to test all the latest comments at the same time.  If that fails, it then tests each of the new commits one at a time, to see which is at fault.  So if two commits change at the same time, in a way that is compatable with the other new commit, but incompatable with previous commits, it will handle that fine now.  Previous versions didn't.  The biggest down side is if there is only one new commit, and that fails, this method will run the entire build test twice.  I hope to improve this situation further.
+</p>
+
+<p>
+I'm also considering using an input file similar to jhbuild.  And tracking which files were installed by what, so I can build only stuff for which a dependency has been updated, wiping its old files first.  I'd like to one day include actually running tests, instead of just testing building.
+</p>
+
+<p>
+It would also be nice if, when the last commit of anything is known to be bad, and therefore a build of all the latest commits would fail, it started off with something other than what it knows would fail.  Probably just immediately failing a "latest" run if one of the latest comments is flagged bad.
+</p>
+
+<p>And I'd like to automatically do a "git bisect run" where appropriate.
+</p>
+
+<hr />
+<p>Found bugs:
+</p>
+
+<table border="1">
+<tr><td><a href="https://gitlab.freedesktop.org/mesa/mesa/-/issues/4599">2021-04-08 mesa</a></td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=50976">2012-06-11 mesa</a></td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=51482">2012-06-27 mesa</a></td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=52346">2012-07-21 mesa</a></td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=55811">2012-10-09 mesa</a></td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=56101">2012-10-17 wayland</a></td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=56376">2012-10-25 weston</a></td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=57044">2012-11-13 mesa</a></td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=57713">2012-11-30 mesa</a></td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=57746">2012-11-30 mesa</a></td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=58817">2012-12-27 at-spi2-core</a></td></tr>
+<tr><td><a href="https://bugzilla.gnome.org/show_bug.cgi?id=692457">2013-01-24 gtk+</a></td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=60035">2013-01-29 harfbuzz</a></td></tr>
+<tr><td><a href="https://bugzilla.gnome.org/show_bug.cgi?id=692893">2013-01-30 gobject-introspection</a></td><td>open, make check fails without cairo</td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=60283">2013-02-04 fontconfig</a></td></tr>
+<tr><td><a href="https://bugzilla.gnome.org/show_bug.cgi?id=693358">2013-02-07 gobject-introspection</a></td></tr>
+<tr><td><a href="https://bugzilla.gnome.org/show_bug.cgi?id=693721">2013-02-13 glib</a></td><td>open, intermittent problem with time related test</td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=60911">2013-02-15 at-spi2-core</a></td><td>open, fails to find X libs without C_INCLUDE_PATH</td></tr>
+<tr><td><a href="https://bugzilla.gnome.org/show_bug.cgi?id=693904">2013-02-15 atk</a></td><td>open, doesn't find glib-gettext.m4 via ACLOCAL</td></tr>
+<tr><td><a href="https://bugzilla.gnome.org/show_bug.cgi?id=694095">2013-02-18 pango</a></td></tr>
+<tr><td><a href="https://bugzilla.gnome.org/show_bug.cgi?id=694198">2013-02-19 gobject-introspection</a></td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=61296">2013-02-22 weston</a></td><td>open, event-test hangs when make check is run from cron</td></tr>
+<tr><td><a href="https://bugzilla.gnome.org/show_bug.cgi?id=694830">2013-02-27 pango</a></td></tr>
+<tr><td><a href="https://bugzilla.gnome.org/show_bug.cgi?id=694833">2013-02-27 gobject-introspection</a></td></tr>
+<tr><td><a href="https://bugzilla.gnome.org/show_bug.cgi?id=695239">2013-03-05 glib</a></td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=61919">2013-03-06 mesa</a></td></tr>
+<tr><td><a href="https://bugs.freedesktop.org/show_bug.cgi?id=63329">2013-04-09 fontconfig</a></td></tr>
+<tr><td><a href="https://bugzilla.gnome.org/show_bug.cgi?id=702505">2013-06-17 gobject-introspection</a></td></tr>
+<tr><td><a href="https://bugzilla.gnome.org/show_bug.cgi?id=702704">2013-06-19 gtk+</a></td><td>open, not handling uninstalled gsettings schemas</td></tr>
+<tr><td><a href="https://savannah.nongnu.org/bugs/index.php?39294">2013-06-19 libunwind</a></td><td>open, Lrs-race test fails with a segfault</td></tr>
+<tr><td><a href="https://bugzilla.gnome.org/show_bug.cgi?id=703012">2013-06-24 gdk-pixbuf</a></td><td>open, build test fails, ".../loaders.cache': No such file or directory"</td></tr>
+</table>
+
+<hr />
+
+Sat Jun 22 13:35:23 EDT 2013
+
+</body>
+</html>

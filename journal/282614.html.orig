@@ -1,0 +1,353 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=7"/>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel='stylesheet' href='http://l-stat.livejournal.com/ad_base.css' type='text/css' />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://darxus.livejournal.com/data/foaf" />
+<meta name="foaf:maker" content="foaf:mbox_sha1sum '107c1745aac3c319c0e1588eb400be77055f48e8'" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+// don't crawl this.  read http://www.livejournal.com/developer/exporting.bml
+var LJ_cmtinfo = {"1275894":{"rc":[1276150],"u":"drwex","parent":null,"full":1},"canAdmin":0,"1276662":{"rc":[1277174],"u":"underwatercolor","parent":1275126,"full":1},"1277174":{"rc":[],"u":"darxus","parent":1276662,"full":1},"1276406":{"rc":[],"u":"underwatercolor","parent":null,"full":1},"1275126":{"rc":[1276662],"u":"darxus","parent":1274870,"full":1},"1273846":{"rc":[1274614,1274870],"u":"darxus","parent":1270518,"full":1},"journal":"darxus","form_auth":"c0:1279209600:2793:86400:T2qDhyOj9e-0-UNc2cTQFWxxM5nH:94f9b3d4a4f3198007f1dce19114d1f3","remote":null,"1276150":{"rc":[],"u":"darxus","parent":1275894,"full":1},"1273334":{"rc":[1273590],"u":"darxus","parent":1271798,"full":1},"1273590":{"rc":[],"u":"milktree","parent":1273334,"full":1},"1274614":{"rc":[],"u":"feng_huang","parent":1273846,"full":1},"1271798":{"rc":[1273334],"u":"milktree","parent":1270518,"full":1},"1270518":{"rc":[1271798,1273846],"u":"woodwardiocom","parent":null,"full":1},"1274870":{"rc":[1275126],"u":"woodwardiocom","parent":1273846,"full":1}}
+</script>
+        <script type="text/javascript">
+            Site = window.Site || {};
+
+            (function(){
+                var p = {"siteroot":"http://www.livejournal.com","currentJournalBase":"http://darxus.livejournal.com","inbox_update_poll":0,"currentJournal":"darxus","remote_can_track_threads":null,"statprefix":"http://l-stat.livejournal.com","ctx_popup":1,"media_embed_enabled":1,"server_time":1279212393,"has_remote":0,"remote_is_suspended":0,"imgprefix":"http://l-stat.livejournal.com/img","esn_async":1}, i;
+                for (i in p) Site[i] = p[i];
+            })();
+       </script>
+    <script type="text/javascript" src="http://l-stat.livejournal.com/js/??jquery.js,jquery_fn.js,basic.js,livejournal.js,esn.js,ippu.js,lj_ippu.js,ljwidget.js,ljwidget_ippu.js,journal.js,hourglass.js,md5.js,login.js,contextualhover.js,livejournal-local.js,thread_expander.js,journal.js,quickreply.js?v=1277844792"></script>
+<script type="text/javascript" src="http://l-stat.livejournal.com/js/??commentmanage.js?v=1268768846"></script>
+<link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??lj_base.css,esn.css,contextualhover.css?v=1277844792" />
+<!--[if IE]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??ie.css?v=1268859548" /><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??interstitial_banner_us.css?v=1263499801" /><![endif]-->
+<script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=1483b796-4406-4000-98db-019c32f6059e&amp;type=website&amp;embeds=true&amp;post_services=livejournal%2Cfacebook%2Ctwitter%2Cmyspace%2Cdigg%2Cdelicious%2Clinkedin%2Cfriendfeed%2Cwordpress%2Cblogger%2Cgoogle_bmarks%2Ctechnorati&amp;onmouseover=false"></script><link rel="stylesheet" href="http://darxus.livejournal.com/res/18152266/stylesheet?1277845271" type="text/css" />
+<title>Darxus - Google Chrome sucks at freeing ram</title>
+
+</head>
+
+<body class="page_entry">
+
+<div id="shadowhack1">
+<div id="shadowhack2">
+
+<div id="pagecontainer">
+
+<div id="title">
+<h1>Darxus</h1><div id="journal_subtitle">Google Chrome sucks at freeing ram</div>
+</div>
+
+<div id="paraphernalia">
+<div class="pbox" id="journalinfo"><h2>Darxus</h2><div class="pboxcontent">
+<div id="journalinfouserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt="2009-09-29"height="100" width="100"  /></div>
+<div class="journallinkbar">     <a href="http://www.livejournal.com/todo/?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s to-do list" title="darxus&#39;s to-do list" src="http://l-stat.livejournal.com/img/btn_todo.gif"  /></a>  <a href="http://www.livejournal.com/tools/memories.bml?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s memories" title="darxus&#39;s memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="http://www.livejournal.com/tools/tellafriend.bml?user=darxus"><img border='0' width="24" height="24" alt="Tell a friend about darxus" title="Tell a friend about darxus" src="http://l-stat.livejournal.com/img/btn_tellfriend.gif"  /></a>  <a href="http://www.livejournal.com/tools/search.bml?user=darxus"><img border='0' width="24" height="24" alt="Search darxus" title="Search darxus" src="http://l-stat.livejournal.com/img/btn_search.gif"  /></a>  <a href="http://www.livejournal.com/friends/nudge.bml?user=darxus"><img border='0' width="24" height="24" alt="Nudge darxus" title="Nudge darxus" src="http://l-stat.livejournal.com/img/btn_nudge.gif"  /></a> </div></div></div>
+<div class="pbox" id="viewsel"><h2>View</h2><div class="pboxcontent">
+<ul>
+<li><a href="http://darxus.livejournal.com/">Recent Entries</a></li>
+<li><a href="http://darxus.livejournal.com/calendar">Archive</a></li>
+<li><a href="http://darxus.livejournal.com/friends">Friends</a></li>
+<li><a href="http://darxus.livejournal.com/profile">User Info</a></li>
+</ul>
+</div></div>
+
+</div>
+
+<div id="main">
+<div class="entry"><div class="entryheader">
+<h3 class="entrysubject">Google Chrome sucks at freeing ram</h3><div class="entryposter"><span class='ljuser_darxus' style='white-space:nowrap;'><a href='http://www.livejournal.com/userinfo.bml?user=darxus'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align:bottom;border:0;' /></a><a href='http://www.livejournal.com/users/darxus/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate">7/11/10</span>
+    <span class="entrytimestamptime">11:52 am</span></div><div class="entrylinkbarpre"><a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=282614&amp;dir=prev"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>      <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=282614"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="#"><img border='0' width="24" height="24" alt="Share this!" title="Share this!" src="http://l-stat.livejournal.com/img/btn_sharethis.gif"  /></a> <script type="text/javascript">
+            var stLink = jQuery('a:last')[0];
+            stLink.href = 'javascript:void(0)';
+            SHARETHIS_post = SHARETHIS.addEntry({url:'http://darxus.livejournal.com/282614.html', title: 'Google Chrome sucks at freeing ram'}, {button: false});
+            SHARETHIS_post.attachButton(stLink);
+            SHARETHIS_ary.push(SHARETHIS_post);
+            </script>       <a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=282614&amp;dir=next"><img border='0' width="24" height="24" alt="Next Entry" title="Next Entry" src="http://l-stat.livejournal.com/img/btn_next.gif"  /></a></div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt="2009-09-29"height="100" width="100"  /></div></div>
+
+<div class="entrycontent">This computer with 8gb ram keeps ending up swapping because of chrome.<br />I had 48 tabs open, with chrome using 4.2 gigs of ram, copied all the open urls to a file, closed chrome, started it, re-opened all the links, and memory is at 0.8 gigs of ram, in use.  19.0% of what it had been using.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost"><a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=282614&amp;dir=prev"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>      <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=282614"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="#"><img border='0' width="24" height="24" alt="Share this!" title="Share this!" src="http://l-stat.livejournal.com/img/btn_sharethis.gif"  /></a> <script type="text/javascript">
+            var stLink = jQuery('a:last')[0];
+            stLink.href = 'javascript:void(0)';
+            SHARETHIS_post = SHARETHIS.addEntry({url:'http://darxus.livejournal.com/282614.html', title: 'Google Chrome sucks at freeing ram'}, {button: false});
+            SHARETHIS_post.attachButton(stLink);
+            SHARETHIS_ary.push(SHARETHIS_post);
+            </script>       <a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=282614&amp;dir=next"><img border='0' width="24" height="24" alt="Next Entry" title="Next Entry" src="http://l-stat.livejournal.com/img/btn_next.gif"  /></a></div>
+<ul class="entrycmdlinks"><li><a href="http://darxus.livejournal.com/282614.html">13 comments</a></li><li><a onclick="return QuickReply.reply('topcomment',0,'')" href="http://darxus.livejournal.com/282614.html?mode=reply">Leave a comment</a></li></ul>
+<div  id="ljqrttopcomment" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1270518"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_woodwardiocom' lj:user='woodwardiocom' style='white-space: nowrap;'><a href='http://woodwardiocom.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://woodwardiocom.livejournal.com/'><b>woodwardiocom</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="22 minutes after journal entry, 12:15 pm (woodwardiocom&#39;s time)">7/11/10 04:15 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/36205383/1162483" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">If the JavaScript (or whatever) on a page is badly coded, so it keeps consuming more and more memory, any browser has the option of breaking the page, or living with the problem.  It's not necessarily Chrome's fault.<br /><br /><span class='ljedittime'><em>Edited at <span title="12:15 pm (woodwardiocom&#39;s time)">2010-07-11 04:15 pm (UTC)</span></em></span></div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1270518',4962,'')" href="http://darxus.livejournal.com/282614.html?replyto=1270518">Reply</a></li><li><a href="http://darxus.livejournal.com/282614.html?thread=1270518#t1270518">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1270518" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1271798"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_milktree' lj:user='milktree' style='white-space: nowrap;'><a href='http://milktree.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://milktree.livejournal.com/'><b>milktree</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="53 minutes after journal entry">7/11/10 04:46 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/76356026/15958319" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent"><br />Ugh.. this is why I like web pages that could be written in vi.  JavaScript and Flash and all similar crap never fails to annoy me. That's not really true, but the vast overwhelming majority of it just makes the pages harder to read and navigate.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1271798',4967,'')" href="http://darxus.livejournal.com/282614.html?replyto=1271798">Reply</a></li><li><a href="http://darxus.livejournal.com/282614.html?thread=1270518#t1270518">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/282614.html?thread=1271798#t1271798">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1271798" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1273334"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="2 hours after journal entry, 02:39 pm (darxus&#39;s time)">7/11/10 06:39 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">There is JavaScript on my site that's written in vi <tt>:)</tt><br />But it's some very basic image pre-caching in my gallery that is tested to function perfectly in the absence of JavaScript support.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1273334',4973,'')" href="http://darxus.livejournal.com/282614.html?replyto=1273334">Reply</a></li><li><a href="http://darxus.livejournal.com/282614.html?thread=1271798#t1271798">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/282614.html?thread=1273334#t1273334">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1273334" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1273590"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_milktree' lj:user='milktree' style='white-space: nowrap;'><a href='http://milktree.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://milktree.livejournal.com/'><b>milktree</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="2 hours after journal entry">7/11/10 06:48 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/76356026/15958319" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">You, my friend, are an exception.  <br /><br />Most Flash and JavaScript is crap, and only makes things worse.  (although shinier)<br /><br />And, the fact you wrote it in vi makes it by my definition, OK.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1273590',4974,'')" href="http://darxus.livejournal.com/282614.html?replyto=1273590">Reply</a></li><li><a href="http://darxus.livejournal.com/282614.html?thread=1273334#t1273334">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/282614.html?thread=1273590#t1273590">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1273590" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul></li>
+</ul></li>
+<li><div class="entry" id="ljcmt1273846"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="3 hours after journal entry, 03:50 pm (darxus&#39;s time)">7/11/10 07:50 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Poor behavior by the browser is always the browser's fault.  Negligent or malicious web pages do not make it acceptable for a browser to suck.<br /><br />Just like allowing a bad program to crash a computer is always the operating systems fault.  (Or maybe the hardware.)</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1273846',4975,'')" href="http://darxus.livejournal.com/282614.html?replyto=1273846">Reply</a></li><li><a href="http://darxus.livejournal.com/282614.html?thread=1270518#t1270518">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/282614.html?thread=1273846#t1273846">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1273846" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1274614"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_feng_huang' lj:user='feng_huang' style='white-space: nowrap;'><a href='http://feng-huang.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://feng-huang.livejournal.com/'><b>feng_huang</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="5 hours after journal entry, 02:07 pm (feng_huang&#39;s time)">7/11/10 09:07 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/53648349/1206907" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">I think I'm too used to Reddit, because I looked for the arrow to upvote this comment after I read it.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1274614',4978,'')" href="http://darxus.livejournal.com/282614.html?replyto=1274614">Reply</a></li><li><a href="http://darxus.livejournal.com/282614.html?thread=1273846#t1273846">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/282614.html?thread=1274614#t1274614">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1274614" style="display: none;"></div>
+
+</div>
+</div></li>
+<li><div class="entry" id="ljcmt1274870"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_woodwardiocom' lj:user='woodwardiocom' style='white-space: nowrap;'><a href='http://woodwardiocom.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://woodwardiocom.livejournal.com/'><b>woodwardiocom</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="5 hours after journal entry, 05:10 pm (woodwardiocom&#39;s time)">7/11/10 09:10 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/36205383/1162483" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">That's a valid way of looking at it.<br /><br />Ideally, I guess, Chrome would report which sites leak memory, and then advise you not to visit them anymore, or offer to break them when they exceed X megabytes.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1274870',4979,'')" href="http://darxus.livejournal.com/282614.html?replyto=1274870">Reply</a></li><li><a href="http://darxus.livejournal.com/282614.html?thread=1273846#t1273846">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/282614.html?thread=1274870#t1274870">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1274870" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1275126"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="7 hours after journal entry, 06:57 pm (darxus&#39;s time)">7/11/10 10:57 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Chrome has its own task manager, which you can get to by right clicking the title bar, or hitting shift-escape.  Some of the tabs are somehow linked, I don't understand what's going on there.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1275126',4980,'')" href="http://darxus.livejournal.com/282614.html?replyto=1275126">Reply</a></li><li><a href="http://darxus.livejournal.com/282614.html?thread=1274870#t1274870">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/282614.html?thread=1275126#t1275126">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1275126" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1276662"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_underwatercolor' lj:user='underwatercolor' style='white-space: nowrap;'><a href='http://underwatercolor.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://underwatercolor.livejournal.com/'><b>underwatercolor</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="1 days after journal entry, 02:29 am (underwatercolor&#39;s time)">7/13/10 06:29 am (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/9498471/821566" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">When you "open in a new tab," Chrome tends to use one process for multiple tabs. I can think of some reasons why, but it's probably lame.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1276662',4986,'')" href="http://darxus.livejournal.com/282614.html?replyto=1276662">Reply</a></li><li><a href="http://darxus.livejournal.com/282614.html?thread=1275126#t1275126">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/282614.html?thread=1276662#t1276662">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1276662" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1277174"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="1 days after journal entry, 09:31 am (darxus&#39;s time)">7/13/10 01:31 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Yeah.  Probably sharing cache memory or something.  But given their memory problems, it seems to currently be a terrible idea.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1277174',4988,'')" href="http://darxus.livejournal.com/282614.html?replyto=1277174">Reply</a></li><li><a href="http://darxus.livejournal.com/282614.html?thread=1276662#t1276662">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/282614.html?thread=1277174#t1277174">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1277174" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><div class="entry" id="ljcmt1275894"><div class="entryheader">
+<h3 class="entrysubject">That&#39;s unfortunate</h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_drwex' lj:user='drwex' style='white-space: nowrap;'><a href='http://drwex.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://drwex.livejournal.com/'><b>drwex</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="1 days after journal entry">7/12/10 04:09 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/31121697/7435430" title="" alt=""height="100" width="80"  /></div></div>
+
+<div class="entrycontent">I've been on the verge of chucking Firefox because they seem incapable of solving their memory issues.  Then they rearchitected (around release 3.4 I think) to move all media processing into a separate process.  The result is a still leaky as heck, but much less likely to freeze up my computer.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1275894',4983,'Re: That&#39;s unfortunate')" href="http://darxus.livejournal.com/282614.html?replyto=1275894">Reply</a></li><li><a href="http://darxus.livejournal.com/282614.html?thread=1275894#t1275894">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1275894" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1276150"><div class="entryheader">
+<h3 class="entrysubject">Re: That&#39;s unfortunate</h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="1 days after journal entry, 12:17 pm (darxus&#39;s time)">7/12/10 04:17 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Yeah it's fascinating how browsers have always seemed to have so much difficulty not sucking.  I assume it doesn't help that most of the html on the internet conforms to no standard.  <br /><br />You could try Opera.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1276150',4984,'Re: That&#39;s unfortunate')" href="http://darxus.livejournal.com/282614.html?replyto=1276150">Reply</a></li><li><a href="http://darxus.livejournal.com/282614.html?thread=1275894#t1275894">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/282614.html?thread=1276150#t1276150">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1276150" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul></li>
+<li><div class="entry" id="ljcmt1276406"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_underwatercolor' lj:user='underwatercolor' style='white-space: nowrap;'><a href='http://underwatercolor.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://underwatercolor.livejournal.com/'><b>underwatercolor</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="1 days after journal entry, 02:27 am (underwatercolor&#39;s time)">7/13/10 06:27 am (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/51350946/821566" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Yeah. Chrome has several problems when left open for long periods of time. I... still use it, as Firefox annoyed me more. But come on... this isn't what this era considers a hard problem. :)</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1276406',4985,'')" href="http://darxus.livejournal.com/282614.html?replyto=1276406">Reply</a></li><li><a href="http://darxus.livejournal.com/282614.html?thread=1276406#t1276406">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1276406" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul>
+</div>
+
+
+
+<div id="server_sig">Powered by <a href="http://www.livejournal.com/">LiveJournal.com</a></div></div>
+
+</div>
+</div>
+
+<div id='hello-world' style='text-align: left; font-size:0; line-height:0; height:0; overflow:hidden;'>
+<script type="text/javascript"> var DR_id = 1111; </script>
+<script src="http://l-stat.livejournal.com/js/pagestats/DR_v4u3.js" type="text/javascript"></script>
+    </div></body>
+</html>

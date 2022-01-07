@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+<title>Mutt GPG Signature Tracing</title>
+</head>
+<body>
+<div>
+<h1><a href="http://www.mutt.org">Mutt</a> <a href=
+"http://www.gnupg.org">GPG</a> <a href="../sigtrace/index.html">Signature
+Tracing</a></h1>
+<p><a href="mutt-sigtrace.pl">mutt-sigtrace</a> is a wrapper for <a href=
+"../sigtrace/index.html">sigtrace</a> to display signature paths from you to the key
+which signed an email, automatically, in <a href=
+"http://www.mutt.org">mutt</a>. It adds the bolded part of the following when
+viewing a signed email:</p>
+<pre>
+[-- PGP output follows (current time: Thu Nov 30 15:04:55 2000) --]
+gpg: Signature made Mon Oct 23 13:55:35 2000 EDT using DSA key ID 621CC013
+gpg: Good signature from "Werner Koch &lt;wk@openit.de&gt;"
+gpg:                 aka "Werner Koch &lt;wk@gnupg.org&gt;"
+gpg:                 aka "Werner Koch &lt;werner.koch@guug.de&gt;"
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+gpg: Fingerprint: ECAF 7590 EB34 43B5 C7CF  3ACB 6C7E E1B8 621C C013
+<b>(cached 0E9FF879 to 621CC013)
+6 hop path: 0E9FF879 5AA5BCDF 31B70821 82B7D4BD ED9547ED 0C9857A5 621CC013
+0E9FF879 Darxus &lt;Darxus@ChaosReigns.com&gt;
+5AA5BCDF Michael J. Leone &lt;userdude@yahoo.com&gt;
+31B70821 David L. Coe &lt;david.coe@someotherplace.org&gt;
+82B7D4BD Joey Hess &lt;joey@kite.ml.org&gt;
+ED9547ED Wichert Akkerman &lt;wakkerma@wi.leidenuniv.nl&gt;
+0C9857A5 Werner Koch &lt;werner.koch@guug.de&gt;
+621CC013 Werner Koch &lt;wk@openit.de&gt;</b>
+[-- End of PGP output --]
+</pre>
+<hr />
+<p>To use it</p>
+<ol>
+<li>Make <a href="../sigtrace/index.html">sigtrace</a> work.</li>
+<li>Make <a href="http://www.gnupg.org">GPG</a> work with <a href=
+"http://www.mutt.org">mutt</a>.</li>
+<li>Tell your .muttrc to use mutt-sigtrace.</li>
+</ol>
+<hr />
+<p>Make <a href="../sigtrace/index.html">sigtrace</a> work. Put the following files in
+your home directory:</p>
+<ul>
+<li><a href="../sigtrace/sigtrace.pl">sigtrace.pl</a></li>
+<li><a href="http://panic.chaosreigns.com/pgp/signed.db.gz">signed.db.gz</a>
+(4.3mb)</li>
+<li><a href=
+"http://panic.chaosreigns.com/pgp/keynames.db.gz">keynames.db.gz</a> (3.7mb)
+(optional)</li>
+</ul>
+<p><a href="http://www.gzip.org">gunzip</a> the files ending in ".gz".</p>
+<p>Test it by doing:</p>
+<p><kbd>./sigtrace.pl 0E9FF879 621CC013</kbd></p>
+<hr />
+<p><a href="http://www.mutt.org/doc/PGP-Notes.txt">Make GPG work with
+mutt.</a></p>
+<hr />
+<p>Tell your .muttrc to use mutt-sigtrace.</p>
+<p>By now, you should have a file containing lines similar to the
+following:</p>
+<pre>
+set pgp_decode_command="gpg %?p?--passphrase-fd 0? --no-verbose --batch --output - %f"
+set pgp_verify_command="gpg --no-verbose --batch --output - --verify %s %f"
+</pre>
+This file is probably called .gpg.rc, located in your home directory, and
+loaded by "source ~/.gpg.rc" in your .muttrc.
+<p>Download <a href="mutt-sigtrace.pl">mutt-sigtrace.pl</a> to your home
+directory, and make it executable (chmod u+x mutt-sigtrace). Now modify the
+"set pgp_decode_command" and "set pgp_verify_command" lines by adding
+"~/mutt-sigtrace YourID " to the beginning of their values, like so:</p>
+<pre>
+set pgp_decode_command="<b>~/mutt-sigtrace.pl 0E9FF879</b> gpg %?p?--passphrase-fd 0? --no-verbose --batch --output - %f"
+set pgp_verify_command="<b>~/mutt-sigtrace.pl 0E9FF879</b> gpg --no-verbose --batch --output - --verify %s %f"
+</pre>
+You must replace my ID (<tt>0E9FF879</tt>) with your gpg key ID. They come from
+here:
+<pre>
+$ gpg --list-keys darxus@chaosreigns.com
+pub  1024D/<b>0E9FF879</b> 2000-09-05 Darxus &lt;Darxus@ChaosReigns.com&gt;
+sub  1024g/2EEAB976 2000-09-05
+</pre>
+<hr />
+<p>If you do not download keynames.db, it'll work, but it will only display the
+following parts:</p>
+<pre>
+(cached 0E9FF879 to 621CC013)
+6 hop path: 0E9FF879 5AA5BCDF 31B70821 82B7D4BD ED9547ED 0C9857A5 621CC013
+</pre>
+Without keynames.db, it will not list the names and email addresses
+corresponding to each ID.
+<hr />
+<p>If you would like to graph the relationships of all the keys in your path
+cache, email me. It would be rather easy for me to write something to let you
+do that.</p>
+<hr />
+<p><a href="../../cgi-bin/referercomment.cgi.html">Comment on this page.</a><br />
+<a href="../index.html">Return to the Code Index.</a><br />
+<a href="../../index.html">Return to Darxus' Home Page.</a><br />
+Wed Apr 24 15:45:15 EDT 2002</p>
+</div>
+</body>
+</html>

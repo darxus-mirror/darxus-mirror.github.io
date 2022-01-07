@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>MTX Policy Records</title>
+</head>
+<body>
+
+<h1>MTX Policy Records</h1>
+
+<p>
+MTX Policy records, which are optional, allow you to specify the extent to which your domain is participating in MTX, and therefore the extent to which an email from your domain without an MTX record should be penalized.
+</p>
+
+<p>
+If you don't have an MTX Policy record, it is treated as if it has a value of 127.0.0.0, meaning "Don't penalize IPs without MTX records any more than non-participating domains.", applied to the entire domain.
+</p>
+
+<p>
+MTX Policy records are DNS "A" records named in the form "policy.mtx.example.com", with a value as follows:
+</p>
+
+<p>
+Participation:
+</p>
+
+<table border="1">
+<tr><td colspan="3" align="right"></td><td>SA Score</td></tr>
+<tr><td>Not defined</td><td>None</td><td>Not participating, prefer no penalty.</td><td>0</td></tr>
+<tr><td>127.0.*.0</td><td>Neutral</td><td>Not participating / Don't penalize any more than non-participating domains.</td><td>0</td></tr>
+<tr><td>127.0.*.1</td><td>SoftFail</td><td>Mostly participating.  Subject to further scrutiny (greylisting).</td><td>1</td></tr>
+<tr><td>127.0.*.2</td><td>HardFail</td><td>Completely participating.  Reject.</td><td>100</td></tr>
+</table>
+
+<p>
+MTX Fail includes all results other than Pass (None, Neutral, SoftFail, and HardFail).  The goal is, with full participation, being able to reject all email without an MTX Pass, and ignore MTX Policy records.
+</p>
+<p>
+SoftFail means the IP is not believed to be a legitimate transmitting mail server, but it's not certain.
+</p>
+
+<p>
+Delegation to subdomains:
+</p>
+
+<table border="1">
+<tr><td>Not defined</td><td>Not Delegated</td><td></td></tr>
+<tr><td>127.0.0.*</td><td>Not Delegated</td><td>Participation level applies to this domain and all subdomains.<br></td></tr>
+<tr><td>127.0.1.*</td><td>Delegated to Subdomains</td><td>Participation level applies to this domain and any subdomains that do not have their own Policy record.  Use subdomain Policy records.</td></tr>
+</table>
+
+<p>
+So in bind DNS server syntax, the following would specify that any email from the domain chaosreigns.com or any subdomain without an MTX record should be rejected (HardFail):
+</p>
+
+<p>
+policy.mtx.chaosreigns.com. IN A 127.0.0.2
+</p>
+
+<h2>Implementation</h2>
+<p>
+When testing these records, ignore the second octet, as it might be used for something in the future.  
+</p>
+
+<p>
+Check the relevant MTX record first.  If it has a value of 127.*.*.1 or 127.*.*.0, skip the MTX Policy lookup.  An MTX record value of 127.*.*.0 is also a HardFail.
+</p>
+
+<p>
+If the MTX Policy record exists, but the value doesn't match anything defined above, treat it as undefined.
+</p>
+
+<p>
+For figuring out where to find the first Policy record, my implementation uses Mail::SpamAssassin::Util::RegistrarBoundaries::trim_domain, and so far I'm very happy with it.
+</p>
+
+<p>
+<a href="mtxp.big.png"><img src="mtxp.png" width="618" height="500" style="border-style:none; display: block; margin-left: auto; margin-right: auto;" alt="MTX + Policy flow chart"></a>
+</p>
+
+<div>
+<hr>
+MTX Policy record idea by <a href="http://www.fsdb.org/">Jonas Eckerman</a>.  Result names from <a href="http://www.openspf.org/">SPF</a>.
+<hr>
+<a href="../index.html">MTX Home.</a><br>
+<a href="../../contact/index.html">Contact.</a><br>
+Wed Feb 17 00:12:14 EST 2010
+<br />
+<a href="http://www.htmlhelp.com/cgi-bin/validate.cgi?url=referer">HTML validate this page.</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+<title>Boot Lacing</title>
+<link rel="StyleSheet" href="/dark.css" type="text/css" />
+<style type='text/css'>
+img { border-style: none; }
+</style>
+</head>
+<body>
+<div>
+<h1>Boot Lacing</h1>
+By Darxus@ChaosReigns.com, Mon Jul 19 22:58:21 EDT 1999
+<p>This document attempts to depict some neat ways of lacing boots. Ladder
+lacing (#1) is pretty common. #2 is something I came up w/ today. #3 is a
+combination of #1 &amp; #2 I haven't tried, but I thought would be fun to
+demonstrate combinations.</p>
+<p>These layouts are specifically for boots w/ 8 pairs of holes. The patterns
+can easily be extrapolated to whatever you want.</p>
+<p>1st row is at the toe<br />
+last row is at the top of the boot<br />
+outside = what you actually see<br />
+inside = what you'd see if you were in the boot</p>
+<pre>
+ 
+#1 ladder lacing:
+ 
+outside  inside
+
+  O--O   O  O
+         |   \
+  O--O   O  O|
+           / /
+  O--O   O |O
+        /  \
+  O--O  |O  O
+        \ \
+  O--O   O| O
+          /  \
+  O--O   O  O|
+           / /
+  O--O   O |O
+         | \
+ -O  O-  O  O
+ 
+
+#2 what I like
+
+outside  inside
+  
+  O  O   O--O
+   \/    
+   /\
+  O  O   O  O
+          \/
+          /\
+  O  O   O  O
+   \/
+   /\
+  O  O   O  O
+          \/
+          /\
+  O  O   O  O
+   \/   
+   /\
+  O  O   O  O
+          \/
+          /\
+ -O  O-  O  O
+ 
+ 
+  O  O   O  O
+ 
+ 
+#3 combination of #1 &amp; #2
+
+outside  inside
+
+  O--O    O  O
+          |   \
+          |   |
+  O--O    O  O|
+            / |
+            | /
+  O--O    O |O
+          | |
+          | \
+  O  O    O  O
+   \/   
+   /\   
+  O  O    O  O
+           \/
+           /\
+  O  O    O  O
+   \/   
+   /\   
+ -O  O-   O  O
+       
+       
+  O  O    O  O
+
+</pre>
+<p>Yes, I was bored.</p>
+<p>I'd show you how I tie my shoes too, but I think that'd be a bit much in
+ascii :)</p>
+<p>More lacing info at:</p>
+<ul>
+<li><a href="http://www.dehner.com/dehner/lace.html">Dehner Lace
+Instructions</a></li>
+</ul>
+<hr />
+<table>
+<tr>
+<td>From:</td>
+<td>loopster</td>
+</tr>
+<tr>
+<td>Date:</td>
+<td>Fri, 30 Jun 2000 08:57:21 US/Pacific</td>
+</tr>
+<tr>
+<td>Subject:</td>
+<td>bored lacing</td>
+</tr>
+</table>
+<p>i was looking at your site and thought i'd share with you the way i lace my
+boots. My boots stay tight and feel good (well to me they do.) I just square
+knot at the top and tuck the rest into the boot.</p>
+<p>Loopy Ladder Lacing:</p>
+<pre>
+outside  inside
+
+ O--O
+ O  O
+ |  |
+ O  O     O==O
+ |  |
+ O  O     O==O
+ |  |
+ O  O     O==O
+ |  |
+ O  O     O==O
+ |  |
+ O  O     O==O
+ |  |
+ O  O     O==O
+ |  |
+ O  O     O==O
+ |  |
+ O  O     O==O
+ |  |
+ O  O     O==O
+</pre>
+<hr />
+<table>
+<tr>
+<td>Date</td>
+<td>Tue, 14 Aug 2001 16:04:28 -0400 (EDT)</td>
+</tr>
+<tr>
+<td>From</td>
+<td>Marques Johansson &lt;displague@displague.com&gt;</td>
+</tr>
+<tr>
+<td>Subject</td>
+<td>lacing i got in italy with new shoes (not featured here)</td>
+</tr>
+</table>
+<pre>
+outside   inside
+-------   -------
+ o--o      o o
+            \ |
+ o--o      o o
+            \ |
+ o--o      o o
+            \ |
+ o--o      o o
+          |   |
+-o  o-     o o
+</pre>
+the one side is just looped straight out the end, while the other side of the
+lace does all the work... ofcourse the diagonals would go the other way on the
+other shoe.
+<p>i've included a helpful reference image :)</p>
+<p><a href="/pics/italian-lacing.jpg"><img src="/pics/tn_italian-lacing.jpg"
+alt="italian lacing" /></a></p>
+<hr />
+<table>
+<tr>
+<td>Date:</td>
+<td>Tue, 14 Aug 2001 16:55:51 -0400 (EDT)</td>
+</tr>
+<tr>
+<td>From:</td>
+<td>Marques Johansson &lt;displague@displague.com&gt;</td>
+</tr>
+<tr>
+<td>Subject:</td>
+<td>lacing a friend got in italy with new shoes (featured here)</td>
+</tr>
+</table>
+<p>notice the nice italian leather used in sneakers.. even italian nikes use
+this look and material.</p>
+<p>i think mine may have come this way - maybe not.. i still think my shoes are
+laced cooler.</p>
+<pre>
+outside   inside
+-------   -------
+ o--o      o o(a)
+            \
+ o--o      o o
+            \
+ o--o      o o   (does this shoe appear crooked on your terminal too?)
+            \
+ o--o      o o
+            \
+-o  o-  (b)o o
+</pre>
+<p>the other end of the (inner) lace connects a to b, running visible the whole
+way up.</p>
+<p>i've included --- yet another --- helpful reference image :)</p>
+<p><a href="/pics/italian-lacing2.jpg"><img src="/pics/tn_italian-lacing2.jpg"
+ alt="italian lacing" /></a></p>
+<hr />
+<a href="http://www.fieggen.com/shoelace/lacing.htm">Ian's Shoelace Site -
+Lacing Your Shoes</a> - fully graphical illustrations of even more lacing
+methods
+<hr />
+Tue Aug 23 10:21:21 EDT 2005
+<p>Yesterday I relaced my boots uncreatively.</p>
+<hr />
+<a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+<a href="/boots/">Darxus' Boots page</a><br />
+Mon Dec 22 15:01:46 EST 2003<br />
+<a href="http://validator.w3.org/check/referer">Valid HTML 4.01.</a>
+</div>
+<script type="text/javascript" src="/logstats.js"></script>
+</body>
+</html>

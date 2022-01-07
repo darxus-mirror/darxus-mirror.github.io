@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9" />
+   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="http://l-stat.livejournal.com/img/userinfo.ico?v=98.4">
+<link rel="icon" type="image/gif" href="http://l-stat.livejournal.com/img/userinfo.gif?v=98.4">
+<link rel='stylesheet' href='http://l-stat.livejournal.com/ad_base.css?v=1313682784' type='text/css' />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://darxus.livejournal.com/data/foaf" />
+<meta name="foaf:maker" content="foaf:mbox_sha1sum 107c1745aac3c319c0e1588eb400be77055f48e8" />
+<link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??lj_base.css,contextualhover.css,esn.css,widgets/calendar.css,lj_base-journal.css,share.css?v=1352926157" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??interstitial_banner_us.css?v=1352926157" /><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??ie.css?v=1352926157" /><![endif]-->
+
+            <script type="text/javascript">
+                Site = window.Site || {};
+                Site.ml_text = {"date.month.september.short":"Sep","date.day.thursday.short":"Thu","date.month.may.short":"May","date.month.march.short":"Mar","date.month.february.long":"February","date.month.january.long":"January","date.month.june.long":"June","date.day.friday.short":"Fri","date.month.october.long":"October","date.day.tuesday.short":"Tue","date.month.april.short":"Apr","date.month.december.short":"Dec","date.month.june.short":"Jun","date.format.short":"%M/%D/%Y","date.month.january.short":"Jan","date.day.monday.short":"Mon","date.month.october.short":"Oct","confirm.bubble.no":"No","date.month.august.short":"Aug","date.month.april.long":"April","date.month.march.long":"March","date.day.saturday.short":"Sat","date.month.july.short":"Jul","date.month.december.long":"December","date.format.offset":"0","entry.reference.label.reposted":"Reposted","date.month.august.long":"August","date.format.long":"%B %D, %Y","date.month.may.long":"May","date.day.wednesday.short":"Wed","date.day.sunday.short":"Sun","date.month.september.long":"September","date.month.february.short":"Feb","entry.reference.label.title":"Remove repost","confirm.bubble.yes":"Yes","date.month.november.short":"Nov","date.month.july.long":"July","date.month.november.long":"November"};
+                Site.page = {"calendar":{"month":{"short":["date.month.january.short","date.month.february.short","date.month.march.short","date.month.april.short","date.month.may.short","date.month.june.short","date.month.july.short","date.month.august.short","date.month.september.short","date.month.october.short","date.month.november.short","date.month.december.short"],"long":["date.month.january.long","date.month.february.long","date.month.march.long","date.month.april.long","date.month.may.long","date.month.june.long","date.month.july.long","date.month.august.long","date.month.september.long","date.month.october.long","date.month.november.long","date.month.december.long"]},"week":["date.day.sunday.short","date.day.monday.short","date.day.tuesday.short","date.day.wednesday.short","date.day.thursday.short","date.day.friday.short","date.day.saturday.short"]},"D":{}};
+                (function(){
+                    var p = {"remote_is_identity":null,"remote_is_maintainer":0,"auth_token":"sessionless:1353024000:/__api/::5ffddadad8fc626cdb7a087505a890c4716c2a38","locale":"en_US","remoteUser":null,"remote_is_sup":0,"remoteJournalBase":null,"statprefix":"http://l-stat.livejournal.com","ctx_popup":1,"siteroot":"http://www.livejournal.com","media_embed_enabled":1,"inbox_update_poll":0,"rpc":{"public":["sitemessage.get_message","comment.get_thread"]},"v":1352926157,"has_remote":0,"currentEntryRecommendations":0,"remoteLocale":"en_US","server_time":1353026434,"picsUploadDomain":"up.pics.livejournal.com","remote_is_suspended":0,"imgprefix":"http://l-stat.livejournal.com/img","esn_async":1,"remote_can_track_threads":null,"currentJournal":"darxus","pics_production":"","currentEntry":"http://darxus.livejournal.com/323251.html","currentJournalBase":"http://darxus.livejournal.com"}, i;
+                    for (i in p) Site[i] = p[i];
+                })();
+                Site.current_journal = {"url_profile":"http://darxus.livejournal.com/profile","url_journal":"http://darxus.livejournal.com","is_identity":"","userid":874250,"is_shared":"","display_name":"darxus","is_comm":"","username":"darxus","is_syndicated":"","userpic_w":100,"userpic_h":100,"can_receive_vgifts":1,"url_allpics":"http://www.livejournal.com/allpics.bml?user=darxus","is_person":"1","url_message":"http://www.livejournal.com/inbox/compose.bml?user=darxus","url_userpic":"http://l-userpic.livejournal.com/117753844/874250","display_username":"darxus"};
+                Site.version = '98.4';
+           </script>
+        <script type="text/javascript" src="http://l-stat.livejournal.com/js/??.ljlib.js?v=1352926157"></script>
+<script type="text/javascript" src="http://l-stat.livejournal.com/js/??jquery/jquery.lj.inlineCalendar.js,jquery/jquery.lj.calendar.js,jquery/jquery.mask.js,jquery/jquery.lj.repostbutton.js,s2.js,jquery/jquery.lj.confirmbubble.js,jquery/jquery.lj.ljcut.js,fb-select-image.js,quickreply.js,md5.js,thread_expander.js,thread_expander.ex.js,commentmanage.js,share.js,ie9pinned.js,jquery/jquery.vkloader.js,core/console.js,lj.api.js?v=1352926157"></script>
+<script type="text/javascript">
+LJShare.init({"ml":{"close":"Close","title":"Share"},"services":{"stumbleupon":{"bindLink":"http://www.livejournal.com/redirect/SHARING_stumbleupon?url=http%3A%2F%2Fwww.stumbleupon.com%2Fsubmit%3Furl%3D{url}","title":"StumbleUpon"},"moimir":{"bindLink":"http://www.livejournal.com/redirect/SHARING_moimir?url=http%3A%2F%2Fconnect.mail.ru%2Fshare%3Furl%3D{url}","title":"Moi mir"},"twitter":{"bindLink":"http://www.livejournal.com/redirect/SHARING_twitter?url=http%3A%2F%2Ftwitter.com%2Fshare%3Furl%3D{url}%26text%3D{title}","title":"Twitter"},"digg":{"bindLink":"http://www.livejournal.com/redirect/SHARING_digg?url=http%3A%2F%2Fdigg.com%2Fsubmit%3Furl%3D{url}","title":"Digg"},"email":{"bindLink":"http://www.livejournal.com/redirect/SHARING_email?url=http%3A%2F%2Fapi.addthis.com%2Foexchange%2F0.8%2Fforward%2Femail%2Foffer%3Fusername%3Dinternal%26url%3D{url}%26title%3D{title}","title":"E-mail"},"livejournal":{"bindLink":"http://www.livejournal.com/redirect/SHARING_livejournal?url=http%3A%2F%2Fwww.livejournal.com%2Fupdate.bml%3Frepost_type%3Dc%26repost%3D{url}","title":"LiveJournal"},"vkontakte":{"bindLink":"http://www.livejournal.com/redirect/SHARING_vkontakte?url=http%3A%2F%2Fvkontakte.ru%2Fshare.php%3Furl%3D{url}","title":"VKontakte"},"facebook":{"bindLink":"http://www.livejournal.com/redirect/SHARING_facebook?url=http%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3D{url}","title":"Facebook"},"odnoklassniki":{"bindLink":"http://www.livejournal.com/redirect/SHARING_odnoklassniki?url=http%3A%2F%2Fwww.odnoklassniki.ru%2Fdk%3Fst.cmd%3DaddShare%26st.s%3D1%26st._surl%3D{url}","title":"Odnoklassniki"},"tumblr":{"bindLink":"http://www.livejournal.com/redirect/SHARING_tumblr?url=http%3A%2F%2Fwww.tumblr.com%2Fshare%3Fv%3D3%26u%3D{url}","title":"Tumblr"}},"links":["livejournal","facebook","twitter","digg","tumblr","stumbleupon","email"]})</script>
+<script type="text/javascript">if (jQuery.VK) { jQuery.VK.init({apiId: 2244371, onlyWidgets: true})} </script> <script type="text/javascript" src="http://l-stat.livejournal.com/tmpl/??Widgets/bubble.tmpl,CleanHtml/reposted.tmpl,CleanHtml/Repost.tmpl,CleanHtml/PaidRepost.tmpl,Widgets/popupcontent.tmpl?v=1351574982&tm=1503362;uselang=en_LJ"></script>
+<script type="text/javascript" src="http://l-stat.livejournal.com/tmpl/??Widgets/contextualhover.jqtmpl?v=1343758569&tm=1503362;uselang=en_LJ"></script>
+<script>
+// don't crawl this.  read http://www.livejournal.com/developer/exporting.bml
+var LJ_cmtinfo = {"1403827":{"parent":null,"u":"cathijosephine","rc":[],"has_link":0,"depth":0,"full":1,"username":"cathijosephine"},"form_auth":"c0%3A1353024000%3A2434%3A86400%3A9kuvfe0VV4-0-%3A66c4b152784ac28d6c14ae09b328cb94","remote":null,"canAdmin":0,"journal":"darxus"}
+</script><meta property="og:title" name="title" content="Climbed, got shoes, elbow is improving" />
+<meta property="og:description" name="description" content="Climbed on 2012-10-30. Ordered shoes at the shoe demo on 2012-11-06 (but didn&#39;t climb. Climbed today. I ordered La Sportiva Tarantulace size 44 , for $68. The shoe demo seemed like a great way to buy climbing shoes. They had them when I went in today. It&#39;s great to finally have all my own gear …" />
+<meta property="og:image" content="http://l-userpic.livejournal.com/117753844/874250 " />
+<link rel="stylesheet" href="http://darxus.livejournal.com/res/18152266/stylesheet?1351575311" type="text/css" />
+<title>Darxus - Climbed, got shoes, elbow is improving</title>
+
+</head>
+
+<body class="page_entry">
+
+<div id="shadowhack1">
+<div id="shadowhack2">
+
+<div id="pagecontainer">
+
+<div id="title">
+<h1>Darxus</h1><div id="journal_subtitle">Climbed, got shoes, elbow is improving</div>
+</div>
+
+<div id="paraphernalia">
+<div class="pbox" id="journalinfo"><h2>Darxus</h2><div class="pboxcontent">
+<div id="journalinfouserpic"><img src="http://l-userpic.livejournal.com/117753844/874250" alt="June 2012" height="100" width="100"  /></div>
+<div class="journallinkbar">     <a href="http://www.livejournal.com/todo/?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s to-do list" title="darxus&#39;s to-do list" src="http://l-stat.livejournal.com/img/btn_todo.gif"  /></a>  <a href="http://www.livejournal.com/tools/memories.bml?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s memories" title="darxus&#39;s memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="http://www.livejournal.com/tools/tellafriend.bml?user=darxus"><img border='0' width="24" height="24" alt="Tell a friend about darxus" title="Tell a friend about darxus" src="http://l-stat.livejournal.com/img/btn_tellfriend.gif"  /></a>  <a href="http://www.livejournal.com/tools/search.bml?user=darxus"><img border='0' width="24" height="24" alt="Search darxus" title="Search darxus" src="http://l-stat.livejournal.com/img/btn_search.gif"  /></a>  <a href="http://www.livejournal.com/friends/nudge.bml?user=darxus"><img border='0' width="24" height="24" alt="Nudge darxus" title="Nudge darxus" src="http://l-stat.livejournal.com/img/btn_nudge.gif"  /></a> </div></div></div>
+<div class="pbox" id="viewsel"><h2>View</h2><div class="pboxcontent">
+<ul>
+<li><a href="http://darxus.livejournal.com/">Recent Entries</a></li>
+<li><a href="http://darxus.livejournal.com/calendar">Archive</a></li>
+<li><a href="http://darxus.livejournal.com/friends">Friends</a></li>
+<li><a href="http://darxus.livejournal.com/profile">User Info</a></li>
+</ul>
+</div></div>
+
+</div>
+
+<div id="main">
+<div class="entry"><div class="entryheader">
+<h3 class="entrysubject">Climbed, got shoes, elbow is improving</h3><div class="entryposter"><span  class="ljuser  i-ljuser     "  lj:user="darxus"><a href="http://darxus.livejournal.com/profile" ><img width="16" height="16"  class="i-ljuser-userhead"  src="http://l-stat.livejournal.com/img/userinfo.gif?v=98.4" /></a><a href="http://darxus.livejournal.com/" class="i-ljuser-username"   ><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate">11/14/12</span>
+    <span class="entrytimestamptime">11:55 pm</span></div><div class="entrylinkbarpre"><a href="http://darxus.livejournal.com/322878.html"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>        <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=323251"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>    <a href="#"><img border='0' width="24" height="24" alt="Share" title="Share" src="http://l-stat.livejournal.com/img/btn_sharethis.gif?v=2"  /></a> <script type="text/javascript">LJShare.link({"url":"http://darxus.livejournal.com/323251.html","title":"Climbed, got shoes, elbow is improving"});</script>       </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/117753844/874250" alt="June 2012" height="100" width="100"  /></div></div>
+
+<div class="entrycontent"><a name="cutid1"></a>Climbed on 2012-10-30.  Ordered shoes at the shoe demo on 2012-11-06 (but didn't climb. Climbed today.<br /><br />I ordered <a href="http://www.sportiva.com/products/footwear/climbingapproach/tarantulace">La Sportiva Tarantulace size 44</a>, for $68.  The shoe demo seemed like a great way to buy climbing shoes.  They had them when I went in today.  It's great to finally have all my own gear for indoor climbing.  My feet are definitely going to take some getting used to these shoes without socks.<br /><br />My left elbow definitely seems to have some mild triceps tendonosis, which is why I haven't climbed as much lately.  <a href="http://www.t-nation.com/free_online_article/sports_body_training_performance/eccentric_exercise_a_solution_to_tendonitis">This article on eccentric exercises for tendonosis seems useful</a>.  It basically suggests doing negative reps.  So I've been randomly doing a couple of those just providing resistance with my other hand as I've thought of it, trying to smooth out the tendon.  Today I did some more bench pressing, starting out with 5 pound dumbbells, as I did a week ago.  That went <i>much</i> better.  Increased a bit.  Talked to another guy in the weight room who suggested <a href="http://www.exrx.net/WeightExercises/Triceps/DBTriExt.html">French presses</a>.  That sounded good, particularly since I had heard that bench presses aren't particularly healthy, so I did some of those.  My elbow is still far from great, but I'm really excited about the improvement.<br /><br />I'm starting to think <span  class="ljuser  i-ljuser     "  lj:user="cathijosephine"><a href="http://cathijosephine.livejournal.com/profile" ><img width="16" height="16"  class="i-ljuser-userhead"  src="http://l-stat.livejournal.com/img/userinfo.gif?v=98.4" /></a><a href="http://cathijosephine.livejournal.com/" class="i-ljuser-username"   ><b>cathijosephine</b></a></span> must be right, that I must have caused the tendonosis while climbing, even though it's not a muscle you use a lot while climbing. <br /><a name='cutid1-end'></a></div>
+
+<div class="entryfooter">
+
+<ul class="entrymeta">
+<li><span class="entrymetacaption">Tags:</span> <div class='ljtags'><a rel='tag' href='http://darxus.livejournal.com/tag/climbing'>climbing</a></div></li>
+</ul>
+
+<div class="entrylinkbarpost"><a href="http://darxus.livejournal.com/322878.html"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>        <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=323251"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>    <a href="#"><img border='0' width="24" height="24" alt="Share" title="Share" src="http://l-stat.livejournal.com/img/btn_sharethis.gif?v=2"  /></a> <script type="text/javascript">LJShare.link({"url":"http://darxus.livejournal.com/323251.html","title":"Climbed, got shoes, elbow is improving"});</script>       </div>
+<ul class="entrycmdlinks"><li><a href="http://darxus.livejournal.com/323251.html">1 comment</a></li><li><a href="http://darxus.livejournal.com/323251.html?mode=reply" rel="nofollow">Leave a comment</a></li></ul>
+<div  id="ljqrttopcomment" style="display: none;"></div>
+
+</div>
+</div><span id="comments"></span><ul class="comments"><li><div class="entry" id="ljcmt1403827"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span  class="ljuser  i-ljuser     "  lj:user="cathijosephine"><a href="http://cathijosephine.livejournal.com/profile" ><img width="16" height="16"  class="i-ljuser-userhead"  src="http://l-stat.livejournal.com/img/userinfo.gif?v=98.4" /></a><a href="http://cathijosephine.livejournal.com/" class="i-ljuser-username"   ><b>cathijosephine</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="13 hours after journal entry">11/15/12 06:26 pm (UTC)</span></span></div><div class="entrylinkbarpre">                </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/104826313/3837978" alt="" height="100" width="94"  /></div></div>
+
+<div class="entrycontent">I'm glad lifting went better!  <br /><br />Also, you're still very new at this, so it's not hard to imagine you could damage a tendon not normally used by climbers.  You're not a normal climber yet.  I'm glad you continue to climb.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">                </div>
+<ul class="entrycmdlinks">
+<li>
+<a href="http://darxus.livejournal.com/323251.html?replyto=1403827" rel="nofollow">Reply</a></li><li><a href="http://darxus.livejournal.com/323251.html?thread=1403827#t1403827">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1403827" style="display: none;"></div>
+
+</div>
+</div></li></ul>
+</div>
+
+
+
+<div id="server_sig">Powered by <a href="http://www.livejournal.com/">LiveJournal.com</a></div></div>
+
+</div>
+</div>
+
+<script type="text/javascript">LiveJournal.injectScript('http://apis.google.com/js/plusone.js',{text:"{lang: 'en'}"});</script><div id="fb-root"></div>
+        <script type="text/javascript">
+          window.fbAsyncInit = function() {
+            FB.init({appId: '214181831945836', xfbml: true});
+          };
+
+          LiveJournal.injectScript(document.location.protocol + '//connect.facebook.net/en_US/all.js', null, document.getElementById('fb-root'))
+        </script>
+    <script type="text/javascript">LiveJournal.injectScript('http://surfingbird.ru/share/share.min.js');</script> <script type="text/javascript">LiveJournal.injectScript('http://platform.twitter.com/widgets.js');</script><div id='hello-world' style='text-align: left; font-size:0; line-height:0; height:0; overflow:hidden;'>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24823174-1']);
+  _gaq.push(['_setDomainName', '.livejournal.com']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackPageLoadTime']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- tns-counter.ru --> 
+<script language="JavaScript" type="text/javascript"> 
+var img = new Image();
+img.src = 'http://www.tns-counter.ru/V13a***R>' + document.referrer.replace(/*/g,'%2a') + '*sup_ru/ru/UTF-8/tmsec=lj_noncyr/' + Math.round(Math.random() * 1000000000);
+</script> 
+<noscript> 
+<img src="http://www.tns-counter.ru/V13a****sup_ru/ru/UTF-8/tmsec=lj_noncyr/" width="1" height="1" alt="">
+</noscript>
+<!--/ tns-counter.ru -->
+<!-- Begin comScore Tag -->
+<script>
+    document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+</script>
+
+<script>
+  COMSCORE.beacon({
+    c1:2,
+    c2:7602110,
+    c3:"",
+    c4:"",
+    c5:"",
+    c6:"",
+    c15:""
+  });
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=7602110&c3=&c4=&c5=&c6=&c15=&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-2945K0QbJw0BA"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-2945K0QbJw0BA.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+<!-- LiveJournal COUNTER -->
+<img src="http://xc3.services.livejournal.com/ljcounter?d=srv:bil1-ws19,r:0,j:874250,uri:%22%2F323251.html%22,vig:0,extra:AA1XCgANVwoABO6z" alt="" />
+<!-- /COUNTER -->
+</div></body>
+</html>

@@ -1,0 +1,65 @@
+$ ls -d linux-*
+linux-2.6.12.5
+$ ./dlkern -p .
+srcpath: .
+GnuPG.pm loaded.
+Requested:  None.  Downloading stable.
+Downloader: ncftpget.
+
+Attempting to retrieve version numbers via http://www.kernel.org/kdist/finger_banner
+   2.6:   2.6.14.2 ftp://ftp.kernel.org/pub/linux/kernel/v2.6/linux-2.6.14.2.tar.gz
+   2.4:     2.4.32 ftp://ftp.kernel.org/pub/linux/kernel/v2.4/linux-2.4.32.tar.gz
+   2.2:     2.2.26 ftp://ftp.kernel.org/pub/linux/kernel/v2.2/linux-2.2.26.tar.gz
+   2.0:     2.0.40 ftp://ftp.kernel.org/pub/linux/kernel/v2.0/linux-2.0.40.tar.gz
+Found directories containing versions:
+2.6.12.5
+Path from 2.6.12.5 to 2.6.14.2: -R patch-2.6.12.5 patch-2.6.13 patch-2.6.14 patch-2.6.14.2
+Shortest path to 2.6.14.2 is from 2.6.12.5:  -R patch-2.6.12.5 patch-2.6.13 patch-2.6.14 patch-2.6.14.2
+files to download: 
+ftp://ftp.kernel.org/pub/linux/kernel/v2.6/patch-2.6.12.5.gz
+ftp://ftp.kernel.org/pub/linux/kernel/v2.6/patch-2.6.13.gz
+ftp://ftp.kernel.org/pub/linux/kernel/v2.6/patch-2.6.14.gz
+ftp://ftp.kernel.org/pub/linux/kernel/v2.6/patch-2.6.14.2.gz
+
+Downloading kernel by calling 'ncftpget ftp://ftp.kernel.org/pub/linux/kernel/v2.6/patch-2.6.12.5.gz'
+Downloading signature by calling 'ncftpget ftp://ftp.kernel.org/pub/linux/kernel/v2.6/patch-2.6.12.5.gz.sign'
+Verifying file patch-2.6.12.5.gz with signature patch-2.6.12.5.gz.sign:
+Singature passed verification.
+Singature timestamp: Sun Aug 14 20:50:20 2005
+Trust level for this signature is: UNDEFINED
+
+Downloading kernel by calling 'ncftpget ftp://ftp.kernel.org/pub/linux/kernel/v2.6/patch-2.6.13.gz'
+Downloading signature by calling 'ncftpget ftp://ftp.kernel.org/pub/linux/kernel/v2.6/patch-2.6.13.gz.sign'
+Verifying file patch-2.6.13.gz with signature patch-2.6.13.gz.sign:
+Singature passed verification.
+Singature timestamp: Sun Aug 28 20:05:36 2005
+Trust level for this signature is: UNDEFINED
+
+Downloading kernel by calling 'ncftpget ftp://ftp.kernel.org/pub/linux/kernel/v2.6/patch-2.6.14.gz'
+Downloading signature by calling 'ncftpget ftp://ftp.kernel.org/pub/linux/kernel/v2.6/patch-2.6.14.gz.sign'
+Verifying file patch-2.6.14.gz with signature patch-2.6.14.gz.sign:
+Singature passed verification.
+Singature timestamp: Thu Oct 27 21:20:06 2005
+Trust level for this signature is: UNDEFINED
+
+Downloading kernel by calling 'ncftpget ftp://ftp.kernel.org/pub/linux/kernel/v2.6/patch-2.6.14.2.gz'
+Downloading signature by calling 'ncftpget ftp://ftp.kernel.org/pub/linux/kernel/v2.6/patch-2.6.14.2.gz.sign'
+Verifying file patch-2.6.14.2.gz with signature patch-2.6.14.2.gz.sign:
+Singature passed verification.
+Singature timestamp: Fri Nov 11 01:23:27 2005
+Trust level for this signature is: UNDEFINED
+
+
+Testing patch -R patch-2.6.12.5
+Test passed (52 files), applying patch -R patch-2.6.12.5
+Patch -R patch-2.6.12.5 applied cleanly to 52 files.
+Testing patch patch-2.6.13
+Test passed (5184 files), applying patch patch-2.6.13
+Patch patch-2.6.13 applied cleanly to 5184 files.
+Testing patch patch-2.6.14
+Test passed (5274 files), applying patch patch-2.6.14
+Patch patch-2.6.14 applied cleanly to 5274 files.
+Testing patch patch-2.6.14.2
+Test passed (20 files), applying patch patch-2.6.14.2
+Patch patch-2.6.14.2 applied cleanly to 20 files.
+Upgrade successful.

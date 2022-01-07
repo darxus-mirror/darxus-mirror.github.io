@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head><title>IP Reputation</title></head>
+<body>
+
+<div style="float: right; box-shadow: 3px 3px 8px #000; -moz-box-shadow: 3px 3px 8px #000; margin-left: 10px; margin-bottom: 10px; font-size: 50%">
+<div style="float: right; background-color: #000; color: #FFF; padding: 4px">
+200.165.162.110<br />
+187.45.193.174<br />
+80.95.70.173<br />
+70.166.17.109<br />
+66.207.161.158<br />
+66.207.161.157<br />
+66.207.161.156<br />
+66.207.161.155<br />
+62.193.234.9<br />
+213.186.38.38<br />
+93.157.47.1<br />
+89.215.98.86<br />
+87.244.217.116<br />
+87.213.66.191<br />
+87.106.10.20<br />
+82.140.81.3<br />
+80.65.16.71<br />
+74.53.39.250<br />
+74.50.95.10<br />
+74.205.124.9
+</div>
+<div style="float: right; background-color: #FFF; color: #000; padding: 4px">
+69.55.236.96<br />
+91.189.90.139<br />
+209.234.229.51<br />
+199.201.145.165<br />
+91.189.94.204<br />
+82.195.75.100<br />
+208.93.0.128<br />
+208.80.57.240<br />
+74.125.82.51<br />
+74.125.82.173<br />
+72.172.89.42<br />
+66.220.144.154<br />
+66.220.144.140<br />
+66.220.144.139<br />
+66.211.161.26<br />
+66.211.161.25<br />
+62.180.227.30<br />
+209.85.214.173<br />
+209.85.210.173<br />
+209.46.25.134
+</div>
+</div>
+
+<h1>IP Reputation</h1>
+<p>
+This is an automated, free, public email IP reputation system.  
+For people contributing data, the <a href="../iprep.html#results">results</a> are already better than <a href="http://ruleqa.spamassassin.org/">anything else</a> used with spamassassin.  Now we just need more data to make it more useful for everybody else.
+</p>
+
+<p>
+The primary goal is a whitelist.  Other data is provided as a consequence.
+</p>
+
+<p>
+It is <a href="../iprep.html#rules">usable</a> and fully automated since 2011-03-31.
+</p>
+
+<p>
+The data is the actual percentage of email from each IP which is ham (normalized like SpamAssassin's <a href="http://wiki.apache.org/spamassassin/HitFrequencies#The_S.2BAC8-O_Ratio">S/O score</a>) and a count of the total emails from that IP (as a logarithm).  
+</p>
+<p>
+<a href="iprep.txt">Data provided</a> (updated daily).<br />
+<a href="bind_zone.txt">Bind zone file (DNS format)</a> (intended to be replaced by rsync and a SpamAssassin plugin).
+</p>
+
+<p>The above two data files are released as public domain.</p>
+
+<h2>Reporting Script</h2>
+
+<p>
+<a href="dl/iprep.pl">iprep.pl</a>
+</p>
+
+<p>
+Run as:
+</p><p>
+
+<tt>
+./iprep.pl ham:dir:~/mail/ham spam:dir:~/mail/spam/
+</tt>
+</p><p>
+
+Arguments are the same "targets" used by SpamAssassin's mass-check, mail folders containing email that has been hand verified to be entirely ham or spam.
+</p><p>
+
+<tt>
+&lt;class&gt;:&lt;format&gt;:&lt;location&gt;<br />
+&lt;class&gt;       is "spam" or "ham"<br />
+&lt;format&gt;      is "dir" (maildir), "file", "mbx", "mbox", or "detect"<br />
+&lt;location&gt;    is a file or directory name.  globbing of ~ and * is supported
+</tt>
+</p><p>
+
+Config file ~/.ipreprc:
+</p><p>
+
+<tt>
+$trusted_networks = '&lt;space delimited list of trusted hosts&gt;';<br />
+$user = 'username';<br />
+$pass = 'password';
+</tt>
+</p><p>
+$trusted_networks is very important, as it prevents you from reporting the IP address of your trusted relays instead of the IP actually sending the email.  Include the IPs (or CIDRs) from both trusted_networks and internal_networks SpamAssassin values, documented here:
+<a href="http://spamassassin.apache.org/full/3.3.x/doc/Mail_SpamAssassin_Conf.html#network_test_options">network test options</a>, 
+<a href="http://wiki.apache.org/spamassassin/TrustPath">trust path</a>.<br />
+It's pretty normal for this to be empty.  
+</p><p>
+
+Please run as a daily cron job.
+</p>
+
+<p>
+Another option is to feed the email through STDIN with the --live-ham or --live-spam arguments, and later upload the data with the --upload argument (probably from cron):
+</p>
+<p>
+<tt>
+cat ham.txt | ./iprep.pl --live-ham<br />
+./iprep.pl --upload
+</tt>
+</p>
+
+<h2>Account</h2>
+<p>
+<a href="mailto:darxus@chaosreigns.com">Email me</a> for an account to allow you to upload.  Please email me from a non-freemail account.  Major examples of freemail accounts, which I do not want you to email me from, are gmail.com, yahoo.com, and hotmail.com.  SpamAssassin has a more complete list of <a href="http://svn.apache.org/repos/asf/spamassassin/trunk/rules/20_freemail_domains.cf">freemail providers</a>.  This is just an attempt to make it slightly more difficult for spammers to send me bad data.  
+</p>
+<p>
+Please let me know what username you'd like, so I don't have to guess.  Please mention "iprep" in the subject.  And I'd be curious to hear how you found out about this project.
+</p>
+
+<h2>DNS White / Black list</h2>
+<p>While I don't want to use DNS to provide the data long term, I am doing it now for testing.</p>
+
+
+<h3 id="rules">SpamAssassin Rules</h3>
+
+<pre>ifplugin Mail::SpamAssassin::Plugin::DNSEval
+header   __RCVD_IN_IPREPDNS     eval:check_rbl('iprep-firsttrusted', 'iprep.chaosreigns.com.')
+tflags   __RCVD_IN_IPREPDNS     nice net
+
+header   RCVD_IN_IPREPDNS_100   eval:check_rbl_sub('iprep-firsttrusted', '^127\.\d+\.\d+\.100$')
+describe RCVD_IN_IPREPDNS_100   Sender listed at http://www.chaosreigns.com/iprep/, 100% ham
+tflags   RCVD_IN_IPREPDNS_100   nice net
+
+header   RCVD_IN_IPREPDNS_50    eval:check_rbl_sub('iprep-firsttrusted', '^127\.\d+\.\d+\.50$')
+describe RCVD_IN_IPREPDNS_50    Sender listed at http://www.chaosreigns.com/iprep/, 50% ham
+tflags   RCVD_IN_IPREPDNS_50    nice net
+
+header   RCVD_IN_IPREPDNS_0     eval:check_rbl_sub('iprep-firsttrusted', '^127\.\d+\.\d+\.0$')
+describe RCVD_IN_IPREPDNS_0     Sender listed at http://www.chaosreigns.com/iprep/, 0% ham
+tflags   RCVD_IN_IPREPDNS_0     net
+
+meta     RCVD_NOT_IN_IPREPDNS   ( ! RCVD_IN_IPREPDNS_100 &amp;&amp; ! RCVD_IN_IPREPDNS_50 &amp;&amp; ! RCVD_IN_IPREPDNS_0 &amp;&amp; ! NO_RELAYS &amp;&amp; ! ALL_TRUSTED )
+describe RCVD_NOT_IN_IPREPDNS   Sender not listed at http://www.chaosreigns.com/iprep/
+tflags   RCVD_NOT_IN_IPREPDNS   net
+
+score    RCVD_IN_IPREPDNS_100   -0.1
+score    RCVD_IN_IPREPDNS_50    -0.0001
+score    RCVD_IN_IPREPDNS_0     0.1
+score    RCVD_NOT_IN_IPREPDNS   0.0001
+endif
+</pre>
+
+<p>The zone is iprep.chaosreigns.com, with the typical reversed IP address lookup, and 127.0.0.&lt;type&gt; values.  The values are 0, 50, and 100.  0 means 0% of the mail from the IP has been ham, 100 means it was 100%, and 50 means anything in the middle.  Only 0.04% of the data is between 0% and 100%, which is why I'm not currently providing more ranges.  So to look up 74.125.82.51, do:</p>
+
+<p>
+<tt>
+$ host 51.82.125.74.iprep.chaosreigns.com<br />
+51.82.125.74.iprep.chaosreigns.com has address 127.0.40.<b>50</b>
+</tt>
+</p>
+
+<h2 id="results">Results</h2>
+<p>
+Training on 400 of my emails, then testing on 100 of my own emails (not used in testing):<br />
+RCVD_IN_IPREPDNS_100 hit 79.3% of ham and no spam.<br />
+RCVD_IN_IPREPDNS_0 hit 27.8% spam and no ham.  
+
+</p><p>
+Those are crazy good numbers alone.
+
+</p><p>
+After training on 170,000 emails from myself and one other person, testing
+10,000 of our emails:<br />
+RCVD_IN_IPREPDNS_100 hit 94.1% of ham, and 0.010%<br />
+RCVD_IN_IPREPDNS_0 hit 64% of spam and no ham.  
+
+</p><p>
+Also crazy good numbers.
+
+</p><p>
+So for people contributing data, the results are better than
+anything else available for spamassassin.  But for it to be useful for people
+not contributing data, we need more data.
+</p>
+
+
+<h2>Uploaded Data</h2>
+
+<p>The actual data you upload looks like this, just a timestamp and IP address from each email:</p>
+
+<p>
+<tt>
+$ head ~/iprep/iprep-spam-darxus.log<br />
+1298981048 77.55.116.13<br />
+1299202198 208.89.10.45<br />
+1299245987 120.138.17.204<br />
+1299246951 120.138.17.204<br />
+1299792485 208.109.80.73<br />
+1299880708 66.207.161.156<br />
+1299934739 182.99.187.27<br />
+1299953420 74.117.209.132<br />
+1300488351 64.120.223.237<br />
+1300494388 64.120.223.238
+</tt>
+</p>
+
+<h2>Plans</h2>
+<p>
+I'm planning to provide the data only via rsync, because I think this will reduce bandwidth loads.  I'll create a SpamAssassin plugin to retrieve the data directly and create the SpamAssassin tests for it.
+</p>
+
+<h2>IPv6</h2>
+<p>
+IPv6 is supported.  IPs are aggregated to /48 blocks.  So all IPs in 1234:5678:9012:* are lumped together.  It is entirely possible this will change.
+</p>
+
+<h2>Mutt (mail reader) colorization</h2>
+<p>
+The mail reader I use is mutt.  In my ~/.muttrc I have the following, to easily see what hasn't been flagged as ham by this data:
+</p>
+
+<pre>color index     yellow     default   ~hX-Spam-Status:.*RCVD_NOT_IN_IPREPDNS
+color index     yellow     default   ~hX-Spam-Status:.*RCVD_IN_IPREPDNS_0
+</pre>
+
+<h2>Google's white paper on reputation systems</h2>
+<p>
+Google presented a <a href="http://ceas.cc/2006/19.pdf">white paper on their email reputation system</a> at <a href="http://ceas.cc/2006/">CEAS 2006</a>.
+</p>
+
+<hr />
+<p>
+
+
+
+"Seems like this could all be more useful if there was a good way to
+automatically report addresses that sent non-spam." <br />
+- Darxus, November 2006, discussing dnswl.org.  This sort of
+automation is still not used by dnswl.org, and a substantial part of my
+reason for creating this project.  <br />
+I have been involved with DNSWL since then.
+I have provided a DNSWL DNS mirror since March 2007.
+</p>
+<hr />
+<p>
+Mon Feb 27 16:00:54 EST 2012
+<br />
+<a href="../contact/index.html">Contact Darxus</a>
+</p>
+
+</body></html>

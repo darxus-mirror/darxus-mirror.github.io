@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head></head>
+<body>
+
+<p>
+This wizard, given a mail server IP address, will generate <a href="../index.html">MTX</a> DNS records in BIND server syntax, and check the condition of existing MTX records.
+</p>
+
+<hr />
+<p>
+<form action="http://www.chaosreigns.com/cgi-bin/mtx/wizard.cgi">
+IP address:
+<input name="ip" value="" /><br />
+
+Does this IP address send legitimate email?
+<select name="passfail">
+<option value="Pass">Yes.</option>
+<option value="Fail">No.</option>
+</select><br />
+
+What would you like to happen to email sent from IPs in this domain which do not have MTX records (optional)?
+<select name="policy">
+<option value="Neutral">Neutral</option>
+<option value="SoftFail" selected="selected">SoftFail</option>
+<option value="HardFail">HardFail</option>
+</select><br />
+
+
+<input type="submit" />
+</form>
+</p>
+<hr />
+
+<p>
+Example IPs that have MTX records:  <br />
+IPv4: 64.71.152.40<br />
+IPv6: 2001:470:1f05:1b8a::1<br />
+</p>
+
+<hr />
+
+<p><a href="../index.html">Return to MTX.</a></p>
+</body></html>

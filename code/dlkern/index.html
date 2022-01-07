@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+
+  <title>dlkern</title>
+  <link rel='StyleSheet' href="../../light.css" type="text/css" />
+</head>
+
+<body>
+  <div>
+    <h1>dlkern, the linux kernel downloader</h1>
+
+    <ul>
+      <li><a href="dl/dlkern.html">Download Current Version.</a></li>
+
+      <li><a href="dl/index.html">Download older version.</a></li>
+    </ul>
+
+    <ul>
+      <li><a href="output.txt">Example output patching from linux-2.6.12.5 to
+      linux-2.6.14.2</a> (11/23/05, v57)<br />
+      In this example, the total file sizes of the necessary patches is only
+      23% of the full linux-2.6.14.2 tarball.</li>
+
+      <li><a href="output.html">Typical output</a> (v31)</li>
+    </ul>dlkern is better than manual downloading because:
+
+    <ul>
+      <li>Automated upgrading via patches (-p flag) significantly reduces
+      download time for you and load on the kernel servers.</li>
+
+      <li>Specifying your country code (-c flag) distributes load on kernel
+      servers more efficiently.</li>
+
+      <li>Cryptographic signature verification reduces the chances of you
+      running a maliciously modified kernel.</li>
+    </ul>Features:
+
+    <ul>
+      <li>Determines current versions and URLs of stable, beta, and prepatch
+      versions of the linux kernel via finger @ftp.kernel.org.</li>
+
+      <li>Downloads via ncftpget or wget.</li>
+
+      <li>Automatic download and verification of kernel signatures.</li>
+
+      <li>Allows specification of 2 letter country code for <a href=
+      "http://www.kernel.org/mirrors/">the kernel mirror system</a>.</li>
+
+      <li>Allows selection of .gz or .bz2 compression.</li>
+    </ul><br />
+    This program was mentioned in the February 2001 issue of <a href=
+    "http://www.linuxjournal.com">Linux Journal</a> (issue 82) - a print
+    magazine.
+    <hr />
+
+    <h2>But WHY?</h2>When I started writing this in 1999, you couldn't just go
+    to <a href="http://www.kernel.org/">http://www.kernel.org/</a> and click a
+    kernel version and immediately start downloading a tarball (<a href="http://web.archive.org/web/19990125100558/http://www.kernel.org/">1999 archive</a>). I like to think
+    that the effort I put into writing dlkern caused someone to realise the
+    need for the work that resulted in the very helpful links they have there
+    today.<br />
+    <br />
+    Back then you had to ftp in, and burrow through the archive directory
+    structure. I do believe I got lost a few times. But most of all it was
+    tedious. I hate tedious.<br />
+    <br />
+    So I wrote dlkern as a simple script to do my downloading for me. And then
+    it just kept getting more and more robust until it was actually recommended
+    in a real print magazine.<br />
+    <br />
+    Then I abandoned it for 4 years. Then when I dusted it off, much to my
+    amazement, it still worked. Then I added the patch downloading
+    ability.<br />
+    <br />
+    Perhaps some day soon you will be able to run dlkern nightly from cron to
+    keep your kernel source tree up to date with no interaction required from
+    you.
+    <hr />
+    <a href="../../cgi-bin/referercomment.cgi.html">Comment on this page.</a><br />
+    <a href="../index.html">Return to Darxus' Code Index.</a><br />
+    <a href="../../index.html">Return to Darxus' Home Page.</a><br />
+    Wed Nov 23 21:39:45 EST 2005
+  </div>
+</body>
+</html>

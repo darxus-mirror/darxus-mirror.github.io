@@ -1,0 +1,60 @@
+#Set on when debugging
+#VERBOSE=on
+
+MAILDIR=$HOME/Maildir/
+DEFAULT="$HOME/Maildir/"
+
+# Directory for storing procmail log and rc files
+PMDIR=$HOME/.procmail
+LOGFILE=$PMDIR/log
+
+:0 c
+BACKUP/.
+
+:0 ic
+| cd BACKUP && /bin/rm -f dummy `ls -t | sed -e '1,50d'`
+
+# Scan for viruses using ClamAV (clamav-daemon) and redirect them to
+# .bad.viruses/
+VIRUS=`/usr/bin/clamdscan --disable-summary --stdout  -`
+:0 fw: 
+| /usr/bin/formail -I "X-Virus: $VIRUS"
+:0:
+* ^X-Virus: .* FOUND
+.bad.viruses/
+
+
+# Filter mailing lists.
+INCLUDERC=$PMDIR/rc.maillists
+
+
+# Scan for spam and add relevant headers.
+:0
+SCORE=| /usr/local/bin/spamprobe score
+:0 fw: spamassassin/in.lock
+| /usr/bin/spamassassin
+:0 fw: spamprobe.lock
+| /usr/bin/formail -I "X-SpamProbe: $SCORE"
+
+# skip spam filtering for 'hi' ranked DNSWL matches
+:0:
+* ^X-DNSWL: hi 
+$DEFAULT
+
+# Filter on spam headers.
+
+# If SpamAssassin and Spamprobe agree it's spam, send it to .bad.spam/
+:0:
+* ^X-Spam-Status: Yes
+* ^X-SpamProbe: SPAM
+.bad.spam/
+
+# If only SpamProbe thinks it's spam, send it to .bad.spam-sp/
+:0:
+* ^X-SpamProbe: SPAM
+.bad.spam-sp/
+
+# If only SpamAssassin thinks it's spam, send it to .bad.spam-sa/
+:0:
+* ^X-Spam-Status: Yes
+.bad.spam-sa/

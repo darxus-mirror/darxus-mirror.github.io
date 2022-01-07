@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- the reason this keeps breaking on upgrades is php short tags, php.ini short_open_tag -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Darxus' Quotes</title>
+<link rel='StyleSheet' href="/light.css" type="text/css" />
+<style type="text/css">
+div.center { text-align: center; }
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head><body><div>
+
+
+<div class='center'>
+<form action="/quotes/" method="get">
+<table border='0'>
+<tr><td rowspan='2'><div style="font-size:2em"><b>Words that amuse me.</b></div>
+<small>In reverse chronological order.<br /><a href="/cgi-bin/referercomment.cgi">Comment on this page.</a></small></td>
+<td rowspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td colspan='2'><br />
+<input type="checkbox" name="fire"        /><a href="/quotes/?fire=on">Fire</a>       
+<input type="checkbox" name="geek"    checked="checked"    /><a href="/quotes/?geek=on">Geek</a>       
+<input type="checkbox" name="misc"        /><a href="/quotes/?misc=on">Misc</a>       
+<input type="checkbox" name="music"      /><a href="/quotes/?music=on">Music</a>     
+<input type="checkbox" name="polit"      /><a href="/quotes/?polit=on">Politics</a>  
+<input type="checkbox" name="psych"      /><a href="/quotes/?psych=on">Psychology</a>
+<input type="checkbox" name="truth"      /><a href="/quotes/?truth=on">Truth</a>     
+<input type="checkbox" name="freedom"  /><a href="/quotes/?freedom=on">Freedom</a> 
+<input type="checkbox" name="words"      /><a href="/quotes/?words=on">Words</a>     
+</td>
+<td rowspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td rowspan='2' align='center'><a href="/quotes/quoteslinks.html">other<br />people's<br />collections</a></td>
+</tr><tr><td><input type="checkbox" name="categ"  />Show category names.
+<input type="submit" value="update filter" />
+</td>
+<td align='right'><a href="http://www.ChaosReigns.com/quotes/">Show all categories.</a>
+</td></tr>
+</table>
+</form>
+</div>
+
+
+<hr />
+<hr />
+"If we outlaw time machines, only outlaws will have attack dinosaurs." - <a href="http://notinventedhe.re/on/2010-6-28">Not Invented Here</a>
+<hr />
+"'Mom, I'm hungry.'  'Hush, I'm coding.  You ate yesterday.'" - <a href="http://xkcd.com/345/">xkcd</a>
+<hr />
+"My personal opinion  is that while qmail is actually  good software, life is too  short to  have  to deal  with Dan  Bernstein's exentricities" - <a href="http://zgp.org/pipermail/linux-elitists/2002-April/004328.html">Marc Merlin's MTA roundup, 2002</a>
+<hr />
+"Debugging is at least twice as hard as writing the program in the first place. So if your code is as clever as you can possibly make it, then by definition you're not smart enough to debug it." - Brian Kernighan
+<hr />
+"When cryptography is outlawed, bayl bhgynjf jvyy unir cevinpl."<hr />
+"As always, we do not recommend the use of beta software on mission critical or production systems. In fact, we may laugh at those who try." - <a href="https://lwn.net/Articles/18740/">official redhat beta release phoebe announcement</a>, December 2002
+<hr />
+"Everytime I reboot I get a different fucking error." - Joel<br /> "Keep rebooting, maybe you'll run out." - Kevin 
+<hr />
+"Making Snow Crash into a reality feels like a sort of moral imperative to a lot of programmers...." -  Carmack, in a <a href="http://slashdot.org/interviews/99/10/15/1012230.shtml">slashdot interview</a> posted 10/15/99
+<hr />
+"Those who do not understand UNIX are condemned to reinvent it, poorly." - Henry Spencer
+<hr />
+"My name is Linus, and I am your God" - Linus Torvalds, Linux Expo, Durham NC, 1998
+<hr />
+"When in doubt, use brute force." - Ken Thompson (author of <a href="http://www.tuxedo.org/~esr/jargon/html/entry/Unix.html">unix</a>)
+<hr />
+"...to fully <a href="http://www.everything2.com/index.pl?node=computer+security">secure</a> a system, you really have to grind it into dust, scatter the pieces to the wind, and hope that <a href="http://www.everything2.com/index.pl?node=entropy">Entropy</a> does [its] part. Since you can't do this, you make tradeoffs." -<a href="http://www.linuxsecurity.com/feature_stories/feature_story-59.html">Jay Beale</a>
+<hr />
+&lt;mazeone:#e&gt; man, my wife RULES<br />&lt;Chutt:#e&gt; mazeone, lemme guess, she's under your desk right now?<br />&lt;UnLogikal:#e&gt; mazeone: she give you head while you <a href="http://www.everything2.com/index.pl?node=hax0r">hax0r</a>?<br />&lt;UnLogikal:#e&gt; lol<br />&lt;mazeone:#e&gt; no, better<br />&lt;mazeone:#e&gt; she made me dinner and broght it down to me
+<hr />
+<a href="http://www.stallman.org/">Richard M. Stallman</a>, <a href="http://www.tuxedo.org/~esr/faqs/linus/">Linus Torvalds</a>, and <a href="http://www-cs-faculty.stanford.edu/~knuth/">Donald E. Knuth</a> engage in a discussion on whose impact on the computerized world was the greatest.<br /><br />Stallman: "God told me I have programmed the best editor in the world!" <br /><br />Torvalds: "Well, God told *me* that I have programmed the best operating system in the world!"<br /><br />Knuth: "Wait, wait - I never said that."
+<hr />
+"<a href="http://steco.net">it</a>'s a good example of why <a href="http://www.everything2.com/index.pl?node=bill+gates">bill gates</a> should be shot, hung, shot again, then dragged through town by his scrotum" - <a href="mailto:nick@netaxs.com">nick@netaxs.com</a>
+<hr />
+"What did people like you do before computers?" - <a href="mailto:helcat@sff.net">helcat@sff.net</a>
+<hr />
+"Science is like sex: Sometimes something useful comes out, but that is not the reason we are doing it." - <a href="http://www.amasci.com/feynman.html">Richard Feynman</a>
+<hr />
+"...I want to apologize in advance if I come across as overly inflammatory or antagonistic, as I've just been reading <a href="http://www.slashdot.org">Slashdot</a>." - <a href="http://www.billjonas.com/">Bill Jonas</a>
+<hr />
+"We are talking about particles in the universe type numbers here." -<a href="http://www.everything2.com/index.pl?node=anonymous+coward">Anonymous Coward</a>, on the subject of solving <a href="http://www.freechess.org">chess</a>, <a href="http://slashdot.org/comments.pl?sid=00/04/20/019221&amp;cid=52">on Slashdot</a>.
+<hr />
+"funky divas attempt to round up certain small childrens' toys smattered up with tiny rainmaker compact discs sent up as <a href="http://www.everything2.com/index.pl?node=sputnik">sputnik</a> was summarily destroyed by the fact that ducks are quite cool" -<a href="http://ciips.ee.uwa.edu.au/~hutch/hal/">MegaHAL</a>
+<hr />
+"<a href="http://www.everything2.com/index.pl?node=code">Code</a> changes are submitted to or accepted by the <a href="http://debian.org">Debian</a> [<a href="http://www.linux.org">Linux</a>] project once every 13 seconds to 7 minutes (depending on time of day). In other words, in the time it takes to dial a 1-800 number, someone may have fixed a bug in or added a feature to <a href="http://www.debian.org">Debian</a>, sometimes before the first ring, and definitely before you finally get off the holding queue and talk to a real human being." - Linux Weekly News 
+<hr />
+"Trying to learn to hack on a <a href="http://www.everything2.com/index.pl?node=dos">DOS</a> or <a href="http://www.everything2.com/index.pl?node=microsoft+windows">Windows</a> machine or under <a href="http://www.everything2.com/index.pl?node=macos">MacOS</a> is like trying to learn to dance while wearing a body cast." -<a href="http://www.tuxedo.org/~esr/faqs/hacker-howto.html">ESR</a>
+<hr />
+"There are two major products that come out of Berkeley: <a href="http://www.erowid.org/chemicals/lsd/lsd.shtml">LSD</a> and <a href="http://www.tuxedo.org/~esr/jargon/html/entry/Unix.html">UNIX</a>. We don't believe this to be a coincidence." - Jeremy S. Anderson
+<hr />
+<a href="mentor.txt">The Conscience of a Hacker</a>, by <a href="http://www.everything2.com/index.pl?node=%2b%2b%2bthe+mentor%2b%2b%2b">The Mentor</a>
+<hr />
+<blockquote><div>our yellow sun yields to the dark<br />as i begin my web-based lark<br />flowing, turning, through the pipe<br />i <a href="http://www.everything2.com/index.pl?node=grep">grep</a> for text and dump the hype...<br /><br />but as i ride the <a href="http://www.everything2.com/index.pl?node=fiber+optic+cables">fibre</a> trail<br />i test my faith as i read my mail<br />even as my <a href="http://www.everything2.com/index.pl?node=bandwidth">bandwidth</a> fattens<br />i question life and <a href="http://www.everything2.com/index.pl?node=one-click+shopping+patent">1-click patents</a>...<br /><br />although i ask and though i query<br />i know the truth, i <a href="http://www.everything2.com/index.pl?node=grok">grok</a> the theory<br />life is a multimedia of sins<br />so he who collects the most <a href="http://www.everything2.com/index.pl?node=porn">porn</a> wins.</div></blockquote>- <a href="http://www.userfriendly.org/cartoons/archives/00mar/20000307.html">User Friendly</a>
+<hr />
+"Abort, Retry, Influence with a Large Hammer"
+<hr />
+<blockquote><div>First, the church was powerful. But it became corrupt and was overthrown. <br />Then monarchs became powerful. But they became corrupt and were overthrown. <br />Now businesses are powerful. So what do we do with <a href="http://www.everything2.com/index.pl?node=bill+gates">Bill Gates</a>?</div></blockquote>  
+<hr />
+"<a href="http://www.everything2.com/index.pl?node=scsi">SCSI</a> is *NOT* <a href="http://www.everything2.com/index.pl?node=magic">magic</a>.  There are *fundamental technical reasons* why it is necessary to sacrifice a young goat to your <a href="http://www.everything2.com/index.pl?node=scsi">SCSI</a> chain now and then."  
+<hr />
+"On the subject of the inevitability of <a href="http://www.everything2.com/index.pl?node=microsoft">Microsoft</a> and <a href="http://www.everything2.com/index.pl?node=windows+95">Windows '95</a>, I think <a href="http://www.everything2.com/index.pl?node=sandra+bullock">Sandra Bullock</a> summed it up best with, 'Now all resturants are <a href="http://www.everything2.com/index.pl?node=taco+bell">Taco Bell</a>'"   
+<hr />
+"<a href="http://www.everything2.com/index.pl?node=windows+95">Win95</a>:  It isn't an <a href="http://www.everything2.com/index.pl?node=operating+system">operating system</a>, it's a '<a href="http://www.everything2.com/index.pl?node=square+peg+in+a+round+hole">square peg in a round hole</a>' test."  
+<hr />
+"Beware of Programmers who carry screwdrivers." <br />                - Leonard Brandwein  
+<hr />
+"God made <a href="http://www.cs.ualberta.ca/~casey/c101/101notes/machinelang.html">machine language</a>; all the rest is the work of man."  
+<hr />
+"I think there is a world market for maybe five computers." <br /><br />      - <a href="http://www.encyclopedia.com/articles/13688.html">Thomas Watson</a>, chairman of <a href="http://www.ibm.com">IBM</a>, 1943  
+<hr />
+"Imagine that <a href="http://www.cray.com">Cray</a> computer decides to make a personal computer.  It has a 150 <a href="http://www.everything2.com/index.pl?node=mhz">MHz</a> processor, 200 <a href="http://www.everything2.com/index.pl?node=megabyte">megabytes</a> of <a href="http://www.everything2.com/index.pl?node=ram">RAM</a>, 1500 <a href="http://www.everything2.com/index.pl?node=megabyte">megabytes</a> of <a href="http://www.everything2.com/index.pl?node=disk">disk</a> storage, a <a href="http://www.everything2.com/index.pl?node=screen">screen</a> <a href="http://www.everything2.com/index.pl?node=resolution">resolution</a> of 4096 x 4096 <a href="http://www.everything2.com/index.pl?node=pixels">pixels</a>, relies entirely on <a href="http://www.everything2.com/index.pl?node=speech+recognition">voice recognition</a> for <a href="http://www.everything2.com/index.pl?node=input">input</a>, fits in your shirt pocket and costs $300. What's the first question that the computer community asks?  <br /><br />'Is it <a href="http://www.everything2.com/index.pl?node=pc">PC</a> compatible?'"  
+<hr />
+"To <a href="http://www.eeicommunications.com/eye/repeat.html">iterate</a> is human, to <a href="http://www.tuxedo.org/~esr/jargon/html/entry/recursion.html">recurse</a>, divine."  (<a href="http://www.bell-labs.com/~cope/Patterns/C++Report/SpaceIII-1.html">the paper</a>)
+
+<hr />
+<hr />
+<div class='center'>
+35 quotes on this page.<br />
+<a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+<a href="/">Return to Darxus' home page.</a>
+</div>
+
+</div>
+</body>
+</html>

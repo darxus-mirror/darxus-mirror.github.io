@@ -1,0 +1,68 @@
+
+IP: 10.184.184.12 PASS BLACKLIST
+Found BLACKLIST: Good.
+Found PASS: Good.
+12 Passed.
+
+IP: 10.184.184.11 HARDFAIL 
+Found FAIL: Good.
+Found HARDFAIL: Good.
+11 Passed.
+
+IP: 10.184.184.10 NONE 
+Found NONE: Good.
+Found FAIL: Good.
+10 Passed.
+
+IP: 10.184.184.9 PASS 
+Found PASS: Good.
+9 Passed.
+
+IP: 10.184.184.8 SOFTFAIL 
+Found SOFTFAIL: Good.
+Found FAIL: Good.
+8 Passed.
+
+IP: 10.184.184.7 NEUTRAL 
+Found FAIL: Good.
+Found NEUTRAL: Good.
+7 Passed.
+
+IP: 10.184.184.6 HARDFAIL 
+Found FAIL: Good.
+Found HARDFAIL: Good.
+6 Passed.
+
+IP: 10.184.184.5 NONE 
+Found NONE: Good.
+Found FAIL: Good.
+5 Passed.
+
+IP: 10.184.184.4 SOFTFAIL 
+Found SOFTFAIL: Good.
+Found FAIL: Good.
+4 Passed.
+
+IP: 10.184.184.3 SOFTFAIL 
+Found SOFTFAIL: Good.
+Found FAIL: Good.
+3 Passed.
+
+IP: 10.184.184.2 SOFTFAIL 
+Found SOFTFAIL: Good.
+Found FAIL: Good.
+2 Passed.
+
+IP: 10.184.184.1 NEUTRAL BLACKLIST
+Found FAIL: Good.
+Found NEUTRAL: Good.
+Found BLACKLIST: Good.
+1 Passed.
+
+
+12 passed, 0 failed.
+
+Passed: 12 11 10 9 8 7 6 5 4 3 2 1
+Failed: 
+
+ALL PASSED.

@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+<title>dlkern output</title>
+<link rel='StyleSheet' href="/light.css" type=
+"text/css" />
+</head>
+<body>
+<div>Example output from v31:
+<hr />
+<pre>
+$ dlkern
+GnuPG.pm loaded.
+
+Usage:  dlkern [-sbp] [-nw] [-d &lt;directory&gt;] [-c &lt;country_code&gt;] [-e &lt;gz|bz2&gt;]
+
+        -s  Download stable version of Linux kernel.
+        -b  Download beta version of Linux kernel.
+        -p  Download prepatch version of Linux kernel.
+
+        -n  Use ncftpget as downloader (default).
+        -w  Use wget as downloader.
+
+        -d  Specify output directory.
+        -c  Specify 2 letter country code from http://www.kernel.org/mirrors/
+        -e  Specify extension (.gz is default, bz2 is more compressed).
+        -h  Show this usage information.
+
+Requested:.
+Downloader is ncftpget.
+
+Retrieving version numbers:
+stable: 2.2.16 ftp://ftp.kernel.org/pub/linux/kernel/v2.2/linux-2.2.16.tar.gz
+beta: 2.3.99-pre9 ftp://ftp.kernel.org/pub/linux/kernel/v2.3/linux-2.3.99-pre9.tar.gz
+prepatch: 2.3.99/10-3 ftp://ftp.kernel.org/pub/linux/kernel/testing/pre10-3.gz
+</pre>
+<hr />
+<pre>
+$ dlkern -s
+GnuPG.pm loaded.
+Requested: stable.
+Downloader is ncftpget.
+
+Retrieving version numbers:
+stable: 2.2.16 ftp://ftp.kernel.org/pub/linux/kernel/v2.2/linux-2.2.16.tar.gz
+beta: 2.3.99-pre9 ftp://ftp.kernel.org/pub/linux/kernel/v2.3/linux-2.3.99-pre9.tar.gz
+prepatch: 2.3.99/10-3 ftp://ftp.kernel.org/pub/linux/kernel/testing/pre10-3.gz
+
+Downloading stable by calling "ncftpget ftp://ftp.kernel.org/pub/linux/kernel/v2.2/linux-2.2.16.tar.gz"
+ncftpget: will not overwrite local file with older remote file.
+Downloading stable signiture by calling "ncftpget ftp://ftp.kernel.org/pub/linux/kernel/v2.2/linux-2.2.16.tar.gz.sign"
+ncftpget: local file appears to be the same as the remote file, no transfer necessary.
+Verifying stable signiture:
+SIGNITURE DID NOT PASS VERIFICATION.  Possible reasons:
+ * Kernel source has been maliciously modified.
+ * Kernel tarball or signiture was corrupted during download.
+ * You did not insert the kernel archive public key into your keyring via:
+   wget http://www.kernel.org/signature.html &amp;&amp; gpg --import signature.html
+</pre>
+<hr />
+<pre>
+$ ./dlkern -s -p -c us -e bz2
+GnuPG.pm loaded.
+Requested: stable prepatch.
+Downloader is ncftpget.
+
+Retrieving version numbers:
+stable: 2.2.16 ftp://ftp.us.kernel.org/pub/linux/kernel/v2.2/linux-2.2.16.tar.bz2
+beta: 2.3.99-pre9 ftp://ftp.us.kernel.org/pub/linux/kernel/v2.3/linux-2.3.99-pre9.tar.bz2
+prepatch: 2.3.99/10-3 ftp://ftp.us.kernel.org/pub/linux/kernel/testing/pre10-3.bz2
+
+Downloading stable by calling "ncftpget ftp://ftp.us.kernel.org/pub/linux/kernel/v2.2/linux-2.2.16.tar.bz2"
+linux-2.2.16.tar.bz2:                                   13.19 MB  169.66 kB/s
+Downloading stable signiture by calling "ncftpget ftp://ftp.us.kernel.org/pub/linux/kernel/v2.2/linux-2.2.16.tar.bz2.sign"
+linux-2.2.16.tar.bz2.sign:                             248.00 B     4.69 kB/s
+Verifying stable signiture:
+Signiture passed verification.
+Signiture timestamp: Wed Jun  7 17:43:29 2000
+Trust level for this signiture is: FULLY
+
+Downloading prepatch by calling "ncftpget ftp://ftp.us.kernel.org/pub/linux/kernel/testing/pre10-3.bz2"
+pre10-3.bz2:                                            74.86 kB   88.68 kB/s
+Downloading prepatch signiture by calling "ncftpget ftp://ftp.us.kernel.org/pub/linux/kernel/testing/pre10-3.bz2.sign"
+pre10-3.bz2.sign:                                      248.00 B     3.05 kB/s
+Verifying prepatch signiture:
+Signiture passed verification.
+Signiture timestamp: Wed May 24 23:22:05 2000
+Trust level for this signiture is: FULLY
+</pre>
+<hr />
+<a href="/cgi-bin/referercomment.cgi">Comment on
+this page.</a><br />
+<a href="/code/">Return to Darxus' Code
+Index.</a><br />
+<a href="/">Return to Darxus' Home
+Page.</a><br />
+Wed Nov 23 21:39:45 EST 2005</div>
+</body>
+</html>

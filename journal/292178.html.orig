@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9" />
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel='stylesheet' href='http://l-stat.livejournal.com/ad_base.css?v=1256233931' type='text/css' />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://darxus.livejournal.com/data/foaf" />
+<meta name="foaf:maker" content="foaf:mbox_sha1sum '107c1745aac3c319c0e1588eb400be77055f48e8'" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+// don't crawl this.  read http://www.livejournal.com/developer/exporting.bml
+var LJ_cmtinfo = {"1301074":{"parent":1300818,"u":"darxus","rc":["1301586"],"full":1,"username":"darxus"},"1300818":{"parent":null,"u":"feng_huang","rc":["1301074"],"full":1,"username":"feng_huang"},"form_auth":"c0%3A1297414800%3A2584%3A86400%3AsZpOPhCitP-0-uIr8j3pTzrw034t%3A38e6cd64104bb90d7c146cd96aa5ee86","1300562":{"parent":null,"u":"plumtreeblossom","rc":[],"full":1,"username":"plumtreeblossom"},"1301586":{"parent":1301074,"u":"feng_huang","rc":[],"full":1,"username":"feng_huang"},"remote":null,"canAdmin":0,"journal":"darxus"}
+</script>
+        <script type="text/javascript">
+            Site = window.Site || {};
+
+            (function(){
+                var p = {"media_embed_enabled":1,"inbox_update_poll":0,"remoteUser":null,"remoteJournalBase":null,"has_remote":0,"statprefix":"http://l-stat.livejournal.com","currentEntryRecommendations":0,"server_time":1297417384,"ctx_popup":1,"remote_is_suspended":0,"imgprefix":"http://l-stat.livejournal.com/img","esn_async":1,"remote_can_track_threads":null,"currentJournal":"darxus","currentEntry":"http://darxus.livejournal.com/292178.html","siteroot":"http://www.livejournal.com","currentJournalBase":"http://darxus.livejournal.com"}, i;
+                for (i in p) Site[i] = p[i];
+            })();
+       </script>
+    <link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??lj_base.css,esn.css,contextualhover.css?v=1297378795" />
+<!--[if IE]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??ie.css?v=1297378795" /><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??interstitial_banner_us.css?v=1263499801" /><![endif]-->
+<script type="text/javascript" src="http://l-stat.livejournal.com/js/??jquery.js,jquery_fn.js,basic.js,livejournal.js,esn.js,ippu.js,lj_ippu.js,ljwidget.js,ljwidget_ippu.js,journal.js,hourglass.js,contextualhover.js,livejournal-local.js,thread_expander.js,thread_expander.ex.js,quickreply.js,md5.js?v=1296605167"></script>
+<script type="text/javascript" src="http://l-stat.livejournal.com/js/??fb-select-image.js,commentmanage.js?v=1297378795"></script>
+<script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=1483b796-4406-4000-98db-019c32f6059e&amp;type=website&amp;embeds=true&amp;post_services=livejournal%2Cfacebook%2Ctwitter%2Cmyspace%2Cdigg%2Cdelicious%2Clinkedin%2Cfriendfeed%2Cwordpress%2Cblogger%2Cgoogle_bmarks%2Ctechnorati&amp;onmouseover=false"></script><link rel="stylesheet" href="http://darxus.livejournal.com/res/18152266/stylesheet?1296606155" type="text/css" />
+<title>Darxus - More fascinating statistical analysis from okcupid</title>
+
+</head>
+
+<body class="page_entry">
+
+<div id="shadowhack1">
+<div id="shadowhack2">
+
+<div id="pagecontainer">
+
+<div id="title">
+<h1>Darxus</h1><div id="journal_subtitle">More fascinating statistical analysis from okcupid</div>
+</div>
+
+<div id="paraphernalia">
+<div class="pbox" id="journalinfo"><h2>Darxus</h2><div class="pboxcontent">
+<div id="journalinfouserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt="2009-09-29"height="100" width="100"  /></div>
+<div class="journallinkbar">     <a href="http://www.livejournal.com/todo/?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s to-do list" title="darxus&#39;s to-do list" src="http://l-stat.livejournal.com/img/btn_todo.gif"  /></a>  <a href="http://www.livejournal.com/tools/memories.bml?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s memories" title="darxus&#39;s memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="http://www.livejournal.com/tools/tellafriend.bml?user=darxus"><img border='0' width="24" height="24" alt="Tell a friend about darxus" title="Tell a friend about darxus" src="http://l-stat.livejournal.com/img/btn_tellfriend.gif"  /></a>  <a href="http://www.livejournal.com/tools/search.bml?user=darxus"><img border='0' width="24" height="24" alt="Search darxus" title="Search darxus" src="http://l-stat.livejournal.com/img/btn_search.gif"  /></a>  <a href="http://www.livejournal.com/friends/nudge.bml?user=darxus"><img border='0' width="24" height="24" alt="Nudge darxus" title="Nudge darxus" src="http://l-stat.livejournal.com/img/btn_nudge.gif"  /></a> </div></div></div>
+<div class="pbox" id="viewsel"><h2>View</h2><div class="pboxcontent">
+<ul>
+<li><a href="http://darxus.livejournal.com/">Recent Entries</a></li>
+<li><a href="http://darxus.livejournal.com/calendar">Archive</a></li>
+<li><a href="http://darxus.livejournal.com/friends">Friends</a></li>
+<li><a href="http://darxus.livejournal.com/profile">User Info</a></li>
+</ul>
+</div></div>
+
+</div>
+
+<div id="main">
+<div class="entry"><div class="entryheader">
+<h3 class="entrysubject">More fascinating statistical analysis from okcupid</h3><div class="entryposter"><span class='ljuser ljuser-name_' lj:user='darxus' style='white-space:nowrap'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif?v=1' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate">2/10/11</span>
+    <span class="entrytimestamptime">01:34 pm</span></div><div class="entrylinkbarpre"><a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=292178&amp;dir=prev"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>      <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=292178"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="#"><img border='0' width="24" height="24" alt="Share this!" title="Share this!" src="http://l-stat.livejournal.com/img/btn_sharethis.gif"  /></a> <script type="text/javascript">
+            var stLink = jQuery('a:last')[0];
+            stLink.href = 'javascript:void(0)';
+            SHARETHIS_post = SHARETHIS.addEntry({url:'http://darxus.livejournal.com/292178.html', title: 'More fascinating statistical analysis from okcupid'}, {button: false});
+            SHARETHIS_post.attachButton(stLink);
+            SHARETHIS_ary.push(SHARETHIS_post);
+            </script>       <a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=292178&amp;dir=next"><img border='0' width="24" height="24" alt="Next Entry" title="Next Entry" src="http://l-stat.livejournal.com/img/btn_next.gif"  /></a></div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt="2009-09-29"height="100" width="100"  /></div></div>
+
+<div class="entrycontent"><a href="http://blog.okcupid.com/index.php/the-best-questions-for-first-dates/">http://blog.okcupid.com/index.php/the-b<wbr />est-questions-for-first-dates/</a> / <span class='ljuser ljuser-name_okcupid_blog' lj:user='okcupid_blog' style='white-space:nowrap'><a href='http://syndicated.livejournal.com/okcupid_blog/profile'><img src='http://l-stat.livejournal.com/img/syndicated.gif?v=1' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://syndicated.livejournal.com/okcupid_blog/'><b>okcupid_blog</b></a></span><br /><br />People who say they like the taste of beer correlate highly with people who will have sex on a first date.<br /><br />"Do you prefer the people in your life to be simple or complex?" is useful for determining a person's politics.  <br />Complex: Liberal.<br />Simple: Conservative.<br /><br />People who do not mind spelling and grammar mistakes are more likely to be religious.<br /><br />And the three questions most useful in determining compatibility based on same answers are:<br />"Do you like horror movies?"<br />"Have you ever traveled around another country alone?"<br />"Wouldn't it be fun to chuck it all and go live on a sailboat?"</div>
+
+<div class="entryfooter">
+
+<ul class="entrymeta">
+<li><span class="entrymetacaption">Tags:</span> <div class='ljtags'><a rel='tag' href='http://darxus.livejournal.com/tag/okcupid'>okcupid</a></div></li>
+</ul>
+
+<div class="entrylinkbarpost"><a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=292178&amp;dir=prev"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>      <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=292178"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="#"><img border='0' width="24" height="24" alt="Share this!" title="Share this!" src="http://l-stat.livejournal.com/img/btn_sharethis.gif"  /></a> <script type="text/javascript">
+            var stLink = jQuery('a:last')[0];
+            stLink.href = 'javascript:void(0)';
+            SHARETHIS_post = SHARETHIS.addEntry({url:'http://darxus.livejournal.com/292178.html', title: 'More fascinating statistical analysis from okcupid'}, {button: false});
+            SHARETHIS_post.attachButton(stLink);
+            SHARETHIS_ary.push(SHARETHIS_post);
+            </script>       <a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=292178&amp;dir=next"><img border='0' width="24" height="24" alt="Next Entry" title="Next Entry" src="http://l-stat.livejournal.com/img/btn_next.gif"  /></a></div>
+<ul class="entrycmdlinks"><li><a href="http://darxus.livejournal.com/292178.html">4 comments</a></li><li><a onclick="return QuickReply.reply('topcomment',0,'')" href="http://darxus.livejournal.com/292178.html?mode=reply">Leave a comment</a></li></ul>
+<div  id="ljqrttopcomment" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1300562"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_' lj:user='plumtreeblossom' style='white-space:nowrap'><a href='http://plumtreeblossom.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif?v=1' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://plumtreeblossom.livejournal.com/'><b>plumtreeblossom</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="14 minutes after journal entry, 01:49 pm (plumtreeblossom&#39;s time)">2/10/11 06:49 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/31123985/932724" title="" alt=""height="95" width="100"  /></div></div>
+
+<div class="entrycontent"><i>People who do not mind spelling and grammar mistakes are more likely to be religious.</i><br /><br />I can totally believe that...</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1300562',5080,'')" href="http://darxus.livejournal.com/292178.html?replyto=1300562">Reply</a></li><li><a href="http://darxus.livejournal.com/292178.html?thread=1300562#t1300562">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1300562" style="display: none;"></div>
+
+</div>
+</div></li>
+<li><div class="entry" id="ljcmt1300818"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_' lj:user='feng_huang' style='white-space:nowrap'><a href='http://feng-huang.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif?v=1' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://feng-huang.livejournal.com/'><b>feng_huang</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="1 hours after journal entry, 12:49 pm (feng_huang&#39;s time)">2/10/11 07:49 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/53648349/1206907" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">This one disappeared from their site after match.com bought them:
+
+<p><a href="http://webcache.googleusercontent.com/search?q=cache:9OtAvuobLwgJ:www.okcupid.com/z/yf2">Why You Should Never Pay For Online Dating</a>
+</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1300818',5081,'')" href="http://darxus.livejournal.com/292178.html?replyto=1300818">Reply</a></li><li><a href="http://darxus.livejournal.com/292178.html?thread=1300818#t1300818">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1300818" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1301074"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_' lj:user='darxus' style='white-space:nowrap'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif?v=1' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="1 hours after journal entry, 03:21 pm (darxus&#39;s time)">2/10/11 08:21 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">Wow.  Thanks.  I wonder how much of match.com's motivation to buy okcupid was related to that article.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1301074',5082,'')" href="http://darxus.livejournal.com/292178.html?replyto=1301074">Reply</a></li><li><a href="http://darxus.livejournal.com/292178.html?thread=1300818#t1300818">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/292178.html?thread=1301074#t1301074">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1301074" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt1301586"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_' lj:user='feng_huang' style='white-space:nowrap'><a href='http://feng-huang.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif?v=1' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://feng-huang.livejournal.com/'><b>feng_huang</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="3 hours after journal entry, 03:34 pm (feng_huang&#39;s time)">2/10/11 10:34 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/53648349/1206907" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">That thought crossed my mind, too.
+</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('1301586',5084,'')" href="http://darxus.livejournal.com/292178.html?replyto=1301586">Reply</a></li><li><a href="http://darxus.livejournal.com/292178.html?thread=1301074#t1301074">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/292178.html?thread=1301586#t1301586">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt1301586" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+
+
+
+<div id="server_sig">Powered by <a href="http://www.livejournal.com/">LiveJournal.com</a></div></div>
+
+</div>
+</div>
+
+<div id='hello-world' style='text-align: left; font-size:0; line-height:0; height:0; overflow:hidden;'>
+<script type="text/javascript"> var DR_id = 1111; </script>
+<script src="http://l-stat.livejournal.com/js/pagestats/DR_v4u3.js?v=1" type="text/javascript"></script>
+    <!-- Begin comScore Tag -->
+<script>
+    document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+</script>
+
+<script>
+  COMSCORE.beacon({
+    c1:2,
+    c2:7602110,
+    c3:"",
+    c4:"",
+    c5:"",
+    c6:"",
+    c15:""
+  });
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=7602110&c3=&c4=&c5=&c6=&c15=&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+</div></body>
+</html>

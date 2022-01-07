@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 6 November 2007), see www.w3.org" />
+<title>calculate target waist size from target bodyfat</title>
+<link rel='StyleSheet' href="../light.css" type="text/css" />
+</head>
+<body>
+<div>
+<h1>calculate target waist size from target bodyfat (and height &amp; neck)</h1>
+<form action="http://www.chaosreigns.com/cgi-bin/gym/waistfromfat.cgi">
+<div>
+<table border='1'>
+<tr>
+<td>Gender</td>
+<td><input type='radio' name="gender" value='male' />Male<br />
+<input type='radio' name="gender" value='female' />Female</td>
+</tr>
+<tr>
+<td>Units</td>
+<td><input type='radio' name="units" value='in' />Inches<br />
+<input type='radio' name="units" value='cm' />Centimeters</td>
+</tr>
+<tr>
+<td>Height</td>
+<td><input type='text' name="height" /></td>
+</tr>
+<tr>
+<td>Neck</td>
+<td><input type='text' name="neck" /></td>
+</tr>
+<tr>
+<td>Waist (men) / waist + hip (women)
+<br />(optional)</td>
+<td><input type='text' name="waist" /></td>
+</tr>
+<tr>
+<td>Target Bodyfat % (optional)</td>
+<td><input type='text' name="target" /></td>
+</tr>
+<tr>
+<td colspan='2' align='center'><input type="submit" /></td>
+</tr>
+</table>
+<p>This will generate a table of bodyfat percentages and your corresponding abdomen measurements for men, or waist + hip sizes for women, with corresponding descriptions from this table from the American Council on Exercise:</p>
+<table border="1">
+<tr>
+<th>Description</th>
+<th>Women</th>
+<th>Men</th>
+</tr>
+<tr>
+<td>Essential fat</td>
+<td>10-13%</td>
+<td>2-5%</td>
+</tr>
+<tr>
+<td>Athletes</td>
+<td>14-20%</td>
+<td>6-13%</td>
+</tr>
+<tr>
+<td>Fitness</td>
+<td>21-24%</td>
+<td>14-17%</td>
+</tr>
+<tr>
+<td>Average</td>
+<td>25-31%</td>
+<td>18-24%</td>
+</tr>
+<tr>
+<td>Obese</td>
+<td>32%+</td>
+<td>25%+</td>
+</tr>
+</table>
+<p>The output is calculated using the <a href="http://web.archive.org/web/20060721033122/www.dtic.mil/whs/directives/corres/html2/i13083x.htm">U.S. Military bodyfat formulas (DoD Instruction 1308.3, 2002)</a>.</p>
+<p>Neck measurements are assumed constant. If this assumption distresses you, enter your neck measurement as 0, and the resutls for men will be <tt>abdomen - neck</tt>, and for women will be <tt>waist + hip - neck</tt>.</p>
+<p>The creators of these formulas only use them for male bodyfat percentages from 9% to 37%, and female bodyfat percentages from 19% to 47%. These may be reasonable ranges within to expect some semblance of accuracy.</p>
+<p><a href="http://web.archive.org/web/20060721033122/www.dtic.mil/whs/directives/corres/html2/i13083x.htm#cp123">How to measure males.</a><br />
+<a href="http://web.archive.org/web/20060721033122/www.dtic.mil/whs/directives/corres/html2/i13083x.htm#cp126">How to measure females.</a></p>
+</div>
+</form>
+<hr />
+The hard part of the math was done by <a href="http://www.billjonas.com/">Bill Jonas</a>.<br />
+<a href="../cgi-bin/referercomment.cgi.html">Comment on this page.</a><br />
+<a href="index.html">Darxus' Gym page</a><br />
+<a href="../index.html">Darxus' home page</a><br />
+<a href="http://darxus.livejournal.com/">Darxus' livejournal</a></div>
+<script type="text/javascript" src="../footer.js"></script>
+</body>
+</html>

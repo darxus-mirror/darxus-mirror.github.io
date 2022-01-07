@@ -1,0 +1,186 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+
+  <title>sig2dot GPG/PGP Keyring Graph Generator</title>
+  <link rel='StyleSheet' href="/light.css" type="text/css" />
+<style type="text/css">
+td.white { background: #FFFFFF;}
+img { border-style: none; }
+</style>
+</head>
+
+<body>
+<div>
+  <div class='center'>
+    <h1>sig2dot GPG/PGP Keyring Graph Generator</h1>
+  </div>
+
+  <table border="0">
+    <tr>
+      <td valign="top" style='width:50%'>
+        sig2dot.pl can be used to generate a graph of all of the
+        signature relationships in a <a href=
+        "http://www.gnupg.org/">GPG</a>/<a href=
+        "http://www.pgpi.org/">PGP</a> keyring, like those
+        resulting from <a href=
+        "http://www.cryptnet.net/fdp/crypto/gpg-party.html">keysigning
+        parties</a>, or the <a href=
+        "http://packages.debian.org/stable/misc/debian-keyring.html">
+        Debian Keyring</a> (of all Debian developers). It converts
+        the output of "gpg --list-sigs" to a .dot file, which is a
+        graph definition that can be rendered by <a href=
+        "/code/springgraph/">springgraph</a> or <a href=
+        "http://www.research.att.com/sw/tools/graphviz/">graphviz</a>.
+        sig2dot is released under the <a href=
+        "http://www.gnu.org/copyleft/gpl.html">GPL</a>.
+
+        <p>Download: <a href="sig2dot.pl">sig2dot.pl</a><br />
+        (Also available in the Debian archives.)</p>
+
+        <ul>
+          <li><a href="usage.html">sig2dot example usage and
+          commandline arguments</a></li>
+
+          <li><a href="debian.html">graphing the debian keyring web
+          of trust</a></li>
+
+          <li><a href="personal.html">your own personal web of
+          trust graph</a></li>
+
+          <li><a href="windows.html">using sig2dot in
+          windows</a></li>
+
+          <li><a href="programs.html">programs I've written which
+          are related to sig2dot</a></li>
+
+          <li><a href="links.html">related (and reciprocal)
+          links</a></li>
+        </ul><br />
+        Of course, I recommend using sig2dot with <a href=
+        "/code/springgraph/">springgraph</a>, which I recently
+        wrote as a replacement for <a href=
+        "http://www.research.att.com/sw/tools/graphviz/">neato</a>,
+        specifically for use with sig2dot, but sig2dot has not been
+        modified since I started writing <a href=
+        "/code/springgraph/">springgraph</a>. <a href=
+        "/code/springgraph/compare.html">Compare the output for
+        yourself</a>.
+
+        <p>"Nothing gets people's interest peaked like colorful
+        graphics. Therefor, graphing the web of trust in your local
+        area as you build it can help motivate people to
+        participate as well as giving everyone a clear sense of
+        what's being accomplished as things progress."</p>
+
+        <div class='center'>
+          - <a href=
+          "http://www.cryptnet.net/fdp/crypto/gpg-party.html">GnuPG
+          Keysigning Party HOWTO</a>
+        </div>
+      </td>
+
+      <td align="center" style='width:50%'>
+        <a id="uses"></a> <b>Pages that use
+        sig2dot:</b>
+
+        <table border="1">
+          <tr>
+            <td align="center" class='white'><a href=
+            "http://www.phillylinux.org/keys/"><img src=
+            "tn_phillylinux.jpg" alt="*" width="104" height="95"
+            /><br />
+            <img src="tn_phillylinux_springgraph.png" width="83"
+            height="118" alt="*" /></a></td>
+
+            <td><a href=
+            "http://www.phillylinux.org/keys/">Philadelphia Linux
+            Keysigning Parties</a><br />
+            (Top thumbnail is from neato (which is part of <a href=
+            "http://www.research.att.com/sw/tools/graphviz/">graphviz</a>),
+            bottom thumbnail is from <a href=
+            "/code/springgraph/">springgraph</a>)</td>
+          </tr>
+
+          <tr>
+            <td align="center" class='white'><a href=
+            "http://www.nylug.org/keys/"><img src=
+            "tn_nylug-keyring.large.jpg" alt="*" width="101"
+            height="98" /></a></td>
+
+            <td><a href="http://www.nylug.org/keys/">New York Linux
+            User's Group (NYLUG) Keysignings</a></td>
+          </tr>
+
+          <tr>
+            <td align="center" class='white'><a href=
+            "http://spacepants.org/slug/"><img src=
+            "tn_slug-keyring.jpg" alt="*" width="104" height="94"
+            /></a></td>
+
+            <td><a href="http://spacepants.org/slug/">Sydney Linux
+            Users Group (SLUG) Keysignings</a></td>
+          </tr>
+
+          <tr>
+            <td align="center" class='white'><a href=
+            "http://geeksimplex.org/phil/pgp/"><img src=
+            "tn_trust.neato.jpg" alt="*" width="100" height="100"
+            /></a></td>
+
+            <td><a href="http://geeksimplex.org/phil/pgp/">Phil's
+            web of trust</a></td>
+          </tr>
+
+          <tr>
+            <td align="center" class='white'><a href=
+            "http://3.141593.org/webotrust/"><img src=
+            "tn_sigs.n.jpg" alt="*" width="90" height="109" /></a></td>
+
+            <td><a href="http://3.141593.org/webotrust/">Stefanus
+            Du Toit's web of trust</a></td>
+          </tr>
+
+          <tr>
+            <td align="center" class='white'><a href=
+            "http://www.lysator.liu.se/~ceder/keysign-en.html"><img src="tn_lysfinal.jpg"
+            alt="*" width="149" height="65" /></a></td>
+
+            <td><a href=
+            "http://www.lysator.liu.se/~ceder/keysign-en.html">Lysator
+            Keysigning Party</a> (<a href=
+            "http://www.lysator.liu.se/~ceder/keysign.html">original
+            Swedish</a>)</td>
+          </tr>
+
+          <tr>
+            <td align="center" class='white'><a href=
+            "http://caristudenti.students.cs.unibo.it/~alfarano/wot/caristudenti/index.en.html">
+            <img src="tn_caristudenti-keyring.dot.png" alt=
+            "Caristudenti dot" width="87" height="113" /><img src="tn_caristudenti-keyring.neato.png" alt=
+            "Caristudenti neato" width="81" height="122" /></a></td>
+
+            <td><a href=
+            "http://caristudenti.students.cs.unibo.it/~alfarano/wot/caristudenti/index.en.html">
+            Caristudenti Project's Web of Trust</a></td>
+          </tr>
+        </table>Please <a href=
+        "mailto:Darxus@ChaosReigns.com">email me</a> links to be
+        added here.
+      </td>
+    </tr>
+  </table>
+  <hr />
+  <a href="/cgi-bin/referercomment.cgi">Comment on this
+  page.</a><br />
+  <a href="/code/">code index</a><br />
+  <a href="/">Darxus' Home Page</a><br />
+  Fri May 24 00:58:44 EDT 2002<br />
+  <a href="http://validator.w3.org/check/referer">Valid HTML
+  4.01.</a>
+</div>
+<script type="text/javascript" src="/logstats.js"></script>
+</body>
+</html>

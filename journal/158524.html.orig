@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=7"/>
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel='stylesheet' href='http://l-stat.livejournal.com/ad_base.css' type='text/css' />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://darxus.livejournal.com/data/foaf" />
+<meta name="foaf:maker" content="foaf:mbox_sha1sum '107c1745aac3c319c0e1588eb400be77055f48e8'" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script>
+// don't crawl this.  read http://www.livejournal.com/developer/exporting.bml
+var LJ_cmtinfo = {"canAdmin":0,"672828":{"rc":[673084],"u":"beowabbit","parent":672572,"full":1},"journal":"darxus","form_auth":"c0:1279209600:3539:86400:ykdOOGcqGj-0-9dIDVPmJz4TqAt8:3586baef12e6fade6b7f43ac325b6fab","remote":null,"672572":{"rc":[672828],"u":"ex_absurdmin176","parent":null,"full":1},"673084":{"rc":[],"u":"ex_absurdmin176","parent":672828,"full":1}}
+</script>
+        <script type="text/javascript">
+            Site = window.Site || {};
+
+            (function(){
+                var p = {"siteroot":"http://www.livejournal.com","currentJournalBase":"http://darxus.livejournal.com","inbox_update_poll":0,"currentJournal":"darxus","remote_can_track_threads":null,"statprefix":"http://l-stat.livejournal.com","ctx_popup":1,"media_embed_enabled":1,"server_time":1279213139,"has_remote":0,"remote_is_suspended":0,"imgprefix":"http://l-stat.livejournal.com/img","esn_async":1}, i;
+                for (i in p) Site[i] = p[i];
+            })();
+       </script>
+    <script type="text/javascript" src="http://l-stat.livejournal.com/js/??jquery.js,jquery_fn.js,basic.js,livejournal.js,esn.js,ippu.js,lj_ippu.js,ljwidget.js,ljwidget_ippu.js,journal.js,hourglass.js,md5.js,login.js,contextualhover.js,livejournal-local.js,thread_expander.js,journal.js,quickreply.js?v=1277844792"></script>
+<script type="text/javascript" src="http://l-stat.livejournal.com/js/??commentmanage.js?v=1268768846"></script>
+<link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??lj_base.css,esn.css,contextualhover.css?v=1277844792" />
+<!--[if IE]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??ie.css?v=1268859548" /><![endif]-->
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??interstitial_banner_us.css?v=1263499801" /><![endif]-->
+<script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=1483b796-4406-4000-98db-019c32f6059e&amp;type=website&amp;embeds=true&amp;post_services=livejournal%2Cfacebook%2Ctwitter%2Cmyspace%2Cdigg%2Cdelicious%2Clinkedin%2Cfriendfeed%2Cwordpress%2Cblogger%2Cgoogle_bmarks%2Ctechnorati&amp;onmouseover=false"></script><link rel="stylesheet" href="http://darxus.livejournal.com/res/18152266/stylesheet?1277845271" type="text/css" />
+<title>Darxus - [geek] eliminated incoming image spam</title>
+
+</head>
+
+<body class="page_entry">
+
+<div id="shadowhack1">
+<div id="shadowhack2">
+
+<div id="pagecontainer">
+
+<div id="title">
+<h1>Darxus</h1><div id="journal_subtitle">[geek] eliminated incoming image spam</div>
+</div>
+
+<div id="paraphernalia">
+<div class="pbox" id="journalinfo"><h2>Darxus</h2><div class="pboxcontent">
+<div id="journalinfouserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt="2009-09-29"height="100" width="100"  /></div>
+<div class="journallinkbar">     <a href="http://www.livejournal.com/todo/?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s to-do list" title="darxus&#39;s to-do list" src="http://l-stat.livejournal.com/img/btn_todo.gif"  /></a>  <a href="http://www.livejournal.com/tools/memories.bml?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s memories" title="darxus&#39;s memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="http://www.livejournal.com/tools/tellafriend.bml?user=darxus"><img border='0' width="24" height="24" alt="Tell a friend about darxus" title="Tell a friend about darxus" src="http://l-stat.livejournal.com/img/btn_tellfriend.gif"  /></a>  <a href="http://www.livejournal.com/tools/search.bml?user=darxus"><img border='0' width="24" height="24" alt="Search darxus" title="Search darxus" src="http://l-stat.livejournal.com/img/btn_search.gif"  /></a>  <a href="http://www.livejournal.com/friends/nudge.bml?user=darxus"><img border='0' width="24" height="24" alt="Nudge darxus" title="Nudge darxus" src="http://l-stat.livejournal.com/img/btn_nudge.gif"  /></a> </div></div></div>
+<div class="pbox" id="viewsel"><h2>View</h2><div class="pboxcontent">
+<ul>
+<li><a href="http://darxus.livejournal.com/">Recent Entries</a></li>
+<li><a href="http://darxus.livejournal.com/calendar">Archive</a></li>
+<li><a href="http://darxus.livejournal.com/friends">Friends</a></li>
+<li><a href="http://darxus.livejournal.com/profile">User Info</a></li>
+</ul>
+</div></div>
+
+</div>
+
+<div id="main">
+<div class="entry"><div class="entryheader">
+<h3 class="entrysubject">[geek] eliminated incoming image spam</h3><div class="entryposter"><span class='ljuser_darxus' style='white-space:nowrap;'><a href='http://www.livejournal.com/userinfo.bml?user=darxus'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align:bottom;border:0;' /></a><a href='http://www.livejournal.com/users/darxus/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate">11/14/06</span>
+    <span class="entrytimestamptime">11:36 am</span></div><div class="entrylinkbarpre"><a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=158524&amp;dir=prev"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>      <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=158524"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="#"><img border='0' width="24" height="24" alt="Share this!" title="Share this!" src="http://l-stat.livejournal.com/img/btn_sharethis.gif"  /></a> <script type="text/javascript">
+            var stLink = jQuery('a:last')[0];
+            stLink.href = 'javascript:void(0)';
+            SHARETHIS_post = SHARETHIS.addEntry({url:'http://darxus.livejournal.com/158524.html', title: '[geek] eliminated incoming image spam'}, {button: false});
+            SHARETHIS_post.attachButton(stLink);
+            SHARETHIS_ary.push(SHARETHIS_post);
+            </script>       <a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=158524&amp;dir=next"><img border='0' width="24" height="24" alt="Next Entry" title="Next Entry" src="http://l-stat.livejournal.com/img/btn_next.gif"  /></a></div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/93571119/874250" title="" alt="2009-09-29"height="100" width="100"  /></div></div>
+
+<div class="entrycontent">I do some pretty aggressive spam filtering, because I get a lot of spam.  I even wrote my own multi-word token bayesian filter, and it works, but not better than spamprobe.  So my complete inability to block the new style of spam that includes a bunch of random text and with all its spaminess contained in an inlined attached image depressed me.  My discussions with the authors of SpamProbe and CRM114 (very effective adaptive filters) did not improve my mood.<br /><br /><a name="cutid1"></a>A big problem with dealing with spam is what to do with the spam.  <br />The two options I was aware of were:<br />Write it to a folder and never look at it again (or discard it).  Then if it turns out to be legit mail you never see it and the sender doesn't know.<br />Bounce it back to the sending address which was probably forged which does nobody any good.  <br /><br />A few days ago I was talking to <span class='ljuser ljuser-name_beowabbit' lj:user='beowabbit' style='white-space: nowrap;'><a href='http://beowabbit.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://beowabbit.livejournal.com/'><b>beowabbit</b></a></span> about spam, and he mentioned that spam can be scored and rejected before the the initial incoming SMTP connection is closed, which results in the sending mail server being responsible for sending the rejection message.  This is wonderful because if it was sent by a spammer no bounce gets sent, and if it was a legit email the sender gets an email from their own mail server saying their mail didn't get delivered.<br /><br />From there it was a pretty simple matter of looking up how Postfix (my mail server software) does regex (pattern) matches on email to reject them, which is <a href="http://www.postfix.org/header_checks.5.html">body_checks</a>.  <br /><br />Then I looked around to see if anybody had created a relevant regex already, and they had, a rather nice one:<br /><br /><tt>/\bsrc\s*=(?:3D)?\s*"?cid:/ REJECT</tt> <br />from <a href="http://archives.neohapsis.com/archives/postfix/2006-05/0430.html">http://archives.neohapsis.com/archi<wbr />ves/postfix/2006-05/0430.html</a><br /><br />Yes I am aware of the solutions integrating OCR into SpamAssassin and I think it's a terrible idea.<a name='cutid1-end'></a><br /><br />Yes this means if you email me an image, you cannot embed the attached image in the body of the email - just attaching it is fine, you just can't &lt;img src&gt; it.  I believe this will inevitably become common email policy, because I believe other solutions will not be useful for long.</div>
+
+<div class="entryfooter">
+
+<ul class="entrymeta">
+<li><span class="entrymetacaption">Current Mood:</span> <img src="http://l-stat.livejournal.com/img/mood/classic/smile.gif" title="" alt="relieved"class="meta-mood-img"  /> relieved</li>
+<li><span class="entrymetacaption">Tags:</span> <div class='ljtags'><a rel='tag' href='http://darxus.livejournal.com/tag/geek'>geek</a>, <a rel='tag' href='http://darxus.livejournal.com/tag/spam'>spam</a></div></li>
+</ul>
+
+<div class="entrylinkbarpost"><a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=158524&amp;dir=prev"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>      <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=158524"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="#"><img border='0' width="24" height="24" alt="Share this!" title="Share this!" src="http://l-stat.livejournal.com/img/btn_sharethis.gif"  /></a> <script type="text/javascript">
+            var stLink = jQuery('a:last')[0];
+            stLink.href = 'javascript:void(0)';
+            SHARETHIS_post = SHARETHIS.addEntry({url:'http://darxus.livejournal.com/158524.html', title: '[geek] eliminated incoming image spam'}, {button: false});
+            SHARETHIS_post.attachButton(stLink);
+            SHARETHIS_ary.push(SHARETHIS_post);
+            </script>       <a href="http://www.livejournal.com/go.bml?journal=darxus&amp;itemid=158524&amp;dir=next"><img border='0' width="24" height="24" alt="Next Entry" title="Next Entry" src="http://l-stat.livejournal.com/img/btn_next.gif"  /></a></div>
+<ul class="entrycmdlinks"><li><a href="http://darxus.livejournal.com/158524.html">3 comments</a></li><li><a onclick="return QuickReply.reply('topcomment',0,'')" href="http://darxus.livejournal.com/158524.html?mode=reply">Leave a comment</a></li></ul>
+<div  id="ljqrttopcomment" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt672572"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_ex_absurdmin176' lj:user='ex_absurdmin176' style='white-space: nowrap; text-decoration: line-through;'><a href='http://ex-absurdmin176.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://ex-absurdmin176.livejournal.com/'><b>ex_absurdmin176</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="7 minutes after journal entry">11/14/06 04:43 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+</div>
+
+<div class="entrycontent">Why waste all that time on a non-problem? You could be doing something fun instead. I just file anything with an image as junk unless its from an address in my address book and you know what? I haven't had one spam of that class since. Checking my junk folder hasn't found a single false positive either. I realize its pretty low tech, but it works great. Just an FYI.<br /><br />I fell off the rabid anti spam bandwagon a long time ago, so I'm probably sounding like a heretic.<br /><br />The 2-3 spams I get per week at this point are actually of the 'ascii art' variety. I don't even care where they're from, I just delete them.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('672572',2627,'')" href="http://darxus.livejournal.com/158524.html?replyto=672572">Reply</a></li><li><a href="http://darxus.livejournal.com/158524.html?thread=672572#t672572">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt672572" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt672828"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_beowabbit' lj:user='beowabbit' style='white-space: nowrap;'><a href='http://beowabbit.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://beowabbit.livejournal.com/'><b>beowabbit</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="3 hours after journal entry, 02:47 pm (beowabbit&#39;s time)">11/14/06 07:47 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/12905842/808998" title="" alt=""height="100" width="100"  /></div></div>
+
+<div class="entrycontent">I get, and <span class='ljuser ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span> probably gets, hundreds and hundreds of pieces of spam <em>a day</em> at least before spam filtering.  After aggressive spam filtering, I still see about a dozen pieces of spam a day hit my inbox.  If <span class='ljuser ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span> and I didn’t block spam in advance, we wouldn’t be able to find anything else in our mailboxes.<br /><br />(At work, about 95% of the number of incoming messages to us are spam.  The overwhelming majority of it isn’t even to valid addresses and will just bounce anyway, but that’s what our mail server has to deal with.  On my home server, I think the ratio is more like 70%.)<br /><br />Who’s your ISP?  If you’re only getting 2-3 spams per week, I can almost guarantee you that that’s because they’re doing lots and lots of spam filtering before the mail gets to you, and that’s exactly what <span class='ljuser ljuser-name_darxus' lj:user='darxus' style='white-space: nowrap;'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span> is talking about doing here.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('672828',2628,'')" href="http://darxus.livejournal.com/158524.html?replyto=672828">Reply</a></li><li><a href="http://darxus.livejournal.com/158524.html?thread=672572#t672572">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/158524.html?thread=672828#t672828">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt672828" style="display: none;"></div>
+
+</div>
+</div><ul class="comments">
+<li><div class="entry" id="ljcmt673084"><div class="entryheader">
+<h3 class="entrysubject"></h3><div class="entryposter"><span class='ljuser with-alias-value ljuser-name_ex_absurdmin176' lj:user='ex_absurdmin176' style='white-space: nowrap; text-decoration: line-through;'><a href='http://ex-absurdmin176.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif' alt='[info]' width='17' height='17' style='vertical-align: bottom; border: 0; padding-right: 1px;' /></a><a href='http://ex-absurdmin176.livejournal.com/'><b>ex_absurdmin176</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate"><span title="3 hours after journal entry">11/14/06 08:06 pm (UTC)</span></span></div><div class="entrylinkbarpre">              </div>
+</div>
+
+<div class="entrycontent">Ok, I implied that it was simpler than it was. I used to get hundreds of spams per day. Evidently it was very important for me to buy pills that would make my penis larger.<br /><br />Really, we're all getting the amount of spam you'd expect if you've had your address for any period of time or have participated on any open discussion list of size on the internet.<br /><br />1. I'm hosting my own mail. My server's are colo'd and have been for the past 8 years or so.<br /><br />2. I implemented grey listing on the server. This dropped the spam by... a large percent. The log stats confirm this. The ratio of legitimate mail to real mail is pitiful. 10 to 1 on a good day. [1]<br /><br />3. I'm letting spam assassin catch the easy stuff. Its not the best, but it does its job fairly well.<br /><br />4. The remainder consists of image spam and 'ascii art' which I've taught my mua to handle with the aforementioned rules since as Darxus mentioned, trying to teach a baysian filter about those 2 concepts is futile.<br /><br />So, I did have to invest some time in priming the pump as it were. However, I haven't devoted a significant amount of time to spam ever since I realized that my vigilence amounted to me pissing in the wind.<br /><br />I used to be 'that guy'. The guy who would forward spam taking great pains to ensure headers were intact, to the appropriate abuse departments. I used to stand up like a 2 year old and yell 'I found it!!!', or at least the moral equivelent.<br /><br />So, hi. My name is Jason and I'm a recovering spam nazi.<br /><br />My real point is, of the remainder of easily spotted spam, its simple to create a couple rules that do a great job to catching the obvious rest. Granted I still get a couple spams a week, but thats not too bad when you consider the percentage that represents.<br /><br />[1]<br />I also eliminated the 'catch all' spam sponge accounts for my domains.</div>
+
+<div class="entryfooter">
+
+
+<div class="entrylinkbarpost">              </div>
+<ul class="entrycmdlinks">
+<li>
+<a onclick="return QuickReply.reply('673084',2629,'')" href="http://darxus.livejournal.com/158524.html?replyto=673084">Reply</a></li><li><a href="http://darxus.livejournal.com/158524.html?thread=672828#t672828">Parent</a></li>
+<li><a href="http://darxus.livejournal.com/158524.html?thread=673084#t673084">Thread</a></li>
+</ul>
+<div class="quickreply" id="ljqrt673084" style="display: none;"></div>
+
+</div>
+</div></li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+
+
+
+<div id="server_sig">Powered by <a href="http://www.livejournal.com/">LiveJournal.com</a></div></div>
+
+</div>
+</div>
+
+<div id='hello-world' style='text-align: left; font-size:0; line-height:0; height:0; overflow:hidden;'>
+<script type="text/javascript"> var DR_id = 1111; </script>
+<script src="http://l-stat.livejournal.com/js/pagestats/DR_v4u3.js" type="text/javascript"></script>
+    </div></body>
+</html>

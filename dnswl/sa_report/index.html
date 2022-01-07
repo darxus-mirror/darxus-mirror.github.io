@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<body>
+
+<h1>DNSWL spam reporting script</h1>
+
+<p>
+<a href="../dl/dnswl_autoreport.pl">dnswl_autoreport.pl</a>
+</p>
+
+<p>
+<b>It is very important that you only use this script when you are
+certain you never get email from a trusted relay, like a proxy or
+mailing list server.  Otherwise this script will report your trusted relays as spammers.</b>
+</p>
+
+<p>
+There is a <a href="../sa_plugin/index.html">SpamAssassin plugin, which handles trusted relays</a>.
+</p>
+
+<p>
+This script reads a spam email on standard input and reports it to <a href="http://www.dnswl.org/">DNSWL.org</a>.
+</p><p>
+
+This requires <a href="http://www.dnswl.org/registerreporter.pl">creating a DNSWL abuse reporter account</a>.<br /> 
+( <a href="http://www.dnswl.org/">http//www.dnswl.org</a> / Report Abuse, Register as Reporter )
+</p><p>
+You need to create a configuration file $HOME/.dnswl_autoreportrc like:<br />
+<tt>
+$address = 'email@example.com';<br />
+$password = 'password';
+</tt>
+
+</p><p>
+
+Output tells you what IP address you reported, so you can verify it is correct.
+</p><p>
+
+You can also <a href="http://www.dnswl.org/abuse/pastreports.pl">check your DNSWL abuse report history</a>.<br />
+( http//www.dnswl.org / Report Abuse, Report / History )<br />
+It also shows the domain we believe owns the reported IP.
+Requires logging in with the username and password created above.
+Unfortunately Unlisted IPs are not recorded, or shown on this page.
+</p>
+
+<h2>Change History</h2>
+<p>
+2011-02-21 Initial release.<br />
+</p>
+
+<hr />
+Fri Feb 10 15:58:25 EST 2012
+<br />
+<a href="../../contact/index.html">Contact Darxus.</a>
+
+</body>
+</html>

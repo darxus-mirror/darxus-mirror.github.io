@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 6 November 2007), see www.w3.org" />
+<title>Daily Target Weight Calculator</title>
+<link rel='StyleSheet' href="/light.css" type="text/css" />
+</head>
+<body>
+<div>
+<table border="0" width="100%">
+<tr>
+<td style="border:1px solid black; width:100%">
+<h1>Daily Target Weight Calculator</h1>
+You will not exactly hit each daily target. Daily fluctuation is normal and healthy.<br />
+<br />
+<form action="/cgi-bin/gym/weightslope.cgi">
+<div>Your current weight: <input name="start" value="" /><br />
+Your target weight: <input name="end" value="" /><br />
+Rate of weight change per week: <input name="rate" value="0.5%" /><br />
+Precision of output / your scale: <input name="precision" value="0" /><br />
+<input type="submit" /></div>
+</form>
+</td>
+<td colspan="2" style="width:320px;" align="center"><object data="/gym/weight.var" width="320" height="240" codebase="http://www.chaosreigns.com/svgie.html" style="border:1px solid black;align:center;"><br />
+Your browser was offered four diferent file types to display here in an entirely standards compliant fashion, and has failed utterly.<br />
+<br />
+Get a better browser (free): <a href="http://www.mozilla.com/firefox/">Firefox</a>, <a href="http://www.opera.com/">Opera</a>, <a href="http://www.google.com/chrome">Chrome</a>, <a href="http://www.alternativebrowseralliance.com/">etc.</a>.<br />
+<br /></object> <a href="http://www.chaosreigns.com/gym/weight.html">Larger</a></td>
+</tr>
+</table>
+<hr />
+You may use whatever units (pounds, kilograms, etc.) you like, as long as they are all the same. You can also enter percentages per week. 1% seems to be a good maximum limit. 0.5% seems like a more maintainable goal. 2 pounds per week is a popular maximum, but I don't like the fact that it fails to account for starting weight.<br />
+<br />
+This will print target weights for every day until your weight goal, at whatever rate you specify.<br />
+<br />
+Trying to achieve a weight goal can be hard. Trying to do it at a consistently healthy rate is harder. I have a history of losing weight at a very unhealthy and unmaintainably fast rate, then giving up (and gaining it back). I find these daily goals to be much easier to work with. Please keep in mind that weight always fluctuates a lot from day to day independant of calories consumed.<br />
+<br />
+My old scale was accurate to 0.5 pounds, so I used to find it useful to see these values at the same precision before I started using an <a href="http://www.fourmilab.ch/hackdiet/e4/signalnoise.html#Fa76">exponentially weighted moving average</a>. 0 will give you maximum precision.<br />
+<br />
+<a href="http://www.chaosreigns.com/gym/weight.var">My weight graph including my "0.5% per week target weights".</a> I ignore the raw weights and only try to get the "exponentially weighted moving average" to match the daily targets.<br />
+<br />
+<h2>Recommendation</h2>
+I have no relevant qualifications.<br />
+<br />
+Most important: Once you hit your final target weight you are not done. You are probably never done. You just have a fixed target now. Keep weighing yourself and adjusting your calories. Eventually it will become easier and more habitual, and you probably will not need to check your weight trend as often.
+<ol>
+<li>Record your weight every day (or as often as is practical). First thing in the morning after relieving yourself is most consistent. Ignore the raw daily values because they are uselessly noisy.</li>
+<li>Get a daily calorie intake guideline from <a href="http://www.google.com/search?q=target+calories">someone else</a>, maintain it for a week.</li>
+<li>Calculate an <a href="http://www.fourmilab.ch/hackdiet/e4/signalnoise.html#Fa76">exponentially weighted moving average</a> of your raw daily weights.</li>
+<li>After a week, use this page to generate daily target weights. Fill in "Your current weight:" with the last value of the moving average of your weight.</li>
+<li>From here on, once a week or so, check the relationship between your moving average and daily targets, and adjust your calories to get them to intersect in about a week.</li>
+</ol>
+My girlfriend and I started off with very low daily calories, so you may want to check your weight trend after just a few days to make sure that miserable starvation isn't due to a terrible calorie recommendation.<br />
+<br />
+I have found "1 pound = 3500 calories" formulas much worse than useless. Also, ignore all things related to <a href="http://www.stumptuous.com/body-fat-part-3-why-the-scale-can-steer-you-wrong">BMI</a>. Ask your doctor for a target weight - make sure it doesn't just read off of a BMI table. Maybe ask about a rate of weight loss.<br />
+<br />
+Losing weight by reducing calorie consumption alone works. A balanced diet and exercise is obviously healthier, but maybe that doesn't work for you.<br />
+<br />
+Bathroom scales are generally plenty accurate and consistent for weight loss, but if you have read this far it may be worth the $139 + $26.85 shipping = $165.85 to get a very accurate and extremely consistent <a href="http://www.google.com/search?q=balance+beam+scale">doctor's office type scale, also known as a "balance beam scale"</a>.
+<hr />
+<a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+<a href="/gym/">Darxus' Gym page</a><br />
+<a href="/">Darxus' home page</a><br />
+<a href="http://darxus.livejournal.com/">Darxus' livejournal</a><br />
+Fri Jul 10 22:52:55 EDT 2009</div>
+<script type="text/javascript" src="/logstats.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<? header("Content-Type: application/xhtml+xml"); ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title></title>
+<link rel='StyleSheet' href='../../light.css' type='text/css' />
+<style type='text/css'>
+th { text-align: left; }
+.size { text-align: right; }
+</style>
+</head><body><div>
+<h1 style='text-align:left'>
+<? print("Index of $SCRIPT_URL\n"); ?>
+</h1>
+<hr />
+<table border='0'><tr><th>Name</th><th>Last modified</th><th colspan='2' class='size'>Size</th></tr>
+
+<?
+
+
+if ($dh = opendir('.')) {
+  while (($file = readdir($dh)) !== false) {
+    if ($file != '.' && $file != 'autoindex.php' && $file != 'index.php' && is_readable($file) ) {
+      #list($size,$mtime) = (stat($file))[7,9];
+      if ((list($dev,$ino,$mode,$nlink,$uid,$gid,$rdev,$size, $atime,$mtime,$ctime,$blksize,$blocks) = stat($file)) !== false) { 
+        #list($mday,$mon,$year) = (localtime($mtime))[3,4,5];
+        list ($sec,$min,$hour,$mday,$mon,$year,$wday,$yday,$isdst) = localtime($mtime);
+        $mtime = sprintf("%d-%02d-%02d",$year+1900,$mon,$mday);
+        $kb = &round($size / 1024);
+        $mb = &round($size / 1024 / 1024);
+        $gb = &round($size / 1024 / 1024);
+        if ($kb >= 1) {
+          $size = $kb;
+          $unit = 'kB';
+          if ($mb >= 1) {
+            $size = $mb;
+            $unit = 'mB';
+            if ($gb >= 1) {
+              $size = $gb;
+              $unit = 'gB';
+            }
+          } 
+        } else {
+          $unit = 'B';
+        }
+        print("<tr><td><a href='http://www.chaosreigns.com/code/sigclust/$file'>$file</a></td><td>$mtime</td><td class='size'>$size</td><td class='size'>$unit</td></tr>\n");
+      }
+    }
+  }
+  closedir($dh);
+} else {
+  print("Failed to opendir .\n");
+}
+
+print "</table><hr /><a href='../../index.html'>Return to Darxus' Home Page.</a></div></body></html>\n";
+
+?>

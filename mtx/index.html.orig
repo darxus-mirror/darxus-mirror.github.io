@@ -1,0 +1,344 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 6 November 2007), see www.w3.org">
+<title>MTX Records</title>
+<link rel='StyleSheet' href="/light.css" type="text/css">
+<style type="text/css">
+li
+{
+  margin: 1em 0;
+}
+</style>
+</head>
+<body>
+<div>
+<p>Only a few people have tried MTX in the year since it was created, due at least in part to a belief that spammers can create junk domains faster than they can be blacklisted.
+<br />I'm not entirely convinced.</p>
+
+<p><a href="https://bz.apache.org/SpamAssassin/show_bug.cgi?id=6648">Bug requesting inclusion in spamassassin.</a></p>
+
+</div>
+<div>
+<a href="policy/mtxp.big.png"><img src="mtx.png" width="500" height="238" style="float:right; border-style:none;" alt="MTX Flow Chart"></a>
+<h1>MTX Records</h1>
+<p>MTX records are just one DNS "A" record for each of your transmitting mail server IP addresses, on your own DNS servers.  
+</p><p>
+A distributed DNS whitelist, requiring both IP and domain ownership.
+</p><p>
+Without <a href="http://www.openspf.org/FAQ/Forwarding">SPF's forwarding breakage</a>.
+</p>
+<hr>
+<a href="#premises">Premises</a><br>
+<a href="#recommendation">Recommendations</a><br>
+<a href="#definition">MTX Record Definition</a><br>
+<a href="#plugin">Using with SpamAssassin</a><br>
+<a href="#blacklist">Using My Blacklist (Optional)</a><br>
+<a href="#policy">MTX Policy Records</a><br>
+<a href="#examples">Example Scenarios</a><br>
+<a href="#comparisons">Comparisons to Other Methods</a><br>
+<a href="#false_positives">Sending Error Messages for False Positives</a><br>
+<a href="background/">Background</a>
+<hr>
+<h2><a name="premises">Premises</a></h2>
+<ol>
+<li>It is easier to maintain a Whitelist than a Blacklist due to many fewer entries.</li>
+<li>It is yet easier to allow others to maintain their own entries on the Whitelist on the authority of IP address ownership (DNS PTR record delegation).</li>
+<li>It is easier to maintain a Blacklist of Whitelist abusers than either a complete Whitelist or Blacklist.</li>
+</ol>
+<p>MTX was conceived on 8 February 2010.</p>
+<h2><a name="recommendation">Recommendations at This Time</a></h2>
+<h3>Create your MTX records to whitelist your mail servers</h3>
+<p>Benefit: Mail from your servers is less likely to be classified as spam.<br />
+Detriment: None.<p>
+<h3>Use MTX plugin for SpamAssassin for whitelisting only</h3>
+<p>Benefits: Legitimate mail from people using MTX is more likely to correctly pass SpamAssassin.  More people will be encouraged to create their MTX records.<br />
+Detriment: Small chance of spammers getting past SpamAssassin by using MTX.  Expected to be easy to handle with included blacklisting functionality.<p>
+<h2 id="wizard">Generate or Test MTX Records</h2>
+This <a href="wizard/">wizard</a>, given a mail server IP address, will generate MTX DNS records in BIND server syntax, and check the condition of existing MTX records.  It's not very friendly looking yet.
+<h2><a name="definition">MTX Record Definition</a></h2>
+<p>Just one DNS "A" record for each transmitting mail server, with a value of "127.0.0.1" in the format:</p>
+<blockquote><p><tt>IPReversed.<b>mtx</b>.HostName</tt></p></blockquote>
+<p>For a server with IP 64.71.152.40 and hostname (DNS PTR record) panic.chaosriegns.com, it is:</p>
+<blockquote><p><tt><b>40.152.71.64</b>.mtx.<b>panic.chaosreigns.com</b></tt></p></blockquote>
+<p>(You also need to have a DNS PTR record for the IP defining the host name, but you should already have that.)</p>
+<p>For IPv6, the IP is reversed in the same manner as reverse DNS (PTR) records, just like IPv4.  The PTR record for 2001:470:1f05:1b8a::1 is, expanded to long form, reversed, then add a dot between each digit:</p>
+<blockquote><p><tt>
+$ host 2001:470:1f05:1b8a::1<br />
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.a.8.b.1.5.0.f.1.0.7.4.0.1.0.0.2.ip6.arpa domain name pointer panic.chaosreigns.com.
+</tt></p></blockquote>                                                                                                                                                                     
+<p>Which makes the MTX record</p>
+<blockquote><p><tt>1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.a.8.b.1.5.0.f.1.0.7.4.0.1.0.0.2.mtx.panic.chaosreigns.com</tt><p></blockquote>
+
+<p>The Bind DNS server syntax for these record is:</p>
+<blockquote><p><tt>40.152.71.64.mtx.panic.chaosreigns.com. IN A 127.0.0.1<br />
+1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.a.8.b.1.5.0.f.1.0.7.4.0.1.0.0.2.mtx.panic.chaosreigns.com. IN A 127.0.0.1</tt></p></blockquote>
+<p>If the value of that record matches 127.*.*.1 (PCRE <tt>/^127\.\d{1,3}\.\d{1,3}\.0$/</tt>), it's a legitimate transmitting mail server (for all domains), and unlikely to be spam. If it's anything else (particularly undefined, or 127.0.0.0) it is <i>not</i> legitimate, and likely to be spam.</p>
+<h3>Protocol Notes</h3>
+<p>The wild cards in the MTX record value check are to enable the use of other values in the second and third octets in the future, similar to DNSWL.</p>
+<p>Both PTR and A records can have multiple values. Use the first value of each. Future versions may involve multiple A (MTX) record values, as commonly used in DNS blacklists.</p>
+<p>When implementing MTX checks, be sure not to DOS yourself by doing A record lookups on a maliciously large number of PTR values (just do the first).</p>
+<p><b>Do not implement MTX without blacklisting.</b>  There is nothing else preventing a spammer from whitelisting their own IPs with MTX.  If there are no spammers using MTX, it is <i>because</i> blacklisting is part of the protocol.  (For example, there <i>are</i> plenty of spammers who use SPF, a protocol without blacklisting.)</p>
+<p>There is nothing new here.  The records are in a format identical to those used by DNSWL for several years, which are identical to those used by DNS blacklists forever, except with reverse meaning.  The only difference from DNSWL is that the records are hosted by the domain of the host name (PTR) of the IP, basically where SPF stores them, instead of the centralized list.dnswl.org.</p>
+
+
+<h2><a name="plugin">Using MTX with SpamAssassin</a></h2>
+<p>Unrelated to MTX, you <i>really</i> should upgrade to SpamAssassin version 3.3.0 or newer.</p>
+<ol>
+<li>Download the SpamAssassin plugin (MTX.pm):
+
+<table border="0">
+<tr><td><a href="dl/MTX.pm">2019-03-02</a></td><td>Current.  SpamAssassin renamed the RegistryBoundaries module.  SA v3.4.2.</td></tr>
+<tr><td><a href="dl/MTX.pm.2011-05-29">2011-05-29</a></td><td>IPv6 support by Andreas Schulze.  Tested with SA v3.3.1 and 3.3.2-rc1.</td></tr>
+<tr><td><a href="dl/MTX.2010-02-16.pm">2010-02-16</a></td><td>Don't check Policy if None is already determined (optimization, not bug fix).  Minor tidying.  <br />This and older versions have only been tested with SA v3.2.5.</td></tr>
+<tr><td><a href="dl/MTX.2010-02-15.pm">2010-02-15</a></td><td>Implemented MTX Policy records.  Fixed implicit split to @_.</td></tr>
+<tr><td><a href="dl/MTX.2010-02-14.pm">2010-02-14</a></td><td>Don't "fail" on "last untrusted relay not available".</td></tr>
+<tr><td><a href="dl/MTX.2010-02-13.pm">2010-02-13</a></td><td>Unexpected conditions = "fail" (duh).  Un-broke CNAME handling.  Use last untrusted relay instead of last external relay.</td></tr>
+<tr><td><a href="dl/MTX.2010-02-12.pm">2010-02-12</a></td><td>Implemented blacklisting.</td></tr>
+<tr><td><a href="dl/MTX.2010-02-10.pm">2010-02-10</a></td><td>Initial release.</td></tr>
+</table>
+
+</li>
+<li>Save it in /etc/spamassassin/</li>
+<li>In /etc/spamassassin/local.cf add the following lines:
+<pre>
+loadplugin Mail::SpamAssassin::Plugin::MTX MTX.pm
+
+header   MTX_PASS      eval:check_mtx_pass()
+header   MTX_FAIL      eval:check_mtx_fail()
+header   MTX_NONE      eval:check_mtx_none()
+header   MTX_NEUTRAL   eval:check_mtx_neutral()
+header   MTX_SOFTFAIL  eval:check_mtx_softfail()
+header   MTX_HARDFAIL  eval:check_mtx_hardfail()
+header   MTX_BLACKLIST eval:check_mtx_blacklist()
+
+score    MTX_PASS -2       # Bonus for Pass.
+score    MTX_FAIL 0.001    # Using NONE/NEUTRAL/SOFTFAIL/HARDFAIL instead.
+score    MTX_NONE 0.001    # No penalty for not using MTX, until it's
+                           # more widely used.
+score    MTX_NEUTRAL 0.001 # Same lack of penalty for people using MTX prefering
+                           # minimum penalty for IPs without an MTX record.
+score    MTX_SOFTFAIL 1    # More penalty for those who want it.
+score    MTX_HARDFAIL 100  # Major penalty for those who want it.
+# MTX_BLACKLIST score defined per domain.
+
+describe MTX_PASS MTX: Passed: http://www.chaosreigns.com/mtx/
+describe MTX_FAIL MTX: Failed: http://www.chaosreigns.com/mtx/
+describe MTX_NONE MTX: Not defined: http://www.chaosreigns.com/mtx/
+describe MTX_NEUTRAL MTX: Neutral: http://www.chaosreigns.com/mtx/
+describe MTX_SOFTFAIL MTX: SoftFail: http://www.chaosreigns.com/mtx/
+describe MTX_HARDFAIL MTX: HardFail: http://www.chaosreigns.com/mtx/
+describe MTX_BLACKLIST MTX: On your blacklist.
+
+# Hostname (PTR) of delivering IP to blacklist, and score.
+mtx_blacklist *.example.com  4   # Known to send spam *and* non-spam, nullify PASS score.
+mtx_blacklist *.example2.com 100 # Only sends spam, big penalty.
+</pre>
+</li>
+<li>
+SA's <a href="http://wiki.apache.org/spamassassin/TrustPath">trusted_networks</a> must be configured properly, otherwise you can end up doing MTX checks on your own internal servers.  The default is often fine.
+</li>
+<li>If you have SpamAssassin configured to <a href="#false_positives">reject spams during delivery</a>, you could use the error message:
+<blockquote><p>I'm sorry, my server thought your email was spam. Your DNS administrator can correct this by creating MTX records to whitelist your mail servers: http://www.chaosreigns.com/mtx/</p></blockquote>
+</li>
+</ol>
+
+
+<p>
+This plugin, when run in debug mode, will tell you the MTX record for any email.  This is useful for determining what record needs to be created to whitelist that email.  For example, if you save an email to the file email.txt, and run "<tt>spamassassin -t -D &lt; email.txt 2&gt;&amp;1 | grep -i mtx</tt>", one of the lines of output will be similar to:
+</p>
+<blockquote><p><tt>[14152] dbg: mtx: Relevant MTX record is: 40.152.71.64.mtx.panic.chaosreigns.com</tt></p></blockquote>
+
+<p>
+MTX_FAIL skips the MTX Policy check and hits whenever MTX_PASS doesn't, so it includes, and is meant to be used as alternative to, all of MTX_NONE, MTX_NEUTRAL, MTX_SOFTFAIL, and MTX_HARDFAIL.
+</p>
+
+<h2><a name="blacklist">Using My Blacklist - Optional</a></h2>
+<p>This is the kind of centralization I prefer to avoid.
+I'd prefer you maintain your own blacklist, with the mtx_blacklist syntax described above, in your spamassassin config.
+But I realize some will prefer full automation.  
+</p>
+<ol>
+<li>Download <a href="dl/mtx_blacklist.pl">mtx_blacklist.pl</a>.</li>
+<li>Move it to /usr/local/bin/</li>
+<li>Run it (/usr/local/bin/mtx_blacklist.pl).</li>
+<li>Verify /etc/spamassassin/mtx_blacklist.cf was created.</li>
+<li>Put it in a cron job, once a day (just before restarting spampd if relevant) (no more than once a day or I'll probably block you):
+<blockquote><p><tt>52 3 * * * /usr/local/bin/mtx_blacklist.pl ; /usr/bin/sa-update &amp;&amp; /etc/init.d/spampd restart</tt></p></blockquote>
+</li>
+<li>Add this line to /etc/spamassassin/local.cf:
+<blockquote><p><tt>include /etc/spamassassin/mtx_blacklist.cf</tt></p></blockquote>
+</li>
+<li>
+Change "<tt>$score{'somespam'} = 4;</tt>" in mtx_blacklist.pl to be the reverse of your MTX_PASS score.  The default, 4, is appropriate with an MTX_PASS score of -4 (as suggested above).
+</li>
+</ol>
+
+<p>
+This will download my blacklist from http://www.mtxbl.chaosreigns.com/mtxbl.gz, save it to /etc/spamassassin/mtx_blacklist.gz, then convert it to a SA readable blacklist named /etc/spamassassin/mtx_blacklist.cf.
+</p>
+
+<p>
+It's currently empty.
+</p>
+
+<p>
+<a href="mirror/">Help mirror the blacklist.</a>
+</p>
+
+
+<h2><a name="policy">MTX Policy Records</a></h2>
+<p>
+Without an <a href="policy/">MTX Policy</a> record, the default is to assume that you would prefer mail from your domain which receives an MTX Fail to get no penalty.
+</p>
+<p>
+These records allow you to specify that a Fail in your domain means Neutral (no penalty), SoftFail (further scrutinize), or HardFail (reject).  The default is no penalty.
+</p>
+
+
+<h2><a name="examples">Examples</a></h2>
+<table border="1">
+<tr>
+<td>Most legit mail servers</td>
+<td>The owner creates an MTX record = Bonus.</td>
+</tr>
+<tr>
+<td>Most spamming hosts</td>
+<td>The owner creates no MTX record = Penalty.</td>
+</tr>
+<tr>
+<td>Hosts which send both spam and non-spam</td>
+<td>The owner creates an MTX record, and blacklisting is used only to negate the bonus = No bonus or penalty.</td>
+</tr>
+<tr>
+<td>Spammers using MTX</td>
+<td><p>Major penalty for being blacklisted.</p>
+<p>
+MTX ties the spam to a domain name, which is tied to a registrar, which can be <b>subpoenaed</b> for the <b>identity of the spammer</b>, who can then be <b>prosecuted</b>.
+</p>
+<p>
+If a spammer runs a registrar, it can be spotted by repeated abuse, and prosecuted.
+</p>
+<p>
+For these reasons, I do not expect spammers to use MTX.  A public blacklist is provided in case I'm wrong.
+</p>
+</td>
+</tr>
+<tr>
+<td>Legit servers without MTX</td>
+<td>Penalty, starting at 0 and rising gradually as adoption spreads.</td>
+</tr>
+<tr>
+<td>Spammer using IP <i>and</i> brand new (throwaway) domain he owns.</td>
+<td>MTX will not block this.<br>
+I would love for this to be the biggest challenge to blocking spam.<br>
+<a href="http://wiki.ctyme.com/index.php/Spam_DNS_Lists#Familiar_Domains">hostkarma.junkemailfilter.com</a> provides a list of domains seen over 10 days ago.  Still, a spammer can wait 10 days without establishing a reputation for a new domain.  Perhaps the answer would be quicker, possibly automated, blacklisting.  
+</td>
+</tr>
+</table>
+<p>The penalty for both spammers and legit mail servers without an MTX record is necessarily the same. Therefore, the initial primary benefit is the bonuses from having the records (whitelisting), as the penalties can only be proportional to adoption and possibly your willingness to cause a few false positives.  I am quite happy with the increased spam blockage that comes with a very small number of false positives.</p>
+<h2><a name="comparisons">Comparisons</a></h2>
+<h3>SPF</h3>
+<p>MTX was created to address the <a href="http://www.openspf.org/FAQ/Forwarding">forwarding breakage caused by SPF</a>, by not tying the email to a domain, only tying the sending IP to a domain.</p>
+<p>Forwarding breakage is a significant barrier to adoption for spam filtering:</p>
+<p>When a user configures one email account to automatically forward their email to another email account, it is generally done without rewriting the "envelope from" which SPF uses for validation. So the forwarding server's IP doesn't match the SPF record of the original "envelope from", so it gets rejected. And the "envelope from" rewriting solutions seem to be even less appealing.</p>
+<h3>SPF HELO</h3>
+<p>
+Without Full Circle DNS (FCDNS), a spammer can set the HELO to a domain he owns, create a validating SPF record, and send spam from every IP on the internet.
+</p><p>
+The disadvantages of SPF HELO + FCDNS compared to MTX are minor:
+</p>
+<ol>
+<li>Complication.</li>
+<li>3 DNS lookups (HELO, PTR, SPF, possibly more if the SPF record isn't all IPs) instead of 2 (PTR, A).</li>
+<li>Negative association with SPF (MAIL FROM).</li>
+<li>Not implemented.</li>
+</ol>
+
+<h3>DomainKeys</h3>
+<h4>Simplicity</h4>
+<p>"The first version of DKIM synthesized and enhanced Yahoo!'s DomainKeys and Cisco's Identified Internet Mail specifications. It was the result of a year-long collaboration among numerous industry players, during 2005..."</p>
+<p>MTX was basically conceived and finalized in the same instant. Fewer moving parts; less to break.<br>
+The parts that were not instant were deciding on the name, and sanity checking the obvious sequence of parts of the MTX record.</p>
+<h4>Replay</h4>
+<p>If a spammer manages to get one spam through your server with DomainKeys, they can then forward it to everyone on the internet with your domain's signature on it.</p>
+<p>With MTX, if they get one spam through your server, it's just one spam.</p>
+<h4>Content Modification</h4>
+<p>DomainKeys: If, for example, a mailing list modifies the email by appending list information, you get a failure. It gets rejected.</p>
+<p>MTX: No such problem.</p>
+<h4>CPU Overhead</h4>
+<p>DomainKeys: Cryptography adds CPU overhead.</p>
+<p>MTX: Doesn't.</p>
+<h3>DNSWL</h3>
+<p>DNSWL involves dependence on a central authority. Blacklisting should be unnecessary. More difficult to maintain your own records.</p>
+<p>MTX gives the authority to the owner of the IP (PTR delegate). Requires blacklisting participating spammers. Easy to maintain your own records on your own DNS servers.</p>
+<h3><a name="fcdns">Full Circle DNS (FCDNS)</a></h3>
+<p>My dynamic IP from my cablemodem provider passes that. It doesn't pass MTX.</p>
+<h3><a href="http://tools.ietf.org/draft/draft-stumpf-dns-mtamark/draft-stumpf-dns-mtamark-04.txt">MTAMark</a></h3>
+<ul>
+<li>Does not tie the IP to a domain
+<ul>
+<li>More difficult to track down the spammer.</li>
+<li>Need to blacklist abusers by IP (still) instead of by domain.</li>
+</ul>
+</li>
+<li>Requires a record for every participating IP (decently handled by next point).</li>
+<li>More complication / overhead ("This subdomain MAY be inserted at any level in the DNS tree").</li>
+<li>Not implemented</li>
+</ul>
+<h3><a href="http://mipassoc.org/csv/draft-ietf-marid-csv-csa-02.txt">Client SMTP Authorization</a></h3>
+<p>
+Doesn't require ownership of the IP.  So a spammer could send spam from
+any IP on the internet, as long as they use a HELO matching a domain
+they own and have created the CSA records for.
+</p><p>
+Not implemented.
+</p>
+<h3><a href="http://tools.ietf.org/id/draft-ietf-marid-csv-intro-02.txt">Certified Server Validation</a></h3>
+<p>Same problem as previous, doesn't require ownership of the IP.</p>
+
+<h3><a href="http://serverauthority.net/draft-lorenzen-marid-mxout-00.txt">mxout</a></h3>
+<p>I have yet to read about this one.</p>
+
+<h2><a name="false_positives">Error Messages for False Positives</a></h2>
+<p>
+False positives, non-spam incorrectly categorized as spam, are always a problem.  Too often they are discarded, the recipient never gets them, and the sender never knows the recipient didn't get them.
+</p><p>
+You can't just send an error message after receipt, because many spams have forged "From:" addresses.  That would be backscatter.
+</p><p>
+The solution is to filter spam <i>during</i> SMTP delivery, so instead of confirming receipt at the end of the transaction, your server can reject the email, with an error defined by you, and the sender gets responsibility for delivering the error.  So legitimate senders get an error, and you emit no backscatter.
+</p><p>
+I think it's irresponsible not to do this.
+</p><p>
+Configuration instructions using Postfix + SpamAssassin + Spampd are half way down this page: <br />
+<a href="http://wiki.apache.org/spamassassin/IntegratePostfixViaSpampd">Spampd as a <b>Before-Queue</b> Content Filter</a>
+</p>
+<h2 id="name">The Name</h2>
+<p>"RX" and "TX" are common abbreviations for "receive" and "transmit".  DNS "MX" records list the mail servers for a domain.  "MTX" is a combination of "MX" and "TX".</p>
+<h2><a name="background"></a><a href="background/">Background</a></h2>
+<h2 id="todo">ToDo</h2>
+<p>It would be nice to set up
+an email autoresponder to verify your MTX records, as is available for DKIM.
+</p>
+
+<h2 id="reliability">Reliability</h2>
+<p>
+In addition to being simple and stabilized, I run this SpamAssassin plugin through a test harness which tests 12 different possible MTX and Policy record combinations for the correct results in SpamAssassin:  <a href="testmtx.txt">Test harness output.</a>
+</p>
+
+
+<hr>
+MTX was inspired by <a href="http://www.openspf.org">SPF</a> by Meng Weng Wong, and <a href="http://www.dnswl.org">DNSWL</a> by Matthias Leisi.
+<hr>
+<a href="/iprep">Another anti-spam system I implemented with better short term chances of being useful to you, IPREP.</a>
+<br />Its an IP address REPutation system.
+<hr>
+<a href="/contact/">Contact.</a><br>
+<a href="/spam/">My previous thoughts on spam.</a><br>
+<a href="/">Return to Darxus' home page.</a><br>
+Sat Mar  2 12:20:48 EST 2019
+<br />
+<a href="http://www.htmlhelp.com/cgi-bin/validate.cgi?url=referer">HTML validate this page.</a>
+</div>
+</body>
+</html>

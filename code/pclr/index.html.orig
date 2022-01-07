@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 6 November 2007), see www.w3.org" />
+<title>Pretty CoLoRs for UNIX</title>
+<link rel='StyleSheet' href="/light.css" type="text/css" />
+</head>
+<body>
+<div>
+<div class='center'>
+<h1>Pretty CoLoRs for UNIX</h1>
+</div>
+I once had someone tell me they disliked Unix because it was too black-and-white for their tastes. So I created <a href="pclr">pclr (click here to download)</a> (Pretty CoLoRs), a perl script through which you can run any command line program, that will randomize the color of every character as it is being printed. Then <a href="http://www.billjonas.com">Bill Jonas</a> rewrote <a href="pclr.c">pclr in C</a>.
+<p>Obviously, the person who felt that Unix was not colorful enough had little experience with it.</p>
+<ol>
+<li>They had only used the command line and were not aware of Unix's GUI, <a href="http://www.xfree86.org">X</a>, which can be very pretty if you use a window manager like <a href="http://www.enlightenment.org/pages/shots.html">enlightenment</a>.</li>
+<li>They were unaware of the many <a href="#colorize">applications that can be made colorful</a>.</li>
+</ol>
+On this page I intend to document <a href="#colorize">ways to make the Unix command line more colorful</a>.
+<p><a id="pclr"></a> If you were to use <a href="http://lynx.browser.org/">lynx</a> to look at <a href="http://www.chaosreigns.com">my home page</a> from the command line through <a href="pclr">pclr (click here to download)</a> (<tt>lynx http://www.chaosreigns.com | pclr</tt>), it might look like this:<br />
+<img src="/code/pclr/pclr01.png" width="579" height="340" alt="[lynx+pclr screenshot]" /><br />
+I have tested <a href="pclr">pclr</a> with many command line applications, and have not found problems with any. Of course, if you find any problems running any console application through <a href="pclr">pclr</a>, <a href="mailto:Darxus@ChaosReigns.com">let me know</a>.</p>
+<h2>Rave Responses to pclr:</h2>
+"That's <i>horrible</i>" - pinkee@cavegirl.org
+<p>"Oh god." - Mom</p>
+<p>"my god that's ugly :)" - mct@toren.net</p>
+<p>"this rocks 8)" - time@clockbot.net</p>
+<p>"I'm getting sick looking at <a href="https://www.youtube.com/watch?v=JFFJYJ6QkME">bb</a> through pclr" - mct@toren.net</p>
+<p>&lt;bj&gt; i just did a bad, bad thing.<br />
+&lt;laserhen&gt; honey, that's awful!<br />
+&lt;pinkee&gt; nothing is going to top pclr<br />
+&lt;pinkee&gt; nothing</p>
+<p>"BB through pclr is about as pleasant as a stones through a kidney" - laserhen</p>
+<p>"That sounds more like vomit than rainbows" - Zeph</p>
+<p>"thats so disgustingly good" - Duck_liberation_front, 2016-12-12</p>
+
+<p><a href="http://freshmeat.net">freshmeat.net</a> has rejected my submission of pclr. This, as you may know, is the main forum through which to publicize the existence of a new open-source application. I encourage you to read their <a href="rejection.txt">rejection notice</a>, and <a href="mailto:news-admins@freshmeat.net?subject=Re%58%20[fm%20#11093]%20(news-admins)%20Submission%20report%20-%20Pretty%20CoLoRs">complain</a>.</p>
+<hr />
+<h2><a id="colorize"></a>Things You Can Make More Colorful</h2>
+<ul>
+<li><a href="#pclr">Everything (with pclr)</a></li>
+<li><a href="ls.html">ls</a></li>
+<li><a href="vim.html">vim</a> (text editor)</li>
+<li><a href="bash.html">bash shell prompt</a></li>
+<li><a href="tcsh.html">tcsh shell prompt</a></li>
+<li><a href="bitchx.html">BitchX</a> (Internet Relay Chat client)</li>
+<li><a href="mutt.html">mutt</a> (mail reader)</li>
+<li><a href="irssi.html">irssi</a> (IRC client)</li>
+<li>Manually embedding ANSI color codes (to be written)</li>
+</ul>
+<p>I know the following applications can be colorized but I do not know how (please tell me)</p>
+<ul>
+<li>pine (mail reader)</li>
+<li>tin (Usenet News client)</li>
+<li>slrn</li>
+<li>elvis</li>
+<li>emacs (text editor)</li>
+</ul>
+<p>Please <a href="mailto:Darxus@ChaosReigns.com">email me</a> suggestions for additions to this list, including what can be made more colorful, and how to make it more colorful.</p>
+<hr />
+<a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+<a href="/code/">Darxus' Code Index</a><br />
+<a href="/">Darxus' Home Page</a><br />
+Mon Dec 12 12:03:11 EST 2016
+</div>
+</body>
+</html>

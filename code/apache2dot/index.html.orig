@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+
+  <title>apache2dot</title>
+  <link rel='StyleSheet' href="/light.css" type="text/css" />
+<style type='text/css'>
+img { 
+  float: right; 
+  border-style: none;
+}
+</style>
+
+</head>
+
+<body>
+  <div>
+    <a href="2dot.jpg"><img src="2dot.320.jpg" alt="2dot.jpg"
+    width="216" height="240" /></a>
+
+    <div class='center'>
+      <h1>apache2dot</h1>
+    </div><a href="apache2dot.pl">apache2dot.pl</a> parses an apache log
+    file to a format suitable for use with neato or dot, both of which are part
+    of <a href="http://www.research.att.com/sw/tools/graphviz/">graphviz</a>.
+    This will display links as they are being followed within your web site.
+    Every file is a node, and an arrow is drawn from each referrer within the
+    website to the file someone linked to from it. Darkness of lines is now
+    proportional to how many times the link was used.
+
+    <p>Files:</p>
+
+    <table border="1">
+      <tr>
+        <td>parser</td>
+
+        <td><a href="apache2dot.pl">apache2dot.pl</a></td>
+      </tr>
+
+      <tr>
+        <td>generated graphviz input file</td>
+
+        <td><a href="2dot.dot">2dot.dot</a></td>
+      </tr>
+
+      <tr>
+        <td>postscript output</td>
+
+        <td><a href="2dot.ps">2dot.ps</a> (44k)</td>
+      </tr>
+
+      <tr>
+        <td>small jpeg output</td>
+
+        <td><a href="2dot.1024.jpg">2dot.1024.jpg</a> (42k)</td>
+      </tr>
+
+      <tr>
+        <td>large jpeg output</td>
+
+        <td><a href="2dot.jpg">2dot.jpg</a> (178k)</td>
+      </tr>
+    </table>
+
+    <p>The PostScript file is far supior. I recommend viewing large PostScript
+    files with <a href=
+    "http://wwwthep.physik.uni-mainz.de/~plass/gv/">gv</a>.</p>
+
+    <p>PostScript output can be generateded like this:</p>
+
+    <p><kbd>$ cat /var/log/apache/www.chaosreigns.com-access.log |
+    ./apache2dot.pl &gt; apache.dot<br />
+    $ neato -Tps apache.dot &gt; apache.ps<br />
+    $ gv apache.ps</kbd></p>
+
+    <p><a href="http://www.gnu.org/software/grep/grep.html">grep</a> can be
+    useful in selecting particular times or sections of your website to graph.
+    The above examples were generated like this:</p>
+
+    <p><kbd>$ grep 2dot /var/log/apache/www.chaosreigns.com-access.log.0 | grep
+    -v jpg | ./apache2dot.pl &gt; 2dot.dot<br />
+    $ neato -Tps 2dot.dot &gt; 2dot.ps</kbd></p>
+
+    <p>PostScript was converted to jpeg using <a href=
+    "http://www.imagemagick.org">ImageMagick</a> like this:</p>
+
+    <p><kbd>$ convert 2dot.ps 2dot.jpg<br />
+    $ convert -geometry 1024x768 2dot.ps 2dot.1024.jpg</kbd></p>
+    <hr />
+
+    <h2>Related Programs</h2>
+
+    <table border="1">
+      <tr>
+        <td><a href="/stats/">LiveWebStats</a></td>
+
+        <td>Generate live web statistics from Apache.</td>
+      </tr>
+
+      <tr>
+        <td><a href="/code/cinclude2dot/">cinclude2dot</a></td>
+
+        <td>Graph #include relationships within a C source tree.</td>
+      </tr>
+
+      <tr>
+        <td><a href="/code/sig2dot/">sig2dot</a></td>
+
+        <td>Graph signature relationships in a <a href=
+        "http://www.gnupg.org">gpg</a> keyring.</td>
+      </tr>
+
+      <tr>
+        <td><a href="/code/">/code/</a></td>
+
+        <td>Code Index / Mailing Lists</td>
+      </tr>
+    </table>
+
+    <p>If you have suggestions for other data that might be graphed this way,
+    please <a href="mailto:Darxus@ChaosReigns.com">email me</a>.</p>
+    <hr />
+    Reciprocal Links for this page:
+
+    <ul>
+      <li><a href=
+      "http://www.research.att.com/sw/tools/graphviz/webapps.html">Cool sites
+      using graphviz servers</a></li>
+    </ul>
+    <hr />
+    <a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+    <a href="/">Return to Darxus' Home Page</a><br />
+    Fri Dec 2 21:50:25 EST 2005
+  </div>
+<script type="text/javascript" src="/logstats.js"></script>
+</body>
+</html>

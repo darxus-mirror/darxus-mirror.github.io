@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+<title>bar loading cheat sheet generator</title>
+<link rel='StyleSheet' href="/light.css" type="text/css" />
+</head>
+<body>
+<div>
+<h1>bar loading cheat sheet generator</h1>
+<form action="/cgi-bin/gym/barload.cgi"><div>Select units: <input type="radio" name=
+"unit" value="lb" />pounds or <input type="radio" name="unit" value=
+"kg" />kilograms<br />
+Enter bar weight without plates: <input name="bar" value="45" />(standard
+olympic is 45lbs)<br />
+List half of your plates (for one end of the bar):<input name="plates" /><br />
+<input type="submit" /></div></form>
+<br />
+For example, if you have two 45lb plates and four 5lb plates, enter "45 5
+5".<br />
+Output similarly lists the plates for one end of the bar.<br />
+Use the units you specified above (lbs or kgs).<br />
+<br />
+Examples:<br />
+<a href=
+"/cgi-bin/gym/barload.cgi?plates=20+15+10+5+2.5+1.25&amp;bar=25&amp;unit=kg">132.5kg
+Eleiko Olympic Set: 25kg bar+collars, plates: 2x20kg, 2x15kg, 2x10kg, 2x5kg,
+2x2.5kg, 2x1.25kg</a><br />
+<a href=
+"/cgi-bin/gym/barload.cgi?plates=45+35+25+10+5+5+2.5&amp;bar=45&amp;unit=lb">300lb
+Standard Olympic Set: 45lb bar, 45 35 25 10 5 5 2.5 plates</a><br />
+<a href="/cgi-bin/gym/barload.cgi?plates=all&amp;bar=45&amp;unit=lb">Unlimited
+imperial (commercial gym)</a><br />
+<a href=
+"/cgi-bin/gym/barload.cgi?plates=45+45+45+45+35+25+10+5+5+2.5&amp;bar=45&amp;unit=lb">Darxus' (standard 300lb + 6 45s): 45lb bar, 45 45 45 45 35 25 10 5 5 2.5 plates</a>
+<hr />
+<a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+<a href="/gym/">Darxus' Gym page</a><br />
+<a href="/">Darxus' home page</a><br />
+<a href="http://darxus.livejournal.com/">Darxus' livejournal</a></div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+#!/usr/bin/perl
+
+# pipes.cgi, (c) 2000 Darxus@ChaosReigns.com, released under the GPL
+#
+# Gnerates png images that are 1 pixel wide and 15 high, intended to be
+# stretched horizontally, rezulting in pretty pipe images.  Used for
+# http://www.chaosreigns.com/stats/date.html.
+#
+# "./pipes.cgi > pipe.png" to write to a file, or
+# <img src="/cgi-bin/pipes.cgi"> to use as a cgi.
+
+use GD;
+srand;
+
+@grey = (63,93,126,129,121,107,93,80,68,54,40,29,24,35,52);
+$im = new GD::Image(1,15);
+
+#max 146
+$tintred = rand(128)+18; 
+$tintgreen = rand(128)+18;
+$tintblue = rand(128)+18;
+
+$line=0;
+for $color (@grey)
+{
+  $red = $color/74*$tintred;
+  $green = $color/74*$tintgreen;
+  $blue = $color/74*$tintblue;
+  $colors[$color] = $im->colorAllocate($red,$green,$blue);
+  #print STDERR "$red, $green, $blue\n";
+  $im->setPixel(0,$line,$colors[$color]);
+  $line++;
+}
+
+# If I'm being run as a CGI, print necessary headers
+if (defined($ENV{'GATEWAY_INTERFACE'}))
+{
+  print "Content-Type: image/png\n";
+  print "Expires: 0\n\n";
+}
+
+# make sure we are writing to a binary stream
+binmode STDOUT;
+# Convert the image to PNG and print it on standard output
+print $im->png;
+

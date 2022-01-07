@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Mirror the MTX Blacklist</title>
+</head>
+<body>
+<p>
+Configure your web server to host www.mtxbl.chaosreigns.com.  Apache config is something like this:
+</p>
+
+<blockquote><p><tt>
+&lt;VirtualHost *&gt;<br>
+ServerName www.mtxbl.chaosreigns.com<br>
+DocumentRoot /var/www/mtxbl<br>
+ErrorLog /var/log/apache2/www.mtxbl.chaosreigns.com-error.log<br>
+CustomLog /var/log/apache2/www.mtxbl.chaosreigns.com-access.log combined<br>
+&lt;/VirtualHost&gt;
+</tt></p></blockquote>
+
+
+<p>Set up a cron job to grab the contents of http://www.mtxbl.chaosreigns.com/ (except for /icons/) a couple times a day and put it in the same directory on your web server.  Something like this:
+</p>
+
+<blockquote><p><tt>
+/usr/bin/wget -P /temp/output/directory/ -R "*index.html*" -X "/icons" -m --no-parent -nd http://www.mtxbl.chaosreigns.com/ &amp;&amp; /bin/mv /tmp/output/directory/* /var/www/mtxbl/
+</tt></p></blockquote>
+
+<p>
+Email me the IP of your server, and I'll add it to the relevant DNS record.  Thanks.
+</p>
+
+<hr>
+<p>
+<a href="/mtx/">MTX Home.</a><br />
+Sun Feb 14 02:44:36 EST 2010
+<br />
+<a href="http://www.htmlhelp.com/cgi-bin/validate.cgi?url=referer">HTML validate this page.</a>
+</p>
+</body>
+</html>

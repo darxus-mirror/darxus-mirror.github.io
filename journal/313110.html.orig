@@ -1,0 +1,230 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+   <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9" />
+   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="shortcut icon" type="image/x-icon" href="http://l-stat.livejournal.com/img/userinfo.ico?v=88.9">
+<link rel="icon" type="image/gif" href="http://l-stat.livejournal.com/img/userinfo.gif?v=88.9">
+<link rel='stylesheet' href='http://l-stat.livejournal.com/ad_base.css?v=1313682784' type='text/css' />
+<link rel="meta" type="application/rdf+xml" title="FOAF" href="http://darxus.livejournal.com/data/foaf" />
+<meta name="foaf:maker" content="foaf:mbox_sha1sum 107c1745aac3c319c0e1588eb400be77055f48e8" />
+
+            <script type="text/javascript">
+                Site = window.Site || {};
+                Site.ml_text = {};
+                (function(){
+                    var p = {"remote_is_maintainer":0,"remoteUser":null,"remoteJournalBase":null,"statprefix":"http://l-stat.livejournal.com","ctx_popup":1,"siteroot":"http://www.livejournal.com","media_embed_enabled":1,"inbox_update_poll":0,"has_remote":0,"currentEntryRecommendations":0,"server_time":1328175784,"remote_is_suspended":0,"imgprefix":"http://l-stat.livejournal.com/img","esn_async":1,"remote_can_track_threads":null,"currentJournal":"darxus","currentEntry":"http://darxus.livejournal.com/313110.html","currentJournalBase":"http://darxus.livejournal.com"}, i;
+                    for (i in p) Site[i] = p[i];
+                })();
+                Site.current_journal = {"url_profile":"http://darxus.livejournal.com/profile","userid":"874250","is_comm":"","is_syndicated":"","userpic_h":100,"is_person":"1","display_username":"darxus","url_journal":"http://darxus.livejournal.com","is_identity":"","is_shared":"","display_name":"darxus","username":"darxus","userpic_w":100,"can_receive_vgifts":1,"url_allpics":"http://www.livejournal.com/allpics.bml?user=darxus","ljuser_tag":"<span class='ljuser ljuser-name_' lj:user='darxus' style='white-space:nowrap'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif?v=88.9' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span>","url_message":"http://www.livejournal.com/inbox/compose.bml?user=darxus","url_userpic":"http://l-userpic.livejournal.com/112565160/874250"};
+           </script>
+        <link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??lj_base.css,esn.css,contextualhover.css,share.css?v=1328122449" />
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??interstitial_banner_us.css?v=1328122449" /><![endif]-->
+<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://l-stat.livejournal.com/??ie.css?v=1328122449" /><![endif]-->
+<script type="text/javascript" src="http://l-stat.livejournal.com/js/??jquery.js,jquery_fn.js,basic.js,livejournal.js,esn.js,ippu.js,lj_ippu.js,ljwidget.js,ljwidget_ippu.js,journal.js,hourglass.js,livejournal-local.js,quickreply.js,md5.js,pagescroller.js?v=1328122449"></script>
+<script type="text/javascript" src="http://l-stat.livejournal.com/js/??jquery/jquery.ui.core.min.js,jquery/jquery.ui.widget.min.js,jquery/jquery.tmpl.min.js,jquery/jquery.lj.basicWidget.js,jquery/jquery.lj.bubble.js,contextualhover.js,fb-select-image.js,thread_expander.js,thread_expander.ex.js,commentmanage.js,share.js,jquery/jquery.vkloader.js,ie9pinned.js?v=1328122449"></script>
+<script type="text/javascript">
+LJShare.init({"ml":{"close":"Close","title":"Share"},"services":{"stumbleupon":{"bindLink":"http://www.livejournal.com/redirect/SHARING_stumbleupon?url=http%3A%2F%2Fwww.stumbleupon.com%2Fsubmit%3Furl%3D{url}","title":"StumbleUpon"},"moimir":{"bindLink":"http://www.livejournal.com/redirect/SHARING_moimir?url=http%3A%2F%2Fconnect.mail.ru%2Fshare%3Furl%3D{url}","title":"Moi mir"},"twitter":{"bindLink":"http://www.livejournal.com/redirect/SHARING_twitter?url=http%3A%2F%2Ftwitter.com%2Fshare%3Furl%3D{url}%26text%3D{title}","title":"Twitter"},"digg":{"bindLink":"http://www.livejournal.com/redirect/SHARING_digg?url=http%3A%2F%2Fdigg.com%2Fsubmit%3Furl%3D{url}","title":"Digg"},"email":{"bindLink":"http://www.livejournal.com/redirect/SHARING_email?url=http%3A%2F%2Fapi.addthis.com%2Foexchange%2F0.8%2Fforward%2Femail%2Foffer%3Fusername%3Dinternal%26url%3D{url}%26title%3D{title}","title":"E-mail"},"livejournal":{"bindLink":"http://www.livejournal.com/redirect/SHARING_livejournal?url=http%3A%2F%2Fwww.livejournal.com%2Fupdate.bml%3Frepost_type%3Dc%26repost%3D{url}","title":"LiveJournal"},"vkontakte":{"bindLink":"http://www.livejournal.com/redirect/SHARING_vkontakte?url=http%3A%2F%2Fvkontakte.ru%2Fshare.php%3Furl%3D{url}","title":"Vkontakte"},"facebook":{"bindLink":"http://www.livejournal.com/redirect/SHARING_facebook?url=http%3A%2F%2Fwww.facebook.com%2Fsharer.php%3Fu%3D{url}","title":"Facebook"},"odnoklassniki":{"bindLink":"http://www.livejournal.com/redirect/SHARING_odnoklassniki?url=http%3A%2F%2Fwww.odnoklassniki.ru%2Fdk%3Fst.cmd%3DaddShare%26st.s%3D1%26st._surl%3D{url}","title":"Odnoklassniki"},"tumblr":{"bindLink":"http://www.livejournal.com/redirect/SHARING_tumblr?url=http%3A%2F%2Fwww.tumblr.com%2Fshare%3Fv%3D3%26u%3D{url}","title":"Tumblr"}},"links":["livejournal","facebook","twitter","digg","tumblr","stumbleupon","email"]})</script>
+<script>
+// don't crawl this.  read http://www.livejournal.com/developer/exporting.bml
+var LJ_cmtinfo = {"form_auth":"c0%3A1328173200%3A2584%3A86400%3AGSq2qTdLUc-0-%3A8b12e7f8c794a25b4d72ff5edf810b5f","remote":null,"canAdmin":0,"journal":"darxus"}
+</script><meta property="og:title" name="title" content="Why eating low fat + higher sugar is bad" />
+<meta property="og:description" name="description" content="The decision that we should consume less fat (which resulted in consuming more sugar to compensate for loss of taste) was based on research that showed that high fat consumption highly correlated to obesity. Fine. But in the same research they said that it also correlated to high sucrose*, but …" />
+<meta property="og:image" content="http://l-userpic.livejournal.com/112565160/874250 " />
+<link rel="stylesheet" href="http://darxus.livejournal.com/res/18152266/stylesheet?1324590410" type="text/css" />
+<title>Darxus - Why eating low fat + higher sugar is bad</title>
+
+</head>
+
+<body class="page_entry"><script type="text/javascript">LiveJournal.injectScript('http://apis.google.com/js/plusone.js',{text:"{lang: 'en'}"});</script><div id="fb-root"></div>
+        <script type="text/javascript">
+          window.fbAsyncInit = function() {
+            FB.init({appId: '214181831945836', xfbml: true});
+          };
+
+          LiveJournal.injectScript(document.location.protocol + '//connect.facebook.net/en_US/all.js', null, document.getElementById('fb-root'))
+        </script>
+    <script type="text/javascript">LiveJournal.injectScript('http://platform.twitter.com/widgets.js');</script>
+
+<div id="shadowhack1">
+<div id="shadowhack2">
+
+<div id="pagecontainer">
+
+<div id="title">
+<h1>Darxus</h1><div id="journal_subtitle">Why eating low fat + higher sugar is bad</div>
+</div>
+
+<div id="paraphernalia">
+<div class="pbox" id="journalinfo"><h2>Darxus</h2><div class="pboxcontent">
+<div id="journalinfouserpic"><img src="http://l-userpic.livejournal.com/112565160/874250" alt="August 2011" height="100" width="100"  /></div>
+<div class="journallinkbar">     <a href="http://www.livejournal.com/todo/?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s to-do list" title="darxus&#39;s to-do list" src="http://l-stat.livejournal.com/img/btn_todo.gif"  /></a>  <a href="http://www.livejournal.com/tools/memories.bml?user=darxus"><img border='0' width="24" height="24" alt="darxus&#39;s memories" title="darxus&#39;s memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>  <a href="http://www.livejournal.com/tools/tellafriend.bml?user=darxus"><img border='0' width="24" height="24" alt="Tell a friend about darxus" title="Tell a friend about darxus" src="http://l-stat.livejournal.com/img/btn_tellfriend.gif"  /></a>  <a href="http://www.livejournal.com/tools/search.bml?user=darxus"><img border='0' width="24" height="24" alt="Search darxus" title="Search darxus" src="http://l-stat.livejournal.com/img/btn_search.gif"  /></a>  <a href="http://www.livejournal.com/friends/nudge.bml?user=darxus"><img border='0' width="24" height="24" alt="Nudge darxus" title="Nudge darxus" src="http://l-stat.livejournal.com/img/btn_nudge.gif"  /></a> </div></div></div>
+<div class="pbox" id="viewsel"><h2>View</h2><div class="pboxcontent">
+<ul>
+<li><a href="http://darxus.livejournal.com/">Recent Entries</a></li>
+<li><a href="http://darxus.livejournal.com/calendar">Archive</a></li>
+<li><a href="http://darxus.livejournal.com/friends">Friends</a></li>
+<li><a href="http://darxus.livejournal.com/profile">User Info</a></li>
+</ul>
+</div></div>
+
+</div>
+
+<div id="main">
+<div class="entry"><div class="entryheader">
+<h3 class="entrysubject">Why eating low fat + higher sugar is bad</h3><div class="entryposter"><span class='ljuser ljuser-name_' lj:user='darxus' style='white-space:nowrap'><a href='http://darxus.livejournal.com/profile'><img src='http://l-stat.livejournal.com/img/userinfo.gif?v=88.9' alt='[info]' width='16' height='16' style='vertical-align: bottom; border: 0; padding-right: 1px;'/></a><a href='http://darxus.livejournal.com/'><b>darxus</b></a></span></div><div class="entrytimestamp"><span class="entrytimestampdate">2/1/12</span>
+    <span class="entrytimestamptime">12:19 pm</span></div><div class="entrylinkbarpre"><a href="http://darxus.livejournal.com/312979.html"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>      <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=313110"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>    <a href="#"><img border='0' width="24" height="24" alt="Share" title="Share" src="http://l-stat.livejournal.com/img/btn_sharethis.gif?v=2"  /></a> <script type="text/javascript">LJShare.link({"url":"http://darxus.livejournal.com/313110.html","title":"Why eating low fat + higher sugar is bad","description":"The decision that we should consume less fat (which resulted in consuming more sugar to compensate for loss of taste) was based on research that showed that high fat consumption highly correlated to obesity. Fine. But in the same research they said that it also correlated to high sucrose*, but explained that away as being only an artifact of sucrose consumption being highly correlated to fat consumption. And then our liver converts that sugar to fat in our blood, which is where all the cholesterol and stuff comes from. Source is the same video as last time. And I didn\\'t make it clear enough last time that sucrose is table sugar, cane sugar, what is labelled as \\\"sugar\\\", and thought of as \\\"real sugar\\\" - just as bad as High Fructose Corn Syrup. It contains the same molecules, and the difference is a molecular bond that is irrelevant due a digestive enzyme that easily destroys it. So, bad: Fructose: Large quantities naturally in fruit juice (but not bad in the fruit because they come with plenty of fiber). High Fructose Corn Syrup: Obvious, but in everything. Sucrose - table sugar / sugar / real sugar - effectively same as HFCS * Pretty sure it was sucrose (table sugar, cane sugar), but need to confirm."});</script>       </div>
+<div class="entryuserpic"><img src="http://l-userpic.livejournal.com/112565160/874250" alt="August 2011" height="100" width="100"  /></div></div>
+
+<div class="entrycontent">The decision that we should consume less fat (which resulted in consuming more sugar to compensate for loss of taste) was based on research that showed that high fat consumption highly correlated to obesity.  Fine.  But in the same research they said that it <i>also</i> correlated to high sucrose*, but explained that away as being only an artifact of sucrose consumption being highly correlated to fat consumption.  <br /><br />And then our liver converts that sugar to fat in our blood, which is where all the cholesterol and stuff comes from.<br /><br />Source is the <a href="http://www.youtube.com/watch?v=dBnniua6-oM">same video</a> as last time.<br /><br />And I didn't make it clear enough last time that sucrose <i>is</i> table sugar, cane sugar, what is labelled as "sugar", and thought of as "real sugar" - just as bad as High Fructose Corn Syrup.  It contains the same molecules, and the difference is a molecular bond that is irrelevant due a digestive enzyme that easily destroys it.  So, bad:<br /><ul><li>Fructose: Large quantities naturally in fruit juice (but not bad in the fruit because they come with plenty of fiber).</li><li>High Fructose Corn Syrup: Obvious, but in everything.</li><li>Sucrose - table sugar / sugar / real sugar - effectively same as HFCS</li></ul>* Pretty sure it was sucrose (table sugar, cane sugar), but need to confirm.</div>
+
+<div class="entryfooter">
+
+<ul class="entrymeta">
+<li><span class="entrymetacaption">Tags:</span> <div class='ljtags'><a rel='tag' href='http://darxus.livejournal.com/tag/sugar'>sugar</a></div></li>
+</ul>
+
+<div class="entrylinkbarpost"><a href="http://darxus.livejournal.com/312979.html"><img border='0' width="24" height="24" alt="Previous Entry" title="Previous Entry" src="http://l-stat.livejournal.com/img/btn_prev.gif"  /></a>      <a href="http://www.livejournal.com/tools/memadd.bml?journal=darxus&amp;itemid=313110"><img border='0' width="24" height="24" alt="Add to Memories" title="Add to Memories" src="http://l-stat.livejournal.com/img/btn_memories.gif"  /></a>    <a href="#"><img border='0' width="24" height="24" alt="Share" title="Share" src="http://l-stat.livejournal.com/img/btn_sharethis.gif?v=2"  /></a> <script type="text/javascript">LJShare.link({"url":"http://darxus.livejournal.com/313110.html","title":"Why eating low fat + higher sugar is bad","description":"The decision that we should consume less fat (which resulted in consuming more sugar to compensate for loss of taste) was based on research that showed that high fat consumption highly correlated to obesity. Fine. But in the same research they said that it also correlated to high sucrose*, but explained that away as being only an artifact of sucrose consumption being highly correlated to fat consumption. And then our liver converts that sugar to fat in our blood, which is where all the cholesterol and stuff comes from. Source is the same video as last time. And I didn\\'t make it clear enough last time that sucrose is table sugar, cane sugar, what is labelled as \\\"sugar\\\", and thought of as \\\"real sugar\\\" - just as bad as High Fructose Corn Syrup. It contains the same molecules, and the difference is a molecular bond that is irrelevant due a digestive enzyme that easily destroys it. So, bad: Fructose: Large quantities naturally in fruit juice (but not bad in the fruit because they come with plenty of fiber). High Fructose Corn Syrup: Obvious, but in everything. Sucrose - table sugar / sugar / real sugar - effectively same as HFCS * Pretty sure it was sucrose (table sugar, cane sugar), but need to confirm."});</script>       </div>
+<ul class="entrycmdlinks"><li><a href="http://darxus.livejournal.com/313110.html?mode=reply#add_comment" rel="nofollow">Leave a comment</a></li></ul>
+<div  id="ljqrttopcomment" style="display: none;"></div>
+
+</div>
+</div><span id="comments"></span>
+</div>
+
+
+
+<div id="server_sig">Powered by <a href="http://www.livejournal.com/">LiveJournal.com</a></div></div>
+
+</div>
+</div>
+
+<div id='hello-world' style='text-align: left; font-size:0; line-height:0; height:0; overflow:hidden;'>
+<!-- SiteCatalyst Code
+    Copyright 1997-2006 Omniture, Inc.  More info available at http://www.omniture.com 
+-->
+<script type="text/javascript">
+var s_account = 'sixapartlivejournal';
+var shouldShowOmniture = false;
+LiveJournal.checkLjUniq();
+if (Cookie("ljuniq") && /pgstats1/.test(Cookie("ljuniq"))) {
+    // load Omniture script and run code for 5% of all users
+    document.write('<scr' + 'ipt type="text/javascript" src="http://www.livejournal.com/js/pagestats/s_code.js"></scr' + 'ipt>');
+    shouldShowOmniture = true;
+}
+</script>
+
+<script type="text/javascript">
+if (window.s && shouldShowOmniture) {
+s.eVar15="darxus.livejournal.com";
+s.events=s.apl(s.events,'event1',',',2);
+s.pageName="entry";
+s.prop11="en_LJ";
+s.prop12="personal";
+s.eVar24="personal";
+s.prop13="perm";
+s.prop14="nonCyr";
+s.prop16="1";
+s.prop17="";
+s.prop19="lastn";
+s.prop2="0";
+s.eVar17="0";
+s.prop3="0";
+s.prop4="http://darxus.livejournal.com";
+s.prop41="";
+s.prop42="";
+s.prop43="";
+s.prop6="s2.Quite Lickable";
+s.prop7="zero";
+s.prop9="";
+    /* Copy props to eVars */
+    if(s.prop3&&!s.eVar3) s.eVar3=s.prop3;
+    if(s.prop4&&!s.eVar4) s.eVar4=s.prop4;
+    if(s.prop6&&!s.eVar6) s.eVar6=s.prop6;
+    if(s.prop7&&!s.eVar7) s.eVar7=s.prop7;
+    if(s.prop11&&!s.eVar11) s.eVar11=s.prop11;
+    if(s.prop12&&!s.eVar12) s.eVar12=s.prop12;
+    if(s.prop13&&!s.eVar13) s.eVar13=s.prop13;
+    if(s.prop16&&!s.eVar16) s.eVar16=s.prop16;
+    if(s.prop17&&!s.eVar17) s.eVar17=s.prop17;
+    if(s.prop18&&!s.eVar18) s.eVar18=s.prop18;
+    s.prop47='S2';
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code);
+}
+</script>
+<!-- End SiteCatalyst Code -->
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24823174-1']);
+  _gaq.push(['_setDomainName', '.livejournal.com']);
+  _gaq.push(['_trackPageview']);
+  _gaq.push(['_trackPageLoadTime']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<!-- Begin comScore Tag -->
+<script>
+    document.write(unescape("%3Cscript src='" + (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js' %3E%3C/script%3E"));
+</script>
+
+<script>
+  COMSCORE.beacon({
+    c1:2,
+    c2:7602110,
+    c3:"",
+    c4:"",
+    c5:"",
+    c6:"",
+    c15:""
+  });
+</script>
+<noscript>
+  <img src="http://b.scorecardresearch.com/p?c1=2&c2=7602110&c3=&c4=&c5=&c6=&c15=&cj=1" />
+</noscript>
+<!-- End comScore Tag -->
+<!-- Quantcast Tag -->
+<script type="text/javascript">
+var _qevents = _qevents || [];
+
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+
+_qevents.push({
+qacct:"p-2945K0QbJw0BA"
+});
+</script>
+
+<noscript>
+<div style="display:none;">
+<img src="//pixel.quantserve.com/pixel/p-2945K0QbJw0BA.gif" border="0" height="1" width="1" alt="Quantcast"/>
+</div>
+</noscript>
+<!-- End Quantcast tag -->
+<!-- Begin BlueKai Tag -->
+<iframe name="__bkframe" height="0" width="0" frameborder="0" src="javascript:void(0)"></iframe>
+<script type="text/javascript" src="http://www.bkrtx.com/js/bk-static.js"></script>
+<script type="text/javascript">
+
+bk_addUserCtx("ra",""); 
+bk_addUserCtx("rg",""); 
+bk_doJSTag(3954, 4);
+</script>
+<!-- End BlueKai Tag -->
+</div></body>
+</html>

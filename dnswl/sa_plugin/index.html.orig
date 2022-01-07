@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<body>
+
+<h1>DNSWL spam reporting plugin for SpamAssassin</h1>
+
+<p>
+<a href="../dl/DNSWLh.pm">DNSWLh.pm</a>
+</p>
+
+<p>
+Adds DNSWL to the services which receive a report via the command "spamassassin --report" (or -r).  (In addition to DCC, Pyzor, Razor, and SpamCop).  
+</p><p>
+
+<p><b>
+It is very important that you use SpamAssassin's internal_networks and trusted_relay settings to indicate any trusted relays, such as proxies or mailing list servers.  Otherwise you'll report your trusted relays as spammers.
+</b></p>
+
+There is also <a href="../sa_report/">a script which does not depend on SpamAssassin</a>.
+</p><p>
+
+This requires <a href="https://www.dnswl.org/selfservice/?action=register">creating an dnswl account</a> and <a href="https://www.dnswl.org/selfservice/?action=selfservice.spamreport">retrieving your reporting API token</a>.
+</p><p>
+
+Put DNSWLh.pm in something like /usr/share/perl5/Mail/SpamAssassin/Plugin/
+</p><p>
+
+Add to your spamassassin config ($HOME/.spamassassin/user_prefs):
+</p><p>
+
+loadplugin Mail::SpamAssassin::Plugin::DNSWLh<br />
+dnswl_token yourtoken<br />
+internal_networks [IPs you control]<br />
+trusted_networks [IPs you have asked to relay mail to you, like proxies and mailing list servers]
+</p><p>
+
+trusted_networks docs:
+<a href="http://spamassassin.apache.org/full/3.3.x/doc/Mail_SpamAssassin_Conf.html#network_test_options">network test options</a>, 
+<a href="http://wiki.apache.org/spamassassin/TrustPath">trust path</a>.
+</p><p>
+
+<p>I don't know if this internal / trusted networks handling is currently implimented on their end, you should probably use their web UI to provide that information.
+</p>
+
+Output tells you what IP address you reported, so you can verify your
+internal_networks / trusted_networks is configured correctly.  Output looks
+like:
+
+<blockquote><tt>
+  Successfully reported to DNSWL 188.116.52.141.  Current trust level is:<br />
+  Unlisted.<br />
+  1 message(s) examined.
+</tt></blockquote>
+</p><p>
+
+You can also <a href="http://www.dnswl.org/abuse/pastreports.pl">check your DNSWL abuse report history</a>.<br />
+( <a href="http://www.dnswl.org/">http//www.dnswl.org</a> / Report Abuse, Report / History )<br />
+It also shows the domain we believe owns the reported IP.
+Requires logging in with the username and password created above.
+Unfortunately Unlisted IPs are not recorded, or shown on this page.
+</p>
+
+<h2>Status</h2>
+<p>This thing is quite solidly done.  It has been tested.  Updates are inactive because there are none left to make. - 
+2012-02-10
+</p>
+
+<h2>Change History</h2>
+<p>
+2010-02-26-23 Initial release.<br />
+2010-02-27-11 Also call report successful on unlisted IPs.<br />
+2010-02-28-20 State when reported email has trust level "Unlisted".<br />
+2010-03-02-10 Report the IP DNSWL thought was interesting.<br />
+2014-11-03-15 Handle IPv6.  Handle DNSWL now recording unlisted IPs.<br />
+2019-03-02-14 Handle new DNSWL submission form.<br />
+2019-03-10-23 Handle DNSWL output for no DNSWL ID.
+</p>
+
+<hr />
+Sat Mar  2 14:21:28 EST 2019
+<br />
+<a href="/contact/">Contact Darxus.</a>
+
+</body>
+</html>

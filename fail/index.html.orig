@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>Browser Not Supported</title>
+<meta http-equiv="content-language" content="en, eo">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<style type="text/css">
+body { font-size: 1.3em }
+b    { font-size: 1.6em }
+td   { vertical-align: text-top; width: 50%; }
+</style>
+</head>
+<body>
+
+  <p>
+  Browser not supported.
+  </p><p>
+  Microsoft Internet Explorer prior to version 9 would not even have tried to display the web page you just tried to go to.  It would only have asked if you wanted to save it to a file.  So here are alternatives and an explanation instead.
+  </p><p>
+  Please use any browser other than Microsoft Internet Explorer.  (Or, if you must, <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home">upgrade to at least IE 9</a> released March 2011.)
+<p>
+Desktop Browsers:
+</p>
+<ul>
+<li><a href="http://www.mozilla.com/firefox/">Firefox</a></li>
+<li><a href="http://www.google.com/chrome">Chrome</a></li>
+<li><a href="http://www.opera.com/">Opera</a></li>
+</ul>
+
+<p>
+Phone Browsers:
+</p>
+<ul>
+<li><a href="http://www.irisbrowser.com/">Iris Browser</a></li>
+<li><a href="http://www.opera.com/mobile/">Opera Mobile</a></li>
+</ul>
+<hr>
+<p>
+Governments recommend against using Microsoft Internet Explorer due to security vulnerabilities:  <a href="http://news.bbc.co.uk/2/hi/technology/8465038.stm">Germany, France</a> and <a href="http://www.abc.net.au/news/stories/2010/01/19/2795684.htm">Australia</a> in 2010, and <a href="http://www.kb.cert.org/vuls/id/356600">The United States in 2004</a>.
+</p>
+<p>
+These articles are not just saying "There's a major security problem in the current version of IE, please don't use this version."  They're basically saying "IE is so prone to major security problems, we would like you to never use it again."
+</p>
+<hr>
+<p>
+The standard required by this website, which has been current for 12 years, is "<tt>Content-Type: application/xhtml+xml</tt>", part of <a href="http://www.w3.org/TR/xhtml1/">XHTML 1.0</a>, released January 26 2000.  (IE prior to version 9 asks if you would like to save the page to a file.)
+</p>
+<p>
+While this standard was optional for XHTML, it is <a href="http://www.hixie.ch/advocacy/xhtml">required for HTML5 XML</a>, which this site is written in.
+</p>
+<p>
+IE (prior to v9) also has no support for the SVG 1.0 image standard, released September 4 2001.  
+</p><p>
+Microsoft has stated they are not interested in passing the Acid3 browser compliance test.
+</p>
+<hr>
+<p>
+Microsoft appears to be doing great things with standards compliance for IE9: <a href="http://samples.msdn.microsoft.com/ietestcenter/">http://samples.msdn.microsoft.com/ietestcenter/</a>
+</p>
+<hr>
+<p>Just another example, 2012-09-18:  MS IE 7, 8, and 9:  "A remote, unauthenticated attacker could execute arbitrary code, cause a denial of service, or gain unauthorized access to your files or system."  "This vulnerability is being actively exploited in the wild." - <a href="http://www.us-cert.gov/cas/techalerts/TA12-262A.html">US-CERT</a>
+</p>
+
+<p>2014-04-28: "US-CERT is aware of active exploitation of a use-after-free vulnerability in Microsoft Internet Explorer. This vulnerability affects IE versions 6 through 11 and could allow unauthorized remote code execution." - <a href="http://www.us-cert.gov/ncas/current-activity/2014/04/28/Microsoft-Internet-Explorer-Use-After-Free-Vulnerability-Being">CERT</a>
+<!-- http://www.pcworld.com/article/2148921/dhs-warns-against-using-internet-explorer-until-bug-is-patched.html -->
+</p>
+<hr>
+<address><a href="mailto:Darxus@ChaosReigns.com">Darxus@ChaosReigns.com</a></address>
+<p>
+Tue Apr 29 17:34:11 EDT 2014
+<br /><A HREF="http://www.htmlhelp.com/cgi-bin/validate.cgi?url=referer">HTML validate this page</A>
+</p>
+<script type="text/javascript" src="/logstats.js"></script>
+</body>
+</html>

@@ -1,0 +1,996 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 6 November 2007), see www.w3.org" />
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=0.7" />
+<link rel='StyleSheet' href="../dark.css" type="text/css" />
+<style type='text/css'>
+img     {border-style:none;}
+.inline {display: inline;}
+table   {border-collapse: collapse;}
+</style>
+</head>
+<body>
+
+<h1>2020, Linux, light gaming, occasional video editing, all 4k</h1>
+
+<a href="pics/20201019_131158b.jpg"><img src="pics/tn_20201019_131158b.jpg" /></a>
+<a href="pics/20201020_142407.jpg"><img src="pics/tn_20201020_142407.jpg" /></a>
+
+<p><a href="https://www.youtube.com/watch?v=d3cW54QGhrM">Youtube video of building this.</a>
+</p>
+
+<table border="1">
+<tr>
+<td><img src="pics/tn_hisense_h8g50.png" /></td>
+<td>
+Monitor<br />
+$380</td><td>50" Hisense H8G</td><td>
+Same pixel density as my old 27" 1080p monitor, twice the size.  4k 60hz.  
+Based on rtings.com reviews.  I think the most important things to verify are 4:4:4 color, and low input lag.  Which this has.
+This does not have freesync / gsync.  
+Cost less (89%) than the 21" 57.3 pound CRT I bought 16 years before.  Weighs 28.7 pounds, 50.1%.
+</td><td style="background:green">Perfect.<br />2020-09-26
+</td></tr>
+
+<tr>
+<td><img src="pics/tn_reddevilrx5700xt.png" /></td>
+<td>Video<br />
+$440</td><td>PowerColor Radeon RX 5700 XT 8 GB Red Devil</td><td>
+AMD better supports open source than Nvidia, so I'll go with them.  
+RX 5700 XT is the latest greatest AMD, and fits my budget.  This seems one to be the <a href="https://www.techpowerup.com/review/asrock-radeon-rx-5700-xt-taichi-oc-plus/31.html">quietest</a> with this GPU.  300mm long.
+<a href="https://www.youtube.com/watch?v=CoDPTJ-3qCM">Youtube budget guide.</a>
+<a href="https://www.youtube.com/watch?v=7NZfM4FpEBM">Not waiting for Radeon 6000 series, because I expect amazing supply shortages like Nvidia currently has.</a>
+"the RX 5700 XT will only throttle when the hottest part of the GPU hits the 110 degrees Celsius thermal junction".
+<a href="https://gitlab.freedesktop.org/drm/amd/-/issues/892">This GPU has stability problems.</a>
+Motherboard expansion slots are 0.8" = 20.32mm apart.  This card is 53mm = 2.61 slots wide.  <a href="https://openbenchmarking.org/result/2011023-DARX-HEAVENO67,2010302-DARX-202010343#results">It's 15.4 times faster</a> than my <a href="index.html#2012">old card</a>.
+It annoyingly doesn't tell you which GPU it actually has: "[Radeon RX 5600 OEM/5600 XT / 5700/5700 XT] (rev c1)"
+<a href="https://github.com/twifty/aura-gpu/issues/4">Linux RGB.</a>
+</td><td style="background:green">Perfect<br />2020-10-17
+</td></tr>
+
+<tr>
+<td><img src="pics/tn_ryzen73700x.png" /></td>
+<td>
+CPU<br />$295</td><td>AMD Ryzen 7 3700X 3.6 GHz 8-Core
+</td><td>
+Similar reasons, matchy matchy: AMD.  The AMD Ryzen 5 3600 CPU seemed good, <a href="https://www.youtube.com/watch?v=2892TZEZidI">again based on youtube</a>, and again under budget, so I bumped it up.  Does PCIe 4.0.  Most powerful 65 watt.  Less watts = less heat = more quiet.  Newer CPUs available 2020-11-05, <a href="https://www.reddit.com/r/buildapc/comments/j7bvdu/simple_questions_october_08_2020/g84jvb1/">I'm not waiting.</a>  <a href="https://www.youtube.com/watch?v=01EhbmJAW-k">I was right, 3700X is faster at all core than the same price 5600X.</a>
+"Max Temps: 95°C" <a href="https://forums.tomshardware.com/threads/ryzen-3700x-temp.3502929/">Thermal throttling limit is 85C?</a>  Maybe limit to 80C.
+<!-- AMD CPU assumes temperature of 60.8C??  https://youtu.be/g1Yp6pQRdns?list=WL&t=611 -->
+</td><td style="background:green">Perfect.<br />2020-10-08
+</td></tr>
+
+<tr>
+<!-- https://www.cleanpng.com/png-solid-state-drive-samsung-850-evo-ssd-serial-ata-h-1993243/ -->
+<td><img src="pics/tn_kisspng-solid-state-drive-samsung-850-evo-ssd-serial-ata-h-5af5d88e26be89.8880683315260611981587.png" /></td>
+<td>
+Primary storage<br />$159</td><td>Samsung 850 EVO 500GB
+</td><td>
+I had this.  If I were buying new, I'd get <a href="index.html#2020upgrade">PCIe 4.0 NVMe.  But I'm waiting till next year</a>, because <a href="https://www.youtube.com/watch?v=4DKLA7w9eeA">upgrading doesn't cause a noticable difference,</a>
+</td><td style="background:green">Right.<br />2016-06-01
+</td></tr>
+
+<tr>
+<td><img src="pics/tn_WD30EFRX_2D.png" /></td>
+<td>
+Bulk storage<br />
+$620</td><td>Western Digital Red Plus, 3TB <b>x6</b>
+</td><td>
+Four old drives, plus two new drives so that I can convert it from <a href="https://www.reddit.com/r/linux/comments/j3aw9y/a_story_of_file_corruption_with_a_happy_ending/">ZFS (❤️)</a> RAIDZ1 to RAIDZ2.  <a href="https://serverfault.com/questions/883065/zfs-hot-spares-versus-more-parity">"Do not use raidz1 for disks 1TB or greater in size."</a>  Because the chance of a second drive dying during a rebuild is too high.
+Three year limited warranty.  Part number WD30EFRX.  
+<a href="https://www.youtube.com/watch?v=aztTf2gI55k">Don't buy</a>
+<a href="https://blog.westerndigital.com/wd-red-nas-drives/">SMR drives.</a>
+</td><td style="background:green">Right.<br />2016-06-01<br />2020-10-02
+</td></tr>
+
+<tr>
+<td><img src="pics/tn_asustufx570.png" /></td>
+<td>
+Motherboard<br />$165</td><td>Asus TUF Gaming X570-Plus
+</td><td>
+7 SATA ports and PCIe 4.0 cut my options down.  X570 motherboard chipset for full PCIe 4.0.  The only one fanless is the $700 Gigabyte X570 Aorus Xtreme (without enough SATA).  My impression is the fans tend to be pretty quiet.
+The third cheapest is this Asus. I like Asus, this board has everything I want, and is highly reviewed.  The two cheaper ones are ASRock, I'd rather go with Asus. 
+"The asus tuf gaming x570-plus wifi admittedly has probably the best VRM of any $200 X570 motherboard." - <a href="https://www.reddit.com/r/buildapc/comments/iqj11t/looking_for_good_alternatives_to_an_asus_tuf/g4si49n/?context=3">sk9f92</a>.
+No front USB-C, but one on the back.
+<a href="https://www.tomshardware.com/reviews/asus-tuf_gaming-x570_plus-wifi-motherboard,6273.html">Review.</a>  <a href="https://www.youtube.com/watch?v=JGY2mqTn2rc">Motherboard round up video.</a>  "VRM testing shows that the ASUS TUF beats boards twice as expensive in thermal performance. Getting that one." - <a href="https://www.youtube.com/watch?v=JGY2mqTn2rc&amp;lc=Ugx0obkTHns_oH52nFh4AaABAg">comment.</a>  
+<a href="https://www.youtube.com/watch?v=_7PkZwY9PWM">VRM thermals "bang for your buck... one of the absolute best X570 motherboards".</a>
+The next non-ASRock is $289.  <i>Only</i> Asus and ASRock have 7 SATA ports.
+</td><td style="background:green">Perfect.<br />2020-10-08
+</td></tr>
+
+<tr>
+<td><img src="pics/tn_noctua_nh-u12s_black.png" /></td>
+<td>
+CPU cooler<br />
+$70</td><td>Noctua NH-U12S chromax.black
+</td><td>
+Quiet, sexy, good.<br />Comes with thermal compound.  <a href="https://noctua.at/en/mainboard/Asus_TUF_Gaming_X570-Plus">Noctua says it's compatible with the motherboard</a> <a href="https://noctua.at/en/case/Antec_P101_Silent">and case,</a>
+<a href="https://noctua.at/en/nh-u12s/cpucomp#manuf_8305">and rates it as "best overclocking headroom" for this CPU.</a>  Six year warranty.
+</td><td style="background:green">Perfect.<br />2020-09-30
+</td></tr>
+
+<tr>
+<td><img src="pics/tn_p101-silient_pdt01.png" /></td>
+<td>
+Case<br />
+$114</td><td>Antec P101 Silent
+</td><td>
+This is the only quiet case I've found that can handle six disk drives with a long graphics card.  
+It was <a href="https://www.tomshardware.com/reviews/antec-p101-silent-case,6114.html">rated quietest by tomshardware</a>.
+And I like it.  
+It's the same brand as my last two cases (Sonata Elite and P180).
+
+I really like the three big + slow = quiet intake fans. I might replace them with PWM's.
+The positive pressure / intake fans makes a lot more sense to me than the negative pressure / exhaust fans on my old case, which sucked unfiltered air through the power supply with its fan shut down most of the time.  It fits a 450mm graphics card, while reducing 3.5" drive bays to six.  I don't think it's worth having to clean a separate power supply intake, like this.
+<a href="https://www.overclockers.com/antec-p101-silent-mid-tower-case-review/">Review.</a>
+It looks like it comes with Antec PF12 fans, which nobody raves about.
+</td><td style="background:green">Perfect.<br />2020-09-30
+</td></tr>
+
+<tr>
+<td><img src="pics/tn_crucial_ballistix.png" /></td>
+<td>
+RAM<br />
+$115</td><td>
+Crucial Ballistix 32 GB (2 x 16 GB) DDR4-3200 CL16
+</td><td>
+<a href="https://www.youtube.com/watch?v=OT-qAQLGkGo">16GB seemed good.</a>  I doubled that.  3200mhz is the highest speed supported by this CPU without overclocking.  
+Two sticks for easy upgrading.
+These aren't on <a href="https://dlcdnets.asus.com/pub/ASUS/mb/SocketAM4/TUF_GAMING_X570-PLUS/Memory_QVL_for_3rd_Gen_AMD_Ryzen_Processors_X570_0722.pdf">Asus's Qualified Vendor List</a>, but they're on <a href="https://www.crucial.com/compatible-upgrade-for/asus/tuf-gaming-x570-plus">Crucial's list of their parts compatible with this motherboard.</a>  Lower latency is uncommon and expensive.
+Corsair Vengeance would also have been fine, they cost the same that day.
+</td><td style="background:green">Perfect.<br />2020-10-07
+</td></tr>
+
+<tr>
+<td><img src="pics/tn_corsair_rm850x.png" /></td>
+<td>
+Power supply<br />$145</td><td>Corsair RM850x (2018 / v2)
+</td><td>
+Build is estimated at 499 watts. These power supplies don't even spin up their fan till 40% usage, so more capacity = more quiet. It comes with 10 SATA connectors, so it should be good on connectors. Huh, pcpartpicker doesn't check that. 
+It has one 12 volt rail, which means I don't need to worry about power distribution.  Fully modular.
+<a href="https://www.tomshardware.com/reviews/corsair-rm850x-v2-psu,5568.html">Review, quietest 850w.</a>
+Ten year warranty.  It will probably last me a decade or two.  This is part number CP-9020180-NA (2018 / v2), the previous version is part number CP-9020093-NA (2016 / v1).
+"you don't need 850W ever" perfect :)
+I am annoyed that it didn't come with any single connector PCIe cables.
+</td><td style="background:green">Perfect.<br />2020-10-03
+</td></tr>
+
+<tr>
+<td><img src="pics/tn_noctua_fan_splitter.png" /></td>
+<td>Fan splitter<br />$7.95 </td>
+<td>Noctua NA-SYC1</td>
+<td>I have four case fans, and one CPU fan.  The motherboard has five controllable fan headers, once you enable AIO pump control, but AIO pump doesn't let me drop that fan below 60% duty cycle.  While these fans can handle 31%.  So I have to choose between using all motherboard fan headers, and one fan being slightly noisier than it needs to be, or using a fan splitter, and one fan not having its fan speed (and eventual death) monitored, and spending an extra $8.  Because the motherboard has disabled the functionality I want.  CPU opt always runs at the same speed as the CPU fan.  I have submitted a feature request.</td>
+<td style="background:green">Perfect.<br />2020-10-15</td>
+</tr>
+
+<tr>
+<td></td>
+<td>
+Optical drive<br />$0</td><td>Nope
+</td><td>
+My current optical drive is IDE, because it didn't seem worth buying a new one ten years ago. And there are no IDE connectors now. I probably haven't used it in years, so again, it's probably not worth buying a new one. RIP. I guess I need to buy a thumb drive. Onward.
+</td><td style="background:green">Right.<br />-
+</td></tr>
+
+
+</table>
+
+<p>
+Power consumption at the wall, in watts, measured with a Kill A Watt, including display:
+</p>
+<table border="1">
+<tr><td>Idle</td><td>243</td></tr>
+<tr><td>Unigine Heaven (GPU loaded)</td><td>454</td></tr>
+<tr><td>Prime95 (CPU loaded)</td><td>333</td></tr>
+</table>
+
+<p>
+<a href="https://pcpartpicker.com/b/yKNqqs">PCPartPicker completed build</a><br />
+<!--
+<a href="https://pcpartpicker.com/user/Darxus/saved/gyBxsY">PCPartPicker part list</a><br />
+-->
+<a href="https://pcpartpicker.com/forums/topic/373857-linux-quiet-light-gaming-occasional-4k-editing">PCPartPicker discussion</a>
+</p>
+
+<p>I may upgrade the case fans to <a href="https://www.tomshardware.com/news/noctua-update-roadmap-worlds-best-pc-fan-in-black-for-early-2021">Noctua NF-A12x25 black (when it comes out)</a> or <a href="https://www.youtube.com/watch?v=QwftVMGPOiI">Arctic P12</a>.
+</p>
+
+<p>
+Having an extra SATA port would be really useful for zfs expansion.  Or replacing a failing drive.
+<a href="https://wiki.archlinux.org/index.php/ZFS#Advanced_Format_disks">ZFS formatting</a>.  <a href="https://wiki.archlinux.org/index.php/ZFS#RAIDZ_and_Advanced_Format_physical_disks">Set block size.</a>"The disk is currently formatted with the 4K Sector Size, the pool is 
+configured with ashift=12. The dataset is set to recordsize=16K, 
+compression=lz4, atime=off"
+<a href="https://wiki.archlinux.org/index.php/Advanced_Format">Advanced Format disks</a>
+</p>
+
+<p><a href="https://www.youtube.com/watch?v=KlFf_x2-O7Y">Recommendation to wait 90 days after CPU / GPU are released.</a></p>
+
+<p><a href="https://www.reddit.com/r/buildapc/comments/id4ew9/modular_cables_are_not_universal/">Modular power supply cables are not all interchangable and an destroy your hardware.</a></p>
+
+<p>Don't buy from MSI, they're being <a href="https://www.youtube.com/watch?v=O6BXwCJtaZE">super</a> <a href="https://www.youtube.com/watch?v=X9r0DNNpyTA">sketchy</a>.</p>
+<p><a href="https://www.youtube.com/watch?v=3GyaSfOi6fs">Here's a reason not to buy Nvidia (2020-12-12).</a></p>
+
+<p><a href="https://www.youtube.com/watch?v=isL20lm3i8c">Liquid cooling is dumb.</a></p>
+
+<h2 id="2020upgrade">Long term upgrade plans</h2>
+<p>
+My plan used to be something like: Spend $1500 every five years and do a full rebuild.  I want to try, instead, spending at the same rate, but doing a little each year.  $300 a year.  Maybe:
+</p>
+
+<table border="1">
+<tr><th>Year</th><th>Spend</th><th>Left</th><th>Part</th></tr>
+<tr><td>2021</td><td>$180</td><td>$120</td><td><a href="https://pcpartpicker.com/product/gCJmP6/corsair-mp600-force-series-gen4-1-tb-m2-2280-solid-state-drive-cssd-f1000gbmp600">Corsair MP600 1TB M.2 PCIe 4.0 x4 NVME drive.</a>
+<br />
+<a href="https://ssd.userbenchmark.com/Compare/Corsair-Force-MP600-NVMe-PCIe-M2-1TB-vs-Samsung-850-Evo-500GB/m843047vs3477">3.1x faster than my SATA SSD.</a>  Pretty heat sink.  Check benchmarks, these things aren't saturating PCIe 4.0 yet.  <a href="https://www.tomshardware.com/reviews/corsair-force-mp600-m2-nvme-ssd/2">Review:</a>   
+PCIe 3.0 x4 NVMe peak sequential read is 3560 MBps.  PCIe 4.0 doubles that, but this MP600 is only 1.41x.
+Buying on 2021-06-01.
+</td></tr>
+<tr><td>2022</td><td>$0</td><td>$420</td><td></td></tr>
+<tr><td>2023</td><td>$500</td><td>$220</td><td>Graphics card.</td></tr>
+<tr><td>2024</td><td>$0</td><td>$520</td><td></td></tr>
+<tr><td>2025</td><td>$600</td><td>$220</td><td>CPU, and therefore motherboard and probably RAM.  Maybe keep motherboard, and get a 3950X CPU?  I expect new CPU socket (AM5) and RAM slot (DDR5).  Is there any point for me to upgrade the CPU when I'm not upgrading the graphics card?  Maybe wait?</td></tr>
+<tr><td>2026</td><td>$500</td><td>$20</td><td>Graphics card.</td></tr>
+<tr><td>2027</td><td>$0</td><td>$320</td><td></td></tr>
+<tr><td>2028</td><td>$0</td><td>$620</td><td></td></tr>
+<tr><td>2029</td><td>$500</td><td>$420</td><td>Graphics card.</td></tr>
+<tr><td>2030</td><td>$600</td><td>$120</td><td>Motherboard, CPU, RAM.  Maybe only CPU, if I got a new motherboard last time, and socket hasn't changed.</td></tr>
+<tr><td>2031</td><td>$300</td><td>$120</td><td>Case and power supply.  Seasonic Prime power supplies have a <a href="https://seasonic.com/support#period">12 year warranty</a>.</td></tr>
+<tr><td>2032</td><td>$420</td><td>$0</td><td>Display.</td></tr>
+</table>
+
+<h2>Off site backup file server</h2>
+
+<p>I'm planning to build a file server to host backups at somebody else's house, from old parts.  Three 2TB drives in ZFS RAIDZ1, for ~4TB capacity.  I need ~2.5TB.</p>
+
+<table border="1">
+<tr>
+<td></td>
+<td>Hard Drive</td>
+<td>$159.98</td>
+<td>SAMSUNG EcoGreen F4 ST2000DL004 2TB <b>x2</b></td>
+<td>I bought two of these based on <a href="http://www.silentpcreview.com/article1076-page5.html">SilentPCReview</a>.  <a href="https://www.reddit.com/r/linux/comments/j3aw9y/a_story_of_file_corruption_with_a_happy_ending/">They caused me great suffering.</a>
+</td>
+<td>2010-11<br />$0</td>
+</tr>
+
+<tr>
+<td></td>
+<td>Hard Drive</td>
+<td>$219.99</td>
+<td>Western Digital WD20EADS 2TB</td>
+<td>
+</td>
+<td>2009-08<br />$0</td>
+</tr>
+
+<tr><td></td><td>Monitor</td><td>$170</td><td><a href="https://smile.amazon.com/gp/product/B00G5AEZOQ/">Acer G276HL Gbd Widescreen LCD Monitor, 27-Inch Full HD (1920 x 1080)</a></td><td></td><td>2015-11-10</td></tr>
+
+<tr>
+<td></td>
+<td>Video</td>
+<td>$179.99</td>
+<td>HIS Radeon HD 6870 IceQ X 1GB</td>
+<td></td>
+<td>2012-03-18
+<br />0</td>
+</tr>
+
+<tr>
+<td></td>
+<td>Power Supply</td>
+<td>$194.99</td>
+<td><a href="http://www.silentpcreview.com/Recommended_PSUs">Corsair AX-850</a></td>
+<td>Highest recommended power supply over 650 watts by <a href="http://www.silentpcreview.com/Recommended_PSUs">SilentPCReview.com</a>.  Silent at low power (fan off).  Modular cable system - attach exactly the power cables you need.  Overkill wattage.  Luxury power that I expect to last a very long time.
+</td>
+<td>2010-11<br />$0</td>
+</tr>
+
+<tr>
+<td></td>
+<td>CPU</td>
+<td>$189 </td>
+<td><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16819103727">AMD Phenom II X4 965 125W Quad-Core</a></td>
+<td></td>
+<td>2010-03</td>
+</tr><tr>
+<td></td>
+
+<td>Motherboard</td>
+<td>$183</td>
+<td><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16813131363">ASUS M4A79T Deluxe</a></td>
+<td>5 SATA ports.</td>
+<td>2010-03</td>
+
+</tr><tr>
+
+<td></td>
+<td>RAM</td>
+<td>$246</td>
+<td><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16820231330">G.SKILL ECO 8GB (4 x 2GB) DDR3 1600 (Timing: 7-8-7-24-2N)</a></td>
+<td></td>
+<td>2010-03</td>
+</tr>
+
+
+<tr>
+<td><a href="P180_q_r_web.jpg"><img alt="" src='tn_P180_q_r_web.jpg' width='86' height='115' /></a></td>
+<td>case</td>
+<td>$124.99</td>
+<td><a href="http://www.silentpcreview.com/article249-page1.html">Antec P180 case</a></td>
+<td>The air flow is less dumb than my Antec Sonata Elite, which sucks air in through the power supply.</td>
+<td>2005</td>
+</tr>
+
+<tr>
+<td></td>
+<td>DVDR</td>
+<td>$49.99</td>
+<td>NEC 16X IDE ND-3520A BK</td>
+<td>I might as well leave my only working optical drive with my only working motherboard with the required IDE connection.</td>
+<td>2005-05<br />$2.49</td>
+</tr>
+
+<tr>
+<td></td>
+<td>Floppy</td>
+<td>$7.49</td>
+<td>NEC Black Floppy Drive</td>
+<td>Because I can.</td>
+<td>2005</td>
+</tr>
+
+</table>
+
+<h2>Faulty graphics card</h2>
+<p>
+The PowerColor Red Devil AMD Radeon RX 5700 XT I got has flaky hardware, and green screen crashes my computer about once a day.  <a href="https://www.reddit.com/r/linuxhardware/comments/jg6ivb/i_created_a_ppa_to_automatically_upgrade_amd/">I've done everything I can in software.</a>  I'm going to return it.  <a href="https://www.youtube.com/watch?v=3lPD5mBLsXs">Today AMD announced their RX 6000 series cards.</a>  RX 6900 XT for $1000, RX 6800 XT for $650, and RX 6800 for $580.  Not worth the additional money for me.  Last time it was five months from their top of the line announcement till their next announcement.  I'm not up for waiting six months.  So I'm going to replace the one I have with one identical to it.  Because I am hopeful this problem is uncommon.
+</p>
+
+
+<hr />
+<h1>2016</h1>
+
+<p>My hard drives are logging more SMART errors than I'd like.  I currently have three 2tb disk drives, and one 500gb drive.  I replaced them with four 3TB WD Red drives (WD30EFRX) in a zfs pool, for $109 each.  And a 500gb Samsung SSD (MZ-75E500B/AM) for $159.  These are among the most popular drives currently, <a href="http://www.silentpcreview.com/WD_Red">silentpcreview.com says good things about WD Red</a>, and I like the look of the Samsung SSDs (minimal).</p>
+
+<p>I am so excited about ZFS, I love having checksums all up and down the filesystem, and the raid like functionality is better than raid.</p>
+
+<p>Looks like I'll be using software raid, since the chipset on this asus motherboard apparently 
+<a href="https://www.linuxquestions.org/questions/linux-hardware-18/amd-sb750-raid-and-fedora-12-install-802549/">provides fake raid that doesn't support linux</a>, and 
+<a href="https://hardforum.com/threads/amd-sb750-raid-or-software.1578656/">does RAID5 badly</a>.</p>
+
+<p>"<a href="http://www.extremetech.com/computing/170748-how-long-do-hard-drives-actually-live-for">just under 80% of all hard drives will survive to their fourth anniversary.</a>"</p>
+
+<hr />
+<h1>2015</h1>
+
+<p>
+My 57.3 pound 11 year old CRT monitor died ☹.  It served me very well.  I got a temporary replacement with low expectations.  It was great for the five years I used it.
+</p>
+
+<table border="1">
+<tr><td>Monitor</td><td>$170</td><td><a href="https://smile.amazon.com/gp/product/B00G5AEZOQ/">Acer G276HL Gbd Widescreen LCD Monitor, 27-Inch Full HD (1920 x 1080)</a></td><td></td><td>2015-11-10</td></tr>
+</table>
+
+<hr />
+<h1>2014 upgrade plans</h1>
+
+
+<h2>Monitor</h2>
+
+<p>Looks like I'm going to replace my 57.3lb CRT with a 4k tv at some
+point.  3840 X 2160, and I sit very far back on my couch, so I'm not
+concerned about the pixel density.  Make sure it can do 4k at
+<b>real</b> 60hz+.  (Some advertise it, or higher, but don't have the
+input bandwidth due to HDMI limitiations.  Some are advertized as "4K
+Ultra HD 120Hz" but can only do, for example, 30hz at 4k.)  Probably
+need to wait for HDMI 2.0 to be able to drive 4k over 30hz, although
+displayport 1.2 can handle at least 4096x2160 at 60hz.  I'd like to get
+something I could get a floor stand for (rotating would be nice).  Seiki and TCL appear to be the
+two brands of 4k TVs under $1000 now (under 60hz at 4k), and reviews are kind of impressively terrible.  <a href="http://www.reddit.com/r/oculus/comments/20i087/best_1080p_vs_dk1_comparison_of_screen_door/cg3z3ts">Reddit suggestion.</a>  <a href="http://www.phoronix.com/scan.php?page=article&amp;item=linux_uhd4k_gpus&amp;num=1">Phoronix on 4k.</a>
+</p>
+
+<p>
+Apparently also need to make sure the monitor supports <a href="https://forums.geforce.com/default/topic/777438/geforce-900-series/gtx-980-and-samsung-4k-tv-hu8550-60hz-works-but-not-getting-4-4-4-full-rgb-output/">4:4:4 (full RGB) at 3840x2160@60Hz</a>.  And input lag.  How is color accuracy (IPS panels are better than TN panels)?
+</p>
+
+<p><a href="http://www.displaylag.com/">http://www.displaylag.com/</a></p>
+
+<p>
+<a href="http://hardforum.com/showthread.php?t=1837209">Verified 4:4:4 at 60Hz 4k.</a>
+</p>
+
+<p><a href="http://www.avsforum.com/forum/166-lcd-flat-panel-displays/1381724-official-4-4-4-chroma-subsampling-thread.html">Old 4:4:4 info.</a>  Mentions input lag is also an issue for TVs.
+</p>
+
+<p><a href="http://www.monoprice.com">MonoPrice.com</a> seems to have
+very good stuff for very good prices.  I wish they had 4k TVs.  They
+have a <a href="http://www.monoprice.com/Product?c_id=113&amp;p_id=12156">4k
+monitor with displayport 1.2</a> now, but I was hoping for something bigger
+than 28".  50" would be nice.
+</p>
+
+<p>
+<a href="http://www.amazon.com/Samsung-UN50HU6950-50-Inch-Ultra-Smart/dp/B00KSBB7FI">Samsung UN50HU6950 50-Inch</a> may do what I want, for $1298, as of 2015-01-15.  Also <a href="http://www.amazon.com/LG-Electronics-55UB8500-55-Inch-Ultra/dp/B00II6VY6C/">LG Electronics 55UB8500 55-Inch</a> for $1649.  And <a href="http://www.amazon.com/Sharp-LC-60UD27U-60-Inch-Aquos-Ultra/dp/B00MCHEBRC">Sharp LC-60UD27U 60-Inch</a> for $1998.
+</p>
+
+<p>
+<a href="http://www.avsforum.com/forum/166-lcd-flat-panel-displays/1698761-tv-s-capable-4k-60hz-4-4-4-pc-nvidia-900-series-gpu.html">"All LG XXUB8500 series seems to support 4:4:4 on HDMI port #3 ."</a>  "The only drawback from the a review was that the input lag was about 64ms even in game mode"
+</p>
+
+<p><a href="http://www.avsforum.com/forum/166-lcd-flat-panel-displays/1698761-tv-s-capable-4k-60hz-4-4-4-pc-nvidia-900-series-gpu-7.html">"Its the Samsung 65HU9000.</a>
+LG 4k TVs were the first to be able to do 4k/60hz with 4:4:4 chroma, but because they are IPS panels the input lag is crazy bad. "
+</p>
+
+<p>"which one of them support VESA DPMS for sleep and wake-up with the PC"
+</p>
+
+<p><a href="http://www.avsforum.com/forum/166-lcd-flat-panel-displays/1776481-official-2015-sharp-4k-owner-s-thread-lc-70ud27u-lc-60ud27u.html">Sharp 4k owner's thread</a>
+</p>
+
+<p>Need SATA III, 6Gb/s, for SSDs, preferably a RAID0 pair.
+</p>
+
+<p>I really wanted to buy the first consumer version of the Oculus Rift, and rebuild my computer around gaming with it, but am very turned off by the Facebook buyout.
+</p>
+
+<hr />
+
+<h1 id="2012">2012</h1>
+
+<table border="1">
+<tr>
+<th>Type</th>
+<th>Price</th>
+<th>Model</th>
+<th>Explanation</th>
+<th>Ordered<br />Shipping</th>
+</tr>
+<tr>
+<td>Video</td>
+<td>$179.99</td>
+<td>HIS Radeon HD 6870 IceQ X 1GB</td>
+<td>Tired of dealing with Nvidia's proprietary drivers or buggy open-source drivers (nouveau).</td>
+<td> 2012-03-18
+<br />0</td>
+</tr>
+</table>
+<p>
+For years I used Nvidia cards because they at least had decent proprietary drivers.  Now AMD/ATI provides good open source drivers, so I'm switching to them.  I'm playing with <a href="http://wayland.freedesktop.org/">wayland</a> a lot, so the bugginess of the Nvidia open source drivers is often painful, and wayland doesn't work at all with any proprietary drivers.  I compared all the top performers on <a href="http://www.tomshardware.com/charts/2012-vga-gpgpu/benchmarks,135.html">Tom's Hardware's video charts</a> until I found prices I could tolerate, then went looking for one that was quieter than most, hence the IceQ.  Verified it works with the linux open source drivers by checking "man radeon".
+</p>
+
+<table border="1">
+<tr><th>Model</th><th>Price</th><th>Unigine Heaven Entry FPS</th></tr>
+<tr><td>7970</td><td>$550</td><td>137</td></tr>
+<tr><td>7950</td><td>$450</td><td>117.80</td></tr>
+<tr><td>7870</td><td>$360</td><td>115.70</td></tr>
+<tr><td>7850</td><td>$260</td><td>97.80</td></tr>
+<tr><td>6970</td><td>$390</td><td>93.50</td></tr>
+<tr><td>6950</td><td>$255</td><td>89</td></tr>
+<tr><td>6870</td><td>$170</td><td>78</td></tr>
+<tr><td>6850</td><td>$140</td><td>65.50</td></tr>
+<tr><td>7770</td><td>$150</td><td>65.50</td></tr>
+</table>
+
+
+<hr />
+
+<h1>Future</h1>
+<table><tr><td width="30%">
+<b>AMD/ATI open source support</b>
+<p>It looks like my future video cards will be AMD (they purchased ATI) because they have been supporting open source drivers well.
+nVidia has never provided any support for open source drivers.</p>
+<p>
+I need to look into <a href="http://www.phoronix.com/scan.php?page=news_item&amp;px=MTA2ODk">video decoding support</a>.
+<br /><a href="http://blog.mymediasystem.net/avchd/mplayer-vaapi-on-oneiric-ubuntu-11-10-for-amdati-howto/">Ubuntu vaapi.</a>
+</p>
+
+</td><td width="70%">
+<p>
+Their latest two card series have been HD 5000 (Evergreen), and HD 6000 (Northern Islands).<br />
+<a href="http://archive09.linux.com/feature/119049">It's official: ATI Radeon drivers to be open sourced</a>, Linux.com 2007-09-06<br />
+<a href="http://www.phoronix.com/scan.php?page=article&amp;item=amd_evergreen_3d">Open-Source 2D, 3D For ATI Radeon HD 5000 Series GPUs</a>, Phoronix 2010-08-20<br />
+<a href="http://www.phoronix.com/scan.php?page=news_item&amp;px=Nzk0Ng">Open-Source ATI Evergreen Support Arrives</a>, Phoronix 2010-02-01<br />
+<a href="http://www.phoronix.com/scan.php?page=news_item&amp;px=ODcxMg">Well, There's No Radeon HD 6000 Open-Source Surprise</a>, Phoronix 2010-10-24<br />
+<a href="http://www.tomshardware.com/reviews/radeon-hd-6870-radeon-hd-6850-barts,2776-23.html">The Radeon HD 6800 Verdict</a>, Toms Hardware 2010-10-21<br />
+<a href="http://www.x.org/wiki/radeon">The open source Radeon drivers</a>, X.org<br />
+<a href="http://www.phoronix.com/scan.php?page=news_item&amp;px=OTI1OQ">Radeon 8000 series open source drivers won't lag behind proprietary drivers</a> 2011-03-27<br />
+<a href="http://www.phoronix.com/scan.php?page=news_item&amp;px=MTA2NjU">AMD Pitcairn GPUs not supported</a> 2012-03-06
+</p>
+
+</td></tr></table>
+<b>SSD</b>
+<p>It's about time for <a href="http://www.silentpcreview.com/Consumer_SSDs">Solid State Drives</a> to start becomming common.  60gb for ~$100.  100 times the speed of mechanical drives, and silent.
+</p>
+
+<h1>2010</h1>
+<p>
+The Athlon 64 x2 3800+ got <a href="http://darxus.livejournal.com/tag/electric">cooked by my household electricity</a> having an "open neutral".<br />
+Needing to buy a new motherboard, cpu, ram, and power supply seemed like a good time to restart this component list.<br />
+This is all the hardware currently in my computer, in reverse chronological order
+</p>
+<table border="1">
+<tr>
+<th>Type</th>
+<th>Price</th>
+<th>Model</th>
+<th>Explanation</th>
+<th>Ordered<br />Shipping</th>
+</tr>
+
+<tr>
+<td>Power Supply</td>
+<td>$194.99</td>
+<td><a href="http://www.silentpcreview.com/Recommended_PSUs">Corsair AX-850</a></td>
+<td>Highest recommended power supply over 650 watts by <a href="http://www.silentpcreview.com/Recommended_PSUs">SilentPCReview.com</a>.  Silent at low power (fan off).  Modular cable system - attach exactly the power cables you need.  Overkill wattage.  Luxury power that I expect to last a very long time.
+</td>
+<td>2010-11<br />$0</td>
+</tr>
+
+<tr>
+<td>CPU</td>
+<td>$183.99 </td>
+<td><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16819103727">AMD Phenom II X4 965 125W Quad-Core</a></td>
+<td>Don't like Intel.  Fastest AMD.  <br />
+"any [heatsink] that says it fits AM2 or 939 will fit [AM3]"</td>
+<td rowspan="4">2010-03<br />$18.52</td>
+</tr><tr>
+<td>Motherboard</td>
+<td>$178.99</td>
+<td><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16813131363">ASUS M4A79T Deluxe</a></td>
+<td>Only ASUS motherboard that supports the latest AMD socket type (AM3) and the latest type of RAM (DDR3) and has a coax digital audio out (mostly useful for home theater surround sound).  Looked into other brands some (Gigabyte, DFI, MSI), but decided not to change.  
+(BIOS version was sufficient on mine for this CPU.)  Maximum 16GB ram.
+</td>
+</tr><tr>
+<td>RAM</td>
+<td>$239.99</td>
+<td><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16820231330">G.SKILL ECO 8GB (4 x 2GB) DDR3 1600 (Timing: 7-8-7-24-2N)</a></td>
+<td>Fastest type MB supports (DDR3 1600 overclocked), $30 cheaper than Corsair, better latency and lower voltage, hearing good things about the brand, only $10 more than the cheapest (8gb set) option I trusted (also G.Skill).  CAS latency of 7, best available.</td>
+</tr><tr>
+<td>Case</td>
+<td>$84.99</td>
+<td><a href="http://www.newegg.com/Product/Product.aspx?Item=N82E16811129057">Antec Sonata Elite Black</a></td>
+<td>Best quiet case without the obnoxious power supply placement of the P180, and less than $1,000.</td>
+</tr>
+
+<tr><td colspan="5" align="center">This is where my computer got fried.  Got the new UPS because of symptoms of the problem that did it.</td></tr>
+
+<tr>
+<td>UPS</td>
+<td>$169.99</td>
+<td>CyberPower 1500AVR</td>
+<td></td>
+<td rowspan="2">2009-09<br />$7.87</td>
+</tr>
+<tr>
+<td>Keyboard</td>
+<td>$12.99</td>
+<td>Logitech Deluxe 250</td>
+<td>Feels like much better quality than others I've had.  Plain, without all the extra garbage that's hard to avoid these days.</td>
+</tr>
+
+<tr>
+<td>Hard Drive</td>
+<td>$219.99</td>
+<td>Western Digital WD20EADS 2TB</td>
+<td>2 terabytes.  Damn.  Slow though.<br />
+2010-11: Hearing <a href="http://www.silentpcreview.com/article1076-page5.html">good things about the Samsung F4 2TB HD204UI</a>.
+</td>
+<td>2009-08<br />$0</td>
+</tr>
+
+<tr>
+<td>Hard Drive</td>
+<td>$159.98</td>
+<td>SAMSUNG EcoGreen F4 ST2000DL004 2TB <b>x2</b></td>
+<td>I bought two of these based on <a href="http://www.silentpcreview.com/article1076-page5.html">SilentPCReview</a>.  <a href="https://www.reddit.com/r/linux/comments/j3aw9y/a_story_of_file_corruption_with_a_happy_ending/">They caused me great suffering.</a>
+</td>
+<td>2010-11<br />$0</td>
+</tr>
+
+<tr>
+<td>Video</td>
+<td>$149.99</td>
+<td>nVidia GeForce 8800 GT</td>
+<td>nVidia and AMD (ATI) are the major 3D accelerator brands.  nVidia at the time had much better Linux support.
+<br />Purchased only because I managed to fry my previous nVidia card while attempting to reverse its fan by shorting the pins.
+<br />(EVGA 512-P3-N801-AR, 512mb)
+</td>
+<td>
+2008-09<br />
+$0
+</td>
+</tr>
+
+<tr>
+<td>Mouse</td>
+<td>$8.25</td>
+<td>Logitech SBF-96 mouse</td>
+<td>Quality.  Cheap.  Familiar.</td>
+<td>2008-07<br />$6.99</td>
+</tr>
+
+<tr>
+<td>Hard Drive</td>
+<td>$104.99</td>
+<td>Western Digital WD5000AAKS 500GB</td>
+<td>Recommended by <a href="http://www.silentpcreview.com">SilentPCReview.com</a>.</td>
+<td>2007-11<br />$0</td>
+</tr>
+
+<tr>
+<td>DVDR</td>
+<td>$49.99</td>
+<td>NEC 16X IDE ND-3520A BK</td>
+<td>Only ribbon cable remaining.  Grr.</td>
+<td>2005-05<br />$2.49</td>
+</tr>
+
+<tr>
+<td>Monitor</td>
+<td>$429.00</td>
+<td>ViewSonic G220fb Black 21" CRT</td>
+<td>26kg (57.3lbs)</td>
+<td>2004-02<br />$38.00</td>
+</tr>
+
+<tr><th>Subtotal</th><td>$2188.12</td>
+<td colspan="2"></td>
+<td>$73.87</td>
+</tr>
+
+<tr><th>Total</th><td>$2261.99</td><td colspan="3"></td></tr>
+
+
+</table>
+<p>
+I'm planning to move my Scythe Ninja heatsink to the new cpu.  
+</p><p>
+<a href="http://www.hardocp.com/article/2007/12/18/geforce_8800_gt_mega_heatsink_roundup/1">The Thermalright HR-03 video card cooler looks interesting.</a>  What happened to video coolers that vented out the back of the case?  Lowest noise ("silent") <i>and</i> temperature out of seven.
+</p>
+
+
+<hr />
+<h1>2005</h1>
+<div>dancer.chaosreigns.com cooked itself to death over the summer. This is the complete list of parts for its replacement, which was ordered on 12/30/05.<br />
+It was intended to be a Gaming (powerful) HTPC (quiet) machine. I am very happy with the results.<br />
+<a href="../gallery/index/200601.html">Pictures of the assembled machine.</a><br />
+<br />
+The prices are from newegg.com. zipzoomfly.com has also been good for checking prices and availability.<br />
+<br />
+I have found <a href="http://www.silentpcreview.com/">SilentPCReview.com</a> very useful.<br />
+<br />
+<a href="http://www.silentpcreview.com/forums/viewtopic.php?t=27923">SPCR thread discussing this system</a>
+<table border='1'>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th>12v amps</th>
+</tr>
+<tr>
+<td><a href='palit-7800gt-front.jpg'><img alt="" src='tn_palit-7800gt-front.jpg' width='102' height='98' /></a></td>
+<td>$383.00</td>
+<td>video</td>
+<td><a href='http://www.asus.com/products4.aspx?l1=2&amp;l2=6&amp;l3=198&amp;model=590&amp;modelmenu=1'>ASUS EN7800GT/2DHTV/256M Geforce 7800GT 256MB (dual DVI)</a></td>
+<td><a href="http://www.short-media.com/forum/archive/index.php/t-39681.html">16a</a>, <a href="http://www.xbitlabs.com/articles/video/display/geforce7800-gt_5.html">56.7w</a></td>
+</tr>
+<tr>
+<td><a href="nv5_02h.jpg"><img alt="" src='tn_nv5_02h.jpg' width='179' height='55' /></a> <a href="Picture_012.jpg"><img alt="" src="tn_Picture_012.jpg" width='115' height='86' /></a></td>
+<td>$30.99</td>
+<td>video cooling</td>
+<td><a href='http://www.insanetek.com/review.php?id=158'>Arctic Cooling NV Silencer 5 REV 3</a> (comes w/ compound)</td>
+</tr>
+<tr>
+<td><a href="venice-top-300.jpg"><img alt="" src='tn_venice-top-300.jpg' width='101' height='98' /></a></td>
+<td>$322</td>
+<td>cpu</td>
+<td>Athlon 64 x2 3800+ Manchester, socket 939</td>
+</tr>
+<tr>
+<td><a href="SCNJ1000big2.jpg"><img alt="" src='tn_SCNJ1000big2.jpg' width='92' height='107' /></a> <a href='http://www.silentpcreview.com/article251-page3.html'><img alt="" src='tn_lineup.jpg' width='122' height='81' /></a><a href="ninja8.jpg"><img alt="" src="tn_ninja8.jpg" width='115' height='86' /></a></td>
+<td>$39.99</td>
+<td>cpu cooling</td>
+<td><a href="http://www.silentpcreview.com/article251-page1.html">Scythe Ninja CPU Cooler SCNJ-1000</a> ("Thermal grease included")<br />
+"The cooling performance of the Ninja Scythe is the best we've reviewed." - <a href="http://www.silentpcreview.com/article251-page5.html">SilentPCReview.com</a>, 6/17/05</td>
+</tr>
+<tr>
+<td><a href="35-100-007-01.JPG"><img alt="" src="tn_35-100-007-01.JPG" width='115' height='86' /></a></td>
+<td>$5.99</td>
+<td>thermal<br />
+compound</td>
+<td>Arctic Silver 5 Thermal Compound, 3.5 grams (for CPU heatsink)<br />
+"the price is ok... cuz 3.5 grams can be used in 15-20 cpus." - icemanleo on newegg, 12/27/05</td>
+</tr>
+<tr>
+<td><a href='20-145-575-01.JPG'><img alt="" src='tn_20-145-575-01.JPG' width='115' height='86' /></a></td>
+<td>$236</td>
+<td>ram</td>
+<td>Corsair Twinx2048-3200c2pt (@ 2-3-3-6) (2gb total)<br />
+"Absolutely the best set of memory sticks out there for current motherboards." - Tungsten on newegg, 12/23/05</td>
+</tr>
+<tr>
+<td><a href="P180_q_r_web.jpg"><img alt="" src='tn_P180_q_r_web.jpg' width='86' height='115' /></a></td>
+<td>$124.99</td>
+<td>case</td>
+<td><a href="http://www.silentpcreview.com/article249-page1.html">Antec P180 case</a></td>
+</tr>
+<tr>
+<td><a href="13-131-540-02.JPG"><img alt="" src="tn_13-131-540-02.JPG" width='115' height='86' /></a></td>
+<td>$163</td>
+<td>motherboard</td>
+<td><a href="http://www.asus.com/products4.aspx?l1=3&amp;l2=15&amp;l3=148&amp;model=539&amp;modelmenu=1">Asus A8N-SLI Premium</a><br />
+<a href="http://www.hardwareanalysis.com/content/topic/46615/">faq</a></td>
+</tr>
+<tr>
+<td></td>
+<td><b>have</b><br />
+($101)</td>
+<td>hard drive</td>
+<td><a href="http://www.wdc.com/en/products/Products.asp?DriveID=42">Western Digital WD2500JB 250gb UATA100</a>, purchased 6/27/03</td>
+<td>0.530</td>
+</tr>
+<tr>
+<td></td>
+<td>$3.50</td>
+<td></td>
+<td>Athena Power 4pin (P4ATX-12V Male) to 4pin (P4ATX-12V Female) Extension Cable</td>
+</tr>
+<tr>
+<td></td>
+<td>$7.49</td>
+<td></td>
+<td>NEC Black Floppy Drive</td>
+</tr>
+<tr>
+<td></td>
+<td><b>have</b><br />
+($65)</td>
+<td>power supply</td>
+<td>PC Power &amp; Cooling Silencer 360 ATX</td>
+<td>21</td>
+</tr>
+<tr>
+<td><a href='g220fb_us_eng_lrg.jpg'><img alt="" src='tn_g220fb_us_eng_lrg.jpg' width='100' height='100' /></a></td>
+<td><b>have</b><br />
+($459.99)</td>
+<td>monitor</td>
+<td>Viewsonic G220fb 21" CRT, 59.4 lbs.</td>
+</tr>
+<tr>
+<td></td>
+<td><b>have</b><br />
+($17.99)</td>
+<td>nic</td>
+<td>linksys etherfast 10/100 nic (lne100tx)</td>
+</tr>
+<tr>
+<td></td>
+<td><b>have</b></td>
+<td>sound</td>
+<td>sblive value sound card</td>
+</tr>
+<tr>
+<td></td>
+<td><b>have</b><br />
+($38.99)</td>
+<td>dvdr</td>
+<td>NEC ND-3520A BK DVDR</td>
+</tr>
+<tr>
+<td></td>
+<td>$12.99</td>
+<td>keyboard</td>
+<td>Rosewill RK500 Black USB?<br />
+Something plain and black that feels nice, with "\" to the right of "]" not to the left of backspace.</td>
+</tr>
+<tr>
+<td></td>
+<td>?<br />
+($9.95)</td>
+<td>mouse</td>
+<td>May stick with my old trusty logitech optical, may get a razer.</td>
+</tr>
+<tr>
+<td></td>
+<th>$1329.94<br />
+($2022.86)</th>
+<th>Subtotal</th>
+</tr>
+<tr>
+<td></td>
+<th>$64.74</th>
+<th>Newegg Shipping</th>
+</tr>
+<tr>
+<td></td>
+<td>$18.24</td>
+<td>case fan</td>
+<td><a href="http://www.nexustek.nl/120mmcasefan.htm">Nexus 120mm Real Silent case fan</a> (black and white)</td>
+</tr>
+<tr>
+<td></td>
+<th>$6.33</th>
+<th>HeatsinkFactory<br />
+shipping</th>
+</tr>
+<tr>
+<td></td>
+<th>1419.25<br />
+(2112.17)</th>
+<th>Total</th>
+</tr>
+</table>
+<b>Intel vs. AMD CPU?</b><br />
+I like AMD, I like their Athlons, the Athlon 64's seem like a good idea. I am particularly interested in their Quiet 'n' Cool feature (and a motherboard that supports it). Also, AMD has been kicking Intel's ass.<br />
+<br />
+<b>Nvidia vs. ATI graphics?</b><br />
+I prefer Nvidia over ATI for numerous reasons including Linux support. I want SLI support because I think there is a reasonable possibility it will be a useful upgrade path, which basically means I want a nforce4 sli northbridge. And similar to Intel vs. AMD, Nvidia has been consistantly ahead of ATI.<br />
+Update 2010-11: I don't think anyone ever actually uses SLI (nVidia) or Crossfire (AMD/ATI) as an upgrade path.
+<br />
+<br />
+<b>Which Nvidia?</b><br />
+I don't want to spend the money on a nvidia's top of the line 7800gtx nvidia card, and the performance of the 7800gt is decent, although still expensive.<br />
+<br />
+<b>Which motherboard and graphics card manufacturer?</b><br />
+I have been very fond of Asus motherboards forever. I think getting a motherboard and video card with matching manufacturers and chip manufacturers makes sense, hence getting asus motherboard and video card both with nvidia chips. This means an Asus A8N-SLI motherboard. The standard doesn't support Quiet 'n' Cool. For that I have to spend $41 more for the A8N-SLI Premium or wait for the currently unavailable A8N-SLI SE. The northbridge heatpipe on the Premium is sexy.<br />
+"The Premium is an updated version of the deluxe with alot more upgrades and errors fixed." - <a href="http://www.hardwareanalysis.com/content/topic/46615/">a8n-sli premium faq</a><br />
+Socket 939 is the latest, most future proof, and what all the stuff I like uses.<br />
+<br />
+<b>RAM?</b><br />
+A lot of people have had problems with less than great ram (with asus nforce4 motherboards), and the Corsair Twinx2048-3200c2pt is most highly recommended. I'd prefer <a href="http://www.nvnews.net/reviews/evga_6600gt_sli/images/mushkin.jpg">mushkin purple</a>, but haven't found it (it has occurred in <a href="http://forums.silentpcreview.com/viewtopic.php?t=6127">purple in "2 x 512MB of Mushkin Level II Dual Pack PC3200 RAM @ 2-3-3-6")</a><br />
+<a href="http://www.tigerdirect.com/applications/SearchTools/item-details.asp?EdpNo=578367&amp;CatId=496">Ultra makes purple heat spreaders, $2 each</a><br />
+<br />
+<b>Graphics cooling?</b><br />
+Current Geforce video cards are known to be noisy. The Arctic Cooling NV Silencer 5 REV 3 is highly recommended because it reduces the gpu temperature significantly, is a lot quieter, and vents directly out of the case.<br />
+<br />
+<b>Case &amp; CPU heatsink?</b><br />
+The Antec P180 case seems to be the quietest case that isn't over $1k (zalman), and it's handling of thermal issues seems well thought out. I figure all the fans I'll use will be 1 or 2 of the top case fans (on low) and the video card fan. The power supply will cool the hard drives. The case fans will only have the cpu left to cool, and I figure some ducting around the massive ninja heatsink should drop the temp some and be fine with no cpu fan (I've seen confirmation). All rear vent holes (around the PS and video card) will be sealed with hvac tape.<br />
+What's this about <a href="http://forums.silentpcreview.com/viewtopic.php?t=27846">"reports of slight case issues (the warping/bent doors)"</a>?<br />
+<br />
+<b>Power extension cord</b><br />
+This combination of case and MB tends to have problems with the 4-pin power cord reaching, so I'll get an extension cord (and should di-electric grease it).<br />
+<br />
+<b>Floppy</b><br />
+The faq recommends upgrading the MB bios via a boot floppy first, so I'll get a floppy drive.<br />
+<br />
+<b>Which AMD CPU?</b><br />
+The Athlon 64 part is obvious. The 3200 winchester ($190) seems to fall in a nice place on a price per performance graph, but with everything else top of the line that would be my bottleneck, so I should probably go higher. bored2sleep has recommended the x2 3800+, which is $322. At the moment I want the 3800+ venice because it's 116% as fast as the x2 3800+ for single threaded apps, and cheaper.<br />
+"spend the extra 20 bucks and get the dual core 3800+, the performance difference is wonderful (you'll really notice it even with small things like playing music while surfing the net). While the single core one is faster in sheer benchmarks and games, you'll notice the dual core's benefits more (its perceptively faster)" - <a href="http://forums.silentpcreview.com/viewtopic.php?p=232338">teknerd</a>, so I'm back to the x2.<br />
+According to <a href="http://www.tomshardware.com/2005/11/21/the_mother_of_all_cpu_charts_2005/page39.html">Tom's Hardware's most excellent charts, there are 4 socket 939 CPUs faster than the 3800 Venice</a> (the rest are Socket 754 or Intel). Here are their newegg prices, and speed as a percentage of the 3800+ Venice using winrar:
+<table border='1'>
+<tr>
+<th>cost</th>
+<th>% cost</th>
+<th>minutes elapsed</th>
+<th>% speed</th>
+<th>CPU</th>
+</tr>
+<tr>
+<td>$282</td>
+<td>100.0%</td>
+<td>1.667</td>
+<td>100.0%</td>
+<td>3800+ Venice</td>
+</tr>
+<tr>
+<td>$787</td>
+<td>297.1%</td>
+<td>1.633</td>
+<td>102.1%</td>
+<td>x2 4800+</td>
+</tr>
+<tr>
+<td>$334</td>
+<td>118.4%</td>
+<td>1.583</td>
+<td>105.3%</td>
+<td>4000+ San Diego</td>
+</tr>
+<tr>
+<td>$811</td>
+<td>287.6%</td>
+<td>1.500</td>
+<td>111.1%</td>
+<td>FX55 San Diego</td>
+</tr>
+<tr>
+<td>$1011</td>
+<td>358.5%</td>
+<td>1.433</td>
+<td>116.3%</td>
+<td>FX57 San Diego</td>
+</tr>
+</table>
+As you can see, the 4000+ San Diego is the only one even slightly possibly worth spending more of my money on.<br />
+While I don't intend to overclock, <a href="http://www.neoseeker.com/Articles/Hardware/Reviews/amd64-4000/">NeoSeeker's article on the 4000+ San Diego</a> has me comfortable going with the 3800+ due to its headroom.<br />
+teknerd on <a href="http://forums.silentpcreview.com/viewtopic.php?t=27923">SPCR</a> has convinced me that a x2 3800+ would be noticeably better than a 3800+ Venice, so I'm going with it. Also, it seems like games are not likely to be CPU bound on an x2 3800+ until after the dual cores are better supported. (<a href="http://www.xbitlabs.com/articles/cpu/display/cpu-games2_4.html">article about games not being cpu bound, and Doom 4 and Serious Sam 2 support dual cores</a>)<br />
+<br />
+<b>Hard drive?</b><br />
+I was going to get a western digital WD3200KS 320gb SATA2 drive until a <a href="http://www.tomshardware.com/2005/12/21/samsung_adds_capacity_to_fast_and_quiet_t133_series/page3.html">tom's hardware article pointed out to me that SATA2 drives aren't faster than UATA100</a>. So instead I'll get the SATA1 twin to my Western Digital WD2500JB 250GB UATA100 drive and raid1 / stripe them. 500gb, with performance that should kill any single drive available. And $99 instead of $156. But will they be too noisy?<br />
+The nforce4 northbridge comes with raid 0/1/0+1.<br />
+I've had enough people discourage me from doing RAID1 due to concern for instability of the raid controller (although I don't think specifically with this northbridge). So I'll at least hold off on the second drive for a bit. (thanks to Talorc on <a href="http://forums.silentpcreview.com/viewtopic.php?t=27923">SPCR</a>)<br />
+"the hard drive choices are fine." - teknerd on <a href="http://forums.silentpcreview.com/viewtopic.php?t=27923">SPCR</a><br />
+<br />
+<b>Power supply?</b><br />
+I would prefer to have a <a href="http://www.antec.com/">Antec NeoHE 430</a>, but I already have the (noisier) PC Power &amp; Cooling Silent 360, and <a href="http://www.silentpcreview.com/article265-page1.html">SilentPCReview</a>'s article states that "all of our test systems could easily be handled by a 300W power supply that conforms to ATX12V v2.xx." The 7800GT does not draw significantly more than the tested 6800GT, and the PCP&amp;C silent 360 puts out as many 12v amps as the well liked and ATX12V v2.0 compliant Seasonic S12-330. This would leave the PCP&amp;C as the least worthy component of the system, but I don't think that alone justifies an upgrade - I don't think the noise level will bother me.<br />
+I know about the problems with the NeoHE and would be willing to RMA it if I got one that didn't work.<br />
+"the PC P&amp;C 360 should be fine." - stupid on <a href="http://forums.silentpcreview.com/viewtopic.php?t=27923">SPCR</a><br />
+<br />
+<b>Thermal Compound</b><br />
+Arctic Silver 5 has been the choice of thermal compound for attaching heatsinks for years. I was thinking about just using the goop that comes with the vga cooler and heatsink I'm getting, but I've read of several people regretting they didn't pick up the AS5 for the same equipment.<br />
+"i put arctic silver on my htpc cpu and it went from 150[F] down to 94[F]" - bitbyte, #htpc, efnet, 12/29/05<br />
+I believe my athlon 1400 cooked itself to death due to the stock thermal tape drying out over 4 years. I plan to reapply thermal goop every 2 years.<br />
+<br />
+<b>Case Fan</b><br />
+I successfully set the machine up with the only fans being the NV Silencer on the video card and a single (the smallest) stock 120mm case fan in the back, ducted over the CPU heatsink (with no fan of its own). But I was <i>very</i> disapointed that the stock fans can only be powered by molex connectors, not standard motherboard connectors. So I picked up the Nexus 120mm, hooked it to my motherboard, enabled Q-Fan2 (dynamic fan speed control based on CPU temperature, an Asus motherboard feature) and Quiet 'n Cool (dynamic underclocking based on load, an Athlon 64 feature supported by my motherboard).
+<hr />
+<h2>Poorly organized notes</h2>
+I want a motherboard without a northbridge fan, but I believe that can be nicely achieved with a <a href="http://www.zalman.co.kr/usa/product/view.asp?idx=71&amp;code=014">zalman northbridge heatsink</a> on any mb with a fan, but I have a feeling it won't fit with an AC VGA silencer on a A8N-SLI based on some <a href="http://www.pcdvd.com.tw/showthread.php?t=461684">pictures</a>. But not voiding a motherboard's warranty is nice.<br />
+<br />
+The $379 eVGA SLI motherboard and Geforce 7800GT combo is an interesting cheaper possibility. The mb is apparently a rebadged <a href="http://www.anandtech.com/mb/showdoc.aspx?i=2506">jetaway which has gotten extremely impressive reviews</a>. It has a far more elegant method of switching between a single video card and SLI than anything else - 3 dedicated slots. Use the middle one for 1 card, and the outside 2 for SLI. This apparently improves overclocking potential as well. This will be copied by everyone. But it doesn't support Quiet 'n' Cool.<br />
+<br />
+http://www.overclockers.co.uk/acatalog/ASUS_Socket_939.html and http://www.scan.co.uk/Products/ProductInfo.asp?WebProductID=311465 claim to have the A8N-SLI SE in stock.<br />
+<br />
+<blockquote>
+<div>Problem with Dual Core processors, is their price exceeds their value.<br />
+<br />
+Take the Athlon X2 3800+ for example, the "budget dual core", running at 2.0 GHz/512 kB makes this basically, two Athlon 64 3200+. For single threaded applications you'll see only minor performance improvements over the 3200+, and even in highly optimized conditions, you may see only 50% boost.<br />
+<br />
+For the same money you could get, what, an Athlon 64 4000+? Although with the Dual Core, you get a better multitasking experience, and it makes up for many of the architectural weaknesses of the Athlon 64 architecture, when push comes to shove, the faster single core will consistently bring home the bacon.<br />
+<br />
+- Lord of fools, http://www.itsallpc.co.uk/index.php?topic=388</div>
+</blockquote>
+<br />
+<blockquote>
+<div>The 3500 is simply a higher clocked 3000 or 3200. Therefore, it is not significantly faster than the 3200.<br />
+<br />
+The 3700 has 1M of L2 cache, as opposed to the 3000, 3200, or 3500, which have 512K. Therefore, you will see a significant performance increase going that route. The 3500 is $20 less than a 3700. So go 3200, or 3700.<br />
+<br />
+- heropsycho2177, http://www.computing.net/gaming/wwwboard/forum/5924.html</div>
+</blockquote>
+<br />
+<br />
+<br />
+"What would you guys say was the highest safe reasonable temp for a Evga 7800GT? Under full load, of course." - videogames101<br />
+"I wouldn't be worried until about 85&deg;C, although it probably won't ever get that hot. They run cooler than the 6800 series." - CalvinHobbes<br />
+http://forums.anandtech.com/messageview.aspx?catid=31&amp;threadid=1765775&amp;enterthread=y
+<hr />
+<b>Links</b><br />
+<a href="http://www2.amd.com/us-en/Processors/DevelopWithAMD/1,,30_2252_869_9460%5e9461,00.html?1065217534">AMD's recommended motherboards, searchable by feature certification</a><br />
+<a href="http://www.silentpcreview.com/article265-page1.html">SilentPCReview - total power consumption of current PCs (223w max)</a><br />
+<a href="http://www.xbitlabs.com/articles/video/display/geforce-6800gs_3.html">power consumption of geforce 6800</a><br />
+<a href="http://www.xbitlabs.com/articles/video/display/geforce7800-gt_5.html">power consumption of geforce 7800</a><br />
+<a href="http://www.silentpcreview.com/article273-page1.html">Antec Neo HE 430 power supply</a><br />
+<a href="http://www.nvnews.net/vbulletin/showthread.php?t=44510">sexy purple mushkin ram</a><br />
+<a href="http://forums.silentpcreview.com/viewtopic.php?t=27389">nice shot of an AC VGA silencer</a><br />
+<a href="http://forums.silentpcreview.com/viewtopic.php?t=27848">p180 / 7800GT / x2 4800+ / A8N32-SLI / ninja system pics</a><br />
+<a href="http://www.silentpcreview.com/modules.php?op=modload&amp;name=Sections&amp;file=index&amp;req=viewarticle&amp;artid=114">nice article on diy heatpipe cooling</a><br />
+<a href="http://www.monarchcomputer.com/Merchant2/merchant.mv?Screen=CTGY&amp;Store_Code=M&amp;Category_Code=AllNemesis">nice prebuit gaming machines from monarch</a><br />
+<a href="http://www.acoustiproducts.com/en/antivibration.asp#AFG">acoustifan quiet fan mounts</a><br />
+<a href="http://www.nexustek.nl/120mmcasefan.htm">Nexus 120mm case fans are most highly recommended</a><br />
+<a href="http://www.anandtech.com/video/showdoc.aspx?i=2636">comparison of 3 7800GT's (evga, xfx, asus)</a>: games recommended for putting a 7800GT to good use: "Call of Duty 2, Battlefield 2, Black and White 2, Quake 4, F.E.A.R, etc."<br />
+<a href="http://www.dansdata.com/goop.htm">comparison of thermal compounds</a><br />
+"This card (eVGA 7800GT 256-P2-N518) has no performance diffrence over the N515, and is only $xx more because of the motherboard deal. Luckily I bought it when it was $xxx though. Works great in SLI with my N515 and the motherboard it came with. Had to upgrade my PSU." - Joebot on newegg, 12/23/05<br />
+"The difference between this model (N518) and other models such as N515-N517 is the BIOS versions. If you look up community support at EVGA.com there are many people having issues with previous models. Artifacting, heat issues, clock issues, using older drivers to be stable, etc., and require GPU BIOS flashing which is provided by EVGA engineers. Not sure if that voids warranty or not if flash goes wrong. Also seems like the BIOS update flashing aren't 100% guranteed to fix the technical issues owners are having as many of them note. I'd play it safe and spend a little more on this model with latest BIOS or other brand models. Probably the reason why there's a gap in the pricing of the same videocard." - n/a on newegg, 12/2/05<br />
+Logitech Precision PC Gaming Headset<br />
+Razer mouse<br />
+cpu chart: http://www.tomshardware.com/2005/11/21/the_mother_of_all_cpu_charts_2005/page24.html<br />
+"Avoid Creative's buggy overpriced soundcards Get a Revolution 5.1 from M Audio,way nicer." - unknown, 1/2/06<br />
+http://www.almico.com/speedfan.php<br />
+"Everytime GPU temp goes above 43, fan ramps up. When the temp drops, fan slows down. No more manual work. This is magic. I love it." using speedfan, - http://forums.silentpcreview.com/viewtopic.php?t=25023<br />
+"CPU temperature shot up to 74&deg;C, where throttling kicked in to prevent the temperature from rising any higher." - http://www.silentpcreview.com/article255-page6.html<br />
+"With the CPU under load, the temperature stabilized at 65&deg;C \u2014 warm, but not high enough to start throttling." rear fan on low, top fan removed but open - http://www.silentpcreview.com/article255-page6.html<br />
+"According the NVidia driver, the GPU core can hit 127&deg;C before it throttles itself back" minor graphics glitches at 69&deg;C (6800GT) - http://www.silentpcreview.com/article255-page7.html<br />
+when applying silicone:<br />
+"Smooth after application (within 3 to 5 minutes) before skin formation by using a flat, wet instrument or finger - applying a little dishwashing liquid prevents sticking to skin." - http://www.bostik.co.za/sealants/home.htm<br />
+"the disk drive running at 45C (or even 50 or 60) should not crash the PC." "Most hard drives operating temps are 0-60&deg;C." - http://www.silentpcreview.com/forums/viewtopic.php?t=28337<br />
+"If you believe your CPU temperature is too high (say 70C or above)" - http://www.quietpc.com/uk/amdcooling.php</div>
+<p>
+"There are many reports of [PCI Express] 2.1 cards not working in some 1.0 boards. If you have 2.0 then you don't need to worry about it. " - http://www.tomshardware.com/forum/313357-33-express-compatibility
+</p>
+<hr />
+2020-10-04
+</body>
+</html>

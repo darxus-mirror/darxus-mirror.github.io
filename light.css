@@ -1,0 +1,38 @@
+/*
+https://www.reddit.com/r/changemyview/comments/ksp9qa/cmv_web_pages_and_all_other_media_with_full_white/
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body {
+  background: #DDD;
+  color: #000000;
+  font-family: 'Varela Round', sans-serif;
+}
+
+A {text-decoration: none}
+A:hover {
+  background: #DDD;
+  color: #7F55D4;
+}
+
+
+/*
+ul {
+  list-style-image: url(/bullet.png);
+}
+*/
+
+div.center { text-align: center; }
+
+img { border-style: none; }
+
+/*
+h1 { text-align: center; }
+*/
+
+td.date { white-space:nowrap }
+
+table { border-collapse: collapse; }
+table, th, td { border: 1px solid; padding: 2px }
+

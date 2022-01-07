@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content=
+"HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+<title>links related to sig2dot</title>
+<link rel='StyleSheet' href="/light.css" type="text/css" />
+</head>
+<body>
+<div>
+<h1>links related to sig2dot</h1>
+<ul>
+<li><a href="mailto:ppalfrad@cosy.sbg.ac.at">Peter Palfrader</a> generated
+<a href="http://www.palfrader.org/weboftrust/debian/">some debian-keyring
+stats</a>.</li>
+<li><a href="mailto:joey@kitenet.net">Joey Hess</a> generated graphs of the
+Debian PGP keyring, but they seem to be gone now. (I didn't do this because the
+data is deprecated)</li>
+<li><a href="http://dtype.org/keyanalyze/">Analysis of a "full" PGP/GPG
+Keyring</a></li>
+<li><a href="http://www.biglumber.com">keysigning coordination page</a></li>
+</ul>
+<hr />
+Reciprocal Links for sig2dot:
+<ul>
+<li><a href="http://www.debian.org/News/weekly/2000/30/">9/19/2000 Debian
+Weekly News article mentioned this page</a></li>
+<li><a href="http://kt.linuxcare.com/debian/dd20000928_4.epl#5">9/19/2000
+Kernel Cousin Debian thread on this page</a></li>
+<li><a href=
+"http://www.research.att.com/sw/tools/graphviz/webapps.html">Graphviz - Cool
+sites using graphviz servers</a></li>
+<li><a href="http://www.vilya.org/gpg/gpg-intro-5.html">Introduction &agrave;
+GnuPG: Les r&eacute;seaux de confiance ("web of trust")</a></li>
+<li><a href="http://people.debian.org/~edward/globe/earthkeyring/">Earth
+developer key signature map</a></li>
+<li><a href="http://www.cryptnet.net/fdp/crypto/gpg-party.html">GPG Keysigning
+Party HOWTO</a></li>
+<li><a href="http://www.palfrader.org/misc/weboftrust/SEEALSO.html">Peter
+Palfrader's web of trust - see also</a></li>
+<li><a href="http://www.PhillyLinux.org/keys/">Philadelphia Linux Web of Trust
+/ GPG Keyring</a></li>
+<li><a href=
+"http://lists.debian.org/debian-devel/2000/debian-devel-200009/msg01039.html">Debian-Devel
+list archives: graphing the debian keyring</a></li>
+<li><a href="http://spacepants.org/slug/">SLUG Keysigning</a></li>
+<li><a href="http://www.iaphys.org/communicate/pgp/index.shtml">PGP in
+IAPS</a></li>
+<li><a href="http://www.muttfr.org/">Mutt French Page</a></li>
+<li><a href="http://silver.fureai.or.jp/diary/diary.html">Fortuner Inn: When
+the Rain Falls Silver</a></li>
+<li><a href=
+"http://dtype.org/pipermail/keyanalyze-discuss/2001-July/000001.html">keyanalyze-discuss
+list archives</a></li>
+<li><a href="http://www.xeqt.com/doxygen/list-001004-001113/0075.html">Doxygen
+list archives</a></li>
+<li><a href="http://www.parinux.org/ressources/liens.html">parinux</a></li>
+<li><a href="http://staff.pisoftware.com/bmarshal/bookmarks.html">bmarshal's
+bookmarks</a></li>
+<li><a href="http://ramix.org/">RAMIX Network</a></li>
+</ul>
+<hr />
+<a href="/code/sig2dot/">sig2dot index</a><br />
+<a href="/code/">code index</a><br />
+<a href="/">Return to Darxus' Home Page</a><br />
+Sun May 5 17:44:20 EDT 2002<br />
+<a href="http://validator.w3.org/check/referer">Valid HTML 3.2.</a></div>
+</body>
+</html>

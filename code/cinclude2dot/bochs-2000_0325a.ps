@@ -1,0 +1,6999 @@
+%!PS-Adobe-2.0
+%%Creator: neato version gviz1.5 (06-14-99)
+%%For: (nbarwell) Debian User,,,
+%%Title: source tree
+%%Pages: (atend)
+%%BoundingBox: 36 36 3434 3125
+%%EndComments
+%%BeginProlog
+save
+/DotDict 200 dict def
+DotDict begin
+
+%%BeginResource: procset
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+	dup 1 exch div /InvScaleFactor exch def
+	dup scale
+} bind def
+
+% styles
+/solid { } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw aligned label in bounding box aligned to current point
+% alignfactor tells what fraction to place on the left.
+% -.5 is centered.
+/alignedtext {			% text labelwidth fontsz alignfactor
+	/alignfactor exch def
+	/fontsz exch def
+	/width exch def
+	/text exch def
+	gsave
+		% even if node or edge is dashed, don't paint text with dashes
+		[] 0 setdash
+		currentpoint newpath moveto
+		text stringwidth pop
+		alignfactor mul fontsz -.3 mul rmoveto
+		text show
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+% /arrowlength 10 def
+% /arrowwidth 5 def
+%%EndSetup
+%%Page: 1 1
+%%PageBoundingBox: 36 36 3434 3125
+gsave
+35 35 3399 3090 boxprim clip newpath
+36 36 translate
+0 0 1 beginpage
+0 0 translate 0 rotate
+0.000 0.000 0.000 graphcolor
+14.00 /Times-Roman set_font
+
+%	debug/lexer.c
+gsave 10 dict begin
+621 784 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+621 785 moveto (debug/lexer.c) 75 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	stdio.h
+gsave 10 dict begin
+939 1052 29 18 ellipse_path
+stroke
+gsave 10 dict begin
+939 1053 moveto (stdio.h) 37 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/lexer.c -> stdio.h
+newpath 641 800 moveto
+732 877 824 955 916 1032 curveto
+stroke
+newpath 916 1029 moveto
+922 1037 lineto
+913 1033 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	stdlib.h
+gsave 10 dict begin
+973 1025 31 18 ellipse_path
+stroke
+gsave 10 dict begin
+973 1026 moveto (stdlib.h) 41 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/lexer.c -> stdlib.h
+newpath 644 800 moveto
+745 869 846 938 947 1007 curveto
+stroke
+newpath 946 1003 moveto
+953 1011 lineto
+943 1008 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	debug/lexer.c -> stdlib.h
+newpath 644 800 moveto
+745 869 846 938 947 1007 curveto
+stroke
+newpath 946 1003 moveto
+953 1011 lineto
+943 1008 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	debug/lexer.c -> stdlib.h
+newpath 644 800 moveto
+745 869 846 938 947 1007 curveto
+stroke
+newpath 946 1003 moveto
+953 1011 lineto
+943 1008 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	debug/lexer.c -> stdlib.h
+newpath 644 800 moveto
+745 869 846 938 947 1007 curveto
+stroke
+newpath 946 1003 moveto
+953 1011 lineto
+943 1008 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	unistd.h
+gsave 10 dict begin
+992 1108 32 18 ellipse_path
+stroke
+gsave 10 dict begin
+992 1109 moveto (unistd.h) 44 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/lexer.c -> unistd.h
+newpath 640 801 moveto
+749 896 859 992 968 1087 curveto
+stroke
+newpath 969 1085 moveto
+975 1093 lineto
+966 1088 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	io.h
+gsave 10 dict begin
+1073 962 27 18 ellipse_path
+stroke
+gsave 10 dict begin
+1073 963 moveto (io.h) 21 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/lexer.c -> io.h
+newpath 654 797 moveto
+783 848 913 899 1042 950 curveto
+stroke
+newpath 1042 947 moveto
+1050 953 lineto
+1040 952 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	string.h
+gsave 10 dict begin
+1001 995 31 18 ellipse_path
+stroke
+gsave 10 dict begin
+1001 996 moveto (string.h) 42 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/lexer.c -> string.h
+newpath 648 799 moveto
+755 859 865 919 972 978 curveto
+stroke
+newpath 971 974 moveto
+978 982 lineto
+968 979 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	debug.h
+gsave 10 dict begin
+140 721 32 18 ellipse_path
+stroke
+gsave 10 dict begin
+140 722 moveto (debug.h) 44 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/lexer.c -> debug.h
+newpath 576 778 moveto
+444 760 311 744 179 726 curveto
+stroke
+newpath 181 729 moveto
+171 725 lineto
+181 724 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	parser.h
+gsave 10 dict begin
+261 463 32 18 ellipse_path
+stroke
+gsave 10 dict begin
+261 464 moveto (parser.h) 44 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/lexer.c -> parser.h
+newpath 602 767 moveto
+497 673 391 578 284 484 curveto
+stroke
+newpath 283 487 moveto
+278 478 lineto
+287 483 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	debug/parser.c
+gsave 10 dict begin
+521 916 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+521 917 moveto (debug/parser.c) 81 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/parser.c -> stdio.h
+newpath 559 928 moveto
+674 965 791 1003 906 1042 curveto
+stroke
+newpath 904 1039 moveto
+913 1044 lineto
+903 1044 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	debug/parser.c -> stdlib.h
+newpath 563 926 moveto
+687 956 813 986 937 1016 curveto
+stroke
+newpath 935 1013 moveto
+944 1018 lineto
+934 1018 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	debug/parser.c -> debug.h
+newpath 492 901 moveto
+386 847 280 792 174 738 curveto
+stroke
+newpath 172 740 moveto
+164 733 lineto
+174 735 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	macutils.c
+gsave 10 dict begin
+806 651 39 18 ellipse_path
+stroke
+gsave 10 dict begin
+806 652 moveto (macutils.c) 57 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	macutils.c -> stdio.h
+newpath 812 669 moveto
+851 788 891 908 931 1027 curveto
+stroke
+newpath 933 1024 moveto
+933 1034 lineto
+928 1025 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	macutils.c -> stdlib.h
+newpath 814 669 moveto
+862 779 914 890 962 1000 curveto
+stroke
+newpath 963 997 moveto
+965 1007 lineto
+959 999 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	macutils.c -> string.h
+newpath 816 669 moveto
+874 769 931 871 988 972 curveto
+stroke
+newpath 989 968 moveto
+991 978 lineto
+984 970 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	stat.h
+gsave 10 dict begin
+1139 906 27 18 ellipse_path
+stroke
+gsave 10 dict begin
+1139 907 moveto (stat.h) 29 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	macutils.c -> stat.h
+newpath 826 666 moveto
+922 740 1019 814 1115 888 curveto
+stroke
+newpath 1114 884 moveto
+1121 892 lineto
+1111 889 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Files.h
+gsave 10 dict begin
+505 229 29 18 ellipse_path
+stroke
+gsave 10 dict begin
+505 230 moveto (Files.h) 37 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	macutils.c -> Files.h
+newpath 794 634 moveto
+704 508 613 379 522 253 curveto
+stroke
+newpath 520 255 moveto
+517 245 lineto
+524 252 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Disks.h
+gsave 10 dict begin
+992 428 31 18 ellipse_path
+stroke
+gsave 10 dict begin
+992 429 moveto (Disks.h) 42 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	macutils.c -> Disks.h
+newpath 820 634 moveto
+870 573 923 511 973 450 curveto
+stroke
+newpath 970 450 moveto
+978 444 lineto
+974 453 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	macutils.h
+gsave 10 dict begin
+1484 1007 39 18 ellipse_path
+stroke
+gsave 10 dict begin
+1484 1008 moveto (macutils.h) 57 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	macutils.c -> macutils.h
+newpath 832 664 moveto
+1038 772 1246 882 1453 990 curveto
+stroke
+newpath 1451 986 moveto
+1458 993 lineto
+1448 990 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	config.h
+gsave 10 dict begin
+1923 1368 33 18 ellipse_path
+stroke
+gsave 10 dict begin
+1923 1369 moveto (config.h) 46 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	macutils.h -> config.h
+newpath 1503 1023 moveto
+1635 1132 1767 1240 1900 1349 curveto
+stroke
+newpath 1899 1345 moveto
+1905 1353 lineto
+1896 1349 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	misc/sb16/sb16ctrl.c
+gsave 10 dict begin
+515 1052 68 18 ellipse_path
+stroke
+gsave 10 dict begin
+515 1053 moveto (misc/sb16/sb16ctrl.c) 115 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	misc/sb16/sb16ctrl.c -> stdio.h
+newpath 583 1052 moveto
+689 1052 795 1052 900 1052 curveto
+stroke
+newpath 900 1050 moveto
+910 1052 lineto
+900 1055 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	misc/sb16/sb16ctrl.c -> stdlib.h
+newpath 581 1048 moveto
+700 1041 817 1034 935 1027 curveto
+stroke
+newpath 932 1025 moveto
+942 1027 lineto
+932 1030 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	misc/sb16/sb16ctrl.c -> string.h
+newpath 577 1045 moveto
+705 1029 834 1015 962 1000 curveto
+stroke
+newpath 960 998 moveto
+970 999 lineto
+960 1003 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	ctype.h
+gsave 10 dict begin
+1006 1160 30 18 ellipse_path
+stroke
+gsave 10 dict begin
+1006 1161 moveto (ctype.h) 40 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	misc/sb16/sb16ctrl.c -> ctype.h
+newpath 568 1064 moveto
+701 1093 837 1123 970 1152 curveto
+stroke
+newpath 969 1149 moveto
+978 1154 lineto
+968 1154 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	dos.h
+gsave 10 dict begin
+52 966 27 18 ellipse_path
+stroke
+gsave 10 dict begin
+52 967 moveto (dos.h) 29 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	misc/sb16/sb16ctrl.c -> dos.h
+newpath 459 1042 moveto
+335 1019 210 995 86 972 curveto
+stroke
+newpath 88 975 moveto
+78 971 lineto
+88 970 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	sys/io.h
+gsave 10 dict begin
+33 1242 32 18 ellipse_path
+stroke
+gsave 10 dict begin
+33 1243 moveto (sys/io.h) 43 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	misc/sb16/sb16ctrl.c -> sys/io.h
+newpath 477 1067 moveto
+341 1121 204 1175 67 1229 curveto
+stroke
+newpath 69 1231 moveto
+59 1232 lineto
+67 1226 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	errno.h
+gsave 10 dict begin
+486 1376 30 18 ellipse_path
+stroke
+gsave 10 dict begin
+486 1377 moveto (errno.h) 39 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	misc/sb16/sb16ctrl.c -> errno.h
+newpath 513 1070 moveto
+505 1163 496 1256 488 1349 curveto
+stroke
+newpath 491 1348 moveto
+487 1358 lineto
+486 1348 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/div_Xsig.c
+gsave 10 dict begin
+1489 2635 52 18 ellipse_path
+stroke
+gsave 10 dict begin
+1489 2636 moveto (fpu/div_Xsig.c) 83 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	exception.h
+gsave 10 dict begin
+1974 2781 42 18 ellipse_path
+stroke
+gsave 10 dict begin
+1974 2782 moveto (exception.h) 64 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/div_Xsig.c -> exception.h
+newpath 1529 2647 moveto
+1662 2687 1798 2728 1931 2769 curveto
+stroke
+newpath 1930 2766 moveto
+1939 2771 lineto
+1929 2771 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu_emu.h
+gsave 10 dict begin
+1766 2208 40 18 ellipse_path
+stroke
+gsave 10 dict begin
+1766 2209 moveto (fpu_emu.h) 60 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/div_Xsig.c -> fpu_emu.h
+newpath 1501 2617 moveto
+1583 2490 1667 2361 1750 2234 curveto
+stroke
+newpath 1748 2233 moveto
+1755 2226 lineto
+1752 2236 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	poly.h
+gsave 10 dict begin
+1580 2951 28 18 ellipse_path
+stroke
+gsave 10 dict begin
+1580 2952 moveto (poly.h) 35 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/div_Xsig.c -> poly.h
+newpath 1494 2653 moveto
+1520 2743 1546 2834 1573 2925 curveto
+stroke
+newpath 1575 2923 moveto
+1575 2933 lineto
+1570 2924 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/div_small.c
+gsave 10 dict begin
+2305 2088 54 18 ellipse_path
+stroke
+gsave 10 dict begin
+2305 2089 moveto (fpu/div_small.c) 87 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/div_small.c -> fpu_emu.h
+newpath 2260 2098 moveto
+2111 2131 1960 2165 1811 2198 curveto
+stroke
+newpath 1812 2200 moveto
+1802 2200 lineto
+1811 2195 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/errors.c
+gsave 10 dict begin
+2221 2429 42 18 ellipse_path
+stroke
+gsave 10 dict begin
+2221 2430 moveto (fpu/errors.c) 64 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/errors.c -> exception.h
+newpath 2209 2446 moveto
+2136 2550 2063 2654 1990 2758 curveto
+stroke
+newpath 1994 2757 moveto
+1986 2764 lineto
+1989 2754 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/errors.c -> fpu_emu.h
+newpath 2193 2416 moveto
+2063 2352 1931 2289 1801 2225 curveto
+stroke
+newpath 1801 2228 moveto
+1793 2221 lineto
+1803 2223 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	linux/signal.h
+gsave 10 dict begin
+2045 1906 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+2045 1907 moveto (linux/signal.h) 76 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/errors.c -> linux/signal.h
+newpath 2215 2411 moveto
+2162 2252 2107 2092 2054 1934 curveto
+stroke
+newpath 2051 1934 moveto
+2051 1924 lineto
+2056 1933 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	asm/uaccess.h
+gsave 10 dict begin
+2090 2972 50 18 ellipse_path
+stroke
+gsave 10 dict begin
+2090 2973 moveto (asm/uaccess.h) 79 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/errors.c -> asm/uaccess.h
+newpath 2217 2447 moveto
+2177 2614 2136 2781 2096 2947 curveto
+stroke
+newpath 2099 2945 moveto
+2094 2954 lineto
+2094 2944 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu_system.h
+gsave 10 dict begin
+2320 2650 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+2320 2651 moveto (fpu_system.h) 75 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/errors.c -> fpu_system.h
+newpath 2229 2447 moveto
+2255 2505 2282 2565 2308 2624 curveto
+stroke
+newpath 2310 2622 moveto
+2312 2632 lineto
+2305 2624 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	status_w.h
+gsave 10 dict begin
+2407 2707 40 18 ellipse_path
+stroke
+gsave 10 dict begin
+2407 2708 moveto (status_w.h) 59 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/errors.c -> status_w.h
+newpath 2233 2447 moveto
+2285 2525 2338 2604 2390 2683 curveto
+stroke
+newpath 2391 2680 moveto
+2395 2690 lineto
+2387 2683 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	control_w.h
+gsave 10 dict begin
+2093 2785 44 18 ellipse_path
+stroke
+gsave 10 dict begin
+2093 2786 moveto (control_w.h) 67 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/errors.c -> control_w.h
+newpath 2215 2447 moveto
+2178 2551 2140 2657 2101 2761 curveto
+stroke
+newpath 2105 2758 moveto
+2099 2767 lineto
+2100 2757 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	reg_constant.h
+gsave 10 dict begin
+2243 2773 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+2243 2774 moveto (reg_constant.h) 81 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/errors.c -> reg_constant.h
+newpath 2222 2447 moveto
+2229 2547 2235 2649 2242 2749 curveto
+stroke
+newpath 2245 2745 moveto
+2242 2755 lineto
+2240 2745 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	version.h
+gsave 10 dict begin
+2709 2495 36 18 ellipse_path
+stroke
+gsave 10 dict begin
+2709 2496 moveto (version.h) 51 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/errors.c -> version.h
+newpath 2261 2434 moveto
+2395 2453 2532 2471 2666 2489 curveto
+stroke
+newpath 2664 2486 moveto
+2674 2490 lineto
+2664 2491 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_arith.c
+gsave 10 dict begin
+2331 2237 52 18 ellipse_path
+stroke
+gsave 10 dict begin
+2331 2238 moveto (fpu/fpu_arith.c) 83 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_arith.c -> fpu_emu.h
+newpath 2279 2234 moveto
+2124 2227 1970 2218 1815 2210 curveto
+stroke
+newpath 1816 2213 moveto
+1806 2210 lineto
+1816 2208 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_arith.c -> fpu_system.h
+newpath 2331 2255 moveto
+2328 2378 2323 2502 2320 2625 curveto
+stroke
+newpath 2323 2622 moveto
+2320 2632 lineto
+2318 2622 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_arith.c -> status_w.h
+newpath 2334 2255 moveto
+2357 2396 2380 2539 2403 2680 curveto
+stroke
+newpath 2405 2679 moveto
+2404 2689 lineto
+2400 2679 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_arith.c -> control_w.h
+newpath 2323 2255 moveto
+2251 2423 2176 2592 2104 2760 curveto
+stroke
+newpath 2107 2759 moveto
+2101 2767 lineto
+2103 2757 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_aux.c
+gsave 10 dict begin
+2148 2363 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+2148 2364 moveto (fpu/fpu_aux.c) 77 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_aux.c -> exception.h
+newpath 2141 2381 moveto
+2089 2505 2037 2631 1985 2755 curveto
+stroke
+newpath 1988 2755 moveto
+1982 2763 lineto
+1983 2753 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_aux.c -> fpu_emu.h
+newpath 2115 2350 moveto
+2012 2308 1908 2266 1805 2224 curveto
+stroke
+newpath 1804 2226 moveto
+1796 2220 lineto
+1806 2222 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_aux.c -> fpu_system.h
+newpath 2159 2381 moveto
+2207 2462 2257 2544 2305 2625 curveto
+stroke
+newpath 2306 2622 moveto
+2309 2632 lineto
+2302 2625 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_aux.c -> status_w.h
+newpath 2161 2380 moveto
+2237 2481 2313 2583 2389 2684 curveto
+stroke
+newpath 2390 2681 moveto
+2394 2690 lineto
+2386 2684 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_aux.c -> control_w.h
+newpath 2146 2381 moveto
+2129 2506 2113 2634 2096 2759 curveto
+stroke
+newpath 2099 2757 moveto
+2095 2767 lineto
+2094 2757 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_entry.c
+gsave 10 dict begin
+1986 2500 53 18 ellipse_path
+stroke
+gsave 10 dict begin
+1986 2501 moveto (fpu/fpu_entry.c) 86 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_entry.c -> exception.h
+newpath 1985 2518 moveto
+1981 2597 1978 2677 1975 2756 curveto
+stroke
+newpath 1978 2753 moveto
+1975 2763 lineto
+1973 2753 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_entry.c -> fpu_emu.h
+newpath 1973 2482 moveto
+1910 2400 1848 2315 1785 2233 curveto
+stroke
+newpath 1783 2235 moveto
+1779 2225 lineto
+1787 2232 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_entry.c -> linux/signal.h
+newpath 1988 2482 moveto
+2005 2298 2025 2115 2042 1931 curveto
+stroke
+newpath 2039 1934 moveto
+2043 1924 lineto
+2044 1934 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_entry.c -> asm/uaccess.h
+newpath 1990 2518 moveto
+2021 2660 2053 2803 2084 2945 curveto
+stroke
+newpath 2086 2944 moveto
+2086 2954 lineto
+2081 2945 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_entry.c -> fpu_system.h
+newpath 2018 2515 moveto
+2106 2554 2194 2594 2281 2632 curveto
+stroke
+newpath 2281 2629 moveto
+2289 2636 lineto
+2279 2634 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_entry.c -> status_w.h
+newpath 2016 2515 moveto
+2135 2574 2254 2632 2373 2690 curveto
+stroke
+newpath 2373 2687 moveto
+2380 2694 lineto
+2370 2691 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_entry.c -> control_w.h
+newpath 1993 2518 moveto
+2023 2599 2053 2679 2083 2760 curveto
+stroke
+newpath 2084 2757 moveto
+2086 2767 lineto
+2080 2759 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	asm/desc.h
+gsave 10 dict begin
+1771 3069 41 18 ellipse_path
+stroke
+gsave 10 dict begin
+1771 3070 moveto (asm/desc.h) 61 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_entry.c -> asm/desc.h
+newpath 1979 2518 moveto
+1913 2693 1847 2869 1781 3044 curveto
+stroke
+newpath 1784 3043 moveto
+1778 3051 lineto
+1780 3041 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_etc.c
+gsave 10 dict begin
+2273 2354 47 18 ellipse_path
+stroke
+gsave 10 dict begin
+2273 2355 moveto (fpu/fpu_etc.c) 74 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_etc.c -> exception.h
+newpath 2261 2371 moveto
+2172 2499 2081 2628 1991 2755 curveto
+stroke
+newpath 1993 2756 moveto
+1986 2763 lineto
+1989 2753 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_etc.c -> fpu_emu.h
+newpath 2235 2343 moveto
+2093 2302 1951 2261 1809 2220 curveto
+stroke
+newpath 1809 2223 moveto
+1800 2218 lineto
+1810 2218 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_etc.c -> fpu_system.h
+newpath 2276 2372 moveto
+2289 2455 2303 2541 2316 2624 curveto
+stroke
+newpath 2318 2622 moveto
+2317 2632 lineto
+2313 2622 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_etc.c -> status_w.h
+newpath 2280 2372 moveto
+2319 2475 2358 2580 2398 2683 curveto
+stroke
+newpath 2399 2679 moveto
+2400 2689 lineto
+2394 2680 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_etc.c -> reg_constant.h
+newpath 2272 2372 moveto
+2262 2496 2254 2623 2245 2747 curveto
+stroke
+newpath 2248 2745 moveto
+2244 2755 lineto
+2243 2745 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_tags.c
+gsave 10 dict begin
+1890 2364 50 18 ellipse_path
+stroke
+gsave 10 dict begin
+1890 2365 moveto (fpu/fpu_tags.c) 80 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_tags.c -> exception.h
+newpath 1894 2382 moveto
+1919 2506 1944 2631 1969 2755 curveto
+stroke
+newpath 1971 2753 moveto
+1970 2763 lineto
+1966 2753 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_tags.c -> fpu_emu.h
+newpath 1876 2347 moveto
+1846 2309 1815 2270 1785 2233 curveto
+stroke
+newpath 1783 2235 moveto
+1779 2225 lineto
+1787 2232 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_tags.c -> fpu_system.h
+newpath 1914 2380 moveto
+2038 2463 2164 2546 2288 2629 curveto
+stroke
+newpath 2289 2627 moveto
+2296 2634 lineto
+2286 2631 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_trig.c
+gsave 10 dict begin
+2122 2436 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+2122 2437 moveto (fpu/fpu_trig.c) 77 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_trig.c -> exception.h
+newpath 2114 2454 moveto
+2072 2555 2027 2656 1985 2757 curveto
+stroke
+newpath 1989 2755 moveto
+1982 2763 lineto
+1984 2753 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_trig.c -> fpu_emu.h
+newpath 2097 2420 moveto
+1997 2355 1896 2292 1795 2227 curveto
+stroke
+newpath 1796 2231 moveto
+1789 2223 lineto
+1799 2226 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_trig.c -> fpu_system.h
+newpath 2138 2453 moveto
+2192 2511 2245 2569 2299 2628 curveto
+stroke
+newpath 2299 2624 moveto
+2304 2633 lineto
+2295 2628 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_trig.c -> status_w.h
+newpath 2140 2453 moveto
+2221 2530 2304 2609 2385 2686 curveto
+stroke
+newpath 2385 2682 moveto
+2390 2691 lineto
+2381 2686 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_trig.c -> control_w.h
+newpath 2121 2454 moveto
+2112 2555 2104 2657 2095 2758 curveto
+stroke
+newpath 2098 2757 moveto
+2094 2767 lineto
+2093 2757 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_trig.c -> reg_constant.h
+newpath 2128 2454 moveto
+2163 2551 2199 2649 2234 2746 curveto
+stroke
+newpath 2236 2745 moveto
+2237 2755 lineto
+2231 2746 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/get_address.c
+gsave 10 dict begin
+1754 2672 59 18 ellipse_path
+stroke
+gsave 10 dict begin
+1754 2673 moveto (fpu/get_address.c) 98 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/get_address.c -> exception.h
+newpath 1785 2687 moveto
+1837 2713 1888 2739 1939 2764 curveto
+stroke
+newpath 1938 2761 moveto
+1946 2767 lineto
+1936 2765 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/get_address.c -> fpu_emu.h
+newpath 1754 2654 moveto
+1758 2515 1762 2374 1766 2234 curveto
+stroke
+newpath 1764 2236 moveto
+1766 2226 lineto
+1769 2236 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/get_address.c -> asm/uaccess.h
+newpath 1773 2689 moveto
+1871 2776 1967 2863 2065 2950 curveto
+stroke
+newpath 2065 2947 moveto
+2071 2955 lineto
+2062 2951 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/get_address.c -> fpu_system.h
+newpath 1813 2670 moveto
+1962 2664 2114 2657 2263 2652 curveto
+stroke
+newpath 2262 2650 moveto
+2272 2652 lineto
+2262 2655 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/get_address.c -> asm/desc.h
+newpath 1755 2690 moveto
+1760 2808 1765 2926 1770 3044 curveto
+stroke
+newpath 1773 3041 moveto
+1770 3051 lineto
+1768 3041 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	linux/stddef.h
+gsave 10 dict begin
+1400 3059 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+1400 3060 moveto (linux/stddef.h) 77 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/get_address.c -> linux/stddef.h
+newpath 1738 2689 moveto
+1632 2805 1528 2919 1422 3035 curveto
+stroke
+newpath 1424 3036 moveto
+1416 3042 lineto
+1421 3033 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/load_store.c
+gsave 10 dict begin
+2048 2537 55 18 ellipse_path
+stroke
+gsave 10 dict begin
+2048 2538 moveto (fpu/load_store.c) 90 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/load_store.c -> exception.h
+newpath 2043 2555 moveto
+2023 2622 2001 2690 1981 2757 curveto
+stroke
+newpath 1985 2754 moveto
+1979 2763 lineto
+1980 2753 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/load_store.c -> fpu_emu.h
+newpath 2033 2519 moveto
+1951 2424 1868 2326 1786 2231 curveto
+stroke
+newpath 1785 2234 moveto
+1781 2225 lineto
+1789 2231 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/load_store.c -> asm/uaccess.h
+newpath 2050 2555 moveto
+2062 2685 2075 2816 2087 2946 curveto
+stroke
+newpath 2089 2944 moveto
+2088 2954 lineto
+2084 2944 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/load_store.c -> fpu_system.h
+newpath 2082 2551 moveto
+2148 2578 2215 2607 2281 2635 curveto
+stroke
+newpath 2278 2631 moveto
+2287 2637 lineto
+2277 2636 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/load_store.c -> status_w.h
+newpath 2079 2552 moveto
+2177 2598 2275 2645 2373 2691 curveto
+stroke
+newpath 2371 2687 moveto
+2379 2694 lineto
+2369 2692 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/load_store.c -> control_w.h
+newpath 2051 2555 moveto
+2064 2623 2076 2693 2089 2761 curveto
+stroke
+newpath 2091 2757 moveto
+2090 2767 lineto
+2086 2758 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/mul_Xsig.c
+gsave 10 dict begin
+1354 2548 54 18 ellipse_path
+stroke
+gsave 10 dict begin
+1354 2549 moveto (fpu/mul_Xsig.c) 87 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/mul_Xsig.c -> fpu_emu.h
+newpath 1374 2531 moveto
+1496 2431 1618 2330 1740 2230 curveto
+stroke
+newpath 1738 2229 moveto
+1747 2224 lineto
+1741 2232 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/mul_Xsig.c -> poly.h
+newpath 1364 2566 moveto
+1432 2686 1499 2806 1566 2927 curveto
+stroke
+newpath 1567 2924 moveto
+1570 2934 lineto
+1563 2927 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_2xm1.c
+gsave 10 dict begin
+1828 2620 58 18 ellipse_path
+stroke
+gsave 10 dict begin
+1828 2621 moveto (fpu/poly_2xm1.c) 96 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/poly_2xm1.c -> exception.h
+newpath 1844 2637 moveto
+1880 2677 1918 2718 1954 2758 curveto
+stroke
+newpath 1955 2755 moveto
+1959 2764 lineto
+1951 2758 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_2xm1.c -> fpu_emu.h
+newpath 1825 2602 moveto
+1807 2479 1788 2356 1770 2233 curveto
+stroke
+newpath 1768 2236 moveto
+1769 2226 lineto
+1773 2236 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_2xm1.c -> poly.h
+newpath 1815 2638 moveto
+1742 2735 1669 2832 1596 2929 curveto
+stroke
+newpath 1600 2928 moveto
+1592 2935 lineto
+1595 2925 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_2xm1.c -> fpu_system.h
+newpath 1885 2623 moveto
+2011 2631 2138 2639 2264 2647 curveto
+stroke
+newpath 2262 2645 moveto
+2272 2647 lineto
+2262 2650 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_2xm1.c -> control_w.h
+newpath 1854 2636 moveto
+1924 2680 1994 2722 2063 2766 curveto
+stroke
+newpath 2062 2762 moveto
+2069 2770 lineto
+2059 2767 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_2xm1.c -> reg_constant.h
+newpath 1866 2634 moveto
+1977 2675 2089 2716 2200 2758 curveto
+stroke
+newpath 2198 2755 moveto
+2207 2760 lineto
+2197 2760 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_atan.c
+gsave 10 dict begin
+1949 2589 54 18 ellipse_path
+stroke
+gsave 10 dict begin
+1949 2590 moveto (fpu/poly_atan.c) 87 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/poly_atan.c -> exception.h
+newpath 1951 2607 moveto
+1958 2657 1964 2706 1971 2756 curveto
+stroke
+newpath 1973 2753 moveto
+1972 2763 lineto
+1968 2753 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_atan.c -> fpu_emu.h
+newpath 1940 2571 moveto
+1886 2458 1832 2346 1777 2233 curveto
+stroke
+newpath 1776 2236 moveto
+1774 2226 lineto
+1780 2234 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_atan.c -> poly.h
+newpath 1931 2606 moveto
+1821 2714 1711 2823 1602 2930 curveto
+stroke
+newpath 1604 2931 moveto
+1595 2936 lineto
+1601 2928 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_atan.c -> fpu_system.h
+newpath 1998 2597 moveto
+2087 2613 2177 2627 2268 2642 curveto
+stroke
+newpath 2266 2639 moveto
+2276 2643 lineto
+2266 2644 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_atan.c -> status_w.h
+newpath 1992 2600 moveto
+2116 2631 2240 2665 2364 2696 curveto
+stroke
+newpath 2363 2693 moveto
+2372 2698 lineto
+2362 2698 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_atan.c -> control_w.h
+newpath 1962 2607 moveto
+2000 2658 2038 2709 2075 2761 curveto
+stroke
+newpath 2076 2758 moveto
+2080 2768 lineto
+2072 2761 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_atan.c -> reg_constant.h
+newpath 1975 2605 moveto
+2054 2654 2132 2704 2211 2753 curveto
+stroke
+newpath 2211 2750 moveto
+2218 2757 lineto
+2208 2754 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_l2.c
+gsave 10 dict begin
+1868 2552 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+1868 2553 moveto (fpu/poly_l2.c) 75 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/poly_l2.c -> exception.h
+newpath 1876 2570 moveto
+1905 2631 1933 2693 1962 2754 curveto
+stroke
+newpath 1964 2753 moveto
+1966 2763 lineto
+1960 2755 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_l2.c -> fpu_emu.h
+newpath 1863 2534 moveto
+1833 2435 1804 2334 1774 2235 curveto
+stroke
+newpath 1772 2236 moveto
+1771 2226 lineto
+1777 2235 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_l2.c -> poly.h
+newpath 1855 2570 moveto
+1770 2690 1683 2808 1597 2928 curveto
+stroke
+newpath 1600 2928 moveto
+1592 2935 lineto
+1596 2925 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_l2.c -> fpu_system.h
+newpath 1910 2561 moveto
+2030 2586 2151 2614 2271 2639 curveto
+stroke
+newpath 2269 2636 moveto
+2278 2641 lineto
+2268 2641 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_l2.c -> control_w.h
+newpath 1885 2569 moveto
+1946 2633 2009 2698 2070 2762 curveto
+stroke
+newpath 2071 2759 moveto
+2076 2768 lineto
+2067 2763 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_l2.c -> reg_constant.h
+newpath 1894 2567 moveto
+1999 2629 2105 2691 2210 2753 curveto
+stroke
+newpath 2209 2749 moveto
+2216 2757 lineto
+2206 2754 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_sin.c
+gsave 10 dict begin
+1802 2567 50 18 ellipse_path
+stroke
+gsave 10 dict begin
+1802 2568 moveto (fpu/poly_sin.c) 80 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/poly_sin.c -> exception.h
+newpath 1816 2584 moveto
+1863 2642 1910 2700 1956 2759 curveto
+stroke
+newpath 1956 2755 moveto
+1960 2764 lineto
+1952 2758 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_sin.c -> fpu_emu.h
+newpath 1800 2549 moveto
+1790 2445 1779 2339 1769 2236 curveto
+stroke
+newpath 1767 2236 moveto
+1768 2226 lineto
+1771 2236 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_sin.c -> poly.h
+newpath 1792 2585 moveto
+1725 2699 1661 2813 1594 2927 curveto
+stroke
+newpath 1597 2927 moveto
+1590 2934 lineto
+1593 2924 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_sin.c -> fpu_system.h
+newpath 1848 2574 moveto
+1987 2597 2127 2619 2268 2642 curveto
+stroke
+newpath 2266 2639 moveto
+2276 2643 lineto
+2266 2644 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_sin.c -> control_w.h
+newpath 1824 2583 moveto
+1905 2643 1984 2703 2065 2763 curveto
+stroke
+newpath 2066 2761 moveto
+2072 2769 lineto
+2063 2764 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_sin.c -> reg_constant.h
+newpath 1833 2581 moveto
+1957 2639 2080 2698 2204 2756 curveto
+stroke
+newpath 2204 2753 moveto
+2212 2759 lineto
+2202 2758 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_tan.c
+gsave 10 dict begin
+1851 2496 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+1851 2497 moveto (fpu/poly_tan.c) 81 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/poly_tan.c -> exception.h
+newpath 1859 2514 moveto
+1893 2595 1929 2675 1963 2756 curveto
+stroke
+newpath 1964 2753 moveto
+1966 2763 lineto
+1960 2755 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_tan.c -> fpu_emu.h
+newpath 1846 2478 moveto
+1822 2396 1797 2315 1773 2233 curveto
+stroke
+newpath 1771 2236 moveto
+1771 2226 lineto
+1776 2235 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_tan.c -> poly.h
+newpath 1840 2514 moveto
+1759 2650 1676 2789 1595 2926 curveto
+stroke
+newpath 1597 2927 moveto
+1590 2934 lineto
+1593 2924 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_tan.c -> fpu_system.h
+newpath 1888 2508 moveto
+2017 2550 2147 2593 2276 2635 curveto
+stroke
+newpath 2276 2632 moveto
+2284 2638 lineto
+2274 2637 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_tan.c -> control_w.h
+newpath 1866 2513 moveto
+1935 2596 2005 2680 2075 2763 curveto
+stroke
+newpath 2075 2759 moveto
+2079 2768 lineto
+2071 2762 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/poly_tan.c -> reg_constant.h
+newpath 1874 2512 moveto
+1986 2592 2100 2672 2213 2752 curveto
+stroke
+newpath 2213 2749 moveto
+2220 2757 lineto
+2210 2753 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/polynom_Xsig.c
+gsave 10 dict begin
+1373 2614 68 18 ellipse_path
+stroke
+gsave 10 dict begin
+1373 2615 moveto (fpu/polynom_Xsig.c) 115 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/polynom_Xsig.c -> fpu_emu.h
+newpath 1390 2596 moveto
+1509 2475 1627 2351 1745 2230 curveto
+stroke
+newpath 1741 2230 moveto
+1750 2225 lineto
+1745 2234 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/polynom_Xsig.c -> poly.h
+newpath 1384 2632 moveto
+1445 2730 1506 2830 1566 2928 curveto
+stroke
+newpath 1567 2924 moveto
+1570 2934 lineto
+1562 2927 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_add_sub.c
+gsave 10 dict begin
+2033 2358 62 18 ellipse_path
+stroke
+gsave 10 dict begin
+2033 2359 moveto (fpu/reg_add_sub.c) 103 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_add_sub.c -> exception.h
+newpath 2031 2376 moveto
+2013 2502 1995 2629 1977 2755 curveto
+stroke
+newpath 1980 2753 moveto
+1976 2763 lineto
+1975 2753 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_add_sub.c -> fpu_emu.h
+newpath 2004 2342 moveto
+1935 2303 1866 2264 1797 2226 curveto
+stroke
+newpath 1798 2230 moveto
+1791 2222 lineto
+1801 2225 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_add_sub.c -> fpu_system.h
+newpath 2050 2375 moveto
+2132 2459 2217 2545 2298 2628 curveto
+stroke
+newpath 2298 2624 moveto
+2303 2633 lineto
+2294 2628 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_add_sub.c -> control_w.h
+newpath 2036 2376 moveto
+2054 2503 2071 2632 2089 2759 curveto
+stroke
+newpath 2091 2757 moveto
+2090 2767 lineto
+2086 2757 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_add_sub.c -> reg_constant.h
+newpath 2042 2376 moveto
+2105 2500 2167 2624 2230 2748 curveto
+stroke
+newpath 2231 2745 moveto
+2234 2755 lineto
+2227 2748 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_compare.c
+gsave 10 dict begin
+2004 2403 63 18 ellipse_path
+stroke
+gsave 10 dict begin
+2004 2404 moveto (fpu/reg_compare.c) 105 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_compare.c -> exception.h
+newpath 2003 2421 moveto
+1994 2533 1985 2644 1977 2756 curveto
+stroke
+newpath 1980 2753 moveto
+1976 2763 lineto
+1975 2753 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_compare.c -> fpu_emu.h
+newpath 1983 2386 moveto
+1919 2334 1855 2281 1791 2229 curveto
+stroke
+newpath 1791 2232 moveto
+1785 2224 lineto
+1794 2228 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_compare.c -> fpu_system.h
+newpath 2026 2420 moveto
+2115 2491 2204 2560 2294 2630 curveto
+stroke
+newpath 2293 2626 moveto
+2299 2634 lineto
+2290 2630 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_compare.c -> status_w.h
+newpath 2026 2420 moveto
+2144 2508 2261 2597 2379 2686 curveto
+stroke
+newpath 2379 2683 moveto
+2386 2691 lineto
+2376 2687 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_compare.c -> control_w.h
+newpath 2008 2421 moveto
+2034 2534 2061 2647 2087 2760 curveto
+stroke
+newpath 2089 2757 moveto
+2089 2767 lineto
+2084 2758 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_constant.c
+gsave 10 dict begin
+2238 2320 62 18 ellipse_path
+stroke
+gsave 10 dict begin
+2238 2321 moveto (fpu/reg_constant.c) 103 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_constant.c -> fpu_emu.h
+newpath 2190 2309 moveto
+2064 2279 1936 2248 1810 2218 curveto
+stroke
+newpath 1811 2221 moveto
+1802 2216 lineto
+1812 2216 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_constant.c -> fpu_system.h
+newpath 2242 2338 moveto
+2266 2433 2290 2528 2314 2623 curveto
+stroke
+newpath 2316 2622 moveto
+2316 2632 lineto
+2311 2623 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_constant.c -> status_w.h
+newpath 2246 2338 moveto
+2295 2453 2347 2567 2396 2682 curveto
+stroke
+newpath 2397 2679 moveto
+2399 2689 lineto
+2393 2681 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_constant.c -> control_w.h
+newpath 2232 2338 moveto
+2189 2478 2145 2618 2102 2759 curveto
+stroke
+newpath 2105 2759 moveto
+2099 2767 lineto
+2100 2757 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_constant.c -> reg_constant.h
+newpath 2238 2338 moveto
+2239 2474 2242 2611 2243 2747 curveto
+stroke
+newpath 2246 2745 moveto
+2243 2755 lineto
+2241 2745 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_convert.c
+gsave 10 dict begin
+1520 2442 59 18 ellipse_path
+stroke
+gsave 10 dict begin
+1520 2443 moveto (fpu/reg_convert.c) 98 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_convert.c -> exception.h
+newpath 1543 2459 moveto
+1677 2560 1813 2660 1948 2761 curveto
+stroke
+newpath 1947 2757 moveto
+1953 2765 lineto
+1944 2761 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_convert.c -> fpu_emu.h
+newpath 1538 2425 moveto
+1606 2360 1674 2295 1743 2230 curveto
+stroke
+newpath 1740 2229 moveto
+1749 2224 lineto
+1744 2233 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_divide.c
+gsave 10 dict begin
+2199 2252 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+2199 2253 moveto (fpu/reg_divide.c) 91 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_divide.c -> exception.h
+newpath 2191 2270 moveto
+2123 2432 2053 2595 1985 2757 curveto
+stroke
+newpath 1989 2755 moveto
+1982 2763 lineto
+1984 2753 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_divide.c -> fpu_emu.h
+newpath 2145 2247 moveto
+2035 2235 1925 2224 1815 2213 curveto
+stroke
+newpath 1815 2215 moveto
+1805 2212 lineto
+1815 2211 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_divide.c -> fpu_system.h
+newpath 2205 2270 moveto
+2240 2388 2277 2507 2313 2625 curveto
+stroke
+newpath 2315 2622 moveto
+2315 2632 lineto
+2310 2623 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_divide.c -> reg_constant.h
+newpath 2200 2270 moveto
+2213 2429 2228 2590 2240 2749 curveto
+stroke
+newpath 2242 2745 moveto
+2241 2755 lineto
+2237 2746 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_ld_str.c
+gsave 10 dict begin
+2116 2509 55 18 ellipse_path
+stroke
+gsave 10 dict begin
+2116 2510 moveto (fpu/reg_ld_str.c) 88 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_ld_str.c -> exception.h
+newpath 2107 2527 moveto
+2067 2603 2026 2680 1987 2756 curveto
+stroke
+newpath 1990 2756 moveto
+1983 2763 lineto
+1986 2753 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_ld_str.c -> fpu_emu.h
+newpath 2096 2492 moveto
+1995 2405 1892 2317 1791 2229 curveto
+stroke
+newpath 1791 2232 moveto
+1785 2224 lineto
+1794 2228 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_ld_str.c -> asm/uaccess.h
+newpath 2115 2527 moveto
+2107 2666 2099 2806 2091 2946 curveto
+stroke
+newpath 2094 2944 moveto
+2091 2954 lineto
+2089 2944 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_ld_str.c -> fpu_system.h
+newpath 2140 2526 moveto
+2190 2560 2240 2595 2290 2629 curveto
+stroke
+newpath 2290 2626 moveto
+2297 2634 lineto
+2287 2630 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_ld_str.c -> status_w.h
+newpath 2140 2525 moveto
+2220 2579 2298 2633 2378 2687 curveto
+stroke
+newpath 2378 2684 moveto
+2385 2692 lineto
+2375 2688 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_ld_str.c -> control_w.h
+newpath 2115 2527 moveto
+2108 2605 2101 2682 2095 2760 curveto
+stroke
+newpath 2098 2757 moveto
+2094 2767 lineto
+2093 2757 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_ld_str.c -> reg_constant.h
+newpath 2125 2527 moveto
+2160 2601 2196 2674 2232 2748 curveto
+stroke
+newpath 2233 2745 moveto
+2235 2755 lineto
+2229 2747 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_mul.c
+gsave 10 dict begin
+2102 2279 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+2102 2280 moveto (fpu/reg_mul.c) 78 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_mul.c -> exception.h
+newpath 2097 2297 moveto
+2059 2450 2018 2604 1980 2757 curveto
+stroke
+newpath 1984 2754 moveto
+1978 2763 lineto
+1979 2753 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_mul.c -> fpu_emu.h
+newpath 2059 2270 moveto
+1976 2253 1893 2234 1810 2218 curveto
+stroke
+newpath 1811 2221 moveto
+1802 2216 lineto
+1812 2216 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_mul.c -> fpu_system.h
+newpath 2112 2297 moveto
+2176 2406 2241 2517 2305 2625 curveto
+stroke
+newpath 2306 2622 moveto
+2309 2632 lineto
+2302 2625 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_mul.c -> reg_constant.h
+newpath 2107 2297 moveto
+2149 2447 2193 2599 2236 2749 curveto
+stroke
+newpath 2237 2745 moveto
+2238 2755 lineto
+2232 2746 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_norm.c
+gsave 10 dict begin
+1246 2493 53 18 ellipse_path
+stroke
+gsave 10 dict begin
+1246 2494 moveto (fpu/reg_norm.c) 86 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_norm.c -> fpu_emu.h
+newpath 1274 2478 moveto
+1428 2394 1581 2309 1735 2225 curveto
+stroke
+newpath 1731 2224 moveto
+1741 2222 lineto
+1733 2229 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_round.c
+gsave 10 dict begin
+1593 2587 55 18 ellipse_path
+stroke
+gsave 10 dict begin
+1593 2588 moveto (fpu/reg_round.c) 89 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_round.c -> exception.h
+newpath 1623 2602 moveto
+1729 2655 1835 2710 1941 2764 curveto
+stroke
+newpath 1939 2760 moveto
+1947 2767 lineto
+1937 2765 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_round.c -> fpu_emu.h
+newpath 1601 2569 moveto
+1652 2457 1704 2345 1755 2233 curveto
+stroke
+newpath 1752 2234 moveto
+1758 2226 lineto
+1756 2236 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_round.c -> control_w.h
+newpath 1628 2601 moveto
+1769 2657 1912 2714 2053 2769 curveto
+stroke
+newpath 2053 2766 moveto
+2061 2772 lineto
+2051 2771 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_u_add.c
+gsave 10 dict begin
+1603 2646 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+1603 2647 moveto (fpu/reg_u_add.c) 91 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_u_add.c -> exception.h
+newpath 1640 2660 moveto
+1737 2695 1835 2731 1933 2766 curveto
+stroke
+newpath 1933 2763 moveto
+1942 2769 lineto
+1932 2768 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_u_add.c -> fpu_emu.h
+newpath 1610 2628 moveto
+1659 2497 1708 2365 1756 2234 curveto
+stroke
+newpath 1753 2234 moveto
+1759 2226 lineto
+1758 2236 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_u_add.c -> control_w.h
+newpath 1646 2658 moveto
+1780 2696 1915 2734 2049 2773 curveto
+stroke
+newpath 2048 2770 moveto
+2057 2775 lineto
+2047 2775 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_u_div.c
+gsave 10 dict begin
+2316 2297 55 18 ellipse_path
+stroke
+gsave 10 dict begin
+2316 2298 moveto (fpu/reg_u_div.c) 88 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_u_div.c -> exception.h
+newpath 2303 2315 moveto
+2199 2462 2095 2610 1990 2758 curveto
+stroke
+newpath 1994 2757 moveto
+1986 2764 lineto
+1989 2754 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_u_div.c -> fpu_emu.h
+newpath 2266 2289 moveto
+2116 2264 1964 2239 1813 2215 curveto
+stroke
+newpath 1814 2218 moveto
+1804 2214 lineto
+1814 2213 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_u_div.c -> control_w.h
+newpath 2308 2315 moveto
+2240 2462 2172 2611 2105 2758 curveto
+stroke
+newpath 2107 2759 moveto
+2101 2767 lineto
+2103 2757 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	asm/types.h
+gsave 10 dict begin
+2699 2526 43 18 ellipse_path
+stroke
+gsave 10 dict begin
+2699 2527 moveto (asm/types.h) 66 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_u_div.c -> asm/types.h
+newpath 2342 2313 moveto
+2451 2378 2560 2442 2667 2507 curveto
+stroke
+newpath 2667 2504 moveto
+2674 2511 lineto
+2664 2508 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_u_mul.c
+gsave 10 dict begin
+1630 2528 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+1630 2529 moveto (fpu/reg_u_mul.c) 92 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_u_mul.c -> exception.h
+newpath 1652 2545 moveto
+1750 2617 1849 2689 1947 2761 curveto
+stroke
+newpath 1946 2757 moveto
+1953 2765 lineto
+1943 2762 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_u_mul.c -> fpu_emu.h
+newpath 1638 2510 moveto
+1676 2419 1717 2326 1755 2234 curveto
+stroke
+newpath 1752 2234 moveto
+1758 2226 lineto
+1757 2236 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_u_mul.c -> control_w.h
+newpath 1658 2544 moveto
+1792 2618 1926 2693 2062 2767 curveto
+stroke
+newpath 2060 2763 moveto
+2067 2770 lineto
+2057 2767 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_u_sub.c
+gsave 10 dict begin
+1654 2458 55 18 ellipse_path
+stroke
+gsave 10 dict begin
+1654 2459 moveto (fpu/reg_u_sub.c) 90 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_u_sub.c -> exception.h
+newpath 1671 2475 moveto
+1764 2569 1859 2665 1952 2758 curveto
+stroke
+newpath 1953 2755 moveto
+1958 2764 lineto
+1949 2759 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_u_sub.c -> fpu_emu.h
+newpath 1662 2440 moveto
+1692 2371 1724 2301 1755 2232 curveto
+stroke
+newpath 1751 2234 moveto
+1758 2226 lineto
+1756 2236 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_u_sub.c -> control_w.h
+newpath 1676 2475 moveto
+1805 2571 1935 2667 2063 2763 curveto
+stroke
+newpath 2065 2761 moveto
+2071 2769 lineto
+2062 2765 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/round_Xsig.c
+gsave 10 dict begin
+1402 2507 59 18 ellipse_path
+stroke
+gsave 10 dict begin
+1402 2508 moveto (fpu/round_Xsig.c) 98 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/round_Xsig.c -> fpu_emu.h
+newpath 1423 2490 moveto
+1529 2403 1635 2316 1741 2229 curveto
+stroke
+newpath 1738 2228 moveto
+1747 2224 lineto
+1741 2232 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/round_Xsig.c -> poly.h
+newpath 1409 2525 moveto
+1463 2658 1516 2792 1570 2926 curveto
+stroke
+newpath 1572 2924 moveto
+1573 2934 lineto
+1567 2926 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/shr_Xsig.c
+gsave 10 dict begin
+1299 2574 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+1299 2575 moveto (fpu/shr_Xsig.c) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/shr_Xsig.c -> fpu_emu.h
+newpath 1320 2558 moveto
+1459 2447 1601 2338 1740 2228 curveto
+stroke
+newpath 1736 2227 moveto
+1746 2224 lineto
+1739 2232 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/shr_Xsig.c -> poly.h
+newpath 1312 2592 moveto
+1395 2704 1480 2816 1563 2928 curveto
+stroke
+newpath 1564 2925 moveto
+1568 2935 lineto
+1560 2928 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/wm_shrx.c
+gsave 10 dict begin
+1279 2451 52 18 ellipse_path
+stroke
+gsave 10 dict begin
+1279 2452 moveto (fpu/wm_shrx.c) 84 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/wm_shrx.c -> fpu_emu.h
+newpath 1309 2436 moveto
+1449 2366 1590 2296 1731 2226 curveto
+stroke
+newpath 1729 2224 moveto
+1739 2222 lineto
+1731 2229 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/wm_sqrt.c
+gsave 10 dict begin
+1492 2536 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+1492 2537 moveto (fpu/wm_sqrt.c) 81 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/wm_sqrt.c -> exception.h
+newpath 1522 2551 moveto
+1661 2621 1802 2694 1941 2764 curveto
+stroke
+newpath 1939 2760 moveto
+1947 2767 lineto
+1937 2765 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/wm_sqrt.c -> fpu_emu.h
+newpath 1507 2518 moveto
+1586 2423 1667 2326 1747 2231 curveto
+stroke
+newpath 1744 2231 moveto
+1752 2225 lineto
+1748 2234 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	bios/usage.cc
+gsave 10 dict begin
+572 1193 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+572 1194 moveto (bios/usage.cc) 74 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bios/usage.cc -> stdio.h
+newpath 606 1180 moveto
+707 1141 808 1103 908 1064 curveto
+stroke
+newpath 904 1063 moveto
+914 1062 lineto
+905 1068 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	bios/usage.cc -> unistd.h
+newpath 615 1184 moveto
+728 1161 841 1138 955 1115 curveto
+stroke
+newpath 952 1113 moveto
+962 1114 lineto
+952 1118 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	sys/types.h
+gsave 10 dict begin
+1002 1300 41 18 ellipse_path
+stroke
+gsave 10 dict begin
+1002 1301 moveto (sys/types.h) 61 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bios/usage.cc -> sys/types.h
+newpath 612 1203 moveto
+728 1231 843 1261 959 1289 curveto
+stroke
+newpath 957 1286 moveto
+966 1291 lineto
+956 1291 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	sys/stat.h
+gsave 10 dict begin
+1016 1232 36 18 ellipse_path
+stroke
+gsave 10 dict begin
+1016 1233 moveto (sys/stat.h) 51 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bios/usage.cc -> sys/stat.h
+newpath 619 1197 moveto
+737 1208 855 1218 973 1228 curveto
+stroke
+newpath 970 1225 moveto
+980 1229 lineto
+970 1230 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fcntl.h
+gsave 10 dict begin
+1034 1380 28 18 ellipse_path
+stroke
+gsave 10 dict begin
+1034 1381 moveto (fcntl.h) 36 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bios/usage.cc -> fcntl.h
+newpath 605 1206 moveto
+737 1260 870 1314 1002 1367 curveto
+stroke
+newpath 1002 1364 moveto
+1010 1370 lineto
+1000 1369 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/access.cc
+gsave 10 dict begin
+1227 1526 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+1227 1527 moveto (cpu/access.cc) 75 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h
+gsave 10 dict begin
+1451 1193 32 18 ellipse_path
+stroke
+gsave 10 dict begin
+1451 1194 moveto (bochs.h) 43 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/access.cc -> bochs.h
+newpath 1239 1508 moveto
+1303 1412 1369 1315 1434 1219 curveto
+stroke
+newpath 1432 1217 moveto
+1440 1210 lineto
+1437 1220 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	bochs.h -> stdio.h
+newpath 1422 1185 moveto
+1274 1144 1123 1103 975 1061 curveto
+stroke
+newpath 975 1064 moveto
+966 1059 lineto
+976 1059 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	bochs.h -> stdlib.h
+newpath 1424 1183 moveto
+1286 1135 1147 1086 1008 1037 curveto
+stroke
+newpath 1008 1040 moveto
+1000 1034 lineto
+1010 1035 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	bochs.h -> unistd.h
+newpath 1421 1187 moveto
+1291 1163 1160 1139 1031 1115 curveto
+stroke
+newpath 1033 1118 moveto
+1023 1114 lineto
+1033 1113 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	bochs.h -> io.h
+newpath 1429 1180 moveto
+1319 1112 1209 1046 1100 978 curveto
+stroke
+newpath 1100 981 moveto
+1093 974 lineto
+1103 977 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	bochs.h -> string.h
+newpath 1426 1182 moveto
+1295 1125 1165 1066 1034 1009 curveto
+stroke
+newpath 1034 1012 moveto
+1026 1006 lineto
+1036 1007 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	bochs.h -> stat.h
+newpath 1434 1177 moveto
+1343 1094 1252 1009 1161 926 curveto
+stroke
+newpath 1161 929 moveto
+1155 921 lineto
+1164 925 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	bochs.h -> macutils.h
+newpath 1454 1175 moveto
+1462 1128 1471 1082 1479 1035 curveto
+stroke
+newpath 1477 1034 moveto
+1481 1025 lineto
+1481 1035 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	bochs.h -> ctype.h
+newpath 1419 1191 moveto
+1294 1181 1168 1171 1044 1163 curveto
+stroke
+newpath 1046 1166 moveto
+1036 1162 lineto
+1046 1161 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	bochs.h -> sys/types.h
+newpath 1421 1200 moveto
+1297 1229 1170 1260 1046 1289 curveto
+stroke
+newpath 1048 1291 moveto
+1038 1291 lineto
+1047 1286 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	bochs.h -> sys/stat.h
+newpath 1419 1196 moveto
+1299 1207 1179 1218 1059 1228 curveto
+stroke
+newpath 1062 1230 moveto
+1052 1229 lineto
+1062 1225 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	bochs.h -> fcntl.h
+newpath 1426 1204 moveto
+1305 1258 1185 1313 1064 1367 curveto
+stroke
+newpath 1067 1368 moveto
+1057 1370 lineto
+1065 1364 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	state_file.h
+gsave 10 dict begin
+1136 860 41 18 ellipse_path
+stroke
+gsave 10 dict begin
+1136 861 moveto (state_file.h) 61 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> state_file.h
+newpath 1436 1177 moveto
+1343 1079 1251 981 1158 883 curveto
+stroke
+newpath 1157 886 moveto
+1152 877 lineto
+1161 882 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	stdarg.h
+gsave 10 dict begin
+1204 977 32 18 ellipse_path
+stroke
+gsave 10 dict begin
+1204 978 moveto (stdarg.h) 44 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> stdarg.h
+newpath 1434 1178 moveto
+1365 1118 1296 1058 1227 998 curveto
+stroke
+newpath 1226 1001 moveto
+1221 992 lineto
+1230 997 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	time.h
+gsave 10 dict begin
+1304 870 28 18 ellipse_path
+stroke
+gsave 10 dict begin
+1304 871 moveto (time.h) 35 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> time.h
+newpath 1443 1175 moveto
+1401 1083 1358 989 1316 896 curveto
+stroke
+newpath 1314 897 moveto
+1312 887 lineto
+1318 895 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	types.h
+gsave 10 dict begin
+1749 996 30 18 ellipse_path
+stroke
+gsave 10 dict begin
+1749 997 moveto (types.h) 40 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> types.h
+newpath 1472 1179 moveto
+1554 1125 1638 1068 1720 1014 curveto
+stroke
+newpath 1718 1012 moveto
+1728 1009 lineto
+1721 1016 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	utime.h
+gsave 10 dict begin
+1909 1276 31 18 ellipse_path
+stroke
+gsave 10 dict begin
+1909 1277 moveto (utime.h) 42 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> utime.h
+newpath 1482 1198 moveto
+1611 1222 1742 1246 1871 1270 curveto
+stroke
+newpath 1869 1267 moveto
+1879 1271 lineto
+1869 1272 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	sys/time.h
+gsave 10 dict begin
+1747 1518 39 18 ellipse_path
+stroke
+gsave 10 dict begin
+1747 1519 moveto (sys/time.h) 57 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> sys/time.h
+newpath 1466 1209 moveto
+1552 1304 1640 1400 1727 1495 curveto
+stroke
+newpath 1728 1492 moveto
+1732 1501 lineto
+1724 1495 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	bochs.h -> config.h
+newpath 1478 1203 moveto
+1614 1254 1751 1304 1888 1355 curveto
+stroke
+newpath 1888 1352 moveto
+1896 1358 lineto
+1886 1357 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	debug/debug.h
+gsave 10 dict begin
+1578 1617 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+1578 1618 moveto (debug/debug.h) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> debug/debug.h
+newpath 1456 1211 moveto
+1494 1337 1532 1465 1571 1591 curveto
+stroke
+newpath 1573 1589 moveto
+1573 1599 lineto
+1568 1590 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/cpu.h
+gsave 10 dict begin
+1353 738 37 18 ellipse_path
+stroke
+gsave 10 dict begin
+1353 739 moveto (cpu/cpu.h) 54 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> cpu/cpu.h
+newpath 1447 1175 moveto
+1418 1039 1388 901 1359 764 curveto
+stroke
+newpath 1357 766 moveto
+1357 756 lineto
+1362 765 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	disasm/disasm.h
+gsave 10 dict begin
+1237 908 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+1237 909 moveto (disasm/disasm.h) 92 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> disasm/disasm.h
+newpath 1439 1176 moveto
+1378 1095 1317 1014 1256 933 curveto
+stroke
+newpath 1255 935 moveto
+1250 926 lineto
+1258 932 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	dynamic/dynamic.h
+gsave 10 dict begin
+1775 1406 65 18 ellipse_path
+stroke
+gsave 10 dict begin
+1775 1407 moveto (dynamic/dynamic.h) 110 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> dynamic/dynamic.h
+newpath 1472 1207 moveto
+1563 1266 1653 1327 1744 1385 curveto
+stroke
+newpath 1743 1381 moveto
+1750 1389 lineto
+1740 1386 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	memory/memory.h
+gsave 10 dict begin
+1908 1106 64 18 ellipse_path
+stroke
+gsave 10 dict begin
+1908 1107 moveto (memory/memory.h) 107 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> memory/memory.h
+newpath 1482 1187 moveto
+1604 1163 1726 1141 1848 1117 curveto
+stroke
+newpath 1845 1115 moveto
+1855 1116 lineto
+1845 1120 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	pc_system.h
+gsave 10 dict begin
+1868 1018 45 18 ellipse_path
+stroke
+gsave 10 dict begin
+1868 1019 moveto (pc_system.h) 69 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> pc_system.h
+newpath 1477 1182 moveto
+1595 1133 1712 1083 1830 1034 curveto
+stroke
+newpath 1827 1033 moveto
+1837 1031 lineto
+1829 1037 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/gui.h
+gsave 10 dict begin
+1188 1109 35 18 ellipse_path
+stroke
+gsave 10 dict begin
+1188 1110 moveto (gui/gui.h) 50 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> gui/gui.h
+newpath 1423 1184 moveto
+1358 1163 1292 1142 1227 1122 curveto
+stroke
+newpath 1227 1125 moveto
+1218 1119 lineto
+1228 1120 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/iodev.h
+gsave 10 dict begin
+1985 936 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+1985 937 moveto (iodev/iodev.h) 76 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> iodev/iodev.h
+newpath 1476 1181 moveto
+1633 1106 1791 1029 1949 953 curveto
+stroke
+newpath 1945 952 moveto
+1955 950 lineto
+1947 957 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	instrument.h
+gsave 10 dict begin
+1595 867 45 18 ellipse_path
+stroke
+gsave 10 dict begin
+1595 868 moveto (instrument.h) 70 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	bochs.h -> instrument.h
+newpath 1459 1175 moveto
+1500 1082 1542 987 1583 894 curveto
+stroke
+newpath 1581 893 moveto
+1587 885 lineto
+1585 895 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/arith16.cc
+gsave 10 dict begin
+1375 1636 50 18 ellipse_path
+stroke
+gsave 10 dict begin
+1375 1637 moveto (cpu/arith16.cc) 79 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/arith16.cc -> bochs.h
+newpath 1378 1618 moveto
+1401 1486 1424 1351 1447 1219 curveto
+stroke
+newpath 1444 1221 moveto
+1448 1211 lineto
+1449 1221 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/arith32.cc
+gsave 10 dict begin
+1928 1230 50 18 ellipse_path
+stroke
+gsave 10 dict begin
+1928 1231 moveto (cpu/arith32.cc) 79 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/arith32.cc -> bochs.h
+newpath 1879 1226 moveto
+1750 1216 1620 1206 1491 1196 curveto
+stroke
+newpath 1493 1199 moveto
+1483 1195 lineto
+1493 1194 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/arith8.cc
+gsave 10 dict begin
+1617 1190 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+1617 1191 moveto (cpu/arith8.cc) 72 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/arith8.cc -> bochs.h
+newpath 1571 1191 moveto
+1544 1192 1517 1192 1490 1192 curveto
+stroke
+newpath 1493 1195 moveto
+1483 1192 lineto
+1493 1190 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/bcd.cc
+gsave 10 dict begin
+1841 1447 40 18 ellipse_path
+stroke
+gsave 10 dict begin
+1841 1448 moveto (cpu/bcd.cc) 60 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/bcd.cc -> bochs.h
+newpath 1818 1432 moveto
+1705 1359 1592 1284 1479 1211 curveto
+stroke
+newpath 1479 1214 moveto
+1472 1207 lineto
+1482 1210 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/bit.cc
+gsave 10 dict begin
+1696 1508 37 18 ellipse_path
+stroke
+gsave 10 dict begin
+1696 1509 moveto (cpu/bit.cc) 54 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/bit.cc -> bochs.h
+newpath 1683 1491 moveto
+1612 1401 1541 1309 1470 1218 curveto
+stroke
+newpath 1468 1220 moveto
+1464 1210 lineto
+1472 1217 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/ctrl_xfer16.cc
+gsave 10 dict begin
+1425 1420 61 18 ellipse_path
+stroke
+gsave 10 dict begin
+1425 1421 moveto (cpu/ctrl_xfer16.cc) 101 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/ctrl_xfer16.cc -> bochs.h
+newpath 1427 1402 moveto
+1434 1342 1441 1280 1448 1219 curveto
+stroke
+newpath 1445 1221 moveto
+1449 1211 lineto
+1450 1221 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/ctrl_xfer32.cc
+gsave 10 dict begin
+1177 1336 61 18 ellipse_path
+stroke
+gsave 10 dict begin
+1177 1337 moveto (cpu/ctrl_xfer32.cc) 101 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/ctrl_xfer32.cc -> bochs.h
+newpath 1207 1320 moveto
+1278 1283 1350 1245 1421 1208 curveto
+stroke
+newpath 1417 1207 moveto
+1427 1205 lineto
+1419 1212 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/ctrl_xfer8.cc
+gsave 10 dict begin
+1225 1452 58 18 ellipse_path
+stroke
+gsave 10 dict begin
+1225 1453 moveto (cpu/ctrl_xfer8.cc) 94 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/ctrl_xfer8.cc -> bochs.h
+newpath 1240 1435 moveto
+1303 1362 1367 1289 1431 1216 curveto
+stroke
+newpath 1429 1215 moveto
+1437 1209 lineto
+1432 1218 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/ctrl_xfer_pro.cc
+gsave 10 dict begin
+1263 802 67 18 ellipse_path
+stroke
+gsave 10 dict begin
+1263 803 moveto (cpu/ctrl_xfer_pro.cc) 113 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/ctrl_xfer_pro.cc -> bochs.h
+newpath 1272 820 moveto
+1327 936 1384 1052 1440 1169 curveto
+stroke
+newpath 1441 1166 moveto
+1443 1176 lineto
+1437 1168 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/data_xfer16.cc
+gsave 10 dict begin
+1381 1098 63 18 ellipse_path
+stroke
+gsave 10 dict begin
+1381 1099 moveto (cpu/data_xfer16.cc) 106 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/data_xfer16.cc -> bochs.h
+newpath 1394 1116 moveto
+1408 1134 1421 1152 1435 1171 curveto
+stroke
+newpath 1435 1167 moveto
+1439 1176 lineto
+1431 1170 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/data_xfer32.cc
+gsave 10 dict begin
+1118 1390 63 18 ellipse_path
+stroke
+gsave 10 dict begin
+1118 1391 moveto (cpu/data_xfer32.cc) 106 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/data_xfer32.cc -> bochs.h
+newpath 1146 1374 moveto
+1237 1320 1328 1265 1421 1211 curveto
+stroke
+newpath 1419 1209 moveto
+1429 1206 lineto
+1422 1213 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/data_xfer8.cc
+gsave 10 dict begin
+1600 1268 60 18 ellipse_path
+stroke
+gsave 10 dict begin
+1600 1269 moveto (cpu/data_xfer8.cc) 99 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/data_xfer8.cc -> bochs.h
+newpath 1569 1252 moveto
+1541 1239 1512 1224 1484 1210 curveto
+stroke
+newpath 1483 1212 moveto
+1475 1205 lineto
+1485 1208 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/debugstuff.cc
+gsave 10 dict begin
+1923 1169 60 18 ellipse_path
+stroke
+gsave 10 dict begin
+1923 1170 moveto (cpu/debugstuff.cc) 99 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/debugstuff.cc -> bochs.h
+newpath 1864 1172 moveto
+1740 1178 1615 1185 1491 1191 curveto
+stroke
+newpath 1493 1194 moveto
+1483 1191 lineto
+1493 1189 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/decode16.cc
+gsave 10 dict begin
+1706 1308 57 18 ellipse_path
+stroke
+gsave 10 dict begin
+1706 1309 moveto (cpu/decode16.cc) 93 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/decode16.cc -> bochs.h
+newpath 1673 1293 moveto
+1610 1265 1548 1237 1485 1208 curveto
+stroke
+newpath 1484 1210 moveto
+1476 1204 lineto
+1486 1206 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/decode32.cc
+gsave 10 dict begin
+1798 1483 57 18 ellipse_path
+stroke
+gsave 10 dict begin
+1798 1484 moveto (cpu/decode32.cc) 93 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/decode32.cc -> bochs.h
+newpath 1778 1466 moveto
+1677 1383 1575 1296 1475 1213 curveto
+stroke
+newpath 1475 1216 moveto
+1469 1208 lineto
+1478 1212 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/exception.cc
+gsave 10 dict begin
+1315 1468 57 18 ellipse_path
+stroke
+gsave 10 dict begin
+1315 1469 moveto (cpu/exception.cc) 94 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/exception.cc -> bochs.h
+newpath 1324 1450 moveto
+1362 1373 1401 1295 1439 1217 curveto
+stroke
+newpath 1436 1218 moveto
+1442 1210 lineto
+1440 1220 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/flag_ctrl.cc
+gsave 10 dict begin
+1100 1307 54 18 ellipse_path
+stroke
+gsave 10 dict begin
+1100 1308 moveto (cpu/flag_ctrl.cc) 87 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/flag_ctrl.cc -> bochs.h
+newpath 1139 1294 moveto
+1231 1265 1323 1235 1415 1205 curveto
+stroke
+newpath 1413 1203 moveto
+1423 1202 lineto
+1415 1208 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/flag_ctrl_pro.cc
+gsave 10 dict begin
+1557 1531 66 18 ellipse_path
+stroke
+gsave 10 dict begin
+1557 1532 moveto (cpu/flag_ctrl_pro.cc) 112 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/flag_ctrl_pro.cc -> bochs.h
+newpath 1551 1513 moveto
+1521 1416 1490 1317 1460 1220 curveto
+stroke
+newpath 1458 1221 moveto
+1457 1211 lineto
+1463 1220 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/init.cc
+gsave 10 dict begin
+1585 1418 39 18 ellipse_path
+stroke
+gsave 10 dict begin
+1585 1419 moveto (cpu/init.cc) 58 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/init.cc -> bochs.h
+newpath 1575 1400 moveto
+1539 1340 1502 1280 1466 1219 curveto
+stroke
+newpath 1464 1220 moveto
+1461 1210 lineto
+1468 1218 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/io.cc
+gsave 10 dict begin
+1864 1065 35 18 ellipse_path
+stroke
+gsave 10 dict begin
+1864 1066 moveto (cpu/io.cc) 50 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/io.cc -> bochs.h
+newpath 1834 1074 moveto
+1718 1109 1602 1146 1486 1182 curveto
+stroke
+newpath 1489 1184 moveto
+1479 1184 lineto
+1488 1179 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/io_pro.cc
+gsave 10 dict begin
+1413 1585 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+1413 1586 moveto (cpu/io_pro.cc) 76 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/io_pro.cc -> bochs.h
+newpath 1415 1567 moveto
+1425 1451 1438 1334 1448 1218 curveto
+stroke
+newpath 1445 1221 moveto
+1449 1211 lineto
+1450 1221 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/lazy_flags.cc
+gsave 10 dict begin
+1221 1196 59 18 ellipse_path
+stroke
+gsave 10 dict begin
+1221 1197 moveto (cpu/lazy_flags.cc) 97 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/lazy_flags.cc -> bochs.h
+newpath 1280 1195 moveto
+1323 1194 1367 1194 1410 1193 curveto
+stroke
+newpath 1409 1191 moveto
+1419 1193 lineto
+1409 1196 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/logical16.cc
+gsave 10 dict begin
+1486 923 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+1486 924 moveto (cpu/logical16.cc) 91 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/logical16.cc -> bochs.h
+newpath 1484 941 moveto
+1474 1017 1464 1092 1454 1168 curveto
+stroke
+newpath 1457 1165 moveto
+1453 1175 lineto
+1452 1165 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/logical32.cc
+gsave 10 dict begin
+1859 1389 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+1859 1390 moveto (cpu/logical32.cc) 91 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/logical32.cc -> bochs.h
+newpath 1828 1374 moveto
+1712 1319 1598 1263 1483 1208 curveto
+stroke
+newpath 1484 1211 moveto
+1476 1205 lineto
+1486 1207 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/logical8.cc
+gsave 10 dict begin
+1116 1164 53 18 ellipse_path
+stroke
+gsave 10 dict begin
+1116 1165 moveto (cpu/logical8.cc) 84 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/logical8.cc -> bochs.h
+newpath 1168 1168 moveto
+1249 1175 1331 1183 1412 1189 curveto
+stroke
+newpath 1409 1186 moveto
+1419 1190 lineto
+1409 1191 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/mult16.cc
+gsave 10 dict begin
+1753 1230 50 18 ellipse_path
+stroke
+gsave 10 dict begin
+1753 1231 moveto (cpu/mult16.cc) 79 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/mult16.cc -> bochs.h
+newpath 1705 1224 moveto
+1635 1215 1563 1207 1493 1198 curveto
+stroke
+newpath 1493 1200 moveto
+1483 1197 lineto
+1493 1196 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/mult32.cc
+gsave 10 dict begin
+1627 808 50 18 ellipse_path
+stroke
+gsave 10 dict begin
+1627 809 moveto (cpu/mult32.cc) 79 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/mult32.cc -> bochs.h
+newpath 1619 826 moveto
+1567 940 1513 1054 1462 1168 curveto
+stroke
+newpath 1465 1167 moveto
+1459 1175 lineto
+1461 1165 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/mult8.cc
+gsave 10 dict begin
+1798 1347 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+1798 1348 moveto (cpu/mult8.cc) 72 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/mult8.cc -> bochs.h
+newpath 1767 1333 moveto
+1673 1292 1579 1250 1485 1208 curveto
+stroke
+newpath 1484 1210 moveto
+1476 1204 lineto
+1486 1206 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/paging.cc
+gsave 10 dict begin
+1834 1273 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+1834 1274 moveto (cpu/paging.cc) 77 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/paging.cc -> bochs.h
+newpath 1791 1264 moveto
+1691 1244 1590 1221 1490 1201 curveto
+stroke
+newpath 1490 1204 moveto
+1481 1199 lineto
+1491 1199 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/proc_ctrl.cc
+gsave 10 dict begin
+1165 1547 55 18 ellipse_path
+stroke
+gsave 10 dict begin
+1165 1548 moveto (cpu/proc_ctrl.cc) 90 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/proc_ctrl.cc -> bochs.h
+newpath 1179 1529 moveto
+1264 1424 1349 1320 1433 1215 curveto
+stroke
+newpath 1430 1215 moveto
+1438 1209 lineto
+1434 1218 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/protect_ctrl.cc
+gsave 10 dict begin
+1280 980 62 18 ellipse_path
+stroke
+gsave 10 dict begin
+1280 981 moveto (cpu/protect_ctrl.cc) 104 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/protect_ctrl.cc -> bochs.h
+newpath 1294 998 moveto
+1341 1055 1387 1113 1434 1171 curveto
+stroke
+newpath 1434 1167 moveto
+1438 1176 lineto
+1430 1170 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/protect_ctrl_pro.cc
+gsave 10 dict begin
+1319 1637 75 18 ellipse_path
+stroke
+gsave 10 dict begin
+1319 1638 moveto (cpu/protect_ctrl_pro.cc) 129 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/protect_ctrl_pro.cc -> bochs.h
+newpath 1324 1619 moveto
+1364 1486 1403 1352 1444 1219 curveto
+stroke
+newpath 1441 1220 moveto
+1446 1211 lineto
+1446 1221 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/segment_ctrl.cc
+gsave 10 dict begin
+1248 1261 66 18 ellipse_path
+stroke
+gsave 10 dict begin
+1248 1262 moveto (cpu/segment_ctrl.cc) 112 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/segment_ctrl.cc -> bochs.h
+newpath 1290 1247 moveto
+1332 1233 1373 1219 1414 1205 curveto
+stroke
+newpath 1413 1203 moveto
+1423 1202 lineto
+1414 1208 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/segment_ctrl_pro.cc
+gsave 10 dict begin
+1846 1209 79 18 ellipse_path
+stroke
+gsave 10 dict begin
+1846 1210 moveto (cpu/segment_ctrl_pro.cc) 137 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/segment_ctrl_pro.cc -> bochs.h
+newpath 1768 1206 moveto
+1676 1202 1584 1198 1491 1194 curveto
+stroke
+newpath 1493 1197 moveto
+1483 1194 lineto
+1493 1192 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/shift16.cc
+gsave 10 dict begin
+1811 939 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+1811 940 moveto (cpu/shift16.cc) 78 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/shift16.cc -> bochs.h
+newpath 1788 955 moveto
+1685 1028 1580 1101 1477 1175 curveto
+stroke
+newpath 1481 1176 moveto
+1471 1179 lineto
+1478 1171 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/shift32.cc
+gsave 10 dict begin
+1394 930 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+1394 931 moveto (cpu/shift32.cc) 78 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/shift32.cc -> bochs.h
+newpath 1398 948 moveto
+1414 1021 1429 1095 1445 1168 curveto
+stroke
+newpath 1447 1165 moveto
+1447 1175 lineto
+1442 1166 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/shift8.cc
+gsave 10 dict begin
+1888 1327 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+1888 1328 moveto (cpu/shift8.cc) 71 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/shift8.cc -> bochs.h
+newpath 1851 1316 moveto
+1729 1279 1608 1241 1486 1204 curveto
+stroke
+newpath 1488 1207 moveto
+1479 1202 lineto
+1489 1202 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/soft_int.cc
+gsave 10 dict begin
+1217 837 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+1217 838 moveto (cpu/soft_int.cc) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/soft_int.cc -> bochs.h
+newpath 1229 855 moveto
+1298 959 1366 1065 1436 1170 curveto
+stroke
+newpath 1437 1166 moveto
+1440 1176 lineto
+1432 1169 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/stack16.cc
+gsave 10 dict begin
+1442 1642 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+1442 1643 moveto (cpu/stack16.cc) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/stack16.cc -> bochs.h
+newpath 1442 1624 moveto
+1445 1490 1448 1353 1451 1219 curveto
+stroke
+newpath 1449 1221 moveto
+1451 1211 lineto
+1454 1221 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/stack32.cc
+gsave 10 dict begin
+1726 1441 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+1726 1442 moveto (cpu/stack32.cc) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/stack32.cc -> bochs.h
+newpath 1707 1424 moveto
+1630 1355 1553 1284 1475 1215 curveto
+stroke
+newpath 1474 1217 moveto
+1468 1209 lineto
+1477 1214 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/stack_pro.cc
+gsave 10 dict begin
+1501 843 57 18 ellipse_path
+stroke
+gsave 10 dict begin
+1501 844 moveto (cpu/stack_pro.cc) 94 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/stack_pro.cc -> bochs.h
+newpath 1499 861 moveto
+1484 963 1469 1067 1454 1169 curveto
+stroke
+newpath 1457 1166 moveto
+1453 1175 lineto
+1452 1165 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/string.cc
+gsave 10 dict begin
+1256 1360 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+1256 1361 moveto (cpu/string.cc) 71 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/string.cc -> bochs.h
+newpath 1275 1344 moveto
+1326 1301 1375 1257 1426 1214 curveto
+stroke
+newpath 1424 1213 moveto
+1433 1208 lineto
+1427 1216 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/tasking.cc
+gsave 10 dict begin
+1146 1020 50 18 ellipse_path
+stroke
+gsave 10 dict begin
+1146 1021 moveto (cpu/tasking.cc) 80 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/tasking.cc -> bochs.h
+newpath 1173 1035 moveto
+1255 1082 1339 1129 1421 1176 curveto
+stroke
+newpath 1421 1173 moveto
+1428 1180 lineto
+1418 1177 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/vm8086.cc
+gsave 10 dict begin
+1163 1463 53 18 ellipse_path
+stroke
+gsave 10 dict begin
+1163 1464 moveto (cpu/vm8086.cc) 85 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/vm8086.cc -> bochs.h
+newpath 1181 1446 moveto
+1263 1369 1345 1292 1427 1216 curveto
+stroke
+newpath 1425 1214 moveto
+1434 1209 lineto
+1429 1218 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/resolve32.cc
+gsave 10 dict begin
+1603 940 57 18 ellipse_path
+stroke
+gsave 10 dict begin
+1603 941 moveto (cpu/resolve32.cc) 94 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/resolve32.cc -> bochs.h
+newpath 1592 958 moveto
+1550 1028 1507 1099 1465 1170 curveto
+stroke
+newpath 1469 1169 moveto
+1461 1176 lineto
+1464 1166 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/fetchdecode.cc
+gsave 10 dict begin
+1689 1146 64 18 ellipse_path
+stroke
+gsave 10 dict begin
+1689 1147 moveto (cpu/fetchdecode.cc) 107 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/fetchdecode.cc -> bochs.h
+newpath 1636 1156 moveto
+1586 1166 1538 1176 1488 1186 curveto
+stroke
+newpath 1491 1188 moveto
+1481 1187 lineto
+1491 1183 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/cpu.cc
+gsave 10 dict begin
+1491 1614 40 18 ellipse_path
+stroke
+gsave 10 dict begin
+1491 1615 moveto (cpu/cpu.cc) 60 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/cpu.cc -> bochs.h
+newpath 1489 1596 moveto
+1478 1471 1465 1344 1454 1219 curveto
+stroke
+newpath 1452 1221 moveto
+1453 1211 lineto
+1457 1221 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/resolve16.cc
+gsave 10 dict begin
+1539 804 57 18 ellipse_path
+stroke
+gsave 10 dict begin
+1539 805 moveto (cpu/resolve16.cc) 94 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/resolve16.cc -> bochs.h
+newpath 1535 822 moveto
+1509 937 1483 1053 1457 1168 curveto
+stroke
+newpath 1460 1166 moveto
+1455 1175 lineto
+1455 1165 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	debug/crc.cc
+gsave 10 dict begin
+1344 1550 45 18 ellipse_path
+stroke
+gsave 10 dict begin
+1344 1551 moveto (debug/crc.cc) 70 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/crc.cc -> bochs.h
+newpath 1349 1532 moveto
+1380 1428 1412 1324 1443 1221 curveto
+stroke
+newpath 1441 1220 moveto
+1446 1211 lineto
+1446 1221 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	debug/dbg_main.cc
+gsave 10 dict begin
+1558 722 65 18 ellipse_path
+stroke
+gsave 10 dict begin
+1558 723 moveto (debug/dbg_main.cc) 109 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/dbg_main.cc -> bochs.h
+newpath 1554 740 moveto
+1522 882 1489 1024 1457 1166 curveto
+stroke
+newpath 1460 1166 moveto
+1455 1175 lineto
+1455 1165 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	signal.h
+gsave 10 dict begin
+1684 314 32 18 ellipse_path
+stroke
+gsave 10 dict begin
+1684 315 moveto (signal.h) 43 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/dbg_main.cc -> signal.h
+newpath 1564 704 moveto
+1601 582 1638 461 1676 339 curveto
+stroke
+newpath 1673 341 moveto
+1678 332 lineto
+1678 342 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	hash_map.h
+gsave 10 dict begin
+1925 340 44 18 ellipse_path
+stroke
+gsave 10 dict begin
+1925 341 moveto (hash_map.h) 67 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/dbg_main.cc -> hash_map.h
+newpath 1575 705 moveto
+1684 591 1794 477 1902 364 curveto
+stroke
+newpath 1900 362 moveto
+1909 357 lineto
+1904 366 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	set.h
+gsave 10 dict begin
+1523 230 27 18 ellipse_path
+stroke
+gsave 10 dict begin
+1523 231 moveto (set.h) 26 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/dbg_main.cc -> set.h
+newpath 1557 704 moveto
+1546 555 1535 406 1525 257 curveto
+stroke
+newpath 1523 258 moveto
+1524 248 lineto
+1528 258 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	debug/sim2.cc
+gsave 10 dict begin
+1686 939 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+1686 940 moveto (debug/sim2.cc) 81 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/sim2.cc -> bochs.h
+newpath 1670 956 moveto
+1604 1028 1538 1100 1472 1171 curveto
+stroke
+newpath 1475 1172 moveto
+1466 1177 lineto
+1471 1168 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	disasm/dis_decode.cc
+gsave 10 dict begin
+1757 1062 71 18 ellipse_path
+stroke
+gsave 10 dict begin
+1757 1063 moveto (disasm/dis_decode.cc) 121 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	disasm/dis_decode.cc -> bochs.h
+newpath 1721 1077 moveto
+1642 1111 1563 1146 1484 1179 curveto
+stroke
+newpath 1487 1180 moveto
+1477 1182 lineto
+1485 1176 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	disasm/dis_groups.cc
+gsave 10 dict begin
+1777 889 70 18 ellipse_path
+stroke
+gsave 10 dict begin
+1777 890 moveto (disasm/dis_groups.cc) 120 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	disasm/dis_groups.cc -> bochs.h
+newpath 1758 906 moveto
+1664 995 1568 1084 1474 1172 curveto
+stroke
+newpath 1477 1173 moveto
+1468 1177 lineto
+1474 1169 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/beos.cc
+gsave 10 dict begin
+924 1221 42 18 ellipse_path
+stroke
+gsave 10 dict begin
+924 1222 moveto (gui/beos.cc) 63 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/beos.cc -> stdio.h
+newpath 926 1203 moveto
+930 1162 933 1120 937 1079 curveto
+stroke
+newpath 934 1080 moveto
+938 1070 lineto
+939 1080 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/beos.cc -> stdlib.h
+newpath 928 1203 moveto
+940 1152 954 1101 966 1050 curveto
+stroke
+newpath 963 1052 moveto
+968 1043 lineto
+968 1053 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/beos.cc -> string.h
+newpath 930 1203 moveto
+950 1143 972 1082 992 1021 curveto
+stroke
+newpath 989 1021 moveto
+995 1013 lineto
+994 1023 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/beos.cc -> ctype.h
+newpath 945 1205 moveto
+957 1196 969 1187 982 1178 curveto
+stroke
+newpath 978 1178 moveto
+987 1174 lineto
+981 1182 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/beos.cc -> bochs.h
+newpath 966 1219 moveto
+1113 1211 1262 1202 1410 1195 curveto
+stroke
+newpath 1409 1193 moveto
+1419 1195 lineto
+1409 1198 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	app/Application.h
+gsave 10 dict begin
+464 1176 60 18 ellipse_path
+stroke
+gsave 10 dict begin
+464 1177 moveto (app/Application.h) 100 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/beos.cc -> app/Application.h
+newpath 883 1217 moveto
+764 1205 646 1194 528 1183 curveto
+stroke
+newpath 531 1186 moveto
+521 1182 lineto
+531 1181 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	interface/Window.h
+gsave 10 dict begin
+579 1582 66 18 ellipse_path
+stroke
+gsave 10 dict begin
+579 1583 moveto (interface/Window.h) 111 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/beos.cc -> interface/Window.h
+newpath 908 1238 moveto
+806 1344 704 1452 602 1558 curveto
+stroke
+newpath 605 1559 moveto
+596 1564 lineto
+601 1555 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	interface/View.h
+gsave 10 dict begin
+533 1502 57 18 ellipse_path
+stroke
+gsave 10 dict begin
+533 1503 moveto (interface/View.h) 93 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/beos.cc -> interface/View.h
+newpath 902 1237 moveto
+789 1318 676 1400 563 1480 curveto
+stroke
+newpath 566 1481 moveto
+556 1485 lineto
+563 1477 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	interface/Screen.h
+gsave 10 dict begin
+500 1402 61 18 ellipse_path
+stroke
+gsave 10 dict begin
+500 1403 moveto (interface/Screen.h) 101 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/beos.cc -> interface/Screen.h
+newpath 894 1234 moveto
+777 1284 659 1334 542 1384 curveto
+stroke
+newpath 545 1385 moveto
+535 1387 lineto
+543 1381 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	interface/Bitmap.h
+gsave 10 dict begin
+470 1286 62 18 ellipse_path
+stroke
+gsave 10 dict begin
+470 1287 moveto (interface/Bitmap.h) 104 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/beos.cc -> interface/Bitmap.h
+newpath 884 1227 moveto
+767 1243 650 1260 533 1277 curveto
+stroke
+newpath 536 1279 moveto
+526 1278 lineto
+536 1274 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	interface/GraphicsDefs.h
+gsave 10 dict begin
+497 1000 80 18 ellipse_path
+stroke
+gsave 10 dict begin
+497 1001 moveto (interface/GraphicsDefs.h) 139 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/beos.cc -> interface/GraphicsDefs.h
+newpath 897 1207 moveto
+777 1145 657 1082 536 1021 curveto
+stroke
+newpath 536 1024 moveto
+529 1017 lineto
+539 1020 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	font/vga.bitmap.h
+gsave 10 dict begin
+902 608 60 18 ellipse_path
+stroke
+gsave 10 dict begin
+902 609 moveto (font/vga.bitmap.h) 99 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/beos.cc -> font/vga.bitmap.h
+newpath 923 1203 moveto
+917 1014 909 823 903 634 curveto
+stroke
+newpath 901 636 moveto
+903 626 lineto
+906 636 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/gui.cc
+gsave 10 dict begin
+1064 846 38 18 ellipse_path
+stroke
+gsave 10 dict begin
+1064 847 moveto (gui/gui.cc) 55 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/gui.cc -> Disks.h
+newpath 1061 828 moveto
+1039 704 1018 578 996 454 curveto
+stroke
+newpath 994 456 moveto
+995 446 lineto
+999 456 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/gui.cc -> bochs.h
+newpath 1082 862 moveto
+1197 965 1311 1069 1427 1172 curveto
+stroke
+newpath 1428 1170 moveto
+1434 1178 lineto
+1425 1173 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/bitmaps/floppya.h
+gsave 10 dict begin
+542 880 72 18 ellipse_path
+stroke
+gsave 10 dict begin
+542 881 moveto (gui/bitmaps/floppya.h) 123 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/gui.cc -> gui/bitmaps/floppya.h
+newpath 1026 848 moveto
+891 857 755 867 620 875 curveto
+stroke
+newpath 622 877 moveto
+612 876 lineto
+622 872 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/bitmaps/floppyb.h
+gsave 10 dict begin
+929 361 72 18 ellipse_path
+stroke
+gsave 10 dict begin
+929 362 moveto (gui/bitmaps/floppyb.h) 124 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/gui.cc -> gui/bitmaps/floppyb.h
+newpath 1059 828 moveto
+1019 682 977 534 936 388 curveto
+stroke
+newpath 934 389 moveto
+934 379 lineto
+939 388 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/bitmaps/mouse.h
+gsave 10 dict begin
+806 458 69 18 ellipse_path
+stroke
+gsave 10 dict begin
+806 459 moveto (gui/bitmaps/mouse.h) 117 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/gui.cc -> gui/bitmaps/mouse.h
+newpath 1052 829 moveto
+976 713 899 598 823 483 curveto
+stroke
+newpath 822 486 moveto
+818 476 lineto
+826 483 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/bitmaps/reset.h
+gsave 10 dict begin
+702 563 64 18 ellipse_path
+stroke
+gsave 10 dict begin
+702 564 moveto (gui/bitmaps/reset.h) 106 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/gui.cc -> gui/bitmaps/reset.h
+newpath 1044 831 moveto
+940 750 834 666 730 585 curveto
+stroke
+newpath 730 588 moveto
+724 580 lineto
+733 584 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/bitmaps/power.h
+gsave 10 dict begin
+595 733 68 18 ellipse_path
+stroke
+gsave 10 dict begin
+595 734 moveto (gui/bitmaps/power.h) 115 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/gui.cc -> gui/bitmaps/power.h
+newpath 1030 838 moveto
+905 808 779 776 654 747 curveto
+stroke
+newpath 655 750 moveto
+646 745 lineto
+656 745 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/bitmaps/snapshot.h
+gsave 10 dict begin
+641 649 75 18 ellipse_path
+stroke
+gsave 10 dict begin
+641 650 moveto (gui/bitmaps/snapshot.h) 129 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/gui.cc -> gui/bitmaps/snapshot.h
+newpath 1037 833 moveto
+919 778 801 723 683 668 curveto
+stroke
+newpath 684 671 moveto
+676 665 lineto
+686 667 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/macintosh.cc
+gsave 10 dict begin
+1391 632 58 18 ellipse_path
+stroke
+gsave 10 dict begin
+1391 633 moveto (gui/macintosh.cc) 95 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> Disks.h
+newpath 1361 616 moveto
+1248 559 1136 501 1022 443 curveto
+stroke
+newpath 1023 446 moveto
+1015 440 lineto
+1025 442 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/macintosh.cc -> bochs.h
+newpath 1393 650 moveto
+1411 823 1430 995 1448 1168 curveto
+stroke
+newpath 1450 1165 moveto
+1449 1175 lineto
+1445 1165 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/macintosh.cc -> font/vga.bitmap.h
+newpath 1334 629 moveto
+1212 623 1091 617 968 611 curveto
+stroke
+newpath 971 614 moveto
+961 611 lineto
+971 609 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	icon_bochs.h
+gsave 10 dict begin
+1818 566 47 18 ellipse_path
+stroke
+gsave 10 dict begin
+1818 567 moveto (icon_bochs.h) 74 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> icon_bochs.h
+newpath 1443 624 moveto
+1551 607 1660 591 1767 574 curveto
+stroke
+newpath 1764 572 moveto
+1774 573 lineto
+1764 577 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Quickdraw.h
+gsave 10 dict begin
+1204 243 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+1204 244 moveto (Quickdraw.h) 72 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> Quickdraw.h
+newpath 1382 614 moveto
+1327 499 1271 383 1216 268 curveto
+stroke
+newpath 1215 271 moveto
+1213 261 lineto
+1219 269 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	QuickdrawText.h
+gsave 10 dict begin
+1108 315 59 18 ellipse_path
+stroke
+gsave 10 dict begin
+1108 316 moveto (QuickdrawText.h) 98 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> QuickdrawText.h
+newpath 1375 614 moveto
+1293 523 1210 430 1129 338 curveto
+stroke
+newpath 1128 341 moveto
+1124 332 lineto
+1132 338 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	QDOffscreen.h
+gsave 10 dict begin
+1488 216 53 18 ellipse_path
+stroke
+gsave 10 dict begin
+1488 217 moveto (QDOffscreen.h) 85 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> QDOffscreen.h
+newpath 1395 614 moveto
+1424 490 1453 365 1482 241 curveto
+stroke
+newpath 1479 243 moveto
+1484 234 lineto
+1484 244 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Icons.h
+gsave 10 dict begin
+1153 268 30 18 ellipse_path
+stroke
+gsave 10 dict begin
+1153 269 moveto (Icons.h) 40 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> Icons.h
+newpath 1379 614 moveto
+1309 507 1238 398 1168 291 curveto
+stroke
+newpath 1167 295 moveto
+1164 285 lineto
+1172 292 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Palettes.h
+gsave 10 dict begin
+1002 342 37 18 ellipse_path
+stroke
+gsave 10 dict begin
+1002 343 moveto (Palettes.h) 54 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> Palettes.h
+newpath 1368 615 moveto
+1256 532 1142 446 1030 362 curveto
+stroke
+newpath 1030 365 moveto
+1023 357 lineto
+1033 361 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Windows.h
+gsave 10 dict begin
+1398 196 42 18 ellipse_path
+stroke
+gsave 10 dict begin
+1398 197 moveto (Windows.h) 64 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> Windows.h
+newpath 1391 614 moveto
+1393 484 1396 352 1398 222 curveto
+stroke
+newpath 1396 224 moveto
+1398 214 lineto
+1401 224 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Memory.h
+gsave 10 dict begin
+1569 231 39 18 ellipse_path
+stroke
+gsave 10 dict begin
+1569 232 moveto (Memory.h) 58 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> Memory.h
+newpath 1399 614 moveto
+1451 495 1506 375 1558 256 curveto
+stroke
+newpath 1555 257 moveto
+1561 249 lineto
+1559 259 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Events.h
+gsave 10 dict begin
+1052 291 34 18 ellipse_path
+stroke
+gsave 10 dict begin
+1052 292 moveto (Events.h) 48 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> Events.h
+newpath 1374 615 moveto
+1274 514 1174 413 1074 313 curveto
+stroke
+newpath 1073 316 moveto
+1068 307 lineto
+1077 312 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	TextUtils.h
+gsave 10 dict begin
+1766 277 42 18 ellipse_path
+stroke
+gsave 10 dict begin
+1766 278 moveto (TextUtils.h) 63 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> TextUtils.h
+newpath 1409 615 moveto
+1520 510 1631 404 1742 299 curveto
+stroke
+newpath 1740 298 moveto
+1749 293 lineto
+1743 301 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Dialogs.h
+gsave 10 dict begin
+1627 222 37 18 ellipse_path
+stroke
+gsave 10 dict begin
+1627 223 moveto (Dialogs.h) 54 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> Dialogs.h
+newpath 1401 614 moveto
+1472 492 1542 369 1613 247 curveto
+stroke
+newpath 1610 247 moveto
+1617 240 lineto
+1614 250 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	LowMem.h
+gsave 10 dict begin
+1675 245 43 18 ellipse_path
+stroke
+gsave 10 dict begin
+1675 246 moveto (LowMem.h) 65 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> LowMem.h
+newpath 1404 614 moveto
+1488 499 1573 385 1657 269 curveto
+stroke
+newpath 1654 269 moveto
+1662 262 lineto
+1658 272 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	CursorDevices.h
+gsave 10 dict begin
+1315 216 57 18 ellipse_path
+stroke
+gsave 10 dict begin
+1315 217 moveto (CursorDevices.h) 93 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> CursorDevices.h
+newpath 1388 614 moveto
+1365 490 1342 365 1319 241 curveto
+stroke
+newpath 1317 244 moveto
+1318 234 lineto
+1322 244 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Menus.h
+gsave 10 dict begin
+1815 308 34 18 ellipse_path
+stroke
+gsave 10 dict begin
+1815 309 moveto (Menus.h) 48 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> Menus.h
+newpath 1413 615 moveto
+1537 520 1663 424 1787 329 curveto
+stroke
+newpath 1786 327 moveto
+1795 323 lineto
+1789 331 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	Sound.h
+gsave 10 dict begin
+1258 247 33 18 ellipse_path
+stroke
+gsave 10 dict begin
+1258 248 moveto (Sound.h) 46 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> Sound.h
+newpath 1385 614 moveto
+1346 500 1306 386 1266 272 curveto
+stroke
+newpath 1264 275 moveto
+1264 265 lineto
+1269 274 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	SIOUX.h
+gsave 10 dict begin
+1374 255 37 18 ellipse_path
+stroke
+gsave 10 dict begin
+1374 256 moveto (SIOUX.h) 53 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/macintosh.cc -> SIOUX.h
+newpath 1390 614 moveto
+1385 504 1380 393 1375 283 curveto
+stroke
+newpath 1373 283 moveto
+1375 273 lineto
+1378 283 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/nogui.cc
+gsave 10 dict begin
+1683 843 45 18 ellipse_path
+stroke
+gsave 10 dict begin
+1683 844 moveto (gui/nogui.cc) 69 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/nogui.cc -> bochs.h
+newpath 1671 861 moveto
+1603 963 1535 1067 1466 1170 curveto
+stroke
+newpath 1470 1169 moveto
+1462 1176 lineto
+1465 1166 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/nogui.cc -> icon_bochs.h
+newpath 1692 825 moveto
+1730 747 1768 669 1806 591 curveto
+stroke
+newpath 1803 592 moveto
+1809 584 lineto
+1807 594 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/win32.cc
+gsave 10 dict begin
+1506 1124 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+1506 1125 moveto (gui/win32.cc) 72 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/win32.cc -> bochs.h
+newpath 1492 1141 moveto
+1485 1150 1478 1160 1470 1169 curveto
+stroke
+newpath 1472 1171 moveto
+1464 1177 lineto
+1468 1168 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/win32.cc -> font/vga.bitmap.h
+newpath 1487 1108 moveto
+1301 949 1115 790 929 631 curveto
+stroke
+newpath 928 633 moveto
+922 625 lineto
+931 630 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/win32.cc -> icon_bochs.h
+newpath 1516 1106 moveto
+1613 934 1707 763 1804 591 curveto
+stroke
+newpath 1801 591 moveto
+1808 584 lineto
+1805 594 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	windows.h
+gsave 10 dict begin
+848 1776 41 18 ellipse_path
+stroke
+gsave 10 dict begin
+848 1777 moveto (windows.h) 61 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/win32.cc -> windows.h
+newpath 1489 1141 moveto
+1284 1344 1076 1550 870 1754 curveto
+stroke
+newpath 874 1754 moveto
+865 1759 lineto
+870 1750 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	process.h
+gsave 10 dict begin
+2155 665 36 18 ellipse_path
+stroke
+gsave 10 dict begin
+2155 666 moveto (process.h) 52 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/win32.cc -> process.h
+newpath 1528 1108 moveto
+1727 967 1927 827 2126 686 curveto
+stroke
+newpath 2125 684 moveto
+2134 680 lineto
+2128 688 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	windows32/CommonFunctions.h
+gsave 10 dict begin
+1716 1909 103 18 ellipse_path
+stroke
+gsave 10 dict begin
+1716 1910 moveto (windows32/CommonFunctions.h) 186 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/win32.cc -> windows32/CommonFunctions.h
+newpath 1511 1142 moveto
+1576 1389 1644 1638 1709 1884 curveto
+stroke
+newpath 1711 1881 moveto
+1711 1891 lineto
+1706 1882 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/x.cc
+gsave 10 dict begin
+1608 1566 32 18 ellipse_path
+stroke
+gsave 10 dict begin
+1608 1567 moveto (gui/x.cc) 44 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/x.cc -> bochs.h
+newpath 1601 1548 moveto
+1554 1439 1509 1330 1462 1221 curveto
+stroke
+newpath 1459 1221 moveto
+1458 1211 lineto
+1464 1219 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	gui/x.cc -> icon_bochs.h
+newpath 1612 1548 moveto
+1679 1230 1745 911 1812 592 curveto
+stroke
+newpath 1809 593 moveto
+1814 584 lineto
+1814 594 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	X11/Xlib.h
+gsave 10 dict begin
+1756 1972 42 18 ellipse_path
+stroke
+gsave 10 dict begin
+1756 1973 moveto (X11/Xlib.h) 63 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/x.cc -> X11/Xlib.h
+newpath 1614 1584 moveto
+1658 1705 1703 1826 1746 1947 curveto
+stroke
+newpath 1747 1944 moveto
+1749 1954 lineto
+1743 1946 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	X11/Xutil.h
+gsave 10 dict begin
+1746 1952 44 18 ellipse_path
+stroke
+gsave 10 dict begin
+1746 1953 moveto (X11/Xutil.h) 67 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/x.cc -> X11/Xutil.h
+newpath 1614 1584 moveto
+1655 1698 1696 1813 1738 1927 curveto
+stroke
+newpath 1740 1924 moveto
+1740 1934 lineto
+1735 1925 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	X11/Xos.h
+gsave 10 dict begin
+960 1955 41 18 ellipse_path
+stroke
+gsave 10 dict begin
+960 1956 moveto (X11/Xos.h) 61 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/x.cc -> X11/Xos.h
+newpath 1586 1579 moveto
+1388 1697 1190 1817 992 1935 curveto
+stroke
+newpath 994 1937 moveto
+984 1940 lineto
+991 1933 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	X11/Xatom.h
+gsave 10 dict begin
+2304 1472 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+2304 1473 moveto (X11/Xatom.h) 76 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/x.cc -> X11/Xatom.h
+newpath 1639 1562 moveto
+1843 1534 2047 1507 2251 1479 curveto
+stroke
+newpath 2249 1477 moveto
+2259 1478 lineto
+2249 1482 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	X11/keysym.h
+gsave 10 dict begin
+1079 2010 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+1079 2011 moveto (X11/keysym.h) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	gui/x.cc -> X11/keysym.h
+newpath 1590 1581 moveto
+1429 1716 1266 1852 1105 1988 curveto
+stroke
+newpath 1108 1989 moveto
+1099 1993 lineto
+1105 1985 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	instrument/example0/instrument.cc
+gsave 10 dict begin
+1496 1423 109 18 ellipse_path
+stroke
+gsave 10 dict begin
+1496 1424 moveto (instrument/example0/instrument.cc) 197 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	instrument/example0/instrument.cc -> bochs.h
+newpath 1492 1405 moveto
+1481 1344 1468 1281 1457 1220 curveto
+stroke
+newpath 1455 1221 moveto
+1455 1211 lineto
+1460 1220 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	instrument/stubs/instrument.cc
+gsave 10 dict begin
+1836 985 96 18 ellipse_path
+stroke
+gsave 10 dict begin
+1836 986 moveto (instrument/stubs/instrument.cc) 172 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	instrument/stubs/instrument.cc -> bochs.h
+newpath 1804 1002 moveto
+1697 1061 1588 1120 1481 1177 curveto
+stroke
+newpath 1484 1178 moveto
+1474 1180 lineto
+1482 1174 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/cmos.cc
+gsave 10 dict begin
+1270 1066 50 18 ellipse_path
+stroke
+gsave 10 dict begin
+1270 1067 moveto (iodev/cmos.cc) 80 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/cmos.cc -> bochs.h
+newpath 1293 1082 moveto
+1336 1113 1381 1143 1425 1175 curveto
+stroke
+newpath 1424 1171 moveto
+1431 1179 lineto
+1421 1176 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/devices.cc
+gsave 10 dict begin
+1579 1028 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+1579 1029 moveto (iodev/devices.cc) 92 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/devices.cc -> bochs.h
+newpath 1565 1046 moveto
+1533 1087 1500 1129 1468 1170 curveto
+stroke
+newpath 1472 1169 moveto
+1464 1176 lineto
+1467 1166 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/dma.cc
+gsave 10 dict begin
+1509 1549 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+1509 1550 moveto (iodev/dma.cc) 74 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/dma.cc -> bochs.h
+newpath 1506 1531 moveto
+1490 1428 1472 1323 1456 1220 curveto
+stroke
+newpath 1454 1221 moveto
+1454 1211 lineto
+1459 1220 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/floppy.cc
+gsave 10 dict begin
+1630 1472 54 18 ellipse_path
+stroke
+gsave 10 dict begin
+1630 1473 moveto (iodev/floppy.cc) 87 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/floppy.cc -> bochs.h
+newpath 1619 1454 moveto
+1569 1375 1516 1296 1467 1217 curveto
+stroke
+newpath 1466 1220 moveto
+1462 1210 lineto
+1470 1217 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/harddrv.cc
+gsave 10 dict begin
+1641 1358 57 18 ellipse_path
+stroke
+gsave 10 dict begin
+1641 1359 moveto (iodev/harddrv.cc) 94 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/harddrv.cc -> bochs.h
+newpath 1621 1341 moveto
+1573 1299 1524 1256 1475 1214 curveto
+stroke
+newpath 1474 1216 moveto
+1468 1208 lineto
+1477 1213 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/keyboard.cc
+gsave 10 dict begin
+1502 1324 61 18 ellipse_path
+stroke
+gsave 10 dict begin
+1502 1325 moveto (iodev/keyboard.cc) 102 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/keyboard.cc -> bochs.h
+newpath 1495 1306 moveto
+1483 1278 1473 1249 1462 1220 curveto
+stroke
+newpath 1460 1221 moveto
+1458 1211 lineto
+1464 1219 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/parallel.cc
+gsave 10 dict begin
+1384 848 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+1384 849 moveto (iodev/parallel.cc) 92 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/parallel.cc -> bochs.h
+newpath 1387 866 moveto
+1407 967 1427 1068 1446 1169 curveto
+stroke
+newpath 1448 1165 moveto
+1447 1175 lineto
+1443 1166 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/pci.cc
+gsave 10 dict begin
+1118 1232 44 18 ellipse_path
+stroke
+gsave 10 dict begin
+1118 1233 moveto (iodev/pci.cc) 67 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/pci.cc -> bochs.h
+newpath 1161 1227 moveto
+1244 1217 1328 1208 1411 1198 curveto
+stroke
+newpath 1409 1196 moveto
+1419 1197 lineto
+1409 1201 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/pic.cc
+gsave 10 dict begin
+1454 801 44 18 ellipse_path
+stroke
+gsave 10 dict begin
+1454 802 moveto (iodev/pic.cc) 67 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/pic.cc -> bochs.h
+newpath 1454 819 moveto
+1453 935 1452 1052 1451 1168 curveto
+stroke
+newpath 1454 1165 moveto
+1451 1175 lineto
+1449 1165 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/pit.cc
+gsave 10 dict begin
+1733 906 43 18 ellipse_path
+stroke
+gsave 10 dict begin
+1733 907 moveto (iodev/pit.cc) 65 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/pit.cc -> bochs.h
+newpath 1716 923 moveto
+1635 1005 1553 1090 1472 1172 curveto
+stroke
+newpath 1476 1172 moveto
+1467 1177 lineto
+1472 1168 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/serial.cc
+gsave 10 dict begin
+1611 737 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+1611 738 moveto (iodev/serial.cc) 81 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/serial.cc -> bochs.h
+newpath 1605 755 moveto
+1557 892 1508 1029 1460 1167 curveto
+stroke
+newpath 1463 1167 moveto
+1457 1175 lineto
+1458 1165 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/serial.cc -> signal.h
+newpath 1614 719 moveto
+1636 593 1658 466 1680 340 curveto
+stroke
+newpath 1677 342 moveto
+1681 332 lineto
+1682 342 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	winsock.h
+gsave 10 dict begin
+1968 393 39 18 ellipse_path
+stroke
+gsave 10 dict begin
+1968 394 moveto (winsock.h) 57 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/serial.cc -> winsock.h
+newpath 1629 720 moveto
+1734 619 1840 516 1945 415 curveto
+stroke
+newpath 1942 414 moveto
+1951 409 lineto
+1946 418 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	termios.h
+gsave 10 dict begin
+1442 233 36 18 ellipse_path
+stroke
+gsave 10 dict begin
+1442 234 moveto (termios.h) 52 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/serial.cc -> termios.h
+newpath 1605 719 moveto
+1554 566 1502 413 1451 260 curveto
+stroke
+newpath 1449 261 moveto
+1448 251 lineto
+1454 260 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/unmapped.cc
+gsave 10 dict begin
+1291 1585 65 18 ellipse_path
+stroke
+gsave 10 dict begin
+1291 1586 moveto (iodev/unmapped.cc) 109 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/unmapped.cc -> bochs.h
+newpath 1298 1567 moveto
+1346 1451 1393 1334 1441 1218 curveto
+stroke
+newpath 1438 1219 moveto
+1444 1211 lineto
+1442 1221 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/vga.cc
+gsave 10 dict begin
+1242 1595 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+1242 1596 moveto (iodev/vga.cc) 70 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/vga.cc -> bochs.h
+newpath 1251 1577 moveto
+1313 1457 1376 1338 1438 1218 curveto
+stroke
+newpath 1435 1218 moveto
+1442 1211 lineto
+1439 1221 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/sb16.cc
+gsave 10 dict begin
+1648 1069 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+1648 1070 moveto (iodev/sb16.cc) 77 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/sb16.cc -> bochs.h
+newpath 1623 1085 moveto
+1575 1116 1527 1145 1479 1176 curveto
+stroke
+newpath 1482 1177 moveto
+1472 1180 lineto
+1479 1173 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/soundlnx.cc
+gsave 10 dict begin
+979 1345 61 18 ellipse_path
+stroke
+gsave 10 dict begin
+979 1346 moveto (iodev/soundlnx.cc) 102 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/soundlnx.cc -> errno.h
+newpath 919 1349 moveto
+788 1357 655 1366 524 1374 curveto
+stroke
+newpath 526 1377 moveto
+516 1374 lineto
+526 1372 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/soundlnx.cc -> bochs.h
+newpath 1020 1332 moveto
+1152 1290 1284 1247 1415 1205 curveto
+stroke
+newpath 1413 1203 moveto
+1423 1202 lineto
+1415 1208 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	sys/ioctl.h
+gsave 10 dict begin
+697 1705 39 18 ellipse_path
+stroke
+gsave 10 dict begin
+697 1706 moveto (sys/ioctl.h) 57 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/soundlnx.cc -> sys/ioctl.h
+newpath 965 1363 moveto
+882 1469 798 1576 715 1682 curveto
+stroke
+newpath 718 1682 moveto
+710 1688 lineto
+714 1679 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	sys/soundcard.h
+gsave 10 dict begin
+477 1157 55 18 ellipse_path
+stroke
+gsave 10 dict begin
+477 1158 moveto (sys/soundcard.h) 89 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/soundlnx.cc -> sys/soundcard.h
+newpath 941 1331 moveto
+801 1279 662 1225 522 1174 curveto
+stroke
+newpath 522 1177 moveto
+514 1171 lineto
+524 1172 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/soundwin.cc
+gsave 10 dict begin
+1362 1369 63 18 ellipse_path
+stroke
+gsave 10 dict begin
+1362 1370 moveto (iodev/soundwin.cc) 105 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/soundwin.cc -> bochs.h
+newpath 1371 1351 moveto
+1393 1307 1417 1261 1439 1216 curveto
+stroke
+newpath 1435 1218 moveto
+1442 1210 lineto
+1440 1220 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/eth.cc
+gsave 10 dict begin
+1369 1297 44 18 ellipse_path
+stroke
+gsave 10 dict begin
+1369 1298 moveto (iodev/eth.cc) 67 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/eth.cc -> bochs.h
+newpath 1383 1280 moveto
+1399 1260 1416 1238 1432 1218 curveto
+stroke
+newpath 1430 1217 moveto
+1438 1210 lineto
+1434 1220 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/eth_fbsd.cc
+gsave 10 dict begin
+1204 1621 60 18 ellipse_path
+stroke
+gsave 10 dict begin
+1204 1622 moveto (iodev/eth_fbsd.cc) 98 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/eth_fbsd.cc -> fcntl.h
+newpath 1191 1603 moveto
+1144 1536 1097 1469 1050 1402 curveto
+stroke
+newpath 1049 1406 moveto
+1046 1396 lineto
+1054 1403 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/eth_fbsd.cc -> bochs.h
+newpath 1214 1603 moveto
+1288 1476 1362 1346 1436 1218 curveto
+stroke
+newpath 1434 1217 moveto
+1441 1210 lineto
+1438 1220 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/eth_fbsd.cc -> sys/ioctl.h
+newpath 1151 1630 moveto
+1015 1653 878 1675 742 1698 curveto
+stroke
+newpath 744 1700 moveto
+734 1699 lineto
+744 1695 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	sys/socket.h
+gsave 10 dict begin
+741 1848 44 18 ellipse_path
+stroke
+gsave 10 dict begin
+741 1849 moveto (sys/socket.h) 68 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/eth_fbsd.cc -> sys/socket.h
+newpath 1172 1636 moveto
+1041 1701 908 1766 778 1830 curveto
+stroke
+newpath 780 1832 moveto
+770 1834 lineto
+778 1827 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	net/if.h
+gsave 10 dict begin
+845 1949 30 18 ellipse_path
+stroke
+gsave 10 dict begin
+845 1950 moveto (net/if.h) 40 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/eth_fbsd.cc -> net/if.h
+newpath 1185 1638 moveto
+1080 1735 973 1832 868 1928 curveto
+stroke
+newpath 871 1929 moveto
+862 1934 lineto
+867 1925 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	net/bpf.h
+gsave 10 dict begin
+2137 1668 35 18 ellipse_path
+stroke
+gsave 10 dict begin
+2137 1669 moveto (net/bpf.h) 50 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/eth_fbsd.cc -> net/bpf.h
+newpath 1264 1624 moveto
+1541 1637 1818 1653 2095 1666 curveto
+stroke
+newpath 2092 1664 moveto
+2102 1666 lineto
+2092 1669 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/eth_null.cc
+gsave 10 dict begin
+1109 1087 58 18 ellipse_path
+stroke
+gsave 10 dict begin
+1109 1088 moveto (iodev/eth_null.cc) 96 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/eth_null.cc -> bochs.h
+newpath 1150 1100 moveto
+1239 1127 1327 1154 1415 1182 curveto
+stroke
+newpath 1414 1179 moveto
+1423 1184 lineto
+1413 1184 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/ne2k.cc
+gsave 10 dict begin
+1418 1515 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+1418 1516 moveto (iodev/ne2k.cc) 77 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/ne2k.cc -> bochs.h
+newpath 1420 1497 moveto
+1429 1405 1439 1312 1448 1219 curveto
+stroke
+newpath 1445 1221 moveto
+1449 1211 lineto
+1450 1221 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/cdrom.cc
+gsave 10 dict begin
+997 1501 53 18 ellipse_path
+stroke
+gsave 10 dict begin
+997 1502 moveto (iodev/cdrom.cc) 86 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/cdrom.cc -> sys/types.h
+newpath 997 1483 moveto
+999 1430 1001 1378 1002 1325 curveto
+stroke
+newpath 1000 1328 moveto
+1002 1318 lineto
+1005 1328 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/cdrom.cc -> bochs.h
+newpath 1021 1485 moveto
+1155 1394 1290 1301 1425 1211 curveto
+stroke
+newpath 1421 1211 moveto
+1430 1207 lineto
+1424 1215 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/cdrom.cc -> windows.h
+newpath 987 1519 moveto
+945 1596 904 1674 862 1751 curveto
+stroke
+newpath 865 1751 moveto
+858 1758 lineto
+861 1748 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/cdrom.cc -> sys/ioctl.h
+newpath 973 1517 moveto
+891 1573 809 1629 727 1685 curveto
+stroke
+newpath 729 1687 moveto
+719 1690 lineto
+726 1683 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/cdrom.cc -> sys/ioctl.h
+newpath 973 1517 moveto
+891 1573 809 1629 727 1685 curveto
+stroke
+newpath 729 1687 moveto
+719 1690 lineto
+726 1683 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	linux/fs.h
+gsave 10 dict begin
+516 1560 37 18 ellipse_path
+stroke
+gsave 10 dict begin
+516 1561 moveto (linux/fs.h) 53 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/cdrom.cc -> linux/fs.h
+newpath 947 1507 moveto
+818 1523 688 1539 560 1555 curveto
+stroke
+newpath 562 1557 moveto
+552 1556 lineto
+562 1552 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	linux/cdrom.h
+gsave 10 dict begin
+629 1785 50 18 ellipse_path
+stroke
+gsave 10 dict begin
+629 1786 moveto (linux/cdrom.h) 78 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/cdrom.cc -> linux/cdrom.h
+newpath 976 1518 moveto
+869 1599 763 1683 657 1763 curveto
+stroke
+newpath 660 1764 moveto
+651 1768 lineto
+657 1760 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	sys/param.h
+gsave 10 dict begin
+709 1871 44 18 ellipse_path
+stroke
+gsave 10 dict begin
+709 1872 moveto (sys/param.h) 67 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/cdrom.cc -> sys/param.h
+newpath 983 1519 moveto
+899 1628 812 1738 728 1847 curveto
+stroke
+newpath 731 1847 moveto
+723 1854 lineto
+727 1844 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	sys/file.h
+gsave 10 dict begin
+586 1713 36 18 ellipse_path
+stroke
+gsave 10 dict begin
+586 1714 moveto (sys/file.h) 50 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/cdrom.cc -> sys/file.h
+newpath 968 1516 moveto
+851 1576 735 1637 618 1696 curveto
+stroke
+newpath 621 1697 moveto
+611 1700 lineto
+618 1693 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	sys/cdio.h
+gsave 10 dict begin
+781 1928 38 18 ellipse_path
+stroke
+gsave 10 dict begin
+781 1929 moveto (sys/cdio.h) 56 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/cdrom.cc -> sys/cdio.h
+newpath 988 1519 moveto
+923 1646 859 1775 794 1902 curveto
+stroke
+newpath 797 1902 moveto
+790 1910 lineto
+792 1900 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	sys/disklabel.h
+gsave 10 dict begin
+491 1452 52 18 ellipse_path
+stroke
+gsave 10 dict begin
+491 1453 moveto (sys/disklabel.h) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/cdrom.cc -> sys/disklabel.h
+newpath 946 1496 moveto
+814 1484 681 1471 549 1458 curveto
+stroke
+newpath 551 1461 moveto
+541 1457 lineto
+551 1456 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	winioctl.h
+gsave 10 dict begin
+555 1645 38 18 ellipse_path
+stroke
+gsave 10 dict begin
+555 1646 moveto (winioctl.h) 56 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/cdrom.cc -> winioctl.h
+newpath 959 1514 moveto
+837 1553 715 1592 593 1633 curveto
+stroke
+newpath 596 1635 moveto
+586 1635 lineto
+595 1630 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/guest2host.cc
+gsave 10 dict begin
+1675 1559 65 18 ellipse_path
+stroke
+gsave 10 dict begin
+1675 1560 moveto (iodev/guest2host.cc) 110 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/guest2host.cc -> bochs.h
+newpath 1664 1541 moveto
+1598 1433 1531 1325 1465 1217 curveto
+stroke
+newpath 1464 1220 moveto
+1461 1210 lineto
+1468 1217 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	main.cc
+gsave 10 dict begin
+1435 750 32 18 ellipse_path
+stroke
+gsave 10 dict begin
+1435 751 moveto (main.cc) 43 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	main.cc -> bochs.h
+newpath 1436 768 moveto
+1440 900 1445 1035 1450 1167 curveto
+stroke
+newpath 1453 1165 moveto
+1450 1175 lineto
+1448 1165 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	main.cc -> signal.h
+newpath 1445 733 moveto
+1520 602 1594 470 1669 340 curveto
+stroke
+newpath 1667 339 moveto
+1674 332 lineto
+1671 342 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	main.cc -> state_file.h
+newpath 1408 760 moveto
+1331 788 1253 817 1175 845 curveto
+stroke
+newpath 1178 846 moveto
+1168 848 lineto
+1176 842 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	state_file.h -> stdio.h
+newpath 1119 877 moveto
+1066 928 1012 981 960 1032 curveto
+stroke
+newpath 964 1032 moveto
+955 1037 lineto
+960 1028 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	stddef.h
+gsave 10 dict begin
+782 504 32 18 ellipse_path
+stroke
+gsave 10 dict begin
+782 505 moveto (stddef.h) 44 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	state_file.h -> stddef.h
+newpath 1119 843 moveto
+1014 738 909 631 804 526 curveto
+stroke
+newpath 803 529 moveto
+798 520 lineto
+807 525 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	memory/memory.cc
+gsave 10 dict begin
+1870 1147 67 18 ellipse_path
+stroke
+gsave 10 dict begin
+1870 1148 moveto (memory/memory.cc) 112 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	memory/memory.cc -> bochs.h
+newpath 1808 1154 moveto
+1703 1166 1597 1177 1493 1189 curveto
+stroke
+newpath 1493 1191 moveto
+1483 1190 lineto
+1493 1187 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	memory/misc_mem.cc
+gsave 10 dict begin
+1376 1015 74 18 ellipse_path
+stroke
+gsave 10 dict begin
+1376 1016 moveto (memory/misc_mem.cc) 127 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	memory/misc_mem.cc -> bochs.h
+newpath 1384 1033 moveto
+1403 1078 1422 1124 1441 1169 curveto
+stroke
+newpath 1442 1165 moveto
+1444 1175 lineto
+1437 1167 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	misc/hello.cc
+gsave 10 dict begin
+553 799 47 18 ellipse_path
+stroke
+gsave 10 dict begin
+553 800 moveto (misc/hello.cc) 74 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	misc/hello.cc -> stdio.h
+newpath 577 815 moveto
+688 889 800 961 912 1035 curveto
+stroke
+newpath 912 1032 moveto
+919 1039 lineto
+909 1036 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	misc/make_cmos_image.cc
+gsave 10 dict begin
+570 1274 87 18 ellipse_path
+stroke
+gsave 10 dict begin
+570 1275 moveto (misc/make_cmos_image.cc) 154 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	misc/make_cmos_image.cc -> stdio.h
+newpath 598 1257 moveto
+703 1194 807 1131 912 1069 curveto
+stroke
+newpath 908 1068 moveto
+918 1065 lineto
+911 1073 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	misc/make_cmos_image.cc -> unistd.h
+newpath 611 1258 moveto
+726 1212 843 1167 959 1121 curveto
+stroke
+newpath 956 1120 moveto
+966 1118 lineto
+958 1124 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	misc/make_cmos_image.cc -> sys/types.h
+newpath 654 1279 moveto
+754 1285 855 1292 955 1298 curveto
+stroke
+newpath 951 1296 moveto
+961 1298 lineto
+951 1301 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	misc/make_cmos_image.cc -> sys/stat.h
+newpath 650 1266 moveto
+757 1256 863 1246 970 1236 curveto
+stroke
+newpath 970 1234 moveto
+980 1235 lineto
+970 1238 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	misc/make_cmos_image.cc -> fcntl.h
+newpath 629 1287 moveto
+753 1315 877 1344 1000 1372 curveto
+stroke
+newpath 998 1369 moveto
+1007 1374 lineto
+997 1374 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	pc_system.cc
+gsave 10 dict begin
+1731 815 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+1731 816 moveto (pc_system.cc) 74 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	pc_system.cc -> bochs.h
+newpath 1718 832 moveto
+1635 945 1551 1057 1469 1169 curveto
+stroke
+newpath 1472 1169 moveto
+1464 1176 lineto
+1468 1166 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	pc_system.cc -> winsock.h
+newpath 1741 797 moveto
+1813 672 1882 544 1954 419 curveto
+stroke
+newpath 1951 419 moveto
+1958 411 lineto
+1956 421 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	state_file.cc
+gsave 10 dict begin
+1093 1446 44 18 ellipse_path
+stroke
+gsave 10 dict begin
+1093 1447 moveto (state_file.cc) 67 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	state_file.cc -> bochs.h
+newpath 1115 1430 moveto
+1218 1357 1322 1284 1425 1211 curveto
+stroke
+newpath 1421 1210 moveto
+1431 1207 lineto
+1424 1215 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	load32bitOShack.cc
+gsave 10 dict begin
+1321 803 67 18 ellipse_path
+stroke
+gsave 10 dict begin
+1321 804 moveto (load32bitOShack.cc) 112 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	load32bitOShack.cc -> bochs.h
+newpath 1327 821 moveto
+1365 937 1404 1052 1443 1168 curveto
+stroke
+newpath 1445 1165 moveto
+1445 1175 lineto
+1440 1166 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/wmFPUemu_glue.cc
+gsave 10 dict begin
+1643 1743 80 18 ellipse_path
+stroke
+gsave 10 dict begin
+1643 1744 moveto (fpu/wmFPUemu_glue.cc) 140 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/wmFPUemu_glue.cc -> fpu_emu.h
+newpath 1648 1761 moveto
+1684 1901 1722 2041 1759 2182 curveto
+stroke
+newpath 1761 2180 moveto
+1761 2190 lineto
+1756 2181 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/wmFPUemu_glue.cc -> linux/signal.h
+newpath 1682 1759 moveto
+1790 1803 1898 1846 2005 1890 curveto
+stroke
+newpath 2004 1887 moveto
+2012 1893 lineto
+2002 1891 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/wmFPUemu_glue.cc -> bochs.h
+newpath 1637 1725 moveto
+1578 1556 1519 1387 1459 1218 curveto
+stroke
+newpath 1457 1221 moveto
+1457 1211 lineto
+1462 1220 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu.cc
+gsave 10 dict begin
+1310 1184 39 18 ellipse_path
+stroke
+gsave 10 dict begin
+1310 1185 moveto (fpu/fpu.cc) 56 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu.cc -> bochs.h
+newpath 1349 1186 moveto
+1370 1188 1391 1190 1412 1191 curveto
+stroke
+newpath 1409 1189 moveto
+1419 1191 lineto
+1409 1194 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	debug/debug.h -> config.h
+newpath 1601 1601 moveto
+1699 1529 1799 1459 1897 1387 curveto
+stroke
+newpath 1893 1386 moveto
+1903 1383 lineto
+1896 1391 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	loader_misc.h
+gsave 10 dict begin
+999 2004 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+999 2005 moveto (loader_misc.h) 78 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	debug/debug.h -> loader_misc.h
+newpath 1554 1633 moveto
+1379 1750 1205 1867 1030 1983 curveto
+stroke
+newpath 1033 1984 moveto
+1023 1988 lineto
+1030 1980 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	setjmp.h
+gsave 10 dict begin
+912 403 34 18 ellipse_path
+stroke
+gsave 10 dict begin
+912 404 moveto (setjmp.h) 47 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/cpu.h -> setjmp.h
+newpath 1333 723 moveto
+1203 624 1070 523 940 424 curveto
+stroke
+newpath 939 426 moveto
+932 418 lineto
+942 422 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cpu/lazy_flags.h
+gsave 10 dict begin
+1732 278 56 18 ellipse_path
+stroke
+gsave 10 dict begin
+1732 279 moveto (cpu/lazy_flags.h) 91 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	cpu/cpu.h -> cpu/lazy_flags.h
+newpath 1367 721 moveto
+1481 582 1598 441 1712 302 curveto
+stroke
+newpath 1709 302 moveto
+1717 296 lineto
+1713 305 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/harddrv.h
+gsave 10 dict begin
+2249 544 55 18 ellipse_path
+stroke
+gsave 10 dict begin
+2249 545 moveto (iodev/harddrv.h) 88 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/harddrv.h
+newpath 1997 918 moveto
+2075 802 2154 685 2232 569 curveto
+stroke
+newpath 2229 569 moveto
+2237 562 lineto
+2233 572 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/pci.h
+gsave 10 dict begin
+2406 1207 41 18 ellipse_path
+stroke
+gsave 10 dict begin
+2406 1208 moveto (iodev/pci.h) 62 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/pci.h
+newpath 2009 952 moveto
+2131 1029 2253 1109 2376 1187 curveto
+stroke
+newpath 2376 1184 moveto
+2383 1192 lineto
+2373 1188 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/vga.h
+gsave 10 dict begin
+2374 887 43 18 ellipse_path
+stroke
+gsave 10 dict begin
+2374 888 moveto (iodev/vga.h) 65 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/vga.h
+newpath 2031 930 moveto
+2128 918 2226 906 2324 893 curveto
+stroke
+newpath 2323 891 moveto
+2333 892 lineto
+2323 896 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/hga.h
+gsave 10 dict begin
+2174 550 43 18 ellipse_path
+stroke
+gsave 10 dict begin
+2174 551 moveto (iodev/hga.h) 65 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/hga.h
+newpath 1994 918 moveto
+2050 804 2106 689 2162 575 curveto
+stroke
+newpath 2159 576 moveto
+2165 568 lineto
+2163 578 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/cmos.h
+gsave 10 dict begin
+2246 635 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+2246 636 moveto (iodev/cmos.h) 75 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/cmos.h
+newpath 2000 919 moveto
+2075 833 2149 746 2224 660 curveto
+stroke
+newpath 2223 658 moveto
+2231 652 lineto
+2226 661 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/dma.h
+gsave 10 dict begin
+2039 441 45 18 ellipse_path
+stroke
+gsave 10 dict begin
+2039 442 moveto (iodev/dma.h) 69 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/dma.h
+newpath 1987 918 moveto
+2003 768 2020 618 2036 468 curveto
+stroke
+newpath 2033 469 moveto
+2037 459 lineto
+2038 469 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/floppy.h
+gsave 10 dict begin
+2338 825 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+2338 826 moveto (iodev/floppy.h) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/floppy.h
+newpath 2022 924 moveto
+2111 896 2201 868 2292 840 curveto
+stroke
+newpath 2290 838 moveto
+2300 837 lineto
+2292 843 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/keyboard.h
+gsave 10 dict begin
+2321 736 59 18 ellipse_path
+stroke
+gsave 10 dict begin
+2321 737 moveto (iodev/keyboard.h) 97 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/keyboard.h
+newpath 2011 921 moveto
+2102 867 2194 811 2286 757 curveto
+stroke
+newpath 2284 755 moveto
+2294 752 lineto
+2287 759 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/parallel.h
+gsave 10 dict begin
+2416 1043 54 18 ellipse_path
+stroke
+gsave 10 dict begin
+2416 1044 moveto (iodev/parallel.h) 87 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/parallel.h
+newpath 2025 946 moveto
+2139 973 2252 1003 2366 1030 curveto
+stroke
+newpath 2364 1027 moveto
+2373 1032 lineto
+2363 1032 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/pic.h
+gsave 10 dict begin
+2419 943 41 18 ellipse_path
+stroke
+gsave 10 dict begin
+2419 944 moveto (iodev/pic.h) 62 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/pic.h
+newpath 2033 937 moveto
+2145 939 2258 941 2371 942 curveto
+stroke
+newpath 2368 940 moveto
+2378 942 lineto
+2368 945 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/pit.h
+gsave 10 dict begin
+2412 1094 40 18 ellipse_path
+stroke
+gsave 10 dict begin
+2412 1095 moveto (iodev/pit.h) 60 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/pit.h
+newpath 2020 949 moveto
+2138 992 2256 1036 2374 1079 curveto
+stroke
+newpath 2373 1076 moveto
+2381 1082 lineto
+2371 1080 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/serial.h
+gsave 10 dict begin
+2111 442 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+2111 443 moveto (iodev/serial.h) 75 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/serial.h
+newpath 1990 918 moveto
+2027 769 2066 618 2104 469 curveto
+stroke
+newpath 2101 469 moveto
+2106 460 lineto
+2106 470 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/sb16.h
+gsave 10 dict begin
+2405 777 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+2405 778 moveto (iodev/sb16.h) 71 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/sb16.h
+newpath 2019 923 moveto
+2135 879 2249 836 2365 793 curveto
+stroke
+newpath 2362 792 moveto
+2372 790 lineto
+2364 796 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/unmapped.h
+gsave 10 dict begin
+2286 686 62 18 ellipse_path
+stroke
+gsave 10 dict begin
+2286 687 moveto (iodev/unmapped.h) 103 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/unmapped.h
+newpath 2005 919 moveto
+2088 850 2174 779 2257 709 curveto
+stroke
+newpath 2256 707 moveto
+2265 703 lineto
+2259 711 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/eth.h
+gsave 10 dict begin
+2116 513 41 18 ellipse_path
+stroke
+gsave 10 dict begin
+2116 514 moveto (iodev/eth.h) 62 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/eth.h
+newpath 1991 918 moveto
+2029 792 2069 665 2108 539 curveto
+stroke
+newpath 2105 540 moveto
+2110 531 lineto
+2110 541 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/ne2k.h
+gsave 10 dict begin
+2385 979 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+2385 980 moveto (iodev/ne2k.h) 72 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/ne2k.h
+newpath 2031 941 moveto
+2132 951 2233 963 2334 973 curveto
+stroke
+newpath 2331 970 moveto
+2340 974 lineto
+2330 975 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/guest2host.h
+gsave 10 dict begin
+2406 1154 63 18 ellipse_path
+stroke
+gsave 10 dict begin
+2406 1155 moveto (iodev/guest2host.h) 105 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/iodev.h -> iodev/guest2host.h
+newpath 2013 951 moveto
+2132 1012 2250 1074 2368 1134 curveto
+stroke
+newpath 2368 1131 moveto
+2375 1138 lineto
+2365 1135 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	external-disk-simulator.h
+gsave 10 dict begin
+2608 294 81 18 ellipse_path
+stroke
+gsave 10 dict begin
+2608 295 moveto (external-disk-simulator.h) 140 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/harddrv.h -> external-disk-simulator.h
+newpath 2272 528 moveto
+2374 457 2476 387 2577 315 curveto
+stroke
+newpath 2573 314 moveto
+2583 311 lineto
+2576 319 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	cdrom.h
+gsave 10 dict begin
+2446 132 33 18 ellipse_path
+stroke
+gsave 10 dict begin
+2446 133 moveto (cdrom.h) 46 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/harddrv.h -> cdrom.h
+newpath 2258 526 moveto
+2316 403 2376 280 2434 157 curveto
+stroke
+newpath 2431 157 moveto
+2438 150 lineto
+2435 160 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	serial_raw.h
+gsave 10 dict begin
+2289 19 44 18 ellipse_path
+stroke
+gsave 10 dict begin
+2289 20 moveto (serial_raw.h) 68 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/serial.h -> serial_raw.h
+newpath 2119 424 moveto
+2172 298 2226 171 2279 45 curveto
+stroke
+newpath 2276 45 moveto
+2282 37 lineto
+2281 47 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	soundlnx.h
+gsave 10 dict begin
+2721 448 41 18 ellipse_path
+stroke
+gsave 10 dict begin
+2721 449 moveto (soundlnx.h) 61 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/sb16.h -> soundlnx.h
+newpath 2421 760 moveto
+2514 665 2606 566 2699 471 curveto
+stroke
+newpath 2696 470 moveto
+2705 465 lineto
+2700 474 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	soundwin.h
+gsave 10 dict begin
+2818 648 43 18 ellipse_path
+stroke
+gsave 10 dict begin
+2818 649 moveto (soundwin.h) 64 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/sb16.h -> soundwin.h
+newpath 2441 766 moveto
+2552 731 2664 695 2776 661 curveto
+stroke
+newpath 2773 659 moveto
+2783 659 lineto
+2774 664 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/soundlnx.h
+gsave 10 dict begin
+1787 1136 59 18 ellipse_path
+stroke
+gsave 10 dict begin
+1787 1137 moveto (iodev/soundlnx.h) 96 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/soundlnx.h -> bochs.h
+newpath 1735 1145 moveto
+1653 1159 1571 1173 1489 1187 curveto
+stroke
+newpath 1492 1189 moveto
+1482 1188 lineto
+1492 1184 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/soundwin.h
+gsave 10 dict begin
+1117 1519 60 18 ellipse_path
+stroke
+gsave 10 dict begin
+1117 1520 moveto (iodev/soundwin.h) 99 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	iodev/soundwin.h -> bochs.h
+newpath 1135 1502 moveto
+1233 1406 1331 1310 1429 1215 curveto
+stroke
+newpath 1426 1214 moveto
+1435 1209 lineto
+1430 1218 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	iodev/soundwin.h -> windows.h
+newpath 1099 1536 moveto
+1024 1608 948 1681 873 1753 curveto
+stroke
+newpath 875 1754 moveto
+866 1759 lineto
+872 1751 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/exception.h
+gsave 10 dict begin
+2220 2114 54 18 ellipse_path
+stroke
+gsave 10 dict begin
+2220 2115 moveto (fpu/exception.h) 87 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/exception.h -> fpu_emu.h
+newpath 2174 2123 moveto
+2052 2148 1931 2174 1810 2199 curveto
+stroke
+newpath 1813 2201 moveto
+1803 2200 lineto
+1813 2196 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_asm.h
+gsave 10 dict begin
+3345 2962 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+3345 2963 moveto (fpu/fpu_asm.h) 81 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	linux/linkage.h
+gsave 10 dict begin
+3004 2770 52 18 ellipse_path
+stroke
+gsave 10 dict begin
+3004 2771 moveto (linux/linkage.h) 84 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_asm.h -> linux/linkage.h
+newpath 3318 2947 moveto
+3226 2895 3132 2842 3039 2790 curveto
+stroke
+newpath 3038 2792 moveto
+3031 2785 lineto
+3041 2788 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_emu.h
+gsave 10 dict begin
+2793 2336 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+2793 2337 moveto (fpu/fpu_emu.h) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_emu.h -> fpu_system.h
+newpath 2769 2352 moveto
+2631 2444 2491 2536 2352 2628 curveto
+stroke
+newpath 2354 2630 moveto
+2344 2634 lineto
+2351 2626 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_emu.h -> asm/types.h
+newpath 2784 2354 moveto
+2760 2403 2735 2452 2711 2501 curveto
+stroke
+newpath 2714 2500 moveto
+2708 2508 lineto
+2710 2498 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_emu.h -> linux/linkage.h
+newpath 2802 2354 moveto
+2865 2483 2928 2615 2991 2744 curveto
+stroke
+newpath 2993 2742 moveto
+2995 2752 lineto
+2988 2744 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu_asm.h
+gsave 10 dict begin
+3180 2439 39 18 ellipse_path
+stroke
+gsave 10 dict begin
+3180 2440 moveto (fpu_asm.h) 58 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_emu.h -> fpu_asm.h
+newpath 2834 2347 moveto
+2936 2373 3038 2402 3140 2428 curveto
+stroke
+newpath 3137 2424 moveto
+3146 2430 lineto
+3136 2429 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	asm/sigcontext.h
+gsave 10 dict begin
+3109 2586 57 18 ellipse_path
+stroke
+gsave 10 dict begin
+3109 2587 moveto (asm/sigcontext.h) 94 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_emu.h -> asm/sigcontext.h
+newpath 2814 2353 moveto
+2903 2423 2993 2495 3083 2565 curveto
+stroke
+newpath 3082 2561 moveto
+3088 2569 lineto
+3079 2565 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	asm/math_emu.h
+gsave 10 dict begin
+2718 1814 58 18 ellipse_path
+stroke
+gsave 10 dict begin
+2718 1815 moveto (asm/math_emu.h) 96 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_emu.h -> asm/math_emu.h
+newpath 2790 2318 moveto
+2767 2159 2745 2000 2722 1842 curveto
+stroke
+newpath 2720 1842 moveto
+2721 1832 lineto
+2724 1842 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu_proto.h
+gsave 10 dict begin
+3224 2309 43 18 ellipse_path
+stroke
+gsave 10 dict begin
+3224 2310 moveto (fpu_proto.h) 65 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_emu.h -> fpu_proto.h
+newpath 2843 2333 moveto
+2953 2326 3062 2319 3171 2313 curveto
+stroke
+newpath 3171 2311 moveto
+3181 2312 lineto
+3171 2315 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_system.h
+gsave 10 dict begin
+2431 1421 59 18 ellipse_path
+stroke
+gsave 10 dict begin
+2431 1422 moveto (fpu/fpu_system.h) 97 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_system.h -> config.h
+newpath 2375 1415 moveto
+2238 1401 2101 1386 1964 1372 curveto
+stroke
+newpath 1966 1375 moveto
+1956 1371 lineto
+1966 1370 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_system.h -> asm/math_emu.h
+newpath 2444 1439 moveto
+2529 1556 2615 1672 2700 1789 curveto
+stroke
+newpath 2701 1786 moveto
+2705 1796 lineto
+2697 1789 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	linux/sched.h
+gsave 10 dict begin
+2871 1217 48 18 ellipse_path
+stroke
+gsave 10 dict begin
+2871 1218 moveto (linux/sched.h) 75 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_system.h -> linux/sched.h
+newpath 2464 1406 moveto
+2587 1349 2711 1291 2834 1234 curveto
+stroke
+newpath 2831 1233 moveto
+2841 1231 lineto
+2833 1237 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	linux/kernel.h
+gsave 10 dict begin
+2868 1322 49 18 ellipse_path
+stroke
+gsave 10 dict begin
+2868 1323 moveto (linux/kernel.h) 78 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_system.h -> linux/kernel.h
+newpath 2479 1410 moveto
+2592 1385 2706 1358 2819 1333 curveto
+stroke
+newpath 2816 1331 moveto
+2826 1331 lineto
+2817 1336 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_system.h -> linux/kernel.h
+newpath 2479 1410 moveto
+2592 1385 2706 1358 2819 1333 curveto
+stroke
+newpath 2816 1331 moveto
+2826 1331 lineto
+2817 1336 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	linux/mm.h
+gsave 10 dict begin
+2849 1438 43 18 ellipse_path
+stroke
+gsave 10 dict begin
+2849 1439 moveto (linux/mm.h) 65 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_system.h -> linux/mm.h
+newpath 2490 1423 moveto
+2593 1427 2697 1433 2800 1436 curveto
+stroke
+newpath 2796 1434 moveto
+2806 1436 lineto
+2796 1439 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/fpu_system.h -> linux/mm.h
+newpath 2490 1423 moveto
+2593 1427 2697 1433 2800 1436 curveto
+stroke
+newpath 2796 1434 moveto
+2806 1436 lineto
+2796 1439 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	linux/types.h
+gsave 10 dict begin
+2865 1100 46 18 ellipse_path
+stroke
+gsave 10 dict begin
+2865 1101 moveto (linux/types.h) 72 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/fpu_system.h -> linux/types.h
+newpath 2454 1404 moveto
+2580 1310 2709 1216 2835 1122 curveto
+stroke
+newpath 2834 1120 moveto
+2843 1116 lineto
+2837 1124 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/reg_constant.h
+gsave 10 dict begin
+1356 2417 62 18 ellipse_path
+stroke
+gsave 10 dict begin
+1356 2418 moveto (fpu/reg_constant.h) 104 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/reg_constant.h -> fpu_emu.h
+newpath 1387 2401 moveto
+1502 2343 1617 2283 1732 2225 curveto
+stroke
+newpath 1729 2224 moveto
+1739 2222 lineto
+1731 2228 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+
+%	fpu/status_w.h
+gsave 10 dict begin
+2357 2096 51 18 ellipse_path
+stroke
+gsave 10 dict begin
+2357 2097 moveto (fpu/status_w.h) 82 14.00 -0.50 alignedtext
+end grestore
+end grestore
+
+%	fpu/status_w.h -> fpu_emu.h
+newpath 2312 2104 moveto
+2144 2137 1977 2168 1810 2200 curveto
+stroke
+newpath 1813 2202 moveto
+1803 2201 lineto
+1813 2197 lineto
+closepath
+gsave 0 setgray stroke grestore fill
+endpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+end
+restore
+%%EOF

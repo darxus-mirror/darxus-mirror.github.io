@@ -1,0 +1,52 @@
+#!/usr/bin/perl
+
+# pclr (Pretty CoLoRs), (c) 2001, Darxus@ChaosReigns.com, 
+# released under the GPL.
+
+# Prints everything recieved on STDIN, with random ANSI color codes inserted 
+# between every character.  Try:
+# vi | ./pclr.pl
+# mutt | ./pclr.pl
+# bitchx | ./pclr.pl
+# pine | ./pclr.pl
+# links | ./pclr.pl
+# bb | ./pclr.pl
+
+# v0.8 Sep  2 02:24 pclr.pl 1st release
+
+# don't line buffer
+$| = 1;
+$skip = 0;
+
+$end = "[00m";
+$charnum = 0;
+while (sysread(STDIN,$char,1))
+{
+  $charnum++;
+  if ($char eq "")
+  {
+    #print "code begin:$charnum\n";
+    $skip = 1;
+  }
+  if ($skip && $char =~ m#[a-zA-Z]#)
+  {
+    $next = 1;
+  }
+  &colorize unless $skip;
+  print "$char";
+  if ($next)
+  {
+    #print "code end:$charnum\n";
+    $skip = 0;
+    $next = 0;
+  }
+}
+
+print $end;
+
+sub colorize
+{
+  $color = int(rand(7)) + 31;
+  $bold =  int(rand(2));
+  print "[0${bold};${color}m";
+}

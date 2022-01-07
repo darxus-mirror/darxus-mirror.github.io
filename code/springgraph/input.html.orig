@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux/x86 (vers 12 April 2005), see www.w3.org" />
+
+  <title>springgraph input (.dot) files</title>
+  <link rel='StyleSheet' href="/light.css" type="text/css" />
+</head>
+
+<body>
+<div>
+  <h1>springgraph input (.dot) files</h1>Definition of the .dot
+  files which springgraph renders can be found in the <a href=
+  "http://www.research.att.com/sw/tools/graphviz/">graphviz</a>
+  <a href=
+  "http://www.unisa.edu.au/eie/csec/graphviz/dot.1.html">man
+  pages</a>. Springgraph only supports the fillcolor and label node
+  attributes, and only when set for a specific node, not set as a
+  default. Example .dot files can be found <a href="dl/">here</a>.
+
+  <p>I am going to attempt to describe this file format as it is
+  supported by springgraph. I am going to include things that
+  springgraph ignores because graphviz requires it, and I want to
+  maintain compatibility, and because springgraph may some day
+  require them.</p>
+
+  <p>There are four types of lines:</p>
+
+  <dl>
+    <dt><b>Header:</b></dt>
+
+    <dd>A single line, ignored by springgraph.</dd>
+
+    <dt><b>Node Attribute:</b></dt>
+
+    <dd>Optional, they can define the fillcolor and/or label</dd>
+
+    <dt><b>Link:</b></dt>
+
+    <dd>Specify which nodes an arrow should be drawn between</dd>
+
+    <dt><b>Footer:</b></dt>
+
+    <dd>A single line, ignored by springgraph.</dd>
+  </dl>
+
+  <p><b>Header</b><br />
+  The first line should be '<tt>digraph "" {</tt>'. graphviz uses
+  the information between the double-quotes as the title of the
+  graph. This is currently ignored by springgraph but is required
+  for compatibility with graphviz.</p>
+
+  <p><b>Node Attribute</b><br />
+  You can add node attribute lines to define the label (text that
+  will be in the node) and fillcolor (background color) of the
+  node. The fillcolor must be specified in <a href=
+  "http://wombat.doc.ic.ac.uk/foldoc/foldoc.cgi?HSV">HSV</a> (Hue,
+  Saturation, Value), <i>not</i> RGB (Red, Green, Blue). This line
+  is completely optional. If you omit it, the node name will be
+  used as the node label. An example node attribute line:</p>
+
+  <p><tt>"0E9FF879"
+  [fillcolor="0.866515837104072,0.257575757575758,1",label="Darxus"]</tt></p>
+
+  <p>In this example, the node name is "0E9FF879". The fillcolor
+  has Hue = 0.866515837104072, Saturation = 0.257575757575758, and
+  Value = 0.257575757575758. The label is "Darxus".</p>
+
+  <p>Some example colors:</p>
+
+  <table border="0">
+    <tr>
+      <td>"<span style="color:#FF0000">red</span>"</td>
+
+      <td>[fillcolor="0.00,1,1"]</td>
+    </tr>
+
+    <tr>
+      <td>"<span style="color:#FFFF00">yellow</span>"</td>
+
+      <td>[fillcolor="0.17,1,1"]</td>
+    </tr>
+
+    <tr>
+      <td>"<span style="color:#00FF00">green</span>"</td>
+
+      <td>[fillcolor="0.33,1,1"]</td>
+    </tr>
+
+    <tr>
+      <td>"<span style="color:#00FFFF">cyan</span>"</td>
+
+      <td>[fillcolor="0.50,1,1"]</td>
+    </tr>
+
+    <tr>
+      <td>"<span style="color:#0000FF">blue</span>"</td>
+
+      <td>[fillcolor="0.67,1,1"]</td>
+    </tr>
+
+    <tr>
+      <td>"<span style="color:#FF00FF">magenta</span>"</td>
+
+      <td>[fillcolor="0.83,1,1"]</td>
+    </tr>
+  </table>
+
+  <p><b>Link</b><br />
+  Link (edge) lines specify which nodes arrows should be drawn
+  between. They look like this:</p>
+
+  <p><tt>"0E9FF879" -&gt; "116F0CBD"</tt></p>
+
+  <p>This quite simply means "Draw an arrow from the node named
+  '0E9FF879' to the node named '116F0CBD'". If you use
+  "<tt>--</tt>" instead of "<tt>-&gt;</tt>", an arrowhead will not
+  be drawn on the line.</p>
+
+  <p><b>Footer</b><br />
+  The last line should be "}". This is currently ignored by
+  springgraph but is required for compatibility with graphviz.</p>
+  <hr />
+  A very simple example: The file <a href=
+  "dl/test.dot">test.dot</a> contains (only) the following:
+  <pre>
+digraph "" {
+one -&gt; two
+two -&gt; three
+three -&gt; four
+four -&gt; five
+five -&gt; one
+one -&gt; three
+}
+</pre>It is rendered like this:
+
+  <p><tt>$ cat test.dot | ./springgraph.pl &gt; test.png</tt></p>
+
+  <p>And <a href="dl/test.png">test.png</a> looks like this:</p>
+
+  <p><img src="dl/test.png" alt="test.png" /></p>
+  <hr />
+  <a href="/code/springgraph/">springgraph index</a><br />
+  <a href="/code/">Darxus' code index</a><br />
+  <a href="/">Darxus' home page</a><br />
+  Thu May 16 06:06:39 EDT 2002
+</div>
+</body>
+</html>

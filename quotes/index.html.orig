@@ -1,0 +1,1165 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- the reason this keeps breaking on upgrades is php short tags, php.ini short_open_tag -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Darxus' Quotes</title>
+<link rel='StyleSheet' href="/light.css" type="text/css" />
+<style type="text/css">
+div.center { text-align: center; }
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head><body><div>
+
+
+<div class='center'>
+<form action="/quotes/" method="get">
+<table border='0'>
+<tr><td rowspan='2'><div style="font-size:2em"><b>Words that amuse me.</b></div>
+<small>In reverse chronological order.<br /><a href="/cgi-bin/referercomment.cgi">Comment on this page.</a></small></td>
+<td rowspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td colspan='2'><br />
+<input type="checkbox" name="fire"    checked="checked"    /><a href="/quotes/?fire=on">Fire</a>       
+<input type="checkbox" name="geek"    checked="checked"    /><a href="/quotes/?geek=on">Geek</a>       
+<input type="checkbox" name="misc"    checked="checked"    /><a href="/quotes/?misc=on">Misc</a>       
+<input type="checkbox" name="music"   checked="checked"   /><a href="/quotes/?music=on">Music</a>     
+<input type="checkbox" name="polit"   checked="checked"   /><a href="/quotes/?polit=on">Politics</a>  
+<input type="checkbox" name="psych"   checked="checked"   /><a href="/quotes/?psych=on">Psychology</a>
+<input type="checkbox" name="truth"   checked="checked"   /><a href="/quotes/?truth=on">Truth</a>     
+<input type="checkbox" name="freedom" checked="checked" /><a href="/quotes/?freedom=on">Freedom</a> 
+<input type="checkbox" name="words"   checked="checked"   /><a href="/quotes/?words=on">Words</a>     
+</td>
+<td rowspan='2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td rowspan='2' align='center'><a href="/quotes/quoteslinks.html">other<br />people's<br />collections</a></td>
+</tr><tr><td><input type="checkbox" name="categ"  />Show category names.
+<input type="submit" value="update filter" />
+</td>
+<td align='right'><a href="http://www.ChaosReigns.com/quotes/">Show all categories.</a>
+</td></tr>
+</table>
+</form>
+</div>
+
+
+<hr />
+<hr />
+"Any person who claims to be totally sane is either lying or not very bright." - counselor, Buffy the Vampire Slayer, s03e04, 8:55<hr />
+"As humans it's our duty to tell the tales, to sing the songs." - Adventure Time s07e07<hr />
+"Your entire life led you to this moment.<br />Appreciate it.<br />Savor it.<br />Let it go."<hr />
+[Giant returns crystall ball she was using for an eye.]<br /> "Hey Tess, what happened to your eye?"<br /> "Oh I had to stop using the eye.  It's just too painful seeing the truth all the time."<br /> "Ah.  That's why humans tend to avoid it."<br /> - Disenchantment, season 1, episode 10<hr />
+"Wherever we want to go, we'll go. That's what a ship is, you know." - Jack Sparrow<hr />
+"...nothing matters so we may as well pull out our dicks and rub them on fate's glaring teeth..." - Rick and Morty S04E06<hr />
+"If you can't be safe, be dangerous."<hr />
+"We thought of life by analogy with a journey.... But we missed the point the whole way along.  It was a musical thing and you were supposed to sing, or to dance, while the music was being played." - <a href="https://www.youtube.com/watch?v=QToNSb4qc7Y">Alan Watts</a><hr />
+"Actually Frankenstein was the name of the scientist. I, the person correcting you on this trivial point, am the monster." - <a href="https://mobile.twitter.com/JosephScrimshaw/status/575157956104204288">Joseph Scrimshaw</a><hr />
+'“Cheese? But you…you could do anything you wanted!” Roland burst out. “And right now I want to make cheese,” said Tiffany calmly.”' ― Terry Pratchett, The Wee Free Men<hr />
+"You don't really understand an antagonist until you understand why he's a protagonist in his own version of the world." - John Rogers<hr />
+"I've found that the best things happen to me when I do the things I don't want to do, so I find myself wanting to do the things that I don't want to do." - Peter Dilworth<hr />
+"Men willingly believe what they wish to be true." - <a href="https://en.wikiquote.org/wiki/Julius_Caesar#De_Bello_Gallico">Julius Caesar</a><hr />
+"Kyriarchy, pronounced /ˈkaɪriɑːrki/, is a social system or set of connecting social systems built around domination, oppression, and submission. The word was coined by Elisabeth Schüssler Fiorenza in 1992 to describe her theory of interconnected, interacting, and self-extending systems of domination and submission, in which a single individual might be oppressed in some relationships and privileged in others. It is an intersectional extension of the idea of patriarchy beyond gender.[1] Kyriarchy encompasses sexism, racism, homophobia, classism, economic injustice, colonialism, ethnocentrism, militarism, and other forms of dominating hierarchies in which the subordination of one person or group to another is internalized and institutionalized." - <a href="https://en.wikipedia.org/wiki/Kyriarchy">wikipedia</a><hr />
+'"...psychotic..."  "That's a three-syllable word for any thought too big for little minds."' - Lois Lane, Lex Luthor, Batman vs. Superman<hr />
+“There is nobody in this country who got rich on their own. Nobody. You built a factory out there - good for you. But I want to be clear. You moved your goods to market on roads the rest of us paid for. You hired workers the rest of us paid to educate. You were safe in your factory because of police forces and fire forces that the rest of us paid for. You didn't have to worry that marauding bands would come and seize everything at your factory... Now look. You built a factory and it turned into something terrific or a great idea - God bless! Keep a hunk of it. But part of the underlying social contract is you take a hunk of that and pay forward for the next kid who comes along.” ― Elizabeth Warren<hr />
+"Growth for the sake of growth is the ideology of the cancer cell." - Edward Abbey, 1977<hr />
+Cuddy: "How is it that you always assume you're right?"<br /> House: "I don't, I just find it hard to operate on the opposite assumption." - House M.D.<hr />
+"Whoever is kind to the poor lends to the Lord, and he will reward them for what they have done." - NIV Bible, Proverbs 19:17<hr />
+ardent: "having or showing very strong feelings" - m-w.com<hr />
+"'Here is what you have to understand: it is possible to change bad things in society without an adrenaline kick to motivate you. That is the fundamental thing Thay is doing.'<br /> 'How do I change things without anger?'<br /> 'You observe that something is wrong and you gently put it right. It is as though you peer at a flower arrangement and reach out to adjust a branch. With no more emotion than *that*.'"<br /> <br /> "'We can only reverse these negative patterns by watching the feelings arise and not watering them. Don't believe in them.'"<br /> <br /> - The Barn at the End of the World, page 189<hr />
+“Good judgment comes from experience.  Experience comes from bad judgment.”<hr />
+“If quantum mechanics hasn’t profoundly shocked you, you haven’t understood it yet.” ~Niels Bohr<hr />
+"Raising a child is like taking care of someone who’s on way too many shrooms, while you yourself are on a moderate amount of shrooms. I am not confident in my decisions, but I know you should not be eating a mousepad." —Ron Funches<hr />
+"This is the sort of bloody nonsense up with which I will not put." - <a href="https://public.wsu.edu/~brians/errors/churchill.html">Churchill</a><hr />
+"You have all these rules and you think they'll save you." - The Joker, The Dark Knight (2008)<hr />
+"My business is to comfort the afflicted and afflict the comfortable." - <a href="http://en.wikipedia.org/wiki/Finley_Peter_Dunne">various</a><hr />
+"I divide my officers into four groups. There are clever, diligent, stupid, and lazy officers. Usually two characteristics are combined. Some are clever and diligent -- their place is the General Staff. The next lot are stupid and lazy -- they make up 90 percent of every army and are suited to routine duties. Anyone who is both clever and lazy is qualified for the highest leadership duties, because he possesses the intellectual clarity and the composure necessary for difficult decisions. One must beware of anyone who is stupid and diligent -- he must not be entrusted with any responsibility because he will always cause only mischief." - General Kurt von Hammerstein-Equord<hr />
+reticent: "inclined to be silent or uncommunicative in speech"<hr />
+"If you are depressed, you are living in the past.  If you are anxious, you are living in the future.  If you are at peace, you are living in the present." - Lao Tzu<hr />
+"This is my dream, I'll decide where it goes from here." - Alice in Wonderland, 2010<hr />
+"When life gives you lemons, burn life's house down." - Cave Johnson, Portal 2, as paraphrased by <a href="http://www.cracked.com/article_22182_5-secret-feminist-messages-hidden-in-portal-franchise.html/">cracked.com</a><hr />
+"Overcoming poverty is not a task of charity, it is an act of justice." - Nelson Mandela<hr />
+"Poverty is not an accident. Like slavery and apartheid, it is man made and can be removed by the actions of human beings." - Nelson Mandela<hr />
+"Would you be willing to believe the truth even if it meant you could never really feel happy and safe again? Even if everybody else seemed to believe a more convenient story? What if most people ignored the truth because it was the only way to be happy? What if that was so normal that anybody who suggested anything else sounded crazy?" - Darxus, 2013-11-16<hr />
+"All conversation is psychological warfare." - <a href="http://www.schlockmercenary.com/2007-05-30">Schlock Mercenary</a><hr />
+"In accordance with burning man policy, I said 'yes'."<hr />
+"What would you attempt to do if you knew you could not fail?"<hr />
+"This is my home now. This is where we build a new world." - Carolyn Di Avolo, 2014-11-27<hr />
+"And I got these stunning rushes of pure timeless joy, when my consciousness seemed to expand outwards from the limits of my skin to fill the universe and I could no longer tell whether I was playing the music or the music was playing me." - <a href="http://www.catb.org/~esr/writings/dancing.html">Eric S. Raymond</a>, 1995<hr />
+"The resistance to the unpleasant situation is the root of suffering." - Ram Das<hr />
+"When music affects us to tears, seemingly causeless, we weep not, as Gravina supposes, from 'excess of pleasure'; but through excess of an impatient, petulant sorrow that, as mere mortals, we are as yet in no condition to banquet upon those supernal ecstasies of which the music affords us merely a suggestive and indefinite glimpse." - Edgar Allan Poe, The Unknown Poe<hr />
+"Authority should derive from the consent of the governed, not from the threat of force." - Barbie, Toy Story 3<hr />
+"You don't ask why a plague spreads or a field burns. Don't ask why I fight." - <a href="http://gatherer.wizards.com/Pages/Card/Details.aspx?name=black+knight">Black Night, Magic: The Gathering</a><hr />
+"Your weirdness will make you stronger.  Your dark side will keep you whole.  Your vulnerability will connect you to the rest of our suffering world.  Your creativity will set you free.  There's nothing wrong with you." - Andrea Balt
+<hr />
+"Someone told me I was delusional.  I almost fell off my unicorn."<hr />
+"The moment that you feel that, just possibly, you're walking down the street naked, exposing too much of your heart and your mind and what exists on the inside, showing too much of yourself. That's the moment you may be starting to get it right." - Neil Gaiman<hr />
+"Dear Human: You've got it all wrong.<br /> You didn't come here to master unconditional love.<br /> That is where you came from and where you'll return.<br /> You came here to learn personal love.<br /> Universal love. Messy love. Sweaty love.<br /> Crazy love. Broken love. Whole love.<br /> Infused with divinity. Lived through the grace of stumbling.<br /> Demonstrated through the beauty of... messing up. Often.<br /> You didn't come here to be perfect. You already are.<br /> You came here to be gorgeously human. Flawed and fabulous.<br /> And then to rise again into remembering.<br /> But unconditional love? Stop telling that story.<br /> Love, in truth, doesn't need ANY other adjectives.<br /> It doesn't require modifiers.<br /> It doesn't require the condition of perfection.<br /> It only asks that you show up. And do your best.<br /> That you stay present and feel fully.<br /> That you shine and fly and laugh and cry<br /> and hurt and heal and fall and get back up<br /> and play and work and live and die as YOU.<br /> It's enough. It's Plenty." - Courtney A. Walsh<hr />
+agency: "the capacity, condition, or state of acting or of exerting power" - m-w.com<hr />
+equanimity: "evenness of mind especially under stress" - m-w.com<hr />
+"No one ever changes, who doesn't first want to." - <a href="https://www.facebook.com/Kas.Golubic/posts/811671257880">Kas Golubic, 2014-05-20</a><hr />
+"There are no grown-ups. We suspect this when we are younger, but can confirm it only once we are the ones writing books and attending parent-teacher conferences. Everyone is winging it, some just do it more confidently." - <a href="http://www.nytimes.com/2014/03/01/opinion/sunday/what-you-learn-in-your-40s.html">nytimes.com</a><hr />
+"I wish everyone could get rich and famous and have everything they ever dreamed of so they would know that's not the answer." - Jim Carrey<hr />
+foment: "to promote the growth or development of :  rouse, incite &lt;foment a rebellion&gt;" - m-w.com<hr />
+"...but we should always remember that the danger to ­societies from security services is not that they will spontaneously decide to embrace mustache twirling and jackboots to bear us bodily into dark places, but that the slowly shifting foundation of policy will make it such that mustaches and jackboots are discovered to prove an operational advantage toward a necessary purpose." - <a href="http://poy.time.com/2013/12/11/runner-up-edward-snowden-the-dark-prophet/">Edward Snowden</a><hr />
+"Check out my new coat hanger razor stand. Suggestions on improvement?"  "Instructions not clear; arm is missing, family is gone." - <a href="http://www.reddit.com/r/wicked_edge/comments/19x4d6/check_out_my_new_coat_hanger_razor_stand/c8s8d4h">reddit</a><hr />
+"Do one thing every day that scares you." - <a href="http://quoteinvestigator.com/2013/08/09/scare/">Mary Schmich, 1997</a><hr />
+"'And what will you do with your fear?'  'For starters, I'm going to hit you with this rock.'" - <a href="http://www.lfgcomic.com/page/736/">Looking for Group</a><hr />
+"The adjuration to be 'normal' seems shockingly repellent to me; I see neither hope nor comfort in sinking to that low level.  I think it is ignorance that makes people think of abnormality only with horror and allows them to remain undismayed at the proximity of 'normal' to average and mediocre.  For surely anyone who achieves anything is, essentially, abnormal." - Dr. Karl Menninger, The Human Mind, 1930<hr />
+<blockquote>Do not stand at my grave and weep,<br /> I am not there; I do not sleep.<br /> I am a thousand winds that blow,<br /> I am the diamond glints on snow,<br /> I am the sunlight on ripened grain,<br /> I am the gentle autumn rain.<br /> When you awaken in the morning's hush<br /> I am the swift uplifting rush<br /> Of quiet birds in circled flight.<br /> I am the soft stars that shine at night.<br /> Do not stand at my grave and cry,<br /> I am not here; I did not die. </blockquote> - Mary Elizabeth Frye, 1932<hr />
+"Personally, I believe very much in values of savagery; I mean: instinct, passion, mood, violence, madness." - Jean Dubuffet<hr />
+"In the beginning there was nothing, which exploded." - Terry Pratchett.<hr />
+"Tiger got to hunt, bird got to fly; Man got to sit and wonder, 'Why, why, why?' Tiger got to sleep, bird got to land; Man got to tell himself he understand." - Cat's Cradle by Kurt Vonnegut<hr />
+"Memento mori."<br />(Latin for "Remember that you will die.")<hr />
+"Stop trying to control everything and just let go!" - Fight Club<hr />
+"He who is not contented with what he has would not be contented with what he would like to have." - Socrates<hr />
+"You pray, I dance naked in the forest."<hr />
+"Happiness does not depend on what you have or who you are; it solely relies on what you think." - <a href="http://www.fakebuddhaquotes.com/happiness-does-not-depend-on-what-you-have/">Zig Ziglar, Steps to the Top, p 186. (1985) (not Buddha)</a><hr />
+"As an adolescent I aspired to lasting fame, I craved factual certainty, and I thirsted for a meaningful vision of human life - so I became a scientist. This is like becoming an archbishop so you can meet girls." - M. Cartmill<hr />
+"I can think of nothing less pleasurable than a life devoted to pleasure." - John D. Rockefeller<hr />
+"When I went to school, they asked me what I wanted to be when I grew up. I wrote down 'happy'. They told me I didn't understand the assignment; I told them they didn't understand life." - unknown (probably not John Lennon)<hr />
+veracity: "devotion to the truth" - m-w.com<hr />
+cursorial: "adapted to or involving running" - m-w.com<hr />
+"When I'm working on a problem, I never think about beauty. I think only how to solve the problem. But when I have finished, if the solution is not beautiful, I know it is wrong." - R. Buckminster Fuller<hr />
+"In the end, only three things matter: how much you loved, how gently you lived, and how gracefully you let go of things not meant for you." - Buddhist Saying<hr />
+"Whole problem with the world is that fools and fanatics are always so sure of themselves, and wiser people are full of doubts." - George Bernard Shaw<hr />
+"Hello, babies. Welcome to Earth. It's hot in the summer and cold in the winter. It's round and wet and crowded. At the outside, babies, you've got about a hundred years here. There's only one rule that I know of, babies—God damn it, you've got to be kind." - Kurt Vonnegut, God Bless You, Mr. Rosewater<hr />
+"With or without religion, good people can behave well and bad people can do evil; but for good people to do evil—that takes religion." - Steven Weinberg, 1999<hr />
+"All that is necessary for evil to triumph is for good men to do nothing" - <a href="https://en.wikiquote.org/wiki/Edmund_Burke#Disputed">War and Peace (film series)</a><hr />
+"Here's To The Crazy Ones. The misfits. The rebels. The trouble-makers. The round pegs in the square holes. The ones who see things differently. They're not fond of rules, and they have no respect for the status-quo. You can quote them, disagree with them, glorify, or vilify them.  About the only thing you can't do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius.  Because the people who are crazy enough to think they can change the world, are the ones who do."  - Steve Jobs<hr />
+"The danger is not that a particular class is unfit to govern. Every class is unfit to govern." - Lord Acton<hr />
+'1960: "I have a great idea! lets have every person in the country carry a radio tracking beacon!" "That'll never fly!"  2012: "I can has TWO iphones??"' - <a href="http://bash.org/?952948">bash.org</a><hr />
+"Now think real hard. You've been birddoggin' this township a while now. They wouldn't mind a corpse of you. Now you can luxuriate in a nice jail cell, but if your hand touches metal, I swear by my pretty floral bonnet I will end you." - Mal, Firefly, Our Mrs. Reynolds (2002)<hr />
+'"In this world, Elwood, you must be oh so smart or oh so pleasant." Well, for years I was smart. I recommend pleasant.' - Elwood P. Dowd, Harvey (1950)<hr />
+"Anyway, no drug, not even alcohol, causes the fundamental ills of society.  If we're looking for the source of our troubles, we shouldn't test people for drugs, we should test them for stupidity, ignorance, greed and love of power." - P. J. O'Rourke<hr />
+"There were many days when I did not know where my next meal was coming from. But I was never afraid to work, I went where some men were digging a ditch… said I wanted to work. The boss looked at my good clothes and white hands and laughed to the others… but he said, 'all right. Spit on your hands. Get in the ditch.' And I worked harder than anybody. At the end of the day I had $2." - Nikola Tesla<hr />
+"We’re natural-born killers and the real question is not what makes people kill but what prevents them from doing so." - <a href="https://www.nytimes.com/2012/03/20/opinion/brooks-when-the-good-do-bad.htm">nytimes.com</a><hr />
+"I always wonder why birds stay in the same place when they can fly anywhere on the earth.  Then I ask myself the same question." - Harun Yahya<hr />
+"You develop an instant global consciousness, a people orientation, an intense dissatisfaction with the state of the world, and a compulsion to do something about it.  From out there on the moon, international politics looks so petty.  You want to grab a politician by the scruff of the neck and drag him a quarter of a million miles out and say, 'Look at that, you son of a bitch.'" - Edgar Mitchell, Apollo 14 astronaut<hr />
+"Obama is wrong. Government cannot force you to pay for something that violates faith or beliefs. Govt has no right to do this." - <a href="http://twitter.com/#!/ricksantorum">Rick Santorum</a>, twitter, 2011-02-13
+<hr />
+"We have a choice. We have two options as human beings. We have a choice between conversation and war. That's it. Conversation and violence. And faith is a conversation stopper." - Sam Harris<hr />
+"the Constitution — specifically the Free Speech clause of the First Amendment — prohibits the U.S. Government from punishing someone for the political views they express, even if those views include the advocacy of violence against the U.S. and its leaders." - http://www.salon.com/2011/09/04/speech_23/singleton/<hr />
+"Just because you're offended, doesn't mean you're right." - Ricky Gervais<hr />
+"The unformed matter of the world, was a god, by the name of Chaos." -Thomas Hobbes<hr />
+"My definition of a free society is a society where it is safe to be unpopular." - Adlai E. Stevenson Jr.<hr />
+"If we outlaw time machines, only outlaws will have attack dinosaurs." - <a href="http://notinventedhe.re/on/2010-6-28">Not Invented Here</a>
+<hr />
+petrichor: "The clean, pleasant smell that accompanies rain falling on dry ground. It’s from the Greek petra (stone) and ichor (the blood of Greek gods and goddesses). The term was coined by two Australian researchers in 1964."<hr />
+"If you would be a real seeker after truth, it is necessary that at least once in your life you doubt, as far as possible, all things." - Rene Descartes (1596 - 1650)<hr />
+"If you believe everything you read, better not read." - Japanese Proverb<hr />
+"Rational arguments don’t usually work on religious people. Otherwise there would be no religious people." - <a href="https://diagorasofmelos.wordpress.com/2009/11/24/house_md_on_the_religious/">Gregory House, M.D. Season 4 Episode 2 The Right Stuff.</a><hr />
+"Eh, wisdom's overrated.  I prefer beatings and snacks." - Unity, <a href="http://skin-horse.com/comics/12272011/">Skin Horse</a><hr />
+“Before you diagnose yourself with depression or low self esteem, first make sure that you are not, in fact, just surrounded by assholes.” ― William Gibson<hr />
+"The power to cause pain is the only power that matters, the power to kill and destroy, because if you can't kill then you are always subject to those who can, and nothing and no one will ever save you." - Ender Wiggin, Ender's Game (1985), by Orson Scott Card<hr />
+"Believe nothing, no matter where you read it or who has said it, even if I have said it, unless it agrees with your own reason and your own common sense." - Buddha, 563-483 B.C.<hr />
+"I offer the modest proposal that our Universe is simply one of those things which happen from time to time." - Is the Universe a Vacuum Fluctuation<br /><br />Vacuum fluctuations are when matter, usually in very small quantities, measurably winks in and out of existence in a vacuum.<hr />
+Collectivism: "any philosophic, political, economic or social outlook that emphasizes the interdependence of every human in some collective group and the priority of group goals over individual goals." - http://en.wikipedia.org/wiki/Collectivism<hr />
+"Who is rich? He that is content. Who is that? Nobody." - Benjamin Franklin<hr />
+"Happiness is not achieved by the conscious pursuit of happiness; it is generally the by-product of other activities." - Aldous Huxley<hr />
+"Don't ask yourself what the world needs.  Ask yourself what makes you come alive, and then go do that.  Because what the world needs is people who have come alive." - Walt Whitman<hr />
+pleonasm: "the use of more words than are necessary to express an idea." - http://www.dictionary.com/wordoftheday/archive/2011/09/18.html<hr />
+"Well, if not, he'd certainly done something to warrant a hanging."  "What man has not?" - Beadle and Judge Turpin, Sweeney Todd (2007)<hr />
+"It was necessary to review the configurations of these many new events in order to fit them to himself, then cherish and praise them - lest they swallow him up." -Robert A. Heinlein, Stranger in a Strange Land<hr />
+"There's like 295M people in this country who have a vested interest in things not going Thunderdome, I think a lot of survivalist types forget that." -Marty Roesch<hr />
+"Now it's time to suspend reality... from its fucking neck." - <a href="http://sleeptalkinman.blogspot.com/2011/08/aug-16-2011.html">Sleep Talkin' Man</a>
+<hr />
+"It is of interest to note that while some dolphins are reported to have learned English -- up to fifty words used in correct context -- no human being has been reported to have learned dolphinese." - Carl Sagan<hr />
+bedlam: "a scene or state of wild uproar and confusion." - http://www.dictionary.com/wordoftheday/archive/2011/07/02.html<hr />
+aversion: "b : a settled dislike : antipathy &lt;expressed an aversion to parties&gt;" - m-w.com<hr />
+obstinate: "1 : perversely adhering to an opinion, purpose, or course in spite of reason, arguments, or persuasion &lt;obstinate resistance to change&gt; 2 : not easily subdued, remedied, or removed &lt;obstinate fever&gt;" - m-w.com<hr />
+"The scientific name for an animal that doesn't either run from or fight its enemies is lunch." - <a href="http://www.quotationspage.com/quotes/Michael_Friedman">Michael Friedman</a><hr />
+"Begin at the beginning and go on till you come to the end; then stop."  - Lewis Carrol, Alice in Wonderland<hr />
+"Judge if you want.  We are all going to die.  I intend to deserve it." - <a href="http://www.asofterworld.com/index.php?id=421">a softer world</a><hr />
+"And this is the nature of the universe. We struggle against it. We fight to deny it, but it is of course pretense. It is a lie. Beneath our poised appearance, the truth is we are completely... out of control." - The Merovingian, The Matrix Reloaded<hr />
+"Do you believe you're fighting for something?  For more than your survival?  Can you tell me what it is?  Do you even know?  Is it freedom, or truth?  Perhaps peace?  Could it be for love?  Illusions Mr. Anderson.  Vagaries of perception.  Temporary constructs of a feeble human intellect trying desperately to justify an existence that is without meaning or purpose." - Agent Smith, The Matrix Revolutions<hr />
+"What civilization is, is 6 billion people trying to make themselves happy by standing on each other’s shoulders and kicking each other’s teeth in." - Terence McKenna<hr />
+"Just because an idea can be proved doesn’t mean it’s true." - <a href="http://www.newyorker.com/reporting/2010/12/13/101213fa_fact_lehrer?currentPage=all">The Truth Wears Off: Is there something wrong with the scientific method? - newyorker.com</a><hr />
+"But do you have any idea how many SuperBalls you could buy if you actually applied yourself in the world?  Probably eleven, but you should still try." - <a href="http://hyperboleandahalf.blogspot.com/">hyperbole and a half</a>
+<hr />
+"Hermes will help you get your wagon unstuck, but only if you push on it." - <a href="http://web.eecs.utk.edu/~mclennan/BA/LAO.html">Greek Alphabet Oracle</a><hr />
+Malthusian catastrophe: "Originally foreseen to be a forced return to subsistence-level conditions once population growth had outpaced agricultural production. Later formulations consider economic growth limits as well." - <a href="http://en.wikipedia.org/wiki/Malthusian_catastrophe">wikipedia</a><hr />
+"If you want to make an apple pie from scratch, you must first create the universe." - Carl Sagan<hr />
+laconic: "using or marked by the use of a minimum of words."<hr />
+"Under peaceful conditions a warlike man sets upon himself." - Nietzsche<hr />
+"Nervous? In 5 billion years the sun will burn out and nothing you did will matter. Feel better?" - <a href="http://twitter.com/shitmydadsays/statuses/25325389671">shitmydadsays</a><hr />
+"It's... the soul afraid of dyin' that never learns to live" - The Rose<hr />
+<p>"Pain is a food.  A food that is essential to the growth of one's soul."</p><p>"As humans, we are taught to forget that we are animals."</p> - forward to Johnny The Homicidal Maniac<p>"As soon as I get out of this straight jacket, pull these nails out of my feet, and get down from the ceiling, I'm gonna kick your ass bloody"</p><p>"This hurts quite a bit.  Very painful."  "Think of the sensation as reassurance that you are not dead yet.  What you are feeling is life in you!"</p><p>"I don't even want the desire to be content.  I can only hope for silence."</p> - Johnny The Homicidal Maniac, Jhonen Vasquez<hr />
+"Fear:  It's there for a reason."<hr />
+"You only truly own what you can carry at a dead run." -  Unknown, <a href="http://www.whiteblaze.net/forum/showthread.php?63635-I-am-in-love-with-this-quote&amp;p=1031384&amp;viewfull=1#post1031384">attributed</a> to the German Landsknechts from the 14th &amp; 15th centuries<hr />
+"There's a god in you.  Be sure to bring it."<br />"We live.  We fight.  And we die."<br />- Clash of the Titans (not a particularly good movie)<hr />
+"This is how it's done.  When people are sitting on shit that you want, you make them your enemy.  Then you justify taking it." - Avatar (good movie)<hr />
+"The Second Amendment is about revolution." - <a href="http://www.dailykos.com/story/2010/7/4/881431/-Why-liberals-should-love-the-Second-Amendment">Kaili Joy Gray</a><hr />
+"When you think of the long and gloomy history of man, you will find more hideous crimes have been committed in the name of obedience than have ever been committed in the name of rebellion." - C. P. Snow<hr />
+"If everything seems under control, you're not going fast enough" - Mario Andretti<hr />
+"You're mad, bonkers, off your head.  But I'll tell you a secret:  All the best people are." - Alice in Winderland (2010)
+<hr />
+<blockquote>Millions of fingers<br />Millions of thumbs<br />Millions of monkeys<br />Drumming on drums</blockquote>- Hand, Hand, Fingers, Thumb, by Al Perkins, Eric Gurney<hr />
+sylvan: "of, relating to, or characteristic of the woods or forest" - m-w.com<hr />
+"What is necessary is never unwise." - Sarak, Star Trek (2009)<hr />
+"The pursuit of happiness is a most ridiculous phrase; if you pursue happiness you'll never find it." - C. P. Snow<hr />
+"If one out of every two hundred American men have the guts to fight for freedom alone, in secret and from ambush, this country will never be anything but free." - Secret Freedom Fighter by Jefferson Mack<hr />
+"Do not suppose that I have come to bring peace to the earth. I did not come to bring peace, but a sword." - Christ, Matthew 10:34, King James Bible<hr />
+'"Another aspect of this is the following: what you are doing right now is the thing that you most want to do. Now you may be thinking, "No way! I'd rather be on Malibu Beach!" But if you really wanted to be on Malibu Beach, you'd be there.' - <a href="Things You Really Need to Learn">http://www.downes.ca/post/38502</a><hr />
+<blockquote>And are you ashamed, are you afraid,<br /> of the gods and idols that you have made?<br /> Do you think you'll be saved<br /> by the gods and idols that you have made?<br /> <br /> None will be saved.<br /> None will be saved.<br /> None will be saved.</blockquote> - VNV, Kingdom
+<hr />
+"Most do-gooding reminds me of treating hemophelia--the only real cure for hemophilia is to let hemophiliacs bleed to death . . . before they breed more hemophiliacs." - Jubal, Stranger in a Strange Land, by Robert A. Heinlein
+<hr />
+"There are no dangerous weapons; there are only dangerous men." — Robert A. Heinlein, Starship Troopers<hr />
+"Other people take drugs to be more like me." - <a href="http://community.livejournal.com/arisia/331861.html#t2504021">twistpeach</a><hr />
+"Don't go around saying the world owes you a living. The world owes you nothing. It was here first."  - Mark Twain<hr />
+affable: "easy to speak to; also, gracious." - <a href="http://dictionary.reference.com/wordoftheday/archive/2009/11/22.html">dictionary.com word of the day</a><hr />
+"I have come to believe that the whole world is an enigma, a harmless enigma that is made terrible by our own mad attempt to interpret it as though it had an underlying truth." - Umberto Eco<hr />
+Immorality: "The morality of those who are having a better time" - Henry Louis Mencken<hr />
+"I would remind you that extremism in the defense of liberty is no vice! And let me remind you also that moderation in the pursuit of justice is no virtue!" - Barry Morris Goldwater, acceptance Speech as the 1964 Republican Presidential candidate<hr />
+"The strongest reason for the people to retain the right to keep and bear arms is, as a last resort, to protect themselves against tyranny in government." - (unconfirmed) Thomas Jefferson, third President of the United States<hr />
+"A brilliant man would find a way not to fight a war." - Perl Harbor (2001)<hr />
+"Hello darkness my old friend.  I've come to talk with you again." - The Sound of Silence, Simon and Garfunkel<hr />
+danger close: "(DOD, NATO) In artillery and naval gunfire support, information in a call for fire to indicate that friendly forces are within 600 meters of the target." - <a href="http://usmilitary.about.com/od/glossarytermsd/g/dangerclose.htm">about.com</a><hr />
+daft: "1 a : silly, foolish b : mad, insane 2 Scottish : frivolously merry" - m-w.com<hr />
+sedition: "incitement of resistance to or insurrection against lawful authority" - m-w.com<hr />
+incantation: "a written or recited formula of words designed to produce a particular effect" - m-w.com<hr />
+vengeance: "punishment inflicted in retaliation for an injury or offense : retribution" - m-w.com<hr />
+"Think, or I will set you on fire." - <a href="https://www.livejournal.com/allpics.bml?user=skreidle">skreidle</a><hr />
+insurrection: "an act or instance of revolting against civil authority or an established government" - m-w.com<hr />
+triumph: "to obtain victory: prevail" - m-w.com<hr />
+"You still die alone" - http://xkcd.com/625/
+<hr />
+"vet: to subject to thorough appraisal; to evaluate." - <a href="http://www.dictionary.com/wordoftheday/archive/2009/08/22.html">dictionary.com word of the day</a>
+<hr />
+paragon: "a model of excellence or perfection" - m-w.com<hr />
+luminary: "any body that gives light; also, a person of eminence or brilliant achievement." - <a href="http://syndicated.livejournal.com/dictionary_wotd/655115.html">dictionary_wotd</a>
+<hr />
+induce: "to call forth..." - m-w.com
+<hr />
+immutable: not able to be changed
+<hr />
+"No substitute for live fire."<hr />
+farcical: "laughably inept" - m-w.com<hr />
+forsaken: "renounced or turned away from entirely" - m-w.com
+<hr />
+"...nudity and weapons are primal art..." - <a href="http://olegvolk.livejournal.com/615775.html#t5761631">Anonymous</a>
+<hr />
+"The price of freedom is the willingness to do sudden battle, anywhere, at any time, and with utter recklessness." - The Puppet Masters by Robert A. Heinlein<hr />
+"To my mind it is wholly irresponsible to go into the world incapable of preventing violence, injury, crime, and death. How feeble is the mindset to accept defenselessness. How unnatural. How cheap. How cowardly. How pathetic." - Ted Nugent<hr />
+"Blades don't need reloading." - The Zombie Survival Guide by Max Brooks
+<hr />
+"The whole aim of practical politics is to keep the populace alarmed — and hence clamorous to be led to safety — by menacing it with an endless series of hobgoblins, all of them imaginary." - H. L. Mencken (1880 – 1956)<hr />
+"Forget not that the earth delights to feel your bare feet and the winds long to play with your hair."  - Kahlil Gibran<hr />
+autodarwinate: "To remove oneself from the gene-pool, thereby furthering the evolution of one's species." - <a href="http://en.wiktionary.org/wiki/Wiktionary:List_of_protologisms#A">wiktionary protologisms</a>
+<hr />
+calamity: "a disastrous event marked by great loss and lasting distress and suffering" - m-w.com
+<hr />
+"Liberty is maintained by the continued differences and oppositions of numbers, not by their concurring zeal in behalf of an equitable government." - 7:17, file 6, first disk, The Cato Institute Home Study course 
+<hr />
+anhedonia: "inability to feel joy"
+<hr />
+"One armed student or teacher could have stopped the killer, but all died obeying the rules." - http://www.olegvolk.net/gallery/technology/arms/yourkid0181.jpg.html<hr />
+"People sleep peaceably in their beds at night only because rough men stand ready to do violence on their behalf." - George Orwell<hr />
+"As it turns out, it's usually fear of repercussion that keeps us from torturing our fellow human beings. Give us absolute power over somebody and a blank check from our superiors, and Abu Ghraib-esque naked pyramids are sure to follow." - <a href="http://www.cracked.com/article_16239_5-psychological-experiments-that-prove-humanity-doomed.html">5 Psychological Experiments That Prove Humanity is Doomed</a>
+<hr />
+"Of course there's strength in numbers.  But there's strength in sharp weaponry too.  Ironically, this lead to what we call 'civilization'." - spore
+<hr />
+"Rebellion to Tyrants is Obedience to God." - Benjamin Franklin, first draft of the reverse side of the Great Seal of the United States
+<hr />
+"The lesser of two evils is still evil." - Jerry Garcia
+<hr />
+The Second Amendment to the United States Constitution was not created to protect a right to hunt.  It was created to protect our ability to put our government back in line by force.
+<hr />
+"If the thief is found breaking in, and he is struck so that he dies, there shall be no guilt for his bloodshed." -  Exodus 22:2, New King James Bible
+<hr />
+"...and he that hath no sword, let him sell his garment, and buy one." - Christ, Luke 22:36, King James Bible
+<hr />
+"Government is not reason, it is not eloquence, it is force; like fire, a troublesome servant and a fearful master. Never for a moment should it be left to irresponsible action." - George Washington (unverified)
+<hr />
+"It is the first responsibility of every citizen to question authority." - Benjamin Franklin (unverified)<hr />
+"One of the penalties for refusing to participate in politics is that you end up being governed by your inferiors." - Plato<hr />
+"All political power is inherent in the people, and all free governments are founded on their authority, and instituted for their benefit. The faith of the people of Texas stands pledged to the preservation of a republican form of government, and, subject to this limitation only, they have at all times the inalienable right to alter, reform or abolish their government in such manner as they may think expedient." - (all of) <a href="http://tlo2.tlc.state.tx.us/txconst/sections/cn000100-000200.html">The Texas Constitution, Article 1, Section 2</a>
+<hr />
+"Democracy is the theory that the common people know what they want, and deserve to get it good and hard." - H. L. Mencken
+<hr />
+"Those who make peaceful revolution impossible, also make violent revolution inevitable." - JFK, unverified
+<hr />
+egregious: "conspicuously bad" - m-w.com
+<hr />
+"'Mom, I'm hungry.'  'Hush, I'm coding.  You ate yesterday.'" - <a href="http://xkcd.com/345/">xkcd</a>
+<hr />
+sacrilicious: "Something amusingly sacreligious, ie. 'deliciously' sacreligious." - <a href="http://www.urbandictionary.com/define.php?term=Sacrilicious">urbandictionary.com</a><hr />
+inordinate: "exceeding reasonable limits" - m-w.com
+<hr />
+"'Did you really think we want those laws observed?' said Dr. Ferris. 'We want them to be broken. You'd better get it straight that it's not a bunch of boy scouts you're up against... We're after power and we mean it... There's no way to rule innocent men. The only power any government has is the power to crack down on criminals. Well, when there aren't enough criminals one makes them. One declares so many things to be a crime that it becomes impossible for men to live without breaking laws. Who wants a nation of law-abiding citizens? What's there in that for anyone? But just pass the kind of laws that can neither be observed nor enforced or objectively interpreted -- and you create a nation of law-beakers -- and then you cash in on guilt. Now that's the system, Mr. Reardon, that's the game, and once you understand it, you'll be much easier to deal with.'" - Atlas Shrugged, 1957, Ayn Rand<hr />
+"No human thing is of serious importance." - Plato<hr />
+daunting: "tending to overwhelm or intimidate" - m-w.com
+<hr />
+"Where are you going and what do you wish?" - The Old Moon, to Winkin' Blinkin' and Nod<hr />
+"There are as many truths as there are people."<br />"Your truth can be changed simply by the way you accept it.  That's how fragile the truth for a human is." "A person's truth is so simple that most ignore it to concentrate on what they think are deeper truths." - Evangelion #26<hr />
+repent: "to turn from sin and dedicate oneself to the amendment of one's life" - m-w.com
+<hr />
+"For every battle there is a price to pay. Now pick up your teeth and go home." - no fear
+<hr />
+inane: "lacking significance, meaning, or point" - m-w.com
+<hr />
+"Some people never go crazy. What truly horrible lives they must lead." - Charles Bukowski<hr />
+"Power is nothing without control." - Pirelli, a tire manufacturer<hr />
+"For every complex problem, there is a solution that is simple, neat, and wrong." - H. L. Mencken<hr />
+"I finally figured out the only reason to be alive is to enjoy it." - Rita Mae Brown<hr />
+"...this thing we call 'failure' is not the falling down, but the staying down." - Mary Pickford<hr />
+"The word 'politics' is derived from the word 'poly', meaning 'many', and the word 'ticks', meaning 'blood sucking parasites'." - Larry Hardiman<hr />
+"First they ignore you, then they laugh at you, then they fight you, then you win." - Mahatma Gandhi<hr />
+"We are born to die." - Romeo and Juliet, Shakespeare
+<hr />
+"If God did not exist, it would be necessary to invent him." - <a href="http://en.wikipedia.org/wiki/Voltaire#Legacy">Voltaire, 1768</a>
+<hr />
+"Speed is a metaphor for freedom."
+<hr />
+"Let's just say that if complete and utter chaos was lightning, then he'd be the sort to stand on a hilltop in a thunderstorm wearing wet copper armour and shouting 'All gods are bastards'." - The Color of Magic, Terry Pratchett
+<hr />
+"how do you win, zoran?"  "Opahn throh-tel, fahkink poosay"
+<hr />
+"i went and sat in a vette coupe yesterday <br />the sales manager gave me the hard sell on the automatic <br />i was all 'i do not know how to say this emphatically enough. If jesus came down from the heavens himself and told me to purchase a sportscar with an automatic, I would say no.'" <br />- descart3s, #motorcycles, EFNet, 8/8/06 
+<hr />
+pariah: "one that is despised or rejected" - m-w.com<hr />
+11:44 &lt;o_O``&gt; eye <br />11:44 &lt;ED-209&gt; stop saying eye <br />11:44 &lt;ED-209&gt; I fucking hate you<br /> - #motorcycles, EFNet, 8/3/06 
+<hr />
+dire: "1a: exciting horror 2: warning of disaster 3a: desperately urgent" - m-w.com
+<hr />
+untenable: "not able to be defended" - m-w.com
+<hr />
+"every time I race I see god" - tsuwa, #motorcycles, EFNet, 7/19/06
+<hr />
+"once youve ridden a bike in anger at the track, street riding is just lame" - Dezmo, #motorcycles, EFNet, 7/18/06
+<hr />
+"chojin, theres a lot more to life than chicks<br />none of it matters but theres a lot of it" - LeRoy, #motorcycles, EFNet, 7/18/06
+<hr />
+"I think the percentage of us that nearly get killed and hop right back on as soon as we are able tells us that the only thing those that got killed are upset about is that they aren't able to ride any more." - <a href="http://community.livejournal.com/motorcycles/1560415.html#t18130015">evan712</a>, 7/6/06<br /><br />"If there are no motorcycles in heaven I'm totally not going." - <a href="http://darxus.livejournal.com/153158.html#t645702">motomuffin</a>, 7/10/06
+<hr />
+"Anarchy is based on the observation that since few are fit to rule themselves, even fewer are fit to rule others." - Edward Abbey 
+<hr />
+"I was there once. The girl told me 'It's either me or that bike!' I remember the bike was a Kawasaki CSR 750 twin. Great bike. Damned if I can remember her name..." - <a href="http://community.livejournal.com/motorcycles/1497547.html#t17148619">bothrops</a>, 5/18/06
+<hr />
+salacious: "arousing or appealing to sexual desire or imagination" - m-w.com<hr />
+"I ... hold in contempt the wise man who has not lived and the scholar who will not share." - L. Ron Hubbard<hr />
+"A ship in a port is safe, but that's not what ships are built for." - Grace Murray Hopper<hr />
+"When you've been through Kiev, and met the kids who suffered from the Chernobyl disaster, the kids on the climbing wall in Kazakhstan, and the little kids in Mongolia, you know, suddenly multi-million dollar movies seem like a complete fucking farce." - Ewan McGregor, Long Way Round<hr />
+heinous: "hatefully or shockingly evil" - m-w.com<hr />
+nefarious: "flagrantly wicked or impious : EVIL" - <a href="http://m-w.com/dictionary/nefarious">m-w.com</a>
+<hr />
+conflagration: "FIRE; especially : a large disastrous fire" - m-w.com<hr />
+"Some days I don't even want to take my clothes off if no one's going to get hurt." - Calico
+<hr />
+"For every animal you don't eat, I'm going to eat three." - <a href="http://maddox.xmission.com/sponsor.html">Maddox</a>
+<hr />
+"Whom God wishes to destroy, he first makes mad." - <a href="http://en.wikiquote.org/wiki/Euripides">Euripides</a> (c.480 - 406 BC).<hr />
+"I love God.  He's so deliciously evil." - Stewie Griffin, Family Guy 2x02
+<hr />
+"I never saw a wild thing sorry for itself." - D. H. Lawrence (1885-1930) English Author<hr />
+visceral: "1 : felt in or as if in the viscera [(internal organs)] : DEEP &lt;visceral conviction&gt; 2 : not intellectual : INSTINCTIVE, UNREASONING &lt;visceral drives&gt;" - m-w.com
+<hr />
+raze: "to destroy to the ground" - m-w.com<hr />
+flay: "to strip off the skin or surface of" - m-w.com
+<hr />
+"'Wholly harmless types,' David Kepesh tells his therapist, 'probably lead rather constricted lives, don't you think?'"
+<hr />
+"I guess it's hard to get a fox ripping it's cute little ears off into the right number of pixels." - <a href="http://www.livejournal.com/~ricevermicelli/">ricevermicelli</a>
+<hr />
+"My personal opinion  is that while qmail is actually  good software, life is too  short to  have  to deal  with Dan  Bernstein's exentricities" - <a href="http://zgp.org/pipermail/linux-elitists/2002-April/004328.html">Marc Merlin's MTA roundup, 2002</a>
+<hr />
+"The two pornographic side pipes emit a thunderous, earth-shattering noise. Oh, and by the way, it does 218 mph." - <a href="http://www.automobilemag.com/reviews/coupes/0508_maybach_exelero/">review of the Maybach Exelero</a>
+<hr />
+"My parties are clothing optional, if you are offended by casual nudity I'm not entirely sure how you manage to get along with me...."
+<hr />
+ "I simply cannot understand how that tiny engine can produce great howling, stamping, spine-compressing waterfalls of horsepower" - <a href="http://www.tz350.net/cook_neilson.htm">Where Angels Fear to Tread, By Cook Neilson</a>
+<hr />
+"My house is in [escrow], a sellers dream. The buyer wanted everything down to the sheets and towels. In ten days I will be in a long awaited state--homeless riding the globe with all my possesions packed into my saddlebags and tailtrunk. I am far to excited to sleep and there are several weeks to launch." <a href="http://www.advrider.com/forums/showthread.php?t=41699">strikingviking</a>
+<hr />
+"geez.  I see people in movies and read about them in books, easily killing other people with a knife.  And it takes me like 5 minutes...."<br />("...to cut bread.")
+<hr />
+"Only after you get sucked in do they whip out the crazy."
+<hr />
+"Oooh, so Mother Nature needs a favor?! Well maybe she should have thought of that when she was besetting us with droughts and floods and poison monkeys! Nature started the fight for survival, and now she wants to quit because she's losing. Well I say, hard cheese." - Charles Montgomery Burns, The Simpsons, 8x21, 4/20/97
+<hr />
+"Debugging is at least twice as hard as writing the program in the first place. So if your code is as clever as you can possibly make it, then by definition you're not smart enough to debug it." - Brian Kernighan
+<hr />
+"I can't imagine anyone trusting me with their kids. There is, for one, the quite understandable fear that I may grab an infant's still-forming  skull because I find it squeeeshy." - <a href="http://www.livejournal.com/~tisana/">tisana</a>
+<hr />
+"Look, it's your life, but it'll really bring me down to watch them hose you out of a truck radiator." - Tom Biggs, nedod, 9/6/05
+<hr />
+"Still, 'do unto others as you would have them do unto you' is a rule I try to follow, especially when I'm in a pissy mood. It keeps the blood off the walls."
+<hr />
+"We need chainsaws that fit our pretty pink lifestyles, power tools that allow us to say 'I am a frail, fragile flower of femininity, and if you disagree with me, I'm going to break every bone in your body' without seeming uncooth."
+<hr />
+"You won't live long, I promise you, but you'll leave a trail of mangled corpses in your wake." - <a href="http://www.costik.com/Violence%20RPG1.pdf">Violence, the role playing game</a> 
+<hr />
+"it's what really cleans your clock, isn't it? What gets your blood moving? What elicits voyeuristic glee? The spray of blood, the intestines spilling spaghetti-like onto the ground, the coarse death-rattle of your foes." - <a href="http://www.costik.com/Violence%20RPG1.pdf">Violence, the role playing game</a>
+<hr />
+"Eh, there are better things to put in ice cream." "Yes. Like girls!" - a girl
+<hr />
+"I waved at everyone today - pedestrians, truckers...  I hugged a few people, too."  "I just finished chasing a few kittens with a chainsaw to even out the cosmic balance." - Richard Klein and Monkey Wrench, nedod, 8/18/05
+<hr />
+"Of course, on a bike, 'fault' is pretty much a moot point.  There's no satisfaction in being legally correct yet dead."
+<hr />
+"My entire apartment looks like it's been shat in by angry fairies. I am now so OFFICIALLY sick of sequins."
+<hr />
+"Deadlifts are food for the soul. Or something." - Paul Stagg
+<hr />
+"You haven't lived till you've tried brushing your teeth in the morning in the middle of two or three orgies."
+<hr />
+"I have to admit I loved riding home from work in the rain today. It's like playing in the rain at 50 MPH."
+<hr />
+"pain is a fundamental human experience" - <a href="http://www.stumptuous.com/cms/displayarticle.php?aid=115">Mistress Krista</a>
+<hr />
+"I recall the radicchio-laced gorgonzola I had in Padua like most people recall their first kiss" - <a href="http://www.stumptuous.com/rantnov2004.html">Mistress Krista</a>
+<hr />
+"You will need: a big heavy rock, something with a bit of a swing to it... perhaps Mars"<br /><br />"We will ignore atmospheric considerations. Compared with the extra energy needed to overcome air friction, it would be a relatively trivial step to completely burn away the Earth's atmosphere before beginning the process."<br /><br />"Currently it rotates completely on its axis once every 24 hours. You'll need to spin it fast enough to perform a complete rotation once every 84 minutes."<br /><br />"Just because we don't have the technology to destroy the planet doesn't mean no one else in the universe does. What you need to do is to point our most powerful radio-telescope transmitters at likely solar systems and taunt them."<br /><br />"Nor is this a guide for those wanting to annihilate everything from single-celled life upwards, render Earth uninhabitable or simply conquer it. These are trivial goals in comparison."<br /><br />- <a href="https://qntm.org/destroy">How to destroy the Earth</a> 
+<hr />
+"Life is either a daring adventure or it is nothing at all." - Helen Keller        
+<hr />
+lecherous: "given to or suggestive of... inordinate indulgence in sexual activity" - m-w.com
+<hr />
+"Take away the right to say 'fuck' and you take away the right to say 'fuck the government.'" - Lenny Bruce<hr />
+euphoria: "a feeling of well-being or elation" - m-w.com<hr />
+"I wish I'd have died in your arms the last time we were together,<br />So I wouldn't have to wake without you today."- Across Five Aprils<hr />
+flagrant: "conspicuously offensive &lt;flagrant errors&gt;; especially : so obviously inconsistent with what is right or proper as to appear to be a flouting of law or morality &lt;flagrant violations of human rights&gt;" - m-w.com
+<hr />
+"Since everything in life is but an experience perfect in being what it is, having nothing to do with good or bad, acceptance or rejection, one may well burst out in laughter." - Long Chen Pa<hr />
+"I believe I have no prejudices whatsoever. All I need to know is that a man is a member of the human race. That's bad enough for me." - Mark Twain<hr />
+"A man said to the Universe: 'Sir, I exist!' 'However,' replied the Universe, 'the fact has not created in me a sense of obligation.'" - Stephen Crane<hr />
+"There never has been an answer.  There never will be an answer.  That's the answer." - Gertrude Stein<hr />
+"When cryptography is outlawed, bayl bhgynjf jvyy unir cevinpl."<hr />
+"We are all animals my lady. Most are too afraid to see it." - Darkness, <a href="http://www.imdb.com/title/tt0089469/">Legend</a> director's cut
+<hr />
+"[Art.] 10. [Right of Revolution.] Government being instituted for the common benefit, protection, and security, of the whole community, and not for the private interest or emolument of any one man, family, or class of men; therefore, whenever the ends of government are perverted, and public liberty manifestly endangered, and all other means of redress are ineffectual, the people may, and of right ought to reform the old, or establish a new government. The doctrine of nonresistance against arbitrary power, and oppression, is absurd, slavish, and destructive of the good and happiness of mankind." - <a href="http://www.state.nh.us/constitution/billofrights.html">New Hampshire State Constitution, Bill of Rights, 1784</a>
+<hr />
+"The foundation of all mental illness is the unwillingness to experience legitimate suffering." - Carl Jung<hr />
+"Come to the dark side. We have cookies."
+<hr />
+"Be the Zen rider. Let the unenlightened go before you.<br /><br />Once the traffic has cleared, and the road has shed its stoplights and stopsigns and speed bumps like your lover shedding her clothes, that's when you shift it down one, whack the throttle, and welcome the Dark Side into your heart as you roar into triple-digit cold sweats." - <a href="http://www.livejournal.com/community/motorcycles/1161104.html">pi3832</a>
+<hr />
+"If you could be either god's worst enemy, or nothing, which would you choose?" - Fight Club
+<hr />
+"You say 'evil' like it's a bad thing."<hr />
+"It's not denial.  I'm just very selective about the reality I accept."  - Calvin
+<hr />
+epicenter: "the part of the earth's surface directly above the focus of an earthquake" - m-w.com
+<hr />
+"Fitness... does not mean eating only rice cakes and iceberg lettuce. Man, that shit ain't even food." - <a href="http://www.stumptuous.com/rantnov2004.html">Mistress Krista</a>
+<hr />
+"When in doubt, gas it.  It may not solve the problem, But it ends the suspense." - Steve Moonitz, DoD #2319, 1994
+<hr />
+"Do I look like someone who cares what God thinks?" - Pinhead, Hellraiser: Bloodline (1996)
+<hr />
+"I am allergic to civilization. It makes me wake up with headaches. I need to go back into the woods." - Darxus, 8/25/03
+<hr />
+catharsis: "An explosive release of hitherto dammed-up emotions that is sometimes believed to have therapeutic effects." - http://www.wwnorton.com/college/psych/gman5/glossary/C.htm<br /><br />"Watching aggressive media output, it is proposed, does not make viewers more aggressive; quite the contrary - since the vicarious aggression experienced through the media purges the viewer of aggression, the result of watching violence is less aggression." - http://www.cultsock.ndirect.co.uk/MUHome/cshtml/media/efterms.html
+<hr />
+rampage: "violently angry and destructive behavior" - <a href="http://www.cogsci.princeton.edu/cgi-bin/webwn2.1?s=rampage">princeton wordnet</a>
+<hr />
+"If you take away the sharp things, I'll end up lighting things on fire." - folzgold, juggling knives, 6/18/05
+<hr />
+"If Tyranny and Oppression come to this land, it will be in the guise of fighting a foreign enemy." - James Madison (4th president of the U.S.) 
+<hr />
+"The gods envy us, because we will die someday. It makes everything so much more beautiful" - The Illiad.<hr />
+prurient: "Etymology: ... prurire to itch, crave; akin to Latin pruna glowing coal, Sanskrit plosati he singes, and probably to Latin pruina hoarfrost -- more at FREEZE : marked by or arousing an immoderate or unwholesome interest or desire; especially : marked by, arousing, or appealing to unusual sexual desire"
+<hr />
+"You have the look of a man who accepts what he sees because he is expecting to wake up." - Morpheus, The Matrix
+<hr />
+"Nothing that grieves us can be called little: by the eternal laws of proportion a child's loss of a doll and a king's loss of a crown are events of the same size." - Mark Twain<hr />
+"When we remember we are all mad, the mysteries of life disappear and life stands explained." - Mark Twain<hr />
+<blockquote><div>I smile. <br />I make vroom vroom noises under my helmet. <br />I have for the past 7 years. <br /><br />when a rider passes me, I wave. <br /><br />Why, asks the non rider. <br />Why wave. do you know them?<br />Why ride? it's dangerous. <br />Why ride? it's cold outside. <br />          it's scary.<br />          it's loud. <br />          it's not visable in traffic<br /> it doesnt have air conditioning and slide out cup holders. <br />          it doesnt even have a roof. <br /><br />Well, I know something you don't know. And that guy I waved to, he knows it to. And you don't and you mayhaps never will. I can't tell you about it because it can't be expressed in words. It can not be reduced to "mere" poetry or song. It can only be experienced. <br /><br /><br />GOD I LOVE MY BIKE!  <br /><br />- <a href="http://www.livejournal.com/userinfo.bml?user=jbarros">James</a></div></blockquote> 
+<hr />
+"I refuse to tip toe through life only to arrive safely at death."
+<hr />
+"I'd rather be happy than right any day." - Slartiblartfast, hitchhiker's guide to the galaxy
+<hr />
+"Let's show the bastards we're ready to go down dancing." - <a href="http://imdb.com/title/tt0241303/">Chocolat</a>
+<hr />
+retribution: "3 : something given or exacted in recompense; especially: PUNISHMENT" - www.m-w.com
+<hr />
+rancor: "bitter deep-seated ill will" - m-w.com<hr />
+"...the distinctions we make between the high and the low are arbitrary and inconsequential." - Matthew Benedict, on the subject of Cow Wallpaper
+<hr />
+"One must still have chaos in oneself to be able to give birth to a dancing star." - Nietzsche
+<hr />
+"There is no use trying," said Alice; "one can't believe impossible things."  "I dare say you haven't had much practice," said the Queen.  "When I was your age, I always did it for half an hour a day.  Why, sometimes I've believed as many as six impossible things before breakfast." - Lewis Carroll
+<hr />
+rampant: "marked by a menacing wildness, extravagance, or absence of restraint" - www.m-w.com
+<hr />
+"times like these i feel like peeling my skin off." - <a href="http://www.livejournal.com/userinfo.bml?user=moxie77">moxie77</a>, 11/11/04
+<hr />
+"...the truth shall make you free." - Christ, John 8:32, King James Bible
+<hr />
+"Some things are true whether you believe in them or not." - Seth (City of Angels)<hr />
+"Life is but a walking shadow, a poor player that struts and frets his hour upon the stage--and then is heard no more. It is a tale told by an idiot, full of sound and fury, signifying nothing." - William Shakespeare (Macbeth)<hr />
+stoic: "not affected by or showing passion or feeling; especially : firmly restraining response to pain or distress" - www.m-w.com<hr />
+"hesitation = death"
+<hr />
+"if you get <a href="http://www.chaosreigns.com/car/1982bw.jpg">that car</a> in black, and you dress in all black, and you drive around at night, you are going to look like something out of a movie.  a very scary movie.  something dark, rainy, and containing a super villain. like batman without the stupid costume.  im not sure if you play the super villain or the hero yet." - lx`, december of 2000, when I was thinking about getting a '78 corvette
+<hr />
+"I suggest one house of legislators, another whose single duty is to repeal laws.  Let the legislators pass laws only with a two-thirds majority . . . while the repealers are able to cancel any law through a mere one-third minority." - the moon is a harsh mistress, page 301 
+<hr />
+"...it's entirely possible I will die....  But it'd be worse if I'd never lived." - brynn
+<hr />
+"Life's journey is not to arrive at the grave safely in a well-preserved body, but rather to skid in sideways, totally worn out, shouting '... holy sh!!t .... what a ride!'"
+<hr />
+"Pain makes you real." - Darxus, April 1999
+<hr />
+"Will I ever learn? I hope not, I'm having too much fun." - Brent "Minime" Avis, <a href="http://www.motorcycle.com/mo/mccompare/01open/01open.motml">motorcycle.com</a>
+<hr />
+"The most elementary and valuable statement in science, the beginning of wisdom is: 'I do not know'." - Data, <a href="http://www.startrek.com/startrek/view/library/episodes/TNG/detail/68362.html">ST:TNG 2x2</a> Where Silence Has Lease
+<hr />
+"Everything is sacred to us...so if you are sacred then you must treat yourself with respect, to do otherwise is to desecrate something that is holy." - <a href="http://www.startrek.com/startrek/view/library/episodes/TNG/detail/68650.html">ST:TNG 7x20 Journey's End</a><hr />
+"Vegetarian - that's an old Indian word meaning 'lousy hunter.'" - Andy Rooney<hr />
+"I'm not saying there should be a capital punishment for stupidity, but why don't we just take the safety labels off of everything and let the problem solve itself?"<hr />
+"After all who of us in our lives hasn't set fire to some great public building or other..." - Graham Chapman<hr />
+"I fear tomorrow." - <a href="http://www.livejournal.com/users/temalyen/120500.html">temalyen</a>, @ 2004-06-19 02:21:00<hr />
+eminently: "to a high degree" - www.m-w.com  (eminently quotable)<hr />
+coup de grace: "a death blow or shot administered to end the suffering of one mortally wounded [French - literally, a 'blow of mercy']" - http://coupdegrace.tv/<hr />
+"The only rules that really matter are these: what a man can do and what a man can't do." - Captain Jack Sparrow, Pirates of the Carribean<hr />
+vanquish: "to overcome in battle : subdue completely" - www.m-w.com<hr />
+"Sex can be very stressful for men. You judge us on technique, sensitivity, stamina...we're just happy if you're naked...half naked...one breast" - Coupling, Series 1, Episode 1<hr />
+"...not everyone believes what you do."  "My beliefs do not require them to." - Lock and Morpheus, The Matrix Reloaded<hr />
+"Each morning when I open my eyes I say to myself: I, not events, have the power to make me happy or unhappy today. I can choose which it shall be. Yesterday is dead, tomorrow hasn't arrived yet. I have just one day, today, and I'm going to be happy in it." - Groucho Marx
+<hr />
+defenestration: "a throwing of a person or thing out of a window" - www.m-w.com<hr />
+peril: "exposure to the risk of being injured, destroyed, or lost" - www.m-w.com
+<hr />
+lust: "usually intense or unbridled sexual desire" - www.m-w.com
+<hr />
+"Beware the leader who bangs the drums of war in order to whip the citizenry into a patriotic fervor, for patriotism is indeed a double-edged sword. It both emboldens the blood, just as it narrows the mind. And when the drums of war have reached a fever pitch and the blood boils with hate and the mind has closed, the leader will have no need in seizing the rights of the citizenry. Rather, the citizenry, infused with fear and blinded by patriotism, will offer up all of their rights unto the leader and gladly so. How do I know? For this is what I have done. And I am Caesar." - falsely attributed to Julius Caesar (<a href="http://www.snopes.com/quotes/caesar.htm">snopes</a>)<hr />
+onslaught: "an especially fierce attack" - www.m-w.com<hr />
+relentless: "showing or promising no abatement of severity, intensity, strength, or pace" - www.m-w.com<hr />
+"Light thinks it travels faster than anything but it is wrong. No matter how fast light travels it finds the darkness has always got there first, and is waiting for it." - Terry Pratchett, Reaper Man.<hr />
+feral: "of, relating to, or suggestive of a wild beast" - www.m-w.com<hr />
+"Our kitten has come by to sit on my lap and explain his plan for world domination." - ebeth
+<hr />
+sycophant: "a servile self-seeking flatterer" - www.m-w.com<hr />
+servile: "of or befitting a slave or a menial position" - www.m-w.com<hr />
+malevolent: "having, showing, or arising from intense often vicious ill will, spite, or hatred" - www.m-w.com
+<hr />
+nadir: "the lowest point" - www.m-w.com<hr />
+conspire: "to act in harmony toward a common end" - www.m-w.com
+<hr />
+irrepressible: "impossible to repress, restrain, or control" - www.m-w.com
+<hr />
+obstreperous: "stubbornly resistant to control" - www.m-w.com
+<hr />
+"Torture... That's a good idea." - Ray, Due South, I Coulda Been A Defendant
+<hr />
+amok: "possessed with or motivated by a murderous or violently uncontrollable frenzy" - www.m-w.com
+<hr />
+"Get your head out of the gutter, you're blocking my light."
+<hr />
+"Blood alone moves the wheels of history."  - Mussolini
+<hr />
+"I somehow do not believe you.  Perhaps it is the large bloody serrated knife." - <a href="http://www.livejournal.com/users/moominmolly/167810.html?thread=938370#t938370">moominmolly</a>
+<hr />
+"Revolution is only a means by which one group of idiots displaces the predominant group of idiots." - Unknown
+<hr />
+"Guess who has no nipples!!! I HAVE NO NIPPLES!" - <a href="http://www.livejournal.com/community/body_mod_pix/399077.html">bdymdifier</a>
+<hr />
+"An army of sheep led by a lion is stronger than an army of lions led by a sheep." - old Arab proverb
+<hr />
+ostentatious: "marked by or fond of conspicuous or vainglorious and sometimes pretentious display" - www.m-w.com
+<hr />
+malice: "1 : desire to cause pain, injury, or distress to another" - www.m-w.com
+<hr />
+"Sufficiently advanced stupidity is indestinguishable from malice."
+<hr />
+"I give hope to men." "I keep none for myself."  - Elrond and Aragorn, lotr:rotk movie
+<hr />
+"taking over the world is expensive." - <a href="http://www.n-tropy.com/">N-Tropy</a>, Wed Dec  3 12:07 EST 2003
+<hr />
+"I have no idea how people function without near-constant internal chaos.  I'd loose my mind." - A Heartbreaking Work of Staggering Genius by Dave Eggers 
+<hr />
+"God made everything out of nothing, but the nothingness shows through." - Paul Valery
+<hr />
+"We must be the change we wish to see in the world" - Mahatma Gandhi
+<hr />
+"The eye sees only what the mind is prepared to comprehend." - Henri L. Bergson
+<hr />
+"I think when I grow up I'd like to be an elf. Or a wolf. Or maybe a dragon. I don't say 'actor' or 'writer' or 'poet' or 'singer', because I already am those things. Architect, computer tech, designer... Those aren't things I could be, they're just skills I could have. Being is another matter entirely, not just what you can do. What I'll be, well there's no telling. Too much magic in the world to really say. So perhaps I'll be a chimera, an elephant, an bipedal cat, or a nightengale. And I think I'll be heroic and amazingly beautiful and majestic, too. That's my plan anyway." - <a href="http://www.larp.com/songbird/">Michelle</a> <!-- http://www.livejournal.com/users/eclecticgypsy/147554.html -->
+<hr />
+"Gunfire is the sound of freedom" - Rock Gallotti, Armorer for Matrix: Reloaded
+<hr />
+specious: 2 : "having deceptive attraction or allure" 3 : "having a false look of truth or genuineness" - www.m-w.com
+<hr />
+"Naturally, the common people don't want war....  But, after all, it is the leaders of the country who determine the policy and it is always a simple matter to drag the people along....  That is easy. All you have to do is tell them they are being attacked and denounce the pacifists for lack of patriotism and exposing the country to danger." - Hermann Goering, Nazi Reichsmarshall and Luftwaffe-Chief at the Nuremberg trials, 4/18/1946  (<a href="http://www.snopes.com/quotes/goering.htm">snopes</a>)
+<hr />
+callipygian: "having shapely buttocks" - www.m-w.com
+<hr />
+"Life may not be the party we were hoping for, but as long as we're here, we might as well dance." - anonymous
+<hr />
+cynical: "contemptuously distrustful of human nature and motives" - www.m-w.com
+<hr />
+pantheism: "the belief that god is the universe and the universe is god -- or, more generally, that the universe is divine. It is most often explained as having the feeling that existence has a divine or awe-inspiring aspect." - <a href="http://www.wikipedia.org/wiki/Neopaganism">wikipedia:neopaganism</a>
+<hr />
+nihilism: belief in nothing
+<hr />
+"The thought of suicide is a great source of comfort: with it a calm passage is to be made across many a bad night." - Nietzche
+<hr />
+"I hope that I can give someone else a reason to live through today so that he or she will give me a reason to live through tomorrow."
+<hr />
+unrequited: "not requited : not reciprocated or returned in kind" - www.m-w.com
+<hr />
+"To announce that there must be no criticism of the president, or that we are to stand by the president right or wrong, is not only unpatriotic and servile, but is morally treasonable to the American public." - Theodore Roosevelt, 1912
+<hr />
+pernicious: "1 : highly injurious or destructive : DEADLY" - www.m-w.com, pernicious: deadly; destructive; exceedingly harmful. - http://www.dictionary.com/wordoftheday/archive/2009/05/18.html
+<hr />
+poetry: "2 : writing that formulates a concentrated imaginative awareness of experience in language chosen and arranged to create a specific emotional response through meaning, sound, and rhythm" - www.m-w.com
+<hr />
+synchronicity: "2 : the coincidental occurrence of events and especially psychic events (as similar thoughts in widely separated persons or a mental image of an unexpected event before it happens) that seem related but are not explained by conventional mechanisms of causality -- used especially in the psychology of C. G. Jung" - www.m-w.com
+<hr />
+zealot: "one absorbed in devotion to anything" - <a href="http://www.everything2.com/index.pl?node_id=363105">Webster 1913</a>
+<hr />
+"For gasoline vapor, the explosive range is from 1.3 to 6.0% vapor to air...useful against soft targets such as...armored vehicles...and bunkers." - <a href="http://www.fas.org/man/dod-101/sys/dumb/fae.htm">Federation of American Scientists</a> 
+<hr />
+myopia: "2 : a lack of foresight or discernment : a narrow view of something"
+<hr />
+anathema: "someone or something intensely disliked or loathed" - www.m-w.com
+<hr />
+masticate: "to soften or reduce to pulp by crushing or kneading" - www.m-w.com 
+<hr />
+"If you [didn't] lose consciousness at the end, you could've [pushed harder]." - no fear (edited)
+<hr />
+"Anyone who says sunshine brings happiness has never danced in the rain." - Source unknown 
+<hr />
+"I don't want people who want to dance, I want people who have to dance." - George Balanchine
+<hr />
+sardonic: "disdainfully or skeptically humorous : derisively mocking" - www.m-w.com
+<hr />
+<blockquote><div>happy is he who hath the power<br />to gather wisdom from a flower</div></blockquote>
+<hr />
+"As always, we do not recommend the use of beta software on mission critical or production systems. In fact, we may laugh at those who try." - <a href="https://lwn.net/Articles/18740/">official redhat beta release phoebe announcement</a>, December 2002
+<hr />
+"It's a dangerous business, Frodo, going out your front door.  You step into the Road, and if you don't keep your feet, there is no knowing where you might be swept off to." - Bilbo Baggins
+<hr />
+"pain is weakness leaving the body" - no fear
+<hr />
+"what is right is not always popular.  what is popular is not always right." - no fear
+<hr />
+"it's not how good you are, it's how bad you want it" - no fear
+<hr />
+"he who dies with the most toys... still dies" - no fear
+<hr />
+<blockquote><div> what makes a man is it the power in his hands,<br /> is it his quest for glory?<br /> give it all ya got to fight to the top,<br /> so we can know your story<br /> ...<br /> what makes a man is it the woman in his arms,<br /> just 'cuz she has big titties?<br /> or is it the way he fights everyday? no,<br /> it's probably the titties<br /> ...  </div></blockquote> - orgazmo
+<hr />
+<blockquote><div> i'm not scared<br /> i'm not afraid<br /> i'm tough<br /> i'm an animal<br /> and I will eat you if I have to<br /> </div></blockquote> - no fear<br /><br />
+<hr />
+"All political power is inherent in the people and all free governments are founded on their authority and instituted for their peace, safety, and happiness. For the advancement of these ends, they have at all times an inalienable and indefeasible right to alter, reform, or abolish their government as they may think proper." - <a href="http://sites.state.pa.us/PA_Constitution.html">Constitution of the Commonwealth of Pennsylvania</a>, Article 1:  Delcaration of Rights, Section 2: Political Powers
+<hr />
+"...the best that you can hope for is to die in your sleep." <br />- The Gambler, by Kenny Rogers
+<hr />
+kneepit: "The foldy part behind the front of your knee." - <a href="http://www.cavegirl.org/">pinkee</a>
+<hr />
+"I just might hang myself by my underpants!  I can get underpants!" - Jake (tiger), <i>Dr. Dolittle</i>
+<hr />
+flog: "to beat with or as if with a rod or whip" - www.m-w.com
+<hr />
+<table border='0'> <tr><td>Darxus:</td><td>[Mumbly gibberish that sounds like a question]</td></tr><tr><td>pinkee:</td><td>what?</td></tr><tr><td>Darxus:</td><td>[yelled gibberish that sounds like an urgent agitated question]</td></tr><tr><td>pinkee:</td><td>yes</td></tr><tr><td>Darxus:</td><td>(loudly) Good! That fucking grasshopper is. I am going to catch and eat it if it doesn't stop hopping on my back. (while laying on his back)</td></tr><tr><td>pinkee:</td><td>are you awake?</td></tr><tr><td>Darxus:</td><td>no! Let me sleep!</td></tr><tr><td>pinkee:</td><td>&lt;giggle&gt;</td></tr></table><br />Next time you hear somebody talking in their sleep, join in the conversation, it's fun.
+<hr />
+infidel: a non-believer
+<hr />
+"The ultimate measure of a man is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy." -Martin Luther King Jr.  
+<hr />
+"I don't want to die... just yet... not while there's... women." - <a href="http://www.jmrart.com/">J. Matthew Root</a>, 8/23/02
+<hr />
+"I accept chaos.  I am not sure whether it accepts me.  I know some people are terrified of the bomb.  But then some people are terrified to be seen carrying a modern screen magazine.  Experience teaches us that silence terrifies people the most." - Bob Dylan 
+<hr />
+"If more people gave up, there'd be fewer wars." - Snowbell, Stuart Little 2
+<hr />
+conceit: "excessive appreciation of one's own worth or virtue" - <a href="http://www.m-w.com/cgi-bin/dictionary?conceit">Webster's</a>
+<hr />
+cower: to shrink away in fear
+<hr />
+"Reality will sneak up from behind you and slit your f**king throat -- silently, without hesitation, without mercy." - <a href="http://www.snipercountry.com/Articles/FHG07_OneMoreThing.asp">From the High Ground</a>, by Condor
+<hr />
+"The two most common elements in the universe are hydrogen and stupidity." - Harlan Ellison 
+<hr />
+"You gotta grab life by the lips and YANK as hard as you can." - Wierd Al Yankovic, UHF
+<hr />
+"Using cross-sectional time-series data for U.S. counties from 1977 to 1992, we find that allowing citizens to carry concealed weapons deters violent crimes, without increasing accidental deaths. If those states without right-to-carry concealed gun provisions had adopted them in 1992, county- and state-level data indicate that approximately 1,500 murders would have been avoided yearly. Similarly, we predict that rapes would have declined by over 4,000, robbery by over 11,000, and aggravated assaults by over 60,000." - Crime, Deterrence, and Right-to-Carry Concealed Handguns By John R. Lott, Jr., and David B. Mustard 
+<hr />
+"No man who refuses to bear arms in defense of his nation can give a sound reason why he should be allowed to live in a free country"  T.  Roosevelt
+<hr />
+"Before man was, war waited for him. The ultimate trade awaiting the ultimate practitioner." - Cormac McCarthy
+<hr />
+<a id="banana"></a>(Ernie is standing in the apartment humming to himself.  He's holding a banana in his ear.  Bert approaches.)<br /> Bert:  Hey Ernie?  Hey, uh, Ern?<br /> Ernie:  (Notices Bert) Oh!  Hi Bert!<br /> Bert:  Uh, yeah.  Hey Ernie, uh, you know that you have a banana in your ear?<br /> Ernie:  (Loudly) What was that, Bert?<br /> Bert:  I said, you have a banana in your ear, Ernie.  Uh, bananas are food.  They are to eat, not to put in your ear, Ernie.<br /> Ernie:  (Loudly) Whatdya say, Bert?<br /> Bert:  (Yelling) WILL YOU JUST TAKE THAT BANANA OUTTA YOUR EAR!<br /> Ernie:  (Yelling back) I'M SORRY -- YOU'LL HAVE TO SPEAK A LITTLE LOUDER, BERT!  I CAN'T HEAR YOU!  I HAVE A BANANA IN MY EAR!  
+<hr />
+"The right of the citizens to bear arms in defense of themselves and the State shall not be questioned." - <a href="http://sites.state.pa.us/PA_Constitution.html">Constitution of the Commonwealth of Pennsylvania</a>, Article 1:  Delcaration of Rights, Section 21:  Right to Bear Arms
+<hr />
+"I can see inside you, the sickness is rising, don't try to deny what you feel" - down with the sickness, disturbed
+<hr />
+"Terror will defeat reason." - Holnist law 4 of 8, The Postman
+<hr />
+"It is fortunate for those in power that people do not think." - Adolf Hitler 
+<hr />
+"The question isn't 'who is going to let me'; it's 'who is going to stop me'." - Ayn Rand, The Fountainhead 
+<hr />
+"Come on, you sons of bitches! Do you want to live forever?" GySgt. Daniel Daly, USMC
+<hr />
+"Sometimes it is entirely appropriate to kill a fly with a sledge hammer." - Major I. L.  Holdridge, USMC
+<hr />
+"As I walk through the valley of death I fear no one, for I am the meanest mother fucker in the valley!" - General George S. Patton
+<hr />
+<a id="war_ugly"></a>"War is an ugly thing, but not the ugliest of things: the decayed and degraded state of moral and patriotic feeling which thinks nothing worth a war, is worse.  When a people are used as mere human instruments for firing cannon or thrusting bayonets, in the service and for the selfish purposes of a master, such war degrades a people.  A war to protect other human beings against tyrannical injustice - a war to give victory to their own ideas of right and good, and which is their own war, carried on for an honest purpose by their free choice - is often the means of their regeneration.  A man who has nothing which he is willing to fight for, nothing which he cares more about than he does about his personal safety, is a miserable creature who has no chance of being free, unless made and kept so by the exertions of better men than himself.  As long as justice and injustice have not terminated their ever-renewing fight for ascendancy in the affairs of mankind, human beings must be willing, when need is, to do battle for the one against the other." - John Stuart Mill (1806-1873), "The Contest in America." Harper's New Monthly Magazine, Volume 24, Issue 143, page 683-684.  Harper &amp; Bros., New York, April 1862.
+<hr />
+"The brain doesn't have anything to do with relationships, stupid." - pinkee (my girlfriend at the time)
+<hr />
+"If one man in ten was having the sex that I'm having, there would be no war." - Go (1999)
+<hr />
+laminar flow: "When fluid flows smoothly without vortices or other turbulence" - <a href="http://www.exploratorium.edu/xref/phenomena/laminar_flow.html">Phenomena Cross Reference</a>
+<hr />
+"lament: To express sorrow or regret." - <a href="http://www.dictionary.com/cgi-bin/dict.pl?term=lament&amp;db=%2A">dictionary.com</a>
+<hr />
+"malaise: a vague sense of mental or moral ill-being" - <a href="http://www.m-w.com/cgi-bin/dictionary?malaise">Webster's</a><br />"The sort of general malaise that only the genius possess and the insane lament." - Dr. Evil, Austin Powers
+<hr />
+"Live your life that the fear of death can never enter your heart...."<br />"Prepare a noble death song for the day when you go over the great divide...."<br />"Sing your death song and die like a hero going home."<br />- Tecumseh, Shawnee
+<hr />
+"It is a good day to die."
+<hr />
+"God sent me to piss the world off" - Eminem
+<hr />
+"If you didn't come to party than you should go home."
+<hr />
+"If you haven't danced yet, what the fuck did you come for ?"
+<hr />
+<blockquote><div>If you ain't tryin to live, you with the wrong crowd<br /> And if you feelin brave then better sport that thong proud<br /> And if you finally breathin, then sing this song loud<br /> I'm glad I got you wet I know you had a long drought<br /> Don't worry about the law - they can't arrest us all<br /> I had to crank couldn'ta done nothin less for y'all<br /> Forget your inhibitions; I wanna see you whylin<br /> And if Bubba dies tonight - know he was smilin </div></blockquote> - Bubba Sparxxx 
+<hr />
+"Thinking men cannot be ruled."  - Ayn Rand
+<hr />
+"Let's break something." - mct, Mon Aug 20 02:51 EDT 2001
+<hr />
+"Always place your clothes and weapons where you can find them in the dark" - Lazarus Long in Time Enough for Love by Robert A. Heinlein
+<hr />
+Homer: Yvan Eht Nioj! You've gotta love that crazy chorus!<br />Lisa: What does it mean?<br />Homer: Eh, it doesn't mean anything. Like 'rama lama ding dong', and 'give peace a chance'.<br />(<a href="ftp://ftp.smoovenet.com/pub/lardlad/sounds/season12/band14.mp3">mp3</a>)
+<hr />
+"Gun Control: The proposition that a woman found dead in an alley, raped and strangled with her own panty hose, is more acceptable than allowing that same woman to defend herself with a firearm." 
+<hr />
+"A strict observance of the written laws is doubtless one of the high virtues of a good citizen, but it is not the highest. The laws of necessity, of self-preservation, of saving our country when in danger, are of higher obligation." - Thomas Jefferson (1743-1826), U.S. president. Letter, 20 Sept. 1810.
+<hr />
+"Try to relax and enjoy the crisis."  - Ashleigh Brilliant 
+<hr />
+"Everytime I reboot I get a different fucking error." - Joel<br /> "Keep rebooting, maybe you'll run out." - Kevin 
+<hr />
+"As long as war is regarded as wicked it will always have its fascinations. When it is looked upon as vulgar, it will cease to be popular." - Oscar Wilde (1854-1900) 
+<hr />
+<a name="democracy" />"A democracy cannot exist as a permanent form of government. It can only exist until the voters discover they can vote themselves largesse from the public treasury. From that moment on, the majority always votes for the candidates promising them the most benefits from the public treasury, with the result that a democracy always collapses over a loose fiscal responsibility, always followed by a dictatorship. The average of the world's great civilizations before they decline has been 200 years.  These nations have progressed in this sequence: From bondage to spiritual faith; from spiritual faith to great courage; from courage to liberty; from liberty to abundance; from abundance to selfishness; from selfishness to complacency; from complacency to apathy; from apathy to dependency; from dependency back again to bondage." - Unknown, <i>not</i> Alexander Tyler, (in his 1770 book, Cycle of Democracy )  <a href="http://www.snopes.com/politics/quotes/tyler.asp">snopes</a>
+<hr />
+requiem: music in honor of the dead
+<hr />
+superfluous: "exceeding what is sufficient or necessary" - <a href="http://www.m-w.com/cgi-bin/dictionary?superfluous">Webster's</a>
+<hr />
+"Some mornings it's just not worth gnawing through the leather straps."
+<hr />
+"Sometimes you're the bug,<br />sometimes you're the windshield."
+<hr />
+nipular: Having to do with nipples.  <br />First heard used by <a href="mailto:mad_chef@excite.com">James Brockman</a>,2001-07-27 11:08:49 PST, on <a href="news:rec.arts.bodyart">rec.arts.bodyart</a>.
+<hr />
+"Like a moth to a flame, Burned by the fire" - Janet Jackson, That's The Way Love Goes (1993)
+<hr />
+aberrant: having, or based on, non-standard ethics
+<hr />
+bloodlust: an overwhelming desire to draw blood
+<hr />
+"If you're gonna duct tape me, can I have another vodka tonic?" - <a href="http://www.clockbot.net">Mike</a>, 7/14/2001
+<hr />
+"You better wake up. The world you live in is a sugar-coated topping. There is another world - beneath it, the real world. And if you want to survive it, you better learn to pull the trigger." - Blade 
+<hr />
+entendre: "a word or expression capable of two interpretations with one usually risque" - <a href="http://www.m-w.com/cgi-bin/dictionary?entendre">Webster's</a> <br /><br />&lt;pinkee&gt; cuz right now all my system is doing is pissing me off <br />* pinkee spanks her box <br />&lt;pinkee&gt; whoops missed that double entrende <br />* pinkee blushes
+<hr />
+"Stop trying and just be."
+<hr />
+vacillate: Extreme emotional cycling.
+<hr />
+"I am a Goth...regardless of and contrary to, what other people think or say. I am more than a Glam Goth despite my bizarre obsession with black. I am more than a Glam Goth despite my countless black articles of clothing and black accesories. I am not a Goth just because I love Edgar Allan Poe. I am not a Goth just because I have taken a liking to Goth music. I am not a Goth just because I wear black lipstick. I am a Goth despite the fact that I like Heather Nova and No Doubt. I am a Goth despite my 69,000 dirty jokes and permanent smile. I believe I am a Goth because my pain and rage are unfeigned and eternal." - <a href="http://members.spree.com/violet/Goth.htm">violet@i.am</a>
+<hr />
+Nephilim: Fallen Angels
+<hr />
+"The tree of liberty must be refreshed from time to time with the blood of patriots and tyrants." - <a href="http://oll.libertyfund.org/?option=com_staticxt&amp;staticfile=show.php%3Ftitle=802&amp;chapter=86685&amp;layout=html&amp;Itemid=27#a_1991608">Thomas Jefferson, November 13th, 1787, letter to William Smith</a> - worth reading
+<hr />
+iconoclast: A destroyer of icons / religious symbols, "1: one who destroys religious images or opposes their veneration 2: one who attacks settled beliefs or institutions" - <a href="http://www.m-w.com/cgi-bin/dictionary?iconoclast">Webster's</a>
+<hr />
+sublimation: The process which dry ice goes through when it changes state from solid directly to gas, instead of first melting into a liquid.
+<hr />
+misanthropy: "a hatred or distrust of mankind" - <a href="http://www.m-w.com/cgi-bin/dictionary?misanthropy">Webster's</a>
+<hr />
+"How will it end?"  "In fire." -Kosh, <a href="http://www.babylon5.com">Babylon 5</a>
+<hr />
+"It is better to die on your feet than to live on your knees." - Emiliano Zapata, Mexican Revolution Leader
+<hr />
+"With a prayer in my mouth I dashed unarmed through a line of soldiers, my clothes were cut to pieces, my horse was wounded but I was not hurt, as I reached the door of my lodge my wife handed me my rifle saying<br /><br />'here's your gun...fight'"<br /><br />- Joseph, Nez Perce
+<hr />
+Blanket party: "consists of a sleeping soldier, a blanket to hold him down, a towel to keep him quiet, and a room full of angry recruits to physically punish the offending soldier." 
+<hr />
+"May you live in interesting times" - ancient Chinese curse
+<hr />
+"Whatever you do will be insignificant, but it is very important that you do it." - Mahatma Gandhi
+<hr />
+&lt;enbloc&gt; it's a crying shame here - under the clinton administration they basically turned freon into a controlled substance no different than heroin<br /> &lt;enbloc&gt; I wonder sometimes if it won't be toilets and freon that finally motivate the people to start shooting<br /> &lt;Balder&gt; toilets?<br /> &lt;enbloc&gt; tank capacity limits. basically you gotta flush twice<br /> &lt;Balder&gt; you've got regulations on toilet tank capacity?<br /> * enbloc sobs. yes. in the land of the supposedly free<br /> * Balder will rethink his emigration ideas more than once after this.
+<hr />
+"Making Snow Crash into a reality feels like a sort of moral imperative to a lot of programmers...." -  Carmack, in a <a href="http://slashdot.org/interviews/99/10/15/1012230.shtml">slashdot interview</a> posted 10/15/99
+<hr />
+"I'm not crazy, I just don't give a fuck." - Willy (<a href="http://www.imdb.com/title/tt0087799">Night of the Comet</a>)
+<hr />
+scrimshaw: "any of various carved or engraved articles made orig. by American whalers usually from baleen or whale ivory" - <a href="http://www.m-w.com/cgi-bin/dictionary?hdwd=scrimshaw&amp;listword=scrimshaw&amp;book=Dictionary&amp;jump=scrimshaw%5B2%2Cnoun%5D&amp;list=scrimshaw%5B1%2Cverb%5D%3D961024%3Bscrimshaw%5B2%2Cnoun%5D%3D961051">Webster's</a>
+<hr />
+"Those who do not understand UNIX are condemned to reinvent it, poorly." - Henry Spencer
+<hr />
+"The preferred method of entering a building is to use a tank main gun round, direct fire artillery round, or TOW, Dragon, or Hellfire missile to clear the first room." - The Ranger Handbook, U.S. Army, 1992 
+<hr />
+"Breathe in...then squeeze the trigger on the exhale." - TheFez 
+<hr />
+"You eventually become who you pretend to be." - Xena
+<hr />
+"If you run [away].... you'll just die tired." - a sniper
+<hr />
+cruciform: "forming or arranged in a cross" - <a href="http://www.m-w.com/cgi-bin/dictionary?cruciform">Webster's</a> - as in a cruciform bayonet
+<hr />
+"No tresspassing.  Violators will be shot.  Survivors will be shot again."
+<hr />
+wanderlust: "strong longing for or impulse toward wandering" - <a href="http://www.m-w.com/cgi-bin/dictionary?wanderlust">Webster's</a>
+<hr />
+immolate: to sacrifice by fire
+<hr />
+<blockquote><div>All that is gold does not glitter,<br /> <b>Not all those who wander are lost</b>;<br /> The old that is strong does not wither,<br /> Deep roots are not reached by the frost.<br /> From the ashes a fire shall be woken,<br /> A light from the shadows shall spring;<br /> Renewed shall be blade that was broken,<br /> The crownless again shall be king.</div></blockquote> - Tolkien 
+<hr />
+"How did we get here, and why didn't I notice ?" - mct
+<hr />
+Civilization is no fun.
+<hr />
+"Blessed are they who, in the face of death, think only about the front sight."
+<hr />
+"Am I a man who dreamed I was a butterfly, or am I a butterfly who is dreaming I am a man?" - Chuang Tsu, ~350 BC
+<hr />
+"If you are not paranoid...  you may not be paying attention." - jimh@creative-net.net, Fri, 26 Jan 2001 11:14:44 -0600, IDPA@yahoogroups.com
+<hr />
+"Every man, woman and child on the face of this earth is at the mercy of chaos."  - a <a href="http://www.geocities.com/TelevisionCity/3101/msmart.html">maxwell smart</a> movie
+<hr />
+"I feel like some 2 year old kid playing some fiendish computer game against god."  - pat labor
+<hr />
+"Tell you what I do like though. A killer. A dyed in the wool killer.  Cold-blooded, clean, methodical and thorough." - Jean-Baptiste Emanuel Zorg, The Fifth Element
+<hr />
+"If I'm chasing after some guy, and even if in the first second I close half the distance between me and him, then half that distance in the second second, then half that distance in the third second, I'm always going to be half some distance behind him, and I'll never catch him.<br />Which is why we have guns." - Zeno's Paradox, according to Maxim magzine
+<hr />
+"The time has arrived for me to release you from the intergalactic terror that is those pants." - <a href="http://www.sho.com/starship_regulars/">starship regulars</a>
+<hr />
+"Do one thing every day that makes your mother ashamed." - Denis Leary
+<hr />
+"I would <i>never</i> kill somebody.  Not unless they pissed me off." - Cartman
+<hr />
+"The shrew is almost completely blind, and must rely on it's barely adequet sence of <del>panic</del> smell...." -<a href="http://www.pox.co.uk">pox</a> (<a href="http://www.newgrounds.com/portal/view.php?id=699">at newgrounds</a>)
+<hr />
+"The most alive is the wildest." - Thoreau
+<hr />
+"Evil will always triumph, because Good is Dumb" - Dark Helmet, Spaceballs
+<hr />
+"I am, by the way, a disciple of St. John Moses Browning and a fanatic believer in the principle that the 1911 is the one true gun." - <a href="mailto:tmgoethe@gte.net">Thomas M. Goethe</a>
+<hr />
+The only thing that will keep a government honest is an armed populace.
+<hr />
+"My name is Linus, and I am your God" - Linus Torvalds, Linux Expo, Durham NC, 1998
+<hr />
+"force, my friends, is violence; the supreme authority from which all other authority is derived. naked force has resolved more issues throughout history than any other factor. the popular opinion which says 'violence never solves anything' is wishful thinking at its worst. people who forget that always pay." - said by michael ironside in starship troopers, line written by r.a. heinlein and e. neumeier, sampled by velvet acid christ in the song decypher on the album fun with knives.
+<hr />
+"A well regulated militia, being necessary to the security of a free state, the right of the people to keep and bear arms, shall not be infringed." - The Second Ammendment to the Constitution of the United States of America
+<hr />
+"Militias, when properly formed, are in fact the people themselves and include all men capable of bearing arms. [...] To preserve liberty it is essential that the whole body of the people always possess arms and be taught alike, especially when young, how to use them." - Senator Richard Henry Lee, 1788, on "militia" in the 2nd Amendment
+<hr />
+"I smiled. She smiled. She was beautiful. Fire good."
+<hr />
+"Who the hell are you?"<br />"I'm god, build an ark."
+<hr />
+"Build a man a fire, and he will be warm for a day.  Set a man on fire, and he will be warm for the rest of his life."
+<hr />
+"Let's do away with safety and improve our species. Take up smoking. Jaywalk. Play with blasting caps. Swim right after a big meal. Stick something small in your ear. Take your choice of dangerous activity and do it with gusto. Future generations will thank you." - Lawrence Bullis, in the Arizona Republic
+<hr />
+"I wish I was a neutron bomb, for once I could go off" - Pearl Jam, Wishlist
+<hr />
+"Abe Lincoln may have freed all men, but Sam <a href="http://www.colt.com">Colt</a> made them equal."
+<hr />
+"You have to consider the possibility that god does not like you" - fight club
+<hr />
+"I loathe people who keep dogs. They are cowards who haven't got the guts to bite people themselves." - August Strindberg<hr />
+"There is no problem which cannot be solved with a sufficient amount of explosives."
+<hr />
+"If you can read this, you're in range."
+<hr />
+"A mind is a terrible thing to taste."
+<hr />
+"Everyone needs to believe in something.  I believe I'll have another <a href="http://www.everything2.com/index.pl?node=beer">beer</a>."
+<hr />
+Of all the things I've lost, it's my mind I'm happiest to be rid of.
+<hr />
+<blockquote><div>The tension<br />is getting hotter<br />I want to hold her<br />head under water</div></blockquote>
+<hr />
+"<b>Every normal man must be tempted at times to spit upon his hands, hoist the black flag, and begin slitting throats.</b>" - Henry Louis Mencken (1880-1956)
+<hr />
+"Consciousness: That annoying time between naps." <br />"Hmm, I thought that annoying time between <a href="http://www.everything2.com/index.pl?node=network+access+point">NAP</a>s was called latency :)" - Avi Freedman
+<hr />
+"<a href="http://www.everything2.com/index.pl?node=live+free+or+die!">Live Free or Die</a>." - <a href="http://www.virtualvermont.com/history/jstark.html">John Stark</a>, July 31, 1809
+<hr />
+"Freedom's just another word for nothing left to lose." - Janis Joplin
+<hr />
+"When in doubt, use brute force." - Ken Thompson (author of <a href="http://www.tuxedo.org/~esr/jargon/html/entry/Unix.html">unix</a>)
+<hr />
+"there is no pain like that of desire<br />is there no difference between women and fire?" <br />- <a href="http://www.roadrun.com/artists/TypeONegative">Type O Negative</a>, Prelude to Agony
+<hr />
+"Life is tough, then you die." - <a href="http://www.galaxycorp.com/wolverine">Wolverine</a>
+<hr />
+"and put one of those fingers on each hand up<br />and be proud to be outta your mind and outta control" -Eminem
+<hr />
+"Health is merely the slowest possible rate at which one can die."
+<hr />
+"...to fully <a href="http://www.everything2.com/index.pl?node=computer+security">secure</a> a system, you really have to grind it into dust, scatter the pieces to the wind, and hope that <a href="http://www.everything2.com/index.pl?node=entropy">Entropy</a> does [its] part. Since you can't do this, you make tradeoffs." -<a href="http://www.linuxsecurity.com/feature_stories/feature_story-59.html">Jay Beale</a>
+<hr />
+"Prejudice is wrong; you should hate everyone the same."
+<hr />
+"I don't CARE if you're on fire! Stop SCREAMING like that!"
+<hr />
+"I'll give you his number, but I'll be damend if I'm reaching all the way accross the desk &amp; picking up that phone" - <a href="mailto:nick@netaxs.com">nick@netaxs.com</a>
+<hr />
+"Face to face with a creature that big and you POKE IT IN THE EYE?!?" - <a href="http://www.sluggy.com/w/000221.html">sluggy</a>
+<hr />
+&lt;mazeone:#e&gt; man, my wife RULES<br />&lt;Chutt:#e&gt; mazeone, lemme guess, she's under your desk right now?<br />&lt;UnLogikal:#e&gt; mazeone: she give you head while you <a href="http://www.everything2.com/index.pl?node=hax0r">hax0r</a>?<br />&lt;UnLogikal:#e&gt; lol<br />&lt;mazeone:#e&gt; no, better<br />&lt;mazeone:#e&gt; she made me dinner and broght it down to me
+<hr />
+"Women are like cats, if they were bigger, they'd eat us."
+<hr />
+"Women do not like timid men. Cats do not like prudent rats." - John Webb 
+<hr />
+<a href="http://www.stallman.org/">Richard M. Stallman</a>, <a href="http://www.tuxedo.org/~esr/faqs/linus/">Linus Torvalds</a>, and <a href="http://www-cs-faculty.stanford.edu/~knuth/">Donald E. Knuth</a> engage in a discussion on whose impact on the computerized world was the greatest.<br /><br />Stallman: "God told me I have programmed the best editor in the world!" <br /><br />Torvalds: "Well, God told *me* that I have programmed the best operating system in the world!"<br /><br />Knuth: "Wait, wait - I never said that."
+<hr />
+"<a href="http://www.everything2.com/index.pl?node=paranoia">Paranoia</a> is a virtue."
+<hr />
+"<a href="http://steco.net">it</a>'s a good example of why <a href="http://www.everything2.com/index.pl?node=bill+gates">bill gates</a> should be shot, hung, shot again, then dragged through town by his scrotum" - <a href="mailto:nick@netaxs.com">nick@netaxs.com</a>
+<hr />
+"What did people like you do before computers?" - <a href="mailto:helcat@sff.net">helcat@sff.net</a>
+<hr />
+"I think, therefore I suffer."
+<hr />
+"Science is like sex: Sometimes something useful comes out, but that is not the reason we are doing it." - <a href="http://www.amasci.com/feynman.html">Richard Feynman</a>
+<hr />
+"Having a bad day?  It takes 42 muscles to frown, but only 4 to pull the trigger of a decent sniper rifle." - Dr. John D. Taylor
+<hr />
+"...I want to apologize in advance if I come across as overly inflammatory or antagonistic, as I've just been reading <a href="http://www.slashdot.org">Slashdot</a>." - <a href="http://www.billjonas.com/">Bill Jonas</a>
+<hr />
+"When the world descends into <a href="http://www.everything2.com/index.pl?node=panic">panic</a>, we lead the way." - <a href="http://www.sluggy.com/comics/archives/daily/20000102">Sluggy Freelance, 2000-01-02</a>
+<hr />
+"The Way of the warrior is resolute acceptance of death."
+<hr />
+"Killing just helps reduce the stress." - <a href="mailto:LstatShaft@aol.com">LstatShaft@aol.com</a>
+<hr />
+"We are talking about particles in the universe type numbers here." -<a href="http://www.everything2.com/index.pl?node=anonymous+coward">Anonymous Coward</a>, on the subject of solving <a href="http://www.freechess.org">chess</a>, <a href="http://slashdot.org/comments.pl?sid=00/04/20/019221&amp;cid=52">on Slashdot</a>.
+<hr />
+"If there's anything more important than my ego around, I want it cought and shot now." - Zaphod, The Hitchhiker's Guide to the Galaxy
+<hr />
+"That's right, in the end, it's all about the <a href="http://www.everything2.com/index.pl?node=nookie">nookie</a>."
+<hr />
+"funky divas attempt to round up certain small childrens' toys smattered up with tiny rainmaker compact discs sent up as <a href="http://www.everything2.com/index.pl?node=sputnik">sputnik</a> was summarily destroyed by the fact that ducks are quite cool" -<a href="http://ciips.ee.uwa.edu.au/~hutch/hal/">MegaHAL</a>
+<hr />
+"<a href="http://www.everything2.com/index.pl?node=code">Code</a> changes are submitted to or accepted by the <a href="http://debian.org">Debian</a> [<a href="http://www.linux.org">Linux</a>] project once every 13 seconds to 7 minutes (depending on time of day). In other words, in the time it takes to dial a 1-800 number, someone may have fixed a bug in or added a feature to <a href="http://www.debian.org">Debian</a>, sometimes before the first ring, and definitely before you finally get off the holding queue and talk to a real human being." - Linux Weekly News 
+<hr />
+"Millions long for immortality who do not know what to do with themselves on a rainy Sunday afternoon." - Susan Ertz 
+<hr />
+"then it comes to be that the soothing light at the end of your tunnel <br />is just a freight train coming your way" - Metallica, no leaf clover
+<hr />
+"Trying to learn to hack on a <a href="http://www.everything2.com/index.pl?node=dos">DOS</a> or <a href="http://www.everything2.com/index.pl?node=microsoft+windows">Windows</a> machine or under <a href="http://www.everything2.com/index.pl?node=macos">MacOS</a> is like trying to learn to dance while wearing a body cast." -<a href="http://www.tuxedo.org/~esr/faqs/hacker-howto.html">ESR</a>
+<hr />
+"We all enter this world in the same way: <a href="http://www.everything2.com/index.pl?node=naked">naked</a>; <a href="http://www.everything2.com/index.pl?node=screaming">screaming</a>; soaked in <a href="http://www.everything2.com/index.pl?node=blood">blood</a>. But if you live your life right, that kind of thing doesn't have to stop there."
+<hr />
+"Is <a href="http://www.everything2.com/index.pl?node=insanity">insanity</a> just a matter of dropping the act?"
+<hr />
+"Happiness is a warm gun."
+<hr />
+"A closed mouth gathers no foot." 
+<hr />
+"When the going gets tough, the tough get <a href="http://www.everything2.com/index.pl?node=duct+tape">duct tape</a>." 
+<hr />
+"There are two major products that come out of Berkeley: <a href="http://www.erowid.org/chemicals/lsd/lsd.shtml">LSD</a> and <a href="http://www.tuxedo.org/~esr/jargon/html/entry/Unix.html">UNIX</a>. We don't believe this to be a coincidence." - Jeremy S. Anderson
+<hr />
+"Open mind, insert foot."
+<hr />
+"Do not go where the path may lead, go instead where there is no path and leave a trail." - <a href="http://www.geocities.com/~freereligion/1emerson.html">Ralph Waldo Emerson</a>
+<hr />
+"The knowledge that you are an idiot, is what distinguishes you from one."
+<hr />
+"If you look good and dress well, you don't need a purpose in life." - Robert Pante, fashion consultant
+<hr />
+"It's never too late to panic."
+<hr />
+"Protecting the children is a good way to get a lot of adults who cant stand up for themselves" -J. Stecher
+<hr />
+"I think he got teased for [his name] about half a day in grade school by the 'school bully'. One beating later and suddenly his name wasnt so funny. I'm not saying you should teach your kid to fight, I'm just advocating <a href="http://www.everything2.com/index.pl?node=violence">violence</a>." -<a href="http://www.neverlight.com">Mental</a>
+<hr />
+"Mom, where's the vibrating monkey?"
+<hr />
+"I refuse to prove that I exist", says God "for proof denies faith and without faith I am nothing".<br />"But," says Man, "the <a href="http://www.everything2.com/index.pl?node=babel+fish">Babel Fish</a> is a dead giveaway, isn't it? It could not have evolved by chance. It proves you exist, and so therefore, by your own argument you don't. <a href="http://www.everything2.com/index.pl?node=qed">QED</a>"<br />"Oh, dear", says God, "I hadn't thought of that", and promptly vanishes in a puff of logic<br /> - the Hitchhiker's Guide To The Galaxy
+<hr />
+"It is an important and popular fact that things are not always what they seem. For instance, on the planet Earth, man had always assumed that he was more intelligent than dolphins because he had achieved so much - the wheel, <a href="http://www.everything2.com/index.pl?node=new+york">New York</a>, wars and so on - whilst all the dolphins had ever done was muck about in the water having a <a href="http://www.everything2.com/index.pl?node=good+time">good time</a>. But conversely, the dolphins had always believed that they were far more intelligent than man - for precisely the same reasons." - the Hitchhiker's Guide To The Galaxy 
+<hr />
+"That which does not kill you merely postpones the inevitable."
+<hr />
+"Wanna know how to get what you want out of life? Keep trying. Its like a game. You can loose the game 2000 times in a row and it doesnt matter. You only have to beat it once, then you can move on to the next one." - <a href="http://www.neverlight.com">Mental</a>
+<hr />
+"The dumber people think you are, the more surprised they're going to be when you kill them."<br /> - William Clayton
+<hr />
+"Men are born ignorant, not stupid; they are made stupid by education."<br /> - Bertrand Russell
+<hr />
+"Once you put your hand in the flame,<br />you can never be the same."<br /><br />- Madonna, Erotica
+<hr />
+<a href="mentor.txt">The Conscience of a Hacker</a>, by <a href="http://www.everything2.com/index.pl?node=%2b%2b%2bthe+mentor%2b%2b%2b">The Mentor</a>
+<hr />
+<blockquote><div>our yellow sun yields to the dark<br />as i begin my web-based lark<br />flowing, turning, through the pipe<br />i <a href="http://www.everything2.com/index.pl?node=grep">grep</a> for text and dump the hype...<br /><br />but as i ride the <a href="http://www.everything2.com/index.pl?node=fiber+optic+cables">fibre</a> trail<br />i test my faith as i read my mail<br />even as my <a href="http://www.everything2.com/index.pl?node=bandwidth">bandwidth</a> fattens<br />i question life and <a href="http://www.everything2.com/index.pl?node=one-click+shopping+patent">1-click patents</a>...<br /><br />although i ask and though i query<br />i know the truth, i <a href="http://www.everything2.com/index.pl?node=grok">grok</a> the theory<br />life is a multimedia of sins<br />so he who collects the most <a href="http://www.everything2.com/index.pl?node=porn">porn</a> wins.</div></blockquote>- <a href="http://www.userfriendly.org/cartoons/archives/00mar/20000307.html">User Friendly</a>
+<hr />
+<blockquote><div>God grant me the serenity<br />to accept the things I cannot change;<br />courage to change the things I can;<br />and wisdom to know the difference.</div></blockquote>- The Serenity Prayer
+<hr />
+<blockquote><div>God grant me the serenity <br />to accept the things I cannot change; <br />courage to change the things I can;<br />and the wisdom to hide the bodies of the people who pissed me off.</div></blockquote>
+<hr />
+"Nothing is foolproof for a sufficiently talented fool."
+<hr />
+"Abort, Retry, Influence with a Large Hammer"
+<hr />
+"Too often, we lose sight of life's simple pleasures. Remember, when someone annoys you it takes 42 muscles in your face to frown BUT......., it only takes 4 muscles to extend your arm and <a href="http://www.everything2.com/index.pl?node=bitch+slap">bitch-slap</a> the fucker upside the head..."
+<hr />
+<a href="http://www.everything2.com/index.pl?node=menthol">Menthol</a> <a href="http://www.everything2.com/index.pl?node=k-y+jelly">KY</a> ?
+<hr />
+"A little <a href="http://www.everything2.com/index.pl?node=revolution">revolution</a>, now and then, is a healthy thing..." - Captain Marko Ramius - '<a href="http://www.everything2.com/index.pl?node=the+hunt+for+red+october">The Hunt for Red October</a>' (by Tom Clancy)
+<hr />
+"People just keep walking by me like they're safe or something."
+<hr />
+"You shall know the <a href="http://www.everything2.com/index.pl?node=truth">truth</a>, and it shall make you odd." <br /> - Flannery O'Connor  
+<hr />
+<blockquote><div>I wandered far in lands unknown <br />Until I came to my earthly home <br />Far away I found life's dream <br />Drifting on a silver beam <br />Travelling at twice the <a href="http://www.everything2.com/index.pl?node=speed+of+light">speed of light</a> <br /><a href="http://www.everything2.com/index.pl?node=orion">Orion</a>'s stars are high tonight <br />The gentle madness has touched my hand <br />Now I'm just a cosmic man</div></blockquote>
+<hr />
+<a href="winkin.txt">Winkin' Blinkin' and Nod</a>  
+<hr />
+<blockquote><div>You must be blind <br />If you can't see <br />The gaping hole <br />called <a href="http://www.everything2.com/index.pl?node=reality">reality</a></div></blockquote>- Stereo MC's  
+<hr />
+"In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move." <br />     - The Restaurant at the End of the Universe  
+<hr />
+"I'm only paranoid because they want me dead."  
+<hr />
+"Sanity is for the weak." - Darxus, 1996 (any previous references?)
+<hr />
+"...it was right for you to run."  
+<hr />
+"If god had intended for people to smoke, he would have lit them on fire."  
+<hr />
+<blockquote><div>Love is a word that is constantly heard, <br />Hate is a word that is not. <br />Love, I am told, is more precious than gold. <br />Love, I have read, is hot. <br />But hate is the verb that to me is superb, <br />And Love but a drug on the mart. <br />Any kiddie in school can love like a fool, <br />But Hating, my boy, is an Art.</div></blockquote>- <a href="http://www.everything2.com/index.pl?node=ogden+nash">Ogden Nash</a>  
+<hr />
+"I believe only in fire." <br /><br /> - <a href="http://www.everything2.com/index.pl?node=anais+nin">Anais Nin</a>  
+<hr />
+"<a href="http://www.everything2.com/index.pl?node_id=580709">What would you do for a klondike bar?</a>"<br /> "Kill you and take it."  
+<hr />
+"Sanity is the trademark of a weak mind." <br />                - Mark Harrold  
+<hr />
+"To misquote <a href="http://www.everything2.com/index.pl?node=bruce+sterling">Bruce Sterling</a>, being afraid of large companies especially when they're getting into the <a href="http://www.everything2.com/index.pl?node=isp">ISP</a> business is like being afraid of large gorillas especially when they're on fire." <br />- Michael Handler (handler@netaxs.com) Email: support@netaxs.com<br />Net Access System Administration, ~1995
+<hr />
+"What sane person could live in this world and not be crazy?" <br />                - Ursula K. LeGuin  
+<hr />
+<blockquote><div>Q:  Why do ducks have flat feet? <br />A:  To stamp out forest fires. <br /><br />Q:  Why do elephants have flat feet? <br />A:  To stamp out flaming ducks.</div></blockquote>  
+<hr />
+"<a href="http://www.recguns.com/">Guns</a> don't kill people, I do."  
+<hr />
+"Now is not the time to make new enemies." <br /><br />      - Voltaire, on his deathbed, after being told to renounce the devil   
+<hr />
+<blockquote><div>First, the church was powerful. But it became corrupt and was overthrown. <br />Then monarchs became powerful. But they became corrupt and were overthrown. <br />Now businesses are powerful. So what do we do with <a href="http://www.everything2.com/index.pl?node=bill+gates">Bill Gates</a>?</div></blockquote>  
+<hr />
+"I was an atheist, until I found out I was God."  
+<hr />
+"<a href="http://www.everything2.com/index.pl?node=scsi">SCSI</a> is *NOT* <a href="http://www.everything2.com/index.pl?node=magic">magic</a>.  There are *fundamental technical reasons* why it is necessary to sacrifice a young goat to your <a href="http://www.everything2.com/index.pl?node=scsi">SCSI</a> chain now and then."  
+<hr />
+"Disclaimer: I am sovereign entity on the world-wide network known as the internet.  This network is not controlled by the whims of any government, judicial or law enforcement organization. As a sovereign I am granted complete and universal freedom of speech as defined by my own beliefs. I shall not be held accountable for any actions or information transmitted on this network by anyone for any reason at any time."  
+<hr />
+"I am that warbling voice in your toilet." <br /><br />   -Destuctor  
+<hr />
+<blockquote><div>Clarke's Third Law: <br />        Any sufficiently advanced technology is indistinguishable from <a href="http://www.everything2.com/index.pl?node=magic">magic</a>.   <br /><br />G's Third Law: <br />        In spite of all evidence to the contrary, the entire universe is composed of only two basic substances: <a href="http://www.everything2.com/index.pl?node=magic">magic</a> and bullshit.   <br /><br />H's Dictum: <br />        There is no <a href="http://www.everything2.com/index.pl?node=magic">magic</a> ...  </div></blockquote>
+<hr />
+"On the subject of the inevitability of <a href="http://www.everything2.com/index.pl?node=microsoft">Microsoft</a> and <a href="http://www.everything2.com/index.pl?node=windows+95">Windows '95</a>, I think <a href="http://www.everything2.com/index.pl?node=sandra+bullock">Sandra Bullock</a> summed it up best with, 'Now all resturants are <a href="http://www.everything2.com/index.pl?node=taco+bell">Taco Bell</a>'"   
+<hr />
+"Every day we are given stones, but what do we build?   Is it a bridge or a wall?"  
+<hr />
+"This calls for a very special blend of psychology and extreme violence." - Vyvian, The Young Ones (episode: Bambi)
+<hr />
+"For most- <a href="http://www.everything2.com/index.pl?node=rage">Rage</a> is a choice... Something to be thought out and judged. <br />For others- it possesses. It stings the veins. It consumes its host... <br />For those- it is a gift." <br />- The Leper King, rec.games.computer.quake.misc, 1996-02-12??<hr />
+"You possess a mind not merely twisted, but actually sprained."  
+<hr />
+"No man is good nor wise enough, to rule another or disown the rights of every woman and man to live and let live, and be left alone.  I talk about abortion. I say 'Fuck the Government'.  Does that offend you?  Good!  I respect no government who will make any law that restricts speech, in any medium.  I will be offensive, and I will take offense at what others say, BUT I WILL DEFEND TO THE DEATH THEIR RIGHT TO BE OFFENSIVE."  
+<hr />
+"...in the beginning, man created god"  
+<hr />
+"I know not with what weapons World War III will be fought. But World War IV will be fought with sticks and stones." <br /><br />                                            -  <a href="http://www.westegg.com/einstein/">Albert Einstein</a>
+<hr />
+"It is the rocket that ignites itself <br />And launches its way to the stars. <br />A driver on a busy freeway <br />Racing the oblivious cars. <br />It's the motor of the western world <br />Spinning off to every extreme. <br />Pure as a lovers desire <br />Evil as a murderer's dream."  <br /><br /> - Rush  
+<hr />
+"The wise man will look into a grain of sand on a beach and see a world. A foolish one will roll around in the surf and say 'Look! I'm Seaweed Man!'" <br /><br />                        - <a href="http://www-personal.umd.umich.edu/~nhughes/htmldocs/deepthoughts.html">Jack Handy</a>
+<hr />
+"'trust and you'll be trusted' <br />said the liar to the fool"  
+<hr />
+"<a href="http://www.everything2.com/index.pl?node=windows+95">Win95</a>:  It isn't an <a href="http://www.everything2.com/index.pl?node=operating+system">operating system</a>, it's a '<a href="http://www.everything2.com/index.pl?node=square+peg+in+a+round+hole">square peg in a round hole</a>' test."  
+<hr />
+"It has always been my goal to become supreme ruler of Earth, but lately I've been wondering if you dolts are worthy of my leadership."  <br /><br /> - <a href="http://www.unitedmedia.com/comics/dilbert/dnrc/">Dogbert</a>
+<hr />
+"Don't hit a man when he's down -- kick him; it's easier."  
+<hr />
+"The reasonable man adapts himself to the world; the  unreasonable one persists in trying to adapt the world to  himself. Therefore all progress depends on the unreasonable  man."<br /><br />                                  - <a href="http://www.nobelprizes.com/nobel/literature/1925a.html">George Bernard Shaw</a>
+<hr />
+"Beware of Programmers who carry screwdrivers." <br />                - Leonard Brandwein  
+<hr />
+"God made <a href="http://www.cs.ualberta.ca/~casey/c101/101notes/machinelang.html">machine language</a>; all the rest is the work of man."  
+<hr />
+"The most merciful thing in the world,  I think, is the inability of the human mind to correlate all its contents."  
+<hr />
+"I can forsee a world with no hunger, no hatred, no war and at total peace and equilibrium where all manner of  men and women live in perfect harmony with each other. ....And I can forsee us lot ganging up and attacking them 'cause it's the last thing they'll expect!!!! ;)"  
+<hr />
+"I think there is a world market for maybe five computers." <br /><br />      - <a href="http://www.encyclopedia.com/articles/13688.html">Thomas Watson</a>, chairman of <a href="http://www.ibm.com">IBM</a>, 1943  
+<hr />
+"... beauty is that to which the human mind responds at it's deepest and most profound level." <br /><br />- <a href="http://antwrp.gsfc.nasa.gov/apod/ap950901.html">Astrophysicist Subrahmanyan Chandrasekhar</a>, on the mathematics making hyperspace travel a possibility.  
+<hr />
+<blockquote><div>When the going gets tough <br />And the stomach acids flow <br />The cold wind of <a href="http://www.everything2.com/index.pl?node=conformity">conformity</a> <br />Is nipping at your nose <br />When some trendy new <a href="http://www.everything2.com/index.pl?node=atrocity">atrocity</a> <br />Has brought you to your knees <br />Come with us <br />We'll sail the <a href="http://www.everything2.com/index.pl?node=seas+of+cheese">Seas of Cheese</a></div></blockquote>  - <a href="http://www.primussucks.com/">Primus</a>
+<hr />
+"Forgive me, Father, for I am Sin."  
+<hr />
+<blockquote><div>Don't open your eyes, you won't like what you see <br />The blind have been blessed with security</div></blockquote>- <a href="http://www.nin.com">Nine Inch Nails </a>
+<hr />
+"There is a theory which states that if ever anyone discovers exactly what the Universe is for and why it is here, it will instantly disappear and be replaced by something even more bizarre and inexplicable.  There is another theory which states that this has already happened." - <a href="http://www.douglasadams.com/">Douglas Adams</a>, "The Hitchhiker's Guide to the Galaxy"  
+<hr />
+"You may be recognized soon.  Hide."<hr />
+"<a href="http://www.csclub.uwaterloo.ca/u/tamulder/nasrudin.html">Nasrudin</a> walked into a shop one day, and the owner came forward to serve him.  Nasrudin said, 'First things first.  Did you see me walk into your shop?'  'Of course.'  'Have you ever seen me before?' 'Never.'  'Then how do you know it was me?'"
+<hr />
+"Imagine that <a href="http://www.cray.com">Cray</a> computer decides to make a personal computer.  It has a 150 <a href="http://www.everything2.com/index.pl?node=mhz">MHz</a> processor, 200 <a href="http://www.everything2.com/index.pl?node=megabyte">megabytes</a> of <a href="http://www.everything2.com/index.pl?node=ram">RAM</a>, 1500 <a href="http://www.everything2.com/index.pl?node=megabyte">megabytes</a> of <a href="http://www.everything2.com/index.pl?node=disk">disk</a> storage, a <a href="http://www.everything2.com/index.pl?node=screen">screen</a> <a href="http://www.everything2.com/index.pl?node=resolution">resolution</a> of 4096 x 4096 <a href="http://www.everything2.com/index.pl?node=pixels">pixels</a>, relies entirely on <a href="http://www.everything2.com/index.pl?node=speech+recognition">voice recognition</a> for <a href="http://www.everything2.com/index.pl?node=input">input</a>, fits in your shirt pocket and costs $300. What's the first question that the computer community asks?  <br /><br />'Is it <a href="http://www.everything2.com/index.pl?node=pc">PC</a> compatible?'"  
+<hr />
+"For what shall it profit a man, if he shall gain the whole world, and lose his own soul?" - Mark 8:36, King James Bible
+<hr />
+"If the colleges were better, if they really had it, you would need to get the police at the gates to keep order in the inrushing multitude. See in college how we thwart the natural love of learning by leaving the natural method of teaching what each wishes to learn, and insisting that you shall learn what you have no taste or capacity for.  The college, which should be a place of delightful labor, is made odious and unhealthy, and the young men are tempted to frivolous amusements to rally their jaded spirits.  I would have the studies elective. Scholarship is to be created not by compulsion, but by awakening a pure interest in knowledge.  The wise instructor accomplishes this by opening to his pupils precisely the attractions the study has for himself.  The marking is a system for schools, not for the college; for boys, not for men; and it is an ungracious work to put on a professor." <br /><br />                - <a href="http://www.geocities.com/~freereligion/1emerson.html">Ralph Waldo Emerson</a>
+<hr />
+"The Party said that <a href="http://www.everything2.com/index.pl?node=oceania">Oceania</a> had never been in alliance with Eurasia.  He, Winston Smith, knew that Oceania had been in alliance with Eurasia as short a time as four years ago.  But where did that knowledge exist?  Only in his own consciousness, which in any case must soon be annihilated.  And if all others accepted the lie which the Party imposed -- if all records told the same tale -- the lie passed into history and became truth.  'Who controls the past,' ran the Party slogan, 'controls the future:  Who controls the present controls the past.' And yet the past, though of its nature alterable, never had been altered.  Whatever was true now was true from everlasting to everlasting.  It was quite simple.  All that was needed was an unending series of victories over your own memory.  'Reality control,' they called it; in <a href="http://www.everything2.com/index.pl?node=newspeak">Newspeak</a>, '<a href="http://www.everything2.com/index.pl?node=doublethink">doublethink</a>.'"  <br /><br />  - <a href="http://www2.itexas.net/~jburks/1984.htm">1984</a> by <a href="http://www.levity.com/corduroy/orwell.htm">George Orwell</a>
+<hr />
+"Winston was dreaming...."<br /> "The girl with dark hair was coming toward him across the field.  With  what seemed a single movement she tore off her clothes and flung them  disdainfully aside.  Her body was white and smooth, but it aroused no  desire in him; indeed, he barely looked at it.  What overwhelmed him in  that instant was admiration for the gesture with which she had thrown her  clothes aside.  With its grace and carelessness it seemed to annihilate a  whole culture, a whole system of thought, as though <a href="http://www.everything2.com/index.pl?node=big+brother">Big Brother</a> and the  Party and the <a href="http://www.everything2.com/index.pl?node=thought+police">Thought Police</a> could all be swept into nothingness by a  single splendid movement of the arm.  That too was a gesture belonging to  the ancient time.  Winston woke up with the word 'Shakespeare' on his  lips." <br /><br />  - <a href="http://www2.itexas.net/~jburks/1984.htm">1984</a> by <a href="http://www.levity.com/corduroy/orwell.htm">George Orwell</a>
+<hr />
+"Blessed are the cracked, for they shall let in the light."  
+<hr />
+"I would believe only in a God that knows how to Dance." <br /><br />  - <a href="http://obits.com/Nietzsche.html">Nietzsche</a>
+<hr />
+"George Washington not only chopped down his father's cherry tree, but he also admitted doing it.  Now, do you know why his father didn't punish him?  Because George still had the axe in his hand."
+<hr />
+"One ring to rule them all. One ring to find them. One ring to bring them all, And in the darkness bind them." <br /><br />  - <a href="http://onering.virbius.com">The One Ring</a>
+<hr />
+"I am the truth from which you run." - Nine Inch Nails, Mr. Self Destruct <hr />
+"To <a href="http://www.eeicommunications.com/eye/repeat.html">iterate</a> is human, to <a href="http://www.tuxedo.org/~esr/jargon/html/entry/recursion.html">recurse</a>, divine."  (<a href="http://www.bell-labs.com/~cope/Patterns/C++Report/SpaceIII-1.html">the paper</a>)
+<hr />
+"Man is lucky to be ignorant, because if he knew the truth it would either destroy him or drive him mad." <br /><br />  - Stuart Gordan about <a href="http://www.hplovecraft.com/">H. P. Lovecraft</a>'s philosophy  <hr />
+Cyberspace Hashishim Declare <a href="http://www.everything2.com/index.pl?node=jihad">Jihad</a>  <br /><br />  "We declare Jihad, a Holy War, against those who call for the regulation of the Net by government occupational forces. We will cut off their heads and fill their dead open mouths with shit, and impale their skulls on pikes, lighting the whole thing ablaze with flaming torches."   <br /><br />  -Mahmud Abd Al-Shakir Cyberspace Hashishim (found at <a href="http://www.onworld.com/MUT/elecGur.html">http://www.onworld.com/MUT/elecGur.html</a>)  
+<hr />
+"The future masters of technology will have to be lighthearted and intelligent. The machine easily masters the grim and the dumb."  <br /><br />  - <a href="http://www.ctheory.com/a28-digital_humanism.html">Marshall McLuhan</a>, 1969  
+<hr />
+"Run, run, as fast as you can.  You can't catch me, I'm the Gingerbread Man." <br /><br />  - The Gingerbread Man
+
+<hr />
+<hr />
+<div class='center'>
+672 quotes on this page.<br />
+<a href="/cgi-bin/referercomment.cgi">Comment on this page.</a><br />
+<a href="/">Return to Darxus' home page.</a>
+</div>
+
+</div>
+</body>
+</html>

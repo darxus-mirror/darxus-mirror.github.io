@@ -1,0 +1,432 @@
+# Todo:  Build more of weston's direct dependencies.
+# Test new xextproto for libX11
+
+# Removed Debian packages: libcairo2-dev libdbus-1-dev libdbus-glib-1-dev libexpat1-dev libfontconfig1-dev python-dev python2.7-dev libffi-dev llvm-3.0-dev llvm-dev libfontenc-dev libxfont-dev libfreetype6-dev libfs-dev libgdk-pixbuf2.0-dev libglib2.0-dev libice-dev libsm-dev libjpeg8-dev libltdl-dev libmtdev-dev libpam0g-dev libpciaccess-dev libpcre3-dev libpixman-1-dev libpng12-dev libpthread-stubs0-dev libx11-dev libx11-xcb-dev libxcb-dri2-0-dev libxcb-glx0-dev libxcb-render0-dev libxcb-shape0-dev libxcb-shm0-dev libxcb-xfixes0-dev libxcb1-dev libxcursor-dev libxdamage-dev libxext-dev libxfixes-dev libxi-dev libxkbfile-dev libxrender-dev libxtst-dev libssl-dev build-essential g++ g++-4.7 libstdc++6-4.7-dev libudev-dev libxau-dev libxdmcp-dev manpages-dev x11proto-bigreqs-dev x11proto-composite-dev x11proto-core-dev x11proto-damage-dev x11proto-fixes-dev x11proto-fonts-dev x11proto-input-dev x11proto-render-dev x11proto-resource-dev x11proto-scrnsaver-dev x11proto-xext-dev x11proto-xf86bigfont-dev x11proto-xf86dga-dev x11proto-dmx-dev x11proto-dri2-dev x11proto-gl-dev x11proto-kb-dev x11proto-randr-dev x11proto-record-dev x11proto-video-dev x11proto-xcmisc-dev x11proto-xf86dri-dev x11proto-xf86vidmode-dev x11proto-xinerama-dev xtrans-dev xutils-dev zlib1g-dev
+# packages that create .gir files need to (depend on) be built after gobject-introspection
+email=darxus@chaosreigns.com
+#installdir=/home/darxus/install.test.master
+#installdir=/home/darxus/install
+installdir=/home/darxus/install.test
+#sourcedir=/home/darxus/source.test.master
+sourcedir=/home/darxus/source
+prebuild=mkdir -p $installdir/share/X11/xkb/rules/ $installdir/bin/; ln -s /usr/share/X11/xkb/rules/evdev $installdir/share/X11/xkb/rules/; ln -s /usr/bin/xkbcomp $installdir/bin/
+
+repo=git://github.com/atgreen/libffi
+args=./configure --prefix=$installdir
+
+repo=git://anongit.freedesktop.org/wayland/wayland
+args=./autogen.sh --prefix=$installdir --disable-documentation
+# error: No package 'libffi' found
+# Debian package: libffi-dev
+dep=libffi
+
+#Debian package: libdrm-dev
+repo=git://anongit.freedesktop.org/git/mesa/drm
+args=./autogen.sh --prefix=$installdir --enable-nouveau-experimental-api
+# error: No package 'pthread-stubs' found
+dep=pthread-stubs
+# error: No package 'pciaccess' found
+dep=libpciaccess
+# complete
+
+repo=git://anongit.freedesktop.org/xorg/util/macros
+# complete
+
+repo=git://anongit.freedesktop.org/xorg/lib/libXau
+# error: configure.ac:38: error: must install xorg-macros 1.8 or later before running autoconf/autogen
+dep=macros
+# based on configure.ac
+dep=xproto
+# complete
+
+repo=git://anongit.freedesktop.org/xorg/proto/x11proto
+# error: configure.ac:7: error: must install xorg-macros 1.12 or later before running autoconf/autogen
+dep=macros
+# based on configure.ac
+dep=xproto
+
+repo=git://anongit.freedesktop.org/xorg/lib/libXdmcp
+# error: configure.ac:39: error: must install xorg-macros 1.12 or later before running autoconf/autogen
+dep=macros
+# based on configure.ac
+dep=xproto
+
+# debian package: libpthread-stubs0-dev
+repo=git://anongit.freedesktop.org/xcb/pthread-stubs
+
+repo=git://anongit.freedesktop.org/xcb/proto
+
+repo=git://anongit.freedesktop.org/xcb/libxcb
+# error: No package 'xcb-proto' found
+dep=proto
+# error: No package 'pthread-stubs' found
+dep=pthread-stubs
+# error: No package 'xau' found
+dep=libXau
+# based on configure.ac
+dep=libXdmcp
+
+repo=git://anongit.freedesktop.org/xorg/lib/libXdamage
+# error: configure.ac:44: error: must install xorg-macros 1.8 or later before running autoconf/autogen
+dep=macros
+# error: No package 'xfixes' found
+dep=libXfixes
+# error: No package 'x11' found
+dep=libX11
+
+repo=git://anongit.freedesktop.org/xorg/lib/libXfixes
+# error: configure.ac:47: error: must install xorg-macros 1.8 or later before running autoconf/autogen
+dep=macros
+# based on configure.ac
+dep=xproto
+# error: No package 'x11' found
+dep=libX11
+
+repo=git://anongit.freedesktop.org/xorg/lib/libXext
+# error: configure.ac:16: error: must install xorg-macros 1.12 or later before running autoconf/autogen
+dep=macros
+# No package 'x11' found
+dep=libX11
+# based on configure.ac
+dep=xproto
+
+# Takes up lots of time, and seems to be well tested already
+#repo=http://llvm.org/git/llvm
+#args=./configure --prefix=$installdir
+
+repo=git://anongit.freedesktop.org/xorg/proto/dri2proto
+# error: configure.ac:6: error: must install xorg-macros 1.3 or later before running autoconf/autogen
+dep=macros
+
+#repo=git://git.kernel.org/pub/scm/linux/hotplug/udev
+#Requires annoying configure stuff:
+#./configure CFLAGS='-g -O1'  --prefix=/usr --sysconfdir=/etc --libdir=/usr/lib --with-selinux --enable-gtk-doc --with-rootprefix= --with-rootlibdir=/lib --bindir=/sbin --libexecdir=/lib --with-systemdsystemunitdir=/lib/systemd/system
+
+# some packages:   libgl1-mesa-dev libglu1-mesa-dev mesa-common-dev
+repo=git://anongit.freedesktop.org/mesa/mesa
+args=./autogen.sh --prefix=$installdir --enable-gles2 --disable-gallium-egl --with-egl-platforms=wayland,x11,drm --enable-gbm --enable-shared-glapi --with-gallium-drivers=r300,r600,swrast,nouveau,svga
+# error: configure: error: Direct rendering requires libdrm >= 2.4.24
+dep=drm
+# error: configure: error: Package requirements (wayland-client >= 1.0.2 wayland-server >= 1.0.2) were not met:
+dep=wayland
+# not currently required, package is new enough:
+# error: Requested 'xcb-glx >= 1.8.1' but version of XCB GLX is 1.7
+dep=libxcb
+# from wayland build instructions
+dep=pixman
+# error: No package 'dri2proto' found
+# Debian package: x11proto-dri2-dev
+dep=dri2proto
+# error: No package 'xdamage' found
+dep=libXdamage
+# error: No package 'xfixes' found
+dep=libXfixes
+# error: No package 'xext' found
+dep=libXext
+# error: No package 'glproto' found
+dep=glproto
+# error: configure: error: gbm needs udev
+# Debian package: libudev-dev
+#dep=udev
+# terrible error: ./gallivm/lp_bld.h:49:27: fatal error: llvm-c/Core.h: No such file or directory
+# Debian package: llvm-3.1-dev libllvm3.1 llvm-3.1 llvm-3.1-runtime  llvm-3.0-dev llvm-dev
+#dep=llvm
+
+repo=git://anongit.freedesktop.org/xorg/proto/xproto
+# error: configure.ac:7: error: must install xorg-macros 1.12 or later before running autoconf/autogen
+dep=macros
+
+repo=git://anongit.freedesktop.org/xorg/proto/kbproto
+# error: configure.ac:7: error: must install xorg-macros 1.12 or later before running autoconf/autogen
+dep=macros
+
+repo=git://anongit.freedesktop.org/git/xorg/lib/libxtrans
+# error: configure.ac:32: error: must install xorg-macros 1.12 or later before running autoconf/autogen
+dep=macros
+
+repo=git://anongit.freedesktop.org/xorg/proto/xextproto
+# error: configure.ac:7: error: must install xorg-macros 1.12 or later before running autoconf/autogen
+dep=macros
+
+repo=git://anongit.freedesktop.org/xorg/lib/libX11
+# error: configure.ac:23: error: must install xorg-macros 1.15 or later before running autoconf/autogen
+dep=macros
+# terrible error:
+# configure.ac:85: error: possibly undefined macro: XTRANS_CONNECTION_FLAGS
+#       If this token and others are legitimate, please use m4_pattern_allow.
+#       See the Autoconf documentation.
+# Debian package: xtrans-dev # not removed
+dep=libxtrans
+# error: No package 'xextproto' found
+# Debian package: x11proto-xext-dev x11proto-core-dev x11proto-input-dev  # not removed
+dep=xextproto
+# error: No package 'xcb' found
+dep=libxcb
+# based on configure.ac
+dep=inputproto
+# based on configure.ac
+dep=kbproto
+# based on configure.ac
+dep=xproto
+
+#repo=git://people.freedesktop.org/xorg/lib/libxkbcommon
+repo=git://github.com/xkbcommon/libxkbcommon
+args=./autogen.sh --prefix=$installdir --with-xkb-config-root=/usr/share/X11/xkb
+# error: configure.ac:42: error: must install xorg-macros 1.8 or later before running autoconf/autogen
+dep=macros
+
+# debian package: libpixman-1-dev
+repo=git://anongit.freedesktop.org/pixman
+
+#repo=git://git.code.sf.net/p/libpng/code 
+
+# debian package: libcairo2-dev
+repo=git://anongit.freedesktop.org/cairo
+args=./autogen.sh --prefix=$installdir --enable-gl --enable-xcb
+check=DISPLAY=:1 CAIRO_REF_DIR=$HOME/source/cairo-ref.1.xvfb.script CAIRO_TEST_TARGET=image make test
+# git clean -xfd && ./autogen.sh --prefix=$installdir --enable-gl --enable-xcb && make && /usr/bin/time make test TARGETS=script,gl,gl-window,gl-window-msaa,gl-window&,egl,xcb,xcb-window,xcb-window&,xcb-render-0.0,xcb-fallback,xlib,xlib-window,xlib-render-0_0,xlib-fallback,image,image16,recording
+# error: checking whether cairo's OpenGL surface backend feature could be enabled... no (gl.pc nor OpenGL headers not found)
+dep=mesa
+# error: configure: WARNING: Could not find libpng in the pkg-config search path
+# Debian package: libpng12-dev
+#dep=code
+
+repo=git://git.sv.gnu.org/libunwind
+#args=autoreconf -i; ./configure
+args=autoreconf -i; ./configure --prefix=$installdir
+# Fails make check: https://savannah.nongnu.org/bugs/index.php?39294
+nocheck
+
+repo=git://anongit.freedesktop.org/wayland/weston
+args=./autogen.sh --prefix=$installdir --disable-setuid-install
+# make check fails: https://bugs.freedesktop.org/show_bug.cgi?id=61296
+nocheck
+# error: No package 'wayland-server' found
+dep=wayland
+# error: No package 'xkbcommon' found
+dep=libxkbcommon
+# error: No package 'egl' found
+# error: No package 'glesv2' found
+dep=mesa
+# no errors:
+dep=cairo
+# error: No package 'xcursor' found
+# Debian package: libxcursor-dev libpthread-stubs0-dev libx11-dev libxau-dev libxcb1-dev libxdmcp-dev libxfixes-dev libxrender-dev x11proto-kb-dev x11proto-render-dev 
+# error: No package 'mtdev' found
+# Debian package: libmtdev-dev
+# configure: error: weston-launch requires pam
+# Debian package: libpam0g-dev
+
+repo=git://git.gnome.org/glib
+# This just makes the configure output more verbose and is not necessary
+args=./autogen.sh --prefix=$installdir --disable-silent-rules
+# make check takes a long time
+# error: No package 'libffi' found
+dep=libffi
+
+repo=git://git.gnome.org/gobject-introspection
+# error: Requested 'glib-2.0 >= 2.35.0' but version of GLib is 2.32.4
+dep=glib
+# error:
+# failed make check: make[5]: *** [Regress-1.0.gir.check] Error 1
+# -    <function name="test_cairo_context_full_return"
+# Terrible.
+dep=cairo
+# error: checking for headers required to compile python extensions... ./configure: line 14523: /usr/bin/python-config: No such file or directory
+# Debian package: python-dev libssl-dev python2.7-dev 
+
+repo=git://git.gnome.org/atk
+# gtk gives bad error: Couldn't find include 'Atk-1.0.gir' (search path: ['../gdk', '../gdk', '../gdk/x11', 'gir-1.0', '/home/darxus/install.test.master/share/gir-1.0', '/usr/share/gir-1.0', '/home/darxus/install.test.master/share/gir-1.0'])
+dep=gobject-introspection
+# error:   glib-gettext.m4 not found
+# Still not finding glib-gettext.m4, bug in atk, using Debian package: libglib2.0-dev libpcre3-dev
+dep=glib
+
+repo=git://anongit.freedesktop.org/harfbuzz
+# pango gave bad error: pango-ot-private.h:30:21: fatal error: hb-glib.h: No such file or directory
+# Guessing this might help:
+dep=glib
+
+repo=git://anongit.freedesktop.org/fontconfig
+# error: No package 'freetype2' found
+# Debian package:   libfreetype6-dev zlib1g-dev
+# error: *** expat is required. or try to use --enable-libxml2
+# Debian package: libexpat1-dev
+
+repo=git://git.gnome.org/pango
+# these errors are not good:
+# error: checking for HARFBUZZ... no
+dep=harfbuzz
+# error: checking for FONTCONFIG... no
+dep=fontconfig
+# gtk gives bad error: Couldn't find include 'Pango-1.0.gir' (search path: ['../gdk', 'gir-1.0', '/home/darxus/install.test.master/share/gir-1.0', '/usr/share/gir-1.0', '/home/darxus/install.test.master/share/gir-1.0'])
+dep=gobject-introspection
+# bad error: pango-ot-private.h:30:21: fatal error: hb-glib.h: No such file or directory
+# This should come from harfbuzz, maybe harfbuzz needs a dep on glib?
+
+#Debian package is libgdk-pixbuf2.0-dev
+repo=git://git.gnome.org/gdk-pixbuf
+args=./autogen.sh --prefix=$installdir --without-libtiff
+# error: Requested 'glib-2.0 >= 2.34.0' but version of GLib is 2.32.4
+dep=glib
+# gtk error: Couldn't find include 'GdkPixbuf-2.0.gir' (search path: ['../gdk', 'gir-1.0', '/home/darxus/install.test.master/share/gir-1.0', '/usr/share/gir-1.0', '/home/darxus/install.test.master/share/gir-1.0'])
+dep=gobject-introspection
+# error: checking for jpeg_destroy_decompress in -ljpeg... no
+# Debian package: libjpeg8-dev
+
+# Debian package: libxi-dev
+#repo=git://anongit.freedesktop.org/xorg/lib/libXi
+## No package 'x11' found
+#dep=libX11
+## No package 'xext' found
+#dep=libXext
+## Requested 'inputproto >= 2.2.99.1' but version of InputProto is 2.2
+#dep=inputproto
+
+repo=git://anongit.freedesktop.org/xorg/proto/recordproto
+# configure.ac:7: error: must install xorg-macros 1.12 or later before running autoconf/autogen
+dep=macros
+# complete
+
+repo=git://anongit.freedesktop.org/xorg/lib/libXtst
+# error: configure.ac:37: error: must install xorg-macros 1.12 or later before running autoconf/autogen
+dep=macros
+# No package 'x11' found
+dep=libX11
+# No package 'xext' found
+dep=libXext
+# No package 'xi' found
+# Debian package: libxi-dev
+#dep=libXi
+# No package 'recordproto' found
+dep=recordproto
+
+# debian package? libatspi2.0-dev
+repo=git://git.gnome.org/at-spi2-core
+check=dbus-launch make check
+# error: No package 'dbus-1' found
+# Debian package: libdbus-1-dev
+# error: No package 'glib-2.0' found
+dep=glib
+# error: configure: error: X development libraries not found
+dep=libX11
+# error: configure: error: Couldn't find the Xtst library. Check config.log
+# Debian package: libxtst-dev libxext-dev libxi-dev x11proto-record-dev 
+# configure: error: Couldn't find the Xtst library. Check config.log
+dep=libXtst
+
+repo=git://git.gnome.org/at-spi2-atk
+check=dbus-launch make check
+# error: No package 'atk' found
+dep=atk
+# error: No error, based on docs:
+dep=at-spi2-core
+
+# debian package: libgtk-3-dev
+repo=git://git.gnome.org/gtk+
+args=./autogen.sh --prefix=$installdir --enable-wayland-backend --enable-x11-backend
+# make check fails: https://bugzilla.gnome.org/show_bug.cgi?id=702704
+nocheck
+# bad error:
+dep=gobject-introspection
+# bad error, in make:  Couldn't find include 'Pango-1.0.gir' (search path: ['../gdk', 'gir-1.0', '/home/darxus/install.test.master/share/gir-1.0', '/usr/share/gir-1.0', '/home/darxus/install.test.master/share/gir-1.0'])
+dep=pango
+# didn't see an error for this one yet:
+dep=wayland
+# error: configure: error: Package requirements (glib-2.0 >= 2.35.3    atk >= 2.5.3    pango >= 1.32.4    cairo >= 1.10.0    cairo-gobject >= 1.10.0    gdk-pixbuf-2.0 >= 2.26.0) were not met:
+# error: No package 'atk' found
+dep=atk
+# No error, guessing
+dep=at-spi2-atk
+# No error, based on source:
+dep=gdk-pixbuf
+# No error, I know this:
+dep=libxkbcommon
+# No error, based on Debian package deps:
+dep=cairo
+
+repo=git://anongit.freedesktop.org/xorg/proto/inputproto
+# error: configure.ac:6: error: must install xorg-macros 1.10 or later before running autoconf/autogen
+dep=macros
+
+repo=git://anongit.freedesktop.org/xorg/lib/libpciaccess
+# error: configure.ac:39: error: must install xorg-macros 1.8 or later before running autoconf/autogen
+dep=macros
+
+repo=git://anongit.freedesktop.org/xorg/proto/glproto
+# error: configure.ac:6: error: must install xorg-macros 1.3 or later before running autoconf/autogen
+dep=macros
+
+repo=git://anongit.freedesktop.org/xorg/proto/randrproto
+# error: configure.ac:30: error: must install xorg-macros 1.3 or later before running autoconf/autogen
+dep=macros
+
+# debian packages: xorg-dev xserver-xorg-dev ...
+repo=git://anongit.freedesktop.org/xorg/xserver
+branch=xwayland-1.12
+# XKB: Failed to compile keymap
+# bad error: ./configure: line 24567: syntax error near unexpected token `'$(top_srcdir)/hw/xfree86/xwayland''
+dep=wayland
+# error: configure: error: Package requirements (glproto >= 1.4.14 dri >= 7.8.0) were not met:
+dep=glproto
+dep=mesa
+# based on configure.ac
+dep=inputproto
+# based on configure.ac
+dep=randrproto
+# based on configure.ac
+dep=kbproto
+# based on configure.ac
+dep=libXdmcp
+# error: No package 'xf86driproto' found
+# Debian package: x11proto-xf86dri-dev
+# error: No package 'xcmiscproto' found
+# Debian package: x11proto-xcmisc-dev
+# error: No package 'bigreqsproto' found
+# Debian package: x11proto-bigreqs-dev
+# error: No package 'fontsproto' found
+# Debian package: x11proto-fonts-dev
+# error: No package 'videoproto' found
+# Debian package: x11proto-video-dev
+# error: No package 'compositeproto' found
+# Debian package: x11proto-composite-dev
+# error: No package 'recordproto' found
+dep=recordproto
+# error: No package 'scrnsaverproto' found
+# Debian package: x11proto-scrnsaver-dev
+# error: No package 'resourceproto' found
+# Debian package: x11proto-resource-dev
+# error: No package 'xineramaproto' found
+# Debian package: x11proto-xinerama-dev
+# error: No package 'xkbfile' found
+# Debian package: libxkbfile-dev
+# error: No package 'xfont' found
+# Debian package: libxfont-dev
+
+repo=https://github.com/RAOF/xf86-video-ati
+#repo=git://github.com/runeksvendsen/xf86-video-ati
+branch=xwayland
+# error: No package 'libdrm' found
+dep=drm
+# bad error, wayland was already built: radeon_kms.c:1232:9: error: 'xorgWayland' undeclared (first use in this function)
+dep=xserver
+# based on configure.ac
+dep=randrproto
+# based on configure.ac
+dep=xproto
+
+repo=git://anongit.freedesktop.org/xorg/driver/xf86-video-intel
+branch=xwayland
+dep=drm
+dep=xserver
+# based on configure.ac
+dep=randrproto
+# based on configure.ac
+dep=xproto
+
+repo=git://people.freedesktop.org/~iksaif/xf86-video-wlshm
+dep=xserver
+# based on configure.ac
+dep=randrproto
+# based on configure.ac
+dep=xproto
